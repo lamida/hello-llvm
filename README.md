@@ -304,8 +304,10 @@ The main resources that should be referered is the [LLVM docs page](https://llvm
 These 2 youtube videos are also giving a good general quick introduction on LLVM.
 
 A Brief Introduction to LLVM
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/a5-WaD8VV38/0.jpg)](https://www.youtube.com/watch?v=a5-WaD8VV38)
 
 Make your own LLVM compiler
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/OhkwPSvyBu0/0.jpg)](https://www.youtube.com/watch?v=OhkwPSvyBu0)
 

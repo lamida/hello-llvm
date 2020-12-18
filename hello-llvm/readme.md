@@ -293,6 +293,20 @@ Unfortunately, I get this error.
 /usr/bin/ld: /tmp/ccvLgaux.o: relocation R_X86_64_32 against `.rodata.str1.1' can not be used when making a PIE object; recompile with -fPIE
 collect2: error: ld returned 1 exit status
 ```
+
+# How to Build LLVM Faster
+
+> From https://www.inf.ed.ac.uk/teaching/courses/ct/19-20/slides/ug3ct-llvm-day1.pdf
+
+* Specify a specific build target
+* build only specific project
+
+```
+$ cd llvm-project ; mkdir build ; cd build
+$ cmake ../llvm -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_ENABLE_PROJECTS=clang
+$ cmake --build .
+```
+
 # Resources
 
 The main resources that should be referered is the [LLVM docs page](https://llvm.org/docs/).

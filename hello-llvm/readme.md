@@ -311,6 +311,8 @@ $ cmake --build .
 
 The main resources that should be referered is the [LLVM docs page](https://llvm.org/docs/).
 
+The University of Edinburgh offerred Compiling Techniques course with a quite detailed [handson materials](https://www.inf.ed.ac.uk/teaching/courses/ct/19-20/) in exploring LLVM.
+
 These 2 youtube videos are also giving a good general quick introduction on LLVM.
 
 A Brief Introduction to LLVM

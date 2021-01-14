@@ -22,3 +22,14 @@ xdot .main.dot
 The result is as follow.
 
 ![cfg](img/cfg.PNG "CFG")
+
+We can also try to use callgraph.
+```
+clang -emit-llvm cg.c -c
+opt -dot-callgraph cg.bc
+xdot callgraph.dot
+```
+
+We can see the callgraph as follow.
+
+![cg](img/cg.PNG "CG")

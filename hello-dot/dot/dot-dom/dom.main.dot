@@ -1,11 +1,11 @@
 digraph "Dominator tree for 'main' function" {
 	label="Dominator tree for 'main' function";
 
-	Node0x8fb3c0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %3 = load i32, i32* %2, align 4\l  %4 = icmp eq i32 %3, 1\l  br i1 %4, label %5, label %6\l}"];
-	Node0x8fb3c0 -> Node0x948770;
-	Node0x8fb3c0 -> Node0x9487b0;
-	Node0x8fb3c0 -> Node0x9487f0;
-	Node0x948770 [shape=record,label="{%5:\l5:                                                \l  call void @b1()\l  br label %7\l}"];
-	Node0x9487b0 [shape=record,label="{%7:\l7:                                                \l  call void @c()\l  call void @d()\l  %8 = load i32, i32* %1, align 4\l  ret i32 %8\l}"];
-	Node0x9487f0 [shape=record,label="{%6:\l6:                                                \l  call void @b2()\l  br label %7\l}"];
+	Node0x14f13c0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %3 = load i32, i32* %2, align 4\l  %4 = icmp eq i32 %3, 1\l  br i1 %4, label %5, label %6\l}"];
+	Node0x14f13c0 -> Node0x153e770;
+	Node0x14f13c0 -> Node0x153e7b0;
+	Node0x14f13c0 -> Node0x153e7f0;
+	Node0x153e770 [shape=record,label="{%5:\l5:                                                \l  call void @b1()\l  br label %7\l}"];
+	Node0x153e7b0 [shape=record,label="{%7:\l7:                                                \l  call void @c()\l  call void @d()\l  %8 = load i32, i32* %1, align 4\l  ret i32 %8\l}"];
+	Node0x153e7f0 [shape=record,label="{%6:\l6:                                                \l  call void @b2()\l  br label %7\l}"];
 }

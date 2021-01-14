@@ -1,5 +1,0 @@
-digraph "Dominator tree for 'e' function" {
-	label="Dominator tree for 'e' function";
-
-	Node0x1dfc2e0 [shape=record,label="{%0}"];
-}

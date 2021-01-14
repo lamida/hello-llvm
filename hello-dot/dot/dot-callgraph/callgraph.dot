@@ -1,0 +1,30 @@
+digraph "Call graph" {
+	label="Call graph";
+
+	Node0x26ee0e0 [shape=record,label="{external node}"];
+	Node0x26ee0e0 -> Node0x26ee180;
+	Node0x26ee0e0 -> Node0x26ee220;
+	Node0x26ee0e0 -> Node0x26ee2c0;
+	Node0x26ee0e0 -> Node0x26ee3f0;
+	Node0x26ee0e0 -> Node0x26ee490;
+	Node0x26ee0e0 -> Node0x26ee530;
+	Node0x26ee0e0 -> Node0x26ee560;
+	Node0x26ee180 [shape=record,label="{b1}"];
+	Node0x26ee180 -> Node0x26ee220;
+	Node0x26ee220 [shape=record,label="{printf}"];
+	Node0x26ee220 -> Node0x26ee110;
+	Node0x26ee2c0 [shape=record,label="{b2}"];
+	Node0x26ee2c0 -> Node0x26ee220;
+	Node0x26ee3f0 [shape=record,label="{c}"];
+	Node0x26ee3f0 -> Node0x26ee220;
+	Node0x26ee490 [shape=record,label="{e}"];
+	Node0x26ee490 -> Node0x26ee220;
+	Node0x26ee530 [shape=record,label="{d}"];
+	Node0x26ee530 -> Node0x26ee220;
+	Node0x26ee530 -> Node0x26ee490;
+	Node0x26ee560 [shape=record,label="{main}"];
+	Node0x26ee560 -> Node0x26ee180;
+	Node0x26ee560 -> Node0x26ee2c0;
+	Node0x26ee560 -> Node0x26ee3f0;
+	Node0x26ee560 -> Node0x26ee530;
+}

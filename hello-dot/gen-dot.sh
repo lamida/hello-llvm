@@ -6,6 +6,7 @@ for dot in $(ls -d dot/*/); do
 cd $dot
 opt "--${PWD##*/}" ../../llvm-dot.bc
 ls *.dot | xargs -I{} dot -Tpng {} -o {}.png
+# generate png for hidden files too
 ls .*.dot | xargs -I{} dot -Tpng {} -o {}.png
 cd ../..
 done

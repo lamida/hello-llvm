@@ -1,12 +1,35 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x13dda40 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %3 = load i32, i32* %2, align 4\l  %4 = icmp eq i32 %3, 1\l  br i1 %4, label %5, label %6\l|{<s0>T|<s1>F}}"];
-	Node0x13dda40:s0 -> Node0x13ddc00;
-	Node0x13dda40:s1 -> Node0x13ddc50;
-	Node0x13ddc00 [shape=record,label="{%5:\l5:                                                \l  call void @b1()\l  br label %7\l}"];
-	Node0x13ddc00 -> Node0x13ddca0;
-	Node0x13ddc50 [shape=record,label="{%6:\l6:                                                \l  call void @b2()\l  br label %7\l}"];
-	Node0x13ddc50 -> Node0x13ddca0;
-	Node0x13ddca0 [shape=record,label="{%7:\l7:                                                \l  call void @c()\l  call void @d()\l  %8 = load i32, i32* %1, align 4\l  ret i32 %8\l}"];
+	Node0x212f440 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  %4 = alloca i64, align 8\l  %5 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %6 = load i32, i32* %2, align 4\l  %7 = icmp eq i32 %6, 1\l  br i1 %7, label %8, label %9\l|{<s0>T|<s1>F}}"];
+	Node0x212f440:s0 -> Node0x212f5d0;
+	Node0x212f440:s1 -> Node0x212f620;
+	Node0x212f5d0 [shape=record,label="{%8:\l8:                                                \l  call void @b1()\l  br label %10\l}"];
+	Node0x212f5d0 -> Node0x212f670;
+	Node0x212f620 [shape=record,label="{%9:\l9:                                                \l  call void @b2()\l  br label %10\l}"];
+	Node0x212f620 -> Node0x212f670;
+	Node0x212f670 [shape=record,label="{%10:\l10:                                               \l  call void @c()\l  call void @d()\l  store i32 10, i32* %3, align 4\l  br label %11\l}"];
+	Node0x212f670 -> Node0x212f6c0;
+	Node0x212f6c0 [shape=record,label="{%11:\l11:                                               \l  %12 = load i32, i32* %3, align 4\l  %13 = icmp sgt i32 %12, 0\l  br i1 %13, label %14, label %17\l|{<s0>T|<s1>F}}"];
+	Node0x212f6c0:s0 -> Node0x212f710;
+	Node0x212f6c0:s1 -> Node0x212f760;
+	Node0x212f710 [shape=record,label="{%14:\l14:                                               \l  call void @f()\l  %15 = load i32, i32* %3, align 4\l  %16 = add nsw i32 %15, -1\l  store i32 %16, i32* %3, align 4\l  br label %11\l}"];
+	Node0x212f710 -> Node0x212f6c0;
+	Node0x212f760 [shape=record,label="{%17:\l17:                                               \l  %18 = call i32 (i64*, ...) bitcast (i32 (...)* @time to i32 (i64*,\l... ...)*)(i64* %4)\l  call void @srand(i32 %18) #3\l  %19 = call i32 @rand() #3\l  %20 = srem i32 %19, 4\l  %21 = add nsw i32 1, %20\l  store i32 %21, i32* %5, align 4\l  %22 = load i32, i32* %5, align 4\l  switch i32 %22, label %27 [\l    i32 1, label %23\l    i32 2, label %24\l    i32 3, label %25\l    i32 4, label %26\l  ]\l|{<s0>def|<s1>1|<s2>2|<s3>3|<s4>4}}"];
+	Node0x212f760:s0 -> Node0x212f8f0;
+	Node0x212f760:s1 -> Node0x212f7b0;
+	Node0x212f760:s2 -> Node0x212f800;
+	Node0x212f760:s3 -> Node0x212f850;
+	Node0x212f760:s4 -> Node0x212f8a0;
+	Node0x212f7b0 [shape=record,label="{%23:\l23:                                               \l  call void @g1()\l  br label %29\l}"];
+	Node0x212f7b0 -> Node0x212f940;
+	Node0x212f800 [shape=record,label="{%24:\l24:                                               \l  call void @g2()\l  br label %29\l}"];
+	Node0x212f800 -> Node0x212f940;
+	Node0x212f850 [shape=record,label="{%25:\l25:                                               \l  call void @g3()\l  br label %29\l}"];
+	Node0x212f850 -> Node0x212f940;
+	Node0x212f8a0 [shape=record,label="{%26:\l26:                                               \l  call void @g4()\l  br label %29\l}"];
+	Node0x212f8a0 -> Node0x212f940;
+	Node0x212f8f0 [shape=record,label="{%27:\l27:                                               \l  %28 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.10, i64 0, i64 0))\l  br label %29\l}"];
+	Node0x212f8f0 -> Node0x212f940;
+	Node0x212f940 [shape=record,label="{%29:\l29:                                               \l  %30 = load i32, i32* %1, align 4\l  ret i32 %30\l}"];
 }

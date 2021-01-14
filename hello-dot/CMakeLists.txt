@@ -1,0 +1,1 @@
+add_executable(llvm-dot llvm-dot.c)

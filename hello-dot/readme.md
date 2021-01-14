@@ -2,6 +2,8 @@
 
 In this folder we are generating different analyser viewer provided by LLVM. See gen-dot.sh to see how the graph is generated. We are using llvm-dot.c as the source file.
 
+Set the dot folder for all dot files and png images of the generated graph.
+
 * --dot-callgraph         - Print call graph to 'dot' file
 * --dot-cfg               - Print CFG of function to 'dot' file
 * --dot-cfg-only          - Print CFG of function to 'dot' file (with no function bodies)

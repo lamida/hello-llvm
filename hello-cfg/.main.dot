@@ -1,0 +1,12 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x26fc9b0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %3 = load i32, i32* %2, align 4\l  %4 = icmp eq i32 %3, 1\l  br i1 %4, label %5, label %6\l|{<s0>T|<s1>F}}"];
+	Node0x26fc9b0:s0 -> Node0x26fcb70;
+	Node0x26fc9b0:s1 -> Node0x26fcbc0;
+	Node0x26fcb70 [shape=record,label="{%5:\l5:                                                \l  call void @b1()\l  br label %7\l}"];
+	Node0x26fcb70 -> Node0x26fcc10;
+	Node0x26fcbc0 [shape=record,label="{%6:\l6:                                                \l  call void @b2()\l  br label %7\l}"];
+	Node0x26fcbc0 -> Node0x26fcc10;
+	Node0x26fcc10 [shape=record,label="{%7:\l7:                                                \l  call void @c()\l  call void @d()\l  %8 = load i32, i32* %1, align 4\l  ret i32 %8\l}"];
+}

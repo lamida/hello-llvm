@@ -10,5 +10,5 @@ Each folder in this repo is the exploration of LLVM.
 Try to use this
 
 ```
- cmake -G Ninja -DLLVM_BUILD_TYPE=release -DLLVM_USE_LINKER=gold  -DLLVM_TARGETS_TO_BUILD="X86" -DLLVM_ENABLE_PROJECTS=llvm ../llvm
+ cmake -G Ninja -DCMAKE_BUILD_TYPE=release -DLLVM_USE_LINKER=gold  -DLLVM_TARGETS_TO_BUILD="X86" -DLLVM_ENABLE_PROJECTS=llvm ../llvm
 ```

@@ -1,0 +1,11 @@
+digraph "Dominator tree for '_Z9get_inputB5cxx11v' function" {
+	label="Dominator tree for '_Z9get_inputB5cxx11v' function";
+
+	Node0xdcf1b0 [shape=record,label="{%1:\l  %2 = alloca i8*, align 8\l  %3 = alloca i32, align 4\l  %4 = alloca %\"class.std::allocator\", align 1\l  %5 = alloca i8*\l  %6 = alloca i32\l  %7 = bitcast %\"class.std::__cxx11::basic_string\"* %0 to i8*\l  store i8* %7, i8** %2, align 8\l  %8 = call i32 @rand() #3\l  %9 = srem i32 %8, 2\l  store i32 %9, i32* %3, align 4\l  %10 = load i32, i32* %3, align 4\l  %11 = icmp eq i32 %10, 1\l  %12 = zext i1 %11 to i64\l  %13 = select i1 %11, i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str,\l... i64 0, i64 0), i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.1, i64\l... 0, i64 0)\l  call void @_ZNSaIcEC1Ev(%\"class.std::allocator\"* %4) #3\l  invoke void\l... @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_(%\"class.std:\l...:__cxx11::basic_string\"* %0, i8* %13, %\"class.std::allocator\"*\l... dereferenceable(1) %4)\l          to label %14 unwind label %15\l}"];
+	Node0xdcf1b0 -> Node0xda1300;
+	Node0xdcf1b0 -> Node0xd952e0;
+	Node0xda1300 [shape=record,label="{%14:\l14:                                               \l  call void @_ZNSaIcED1Ev(%\"class.std::allocator\"* %4) #3\l  ret void\l}"];
+	Node0xd952e0 [shape=record,label="{%15:\l15:                                               \l  %16 = landingpad \{ i8*, i32 \}\l          cleanup\l  %17 = extractvalue \{ i8*, i32 \} %16, 0\l  store i8* %17, i8** %5, align 8\l  %18 = extractvalue \{ i8*, i32 \} %16, 1\l  store i32 %18, i32* %6, align 4\l  call void @_ZNSaIcED1Ev(%\"class.std::allocator\"* %4) #3\l  br label %19\l}"];
+	Node0xd952e0 -> Node0xd95320;
+	Node0xd95320 [shape=record,label="{%19:\l19:                                               \l  %20 = load i8*, i8** %5, align 8\l  %21 = load i32, i32* %6, align 4\l  %22 = insertvalue \{ i8*, i32 \} undef, i8* %20, 0\l  %23 = insertvalue \{ i8*, i32 \} %22, i32 %21, 1\l  resume \{ i8*, i32 \} %23\l}"];
+}

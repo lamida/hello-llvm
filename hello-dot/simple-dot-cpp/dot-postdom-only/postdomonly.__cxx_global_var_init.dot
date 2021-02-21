@@ -1,0 +1,7 @@
+digraph "Post dominator tree for '__cxx_global_var_init' function" {
+	label="Post dominator tree for '__cxx_global_var_init' function";
+
+	Node0x1d48560 [shape=record,label="{Post dominance root node}"];
+	Node0x1d48560 -> Node0x1d47500;
+	Node0x1d47500 [shape=record,label="{%0}"];
+}

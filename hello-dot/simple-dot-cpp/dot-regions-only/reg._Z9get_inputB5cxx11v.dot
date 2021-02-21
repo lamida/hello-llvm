@@ -1,0 +1,21 @@
+digraph "Region Graph for '_Z9get_inputB5cxx11v' function" {
+	label="Region Graph for '_Z9get_inputB5cxx11v' function";
+
+	Node0x18663b0 [shape=record,label="{%1}"];
+	Node0x18663b0 -> Node0x185a390;
+	Node0x18663b0 -> Node0x1864230;
+	Node0x185a390 [shape=record,label="{%14}"];
+	Node0x1864230 [shape=record,label="{%15}"];
+	Node0x1864230 -> Node0x18642f0;
+	Node0x18642f0 [shape=record,label="{%19}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1865700 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0x18663b0;
+          Node0x185a390;
+          Node0x1864230;
+          Node0x18642f0;
+        }
+}

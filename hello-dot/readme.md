@@ -15,3 +15,8 @@ Set the dot folder for all dot files and png images of the generated graph.
 * --dot-regions-only      - Print regions of function to 'dot' file (with no function bodies)
 * --dot-scops             - Polly - Print Scops of function
 * --dot-scops-only        - Polly - Print Scops of function (with no function bodies)
+
+Need graphviz. Install using:
+```
+sudo apt-get install graphviz
+```

@@ -1,0 +1,12 @@
+digraph "Region Graph for 'get_privileged_info' function" {
+	label="Region Graph for 'get_privileged_info' function";
+
+	Node0xcdcc10 [shape=record,label="{%0:\l  ret i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.2, i64 0, i64 0)\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xcba100 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0xcdcc10;
+        }
+}

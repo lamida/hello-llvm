@@ -1,0 +1,5 @@
+digraph "CFG for '_GLOBAL__sub_I_simple_dot_cpp.cpp' function" {
+	label="CFG for '_GLOBAL__sub_I_simple_dot_cpp.cpp' function";
+
+	Node0x218bf90 [shape=record,label="{%0}"];
+}

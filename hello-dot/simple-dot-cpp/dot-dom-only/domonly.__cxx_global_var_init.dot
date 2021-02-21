@@ -1,0 +1,5 @@
+digraph "Dominator tree for '__cxx_global_var_init' function" {
+	label="Dominator tree for '__cxx_global_var_init' function";
+
+	Node0x23e5560 [shape=record,label="{%0}"];
+}

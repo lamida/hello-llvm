@@ -1,0 +1,21 @@
+digraph "Region Graph for '_Z19get_privileged_infoB5cxx11v' function" {
+	label="Region Graph for '_Z19get_privileged_infoB5cxx11v' function";
+
+	Node0x188a520 [shape=record,label="{%1}"];
+	Node0x188a520 -> Node0x18642f0;
+	Node0x188a520 -> Node0x1864440;
+	Node0x18642f0 [shape=record,label="{%7}"];
+	Node0x1864440 [shape=record,label="{%8}"];
+	Node0x1864440 -> Node0x1864500;
+	Node0x1864500 [shape=record,label="{%12}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1865700 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0x188a520;
+          Node0x18642f0;
+          Node0x1864440;
+          Node0x1864500;
+        }
+}

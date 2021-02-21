@@ -1,0 +1,11 @@
+digraph "Dominator tree for '_Z19get_privileged_infoB5cxx11v' function" {
+	label="Dominator tree for '_Z19get_privileged_infoB5cxx11v' function";
+
+	Node0x23e2d20 [shape=record,label="{%1}"];
+	Node0x23e2d20 -> Node0x23b4190;
+	Node0x23e2d20 -> Node0x23c0300;
+	Node0x23b4190 [shape=record,label="{%7}"];
+	Node0x23c0300 [shape=record,label="{%8}"];
+	Node0x23c0300 -> Node0x23c03b0;
+	Node0x23c03b0 [shape=record,label="{%12}"];
+}

@@ -1,0 +1,5 @@
+digraph "CFG for 'my_terminate' function" {
+	label="CFG for 'my_terminate' function";
+
+	Node0x909030 [shape=record,label="{%0}"];
+}

@@ -1,0 +1,12 @@
+digraph "Scop Graph for '__cxx_global_var_init' function" {
+	label="Scop Graph for '__cxx_global_var_init' function";
+
+	Node0x101de60 [shape=record,label="{%0}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xfb5250 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x101de60;
+        }
+}

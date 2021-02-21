@@ -1,0 +1,21 @@
+digraph "Scop Graph for '_Z9get_inputB5cxx11v' function" {
+	label="Scop Graph for '_Z9get_inputB5cxx11v' function";
+
+	Node0x101ec40 [shape=record,label="{%1}"];
+	Node0x101ec40 -> Node0x101ec20;
+	Node0x101ec40 -> Node0x101f3d0;
+	Node0x101ec20 [shape=record,label="{%14}"];
+	Node0x101f3d0 [shape=record,label="{%15}"];
+	Node0x101f3d0 -> Node0x1021150;
+	Node0x1021150 [shape=record,label="{%19}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x101e2e0 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x101ec40;
+          Node0x101ec20;
+          Node0x101f3d0;
+          Node0x1021150;
+        }
+}

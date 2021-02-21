@@ -1,0 +1,5 @@
+digraph "CFG for '_Z12print_outputNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' function" {
+	label="CFG for '_Z12print_outputNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' function";
+
+	Node0x2189810 [shape=record,label="{%1}"];
+}

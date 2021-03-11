@@ -1,12 +1,12 @@
 digraph "Region Graph for '_Z12my_terminatev' function" {
 	label="Region Graph for '_Z12my_terminatev' function";
 
-	Node0x188a520 [shape=record,label="{%0}"];
+	Node0x17de0e0 [shape=record,label="{%0}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x1865700 {
+        subgraph cluster_0x17e7630 {
           label = "";
           style = filled;
           color = 1
-          Node0x188a520;
+          Node0x17de0e0;
         }
 }

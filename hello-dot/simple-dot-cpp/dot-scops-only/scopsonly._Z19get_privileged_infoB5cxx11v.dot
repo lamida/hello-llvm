@@ -1,21 +1,21 @@
 digraph "Scop Graph for '_Z19get_privileged_infoB5cxx11v' function" {
 	label="Scop Graph for '_Z19get_privileged_infoB5cxx11v' function";
 
-	Node0x101ed00 [shape=record,label="{%1}"];
-	Node0x101ed00 -> Node0x1021150;
-	Node0x101ed00 -> Node0x1020370;
-	Node0x1021150 [shape=record,label="{%7}"];
-	Node0x1020370 [shape=record,label="{%8}"];
-	Node0x1020370 -> Node0x1020430;
-	Node0x1020430 [shape=record,label="{%12}"];
+	Node0x936c60 [shape=record,label="{%1}"];
+	Node0x936c60 -> Node0x92c390;
+	Node0x936c60 -> Node0x937f30;
+	Node0x92c390 [shape=record,label="{%7}"];
+	Node0x937f30 [shape=record,label="{%8}"];
+	Node0x937f30 -> Node0x9928b0;
+	Node0x9928b0 [shape=record,label="{%12}"];
 	colorscheme = "paired12"
-        subgraph cluster_0xfb5250 {
+        subgraph cluster_0x92c210 {
           label = "";
           style = solid;
           color = 1
-          Node0x101ed00;
-          Node0x1021150;
-          Node0x1020370;
-          Node0x1020430;
+          Node0x936c60;
+          Node0x92c390;
+          Node0x937f30;
+          Node0x9928b0;
         }
 }

@@ -1,4 +1,3 @@
-#include <iostream>
 #include <string>
 
 // Simple program from ScaRR paper to test the CFG.
@@ -21,11 +20,11 @@ string get_unprivileged_info() {
 }
 
 void print_output(string result) {
-    cout << result << endl;
+    printf("%s\n");
 }
 
 void my_terminate() {
-    cout << "exiting..." << endl;
+    printf("existing...\n");
 }
 
 int main() {

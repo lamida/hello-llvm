@@ -1,12 +1,12 @@
 digraph "Scop Graph for '_Z12my_terminatev' function" {
 	label="Scop Graph for '_Z12my_terminatev' function";
 
-	Node0x26fa330 [shape=record,label="{%0:\l  %1 = call dereferenceable(272) %\"class.std::basic_ostream\"*\l... @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(%\"class.std::basic_os\l...tream\"* dereferenceable(272) @_ZSt4cout, i8* getelementptr inbounds ([11 x\l... i8], [11 x i8]* @.str.4, i64 0, i64 0))\l  %2 = call dereferenceable(272) %\"class.std::basic_ostream\"*\l... @_ZNSolsEPFRSoS_E(%\"class.std::basic_ostream\"* %1,\l... %\"class.std::basic_ostream\"* (%\"class.std::basic_ostream\"*)*\l... @_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_)\l  ret void\l}"];
+	Node0x1b1ca80 [shape=record,label="{%0:\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.5, i64 0, i64 0))\l  ret void\l}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x26f69d0 {
+        subgraph cluster_0x1b11210 {
           label = "";
           style = solid;
           color = 1
-          Node0x26fa330;
+          Node0x1b1ca80;
         }
 }

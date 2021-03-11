@@ -1,67 +1,27 @@
 digraph "Scop Graph for 'main' function" {
 	label="Scop Graph for 'main' function";
 
-	Node0x1b77c50 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca %\"class.std::__cxx11::basic_string\", align 8\l  %3 = alloca %\"class.std::__cxx11::basic_string\", align 8\l  %4 = alloca %\"class.std::allocator\", align 1\l  %5 = alloca i8*\l  %6 = alloca i32\l  %7 = alloca %\"class.std::__cxx11::basic_string\", align 8\l  %8 = alloca %\"class.std::__cxx11::basic_string\", align 8\l  %9 = alloca %\"class.std::__cxx11::basic_string\", align 8\l  store i32 0, i32* %1, align 4\l  call void @_Z9get_inputB5cxx11v(%\"class.std::__cxx11::basic_string\"* sret %2)\l  call void @_ZNSaIcEC1Ev(%\"class.std::allocator\"* %4) #5\l  invoke void\l... @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_(%\"class.std:\l...:__cxx11::basic_string\"* %3, i8* getelementptr inbounds ([1 x i8], [1 x i8]*\l... @.str.6, i64 0, i64 0), %\"class.std::allocator\"* dereferenceable(1) %4)\l          to label %10 unwind label %16\l}"];
-	Node0x1b77c50 -> Node0x1b7bfc0;
-	Node0x1b77c50 -> Node0x1b7c730;
-	Node0x1b7bfc0 [shape=record,label="{%10:\l10:                                               \l  call void @_ZNSaIcED1Ev(%\"class.std::allocator\"* %4) #5\l  %11 = invoke zeroext i1\l... @_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_(\l...%\"class.std::__cxx11::basic_string\"* dereferenceable(32) %2, i8* getelementptr\l... inbounds ([5 x i8], [5 x i8]* @.str, i64 0, i64 0))\l          to label %12 unwind label %20\l}"];
-	Node0x1b7bfc0 -> Node0x1b7c790;
-	Node0x1b7bfc0 -> Node0x1b7d350;
-	Node0x1b7c790 [shape=record,label="{%12:\l12:                                               \l  br i1 %11, label %13, label %24\l}"];
-	Node0x1b7c790 -> Node0x1b7d3b0;
-	Node0x1b7c790 -> Node0x1b7d410;
-	Node0x1b7d3b0 [shape=record,label="{%13:\l13:                                               \l  invoke void\l... @_Z19get_privileged_infoB5cxx11v(%\"class.std::__cxx11::basic_string\"* sret %7)\l          to label %14 unwind label %20\l}"];
-	Node0x1b7d3b0 -> Node0x1b7d470;
-	Node0x1b7d3b0 -> Node0x1b7d350;
-	Node0x1b7d470 [shape=record,label="{%14:\l14:                                               \l  %15 = call dereferenceable(32) %\"class.std::__cxx11::basic_string\"*\l... @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSEOS4_(%\"class.std::__c\l...xx11::basic_string\"* %3, %\"class.std::__cxx11::basic_string\"*\l... dereferenceable(32) %7) #5\l  call void\l... @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%\"class.std::__cxx1\l...1::basic_string\"* %7) #5\l  br label %27\l}"];
-	Node0x1b7d470 -> Node0x1b7d5b0;
-	Node0x1b7d5b0 [shape=record,label="{%27:\l27:                                               \l  invoke void\l... @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS4_(%\"class.std::__\l...cxx11::basic_string\"* %9, %\"class.std::__cxx11::basic_string\"*\l... dereferenceable(32) %3)\l          to label %28 unwind label %20\l}"];
-	Node0x1b7d5b0 -> Node0x1b7def0;
-	Node0x1b7d5b0 -> Node0x1b7d350;
-	Node0x1b7def0 [shape=record,label="{%28:\l28:                                               \l  invoke void\l... @_Z12print_outputNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE(%\"class.\l...std::__cxx11::basic_string\"* %9)\l          to label %29 unwind label %32\l}"];
-	Node0x1b7def0 -> Node0x1b7e540;
-	Node0x1b7def0 -> Node0x1b7ea60;
-	Node0x1b7e540 [shape=record,label="{%29:\l29:                                               \l  call void\l... @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%\"class.std::__cxx1\l...1::basic_string\"* %9) #5\l  invoke void @_Z12my_terminatev()\l          to label %30 unwind label %20\l}"];
-	Node0x1b7e540 -> Node0x1b7eac0;
-	Node0x1b7e540 -> Node0x1b7d350;
-	Node0x1b7eac0 [shape=record,label="{%30:\l30:                                               \l  call void\l... @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%\"class.std::__cxx1\l...1::basic_string\"* %3) #5\l  call void\l... @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%\"class.std::__cxx1\l...1::basic_string\"* %2) #5\l  %31 = load i32, i32* %1, align 4\l  ret i32 %31\l}"];
-	Node0x1b7d350 [shape=record,label="{%20:\l20:                                               \l  %21 = landingpad \{ i8*, i32 \}\l          cleanup\l  %22 = extractvalue \{ i8*, i32 \} %21, 0\l  store i8* %22, i8** %5, align 8\l  %23 = extractvalue \{ i8*, i32 \} %21, 1\l  store i32 %23, i32* %6, align 4\l  br label %36\l}"];
-	Node0x1b7d350 -> Node0x1b7f1c0;
-	Node0x1b7f1c0 [shape=record,label="{%36:\l36:                                               \l  call void\l... @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%\"class.std::__cxx1\l...1::basic_string\"* %3) #5\l  br label %37\l}"];
-	Node0x1b7f1c0 -> Node0x1b801f0;
-	Node0x1b801f0 [shape=record,label="{%37:\l37:                                               \l  call void\l... @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%\"class.std::__cxx1\l...1::basic_string\"* %2) #5\l  br label %38\l}"];
-	Node0x1b801f0 -> Node0x1b80250;
-	Node0x1b80250 [shape=record,label="{%38:\l38:                                               \l  %39 = load i8*, i8** %5, align 8\l  %40 = load i32, i32* %6, align 4\l  %41 = insertvalue \{ i8*, i32 \} undef, i8* %39, 0\l  %42 = insertvalue \{ i8*, i32 \} %41, i32 %40, 1\l  resume \{ i8*, i32 \} %42\l}"];
-	Node0x1b7ea60 [shape=record,label="{%32:\l32:                                               \l  %33 = landingpad \{ i8*, i32 \}\l          cleanup\l  %34 = extractvalue \{ i8*, i32 \} %33, 0\l  store i8* %34, i8** %5, align 8\l  %35 = extractvalue \{ i8*, i32 \} %33, 1\l  store i32 %35, i32* %6, align 4\l  call void\l... @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%\"class.std::__cxx1\l...1::basic_string\"* %9) #5\l  br label %36\l}"];
-	Node0x1b7ea60 -> Node0x1b7f1c0;
-	Node0x1b7d410 [shape=record,label="{%24:\l24:                                               \l  invoke void\l... @_Z21get_unprivileged_infoB5cxx11v(%\"class.std::__cxx11::basic_string\"* sret\l... %8)\l          to label %25 unwind label %20\l}"];
-	Node0x1b7d410 -> Node0x1b802b0;
-	Node0x1b7d410 -> Node0x1b7d350;
-	Node0x1b802b0 [shape=record,label="{%25:\l25:                                               \l  %26 = call dereferenceable(32) %\"class.std::__cxx11::basic_string\"*\l... @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSEOS4_(%\"class.std::__c\l...xx11::basic_string\"* %3, %\"class.std::__cxx11::basic_string\"*\l... dereferenceable(32) %8) #5\l  call void\l... @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%\"class.std::__cxx1\l...1::basic_string\"* %8) #5\l  br label %27\l}"];
-	Node0x1b802b0 -> Node0x1b7d5b0;
-	Node0x1b7c730 [shape=record,label="{%16:\l16:                                               \l  %17 = landingpad \{ i8*, i32 \}\l          cleanup\l  %18 = extractvalue \{ i8*, i32 \} %17, 0\l  store i8* %18, i8** %5, align 8\l  %19 = extractvalue \{ i8*, i32 \} %17, 1\l  store i32 %19, i32* %6, align 4\l  call void @_ZNSaIcED1Ev(%\"class.std::allocator\"* %4) #5\l  br label %37\l}"];
-	Node0x1b7c730 -> Node0x1b801f0;
+	Node0x265bdd0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i8*, align 8\l  %3 = alloca i8*, align 8\l  store i32 0, i32* %1, align 4\l  %4 = call i8* @_Z9get_inputv()\l  store i8* %4, i8** %2, align 8\l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.6, i64 0, i64\l... 0), i8** %3, align 8\l  %5 = load i8*, i8** %2, align 8\l  %6 = icmp eq i8* %5, getelementptr inbounds ([5 x i8], [5 x i8]* @.str, i64\l... 0, i64 0)\l  br i1 %6, label %7, label %9\l}"];
+	Node0x265bdd0 -> Node0x26aeea0;
+	Node0x265bdd0 -> Node0x26aef00;
+	Node0x26aeea0 [shape=record,label="{%7:\l7:                                                \l  %8 = call i8* @_Z19get_privileged_infov()\l  store i8* %8, i8** %3, align 8\l  br label %11\l}"];
+	Node0x26aeea0 -> Node0x26aefc0;
+	Node0x26aefc0 [shape=record,label="{%11:\l11:                                               \l  %12 = load i8*, i8** %3, align 8\l  call void @_Z12print_outputPc(i8* %12)\l  call void @_Z12my_terminatev()\l  %13 = load i32, i32* %1, align 4\l  ret i32 %13\l}"];
+	Node0x26aef00 [shape=record,label="{%9:\l9:                                                \l  %10 = call i8* @_Z21get_unprivileged_infov()\l  store i8* %10, i8** %3, align 8\l  br label %11\l}"];
+	Node0x26aef00 -> Node0x26aefc0;
 	colorscheme = "paired12"
-        subgraph cluster_0x1b1d2a0 {
+        subgraph cluster_0x26b1930 {
           label = "";
           style = solid;
           color = 1
-          Node0x1b77c50;
-          Node0x1b7bfc0;
-          Node0x1b7c790;
-          Node0x1b7d3b0;
-          Node0x1b7d470;
-          Node0x1b7d5b0;
-          Node0x1b7def0;
-          Node0x1b7e540;
-          Node0x1b7eac0;
-          Node0x1b7d350;
-          Node0x1b7f1c0;
-          Node0x1b801f0;
-          Node0x1b80250;
-          Node0x1b7ea60;
-          Node0x1b7d410;
-          Node0x1b802b0;
-          Node0x1b7c730;
+          subgraph cluster_0x267ef40 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0x265bdd0;
+            Node0x26aeea0;
+            Node0x26aef00;
+          }
+          Node0x26aefc0;
         }
 }

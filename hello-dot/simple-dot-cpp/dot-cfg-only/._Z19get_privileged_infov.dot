@@ -1,0 +1,5 @@
+digraph "CFG for '_Z19get_privileged_infov' function" {
+	label="CFG for '_Z19get_privileged_infov' function";
+
+	Node0xcbfba0 [shape=record,label="{%0}"];
+}

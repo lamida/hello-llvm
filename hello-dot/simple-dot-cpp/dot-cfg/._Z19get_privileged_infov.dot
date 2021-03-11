@@ -1,0 +1,5 @@
+digraph "CFG for '_Z19get_privileged_infov' function" {
+	label="CFG for '_Z19get_privileged_infov' function";
+
+	Node0x1e5cba0 [shape=record,label="{%0:\l  ret i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.2, i64 0, i64 0)\l}"];
+}

@@ -1,67 +1,27 @@
 digraph "Scop Graph for 'main' function" {
 	label="Scop Graph for 'main' function";
 
-	Node0x935a70 [shape=record,label="{%0}"];
-	Node0x935a70 -> Node0x994410;
-	Node0x935a70 -> Node0x994470;
-	Node0x994410 [shape=record,label="{%10}"];
-	Node0x994410 -> Node0x9944d0;
-	Node0x994410 -> Node0x994530;
-	Node0x9944d0 [shape=record,label="{%12}"];
-	Node0x9944d0 -> Node0x994590;
-	Node0x9944d0 -> Node0x9945f0;
-	Node0x994590 [shape=record,label="{%13}"];
-	Node0x994590 -> Node0x994650;
-	Node0x994590 -> Node0x994530;
-	Node0x994650 [shape=record,label="{%14}"];
-	Node0x994650 -> Node0x9946b0;
-	Node0x9946b0 [shape=record,label="{%27}"];
-	Node0x9946b0 -> Node0x994710;
-	Node0x9946b0 -> Node0x994530;
-	Node0x994710 [shape=record,label="{%28}"];
-	Node0x994710 -> Node0x994770;
-	Node0x994710 -> Node0x9947d0;
-	Node0x994770 [shape=record,label="{%29}"];
-	Node0x994770 -> Node0x994830;
-	Node0x994770 -> Node0x994530;
-	Node0x994830 [shape=record,label="{%30}"];
-	Node0x994530 [shape=record,label="{%20}"];
-	Node0x994530 -> Node0x994b20;
-	Node0x994b20 [shape=record,label="{%36}"];
-	Node0x994b20 -> Node0x994b80;
-	Node0x994b80 [shape=record,label="{%37}"];
-	Node0x994b80 -> Node0x994be0;
-	Node0x994be0 [shape=record,label="{%38}"];
-	Node0x9947d0 [shape=record,label="{%32}"];
-	Node0x9947d0 -> Node0x994b20;
-	Node0x9945f0 [shape=record,label="{%24}"];
-	Node0x9945f0 -> Node0x994c40;
-	Node0x9945f0 -> Node0x994530;
-	Node0x994c40 [shape=record,label="{%25}"];
-	Node0x994c40 -> Node0x9946b0;
-	Node0x994470 [shape=record,label="{%16}"];
-	Node0x994470 -> Node0x994b80;
+	Node0xf78dd0 [shape=record,label="{%0}"];
+	Node0xf78dd0 -> Node0xfd0040;
+	Node0xf78dd0 -> Node0xfd00a0;
+	Node0xfd0040 [shape=record,label="{%7}"];
+	Node0xfd0040 -> Node0xfd0160;
+	Node0xfd0160 [shape=record,label="{%11}"];
+	Node0xfd00a0 [shape=record,label="{%9}"];
+	Node0xfd00a0 -> Node0xfd0160;
 	colorscheme = "paired12"
-        subgraph cluster_0x92c210 {
+        subgraph cluster_0xf764b0 {
           label = "";
           style = solid;
           color = 1
-          Node0x935a70;
-          Node0x994410;
-          Node0x9944d0;
-          Node0x994590;
-          Node0x994650;
-          Node0x9946b0;
-          Node0x994710;
-          Node0x994770;
-          Node0x994830;
-          Node0x994530;
-          Node0x994b20;
-          Node0x994b80;
-          Node0x994be0;
-          Node0x9947d0;
-          Node0x9945f0;
-          Node0x994c40;
-          Node0x994470;
+          subgraph cluster_0xf9bf40 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0xf78dd0;
+            Node0xfd0040;
+            Node0xfd00a0;
+          }
+          Node0xfd0160;
         }
 }

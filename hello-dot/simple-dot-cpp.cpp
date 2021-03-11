@@ -1,4 +1,5 @@
-#include <string>
+#include <cstdio>
+#include <cstdlib>
 
 // Simple program from ScaRR paper to test the CFG.
 // See section 4
@@ -6,20 +7,20 @@
 
 using namespace std;
 
-string get_input() {
+const char* get_input() {
     int rnd = rand() % 2;
     return rnd == 1 ? "auth" : "error";
 }
 
-string get_privileged_info() {
+char* get_privileged_info() {
     return "you are privileged!";
 }
 
-string get_unprivileged_info() {
+char* get_unprivileged_info() {
     return "Invalid!";
 }
 
-void print_output(string result) {
+void print_output(char* result) {
     printf("%s\n");
 }
 
@@ -28,8 +29,8 @@ void my_terminate() {
 }
 
 int main() {
-    string access = get_input();
-    string result = "";
+    const char* access = get_input();
+    char* result = "";
     if (access == "auth") {
         result = get_privileged_info();
     } else {

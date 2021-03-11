@@ -1,0 +1,7 @@
+digraph "Post dominator tree for '_Z9get_inputv' function" {
+	label="Post dominator tree for '_Z9get_inputv' function";
+
+	Node0x974520 [shape=record,label="{Post dominance root node}"];
+	Node0x974520 -> Node0x974970;
+	Node0x974970 [shape=record,label="{%0}"];
+}

@@ -1,0 +1,15 @@
+digraph "Call graph: ../../simple-dot-c-ext.bc" {
+	label="Call graph: ../../simple-dot-c-ext.bc";
+
+	Node0x557113fd9410 [shape=record,label="{main}"];
+	Node0x557113fd9410 -> Node0x557113fd9490;
+	Node0x557113fd9410 -> Node0x557113fd9540;
+	Node0x557113fd9410 -> Node0x557114005900;
+	Node0x557113fd9410 -> Node0x557114005a30;
+	Node0x557113fd9410 -> Node0x557114005ab0;
+	Node0x557113fd9490 [shape=record,label="{get_input}"];
+	Node0x557113fd9540 [shape=record,label="{get_privileged_info}"];
+	Node0x557114005900 [shape=record,label="{get_unprivileged_info}"];
+	Node0x557114005a30 [shape=record,label="{print_output}"];
+	Node0x557114005ab0 [shape=record,label="{my_terminate}"];
+}

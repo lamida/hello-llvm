@@ -1,4 +1,5 @@
 clang -emit-llvm llvm-dot.c -c
+clang -emit-llvm llvm-dot.c -S
 rm -rf dot
 DOTS="callgraph\ncfg\ncfg-only\ndom\ndom-only\npostdom\npostdom-only\nregions\nregions-only\nscops\nscops-only" 
 echo $DOTS| xargs -I{} mkdir -p dot/dot-{}

@@ -1,4 +1,5 @@
 clang -emit-llvm simple-dot-c-ext.c -c
+clang -emit-llvm simple-dot-c-ext.c -S
 rm -rf simple-dot-c-ext
 DOTS="callgraph\ncfg\ncfg-only\ndom\ndom-only\npostdom\npostdom-only\nregions\nregions-only\nscops\nscops-only" 
 echo $DOTS| xargs -I{} mkdir -p simple-dot-c-ext/dot-{}

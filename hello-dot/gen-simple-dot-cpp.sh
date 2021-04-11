@@ -1,4 +1,5 @@
 clang++ -emit-llvm simple-dot-cpp.cpp -c
+clang++ -emit-llvm simple-dot-cpp.cpp -S
 rm -rf simple-dot-cpp
 DOTS="callgraph\ncfg\ncfg-only\ndom\ndom-only\npostdom\npostdom-only\nregions\nregions-only\nscops\nscops-only" 
 echo $DOTS| xargs -I{} mkdir -p simple-dot-cpp/dot-{}

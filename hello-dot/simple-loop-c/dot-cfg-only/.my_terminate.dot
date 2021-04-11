@@ -1,0 +1,5 @@
+digraph "CFG for 'my_terminate' function" {
+	label="CFG for 'my_terminate' function";
+
+	Node0x557b379e9a80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0}"];
+}

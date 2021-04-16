@@ -1,12 +1,12 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x5569b12e5710 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0|{<s0>T|<s1>F}}"];
-	Node0x5569b12e5710:s0 -> Node0x5569b12ea960;
-	Node0x5569b12e5710:s1 -> Node0x5569b12ea9b0;
-	Node0x5569b12ea960 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%7}"];
-	Node0x5569b12ea960 -> Node0x5569b12eaa00;
-	Node0x5569b12ea9b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{%9}"];
-	Node0x5569b12ea9b0 -> Node0x5569b12eaa00;
-	Node0x5569b12eaa00 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%11}"];
+	Node0x1b95340 [shape=record,label="{%0|{<s0>T|<s1>F}}"];
+	Node0x1b95340:s0 -> Node0x1b9a030;
+	Node0x1b95340:s1 -> Node0x1b9a080;
+	Node0x1b9a030 [shape=record,label="{%7}"];
+	Node0x1b9a030 -> Node0x1b9a0d0;
+	Node0x1b9a080 [shape=record,label="{%9}"];
+	Node0x1b9a080 -> Node0x1b9a0d0;
+	Node0x1b9a0d0 [shape=record,label="{%11}"];
 }

@@ -1,0 +1,7 @@
+digraph "Post dominator tree for 'linear' function" {
+	label="Post dominator tree for 'linear' function";
+
+	Node0xe297d0 [shape=record,label="{Post dominance root node}"];
+	Node0xe297d0 -> Node0xe29c20;
+	Node0xe29c20 [shape=record,label="{%0}"];
+}

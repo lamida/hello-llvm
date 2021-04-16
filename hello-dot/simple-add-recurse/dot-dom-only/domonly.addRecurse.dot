@@ -1,0 +1,11 @@
+digraph "Dominator tree for 'addRecurse' function" {
+	label="Dominator tree for 'addRecurse' function";
+
+	Node0x1296900 [shape=record,label="{%2}"];
+	Node0x1296900 -> Node0x1296d50;
+	Node0x1296900 -> Node0x1296d90;
+	Node0x1296900 -> Node0x1296dd0;
+	Node0x1296d50 [shape=record,label="{%8}"];
+	Node0x1296d90 [shape=record,label="{%16}"];
+	Node0x1296dd0 [shape=record,label="{%10}"];
+}

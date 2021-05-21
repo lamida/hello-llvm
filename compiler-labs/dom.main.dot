@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'main' function" {
+	label="Dominator tree for 'main' function";
+
+	Node0x1f53360 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  call void @a(i32 10)\l  call void @a(i32 6)\l  ret i32 0\l}"];
+}

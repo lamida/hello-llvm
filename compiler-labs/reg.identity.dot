@@ -1,0 +1,66 @@
+digraph "Region Graph for 'identity' function" {
+	label="Region Graph for 'identity' function";
+
+	Node0x2192570 [shape=record,label="{%2:\l  %3 = alloca i32**, align 8\l  %4 = alloca i32, align 4\l  %5 = alloca i32, align 4\l  %6 = alloca i32, align 4\l  store i32** %0, i32*** %3, align 8\l  store i32 %1, i32* %4, align 4\l  store i32 0, i32* %5, align 4\l  br label %7\l}"];
+	Node0x2192570 -> Node0x2194910;
+	Node0x2194910 [shape=record,label="{%7:\l7:                                                \l  %8 = load i32, i32* %5, align 4\l  %9 = load i32, i32* %4, align 4\l  %10 = icmp slt i32 %8, %9\l  br i1 %10, label %11, label %32\l}"];
+	Node0x2194910 -> Node0x2194a60;
+	Node0x2194910 -> Node0x2194ac0;
+	Node0x2194a60 [shape=record,label="{%11:\l11:                                               \l  store i32 0, i32* %6, align 4\l  br label %12\l}"];
+	Node0x2194a60 -> Node0x2194cd0;
+	Node0x2194cd0 [shape=record,label="{%12:\l12:                                               \l  %13 = load i32, i32* %6, align 4\l  %14 = load i32, i32* %4, align 4\l  %15 = icmp slt i32 %13, %14\l  br i1 %15, label %16, label %28\l}"];
+	Node0x2194cd0 -> Node0x2194d30;
+	Node0x2194cd0 -> Node0x2195030;
+	Node0x2194d30 [shape=record,label="{%16:\l16:                                               \l  %17 = load i32**, i32*** %3, align 8\l  %18 = load i32, i32* %5, align 4\l  %19 = sext i32 %18 to i64\l  %20 = getelementptr inbounds i32*, i32** %17, i64 %19\l  %21 = load i32*, i32** %20, align 8\l  %22 = load i32, i32* %6, align 4\l  %23 = sext i32 %22 to i64\l  %24 = getelementptr inbounds i32, i32* %21, i64 %23\l  store i32 0, i32* %24, align 4\l  br label %25\l}"];
+	Node0x2194d30 -> Node0x2195710;
+	Node0x2195710 [shape=record,label="{%25:\l25:                                               \l  %26 = load i32, i32* %6, align 4\l  %27 = add nsw i32 %26, 1\l  store i32 %27, i32* %6, align 4\l  br label %12\l}"];
+	Node0x2195710 -> Node0x2194cd0[constraint=false];
+	Node0x2195030 [shape=record,label="{%28:\l28:                                               \l  br label %29\l}"];
+	Node0x2195030 -> Node0x21959b0;
+	Node0x21959b0 [shape=record,label="{%29:\l29:                                               \l  %30 = load i32, i32* %5, align 4\l  %31 = add nsw i32 %30, 1\l  store i32 %31, i32* %5, align 4\l  br label %7\l}"];
+	Node0x21959b0 -> Node0x2194910[constraint=false];
+	Node0x2194ac0 [shape=record,label="{%32:\l32:                                               \l  store i32 0, i32* %5, align 4\l  br label %33\l}"];
+	Node0x2194ac0 -> Node0x2195a70;
+	Node0x2195a70 [shape=record,label="{%33:\l33:                                               \l  %34 = load i32, i32* %5, align 4\l  %35 = load i32, i32* %4, align 4\l  %36 = icmp slt i32 %34, %35\l  br i1 %36, label %37, label %49\l}"];
+	Node0x2195a70 -> Node0x2195ee0;
+	Node0x2195a70 -> Node0x2195f40;
+	Node0x2195ee0 [shape=record,label="{%37:\l37:                                               \l  %38 = load i32**, i32*** %3, align 8\l  %39 = load i32, i32* %5, align 4\l  %40 = sext i32 %39 to i64\l  %41 = getelementptr inbounds i32*, i32** %38, i64 %40\l  %42 = load i32*, i32** %41, align 8\l  %43 = load i32, i32* %6, align 4\l  %44 = sext i32 %43 to i64\l  %45 = getelementptr inbounds i32, i32* %42, i64 %44\l  store i32 1, i32* %45, align 4\l  br label %46\l}"];
+	Node0x2195ee0 -> Node0x2195f60;
+	Node0x2195f60 [shape=record,label="{%46:\l46:                                               \l  %47 = load i32, i32* %5, align 4\l  %48 = add nsw i32 %47, 1\l  store i32 %48, i32* %5, align 4\l  br label %33\l}"];
+	Node0x2195f60 -> Node0x2195a70[constraint=false];
+	Node0x2195f40 [shape=record,label="{%49:\l49:                                               \l  ret void\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x216f820 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x2192450 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0x2191f40 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0x2194cd0;
+              Node0x2194d30;
+              Node0x2195710;
+            }
+            Node0x2194910;
+            Node0x2194a60;
+            Node0x2195030;
+            Node0x21959b0;
+          }
+          subgraph cluster_0x21923d0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x2195a70;
+            Node0x2195ee0;
+            Node0x2195f60;
+          }
+          Node0x2192570;
+          Node0x2194ac0;
+          Node0x2195f40;
+        }
+}

@@ -1,12 +1,12 @@
 digraph "Region Graph for 'get_privileged_info' function" {
 	label="Region Graph for 'get_privileged_info' function";
 
-	Node0x21a5180 [shape=record,label="{%0}"];
+	Node0xe1cc10 [shape=record,label="{%0}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x21a5100 {
+        subgraph cluster_0xdfa100 {
           label = "";
           style = filled;
           color = 1
-          Node0x21a5180;
+          Node0xe1cc10;
         }
 }

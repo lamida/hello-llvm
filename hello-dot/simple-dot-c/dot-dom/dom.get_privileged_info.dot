@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'get_privileged_info' function" {
 	label="Dominator tree for 'get_privileged_info' function";
 
-	Node0x263c3e0 [shape=record,label="{%0:\l  ret i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.2, i64 0, i64 0)\l}"];
+	Node0x1cae3e0 [shape=record,label="{%0:\l  ret i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.2, i64 0, i64 0)\l}"];
 }

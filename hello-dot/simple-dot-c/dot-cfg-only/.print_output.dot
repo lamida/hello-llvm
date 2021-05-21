@@ -1,5 +1,5 @@
 digraph "CFG for 'print_output' function" {
 	label="CFG for 'print_output' function";
 
-	Node0x908ed0 [shape=record,label="{%1}"];
+	Node0x1355ed0 [shape=record,label="{%1}"];
 }

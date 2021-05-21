@@ -1,7 +1,7 @@
 digraph "Post dominator tree for 'get_input' function" {
 	label="Post dominator tree for 'get_input' function";
 
-	Node0xe0c9f0 [shape=record,label="{Post dominance root node}"];
-	Node0xe0c9f0 -> Node0xe0ce40;
-	Node0xe0ce40 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = call i32 @rand() #3\l  %3 = srem i32 %2, 2\l  store i32 %3, i32* %1, align 4\l  %4 = load i32, i32* %1, align 4\l  %5 = icmp eq i32 %4, 1\l  %6 = zext i1 %5 to i64\l  %7 = select i1 %5, i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str,\l... i64 0, i64 0), i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.1, i64\l... 0, i64 0)\l  ret i8* %7\l}"];
+	Node0x15089f0 [shape=record,label="{Post dominance root node}"];
+	Node0x15089f0 -> Node0x1508e40;
+	Node0x1508e40 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = call i32 @rand() #3\l  %3 = srem i32 %2, 2\l  store i32 %3, i32* %1, align 4\l  %4 = load i32, i32* %1, align 4\l  %5 = icmp eq i32 %4, 1\l  %6 = zext i1 %5 to i64\l  %7 = select i1 %5, i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str,\l... i64 0, i64 0), i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.1, i64\l... 0, i64 0)\l  ret i8* %7\l}"];
 }

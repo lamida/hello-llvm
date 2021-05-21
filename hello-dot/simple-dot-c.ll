@@ -5,11 +5,13 @@ target triple = "x86_64-pc-linux-gnu"
 
 @.str = private unnamed_addr constant [5 x i8] c"auth\00", align 1
 @.str.1 = private unnamed_addr constant [6 x i8] c"error\00", align 1
-@.str.2 = private unnamed_addr constant [20 x i8] c"you are privileged!\00", align 1
-@.str.3 = private unnamed_addr constant [9 x i8] c"Invalid!\00", align 1
-@.str.4 = private unnamed_addr constant [3 x i8] c"%s\00", align 1
-@.str.5 = private unnamed_addr constant [11 x i8] c"Exiting...\00", align 1
-@.str.6 = private unnamed_addr constant [1 x i8] zeroinitializer, align 1
+@.str.2 = private unnamed_addr constant [20 x i8] c"get privileged info\00", align 1
+@.str.3 = private unnamed_addr constant [20 x i8] c"you are privileged!\00", align 1
+@.str.4 = private unnamed_addr constant [22 x i8] c"get unprivileged info\00", align 1
+@.str.5 = private unnamed_addr constant [9 x i8] c"Invalid!\00", align 1
+@.str.6 = private unnamed_addr constant [3 x i8] c"%s\00", align 1
+@.str.7 = private unnamed_addr constant [11 x i8] c"Exiting...\00", align 1
+@.str.8 = private unnamed_addr constant [1 x i8] zeroinitializer, align 1
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local i8* @get_input() #0 {
@@ -29,12 +31,16 @@ declare dso_local i32 @rand() #1
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local i8* @get_privileged_info() #0 {
-  ret i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.2, i64 0, i64 0)
+  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.2, i64 0, i64 0))
+  ret i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.3, i64 0, i64 0)
 }
+
+declare dso_local i32 @printf(i8*, ...) #2
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local i8* @get_unprivileged_info() #0 {
-  ret i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str.3, i64 0, i64 0)
+  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str.4, i64 0, i64 0))
+  ret i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str.5, i64 0, i64 0)
 }
 
 ; Function Attrs: noinline nounwind optnone uwtable
@@ -42,15 +48,13 @@ define dso_local void @print_output(i8* %0) #0 {
   %2 = alloca i8*, align 8
   store i8* %0, i8** %2, align 8
   %3 = load i8*, i8** %2, align 8
-  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.4, i64 0, i64 0), i8* %3)
+  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.6, i64 0, i64 0), i8* %3)
   ret void
 }
 
-declare dso_local i32 @printf(i8*, ...) #2
-
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local void @my_terminate() #0 {
-  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11 x i8]* @.str.5, i64 0, i64 0))
+  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11 x i8]* @.str.7, i64 0, i64 0))
   ret void
 }
 
@@ -62,28 +66,31 @@ define dso_local i32 @main() #0 {
   store i32 0, i32* %1, align 4
   %4 = call i8* @get_input()
   store i8* %4, i8** %2, align 8
-  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.6, i64 0, i64 0), i8** %3, align 8
+  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.8, i64 0, i64 0), i8** %3, align 8
   %5 = load i8*, i8** %2, align 8
-  %6 = icmp eq i8* %5, getelementptr inbounds ([5 x i8], [5 x i8]* @.str, i64 0, i64 0)
-  br i1 %6, label %7, label %9
+  %6 = call i32 @strcmp(i8* %5, i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str, i64 0, i64 0))
+  %7 = icmp eq i32 %6, 0
+  br i1 %7, label %8, label %10
 
-7:                                                ; preds = %0
-  %8 = call i8* @get_privileged_info()
-  store i8* %8, i8** %3, align 8
-  br label %11
+8:                                                ; preds = %0
+  %9 = call i8* @get_privileged_info()
+  store i8* %9, i8** %3, align 8
+  br label %12
 
-9:                                                ; preds = %0
-  %10 = call i8* @get_unprivileged_info()
-  store i8* %10, i8** %3, align 8
-  br label %11
+10:                                               ; preds = %0
+  %11 = call i8* @get_unprivileged_info()
+  store i8* %11, i8** %3, align 8
+  br label %12
 
-11:                                               ; preds = %9, %7
-  %12 = load i8*, i8** %3, align 8
-  call void @print_output(i8* %12)
+12:                                               ; preds = %10, %8
+  %13 = load i8*, i8** %3, align 8
+  call void @print_output(i8* %13)
   call void @my_terminate()
-  %13 = load i32, i32* %1, align 4
-  ret i32 %13
+  %14 = load i32, i32* %1, align 4
+  ret i32 %14
 }
+
+declare dso_local i32 @strcmp(i8*, i8*) #2
 
 attributes #0 = { noinline nounwind optnone uwtable "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "min-legal-vector-width"="0" "no-infs-fp-math"="false" "no-jump-tables"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
 attributes #1 = { nounwind "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }

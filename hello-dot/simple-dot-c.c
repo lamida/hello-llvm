@@ -11,10 +11,12 @@ char* get_input() {
 }
 
 char* get_privileged_info() {
+    printf("get privileged info");
     return "you are privileged!";
 }
 
 char* get_unprivileged_info() {
+    printf("get unprivileged info");
     return "Invalid!";
 }
 
@@ -29,7 +31,7 @@ void my_terminate() {
 int main() {
     char* access = get_input();
     char* result = "";
-    if (access == "auth") {
+    if (strcmp(access, "auth") == 0) {
         result = get_privileged_info();
     } else {
         result = get_unprivileged_info();

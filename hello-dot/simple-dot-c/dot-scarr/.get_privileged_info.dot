@@ -1,0 +1,5 @@
+digraph "CFG for 'get_privileged_info' function" {
+	label="CFG for 'get_privileged_info' function";
+
+	Node0x55597f482b10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x55597f482b10 - Exit Point\":\l  %0 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([20 x i8], [20\l... x i8]* @.str.2, i64 0, i64 0))\l  ret i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.3, i64 0, i64 0)\l}"];
+}

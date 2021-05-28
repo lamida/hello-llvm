@@ -1,69 +1,69 @@
 digraph "Region Graph for 'main' function" {
 	label="Region Graph for 'main' function";
 
-	Node0x19bdb30 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  %4 = alloca i64, align 8\l  %5 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %6 = load i32, i32* %2, align 4\l  %7 = icmp eq i32 %6, 1\l  br i1 %7, label %8, label %9\l}"];
-	Node0x19bdb30 -> Node0x19bd850;
-	Node0x19bdb30 -> Node0x19bdb90;
-	Node0x19bd850 [shape=record,label="{%8:\l8:                                                \l  call void @b1()\l  br label %10\l}"];
-	Node0x19bd850 -> Node0x196ab60;
-	Node0x196ab60 [shape=record,label="{%10:\l10:                                               \l  call void @c()\l  call void @d()\l  store i32 10, i32* %3, align 4\l  br label %11\l}"];
-	Node0x196ab60 -> Node0x196add0;
-	Node0x196add0 [shape=record,label="{%11:\l11:                                               \l  %12 = load i32, i32* %3, align 4\l  %13 = icmp sgt i32 %12, 0\l  br i1 %13, label %14, label %17\l}"];
-	Node0x196add0 -> Node0x196b110;
-	Node0x196add0 -> Node0x196b170;
-	Node0x196b110 [shape=record,label="{%14:\l14:                                               \l  call void @f()\l  %15 = load i32, i32* %3, align 4\l  %16 = add nsw i32 %15, -1\l  store i32 %16, i32* %3, align 4\l  br label %11\l}"];
-	Node0x196b110 -> Node0x196add0[constraint=false];
-	Node0x196b170 [shape=record,label="{%17:\l17:                                               \l  %18 = call i32 (i64*, ...) bitcast (i32 (...)* @time to i32 (i64*,\l... ...)*)(i64* %4)\l  call void @srand(i32 %18) #3\l  %19 = call i32 @rand() #3\l  %20 = srem i32 %19, 4\l  %21 = add nsw i32 1, %20\l  store i32 %21, i32* %5, align 4\l  %22 = load i32, i32* %5, align 4\l  switch i32 %22, label %27 [\l    i32 1, label %23\l    i32 2, label %24\l    i32 3, label %25\l    i32 4, label %26\l  ]\l}"];
-	Node0x196b170 -> Node0x19be370;
-	Node0x196b170 -> Node0x19be950;
-	Node0x196b170 -> Node0x19be9b0;
-	Node0x196b170 -> Node0x19bea10;
-	Node0x196b170 -> Node0x19bea70;
-	Node0x19be370 [shape=record,label="{%27:\l27:                                               \l  %28 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.10, i64 0, i64 0))\l  br label %29\l}"];
-	Node0x19be370 -> Node0x19bead0;
-	Node0x19bead0 [shape=record,label="{%29:\l29:                                               \l  %30 = load i32, i32* %1, align 4\l  ret i32 %30\l}"];
-	Node0x19be950 [shape=record,label="{%23:\l23:                                               \l  call void @g1()\l  br label %29\l}"];
-	Node0x19be950 -> Node0x19bead0;
-	Node0x19be9b0 [shape=record,label="{%24:\l24:                                               \l  call void @g2()\l  br label %29\l}"];
-	Node0x19be9b0 -> Node0x19bead0;
-	Node0x19bea10 [shape=record,label="{%25:\l25:                                               \l  call void @g3()\l  br label %29\l}"];
-	Node0x19bea10 -> Node0x19bead0;
-	Node0x19bea70 [shape=record,label="{%26:\l26:                                               \l  call void @g4()\l  br label %29\l}"];
-	Node0x19bea70 -> Node0x19bead0;
-	Node0x19bdb90 [shape=record,label="{%9:\l9:                                                \l  call void @b2()\l  br label %10\l}"];
-	Node0x19bdb90 -> Node0x196ab60;
+	Node0x25851d0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  %4 = alloca i64, align 8\l  %5 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %6 = load i32, i32* %2, align 4\l  %7 = icmp eq i32 %6, 1\l  br i1 %7, label %8, label %9\l}"];
+	Node0x25851d0 -> Node0x2583bb0;
+	Node0x25851d0 -> Node0x2584cf0;
+	Node0x2583bb0 [shape=record,label="{%8:\l8:                                                \l  call void @b1()\l  br label %10\l}"];
+	Node0x2583bb0 -> Node0x2584bd0;
+	Node0x2584bd0 [shape=record,label="{%10:\l10:                                               \l  call void @c()\l  call void @d()\l  store i32 10, i32* %3, align 4\l  br label %11\l}"];
+	Node0x2584bd0 -> Node0x25845c0;
+	Node0x25845c0 [shape=record,label="{%11:\l11:                                               \l  %12 = load i32, i32* %3, align 4\l  %13 = icmp sgt i32 %12, 0\l  br i1 %13, label %14, label %17\l}"];
+	Node0x25845c0 -> Node0x2584210;
+	Node0x25845c0 -> Node0x2583ee0;
+	Node0x2584210 [shape=record,label="{%14:\l14:                                               \l  call void @f()\l  %15 = load i32, i32* %3, align 4\l  %16 = add nsw i32 %15, -1\l  store i32 %16, i32* %3, align 4\l  br label %11\l}"];
+	Node0x2584210 -> Node0x25845c0[constraint=false];
+	Node0x2583ee0 [shape=record,label="{%17:\l17:                                               \l  %18 = call i32 (i64*, ...) bitcast (i32 (...)* @time to i32 (i64*,\l... ...)*)(i64* %4)\l  call void @srand(i32 %18) #3\l  %19 = call i32 @rand() #3\l  %20 = srem i32 %19, 4\l  %21 = add nsw i32 1, %20\l  store i32 %21, i32* %5, align 4\l  %22 = load i32, i32* %5, align 4\l  switch i32 %22, label %27 [\l    i32 1, label %23\l    i32 2, label %24\l    i32 3, label %25\l    i32 4, label %26\l  ]\l}"];
+	Node0x2583ee0 -> Node0x258adb0;
+	Node0x2583ee0 -> Node0x258aec0;
+	Node0x2583ee0 -> Node0x257e720;
+	Node0x2583ee0 -> Node0x2582a10;
+	Node0x2583ee0 -> Node0x25831f0;
+	Node0x258adb0 [shape=record,label="{%27:\l27:                                               \l  %28 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.10, i64 0, i64 0))\l  br label %29\l}"];
+	Node0x258adb0 -> Node0x2582cb0;
+	Node0x2582cb0 [shape=record,label="{%29:\l29:                                               \l  %30 = load i32, i32* %1, align 4\l  ret i32 %30\l}"];
+	Node0x258aec0 [shape=record,label="{%23:\l23:                                               \l  call void @g1()\l  br label %29\l}"];
+	Node0x258aec0 -> Node0x2582cb0;
+	Node0x257e720 [shape=record,label="{%24:\l24:                                               \l  call void @g2()\l  br label %29\l}"];
+	Node0x257e720 -> Node0x2582cb0;
+	Node0x2582a10 [shape=record,label="{%25:\l25:                                               \l  call void @g3()\l  br label %29\l}"];
+	Node0x2582a10 -> Node0x2582cb0;
+	Node0x25831f0 [shape=record,label="{%26:\l26:                                               \l  call void @g4()\l  br label %29\l}"];
+	Node0x25831f0 -> Node0x2582cb0;
+	Node0x2584cf0 [shape=record,label="{%9:\l9:                                                \l  call void @b2()\l  br label %10\l}"];
+	Node0x2584cf0 -> Node0x2584bd0;
 	colorscheme = "paired12"
-        subgraph cluster_0x196bd60 {
+        subgraph cluster_0x25884f0 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0x196a5f0 {
+          subgraph cluster_0x25aa5f0 {
             label = "";
             style = filled;
             color = 3
-            Node0x19bdb30;
-            Node0x19bd850;
-            Node0x19bdb90;
+            Node0x25851d0;
+            Node0x2583bb0;
+            Node0x2584cf0;
           }
-          subgraph cluster_0x196a570 {
+          subgraph cluster_0x25aa570 {
             label = "";
             style = filled;
             color = 3
-            Node0x196add0;
-            Node0x196b110;
+            Node0x25845c0;
+            Node0x2584210;
           }
-          subgraph cluster_0x196a4f0 {
+          subgraph cluster_0x25aa4f0 {
             label = "";
             style = filled;
             color = 3
-            Node0x196b170;
-            Node0x19be370;
-            Node0x19be950;
-            Node0x19be9b0;
-            Node0x19bea10;
-            Node0x19bea70;
+            Node0x2583ee0;
+            Node0x258adb0;
+            Node0x258aec0;
+            Node0x257e720;
+            Node0x2582a10;
+            Node0x25831f0;
           }
-          Node0x196ab60;
-          Node0x19bead0;
+          Node0x2584bd0;
+          Node0x2582cb0;
         }
 }

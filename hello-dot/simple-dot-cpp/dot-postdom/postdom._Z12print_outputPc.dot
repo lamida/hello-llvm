@@ -1,7 +1,7 @@
 digraph "Post dominator tree for '_Z12print_outputPc' function" {
 	label="Post dominator tree for '_Z12print_outputPc' function";
 
-	Node0x21a3520 [shape=record,label="{Post dominance root node}"];
-	Node0x21a3520 -> Node0x21a3a60;
-	Node0x21a3a60 [shape=record,label="{%1:\l  %2 = alloca i8*, align 8\l  store i8* %0, i8** %2, align 8\l  %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str.4, i64 0, i64 0))\l  ret void\l}"];
+	Node0x1a1c520 [shape=record,label="{Post dominance root node}"];
+	Node0x1a1c520 -> Node0x1a1ca60;
+	Node0x1a1ca60 [shape=record,label="{%1:\l  %2 = alloca i8*, align 8\l  store i8* %0, i8** %2, align 8\l  %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str.4, i64 0, i64 0))\l  ret void\l}"];
 }

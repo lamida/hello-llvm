@@ -1,14 +1,14 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x17e10f0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  call void @sA()\l  store i32 0, i32* %2, align 4\l  br label %3\l}"];
-	Node0x17e10f0 -> Node0x17e12b0;
-	Node0x17e12b0 [shape=record,label="{%3:\l3:                                                \l  %4 = load i32, i32* %2, align 4\l  %5 = icmp slt i32 %4, 10\l  br i1 %5, label %6, label %11\l|{<s0>T|<s1>F}}"];
-	Node0x17e12b0:s0 -> Node0x17e1300;
-	Node0x17e12b0:s1 -> Node0x17e13a0;
-	Node0x17e1300 [shape=record,label="{%6:\l6:                                                \l  %7 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str.2, i64 0, i64 0))\l  br label %8\l}"];
-	Node0x17e1300 -> Node0x17e1350;
-	Node0x17e1350 [shape=record,label="{%8:\l8:                                                \l  %9 = load i32, i32* %2, align 4\l  %10 = add nsw i32 %9, 1\l  store i32 %10, i32* %2, align 4\l  br label %3\l}"];
-	Node0x17e1350 -> Node0x17e12b0;
-	Node0x17e13a0 [shape=record,label="{%11:\l11:                                               \l  %12 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str.3, i64 0, i64 0))\l  call void @my_terminate()\l  %13 = load i32, i32* %1, align 4\l  ret i32 %13\l}"];
+	Node0x14ec0f0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  call void @sA()\l  store i32 0, i32* %2, align 4\l  br label %3\l}"];
+	Node0x14ec0f0 -> Node0x14ec2b0;
+	Node0x14ec2b0 [shape=record,label="{%3:\l3:                                                \l  %4 = load i32, i32* %2, align 4\l  %5 = icmp slt i32 %4, 10\l  br i1 %5, label %6, label %11\l|{<s0>T|<s1>F}}"];
+	Node0x14ec2b0:s0 -> Node0x14ec300;
+	Node0x14ec2b0:s1 -> Node0x14ec3a0;
+	Node0x14ec300 [shape=record,label="{%6:\l6:                                                \l  %7 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str.2, i64 0, i64 0))\l  br label %8\l}"];
+	Node0x14ec300 -> Node0x14ec350;
+	Node0x14ec350 [shape=record,label="{%8:\l8:                                                \l  %9 = load i32, i32* %2, align 4\l  %10 = add nsw i32 %9, 1\l  store i32 %10, i32* %2, align 4\l  br label %3\l}"];
+	Node0x14ec350 -> Node0x14ec2b0;
+	Node0x14ec3a0 [shape=record,label="{%11:\l11:                                               \l  %12 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str.3, i64 0, i64 0))\l  call void @my_terminate()\l  %13 = load i32, i32* %1, align 4\l  ret i32 %13\l}"];
 }

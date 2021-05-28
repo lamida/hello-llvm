@@ -1,0 +1,12 @@
+digraph "Region Graph for 'g2' function" {
+	label="Region Graph for 'g2' function";
+
+	Node0x22cbde0 [shape=record,label="{%0}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x22cbd60 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0x22cbde0;
+        }
+}

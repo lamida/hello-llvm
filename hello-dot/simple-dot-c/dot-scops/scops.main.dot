@@ -1,27 +1,27 @@
 digraph "Scop Graph for 'main' function" {
 	label="Scop Graph for 'main' function";
 
-	Node0x26be090 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i8*, align 8\l  %3 = alloca i8*, align 8\l  store i32 0, i32* %1, align 4\l  %4 = call i8* @get_input()\l  store i8* %4, i8** %2, align 8\l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.6, i64 0, i64\l... 0), i8** %3, align 8\l  %5 = load i8*, i8** %2, align 8\l  %6 = icmp eq i8* %5, getelementptr inbounds ([5 x i8], [5 x i8]* @.str, i64\l... 0, i64 0)\l  br i1 %6, label %7, label %9\l}"];
-	Node0x26be090 -> Node0x26bf520;
-	Node0x26be090 -> Node0x26bf200;
-	Node0x26bf520 [shape=record,label="{%7:\l7:                                                \l  %8 = call i8* @get_privileged_info()\l  store i8* %8, i8** %3, align 8\l  br label %11\l}"];
-	Node0x26bf520 -> Node0x26c1d00;
-	Node0x26c1d00 [shape=record,label="{%11:\l11:                                               \l  %12 = load i8*, i8** %3, align 8\l  call void @print_output(i8* %12)\l  call void @my_terminate()\l  %13 = load i32, i32* %1, align 4\l  ret i32 %13\l}"];
-	Node0x26bf200 [shape=record,label="{%9:\l9:                                                \l  %10 = call i8* @get_unprivileged_info()\l  store i8* %10, i8** %3, align 8\l  br label %11\l}"];
-	Node0x26bf200 -> Node0x26c1d00;
+	Node0xf15090 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i8*, align 8\l  %3 = alloca i8*, align 8\l  store i32 0, i32* %1, align 4\l  %4 = call i8* @get_input()\l  store i8* %4, i8** %2, align 8\l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.6, i64 0, i64\l... 0), i8** %3, align 8\l  %5 = load i8*, i8** %2, align 8\l  %6 = icmp eq i8* %5, getelementptr inbounds ([5 x i8], [5 x i8]* @.str, i64\l... 0, i64 0)\l  br i1 %6, label %7, label %9\l}"];
+	Node0xf15090 -> Node0xf16520;
+	Node0xf15090 -> Node0xf16200;
+	Node0xf16520 [shape=record,label="{%7:\l7:                                                \l  %8 = call i8* @get_privileged_info()\l  store i8* %8, i8** %3, align 8\l  br label %11\l}"];
+	Node0xf16520 -> Node0xf18d00;
+	Node0xf18d00 [shape=record,label="{%11:\l11:                                               \l  %12 = load i8*, i8** %3, align 8\l  call void @print_output(i8* %12)\l  call void @my_terminate()\l  %13 = load i32, i32* %1, align 4\l  ret i32 %13\l}"];
+	Node0xf16200 [shape=record,label="{%9:\l9:                                                \l  %10 = call i8* @get_unprivileged_info()\l  store i8* %10, i8** %3, align 8\l  br label %11\l}"];
+	Node0xf16200 -> Node0xf18d00;
 	colorscheme = "paired12"
-        subgraph cluster_0x26bd3b0 {
+        subgraph cluster_0xebe9c0 {
           label = "";
           style = solid;
           color = 1
-          subgraph cluster_0x26679c0 {
+          subgraph cluster_0xf143b0 {
             label = "";
             style = solid;
             color = 6
-            Node0x26be090;
-            Node0x26bf520;
-            Node0x26bf200;
+            Node0xf15090;
+            Node0xf16520;
+            Node0xf16200;
           }
-          Node0x26c1d00;
+          Node0xf18d00;
         }
 }

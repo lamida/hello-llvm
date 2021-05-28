@@ -1,1 +1,0 @@
-simple linear show the program without branch. Single entry and single exit. Hence this program only contain a single basic block.

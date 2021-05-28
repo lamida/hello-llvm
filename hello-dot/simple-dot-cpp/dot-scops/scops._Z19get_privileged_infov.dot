@@ -1,12 +1,12 @@
 digraph "Scop Graph for '_Z19get_privileged_infov' function" {
 	label="Scop Graph for '_Z19get_privileged_infov' function";
 
-	Node0x265bdd0 [shape=record,label="{%0:\l  ret i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.2, i64 0, i64 0)\l}"];
+	Node0x24bcdd0 [shape=record,label="{%0:\l  ret i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.2, i64 0, i64 0)\l}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x267ef40 {
+        subgraph cluster_0x24dff40 {
           label = "";
           style = solid;
           color = 1
-          Node0x265bdd0;
+          Node0x24bcdd0;
         }
 }

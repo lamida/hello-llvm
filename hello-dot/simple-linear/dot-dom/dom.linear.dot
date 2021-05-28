@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'linear' function" {
 	label="Dominator tree for 'linear' function";
 
-	Node0x11fd780 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 10, i32* %1, align 4\l  store i32 100, i32* %2, align 4\l  %4 = load i32, i32* %1, align 4\l  %5 = load i32, i32* %2, align 4\l  %6 = mul nsw i32 %4, %5\l  store i32 %6, i32* %3, align 4\l  %7 = load i32, i32* %3, align 4\l  %8 = sext i32 %7 to i64\l  %9 = inttoptr i64 %8 to i8*\l  %10 = call i32 (i8*, ...) @printf(i8* %9)\l  ret void\l}"];
+	Node0x217c780 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 10, i32* %1, align 4\l  store i32 100, i32* %2, align 4\l  %4 = load i32, i32* %1, align 4\l  %5 = load i32, i32* %2, align 4\l  %6 = mul nsw i32 %4, %5\l  store i32 %6, i32* %3, align 4\l  %7 = load i32, i32* %3, align 4\l  %8 = sext i32 %7 to i64\l  %9 = inttoptr i64 %8 to i8*\l  %10 = call i32 (i8*, ...) @printf(i8* %9)\l  ret void\l}"];
 }

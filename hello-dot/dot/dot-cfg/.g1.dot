@@ -1,5 +1,0 @@
-digraph "CFG for 'g1' function" {
-	label="CFG for 'g1' function";
-
-	Node0x212ee00 [shape=record,label="{%0:\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14\l... x i8]* @.str.6, i64 0, i64 0))\l  ret void\l}"];
-}

@@ -1,5 +1,5 @@
 digraph "CFG for '_Z12my_terminatev' function" {
 	label="CFG for '_Z12my_terminatev' function";
 
-	Node0x1e5d9f0 [shape=record,label="{%0:\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.5, i64 0, i64 0))\l  ret void\l}"];
+	Node0x9779f0 [shape=record,label="{%0:\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.5, i64 0, i64 0))\l  ret void\l}"];
 }

@@ -1,12 +1,12 @@
 digraph "Region Graph for 'print_output' function" {
 	label="Region Graph for 'print_output' function";
 
-	Node0xdfa180 [shape=record,label="{%1}"];
+	Node0x2774180 [shape=record,label="{%1}"];
 	colorscheme = "paired12"
-        subgraph cluster_0xdfa100 {
+        subgraph cluster_0x2774100 {
           label = "";
           style = filled;
           color = 1
-          Node0xdfa180;
+          Node0x2774180;
         }
 }

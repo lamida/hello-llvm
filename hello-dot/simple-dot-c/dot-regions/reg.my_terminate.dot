@@ -1,12 +1,12 @@
 digraph "Region Graph for 'my_terminate' function" {
 	label="Region Graph for 'my_terminate' function";
 
-	Node0xffd180 [shape=record,label="{%0:\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11\l... x i8]* @.str.5, i64 0, i64 0))\l  ret void\l}"];
+	Node0x2241180 [shape=record,label="{%0:\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11\l... x i8]* @.str.5, i64 0, i64 0))\l  ret void\l}"];
 	colorscheme = "paired12"
-        subgraph cluster_0xffd100 {
+        subgraph cluster_0x2241100 {
           label = "";
           style = filled;
           color = 1
-          Node0xffd180;
+          Node0x2241180;
         }
 }

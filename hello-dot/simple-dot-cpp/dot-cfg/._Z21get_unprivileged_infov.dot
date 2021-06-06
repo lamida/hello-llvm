@@ -1,5 +1,0 @@
-digraph "CFG for '_Z21get_unprivileged_infov' function" {
-	label="CFG for '_Z21get_unprivileged_infov' function";
-
-	Node0x977760 [shape=record,label="{%0:\l  ret i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str.3, i64 0, i64 0)\l}"];
-}

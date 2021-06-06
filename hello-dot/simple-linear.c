@@ -6,3 +6,7 @@ void linear() {
     int c = a * b;
     printf(c);
 }
+
+int main() {
+    linear();
+}

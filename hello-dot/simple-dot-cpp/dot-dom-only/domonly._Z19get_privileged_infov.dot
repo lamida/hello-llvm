@@ -1,5 +1,0 @@
-digraph "Dominator tree for '_Z19get_privileged_infov' function" {
-	label="Dominator tree for '_Z19get_privileged_infov' function";
-
-	Node0x1d18980 [shape=record,label="{%0}"];
-}

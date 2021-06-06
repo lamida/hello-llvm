@@ -1,5 +1,0 @@
-digraph "CFG for 'print_output' function" {
-	label="CFG for 'print_output' function";
-
-	Node0x1c3bed0 [shape=record,label="{%1}"];
-}

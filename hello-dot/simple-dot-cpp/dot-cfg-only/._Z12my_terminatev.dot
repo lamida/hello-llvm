@@ -1,5 +1,0 @@
-digraph "CFG for '_Z12my_terminatev' function" {
-	label="CFG for '_Z12my_terminatev' function";
-
-	Node0x10d39f0 [shape=record,label="{%0}"];
-}

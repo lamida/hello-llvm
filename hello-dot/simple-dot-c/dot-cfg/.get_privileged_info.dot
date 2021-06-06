@@ -1,5 +1,0 @@
-digraph "CFG for 'get_privileged_info' function" {
-	label="CFG for 'get_privileged_info' function";
-
-	Node0x160f1e0 [shape=record,label="{%0:\l  ret i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.2, i64 0, i64 0)\l}"];
-}

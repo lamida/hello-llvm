@@ -1,5 +1,0 @@
-digraph "CFG for '_Z9get_inputv' function" {
-	label="CFG for '_Z9get_inputv' function";
-
-	Node0x10ccab0 [shape=record,label="{%0}"];
-}

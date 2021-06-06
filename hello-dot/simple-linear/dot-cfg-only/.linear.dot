@@ -1,5 +1,0 @@
-digraph "CFG for 'linear' function" {
-	label="CFG for 'linear' function";
-
-	Node0x1ac3b50 [shape=record,label="{%0}"];
-}

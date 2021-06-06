@@ -19,3 +19,5 @@ ls *.dot | xargs -I{} dot -Tpng {} -o {}.png
 ls .*.dot | xargs -I{} dot -Tpng {} -o {}.png
 cd ../..
 done
+
+./gen-scarr.sh $title

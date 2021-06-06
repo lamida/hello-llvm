@@ -1,1 +1,1 @@
-add_executable(llvm-dot llvm-dot.c simple-add-recurse.c simple-linear.c)
+add_executable(llvm-dot branches.c simple-add-recurse.c simple-linear.c)

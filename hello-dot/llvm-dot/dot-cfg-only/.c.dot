@@ -1,5 +1,0 @@
-digraph "CFG for 'c' function" {
-	label="CFG for 'c' function";
-
-	Node0x23bbad0 [shape=record,label="{%0}"];
-}

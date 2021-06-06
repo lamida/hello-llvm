@@ -1,5 +1,0 @@
-digraph "Dominator tree for 'g4' function" {
-	label="Dominator tree for 'g4' function";
-
-	Node0x206d2e0 [shape=record,label="{%0}"];
-}

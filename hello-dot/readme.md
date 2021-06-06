@@ -1,8 +1,8 @@
 # LLVM opt dot* analyser
 
-In this folder we are generating different analyser viewer provided by LLVM. See gen-dot.sh to see how the graph is generated. We are using llvm-dot.c as the source file.
+In this folder we are generating different analyser viewer provided by LLVM. See gen-dot.sh to see how the graph is generated. 
 
-Set the dot folder for all dot files and png images of the generated graph.
+In LLVM legacy opt, we are using the following arguments to trigger some visualization of the program.
 
 * --dot-callgraph         - Print call graph to 'dot' file
 * --dot-cfg               - Print CFG of function to 'dot' file
@@ -20,3 +20,12 @@ Need graphviz. Install using:
 ```
 sudo apt-get install graphviz
 ```
+
+## Generating dot* Output
+
+To generate dot graph output, use `./gen.sh` script. The script accept the c source filename (without .c extension). After 
+the script run, it will create a folder with the name and subfolders with all the analyser above executed.
+
+## ScaRR
+
+We are creating a simple LLVM pass that will put the information about checkpoint and LoA in the CFG. 

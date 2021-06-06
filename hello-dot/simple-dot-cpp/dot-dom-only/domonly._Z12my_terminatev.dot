@@ -1,5 +1,0 @@
-digraph "Dominator tree for '_Z12my_terminatev' function" {
-	label="Dominator tree for '_Z12my_terminatev' function";
-
-	Node0x1d18980 [shape=record,label="{%0}"];
-}

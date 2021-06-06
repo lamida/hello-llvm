@@ -1,0 +1,1 @@
+echo "branches\nscar\nscar-ext\nsimple-linear\nsimple-loop\n" | xargs -I{} ./gen.sh {}

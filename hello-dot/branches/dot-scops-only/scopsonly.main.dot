@@ -1,0 +1,69 @@
+digraph "Scop Graph for 'main' function" {
+	label="Scop Graph for 'main' function";
+
+	Node0x1b5b1d0 [shape=record,label="{%0}"];
+	Node0x1b5b1d0 -> Node0x1b30ff0;
+	Node0x1b5b1d0 -> Node0x1b5bd00;
+	Node0x1b30ff0 [shape=record,label="{%8}"];
+	Node0x1b30ff0 -> Node0x1b59bb0;
+	Node0x1b59bb0 [shape=record,label="{%10}"];
+	Node0x1b59bb0 -> Node0x1b25390;
+	Node0x1b25390 [shape=record,label="{%11}"];
+	Node0x1b25390 -> Node0x1b53e00;
+	Node0x1b25390 -> Node0x1b61f70;
+	Node0x1b53e00 [shape=record,label="{%14}"];
+	Node0x1b53e00 -> Node0x1b25390[constraint=false];
+	Node0x1b61f70 [shape=record,label="{%17}"];
+	Node0x1b61f70 -> Node0x1b60e20;
+	Node0x1b61f70 -> Node0x1b60bf0;
+	Node0x1b61f70 -> Node0x1b58cb0;
+	Node0x1b61f70 -> Node0x1b58f50;
+	Node0x1b61f70 -> Node0x1b96e70;
+	Node0x1b60e20 [shape=record,label="{%28}"];
+	Node0x1b60e20 -> Node0x1b96ed0;
+	Node0x1b96ed0 [shape=record,label="{%30}"];
+	Node0x1b60bf0 [shape=record,label="{%24}"];
+	Node0x1b60bf0 -> Node0x1b96ed0;
+	Node0x1b58cb0 [shape=record,label="{%25}"];
+	Node0x1b58cb0 -> Node0x1b96ed0;
+	Node0x1b58f50 [shape=record,label="{%26}"];
+	Node0x1b58f50 -> Node0x1b96ed0;
+	Node0x1b96e70 [shape=record,label="{%27}"];
+	Node0x1b96e70 -> Node0x1b96ed0;
+	Node0x1b5bd00 [shape=record,label="{%9}"];
+	Node0x1b5bd00 -> Node0x1b59bb0;
+	colorscheme = "paired12"
+        subgraph cluster_0x1b2d650 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1b88f50 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x1b5b1d0;
+            Node0x1b30ff0;
+            Node0x1b5bd00;
+          }
+          subgraph cluster_0x1b88ed0 {
+            label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+            style = solid;
+            color = 6
+            Node0x1b25390;
+            Node0x1b53e00;
+          }
+          subgraph cluster_0x1b5e560 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x1b61f70;
+            Node0x1b60e20;
+            Node0x1b60bf0;
+            Node0x1b58cb0;
+            Node0x1b58f50;
+            Node0x1b96e70;
+          }
+          Node0x1b59bb0;
+          Node0x1b96ed0;
+        }
+}

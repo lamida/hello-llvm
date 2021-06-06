@@ -1,0 +1,69 @@
+digraph "Scop Graph for 'main' function" {
+	label="Scop Graph for 'main' function";
+
+	Node0x14101d0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  %4 = alloca i64, align 8\l  %5 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %6 = load i32, i32* %2, align 4\l  %7 = icmp eq i32 %6, 1\l  br i1 %7, label %8, label %9\l}"];
+	Node0x14101d0 -> Node0x1415e20;
+	Node0x14101d0 -> Node0x1410d00;
+	Node0x1415e20 [shape=record,label="{%8:\l8:                                                \l  call void @b1()\l  br label %10\l}"];
+	Node0x1415e20 -> Node0x140ebb0;
+	Node0x140ebb0 [shape=record,label="{%10:\l10:                                               \l  call void @c()\l  call void @d()\l  store i32 10, i32* %3, align 4\l  br label %11\l}"];
+	Node0x140ebb0 -> Node0x13da390;
+	Node0x13da390 [shape=record,label="{%11:\l11:                                               \l  %12 = load i32, i32* %3, align 4\l  %13 = icmp sgt i32 %12, 0\l  br i1 %13, label %14, label %17\l}"];
+	Node0x13da390 -> Node0x1408e00;
+	Node0x13da390 -> Node0x1416f70;
+	Node0x1408e00 [shape=record,label="{%14:\l14:                                               \l  call void @f()\l  %15 = load i32, i32* %3, align 4\l  %16 = add nsw i32 %15, -1\l  store i32 %16, i32* %3, align 4\l  br label %11\l}"];
+	Node0x1408e00 -> Node0x13da390[constraint=false];
+	Node0x1416f70 [shape=record,label="{%17:\l17:                                               \l  %18 = call i64 @time(i64* %4) #3\l  %19 = trunc i64 %18 to i32\l  call void @srand(i32 %19) #3\l  %20 = call i32 @rand() #3\l  %21 = srem i32 %20, 4\l  %22 = add nsw i32 1, %21\l  store i32 %22, i32* %5, align 4\l  %23 = load i32, i32* %5, align 4\l  switch i32 %23, label %28 [\l    i32 1, label %24\l    i32 2, label %25\l    i32 3, label %26\l    i32 4, label %27\l  ]\l}"];
+	Node0x1416f70 -> Node0x143c660;
+	Node0x1416f70 -> Node0x1415bf0;
+	Node0x1416f70 -> Node0x140da10;
+	Node0x1416f70 -> Node0x140e1f0;
+	Node0x1416f70 -> Node0x144cc20;
+	Node0x143c660 [shape=record,label="{%28:\l28:                                               \l  %29 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.10, i64 0, i64 0))\l  br label %30\l}"];
+	Node0x143c660 -> Node0x144ce10;
+	Node0x144ce10 [shape=record,label="{%30:\l30:                                               \l  %31 = load i32, i32* %1, align 4\l  ret i32 %31\l}"];
+	Node0x1415bf0 [shape=record,label="{%24:\l24:                                               \l  call void @g1()\l  br label %30\l}"];
+	Node0x1415bf0 -> Node0x144ce10;
+	Node0x140da10 [shape=record,label="{%25:\l25:                                               \l  call void @g2()\l  br label %30\l}"];
+	Node0x140da10 -> Node0x144ce10;
+	Node0x140e1f0 [shape=record,label="{%26:\l26:                                               \l  call void @g3()\l  br label %30\l}"];
+	Node0x140e1f0 -> Node0x144ce10;
+	Node0x144cc20 [shape=record,label="{%27:\l27:                                               \l  call void @g4()\l  br label %30\l}"];
+	Node0x144cc20 -> Node0x144ce10;
+	Node0x1410d00 [shape=record,label="{%9:\l9:                                                \l  call void @b2()\l  br label %10\l}"];
+	Node0x1410d00 -> Node0x140ebb0;
+	colorscheme = "paired12"
+        subgraph cluster_0x13e2650 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x143e110 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x14101d0;
+            Node0x1415e20;
+            Node0x1410d00;
+          }
+          subgraph cluster_0x143e090 {
+            label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+            style = solid;
+            color = 6
+            Node0x13da390;
+            Node0x1408e00;
+          }
+          subgraph cluster_0x1413560 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x1416f70;
+            Node0x143c660;
+            Node0x1415bf0;
+            Node0x140da10;
+            Node0x140e1f0;
+            Node0x144cc20;
+          }
+          Node0x140ebb0;
+          Node0x144ce10;
+        }
+}

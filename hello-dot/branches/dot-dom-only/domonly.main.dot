@@ -1,0 +1,29 @@
+digraph "Dominator tree for 'main' function" {
+	label="Dominator tree for 'main' function";
+
+	Node0x8512d0 [shape=record,label="{%0}"];
+	Node0x8512d0 -> Node0x851310;
+	Node0x8512d0 -> Node0x851350;
+	Node0x8512d0 -> Node0x84f420;
+	Node0x851310 [shape=record,label="{%8}"];
+	Node0x851350 [shape=record,label="{%10}"];
+	Node0x851350 -> Node0x851390;
+	Node0x851390 [shape=record,label="{%11}"];
+	Node0x851390 -> Node0x8513d0;
+	Node0x851390 -> Node0x850460;
+	Node0x8513d0 [shape=record,label="{%14}"];
+	Node0x850460 [shape=record,label="{%17}"];
+	Node0x850460 -> Node0x8504a0;
+	Node0x850460 -> Node0x8504e0;
+	Node0x850460 -> Node0x850520;
+	Node0x850460 -> Node0x850560;
+	Node0x850460 -> Node0x8505a0;
+	Node0x850460 -> Node0x8505e0;
+	Node0x8504a0 [shape=record,label="{%28}"];
+	Node0x8504e0 [shape=record,label="{%30}"];
+	Node0x850520 [shape=record,label="{%24}"];
+	Node0x850560 [shape=record,label="{%25}"];
+	Node0x8505a0 [shape=record,label="{%26}"];
+	Node0x8505e0 [shape=record,label="{%27}"];
+	Node0x84f420 [shape=record,label="{%9}"];
+}

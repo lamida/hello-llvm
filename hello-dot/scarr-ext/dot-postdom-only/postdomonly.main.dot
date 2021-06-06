@@ -1,0 +1,13 @@
+digraph "Post dominator tree for 'main' function" {
+	label="Post dominator tree for 'main' function";
+
+	Node0x1e60c90 [shape=record,label="{Post dominance root node}"];
+	Node0x1e60c90 -> Node0x1e610e0;
+	Node0x1e610e0 [shape=record,label="{%12}"];
+	Node0x1e610e0 -> Node0x1e61120;
+	Node0x1e610e0 -> Node0x1e61160;
+	Node0x1e610e0 -> Node0x1e611a0;
+	Node0x1e61120 [shape=record,label="{%8}"];
+	Node0x1e61160 [shape=record,label="{%0}"];
+	Node0x1e611a0 [shape=record,label="{%10}"];
+}

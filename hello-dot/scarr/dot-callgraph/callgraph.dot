@@ -1,0 +1,35 @@
+digraph "Call graph" {
+	label="Call graph";
+
+	Node0xb123b0 [shape=record,label="{external node}"];
+	Node0xb123b0 -> Node0xb12450;
+	Node0xb123b0 -> Node0xb124f0;
+	Node0xb123b0 -> Node0xb129a0;
+	Node0xb123b0 -> Node0xb12a10;
+	Node0xb123b0 -> Node0xb12a80;
+	Node0xb123b0 -> Node0xb12af0;
+	Node0xb123b0 -> Node0xb12bc0;
+	Node0xb123b0 -> Node0xb12c60;
+	Node0xb123b0 -> Node0xb12d00;
+	Node0xb12450 [shape=record,label="{get_input}"];
+	Node0xb12450 -> Node0xb124f0;
+	Node0xb124f0 [shape=record,label="{rand}"];
+	Node0xb124f0 -> Node0xb123e0;
+	Node0xb129a0 [shape=record,label="{get_privileged_info}"];
+	Node0xb12a10 [shape=record,label="{get_unprivileged_info}"];
+	Node0xb12a80 [shape=record,label="{print_output}"];
+	Node0xb12a80 -> Node0xb12af0;
+	Node0xb12af0 [shape=record,label="{printf}"];
+	Node0xb12af0 -> Node0xb123e0;
+	Node0xb12bc0 [shape=record,label="{my_terminate}"];
+	Node0xb12bc0 -> Node0xb12af0;
+	Node0xb12c60 [shape=record,label="{main}"];
+	Node0xb12c60 -> Node0xb12450;
+	Node0xb12c60 -> Node0xb12d00;
+	Node0xb12c60 -> Node0xb129a0;
+	Node0xb12c60 -> Node0xb12a10;
+	Node0xb12c60 -> Node0xb12a80;
+	Node0xb12c60 -> Node0xb12bc0;
+	Node0xb12d00 [shape=record,label="{strcmp}"];
+	Node0xb12d00 -> Node0xb123e0;
+}

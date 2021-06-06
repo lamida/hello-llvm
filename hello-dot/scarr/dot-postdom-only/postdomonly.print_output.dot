@@ -1,0 +1,7 @@
+digraph "Post dominator tree for 'print_output' function" {
+	label="Post dominator tree for 'print_output' function";
+
+	Node0xb5f370 [shape=record,label="{Post dominance root node}"];
+	Node0xb5f370 -> Node0xb5f890;
+	Node0xb5f890 [shape=record,label="{%1}"];
+}

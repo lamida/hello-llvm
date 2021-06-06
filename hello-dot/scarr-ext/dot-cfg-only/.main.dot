@@ -1,0 +1,12 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x255c400 [shape=record,label="{%0|{<s0>T|<s1>F}}"];
+	Node0x255c400:s0 -> Node0x255d520;
+	Node0x255c400:s1 -> Node0x255d570;
+	Node0x255d520 [shape=record,label="{%8}"];
+	Node0x255d520 -> Node0x255d7e0;
+	Node0x255d570 [shape=record,label="{%10}"];
+	Node0x255d570 -> Node0x255d7e0;
+	Node0x255d7e0 [shape=record,label="{%12}"];
+}

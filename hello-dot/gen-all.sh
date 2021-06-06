@@ -1,1 +1,1 @@
-echo "branches\nscar\nscar-ext\nsimple-linear\nsimple-loop\n" | xargs -I{} ./gen.sh {}
+echo "branches\nscarr\nscarr-ext\nsimple-linear\nsimple-loop\n" | xargs -I{} ./gen.sh {}

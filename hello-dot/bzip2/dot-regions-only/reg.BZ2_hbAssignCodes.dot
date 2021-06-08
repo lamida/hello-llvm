@@ -1,0 +1,60 @@
+digraph "Region Graph for 'BZ2_hbAssignCodes' function" {
+	label="Region Graph for 'BZ2_hbAssignCodes' function";
+
+	Node0x10fe4a0 [shape=record,label="{%5}"];
+	Node0x10fe4a0 -> Node0x1040630;
+	Node0x1040630 [shape=record,label="{%15}"];
+	Node0x1040630 -> Node0x10f9240;
+	Node0x1040630 -> Node0x10721c0;
+	Node0x10f9240 [shape=record,label="{%19}"];
+	Node0x10f9240 -> Node0x1057310;
+	Node0x1057310 [shape=record,label="{%20}"];
+	Node0x1057310 -> Node0x10f8b80;
+	Node0x1057310 -> Node0x1110320;
+	Node0x10f8b80 [shape=record,label="{%24}"];
+	Node0x10f8b80 -> Node0x1110970;
+	Node0x10f8b80 -> Node0x104aec0;
+	Node0x1110970 [shape=record,label="{%33}"];
+	Node0x1110970 -> Node0x104aec0;
+	Node0x104aec0 [shape=record,label="{%41}"];
+	Node0x104aec0 -> Node0x10f8660;
+	Node0x10f8660 [shape=record,label="{%42}"];
+	Node0x10f8660 -> Node0x1057310[constraint=false];
+	Node0x1110320 [shape=record,label="{%45}"];
+	Node0x1110320 -> Node0x1063700;
+	Node0x1063700 [shape=record,label="{%48}"];
+	Node0x1063700 -> Node0x1040630[constraint=false];
+	Node0x10721c0 [shape=record,label="{%51}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x111f230 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xd7e860 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xd7f370 {
+              label = "";
+              style = filled;
+              color = 5
+              subgraph cluster_0x111f1b0 {
+                label = "";
+                style = filled;
+                color = 7
+                Node0x10f8b80;
+                Node0x1110970;
+              }
+              Node0x1057310;
+              Node0x104aec0;
+              Node0x10f8660;
+            }
+            Node0x1040630;
+            Node0x10f9240;
+            Node0x1110320;
+            Node0x1063700;
+          }
+          Node0x10fe4a0;
+          Node0x10721c0;
+        }
+}

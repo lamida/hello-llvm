@@ -1,0 +1,12 @@
+digraph "Scop Graph for 'containsDubiousChars' function" {
+	label="Scop Graph for 'containsDubiousChars' function";
+
+	Node0x20170c0 [shape=record,label="{%1}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x23a6e60 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x20170c0;
+        }
+}

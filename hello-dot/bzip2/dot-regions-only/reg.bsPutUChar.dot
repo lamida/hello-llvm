@@ -1,0 +1,12 @@
+digraph "Region Graph for 'bsPutUChar' function" {
+	label="Region Graph for 'bsPutUChar' function";
+
+	Node0x10f0940 [shape=record,label="{%2}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x10e8a90 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0x10f0940;
+        }
+}

@@ -1,0 +1,11 @@
+digraph "Dominator tree for 'myfeof' function" {
+	label="Dominator tree for 'myfeof' function";
+
+	Node0x2170810 [shape=record,label="{%1}"];
+	Node0x2170810 -> Node0x21d9160;
+	Node0x2170810 -> Node0x216d8c0;
+	Node0x2170810 -> Node0x2244f50;
+	Node0x21d9160 [shape=record,label="{%9}"];
+	Node0x216d8c0 [shape=record,label="{%14}"];
+	Node0x2244f50 [shape=record,label="{%10}"];
+}

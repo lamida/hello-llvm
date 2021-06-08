@@ -1,0 +1,5 @@
+digraph "CFG for 'outOfMemory' function" {
+	label="CFG for 'outOfMemory' function";
+
+	Node0x1925270 [shape=record,label="{%0}"];
+}

@@ -1,0 +1,30 @@
+digraph "Scop Graph for 'prepare_new_block' function" {
+	label="Scop Graph for 'prepare_new_block' function";
+
+	Node0x23472c0 [shape=record,label="{%1}"];
+	Node0x23472c0 -> Node0x203b4b0;
+	Node0x203b4b0 [shape=record,label="{%12}"];
+	Node0x203b4b0 -> Node0x2352720;
+	Node0x203b4b0 -> Node0x2120be0;
+	Node0x2352720 [shape=record,label="{%15}"];
+	Node0x2352720 -> Node0x23c5110;
+	Node0x23c5110 [shape=record,label="{%21}"];
+	Node0x23c5110 -> Node0x203b4b0[constraint=false];
+	Node0x2120be0 [shape=record,label="{%24}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x23b1f60 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x23b20e0 {
+            label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+            style = solid;
+            color = 6
+            Node0x203b4b0;
+            Node0x2352720;
+            Node0x23c5110;
+          }
+          Node0x23472c0;
+          Node0x2120be0;
+        }
+}

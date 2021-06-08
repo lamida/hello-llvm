@@ -1,0 +1,12 @@
+digraph "Scop Graph for 'bsPutUInt32' function" {
+	label="Scop Graph for 'bsPutUInt32' function";
+
+	Node0x22d56d0 [shape=record,label="{%2}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x2048290 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x22d56d0;
+        }
+}

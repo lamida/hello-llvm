@@ -1,0 +1,12 @@
+digraph "CFG for 'mapSuffix' function" {
+	label="CFG for 'mapSuffix' function";
+
+	Node0x193c230 [shape=record,label="{%3|{<s0>T|<s1>F}}"];
+	Node0x193c230:s0 -> Node0x193c710;
+	Node0x193c230:s1 -> Node0x193c760;
+	Node0x193c760 [shape=record,label="{%12}"];
+	Node0x193c760 -> Node0x193c8c0;
+	Node0x193c710 [shape=record,label="{%13}"];
+	Node0x193c710 -> Node0x193c8c0;
+	Node0x193c8c0 [shape=record,label="{%24}"];
+}

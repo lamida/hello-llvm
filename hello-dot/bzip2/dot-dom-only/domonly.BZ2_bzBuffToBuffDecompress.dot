@@ -1,0 +1,43 @@
+digraph "Dominator tree for 'BZ2_bzBuffToBuffDecompress' function" {
+	label="Dominator tree for 'BZ2_bzBuffToBuffDecompress' function";
+
+	Node0x2241100 [shape=record,label="{%6}"];
+	Node0x2241100 -> Node0x223bb20;
+	Node0x2241100 -> Node0x22366f0;
+	Node0x2241100 -> Node0x2045a50;
+	Node0x223bb20 [shape=record,label="{%36}"];
+	Node0x22366f0 [shape=record,label="{%84}"];
+	Node0x2045a50 [shape=record,label="{%18}"];
+	Node0x2045a50 -> Node0x2228fb0;
+	Node0x2228fb0 [shape=record,label="{%21}"];
+	Node0x2228fb0 -> Node0x212ea10;
+	Node0x212ea10 [shape=record,label="{%24}"];
+	Node0x212ea10 -> Node0x224c8c0;
+	Node0x212ea10 -> Node0x22480b0;
+	Node0x224c8c0 [shape=record,label="{%27}"];
+	Node0x22480b0 [shape=record,label="{%30}"];
+	Node0x22480b0 -> Node0x209c8f0;
+	Node0x209c8f0 [shape=record,label="{%33}"];
+	Node0x209c8f0 -> Node0x22c1e60;
+	Node0x22c1e60 [shape=record,label="{%37}"];
+	Node0x22c1e60 -> Node0x224c1b0;
+	Node0x22c1e60 -> Node0x1fe6c80;
+	Node0x224c1b0 [shape=record,label="{%46}"];
+	Node0x1fe6c80 [shape=record,label="{%48}"];
+	Node0x1fe6c80 -> Node0x2071530;
+	Node0x1fe6c80 -> Node0x21eb180;
+	Node0x2071530 [shape=record,label="{%61}"];
+	Node0x2071530 -> Node0x2247a40;
+	Node0x2247a40 [shape=record,label="{%73}"];
+	Node0x2247a40 -> Node0x2254740;
+	Node0x2247a40 -> Node0x220f370;
+	Node0x2254740 [shape=record,label="{%77}"];
+	Node0x220f370 [shape=record,label="{%79}"];
+	Node0x21eb180 [shape=record,label="{%62}"];
+	Node0x21eb180 -> Node0x22287d0;
+	Node0x21eb180 -> Node0x2177520;
+	Node0x22287d0 [shape=record,label="{%65}"];
+	Node0x22287d0 -> Node0x207d640;
+	Node0x207d640 [shape=record,label="{%81}"];
+	Node0x2177520 [shape=record,label="{%66}"];
+}

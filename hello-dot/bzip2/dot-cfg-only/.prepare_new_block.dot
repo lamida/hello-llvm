@@ -1,0 +1,14 @@
+digraph "CFG for 'prepare_new_block' function" {
+	label="CFG for 'prepare_new_block' function";
+
+	Node0x17a0530 [shape=record,label="{%1}"];
+	Node0x17a0530 -> Node0x17a06c0;
+	Node0x17a06c0 [shape=record,label="{%12|{<s0>T|<s1>F}}"];
+	Node0x17a06c0:s0 -> Node0x17a0e60;
+	Node0x17a06c0:s1 -> Node0x17a0eb0;
+	Node0x17a0e60 [shape=record,label="{%15}"];
+	Node0x17a0e60 -> Node0x17a1270;
+	Node0x17a1270 [shape=record,label="{%21}"];
+	Node0x17a1270 -> Node0x17a06c0;
+	Node0x17a0eb0 [shape=record,label="{%24}"];
+}

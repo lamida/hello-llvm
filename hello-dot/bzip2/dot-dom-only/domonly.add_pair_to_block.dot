@@ -1,0 +1,23 @@
+digraph "Dominator tree for 'add_pair_to_block' function" {
+	label="Dominator tree for 'add_pair_to_block' function";
+
+	Node0x22ebfd0 [shape=record,label="{%1}"];
+	Node0x22ebfd0 -> Node0x22ebf70;
+	Node0x22ebf70 [shape=record,label="{%9}"];
+	Node0x22ebf70 -> Node0x1f3d310;
+	Node0x22ebf70 -> Node0x222f9d0;
+	Node0x1f3d310 [shape=record,label="{%15}"];
+	Node0x1f3d310 -> Node0x22ec010;
+	Node0x22ec010 [shape=record,label="{%33}"];
+	Node0x222f9d0 [shape=record,label="{%36}"];
+	Node0x222f9d0 -> Node0x2238a80;
+	Node0x222f9d0 -> Node0x207a220;
+	Node0x222f9d0 -> Node0x2250b10;
+	Node0x222f9d0 -> Node0x2228c30;
+	Node0x222f9d0 -> Node0x2244f50;
+	Node0x2238a80 [shape=record,label="{%128}"];
+	Node0x207a220 [shape=record,label="{%206}"];
+	Node0x2250b10 [shape=record,label="{%47}"];
+	Node0x2228c30 [shape=record,label="{%61}"];
+	Node0x2244f50 [shape=record,label="{%88}"];
+}

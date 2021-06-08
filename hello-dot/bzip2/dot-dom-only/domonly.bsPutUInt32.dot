@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'bsPutUInt32' function" {
+	label="Dominator tree for 'bsPutUInt32' function";
+
+	Node0x2250e10 [shape=record,label="{%2}"];
+}

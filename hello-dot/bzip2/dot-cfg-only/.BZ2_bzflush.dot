@@ -1,0 +1,5 @@
+digraph "CFG for 'BZ2_bzflush' function" {
+	label="CFG for 'BZ2_bzflush' function";
+
+	Node0x1870490 [shape=record,label="{%1}"];
+}

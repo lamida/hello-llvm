@@ -1,0 +1,24 @@
+digraph "Region Graph for 'compressedStreamEOF' function" {
+	label="Region Graph for 'compressedStreamEOF' function";
+
+	Node0xdcb450 [shape=record,label="{%0}"];
+	Node0xdcb450 -> Node0x1044df0;
+	Node0xdcb450 -> Node0x110ad30;
+	Node0x1044df0 [shape=record,label="{%3}"];
+	Node0x1044df0 -> Node0x110ad30;
+	Node0x110ad30 [shape=record,label="{%8}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x114fde0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xd732d0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0xdcb450;
+            Node0x1044df0;
+          }
+          Node0x110ad30;
+        }
+}

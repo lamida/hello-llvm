@@ -1,0 +1,24 @@
+digraph "Region Graph for 'setExit' function" {
+	label="Region Graph for 'setExit' function";
+
+	Node0x10464c0 [shape=record,label="{%1}"];
+	Node0x10464c0 -> Node0x104ae80;
+	Node0x10464c0 -> Node0x1112960;
+	Node0x104ae80 [shape=record,label="{%6}"];
+	Node0x104ae80 -> Node0x1112960;
+	Node0x1112960 [shape=record,label="{%8}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x114d4a0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x114d6a0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x10464c0;
+            Node0x104ae80;
+          }
+          Node0x1112960;
+        }
+}

@@ -1,0 +1,12 @@
+digraph "Scop Graph for 'ioError' function" {
+	label="Scop Graph for 'ioError' function";
+
+	Node0x226aed0 [shape=record,label="{%0}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x23a6f60 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x226aed0;
+        }
+}

@@ -1,0 +1,27 @@
+digraph "Region Graph for 'countHardLinks' function" {
+	label="Region Graph for 'countHardLinks' function";
+
+	Node0x9a06c0 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  %3 = alloca i8*, align 8\l  %4 = alloca i32, align 4\l  %5 = alloca %struct.stat, align 8\l  store i8* %0, i8** %3, align 8\l  %6 = load i8*, i8** %3, align 8\l  %7 = call i32 @lstat(i8* %6, %struct.stat* %5) #8\l  store i32 %7, i32* %4, align 4\l  %8 = load i32, i32* %4, align 4\l  %9 = icmp ne i32 %8, 0\l  br i1 %9, label %10, label %11\l}"];
+	Node0x9a06c0 -> Node0xa57330;
+	Node0x9a06c0 -> Node0xb023e0;
+	Node0xa57330 [shape=record,label="{%10:\l10:                                               \l  store i32 0, i32* %2, align 4\l  br label %16\l}"];
+	Node0xa57330 -> Node0xa59bf0;
+	Node0xa59bf0 [shape=record,label="{%16:\l16:                                               \l  %17 = load i32, i32* %2, align 4\l  ret i32 %17\l}"];
+	Node0xb023e0 [shape=record,label="{%11:\l11:                                               \l  %12 = getelementptr inbounds %struct.stat, %struct.stat* %5, i32 0, i32 2\l  %13 = load i64, i64* %12, align 8\l  %14 = sub i64 %13, 1\l  %15 = trunc i64 %14 to i32\l  store i32 %15, i32* %2, align 4\l  br label %16\l}"];
+	Node0xb023e0 -> Node0xa59bf0;
+	colorscheme = "paired12"
+        subgraph cluster_0xc3fe80 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xc48300 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x9a06c0;
+            Node0xa57330;
+            Node0xb023e0;
+          }
+          Node0xa59bf0;
+        }
+}

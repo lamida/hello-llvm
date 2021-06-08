@@ -1,0 +1,9 @@
+digraph "Dominator tree for 'default_bzfree' function" {
+	label="Dominator tree for 'default_bzfree' function";
+
+	Node0x1f3d310 [shape=record,label="{%2}"];
+	Node0x1f3d310 -> Node0x22ec010;
+	Node0x1f3d310 -> Node0x1f3d370;
+	Node0x22ec010 [shape=record,label="{%7}"];
+	Node0x1f3d370 [shape=record,label="{%9}"];
+}

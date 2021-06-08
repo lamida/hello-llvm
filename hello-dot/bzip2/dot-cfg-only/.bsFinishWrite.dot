@@ -1,0 +1,12 @@
+digraph "CFG for 'bsFinishWrite' function" {
+	label="CFG for 'bsFinishWrite' function";
+
+	Node0x16f4cd0 [shape=record,label="{%1}"];
+	Node0x16f4cd0 -> Node0x16f4da0;
+	Node0x16f4da0 [shape=record,label="{%3|{<s0>T|<s1>F}}"];
+	Node0x16f4da0:s0 -> Node0x16f5070;
+	Node0x16f4da0:s1 -> Node0x16f50c0;
+	Node0x16f5070 [shape=record,label="{%8}"];
+	Node0x16f5070 -> Node0x16f4da0;
+	Node0x16f50c0 [shape=record,label="{%34}"];
+}

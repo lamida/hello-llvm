@@ -1,0 +1,123 @@
+digraph "Scop Graph for 'cleanUpAndFail' function" {
+	label="Scop Graph for 'cleanUpAndFail' function";
+
+	Node0x2289ca0 [shape=record,label="{%1}"];
+	Node0x2289ca0 -> Node0x235b650;
+	Node0x2289ca0 -> Node0x2218790;
+	Node0x235b650 [shape=record,label="{%7}"];
+	Node0x235b650 -> Node0x23acd10;
+	Node0x235b650 -> Node0x2218790;
+	Node0x23acd10 [shape=record,label="{%10}"];
+	Node0x23acd10 -> Node0x20168d0;
+	Node0x23acd10 -> Node0x2218790;
+	Node0x20168d0 [shape=record,label="{%14}"];
+	Node0x20168d0 -> Node0x2029f80;
+	Node0x20168d0 -> Node0x205eb30;
+	Node0x2029f80 [shape=record,label="{%18}"];
+	Node0x2029f80 -> Node0x221e800;
+	Node0x2029f80 -> Node0x22a1a20;
+	Node0x221e800 [shape=record,label="{%21}"];
+	Node0x221e800 -> Node0x22a1a20;
+	Node0x22a1a20 [shape=record,label="{%25}"];
+	Node0x22a1a20 -> Node0x2111760;
+	Node0x22a1a20 -> Node0x22d6970;
+	Node0x2111760 [shape=record,label="{%28}"];
+	Node0x2111760 -> Node0x22d6970;
+	Node0x22d6970 [shape=record,label="{%31}"];
+	Node0x22d6970 -> Node0x2352e50;
+	Node0x22d6970 -> Node0x22d7240;
+	Node0x2352e50 [shape=record,label="{%35}"];
+	Node0x2352e50 -> Node0x22d7240;
+	Node0x22d7240 [shape=record,label="{%39}"];
+	Node0x22d7240 -> Node0x2345cf0;
+	Node0x2345cf0 [shape=record,label="{%53}"];
+	Node0x2345cf0 -> Node0x2218790;
+	Node0x2218790 [shape=record,label="{%54}"];
+	Node0x2218790 -> Node0x2079db0;
+	Node0x2218790 -> Node0x2251d50;
+	Node0x2079db0 [shape=record,label="{%58}"];
+	Node0x2079db0 -> Node0x2109510;
+	Node0x2079db0 -> Node0x2251d50;
+	Node0x2109510 [shape=record,label="{%61}"];
+	Node0x2109510 -> Node0x22aa340;
+	Node0x2109510 -> Node0x2251d50;
+	Node0x22aa340 [shape=record,label="{%65}"];
+	Node0x22aa340 -> Node0x2251d50;
+	Node0x2251d50 [shape=record,label="{%74}"];
+	Node0x205eb30 [shape=record,label="{%40}"];
+	Node0x205eb30 -> Node0x2345cf0;
+	colorscheme = "paired12"
+        subgraph cluster_0x2396c50 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x2374570 {
+            label = "";
+            style = solid;
+            color = 6
+            subgraph cluster_0x23aacf0 {
+              label = "";
+              style = solid;
+              color = 5
+              subgraph cluster_0x239dca0 {
+                label = "";
+                style = solid;
+                color = 7
+                subgraph cluster_0x239dc20 {
+                  label = "";
+                  style = solid;
+                  color = 9
+                  subgraph cluster_0x2396bd0 {
+                    label = "";
+                    style = solid;
+                    color = 11
+                    Node0x2029f80;
+                    Node0x221e800;
+                  }
+                  subgraph cluster_0x23a6e60 {
+                    label = "";
+                    style = solid;
+                    color = 11
+                    Node0x22a1a20;
+                    Node0x2111760;
+                  }
+                  subgraph cluster_0x23a6f60 {
+                    label = "";
+                    style = solid;
+                    color = 11
+                    Node0x22d6970;
+                    Node0x2352e50;
+                  }
+                  Node0x20168d0;
+                  Node0x22d7240;
+                  Node0x205eb30;
+                }
+                Node0x23acd10;
+                Node0x2345cf0;
+              }
+              Node0x235b650;
+            }
+            Node0x2289ca0;
+          }
+          subgraph cluster_0x1fd62f0 {
+            label = "";
+            style = solid;
+            color = 6
+            subgraph cluster_0x23a93d0 {
+              label = "";
+              style = solid;
+              color = 5
+              subgraph cluster_0x2396cd0 {
+                label = "";
+                style = solid;
+                color = 7
+                Node0x2109510;
+                Node0x22aa340;
+              }
+              Node0x2079db0;
+            }
+            Node0x2218790;
+          }
+          Node0x2251d50;
+        }
+}

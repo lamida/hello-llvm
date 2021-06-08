@@ -1,0 +1,27 @@
+digraph "Scop Graph for 'myfeof' function" {
+	label="Scop Graph for 'myfeof' function";
+
+	Node0x1f183c0 [shape=record,label="{%1:\l  %2 = alloca i8, align 1\l  %3 = alloca %struct._IO_FILE*, align 8\l  %4 = alloca i32, align 4\l  store %struct._IO_FILE* %0, %struct._IO_FILE** %3, align 8\l  %5 = load %struct._IO_FILE*, %struct._IO_FILE** %3, align 8\l  %6 = call i32 @fgetc(%struct._IO_FILE* %5)\l  store i32 %6, i32* %4, align 4\l  %7 = load i32, i32* %4, align 4\l  %8 = icmp eq i32 %7, -1\l  br i1 %8, label %9, label %10\l}"];
+	Node0x1f183c0 -> Node0x1dea4d0;
+	Node0x1f183c0 -> Node0x1e1f480;
+	Node0x1dea4d0 [shape=record,label="{%9:\l9:                                                \l  store i8 1, i8* %2, align 1\l  br label %14\l}"];
+	Node0x1dea4d0 -> Node0x1eb7b40;
+	Node0x1eb7b40 [shape=record,label="{%14:\l14:                                               \l  %15 = load i8, i8* %2, align 1\l  ret i8 %15\l}"];
+	Node0x1e1f480 [shape=record,label="{%10:\l10:                                               \l  %11 = load i32, i32* %4, align 4\l  %12 = load %struct._IO_FILE*, %struct._IO_FILE** %3, align 8\l  %13 = call i32 @ungetc(i32 %11, %struct._IO_FILE* %12)\l  store i8 0, i8* %2, align 1\l  br label %14\l}"];
+	Node0x1e1f480 -> Node0x1eb7b40;
+	colorscheme = "paired12"
+        subgraph cluster_0x1f48d10 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1ee85d0 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0x1f183c0;
+            Node0x1dea4d0;
+            Node0x1e1f480;
+          }
+          Node0x1eb7b40;
+        }
+}

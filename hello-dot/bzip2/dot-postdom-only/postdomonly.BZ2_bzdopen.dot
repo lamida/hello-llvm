@@ -1,0 +1,7 @@
+digraph "Post dominator tree for 'BZ2_bzdopen' function" {
+	label="Post dominator tree for 'BZ2_bzdopen' function";
+
+	Node0xc717b0 [shape=record,label="{Post dominance root node}"];
+	Node0xc717b0 -> Node0x995ac0;
+	Node0x995ac0 [shape=record,label="{%2}"];
+}

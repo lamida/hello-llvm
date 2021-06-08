@@ -1,0 +1,30 @@
+digraph "CFG for 'BZ2_bzclose' function" {
+	label="CFG for 'BZ2_bzclose' function";
+
+	Node0x11d47b0 [shape=record,label="{%1:\l  %2 = alloca i8*, align 8\l  %3 = alloca i32, align 4\l  %4 = alloca %struct._IO_FILE*, align 8\l  store i8* %0, i8** %2, align 8\l  %5 = load i8*, i8** %2, align 8\l  %6 = bitcast i8* %5 to %struct.bzFile*\l  %7 = getelementptr inbounds %struct.bzFile, %struct.bzFile* %6, i32 0, i32 0\l  %8 = load %struct._IO_FILE*, %struct._IO_FILE** %7, align 8\l  store %struct._IO_FILE* %8, %struct._IO_FILE** %4, align 8\l  %9 = load i8*, i8** %2, align 8\l  %10 = icmp eq i8* %9, null\l  br i1 %10, label %11, label %12\l|{<s0>T|<s1>F}}"];
+	Node0x11d47b0:s0 -> Node0x11d4950;
+	Node0x11d47b0:s1 -> Node0x11d4dc0;
+	Node0x11d4950 [shape=record,label="{%11:\l11:                                               \l  br label %38\l}"];
+	Node0x11d4950 -> Node0x11d4ea0;
+	Node0x11d4dc0 [shape=record,label="{%12:\l12:                                               \l  %13 = load i8*, i8** %2, align 8\l  %14 = bitcast i8* %13 to %struct.bzFile*\l  %15 = getelementptr inbounds %struct.bzFile, %struct.bzFile* %14, i32 0, i32\l... 3\l  %16 = load i8, i8* %15, align 4\l  %17 = icmp ne i8 %16, 0\l  br i1 %17, label %18, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x11d4dc0:s0 -> Node0x11d5180;
+	Node0x11d4dc0:s1 -> Node0x11d51d0;
+	Node0x11d5180 [shape=record,label="{%18:\l18:                                               \l  %19 = load i8*, i8** %2, align 8\l  call void @BZ2_bzWriteClose(i32* %3, i8* %19, i32 0, i32* null, i32* null)\l  %20 = load i32, i32* %3, align 4\l  %21 = icmp ne i32 %20, 0\l  br i1 %21, label %22, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x11d5180:s0 -> Node0x11d54b0;
+	Node0x11d5180:s1 -> Node0x11d5500;
+	Node0x11d54b0 [shape=record,label="{%22:\l22:                                               \l  %23 = load i8*, i8** %2, align 8\l  call void @BZ2_bzWriteClose(i32* null, i8* %23, i32 1, i32* null, i32* null)\l  br label %24\l}"];
+	Node0x11d54b0 -> Node0x11d5500;
+	Node0x11d5500 [shape=record,label="{%24:\l24:                                               \l  br label %27\l}"];
+	Node0x11d5500 -> Node0x11d57d0;
+	Node0x11d51d0 [shape=record,label="{%25:\l25:                                               \l  %26 = load i8*, i8** %2, align 8\l  call void @BZ2_bzReadClose(i32* %3, i8* %26)\l  br label %27\l}"];
+	Node0x11d51d0 -> Node0x11d57d0;
+	Node0x11d57d0 [shape=record,label="{%27:\l27:                                               \l  %28 = load %struct._IO_FILE*, %struct._IO_FILE** %4, align 8\l  %29 = load %struct._IO_FILE*, %struct._IO_FILE** @stdin, align 8\l  %30 = icmp ne %struct._IO_FILE* %28, %29\l  br i1 %30, label %31, label %38\l|{<s0>T|<s1>F}}"];
+	Node0x11d57d0:s0 -> Node0x11d5b60;
+	Node0x11d57d0:s1 -> Node0x11d4ea0;
+	Node0x11d5b60 [shape=record,label="{%31:\l31:                                               \l  %32 = load %struct._IO_FILE*, %struct._IO_FILE** %4, align 8\l  %33 = load %struct._IO_FILE*, %struct._IO_FILE** @stdout, align 8\l  %34 = icmp ne %struct._IO_FILE* %32, %33\l  br i1 %34, label %35, label %38\l|{<s0>T|<s1>F}}"];
+	Node0x11d5b60:s0 -> Node0x11d5d70;
+	Node0x11d5b60:s1 -> Node0x11d4ea0;
+	Node0x11d5d70 [shape=record,label="{%35:\l35:                                               \l  %36 = load %struct._IO_FILE*, %struct._IO_FILE** %4, align 8\l  %37 = call i32 @fclose(%struct._IO_FILE* %36)\l  br label %38\l}"];
+	Node0x11d5d70 -> Node0x11d4ea0;
+	Node0x11d4ea0 [shape=record,label="{%38:\l38:                                               \l  ret void\l}"];
+}

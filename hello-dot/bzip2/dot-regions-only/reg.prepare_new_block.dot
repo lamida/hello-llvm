@@ -1,0 +1,30 @@
+digraph "Region Graph for 'prepare_new_block' function" {
+	label="Region Graph for 'prepare_new_block' function";
+
+	Node0x1068d80 [shape=record,label="{%1}"];
+	Node0x1068d80 -> Node0x110d970;
+	Node0x110d970 [shape=record,label="{%12}"];
+	Node0x110d970 -> Node0xeb9eb0;
+	Node0x110d970 -> Node0x105b5f0;
+	Node0xeb9eb0 [shape=record,label="{%15}"];
+	Node0xeb9eb0 -> Node0xe1d780;
+	Node0xe1d780 [shape=record,label="{%21}"];
+	Node0xe1d780 -> Node0x110d970[constraint=false];
+	Node0x105b5f0 [shape=record,label="{%24}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xd7e8e0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x11491c0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x110d970;
+            Node0xeb9eb0;
+            Node0xe1d780;
+          }
+          Node0x1068d80;
+          Node0x105b5f0;
+        }
+}

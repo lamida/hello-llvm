@@ -1,0 +1,178 @@
+digraph "Region Graph for 'BZ2_bzDecompress' function" {
+	label="Region Graph for 'BZ2_bzDecompress' function";
+
+	Node0xb3d0e0 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  %3 = alloca %struct.bz_stream*, align 8\l  %4 = alloca %struct.DState*, align 8\l  %5 = alloca i32, align 4\l  store %struct.bz_stream* %0, %struct.bz_stream** %3, align 8\l  %6 = load %struct.bz_stream*, %struct.bz_stream** %3, align 8\l  %7 = icmp eq %struct.bz_stream* %6, null\l  br i1 %7, label %8, label %9\l}"];
+	Node0xb3d0e0 -> Node0xbf2190;
+	Node0xb3d0e0 -> Node0x9c0d00;
+	Node0xbf2190 [shape=record,label="{%8:\l8:                                                \l  store i32 -2, i32* %2, align 4\l  br label %163\l}"];
+	Node0xbf2190 -> Node0xbfb650;
+	Node0xbfb650 [shape=record,label="{%163:\l163:                                              \l  %164 = load i32, i32* %2, align 4\l  ret i32 %164\l}"];
+	Node0x9c0d00 [shape=record,label="{%9:\l9:                                                \l  %10 = load %struct.bz_stream*, %struct.bz_stream** %3, align 8\l  %11 = getelementptr inbounds %struct.bz_stream, %struct.bz_stream* %10, i32\l... 0, i32 8\l  %12 = load i8*, i8** %11, align 8\l  %13 = bitcast i8* %12 to %struct.DState*\l  store %struct.DState* %13, %struct.DState** %4, align 8\l  %14 = load %struct.DState*, %struct.DState** %4, align 8\l  %15 = icmp eq %struct.DState* %14, null\l  br i1 %15, label %16, label %17\l}"];
+	Node0x9c0d00 -> Node0xb75250;
+	Node0x9c0d00 -> Node0xb21150;
+	Node0xb75250 [shape=record,label="{%16:\l16:                                               \l  store i32 -2, i32* %2, align 4\l  br label %163\l}"];
+	Node0xb75250 -> Node0xbfb650;
+	Node0xb21150 [shape=record,label="{%17:\l17:                                               \l  %18 = load %struct.DState*, %struct.DState** %4, align 8\l  %19 = getelementptr inbounds %struct.DState, %struct.DState* %18, i32 0, i32\l... 0\l  %20 = load %struct.bz_stream*, %struct.bz_stream** %19, align 8\l  %21 = load %struct.bz_stream*, %struct.bz_stream** %3, align 8\l  %22 = icmp ne %struct.bz_stream* %20, %21\l  br i1 %22, label %23, label %24\l}"];
+	Node0xb21150 -> Node0xb2ea10;
+	Node0xb21150 -> Node0xb66590;
+	Node0xb2ea10 [shape=record,label="{%23:\l23:                                               \l  store i32 -2, i32* %2, align 4\l  br label %163\l}"];
+	Node0xb2ea10 -> Node0xbfb650;
+	Node0xb66590 [shape=record,label="{%24:\l24:                                               \l  br label %25\l}"];
+	Node0xb66590 -> Node0xc3e200;
+	Node0xc3e200 [shape=record,label="{%25:\l25:                                               \l  %26 = load %struct.DState*, %struct.DState** %4, align 8\l  %27 = getelementptr inbounds %struct.DState, %struct.DState* %26, i32 0, i32\l... 1\l  %28 = load i32, i32* %27, align 8\l  %29 = icmp eq i32 %28, 1\l  br i1 %29, label %30, label %31\l}"];
+	Node0xc3e200 -> Node0xb0eec0;
+	Node0xc3e200 -> Node0x8b70c0;
+	Node0xb0eec0 [shape=record,label="{%30:\l30:                                               \l  store i32 -1, i32* %2, align 4\l  br label %163\l}"];
+	Node0xb0eec0 -> Node0xbfb650;
+	Node0x8b70c0 [shape=record,label="{%31:\l31:                                               \l  %32 = load %struct.DState*, %struct.DState** %4, align 8\l  %33 = getelementptr inbounds %struct.DState, %struct.DState* %32, i32 0, i32\l... 1\l  %34 = load i32, i32* %33, align 8\l  %35 = icmp eq i32 %34, 2\l  br i1 %35, label %36, label %119\l}"];
+	Node0x8b70c0 -> Node0xc06d00;
+	Node0x8b70c0 -> Node0xb1db30;
+	Node0xc06d00 [shape=record,label="{%36:\l36:                                               \l  %37 = load %struct.DState*, %struct.DState** %4, align 8\l  %38 = getelementptr inbounds %struct.DState, %struct.DState* %37, i32 0, i32\l... 10\l  %39 = load i8, i8* %38, align 4\l  %40 = icmp ne i8 %39, 0\l  br i1 %40, label %41, label %43\l}"];
+	Node0xc06d00 -> Node0xc06460;
+	Node0xc06d00 -> Node0xb5ce90;
+	Node0xc06460 [shape=record,label="{%41:\l41:                                               \l  %42 = load %struct.DState*, %struct.DState** %4, align 8\l  call void @unRLE_obuf_to_output_SMALL(%struct.DState* %42)\l  br label %45\l}"];
+	Node0xc06460 -> Node0x9785f0;
+	Node0x9785f0 [shape=record,label="{%45:\l45:                                               \l  %46 = load %struct.DState*, %struct.DState** %4, align 8\l  %47 = getelementptr inbounds %struct.DState, %struct.DState* %46, i32 0, i32\l... 17\l  %48 = load i32, i32* %47, align 4\l  %49 = load %struct.DState*, %struct.DState** %4, align 8\l  %50 = getelementptr inbounds %struct.DState, %struct.DState* %49, i32 0, i32\l... 51\l  %51 = load i32, i32* %50, align 8\l  %52 = add nsw i32 %51, 1\l  %53 = icmp eq i32 %48, %52\l  br i1 %53, label %54, label %117\l}"];
+	Node0x9785f0 -> Node0xb2d810;
+	Node0x9785f0 -> Node0x9c6c70;
+	Node0xb2d810 [shape=record,label="{%54:\l54:                                               \l  %55 = load %struct.DState*, %struct.DState** %4, align 8\l  %56 = getelementptr inbounds %struct.DState, %struct.DState* %55, i32 0, i32\l... 3\l  %57 = load i32, i32* %56, align 8\l  %58 = icmp eq i32 %57, 0\l  br i1 %58, label %59, label %117\l}"];
+	Node0xb2d810 -> Node0xbe63c0;
+	Node0xb2d810 -> Node0x9c6c70;
+	Node0xbe63c0 [shape=record,label="{%59:\l59:                                               \l  %60 = load %struct.DState*, %struct.DState** %4, align 8\l  %61 = getelementptr inbounds %struct.DState, %struct.DState* %60, i32 0, i32\l... 25\l  %62 = load i32, i32* %61, align 8\l  %63 = xor i32 %62, -1\l  %64 = load %struct.DState*, %struct.DState** %4, align 8\l  %65 = getelementptr inbounds %struct.DState, %struct.DState* %64, i32 0, i32\l... 25\l  store i32 %63, i32* %65, align 8\l  %66 = load %struct.DState*, %struct.DState** %4, align 8\l  %67 = getelementptr inbounds %struct.DState, %struct.DState* %66, i32 0, i32\l... 12\l  %68 = load i32, i32* %67, align 4\l  %69 = icmp sge i32 %68, 3\l  br i1 %69, label %70, label %79\l}"];
+	Node0xbe63c0 -> Node0xb3c6d0;
+	Node0xbe63c0 -> Node0x9a06c0;
+	Node0xb3c6d0 [shape=record,label="{%70:\l70:                                               \l  %71 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %72 = load %struct.DState*, %struct.DState** %4, align 8\l  %73 = getelementptr inbounds %struct.DState, %struct.DState* %72, i32 0, i32\l... 23\l  %74 = load i32, i32* %73, align 8\l  %75 = load %struct.DState*, %struct.DState** %4, align 8\l  %76 = getelementptr inbounds %struct.DState, %struct.DState* %75, i32 0, i32\l... 25\l  %77 = load i32, i32* %76, align 8\l  %78 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %71,\l... i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.8, i64 0, i64 0), i32\l... %74, i32 %77)\l  br label %79\l}"];
+	Node0xb3c6d0 -> Node0x9a06c0;
+	Node0x9a06c0 [shape=record,label="{%79:\l79:                                               \l  %80 = load %struct.DState*, %struct.DState** %4, align 8\l  %81 = getelementptr inbounds %struct.DState, %struct.DState* %80, i32 0, i32\l... 12\l  %82 = load i32, i32* %81, align 4\l  %83 = icmp sge i32 %82, 2\l  br i1 %83, label %84, label %87\l}"];
+	Node0x9a06c0 -> Node0x914d30;
+	Node0x9a06c0 -> Node0x8cf6c0;
+	Node0x914d30 [shape=record,label="{%84:\l84:                                               \l  %85 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %86 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %85,\l... i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.9, i64 0, i64 0))\l  br label %87\l}"];
+	Node0x914d30 -> Node0x8cf6c0;
+	Node0x8cf6c0 [shape=record,label="{%87:\l87:                                               \l  %88 = load %struct.DState*, %struct.DState** %4, align 8\l  %89 = getelementptr inbounds %struct.DState, %struct.DState* %88, i32 0, i32\l... 25\l  %90 = load i32, i32* %89, align 8\l  %91 = load %struct.DState*, %struct.DState** %4, align 8\l  %92 = getelementptr inbounds %struct.DState, %struct.DState* %91, i32 0, i32\l... 23\l  %93 = load i32, i32* %92, align 8\l  %94 = icmp ne i32 %90, %93\l  br i1 %94, label %95, label %96\l}"];
+	Node0x8cf6c0 -> Node0xb34160;
+	Node0x8cf6c0 -> Node0x913cb0;
+	Node0xb34160 [shape=record,label="{%95:\l95:                                               \l  store i32 -4, i32* %2, align 4\l  br label %163\l}"];
+	Node0xb34160 -> Node0xbfb650;
+	Node0x913cb0 [shape=record,label="{%96:\l96:                                               \l  %97 = load %struct.DState*, %struct.DState** %4, align 8\l  %98 = getelementptr inbounds %struct.DState, %struct.DState* %97, i32 0, i32\l... 26\l  %99 = load i32, i32* %98, align 4\l  %100 = shl i32 %99, 1\l  %101 = load %struct.DState*, %struct.DState** %4, align 8\l  %102 = getelementptr inbounds %struct.DState, %struct.DState* %101, i32 0,\l... i32 26\l  %103 = load i32, i32* %102, align 4\l  %104 = lshr i32 %103, 31\l  %105 = or i32 %100, %104\l  %106 = load %struct.DState*, %struct.DState** %4, align 8\l  %107 = getelementptr inbounds %struct.DState, %struct.DState* %106, i32 0,\l... i32 26\l  store i32 %105, i32* %107, align 4\l  %108 = load %struct.DState*, %struct.DState** %4, align 8\l  %109 = getelementptr inbounds %struct.DState, %struct.DState* %108, i32 0,\l... i32 25\l  %110 = load i32, i32* %109, align 8\l  %111 = load %struct.DState*, %struct.DState** %4, align 8\l  %112 = getelementptr inbounds %struct.DState, %struct.DState* %111, i32 0,\l... i32 26\l  %113 = load i32, i32* %112, align 4\l  %114 = xor i32 %113, %110\l  store i32 %114, i32* %112, align 4\l  %115 = load %struct.DState*, %struct.DState** %4, align 8\l  %116 = getelementptr inbounds %struct.DState, %struct.DState* %115, i32 0,\l... i32 1\l  store i32 14, i32* %116, align 8\l  br label %118\l}"];
+	Node0x913cb0 -> Node0xbef0a0;
+	Node0xbef0a0 [shape=record,label="{%118:\l118:                                              \l  br label %119\l}"];
+	Node0xbef0a0 -> Node0xb1db30;
+	Node0xb1db30 [shape=record,label="{%119:\l119:                                              \l  %120 = load %struct.DState*, %struct.DState** %4, align 8\l  %121 = getelementptr inbounds %struct.DState, %struct.DState* %120, i32 0,\l... i32 1\l  %122 = load i32, i32* %121, align 8\l  %123 = icmp sge i32 %122, 10\l  br i1 %123, label %124, label %162\l}"];
+	Node0xb1db30 -> Node0x9ebe60;
+	Node0xb1db30 -> Node0xb3cda0;
+	Node0x9ebe60 [shape=record,label="{%124:\l124:                                              \l  %125 = load %struct.DState*, %struct.DState** %4, align 8\l  %126 = call i32 @BZ2_decompress(%struct.DState* %125)\l  store i32 %126, i32* %5, align 4\l  %127 = load i32, i32* %5, align 4\l  %128 = icmp eq i32 %127, 4\l  br i1 %128, label %129, label %154\l}"];
+	Node0x9ebe60 -> Node0xbedb40;
+	Node0x9ebe60 -> Node0xb3c3a0;
+	Node0xbedb40 [shape=record,label="{%129:\l129:                                              \l  %130 = load %struct.DState*, %struct.DState** %4, align 8\l  %131 = getelementptr inbounds %struct.DState, %struct.DState* %130, i32 0,\l... i32 12\l  %132 = load i32, i32* %131, align 4\l  %133 = icmp sge i32 %132, 3\l  br i1 %133, label %134, label %143\l}"];
+	Node0xbedb40 -> Node0xb6a250;
+	Node0xbedb40 -> Node0xb36580;
+	Node0xb6a250 [shape=record,label="{%134:\l134:                                              \l  %135 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %136 = load %struct.DState*, %struct.DState** %4, align 8\l  %137 = getelementptr inbounds %struct.DState, %struct.DState* %136, i32 0,\l... i32 24\l  %138 = load i32, i32* %137, align 4\l  %139 = load %struct.DState*, %struct.DState** %4, align 8\l  %140 = getelementptr inbounds %struct.DState, %struct.DState* %139, i32 0,\l... i32 26\l  %141 = load i32, i32* %140, align 4\l  %142 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE*\l... %135, i8* getelementptr inbounds ([51 x i8], [51 x i8]* @.str.10, i64 0, i64\l... 0), i32 %138, i32 %141)\l  br label %143\l}"];
+	Node0xb6a250 -> Node0xb36580;
+	Node0xb36580 [shape=record,label="{%143:\l143:                                              \l  %144 = load %struct.DState*, %struct.DState** %4, align 8\l  %145 = getelementptr inbounds %struct.DState, %struct.DState* %144, i32 0,\l... i32 26\l  %146 = load i32, i32* %145, align 4\l  %147 = load %struct.DState*, %struct.DState** %4, align 8\l  %148 = getelementptr inbounds %struct.DState, %struct.DState* %147, i32 0,\l... i32 24\l  %149 = load i32, i32* %148, align 4\l  %150 = icmp ne i32 %146, %149\l  br i1 %150, label %151, label %152\l}"];
+	Node0xb36580 -> Node0xb783c0;
+	Node0xb36580 -> Node0xa63720;
+	Node0xb783c0 [shape=record,label="{%151:\l151:                                              \l  store i32 -4, i32* %2, align 4\l  br label %163\l}"];
+	Node0xb783c0 -> Node0xbfb650;
+	Node0xa63720 [shape=record,label="{%152:\l152:                                              \l  %153 = load i32, i32* %5, align 4\l  store i32 %153, i32* %2, align 4\l  br label %163\l}"];
+	Node0xa63720 -> Node0xbfb650;
+	Node0xb3c3a0 [shape=record,label="{%154:\l154:                                              \l  %155 = load %struct.DState*, %struct.DState** %4, align 8\l  %156 = getelementptr inbounds %struct.DState, %struct.DState* %155, i32 0,\l... i32 1\l  %157 = load i32, i32* %156, align 8\l  %158 = icmp ne i32 %157, 2\l  br i1 %158, label %159, label %161\l}"];
+	Node0xb3c3a0 -> Node0xa9a8f0;
+	Node0xb3c3a0 -> Node0xa61f70;
+	Node0xa9a8f0 [shape=record,label="{%159:\l159:                                              \l  %160 = load i32, i32* %5, align 4\l  store i32 %160, i32* %2, align 4\l  br label %163\l}"];
+	Node0xa9a8f0 -> Node0xbfb650;
+	Node0xa61f70 [shape=record,label="{%161:\l161:                                              \l  br label %162\l}"];
+	Node0xa61f70 -> Node0xb3cda0;
+	Node0xb3cda0 [shape=record,label="{%162:\l162:                                              \l  br label %25\l}"];
+	Node0xb3cda0 -> Node0xc3e200[constraint=false];
+	Node0x9c6c70 [shape=record,label="{%117:\l117:                                              \l  store i32 0, i32* %2, align 4\l  br label %163\l}"];
+	Node0x9c6c70 -> Node0xbfb650;
+	Node0xb5ce90 [shape=record,label="{%43:\l43:                                               \l  %44 = load %struct.DState*, %struct.DState** %4, align 8\l  call void @unRLE_obuf_to_output_FAST(%struct.DState* %44)\l  br label %45\l}"];
+	Node0xb5ce90 -> Node0x9785f0;
+	colorscheme = "paired12"
+        subgraph cluster_0xc17470 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xc04380 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xbdfa90 {
+              label = "";
+              style = filled;
+              color = 5
+              subgraph cluster_0xbe7630 {
+                label = "";
+                style = filled;
+                color = 7
+                subgraph cluster_0xb5be90 {
+                  label = "";
+                  style = filled;
+                  color = 9
+                  subgraph cluster_0xc14570 {
+                    label = "";
+                    style = filled;
+                    color = 11
+                    Node0xc06d00;
+                    Node0xc06460;
+                    Node0xb5ce90;
+                  }
+                  subgraph cluster_0x875c00 {
+                    label = "";
+                    style = filled;
+                    color = 11
+                    Node0xbe63c0;
+                    Node0xb3c6d0;
+                  }
+                  subgraph cluster_0xc3bce0 {
+                    label = "";
+                    style = filled;
+                    color = 11
+                    Node0x9a06c0;
+                    Node0x914d30;
+                  }
+                  subgraph cluster_0xc165d0 {
+                    label = "";
+                    style = filled;
+                    color = 11
+                    Node0xbedb40;
+                    Node0xb6a250;
+                  }
+                  subgraph cluster_0xc3f630 {
+                    label = "";
+                    style = filled;
+                    color = 11
+                    Node0xb36580;
+                    Node0xb783c0;
+                    Node0xa63720;
+                  }
+                  Node0xc3e200;
+                  Node0xb0eec0;
+                  Node0x8b70c0;
+                  Node0x9785f0;
+                  Node0xb2d810;
+                  Node0x8cf6c0;
+                  Node0xb34160;
+                  Node0x913cb0;
+                  Node0xbef0a0;
+                  Node0xb1db30;
+                  Node0x9ebe60;
+                  Node0xb3c3a0;
+                  Node0xa9a8f0;
+                  Node0xa61f70;
+                  Node0xb3cda0;
+                  Node0x9c6c70;
+                }
+                Node0xb21150;
+                Node0xb2ea10;
+                Node0xb66590;
+              }
+              Node0x9c0d00;
+              Node0xb75250;
+            }
+            Node0xb3d0e0;
+            Node0xbf2190;
+          }
+          Node0xbfb650;
+        }
+}

@@ -1,0 +1,18 @@
+digraph "Scop Graph for 'saveInputFileMetaInfo' function" {
+	label="Scop Graph for 'saveInputFileMetaInfo' function";
+
+	Node0x225df00 [shape=record,label="{%1}"];
+	Node0x225df00 -> Node0x235ef90;
+	Node0x225df00 -> Node0x20ffaa0;
+	Node0x235ef90 [shape=record,label="{%8}"];
+	Node0x20ffaa0 [shape=record,label="{%9}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x23a6e60 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x225df00;
+          Node0x235ef90;
+          Node0x20ffaa0;
+        }
+}

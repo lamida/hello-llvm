@@ -1,0 +1,5 @@
+digraph "CFG for 'redundant' function" {
+	label="CFG for 'redundant' function";
+
+	Node0x189a840 [shape=record,label="{%1}"];
+}

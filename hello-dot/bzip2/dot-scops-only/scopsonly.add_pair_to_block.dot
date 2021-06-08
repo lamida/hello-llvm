@@ -1,0 +1,53 @@
+digraph "Scop Graph for 'add_pair_to_block' function" {
+	label="Scop Graph for 'add_pair_to_block' function";
+
+	Node0x2272830 [shape=record,label="{%1}"];
+	Node0x2272830 -> Node0x214be60;
+	Node0x214be60 [shape=record,label="{%9}"];
+	Node0x214be60 -> Node0x2363d50;
+	Node0x214be60 -> Node0x236c520;
+	Node0x2363d50 [shape=record,label="{%15}"];
+	Node0x2363d50 -> Node0x2291630;
+	Node0x2291630 [shape=record,label="{%33}"];
+	Node0x2291630 -> Node0x214be60[constraint=false];
+	Node0x236c520 [shape=record,label="{%36}"];
+	Node0x236c520 -> Node0x2364bf0;
+	Node0x236c520 -> Node0x22d83c0;
+	Node0x236c520 -> Node0x21b75f0;
+	Node0x236c520 -> Node0x22b9bf0;
+	Node0x2364bf0 [shape=record,label="{%128}"];
+	Node0x2364bf0 -> Node0x236eb70;
+	Node0x236eb70 [shape=record,label="{%206}"];
+	Node0x22d83c0 [shape=record,label="{%47}"];
+	Node0x22d83c0 -> Node0x236eb70;
+	Node0x21b75f0 [shape=record,label="{%61}"];
+	Node0x21b75f0 -> Node0x236eb70;
+	Node0x22b9bf0 [shape=record,label="{%88}"];
+	Node0x22b9bf0 -> Node0x236eb70;
+	colorscheme = "paired12"
+        subgraph cluster_0x23a6e60 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x2396bd0 {
+            label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+            style = solid;
+            color = 6
+            Node0x214be60;
+            Node0x2363d50;
+            Node0x2291630;
+          }
+          subgraph cluster_0x2396c50 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x236c520;
+            Node0x2364bf0;
+            Node0x22d83c0;
+            Node0x21b75f0;
+            Node0x22b9bf0;
+          }
+          Node0x2272830;
+          Node0x236eb70;
+        }
+}

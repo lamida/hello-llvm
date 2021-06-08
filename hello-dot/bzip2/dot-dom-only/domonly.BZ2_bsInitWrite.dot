@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'BZ2_bsInitWrite' function" {
+	label="Dominator tree for 'BZ2_bsInitWrite' function";
+
+	Node0x22ba910 [shape=record,label="{%1}"];
+}

@@ -1,0 +1,42 @@
+digraph "Region Graph for 'BZ2_indexIntoF' function" {
+	label="Region Graph for 'BZ2_indexIntoF' function";
+
+	Node0x1080240 [shape=record,label="{%2}"];
+	Node0x1080240 -> Node0xfa8e60;
+	Node0xfa8e60 [shape=record,label="{%8}"];
+	Node0xfa8e60 -> Node0x10912d0;
+	Node0xfa8e60 -> Node0xfac710;
+	Node0x10912d0 [shape=record,label="{%20}"];
+	Node0x10912d0 -> Node0x103d160;
+	Node0x103d160 [shape=record,label="{%24}"];
+	Node0x103d160 -> Node0x110d4b0;
+	Node0x110d4b0 [shape=record,label="{%25}"];
+	Node0x110d4b0 -> Node0xfa8e60[constraint=false];
+	Node0x110d4b0 -> Node0xdca610;
+	Node0xdca610 [shape=record,label="{%30}"];
+	Node0xfac710 [shape=record,label="{%22}"];
+	Node0xfac710 -> Node0x103d160;
+	colorscheme = "paired12"
+        subgraph cluster_0x1149240 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xd7e8e0 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0x11491c0 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0xfa8e60;
+              Node0x10912d0;
+              Node0xfac710;
+            }
+            Node0x103d160;
+            Node0x110d4b0;
+          }
+          Node0x1080240;
+          Node0xdca610;
+        }
+}

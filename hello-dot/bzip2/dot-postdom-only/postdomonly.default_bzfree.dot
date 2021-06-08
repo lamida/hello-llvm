@@ -1,0 +1,11 @@
+digraph "Post dominator tree for 'default_bzfree' function" {
+	label="Post dominator tree for 'default_bzfree' function";
+
+	Node0x8f6cd0 [shape=record,label="{Post dominance root node}"];
+	Node0x8f6cd0 -> Node0x8f6c70;
+	Node0x8f6c70 [shape=record,label="{%9}"];
+	Node0x8f6c70 -> Node0x8f6b10;
+	Node0x8f6c70 -> Node0x8f6a10;
+	Node0x8f6b10 [shape=record,label="{%2}"];
+	Node0x8f6a10 [shape=record,label="{%7}"];
+}

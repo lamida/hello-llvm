@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'default_bzalloc' function" {
+	label="Dominator tree for 'default_bzalloc' function";
+
+	Node0x1f3d310 [shape=record,label="{%3}"];
+}

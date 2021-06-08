@@ -1,0 +1,27 @@
+digraph "Region Graph for 'myfeof' function" {
+	label="Region Graph for 'myfeof' function";
+
+	Node0x1047450 [shape=record,label="{%1}"];
+	Node0x1047450 -> Node0x1107f90;
+	Node0x1047450 -> Node0x110ad30;
+	Node0x1107f90 [shape=record,label="{%9}"];
+	Node0x1107f90 -> Node0x1110970;
+	Node0x1110970 [shape=record,label="{%14}"];
+	Node0x110ad30 [shape=record,label="{%10}"];
+	Node0x110ad30 -> Node0x1110970;
+	colorscheme = "paired12"
+        subgraph cluster_0x1064e90 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xd7e3d0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x1047450;
+            Node0x1107f90;
+            Node0x110ad30;
+          }
+          Node0x1110970;
+        }
+}

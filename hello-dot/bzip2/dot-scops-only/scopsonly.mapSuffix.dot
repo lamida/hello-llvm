@@ -1,0 +1,27 @@
+digraph "Scop Graph for 'mapSuffix' function" {
+	label="Scop Graph for 'mapSuffix' function";
+
+	Node0x229b380 [shape=record,label="{%3}"];
+	Node0x229b380 -> Node0x22d6970;
+	Node0x229b380 -> Node0x22aa340;
+	Node0x22d6970 [shape=record,label="{%13}"];
+	Node0x22d6970 -> Node0x22d91e0;
+	Node0x22d91e0 [shape=record,label="{%24}"];
+	Node0x22aa340 [shape=record,label="{%12}"];
+	Node0x22aa340 -> Node0x22d91e0;
+	colorscheme = "paired12"
+        subgraph cluster_0x23a6f60 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x2376130 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0x229b380;
+            Node0x22d6970;
+            Node0x22aa340;
+          }
+          Node0x22d91e0;
+        }
+}

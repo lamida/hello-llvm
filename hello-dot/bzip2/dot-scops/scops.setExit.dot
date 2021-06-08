@@ -1,0 +1,24 @@
+digraph "Scop Graph for 'setExit' function" {
+	label="Scop Graph for 'setExit' function";
+
+	Node0x1e36ab0 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load i32, i32* %2, align 4\l  %4 = load i32, i32* @exitValue, align 4\l  %5 = icmp sgt i32 %3, %4\l  br i1 %5, label %6, label %8\l}"];
+	Node0x1e36ab0 -> Node0x1c73410;
+	Node0x1e36ab0 -> Node0x1e3a0a0;
+	Node0x1c73410 [shape=record,label="{%6:\l6:                                                \l  %7 = load i32, i32* %2, align 4\l  store i32 %7, i32* @exitValue, align 4\l  br label %8\l}"];
+	Node0x1c73410 -> Node0x1e3a0a0;
+	Node0x1e3a0a0 [shape=record,label="{%8:\l8:                                                \l  ret void\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1b85960 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1f48d10 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0x1e36ab0;
+            Node0x1c73410;
+          }
+          Node0x1e3a0a0;
+        }
+}

@@ -1,0 +1,87 @@
+digraph "Region Graph for 'BZ2_bzCompressEnd' function" {
+	label="Region Graph for 'BZ2_bzCompressEnd' function";
+
+	Node0x10456d0 [shape=record,label="{%1}"];
+	Node0x10456d0 -> Node0x110d4b0;
+	Node0x10456d0 -> Node0x103d160;
+	Node0x110d4b0 [shape=record,label="{%7}"];
+	Node0x110d4b0 -> Node0xfac710;
+	Node0xfac710 [shape=record,label="{%83}"];
+	Node0x103d160 [shape=record,label="{%8}"];
+	Node0x103d160 -> Node0xfa8e60;
+	Node0x103d160 -> Node0x10912d0;
+	Node0xfa8e60 [shape=record,label="{%15}"];
+	Node0xfa8e60 -> Node0xfac710;
+	Node0x10912d0 [shape=record,label="{%16}"];
+	Node0x10912d0 -> Node0x1080240;
+	Node0x10912d0 -> Node0x111f7e0;
+	Node0x1080240 [shape=record,label="{%22}"];
+	Node0x1080240 -> Node0xfac710;
+	Node0x111f7e0 [shape=record,label="{%23}"];
+	Node0x111f7e0 -> Node0x10fbe50;
+	Node0x111f7e0 -> Node0x1051560;
+	Node0x10fbe50 [shape=record,label="{%28}"];
+	Node0x10fbe50 -> Node0x1051560;
+	Node0x1051560 [shape=record,label="{%39}"];
+	Node0x1051560 -> Node0x102d970;
+	Node0x1051560 -> Node0x104d0c0;
+	Node0x102d970 [shape=record,label="{%44}"];
+	Node0x102d970 -> Node0x104d0c0;
+	Node0x104d0c0 [shape=record,label="{%55}"];
+	Node0x104d0c0 -> Node0x1040630;
+	Node0x104d0c0 -> Node0xebd2d0;
+	Node0x1040630 [shape=record,label="{%60}"];
+	Node0x1040630 -> Node0xebd2d0;
+	Node0xebd2d0 [shape=record,label="{%71}"];
+	Node0xebd2d0 -> Node0xfac710;
+	colorscheme = "paired12"
+        subgraph cluster_0xda11c0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x11491c0 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0x1149140 {
+              label = "";
+              style = filled;
+              color = 5
+              subgraph cluster_0x1148f40 {
+                label = "";
+                style = filled;
+                color = 7
+                subgraph cluster_0x111f760 {
+                  label = "";
+                  style = filled;
+                  color = 9
+                  Node0x111f7e0;
+                  Node0x10fbe50;
+                }
+                subgraph cluster_0x110d880 {
+                  label = "";
+                  style = filled;
+                  color = 9
+                  Node0x1051560;
+                  Node0x102d970;
+                }
+                subgraph cluster_0xd7f370 {
+                  label = "";
+                  style = filled;
+                  color = 9
+                  Node0x104d0c0;
+                  Node0x1040630;
+                }
+                Node0x10912d0;
+                Node0x1080240;
+                Node0xebd2d0;
+              }
+              Node0x103d160;
+              Node0xfa8e60;
+            }
+            Node0x10456d0;
+            Node0x110d4b0;
+          }
+          Node0xfac710;
+        }
+}

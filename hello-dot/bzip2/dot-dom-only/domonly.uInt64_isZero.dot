@@ -1,0 +1,19 @@
+digraph "Dominator tree for 'uInt64_isZero' function" {
+	label="Dominator tree for 'uInt64_isZero' function";
+
+	Node0x1f3d370 [shape=record,label="{%1}"];
+	Node0x1f3d370 -> Node0x22ebad0;
+	Node0x22ebad0 [shape=record,label="{%5}"];
+	Node0x22ebad0 -> Node0x221dbf0;
+	Node0x22ebad0 -> Node0x216c5d0;
+	Node0x22ebad0 -> Node0x217f350;
+	Node0x221dbf0 [shape=record,label="{%8}"];
+	Node0x221dbf0 -> Node0x22d64f0;
+	Node0x221dbf0 -> Node0x21d6540;
+	Node0x22d64f0 [shape=record,label="{%17}"];
+	Node0x21d6540 [shape=record,label="{%18}"];
+	Node0x21d6540 -> Node0x221a750;
+	Node0x221a750 [shape=record,label="{%19}"];
+	Node0x216c5d0 [shape=record,label="{%23}"];
+	Node0x217f350 [shape=record,label="{%22}"];
+}

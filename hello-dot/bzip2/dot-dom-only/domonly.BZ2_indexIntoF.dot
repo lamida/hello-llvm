@@ -1,0 +1,17 @@
+digraph "Dominator tree for 'BZ2_indexIntoF' function" {
+	label="Dominator tree for 'BZ2_indexIntoF' function";
+
+	Node0x22ebf70 [shape=record,label="{%2}"];
+	Node0x22ebf70 -> Node0x21ea260;
+	Node0x21ea260 [shape=record,label="{%8}"];
+	Node0x21ea260 -> Node0x2177ad0;
+	Node0x21ea260 -> Node0x22d9430;
+	Node0x21ea260 -> Node0x1f89c80;
+	Node0x2177ad0 [shape=record,label="{%20}"];
+	Node0x22d9430 [shape=record,label="{%24}"];
+	Node0x22d9430 -> Node0x2044040;
+	Node0x2044040 [shape=record,label="{%25}"];
+	Node0x2044040 -> Node0x223f7d0;
+	Node0x223f7d0 [shape=record,label="{%30}"];
+	Node0x1f89c80 [shape=record,label="{%22}"];
+}

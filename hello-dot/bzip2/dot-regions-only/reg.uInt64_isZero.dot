@@ -1,0 +1,40 @@
+digraph "Region Graph for 'uInt64_isZero' function" {
+	label="Region Graph for 'uInt64_isZero' function";
+
+	Node0x10912d0 [shape=record,label="{%1}"];
+	Node0x10912d0 -> Node0x1110970;
+	Node0x1110970 [shape=record,label="{%5}"];
+	Node0x1110970 -> Node0xeb5930;
+	Node0x1110970 -> Node0x10fef40;
+	Node0xeb5930 [shape=record,label="{%8}"];
+	Node0xeb5930 -> Node0x100e9e0;
+	Node0xeb5930 -> Node0xea6660;
+	Node0x100e9e0 [shape=record,label="{%17}"];
+	Node0x100e9e0 -> Node0x10f8660;
+	Node0x10f8660 [shape=record,label="{%23}"];
+	Node0xea6660 [shape=record,label="{%18}"];
+	Node0xea6660 -> Node0xeb9eb0;
+	Node0xeb9eb0 [shape=record,label="{%19}"];
+	Node0xeb9eb0 -> Node0x1110970[constraint=false];
+	Node0x10fef40 [shape=record,label="{%22}"];
+	Node0x10fef40 -> Node0x10f8660;
+	colorscheme = "paired12"
+        subgraph cluster_0x1064e90 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x111c5d0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x1110970;
+            Node0xeb5930;
+            Node0x100e9e0;
+            Node0xea6660;
+            Node0xeb9eb0;
+            Node0x10fef40;
+          }
+          Node0x10912d0;
+          Node0x10f8660;
+        }
+}

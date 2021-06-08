@@ -1,0 +1,28 @@
+digraph "CFG for 'BZ2_hbAssignCodes' function" {
+	label="CFG for 'BZ2_hbAssignCodes' function";
+
+	Node0x163cc20 [shape=record,label="{%5}"];
+	Node0x163cc20 -> Node0x163c9f0;
+	Node0x163c9f0 [shape=record,label="{%15|{<s0>T|<s1>F}}"];
+	Node0x163c9f0:s0 -> Node0x163d570;
+	Node0x163c9f0:s1 -> Node0x163d5c0;
+	Node0x163d570 [shape=record,label="{%19}"];
+	Node0x163d570 -> Node0x163d690;
+	Node0x163d690 [shape=record,label="{%20|{<s0>T|<s1>F}}"];
+	Node0x163d690:s0 -> Node0x163d870;
+	Node0x163d690:s1 -> Node0x163d8c0;
+	Node0x163d870 [shape=record,label="{%24|{<s0>T|<s1>F}}"];
+	Node0x163d870:s0 -> Node0x16437a0;
+	Node0x163d870:s1 -> Node0x16437f0;
+	Node0x16437a0 [shape=record,label="{%33}"];
+	Node0x16437a0 -> Node0x16437f0;
+	Node0x16437f0 [shape=record,label="{%41}"];
+	Node0x16437f0 -> Node0x1643d00;
+	Node0x1643d00 [shape=record,label="{%42}"];
+	Node0x1643d00 -> Node0x163d690;
+	Node0x163d8c0 [shape=record,label="{%45}"];
+	Node0x163d8c0 -> Node0x16440b0;
+	Node0x16440b0 [shape=record,label="{%48}"];
+	Node0x16440b0 -> Node0x163c9f0;
+	Node0x163d5c0 [shape=record,label="{%51}"];
+}

@@ -1,0 +1,12 @@
+digraph "Region Graph for 'default_bzalloc' function" {
+	label="Region Graph for 'default_bzalloc' function";
+
+	Node0xffd3a0 [shape=record,label="{%3}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xd7e8e0 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0xffd3a0;
+        }
+}

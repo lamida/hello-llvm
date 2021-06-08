@@ -1,0 +1,43 @@
+digraph "Region Graph for 'BZ2_bzread' function" {
+	label="Region Graph for 'BZ2_bzread' function";
+
+	Node0x102d970 [shape=record,label="{%3}"];
+	Node0x102d970 -> Node0x10eecf0;
+	Node0x102d970 -> Node0x102dd70;
+	Node0x10eecf0 [shape=record,label="{%15}"];
+	Node0x10eecf0 -> Node0xffd3a0;
+	Node0xffd3a0 [shape=record,label="{%29}"];
+	Node0x102dd70 [shape=record,label="{%16}"];
+	Node0x102dd70 -> Node0x104e270;
+	Node0x102dd70 -> Node0xe40b60;
+	Node0x104e270 [shape=record,label="{%26}"];
+	Node0x104e270 -> Node0xffd3a0;
+	Node0xe40b60 [shape=record,label="{%23}"];
+	Node0xe40b60 -> Node0x104e270;
+	Node0xe40b60 -> Node0x105c410;
+	Node0x105c410 [shape=record,label="{%28}"];
+	Node0x105c410 -> Node0xffd3a0;
+	colorscheme = "paired12"
+        subgraph cluster_0x10e8a90 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x114abf0 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xd7e8e0 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0x102dd70;
+              Node0x104e270;
+              Node0xe40b60;
+              Node0x105c410;
+            }
+            Node0x102d970;
+            Node0x10eecf0;
+          }
+          Node0xffd3a0;
+        }
+}

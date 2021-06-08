@@ -1,0 +1,11 @@
+digraph "Dominator tree for 'BZ2_bzwrite' function" {
+	label="Dominator tree for 'BZ2_bzwrite' function";
+
+	Node0x21d3060 [shape=record,label="{%3}"];
+	Node0x21d3060 -> Node0x207e7a0;
+	Node0x21d3060 -> Node0x22c7e90;
+	Node0x21d3060 -> Node0x225b340;
+	Node0x207e7a0 [shape=record,label="{%14}"];
+	Node0x22c7e90 [shape=record,label="{%17}"];
+	Node0x225b340 [shape=record,label="{%16}"];
+}

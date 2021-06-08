@@ -1,0 +1,27 @@
+digraph "Post dominator tree for 'BZ2_hbAssignCodes' function" {
+	label="Post dominator tree for 'BZ2_hbAssignCodes' function";
+
+	Node0x96ec00 [shape=record,label="{Post dominance root node}"];
+	Node0x96ec00 -> Node0xc876f0;
+	Node0xc876f0 [shape=record,label="{%51}"];
+	Node0xc876f0 -> Node0xbbbe10;
+	Node0xbbbe10 [shape=record,label="{%15}"];
+	Node0xbbbe10 -> Node0x96b6d0;
+	Node0xbbbe10 -> Node0xc7e890;
+	Node0x96b6d0 [shape=record,label="{%5}"];
+	Node0xc7e890 [shape=record,label="{%48}"];
+	Node0xc7e890 -> Node0xc68f10;
+	Node0xc68f10 [shape=record,label="{%45}"];
+	Node0xc68f10 -> Node0xbdd5d0;
+	Node0xbdd5d0 [shape=record,label="{%20}"];
+	Node0xbdd5d0 -> Node0x995f40;
+	Node0xbdd5d0 -> Node0xa57800;
+	Node0x995f40 [shape=record,label="{%19}"];
+	Node0xa57800 [shape=record,label="{%42}"];
+	Node0xa57800 -> Node0xba7e70;
+	Node0xba7e70 [shape=record,label="{%41}"];
+	Node0xba7e70 -> Node0x919470;
+	Node0xba7e70 -> Node0xc87630;
+	Node0x919470 [shape=record,label="{%24}"];
+	Node0xc87630 [shape=record,label="{%33}"];
+}

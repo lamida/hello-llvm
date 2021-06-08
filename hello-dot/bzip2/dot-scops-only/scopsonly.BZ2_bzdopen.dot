@@ -1,0 +1,12 @@
+digraph "Scop Graph for 'BZ2_bzdopen' function" {
+	label="Scop Graph for 'BZ2_bzdopen' function";
+
+	Node0x22bae20 [shape=record,label="{%2}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x239e240 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x22bae20;
+        }
+}

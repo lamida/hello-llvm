@@ -1,0 +1,10 @@
+digraph "CFG for 'compressedStreamEOF' function" {
+	label="CFG for 'compressedStreamEOF' function";
+
+	Node0x1942920 [shape=record,label="{%0|{<s0>T|<s1>F}}"];
+	Node0x1942920:s0 -> Node0x1942a00;
+	Node0x1942920:s1 -> Node0x1942a50;
+	Node0x1942a00 [shape=record,label="{%3}"];
+	Node0x1942a00 -> Node0x1942a50;
+	Node0x1942a50 [shape=record,label="{%8}"];
+}

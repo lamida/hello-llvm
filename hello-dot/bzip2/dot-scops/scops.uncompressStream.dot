@@ -1,0 +1,324 @@
+digraph "Scop Graph for 'uncompressStream' function" {
+	label="Scop Graph for 'uncompressStream' function";
+
+	Node0x1ec10a0 [shape=record,label="{%2:\l  %3 = alloca i8, align 1\l  %4 = alloca %struct._IO_FILE*, align 8\l  %5 = alloca %struct._IO_FILE*, align 8\l  %6 = alloca i8*, align 8\l  %7 = alloca i32, align 4\l  %8 = alloca i32, align 4\l  %9 = alloca i32, align 4\l  %10 = alloca i32, align 4\l  %11 = alloca i32, align 4\l  %12 = alloca i32, align 4\l  %13 = alloca [5000 x i8], align 16\l  %14 = alloca [5000 x i8], align 16\l  %15 = alloca i32, align 4\l  %16 = alloca i8*, align 8\l  store %struct._IO_FILE* %0, %struct._IO_FILE** %4, align 8\l  store %struct._IO_FILE* %1, %struct._IO_FILE** %5, align 8\l  store i8* null, i8** %6, align 8\l  store i32 0, i32* %15, align 4\l  store i32 0, i32* %11, align 4\l  %17 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8\l  %18 = call i32 @ferror(%struct._IO_FILE* %17) #8\l  %19 = icmp ne i32 %18, 0\l  br i1 %19, label %20, label %21\l}"];
+	Node0x1ec10a0 -> Node0x1edae00;
+	Node0x1ec10a0 -> Node0x1c631b0;
+	Node0x1edae00 [shape=record,label="{%20:\l20:                                               \l  br label %198\l}"];
+	Node0x1edae00 -> Node0x1f186c0;
+	Node0x1f186c0 [shape=record,label="{%198:\l198:                                              \l  call void @ioError() #9\l  unreachable\l}"];
+	Node0x1c631b0 [shape=record,label="{%21:\l21:                                               \l  %22 = load %struct._IO_FILE*, %struct._IO_FILE** %4, align 8\l  %23 = call i32 @ferror(%struct._IO_FILE* %22) #8\l  %24 = icmp ne i32 %23, 0\l  br i1 %24, label %25, label %26\l}"];
+	Node0x1c631b0 -> Node0x1be50c0;
+	Node0x1c631b0 -> Node0x1e4dc70;
+	Node0x1be50c0 [shape=record,label="{%25:\l25:                                               \l  br label %198\l}"];
+	Node0x1be50c0 -> Node0x1f186c0;
+	Node0x1e4dc70 [shape=record,label="{%26:\l26:                                               \l  br label %27\l}"];
+	Node0x1e4dc70 -> Node0x1be4970;
+	Node0x1be4970 [shape=record,label="{%27:\l27:                                               \l  %28 = load %struct._IO_FILE*, %struct._IO_FILE** %4, align 8\l  %29 = load i32, i32* @verbosity, align 4\l  %30 = load i8, i8* @smallMode, align 1\l  %31 = zext i8 %30 to i32\l  %32 = getelementptr inbounds [5000 x i8], [5000 x i8]* %14, i64 0, i64 0\l  %33 = load i32, i32* %15, align 4\l  %34 = call i8* @BZ2_bzReadOpen(i32* %7, %struct._IO_FILE* %28, i32 %29, i32\l... %31, i8* %32, i32 %33)\l  store i8* %34, i8** %6, align 8\l  %35 = load i8*, i8** %6, align 8\l  %36 = icmp eq i8* %35, null\l  br i1 %36, label %40, label %37\l}"];
+	Node0x1be4970 -> Node0x1b888d0;
+	Node0x1be4970 -> Node0x1e38590;
+	Node0x1b888d0 [shape=record,label="{%40:\l40:                                               \l  br label %193\l}"];
+	Node0x1b888d0 -> Node0x1e1b7a0;
+	Node0x1e1b7a0 [shape=record,label="{%193:\l193:                                              \l  %194 = load i8*, i8** %6, align 8\l  call void @BZ2_bzReadClose(i32* %8, i8* %194)\l  %195 = load i32, i32* %7, align 4\l  switch i32 %195, label %228 [\l    i32 -9, label %196\l    i32 -6, label %197\l    i32 -4, label %199\l    i32 -3, label %200\l    i32 -7, label %201\l    i32 -5, label %202\l  ]\l}"];
+	Node0x1e1b7a0 -> Node0x1e10360;
+	Node0x1e1b7a0 -> Node0x1be4f70;
+	Node0x1e1b7a0 -> Node0x1e63a70;
+	Node0x1e1b7a0 -> Node0x1e4a3c0;
+	Node0x1e1b7a0 -> Node0x1ed6660;
+	Node0x1e1b7a0 -> Node0x1e2cfc0;
+	Node0x1e1b7a0 -> Node0x1e15540;
+	Node0x1e10360 [shape=record,label="{%228:\l228:                                              \l  call void @panic(i8* getelementptr inbounds ([28 x i8], [28 x i8]*\l... @.str.132, i64 0, i64 0)) #9\l  unreachable\l}"];
+	Node0x1be4f70 [shape=record,label="{%196:\l196:                                              \l  call void @configError() #9\l  unreachable\l}"];
+	Node0x1e63a70 [shape=record,label="{%197:\l197:                                              \l  br label %198\l}"];
+	Node0x1e63a70 -> Node0x1f186c0;
+	Node0x1e4a3c0 [shape=record,label="{%199:\l199:                                              \l  call void @crcError() #9\l  unreachable\l}"];
+	Node0x1ed6660 [shape=record,label="{%200:\l200:                                              \l  call void @outOfMemory() #9\l  unreachable\l}"];
+	Node0x1e2cfc0 [shape=record,label="{%201:\l201:                                              \l  call void @compressedStreamEOF() #9\l  unreachable\l}"];
+	Node0x1e15540 [shape=record,label="{%202:\l202:                                              \l  %203 = load %struct._IO_FILE*, %struct._IO_FILE** %4, align 8\l  %204 = load %struct._IO_FILE*, %struct._IO_FILE** @stdin, align 8\l  %205 = icmp ne %struct._IO_FILE* %203, %204\l  br i1 %205, label %206, label %209\l}"];
+	Node0x1e15540 -> Node0x1ed9320;
+	Node0x1e15540 -> Node0x1be7e60;
+	Node0x1ed9320 [shape=record,label="{%206:\l206:                                              \l  %207 = load %struct._IO_FILE*, %struct._IO_FILE** %4, align 8\l  %208 = call i32 @fclose(%struct._IO_FILE* %207)\l  br label %209\l}"];
+	Node0x1ed9320 -> Node0x1be7e60;
+	Node0x1be7e60 [shape=record,label="{%209:\l209:                                              \l  %210 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8\l  %211 = load %struct._IO_FILE*, %struct._IO_FILE** @stdout, align 8\l  %212 = icmp ne %struct._IO_FILE* %210, %211\l  br i1 %212, label %213, label %216\l}"];
+	Node0x1be7e60 -> Node0x1e3cf70;
+	Node0x1be7e60 -> Node0x1ce4d50;
+	Node0x1e3cf70 [shape=record,label="{%213:\l213:                                              \l  %214 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8\l  %215 = call i32 @fclose(%struct._IO_FILE* %214)\l  br label %216\l}"];
+	Node0x1e3cf70 -> Node0x1ce4d50;
+	Node0x1ce4d50 [shape=record,label="{%216:\l216:                                              \l  %217 = load i32, i32* %11, align 4\l  %218 = icmp eq i32 %217, 1\l  br i1 %218, label %219, label %220\l}"];
+	Node0x1ce4d50 -> Node0x1e31d80;
+	Node0x1ce4d50 -> Node0x1e2bb00;
+	Node0x1e31d80 [shape=record,label="{%219:\l219:                                              \l  store i8 0, i8* %3, align 1\l  br label %229\l}"];
+	Node0x1e31d80 -> Node0x1de4940;
+	Node0x1de4940 [shape=record,label="{%229:\l229:                                              \l  %230 = load i8, i8* %3, align 1\l  ret i8 %230\l}"];
+	Node0x1e2bb00 [shape=record,label="{%220:\l220:                                              \l  %221 = load i8, i8* @noisy, align 1\l  %222 = icmp ne i8 %221, 0\l  br i1 %222, label %223, label %227\l}"];
+	Node0x1e2bb00 -> Node0x1e47250;
+	Node0x1e2bb00 -> Node0x1ec1660;
+	Node0x1e47250 [shape=record,label="{%223:\l223:                                              \l  %224 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %225 = load i8*, i8** @progName, align 8\l  %226 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE*\l... %224, i8* getelementptr inbounds ([45 x i8], [45 x i8]* @.str.131, i64 0, i64\l... 0), i8* %225, i8* getelementptr inbounds ([1034 x i8], [1034 x i8]* @inName,\l... i64 0, i64 0))\l  br label %227\l}"];
+	Node0x1e47250 -> Node0x1ec1660;
+	Node0x1ec1660 [shape=record,label="{%227:\l227:                                              \l  store i8 1, i8* %3, align 1\l  br label %229\l}"];
+	Node0x1ec1660 -> Node0x1de4940;
+	Node0x1e38590 [shape=record,label="{%37:\l37:                                               \l  %38 = load i32, i32* %7, align 4\l  %39 = icmp ne i32 %38, 0\l  br i1 %39, label %40, label %41\l}"];
+	Node0x1e38590 -> Node0x1b888d0;
+	Node0x1e38590 -> Node0x1e4fd70;
+	Node0x1e4fd70 [shape=record,label="{%41:\l41:                                               \l  %42 = load i32, i32* %11, align 4\l  %43 = add nsw i32 %42, 1\l  store i32 %43, i32* %11, align 4\l  br label %44\l}"];
+	Node0x1e4fd70 -> Node0x1ed0ae0;
+	Node0x1ed0ae0 [shape=record,label="{%44:\l44:                                               \l  %45 = load i32, i32* %7, align 4\l  %46 = icmp eq i32 %45, 0\l  br i1 %46, label %47, label %75\l}"];
+	Node0x1ed0ae0 -> Node0x1ec65c0;
+	Node0x1ed0ae0 -> Node0x1c7e080;
+	Node0x1ec65c0 [shape=record,label="{%47:\l47:                                               \l  %48 = load i8*, i8** %6, align 8\l  %49 = getelementptr inbounds [5000 x i8], [5000 x i8]* %13, i64 0, i64 0\l  %50 = call i32 @BZ2_bzRead(i32* %7, i8* %48, i8* %49, i32 5000)\l  store i32 %50, i32* %10, align 4\l  %51 = load i32, i32* %7, align 4\l  %52 = icmp eq i32 %51, -5\l  br i1 %52, label %53, label %54\l}"];
+	Node0x1ec65c0 -> Node0x1bad4b0;
+	Node0x1ec65c0 -> Node0x1d6f840;
+	Node0x1bad4b0 [shape=record,label="{%53:\l53:                                               \l  br label %157\l}"];
+	Node0x1bad4b0 -> Node0x1dcff00;
+	Node0x1dcff00 [shape=record,label="{%157:\l157:                                              \l  %158 = load i8, i8* @forceOverwrite, align 1\l  %159 = icmp ne i8 %158, 0\l  br i1 %159, label %160, label %192\l}"];
+	Node0x1dcff00 -> Node0x1e49cf0;
+	Node0x1dcff00 -> Node0x1ed7eb0;
+	Node0x1e49cf0 [shape=record,label="{%160:\l160:                                              \l  %161 = load %struct._IO_FILE*, %struct._IO_FILE** %4, align 8\l  call void @rewind(%struct._IO_FILE* %161)\l  br label %162\l}"];
+	Node0x1e49cf0 -> Node0x1ec07e0;
+	Node0x1ec07e0 [shape=record,label="{%162:\l162:                                              \l  %163 = load %struct._IO_FILE*, %struct._IO_FILE** %4, align 8\l  %164 = call zeroext i8 @myfeof(%struct._IO_FILE* %163)\l  %165 = icmp ne i8 %164, 0\l  br i1 %165, label %166, label %167\l}"];
+	Node0x1ec07e0 -> Node0x1c48750;
+	Node0x1ec07e0 -> Node0x1d7e380;
+	Node0x1c48750 [shape=record,label="{%166:\l166:                                              \l  br label %191\l}"];
+	Node0x1c48750 -> Node0x1de4830;
+	Node0x1de4830 [shape=record,label="{%191:\l191:                                              \l  br label %117\l}"];
+	Node0x1de4830 -> Node0x1e22190;
+	Node0x1e22190 [shape=record,label="{%117:\l117:                                              \l  %118 = load %struct._IO_FILE*, %struct._IO_FILE** %4, align 8\l  %119 = call i32 @ferror(%struct._IO_FILE* %118) #8\l  %120 = icmp ne i32 %119, 0\l  br i1 %120, label %121, label %122\l}"];
+	Node0x1e22190 -> Node0x1d295f0;
+	Node0x1e22190 -> Node0x1ebb090;
+	Node0x1d295f0 [shape=record,label="{%121:\l121:                                              \l  br label %198\l}"];
+	Node0x1d295f0 -> Node0x1f186c0;
+	Node0x1ebb090 [shape=record,label="{%122:\l122:                                              \l  %123 = load %struct._IO_FILE*, %struct._IO_FILE** %4, align 8\l  %124 = call i32 @fclose(%struct._IO_FILE* %123)\l  store i32 %124, i32* %9, align 4\l  %125 = load i32, i32* %9, align 4\l  %126 = icmp eq i32 %125, -1\l  br i1 %126, label %127, label %128\l}"];
+	Node0x1ebb090 -> Node0x1d69430;
+	Node0x1ebb090 -> Node0x1ed9a60;
+	Node0x1d69430 [shape=record,label="{%127:\l127:                                              \l  br label %198\l}"];
+	Node0x1d69430 -> Node0x1f186c0;
+	Node0x1ed9a60 [shape=record,label="{%128:\l128:                                              \l  %129 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8\l  %130 = call i32 @ferror(%struct._IO_FILE* %129) #8\l  %131 = icmp ne i32 %130, 0\l  br i1 %131, label %132, label %133\l}"];
+	Node0x1ed9a60 -> Node0x1de9730;
+	Node0x1ed9a60 -> Node0x1e245f0;
+	Node0x1de9730 [shape=record,label="{%132:\l132:                                              \l  br label %198\l}"];
+	Node0x1de9730 -> Node0x1f186c0;
+	Node0x1e245f0 [shape=record,label="{%133:\l133:                                              \l  %134 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8\l  %135 = call i32 @fflush(%struct._IO_FILE* %134)\l  store i32 %135, i32* %9, align 4\l  %136 = load i32, i32* %9, align 4\l  %137 = icmp ne i32 %136, 0\l  br i1 %137, label %138, label %139\l}"];
+	Node0x1e245f0 -> Node0x1ed8590;
+	Node0x1e245f0 -> Node0x1b890c0;
+	Node0x1ed8590 [shape=record,label="{%138:\l138:                                              \l  br label %198\l}"];
+	Node0x1ed8590 -> Node0x1f186c0;
+	Node0x1b890c0 [shape=record,label="{%139:\l139:                                              \l  %140 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8\l  %141 = load %struct._IO_FILE*, %struct._IO_FILE** @stdout, align 8\l  %142 = icmp ne %struct._IO_FILE* %140, %141\l  br i1 %142, label %143, label %150\l}"];
+	Node0x1b890c0 -> Node0x1e32f70;
+	Node0x1b890c0 -> Node0x1b684a0;
+	Node0x1e32f70 [shape=record,label="{%143:\l143:                                              \l  %144 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8\l  %145 = call i32 @fclose(%struct._IO_FILE* %144)\l  store i32 %145, i32* %9, align 4\l  store %struct._IO_FILE* null, %struct._IO_FILE** @outputHandleJustInCase,\l... align 8\l  %146 = load i32, i32* %9, align 4\l  %147 = icmp eq i32 %146, -1\l  br i1 %147, label %148, label %149\l}"];
+	Node0x1e32f70 -> Node0x1d33f70;
+	Node0x1e32f70 -> Node0x1ec1b80;
+	Node0x1d33f70 [shape=record,label="{%148:\l148:                                              \l  br label %198\l}"];
+	Node0x1d33f70 -> Node0x1f186c0;
+	Node0x1ec1b80 [shape=record,label="{%149:\l149:                                              \l  br label %150\l}"];
+	Node0x1ec1b80 -> Node0x1b684a0;
+	Node0x1b684a0 [shape=record,label="{%150:\l150:                                              \l  store %struct._IO_FILE* null, %struct._IO_FILE** @outputHandleJustInCase,\l... align 8\l  %151 = load i32, i32* @verbosity, align 4\l  %152 = icmp sge i32 %151, 2\l  br i1 %152, label %153, label %156\l}"];
+	Node0x1b684a0 -> Node0x1ec5a60;
+	Node0x1b684a0 -> Node0x1b93610;
+	Node0x1ec5a60 [shape=record,label="{%153:\l153:                                              \l  %154 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %155 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE*\l... %154, i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.130, i64 0, i64\l... 0))\l  br label %156\l}"];
+	Node0x1ec5a60 -> Node0x1b93610;
+	Node0x1b93610 [shape=record,label="{%156:\l156:                                              \l  store i8 1, i8* %3, align 1\l  br label %229\l}"];
+	Node0x1b93610 -> Node0x1de4940;
+	Node0x1d7e380 [shape=record,label="{%167:\l167:                                              \l  %168 = getelementptr inbounds [5000 x i8], [5000 x i8]* %13, i64 0, i64 0\l  %169 = load %struct._IO_FILE*, %struct._IO_FILE** %4, align 8\l  %170 = call i64 @fread(i8* %168, i64 1, i64 5000, %struct._IO_FILE* %169)\l  %171 = trunc i64 %170 to i32\l  store i32 %171, i32* %10, align 4\l  %172 = load %struct._IO_FILE*, %struct._IO_FILE** %4, align 8\l  %173 = call i32 @ferror(%struct._IO_FILE* %172) #8\l  %174 = icmp ne i32 %173, 0\l  br i1 %174, label %175, label %176\l}"];
+	Node0x1d7e380 -> Node0x1b88cb0;
+	Node0x1d7e380 -> Node0x1c65610;
+	Node0x1b88cb0 [shape=record,label="{%175:\l175:                                              \l  br label %198\l}"];
+	Node0x1b88cb0 -> Node0x1f186c0;
+	Node0x1c65610 [shape=record,label="{%176:\l176:                                              \l  %177 = load i32, i32* %10, align 4\l  %178 = icmp sgt i32 %177, 0\l  br i1 %178, label %179, label %185\l}"];
+	Node0x1c65610 -> Node0x1e20310;
+	Node0x1c65610 -> Node0x1ed5c80;
+	Node0x1e20310 [shape=record,label="{%179:\l179:                                              \l  %180 = getelementptr inbounds [5000 x i8], [5000 x i8]* %13, i64 0, i64 0\l  %181 = load i32, i32* %10, align 4\l  %182 = sext i32 %181 to i64\l  %183 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8\l  %184 = call i64 @fwrite(i8* %180, i64 1, i64 %182, %struct._IO_FILE* %183)\l  br label %185\l}"];
+	Node0x1e20310 -> Node0x1ed5c80;
+	Node0x1ed5c80 [shape=record,label="{%185:\l185:                                              \l  %186 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8\l  %187 = call i32 @ferror(%struct._IO_FILE* %186) #8\l  %188 = icmp ne i32 %187, 0\l  br i1 %188, label %189, label %190\l}"];
+	Node0x1ed5c80 -> Node0x1dc3e20;
+	Node0x1ed5c80 -> Node0x1e31c20;
+	Node0x1dc3e20 [shape=record,label="{%189:\l189:                                              \l  br label %198\l}"];
+	Node0x1dc3e20 -> Node0x1f186c0;
+	Node0x1e31c20 [shape=record,label="{%190:\l190:                                              \l  br label %162\l}"];
+	Node0x1e31c20 -> Node0x1ec07e0;
+	Node0x1ed7eb0 [shape=record,label="{%192:\l192:                                              \l  br label %193\l}"];
+	Node0x1ed7eb0 -> Node0x1e1b7a0;
+	Node0x1d6f840 [shape=record,label="{%54:\l54:                                               \l  %55 = load i32, i32* %7, align 4\l  %56 = icmp eq i32 %55, 0\l  br i1 %56, label %60, label %57\l}"];
+	Node0x1d6f840 -> Node0x1dd79e0;
+	Node0x1d6f840 -> Node0x1e0e2b0;
+	Node0x1dd79e0 [shape=record,label="{%60:\l60:                                               \l  %61 = load i32, i32* %10, align 4\l  %62 = icmp sgt i32 %61, 0\l  br i1 %62, label %63, label %69\l}"];
+	Node0x1dd79e0 -> Node0x1e1be70;
+	Node0x1dd79e0 -> Node0x1ba9d90;
+	Node0x1e1be70 [shape=record,label="{%63:\l63:                                               \l  %64 = getelementptr inbounds [5000 x i8], [5000 x i8]* %13, i64 0, i64 0\l  %65 = load i32, i32* %10, align 4\l  %66 = sext i32 %65 to i64\l  %67 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8\l  %68 = call i64 @fwrite(i8* %64, i64 1, i64 %66, %struct._IO_FILE* %67)\l  br label %69\l}"];
+	Node0x1e1be70 -> Node0x1ba9d90;
+	Node0x1ba9d90 [shape=record,label="{%69:\l69:                                               \l  %70 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8\l  %71 = call i32 @ferror(%struct._IO_FILE* %70) #8\l  %72 = icmp ne i32 %71, 0\l  br i1 %72, label %73, label %74\l}"];
+	Node0x1ba9d90 -> Node0x1e0aa40;
+	Node0x1ba9d90 -> Node0x1b6a550;
+	Node0x1e0aa40 [shape=record,label="{%73:\l73:                                               \l  br label %198\l}"];
+	Node0x1e0aa40 -> Node0x1f186c0;
+	Node0x1b6a550 [shape=record,label="{%74:\l74:                                               \l  br label %44\l}"];
+	Node0x1b6a550 -> Node0x1ed0ae0;
+	Node0x1e0e2b0 [shape=record,label="{%57:\l57:                                               \l  %58 = load i32, i32* %7, align 4\l  %59 = icmp eq i32 %58, 4\l  br i1 %59, label %60, label %69\l}"];
+	Node0x1e0e2b0 -> Node0x1dd79e0;
+	Node0x1e0e2b0 -> Node0x1ba9d90;
+	Node0x1c7e080 [shape=record,label="{%75:\l75:                                               \l  %76 = load i32, i32* %7, align 4\l  %77 = icmp ne i32 %76, 4\l  br i1 %77, label %78, label %79\l}"];
+	Node0x1c7e080 -> Node0x1ed6cc0;
+	Node0x1c7e080 -> Node0x1bc4880;
+	Node0x1ed6cc0 [shape=record,label="{%78:\l78:                                               \l  br label %193\l}"];
+	Node0x1ed6cc0 -> Node0x1e1b7a0;
+	Node0x1bc4880 [shape=record,label="{%79:\l79:                                               \l  %80 = load i8*, i8** %6, align 8\l  call void @BZ2_bzReadGetUnused(i32* %7, i8* %80, i8** %16, i32* %15)\l  %81 = load i32, i32* %7, align 4\l  %82 = icmp ne i32 %81, 0\l  br i1 %82, label %83, label %84\l}"];
+	Node0x1bc4880 -> Node0x1ec5030;
+	Node0x1bc4880 -> Node0x1ebafc0;
+	Node0x1ec5030 [shape=record,label="{%83:\l83:                                               \l  call void @panic(i8* getelementptr inbounds ([27 x i8], [27 x i8]*\l... @.str.129, i64 0, i64 0)) #9\l  unreachable\l}"];
+	Node0x1ebafc0 [shape=record,label="{%84:\l84:                                               \l  store i32 0, i32* %12, align 4\l  br label %85\l}"];
+	Node0x1ebafc0 -> Node0x1ed1300;
+	Node0x1ed1300 [shape=record,label="{%85:\l85:                                               \l  %86 = load i32, i32* %12, align 4\l  %87 = load i32, i32* %15, align 4\l  %88 = icmp slt i32 %86, %87\l  br i1 %88, label %89, label %101\l}"];
+	Node0x1ed1300 -> Node0x1c498b0;
+	Node0x1ed1300 -> Node0x1be6d30;
+	Node0x1c498b0 [shape=record,label="{%89:\l89:                                               \l  %90 = load i8*, i8** %16, align 8\l  %91 = load i32, i32* %12, align 4\l  %92 = sext i32 %91 to i64\l  %93 = getelementptr inbounds i8, i8* %90, i64 %92\l  %94 = load i8, i8* %93, align 1\l  %95 = load i32, i32* %12, align 4\l  %96 = sext i32 %95 to i64\l  %97 = getelementptr inbounds [5000 x i8], [5000 x i8]* %14, i64 0, i64 %96\l  store i8 %94, i8* %97, align 1\l  br label %98\l}"];
+	Node0x1c498b0 -> Node0x1e84a20;
+	Node0x1e84a20 [shape=record,label="{%98:\l98:                                               \l  %99 = load i32, i32* %12, align 4\l  %100 = add nsw i32 %99, 1\l  store i32 %100, i32* %12, align 4\l  br label %85\l}"];
+	Node0x1e84a20 -> Node0x1ed1300[constraint=false];
+	Node0x1be6d30 [shape=record,label="{%101:\l101:                                              \l  %102 = load i8*, i8** %6, align 8\l  call void @BZ2_bzReadClose(i32* %7, i8* %102)\l  %103 = load i32, i32* %7, align 4\l  %104 = icmp ne i32 %103, 0\l  br i1 %104, label %105, label %106\l}"];
+	Node0x1be6d30 -> Node0x1df88a0;
+	Node0x1be6d30 -> Node0x1be6900;
+	Node0x1df88a0 [shape=record,label="{%105:\l105:                                              \l  call void @panic(i8* getelementptr inbounds ([27 x i8], [27 x i8]*\l... @.str.129, i64 0, i64 0)) #9\l  unreachable\l}"];
+	Node0x1be6900 [shape=record,label="{%106:\l106:                                              \l  %107 = load i32, i32* %15, align 4\l  %108 = icmp eq i32 %107, 0\l  br i1 %108, label %109, label %115\l}"];
+	Node0x1be6900 -> Node0x1e3a1d0;
+	Node0x1be6900 -> Node0x1e46ff0;
+	Node0x1e3a1d0 [shape=record,label="{%109:\l109:                                              \l  %110 = load %struct._IO_FILE*, %struct._IO_FILE** %4, align 8\l  %111 = call zeroext i8 @myfeof(%struct._IO_FILE* %110)\l  %112 = zext i8 %111 to i32\l  %113 = icmp ne i32 %112, 0\l  br i1 %113, label %114, label %115\l}"];
+	Node0x1e3a1d0 -> Node0x1eb8940;
+	Node0x1e3a1d0 -> Node0x1e46ff0;
+	Node0x1eb8940 [shape=record,label="{%114:\l114:                                              \l  br label %116\l}"];
+	Node0x1eb8940 -> Node0x1e09630;
+	Node0x1e09630 [shape=record,label="{%116:\l116:                                              \l  br label %117\l}"];
+	Node0x1e09630 -> Node0x1e22190;
+	Node0x1e46ff0 [shape=record,label="{%115:\l115:                                              \l  br label %27\l}"];
+	Node0x1e46ff0 -> Node0x1be4970;
+	colorscheme = "paired12"
+        subgraph cluster_0x1f18fa0 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1f6f7b0 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x1e15540;
+            Node0x1ed9320;
+          }
+          subgraph cluster_0x1f1fcc0 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x1be7e60;
+            Node0x1e3cf70;
+          }
+          subgraph cluster_0x1ee85d0 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1f84370 {
+              label = "Region can not profitably be optimized!";
+              style = solid;
+              color = 5
+              Node0x1e2bb00;
+              Node0x1e47250;
+            }
+            Node0x1ce4d50;
+            Node0x1e31d80;
+            Node0x1ec1660;
+          }
+          subgraph cluster_0x1b483a0 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x1c65610;
+            Node0x1e20310;
+          }
+          subgraph cluster_0x1b45950 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1f42ba0 {
+              label = "Region can not profitably be optimized!";
+              style = solid;
+              color = 5
+              Node0x1dd79e0;
+              Node0x1e1be70;
+            }
+            Node0x1d6f840;
+            Node0x1e0e2b0;
+          }
+          subgraph cluster_0x1b459d0 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x1b684a0;
+            Node0x1ec5a60;
+          }
+          subgraph cluster_0x1b45a50 {
+            label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+            style = solid;
+            color = 6
+            Node0x1ed1300;
+            Node0x1c498b0;
+            Node0x1e84a20;
+          }
+          Node0x1ec10a0;
+          Node0x1edae00;
+          Node0x1f186c0;
+          Node0x1c631b0;
+          Node0x1be50c0;
+          Node0x1e4dc70;
+          Node0x1be4970;
+          Node0x1b888d0;
+          Node0x1e1b7a0;
+          Node0x1e10360;
+          Node0x1be4f70;
+          Node0x1e63a70;
+          Node0x1e4a3c0;
+          Node0x1ed6660;
+          Node0x1e2cfc0;
+          Node0x1de4940;
+          Node0x1e38590;
+          Node0x1e4fd70;
+          Node0x1ed0ae0;
+          Node0x1ec65c0;
+          Node0x1bad4b0;
+          Node0x1dcff00;
+          Node0x1e49cf0;
+          Node0x1ec07e0;
+          Node0x1c48750;
+          Node0x1de4830;
+          Node0x1e22190;
+          Node0x1d295f0;
+          Node0x1ebb090;
+          Node0x1d69430;
+          Node0x1ed9a60;
+          Node0x1de9730;
+          Node0x1e245f0;
+          Node0x1ed8590;
+          Node0x1b890c0;
+          Node0x1e32f70;
+          Node0x1d33f70;
+          Node0x1ec1b80;
+          Node0x1b93610;
+          Node0x1d7e380;
+          Node0x1b88cb0;
+          Node0x1ed5c80;
+          Node0x1dc3e20;
+          Node0x1e31c20;
+          Node0x1ed7eb0;
+          Node0x1ba9d90;
+          Node0x1e0aa40;
+          Node0x1b6a550;
+          Node0x1c7e080;
+          Node0x1ed6cc0;
+          Node0x1bc4880;
+          Node0x1ec5030;
+          Node0x1ebafc0;
+          Node0x1be6d30;
+          Node0x1df88a0;
+          Node0x1be6900;
+          Node0x1e3a1d0;
+          Node0x1eb8940;
+          Node0x1e09630;
+          Node0x1e46ff0;
+        }
+}

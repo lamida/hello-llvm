@@ -1,0 +1,42 @@
+digraph "Scop Graph for 'snocString' function" {
+	label="Scop Graph for 'snocString' function";
+
+	Node0x22bae20 [shape=record,label="{%2}"];
+	Node0x22bae20 -> Node0x21fb890;
+	Node0x22bae20 -> Node0x22be510;
+	Node0x21fb890 [shape=record,label="{%10}"];
+	Node0x21fb890 -> Node0x203b4b0;
+	Node0x203b4b0 [shape=record,label="{%45}"];
+	Node0x22be510 [shape=record,label="{%25}"];
+	Node0x22be510 -> Node0x2369780;
+	Node0x2369780 [shape=record,label="{%27}"];
+	Node0x2369780 -> Node0x21b9aa0;
+	Node0x2369780 -> Node0x21ff650;
+	Node0x21b9aa0 [shape=record,label="{%32}"];
+	Node0x21b9aa0 -> Node0x2369780[constraint=false];
+	Node0x21ff650 [shape=record,label="{%36}"];
+	Node0x21ff650 -> Node0x203b4b0;
+	colorscheme = "paired12"
+        subgraph cluster_0x2406830 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x23ab290 {
+            label = "Region containing entry block of function is invalid!";
+            style = solid;
+            color = 6
+            subgraph cluster_0x23aa480 {
+              label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+              style = solid;
+              color = 5
+              Node0x2369780;
+              Node0x21b9aa0;
+            }
+            Node0x22bae20;
+            Node0x21fb890;
+            Node0x22be510;
+            Node0x21ff650;
+          }
+          Node0x203b4b0;
+        }
+}

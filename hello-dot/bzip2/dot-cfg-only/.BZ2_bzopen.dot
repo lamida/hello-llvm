@@ -1,0 +1,5 @@
+digraph "CFG for 'BZ2_bzopen' function" {
+	label="CFG for 'BZ2_bzopen' function";
+
+	Node0x1866860 [shape=record,label="{%2}"];
+}

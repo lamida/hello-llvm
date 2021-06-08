@@ -1,0 +1,12 @@
+digraph "Scop Graph for 'panic' function" {
+	label="Scop Graph for 'panic' function";
+
+	Node0x21b7330 [shape=record,label="{%1}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x239dc20 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x21b7330;
+        }
+}

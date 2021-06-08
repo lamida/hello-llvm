@@ -1,0 +1,13 @@
+digraph "Dominator tree for 'prepare_new_block' function" {
+	label="Dominator tree for 'prepare_new_block' function";
+
+	Node0x1f3d370 [shape=record,label="{%1}"];
+	Node0x1f3d370 -> Node0x22ebf70;
+	Node0x22ebf70 [shape=record,label="{%12}"];
+	Node0x22ebf70 -> Node0x1f3d310;
+	Node0x22ebf70 -> Node0x1f3d2b0;
+	Node0x1f3d310 [shape=record,label="{%15}"];
+	Node0x1f3d310 -> Node0x22ebad0;
+	Node0x22ebad0 [shape=record,label="{%21}"];
+	Node0x1f3d2b0 [shape=record,label="{%24}"];
+}

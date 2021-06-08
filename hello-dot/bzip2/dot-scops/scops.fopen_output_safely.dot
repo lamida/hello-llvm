@@ -1,0 +1,39 @@
+digraph "Scop Graph for 'fopen_output_safely' function" {
+	label="Scop Graph for 'fopen_output_safely' function";
+
+	Node0x1b3c390 [shape=record,label="{%2:\l  %3 = alloca %struct._IO_FILE*, align 8\l  %4 = alloca i8*, align 8\l  %5 = alloca i8*, align 8\l  %6 = alloca %struct._IO_FILE*, align 8\l  %7 = alloca i32, align 4\l  store i8* %0, i8** %4, align 8\l  store i8* %1, i8** %5, align 8\l  %8 = load i8*, i8** %4, align 8\l  %9 = call i32 (i8*, i32, ...) @open(i8* %8, i32 193, i32 384)\l  store i32 %9, i32* %7, align 4\l  %10 = load i32, i32* %7, align 4\l  %11 = icmp eq i32 %10, -1\l  br i1 %11, label %12, label %13\l}"];
+	Node0x1b3c390 -> Node0x1edf6a0;
+	Node0x1b3c390 -> Node0x1eb8940;
+	Node0x1edf6a0 [shape=record,label="{%12:\l12:                                               \l  store %struct._IO_FILE* null, %struct._IO_FILE** %3, align 8\l  br label %24\l}"];
+	Node0x1edf6a0 -> Node0x1be4970;
+	Node0x1be4970 [shape=record,label="{%24:\l24:                                               \l  %25 = load %struct._IO_FILE*, %struct._IO_FILE** %3, align 8\l  ret %struct._IO_FILE* %25\l}"];
+	Node0x1eb8940 [shape=record,label="{%13:\l13:                                               \l  %14 = load i32, i32* %7, align 4\l  %15 = load i8*, i8** %5, align 8\l  %16 = call %struct._IO_FILE* @fdopen(i32 %14, i8* %15) #8\l  store %struct._IO_FILE* %16, %struct._IO_FILE** %6, align 8\l  %17 = load %struct._IO_FILE*, %struct._IO_FILE** %6, align 8\l  %18 = icmp eq %struct._IO_FILE* %17, null\l  br i1 %18, label %19, label %22\l}"];
+	Node0x1eb8940 -> Node0x1e00a10;
+	Node0x1eb8940 -> Node0x1bc4880;
+	Node0x1e00a10 [shape=record,label="{%19:\l19:                                               \l  %20 = load i32, i32* %7, align 4\l  %21 = call i32 @close(i32 %20)\l  br label %22\l}"];
+	Node0x1e00a10 -> Node0x1bc4880;
+	Node0x1bc4880 [shape=record,label="{%22:\l22:                                               \l  %23 = load %struct._IO_FILE*, %struct._IO_FILE** %6, align 8\l  store %struct._IO_FILE* %23, %struct._IO_FILE** %3, align 8\l  br label %24\l}"];
+	Node0x1bc4880 -> Node0x1be4970;
+	colorscheme = "paired12"
+        subgraph cluster_0x1f6cc50 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1f6cac0 {
+            label = "";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1f0b760 {
+              label = "";
+              style = solid;
+              color = 5
+              Node0x1eb8940;
+              Node0x1e00a10;
+            }
+            Node0x1b3c390;
+            Node0x1edf6a0;
+            Node0x1bc4880;
+          }
+          Node0x1be4970;
+        }
+}

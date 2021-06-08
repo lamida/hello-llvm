@@ -1,0 +1,12 @@
+digraph "Region Graph for 'bz_config_ok' function" {
+	label="Region Graph for 'bz_config_ok' function";
+
+	Node0x9c6c70 [shape=record,label="{%0:\l  ret i32 1\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xc165d0 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0x9c6c70;
+        }
+}

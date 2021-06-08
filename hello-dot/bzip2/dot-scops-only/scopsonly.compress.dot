@@ -1,0 +1,324 @@
+digraph "Scop Graph for 'compress' function" {
+	label="Scop Graph for 'compress' function";
+
+	Node0x2239c70 [shape=record,label="{%1}"];
+	Node0x2239c70 -> Node0x20d3be0;
+	Node0x2239c70 -> Node0x2279a60;
+	Node0x20d3be0 [shape=record,label="{%11}"];
+	Node0x20d3be0 -> Node0x22dd940;
+	Node0x20d3be0 -> Node0x2279a60;
+	Node0x22dd940 [shape=record,label="{%14}"];
+	Node0x2279a60 [shape=record,label="{%15}"];
+	Node0x2279a60 -> Node0x20168d0;
+	Node0x2279a60 -> Node0x22d7cf0;
+	Node0x2279a60 -> Node0x22aa700;
+	Node0x2279a60 -> Node0x22f1a70;
+	Node0x20168d0 [shape=record,label="{%24}"];
+	Node0x20168d0 -> Node0x20fac70;
+	Node0x20168d0 -> Node0x2101fe0;
+	Node0x20fac70 [shape=record,label="{%27}"];
+	Node0x20fac70 -> Node0x234e7e0;
+	Node0x20fac70 -> Node0x2101fe0;
+	Node0x234e7e0 [shape=record,label="{%31}"];
+	Node0x234e7e0 -> Node0x235f300;
+	Node0x234e7e0 -> Node0x234ff10;
+	Node0x235f300 [shape=record,label="{%34}"];
+	Node0x235f300 -> Node0x234ff10;
+	Node0x234ff10 [shape=record,label="{%38}"];
+	Node0x234ff10 -> Node0x2038010;
+	Node0x2038010 [shape=record,label="{%264}"];
+	Node0x2101fe0 [shape=record,label="{%39}"];
+	Node0x2101fe0 -> Node0x2024c60;
+	Node0x2101fe0 -> Node0x21b7330;
+	Node0x2024c60 [shape=record,label="{%42}"];
+	Node0x2024c60 -> Node0x21b7330;
+	Node0x2024c60 -> Node0x22da8f0;
+	Node0x21b7330 [shape=record,label="{%52}"];
+	Node0x21b7330 -> Node0x229c6d0;
+	Node0x229c6d0 [shape=record,label="{%53}"];
+	Node0x229c6d0 -> Node0x229d0e0;
+	Node0x229c6d0 -> Node0x21b9bf0;
+	Node0x229d0e0 [shape=record,label="{%56}"];
+	Node0x229d0e0 -> Node0x204b8b0;
+	Node0x229d0e0 -> Node0x229b380;
+	Node0x204b8b0 [shape=record,label="{%63}"];
+	Node0x204b8b0 -> Node0x227db30;
+	Node0x204b8b0 -> Node0x22d61b0;
+	Node0x227db30 [shape=record,label="{%66}"];
+	Node0x227db30 -> Node0x22d61b0;
+	Node0x22d61b0 [shape=record,label="{%74}"];
+	Node0x22d61b0 -> Node0x2038010;
+	Node0x229b380 [shape=record,label="{%75}"];
+	Node0x229b380 -> Node0x21c1500;
+	Node0x21c1500 [shape=record,label="{%76}"];
+	Node0x21c1500 -> Node0x229c6d0;
+	Node0x21b9bf0 [shape=record,label="{%79}"];
+	Node0x21b9bf0 -> Node0x21b75f0;
+	Node0x21b9bf0 -> Node0x22cd9b0;
+	Node0x21b75f0 [shape=record,label="{%85}"];
+	Node0x21b75f0 -> Node0x22a97a0;
+	Node0x21b75f0 -> Node0x23544f0;
+	Node0x22a97a0 [shape=record,label="{%91}"];
+	Node0x22a97a0 -> Node0x2038010;
+	Node0x23544f0 [shape=record,label="{%95}"];
+	Node0x23544f0 -> Node0x23c5110;
+	Node0x23c5110 [shape=record,label="{%96}"];
+	Node0x23c5110 -> Node0x21fa8f0;
+	Node0x23c5110 -> Node0x2029f80;
+	Node0x21fa8f0 [shape=record,label="{%99}"];
+	Node0x21fa8f0 -> Node0x2029f80;
+	Node0x21fa8f0 -> Node0x2340280;
+	Node0x2029f80 [shape=record,label="{%114}"];
+	Node0x2029f80 -> Node0x2288330;
+	Node0x2029f80 -> Node0x2363d50;
+	Node0x2288330 [shape=record,label="{%117}"];
+	Node0x2288330 -> Node0x235b7c0;
+	Node0x2288330 -> Node0x2363d50;
+	Node0x235b7c0 [shape=record,label="{%121}"];
+	Node0x235b7c0 -> Node0x2251d50;
+	Node0x235b7c0 -> Node0x23472c0;
+	Node0x2251d50 [shape=record,label="{%124}"];
+	Node0x2251d50 -> Node0x229ce90;
+	Node0x229ce90 [shape=record,label="{%130}"];
+	Node0x229ce90 -> Node0x2363d50;
+	Node0x2363d50 [shape=record,label="{%131}"];
+	Node0x2363d50 -> Node0x22c86b0;
+	Node0x2363d50 -> Node0x20d85f0;
+	Node0x22c86b0 [shape=record,label="{%134}"];
+	Node0x22c86b0 -> Node0x20d85f0;
+	Node0x22c86b0 -> Node0x205eb30;
+	Node0x20d85f0 [shape=record,label="{%149}"];
+	Node0x20d85f0 -> Node0x23644b0;
+	Node0x20d85f0 -> Node0x229c2b0;
+	Node0x23644b0 [shape=record,label="{%152}"];
+	Node0x23644b0 -> Node0x229c2b0;
+	Node0x229c2b0 [shape=record,label="{%153}"];
+	Node0x229c2b0 -> Node0x22a5270;
+	Node0x229c2b0 -> Node0x2378eb0;
+	Node0x229c2b0 -> Node0x2352e50;
+	Node0x229c2b0 -> Node0x2352500;
+	Node0x22a5270 [shape=record,label="{%238}"];
+	Node0x2378eb0 [shape=record,label="{%155}"];
+	Node0x2378eb0 -> Node0x21fd500;
+	Node0x2378eb0 -> Node0x20734c0;
+	Node0x21fd500 [shape=record,label="{%162}"];
+	Node0x21fd500 -> Node0x2038010;
+	Node0x20734c0 [shape=record,label="{%170}"];
+	Node0x20734c0 -> Node0x221e800;
+	Node0x221e800 [shape=record,label="{%239}"];
+	Node0x221e800 -> Node0x2288180;
+	Node0x221e800 -> Node0x2346490;
+	Node0x2288180 [shape=record,label="{%242}"];
+	Node0x2288180 -> Node0x2346490;
+	Node0x2346490 [shape=record,label="{%247}"];
+	Node0x2346490 -> Node0x2288e00;
+	Node0x2346490 -> Node0x2204550;
+	Node0x2288e00 [shape=record,label="{%253}"];
+	Node0x2288e00 -> Node0x23685a0;
+	Node0x2288e00 -> Node0x2369df0;
+	Node0x23685a0 [shape=record,label="{%262}"];
+	Node0x23685a0 -> Node0x2204550;
+	Node0x2204550 [shape=record,label="{%263}"];
+	Node0x2204550 -> Node0x2038010;
+	Node0x2369df0 [shape=record,label="{%256}"];
+	Node0x2369df0 -> Node0x2298a40;
+	Node0x2369df0 -> Node0x2074780;
+	Node0x2298a40 [shape=record,label="{%260}"];
+	Node0x2074780 [shape=record,label="{%261}"];
+	Node0x2074780 -> Node0x23685a0;
+	Node0x2352e50 [shape=record,label="{%171}"];
+	Node0x2352e50 -> Node0x228be50;
+	Node0x2352e50 -> Node0x2350240;
+	Node0x228be50 [shape=record,label="{%178}"];
+	Node0x228be50 -> Node0x228fa40;
+	Node0x228be50 -> Node0x2074900;
+	Node0x228fa40 [shape=record,label="{%188}"];
+	Node0x228fa40 -> Node0x2074900;
+	Node0x2074900 [shape=record,label="{%191}"];
+	Node0x2074900 -> Node0x2038010;
+	Node0x2350240 [shape=record,label="{%192}"];
+	Node0x2350240 -> Node0x2109510;
+	Node0x2350240 -> Node0x22cdc50;
+	Node0x2109510 [shape=record,label="{%195}"];
+	Node0x2109510 -> Node0x2038010;
+	Node0x22cdc50 [shape=record,label="{%202}"];
+	Node0x22cdc50 -> Node0x221e800;
+	Node0x2352500 [shape=record,label="{%203}"];
+	Node0x2352500 -> Node0x22e82d0;
+	Node0x2352500 -> Node0x230e150;
+	Node0x22e82d0 [shape=record,label="{%208}"];
+	Node0x22e82d0 -> Node0x22aa4c0;
+	Node0x22e82d0 -> Node0x22d6970;
+	Node0x22aa4c0 [shape=record,label="{%217}"];
+	Node0x22aa4c0 -> Node0x22d6970;
+	Node0x22d6970 [shape=record,label="{%220}"];
+	Node0x22d6970 -> Node0x2038010;
+	Node0x230e150 [shape=record,label="{%221}"];
+	Node0x230e150 -> Node0x2066450;
+	Node0x230e150 -> Node0x2072c70;
+	Node0x2066450 [shape=record,label="{%224}"];
+	Node0x2066450 -> Node0x2353c30;
+	Node0x2066450 -> Node0x2074480;
+	Node0x2353c30 [shape=record,label="{%233}"];
+	Node0x2353c30 -> Node0x2074480;
+	Node0x2074480 [shape=record,label="{%236}"];
+	Node0x2074480 -> Node0x2038010;
+	Node0x2072c70 [shape=record,label="{%237}"];
+	Node0x2072c70 -> Node0x221e800;
+	Node0x205eb30 [shape=record,label="{%137}"];
+	Node0x205eb30 -> Node0x22aa340;
+	Node0x205eb30 -> Node0x20d85f0;
+	Node0x22aa340 [shape=record,label="{%140}"];
+	Node0x22aa340 -> Node0x2038010;
+	Node0x23472c0 [shape=record,label="{%126}"];
+	Node0x23472c0 -> Node0x2038010;
+	Node0x2340280 [shape=record,label="{%102}"];
+	Node0x2340280 -> Node0x22cef90;
+	Node0x2340280 -> Node0x2029f80;
+	Node0x22cef90 [shape=record,label="{%106}"];
+	Node0x22cef90 -> Node0x20704a0;
+	Node0x22cef90 -> Node0x235e2b0;
+	Node0x20704a0 [shape=record,label="{%109}"];
+	Node0x20704a0 -> Node0x235e2b0;
+	Node0x235e2b0 [shape=record,label="{%113}"];
+	Node0x235e2b0 -> Node0x2038010;
+	Node0x22cd9b0 [shape=record,label="{%82}"];
+	Node0x22cd9b0 -> Node0x21b75f0;
+	Node0x22cd9b0 -> Node0x23c5110;
+	Node0x22da8f0 [shape=record,label="{%45}"];
+	Node0x22da8f0 -> Node0x2038010;
+	Node0x22d7cf0 [shape=record,label="{%17}"];
+	Node0x22d7cf0 -> Node0x20168d0;
+	Node0x22aa700 [shape=record,label="{%18}"];
+	Node0x22aa700 -> Node0x20168d0;
+	Node0x22f1a70 [shape=record,label="{%22}"];
+	Node0x22f1a70 -> Node0x20168d0;
+	colorscheme = "paired12"
+        subgraph cluster_0x23b1030 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x2013cc0 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x2279a60;
+            Node0x22d7cf0;
+            Node0x22aa700;
+            Node0x22f1a70;
+          }
+          subgraph cluster_0x2406830 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x234e7e0;
+            Node0x235f300;
+          }
+          subgraph cluster_0x23ab290 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x204b8b0;
+            Node0x227db30;
+          }
+          subgraph cluster_0x23aa480 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x22cef90;
+            Node0x20704a0;
+          }
+          subgraph cluster_0x2013c40 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x20d85f0;
+            Node0x23644b0;
+          }
+          subgraph cluster_0x23777f0 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x221e800;
+            Node0x2288180;
+          }
+          subgraph cluster_0x2376130 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x228be50;
+            Node0x228fa40;
+          }
+          subgraph cluster_0x2374570 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x22e82d0;
+            Node0x22aa4c0;
+          }
+          subgraph cluster_0x2013bc0 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x2066450;
+            Node0x2353c30;
+          }
+          Node0x2239c70;
+          Node0x20d3be0;
+          Node0x22dd940;
+          Node0x20168d0;
+          Node0x20fac70;
+          Node0x234ff10;
+          Node0x2038010;
+          Node0x2101fe0;
+          Node0x2024c60;
+          Node0x21b7330;
+          Node0x229c6d0;
+          Node0x229d0e0;
+          Node0x22d61b0;
+          Node0x229b380;
+          Node0x21c1500;
+          Node0x21b9bf0;
+          Node0x21b75f0;
+          Node0x22a97a0;
+          Node0x23544f0;
+          Node0x23c5110;
+          Node0x21fa8f0;
+          Node0x2029f80;
+          Node0x2288330;
+          Node0x235b7c0;
+          Node0x2251d50;
+          Node0x229ce90;
+          Node0x2363d50;
+          Node0x22c86b0;
+          Node0x229c2b0;
+          Node0x22a5270;
+          Node0x2378eb0;
+          Node0x21fd500;
+          Node0x20734c0;
+          Node0x2346490;
+          Node0x2288e00;
+          Node0x23685a0;
+          Node0x2204550;
+          Node0x2369df0;
+          Node0x2298a40;
+          Node0x2074780;
+          Node0x2352e50;
+          Node0x2074900;
+          Node0x2350240;
+          Node0x2109510;
+          Node0x22cdc50;
+          Node0x2352500;
+          Node0x22d6970;
+          Node0x230e150;
+          Node0x2074480;
+          Node0x2072c70;
+          Node0x205eb30;
+          Node0x22aa340;
+          Node0x23472c0;
+          Node0x2340280;
+          Node0x235e2b0;
+          Node0x22cd9b0;
+          Node0x22da8f0;
+        }
+}

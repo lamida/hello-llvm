@@ -1,0 +1,27 @@
+digraph "Region Graph for 'countHardLinks' function" {
+	label="Region Graph for 'countHardLinks' function";
+
+	Node0x10f1810 [shape=record,label="{%1}"];
+	Node0x10f1810 -> Node0xffd510;
+	Node0x10f1810 -> Node0xfb7360;
+	Node0xffd510 [shape=record,label="{%10}"];
+	Node0xffd510 -> Node0xeb0250;
+	Node0xeb0250 [shape=record,label="{%16}"];
+	Node0xfb7360 [shape=record,label="{%11}"];
+	Node0xfb7360 -> Node0xeb0250;
+	colorscheme = "paired12"
+        subgraph cluster_0x1064e90 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x111c5d0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x10f1810;
+            Node0xffd510;
+            Node0xfb7360;
+          }
+          Node0xeb0250;
+        }
+}

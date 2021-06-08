@@ -1,0 +1,12 @@
+digraph "Region Graph for 'panic' function" {
+	label="Region Graph for 'panic' function";
+
+	Node0xeb0b00 [shape=record,label="{%1}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1064e90 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0xeb0b00;
+        }
+}

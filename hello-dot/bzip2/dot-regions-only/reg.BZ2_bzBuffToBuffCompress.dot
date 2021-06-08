@@ -1,0 +1,113 @@
+digraph "Region Graph for 'BZ2_bzBuffToBuffCompress' function" {
+	label="Region Graph for 'BZ2_bzBuffToBuffCompress' function";
+
+	Node0x1080cf0 [shape=record,label="{%7}"];
+	Node0x1080cf0 -> Node0x1073250;
+	Node0x1080cf0 -> Node0xfc1790;
+	Node0x1073250 [shape=record,label="{%44}"];
+	Node0x1073250 -> Node0x114bb80;
+	Node0x114bb80 [shape=record,label="{%91}"];
+	Node0xfc1790 [shape=record,label="{%20}"];
+	Node0xfc1790 -> Node0x1073250;
+	Node0xfc1790 -> Node0x1102c40;
+	Node0x1102c40 [shape=record,label="{%23}"];
+	Node0x1102c40 -> Node0x1073250;
+	Node0x1102c40 -> Node0xe1d780;
+	Node0xe1d780 [shape=record,label="{%26}"];
+	Node0xe1d780 -> Node0x1073250;
+	Node0xe1d780 -> Node0x100c4a0;
+	Node0x100c4a0 [shape=record,label="{%29}"];
+	Node0x100c4a0 -> Node0x1073250;
+	Node0x100c4a0 -> Node0xdd2f80;
+	Node0xdd2f80 [shape=record,label="{%32}"];
+	Node0xdd2f80 -> Node0x1073250;
+	Node0xdd2f80 -> Node0x110dbf0;
+	Node0x110dbf0 [shape=record,label="{%35}"];
+	Node0x110dbf0 -> Node0x1073250;
+	Node0x110dbf0 -> Node0x1056480;
+	Node0x1056480 [shape=record,label="{%38}"];
+	Node0x1056480 -> Node0x1073250;
+	Node0x1056480 -> Node0xffad50;
+	Node0xffad50 [shape=record,label="{%41}"];
+	Node0xffad50 -> Node0x1073250;
+	Node0xffad50 -> Node0x10534c0;
+	Node0x10534c0 [shape=record,label="{%45}"];
+	Node0x10534c0 -> Node0x1026c80;
+	Node0x10534c0 -> Node0x110c250;
+	Node0x1026c80 [shape=record,label="{%48}"];
+	Node0x1026c80 -> Node0x110c250;
+	Node0x110c250 [shape=record,label="{%49}"];
+	Node0x110c250 -> Node0x1056340;
+	Node0x110c250 -> Node0x1077ec0;
+	Node0x1056340 [shape=record,label="{%59}"];
+	Node0x1056340 -> Node0x114bb80;
+	Node0x1077ec0 [shape=record,label="{%61}"];
+	Node0x1077ec0 -> Node0x10fe4a0;
+	Node0x1077ec0 -> Node0x1052e70;
+	Node0x10fe4a0 [shape=record,label="{%74}"];
+	Node0x10fe4a0 -> Node0x10386b0;
+	Node0x10386b0 [shape=record,label="{%86}"];
+	Node0x10386b0 -> Node0x114bb80;
+	Node0x1052e70 [shape=record,label="{%75}"];
+	Node0x1052e70 -> Node0xf5ef90;
+	Node0x1052e70 -> Node0x1014890;
+	Node0xf5ef90 [shape=record,label="{%78}"];
+	Node0xf5ef90 -> Node0x10f9240;
+	Node0x10f9240 [shape=record,label="{%88}"];
+	Node0x10f9240 -> Node0x114bb80;
+	Node0x1014890 [shape=record,label="{%79}"];
+	Node0x1014890 -> Node0x114bb80;
+	colorscheme = "paired12"
+        subgraph cluster_0x10e2c20 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xd7e3d0 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0x1149140 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0x10534c0;
+              Node0x1026c80;
+            }
+            subgraph cluster_0x114abf0 {
+              label = "";
+              style = filled;
+              color = 5
+              subgraph cluster_0x114bb00 {
+                label = "";
+                style = filled;
+                color = 7
+                subgraph cluster_0x114ba80 {
+                  label = "";
+                  style = filled;
+                  color = 9
+                  Node0x1052e70;
+                  Node0xf5ef90;
+                  Node0x10f9240;
+                  Node0x1014890;
+                }
+                Node0x1077ec0;
+                Node0x10fe4a0;
+                Node0x10386b0;
+              }
+              Node0x110c250;
+              Node0x1056340;
+            }
+            Node0x1080cf0;
+            Node0x1073250;
+            Node0xfc1790;
+            Node0x1102c40;
+            Node0xe1d780;
+            Node0x100c4a0;
+            Node0xdd2f80;
+            Node0x110dbf0;
+            Node0x1056480;
+            Node0xffad50;
+          }
+          Node0x114bb80;
+        }
+}

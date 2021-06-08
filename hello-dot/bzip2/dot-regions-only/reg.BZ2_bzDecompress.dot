@@ -1,0 +1,178 @@
+digraph "Region Graph for 'BZ2_bzDecompress' function" {
+	label="Region Graph for 'BZ2_bzDecompress' function";
+
+	Node0x1047450 [shape=record,label="{%1}"];
+	Node0x1047450 -> Node0x110d660;
+	Node0x1047450 -> Node0x1063700;
+	Node0x110d660 [shape=record,label="{%8}"];
+	Node0x110d660 -> Node0xf605f0;
+	Node0xf605f0 [shape=record,label="{%163}"];
+	Node0x1063700 [shape=record,label="{%9}"];
+	Node0x1063700 -> Node0xf6c720;
+	Node0x1063700 -> Node0xe1d780;
+	Node0xf6c720 [shape=record,label="{%16}"];
+	Node0xf6c720 -> Node0xf605f0;
+	Node0xe1d780 [shape=record,label="{%17}"];
+	Node0xe1d780 -> Node0x1045a60;
+	Node0xe1d780 -> Node0xf5ef90;
+	Node0x1045a60 [shape=record,label="{%23}"];
+	Node0x1045a60 -> Node0xf605f0;
+	Node0xf5ef90 [shape=record,label="{%24}"];
+	Node0xf5ef90 -> Node0x10af090;
+	Node0x10af090 [shape=record,label="{%25}"];
+	Node0x10af090 -> Node0x110d080;
+	Node0x10af090 -> Node0xf60330;
+	Node0x110d080 [shape=record,label="{%30}"];
+	Node0x110d080 -> Node0xf605f0;
+	Node0xf60330 [shape=record,label="{%31}"];
+	Node0xf60330 -> Node0x10f5750;
+	Node0xf60330 -> Node0xfb4e50;
+	Node0x10f5750 [shape=record,label="{%36}"];
+	Node0x10f5750 -> Node0x1115f70;
+	Node0x10f5750 -> Node0x10fa170;
+	Node0x1115f70 [shape=record,label="{%41}"];
+	Node0x1115f70 -> Node0xfc1790;
+	Node0xfc1790 [shape=record,label="{%45}"];
+	Node0xfc1790 -> Node0x106dab0;
+	Node0xfc1790 -> Node0x11072b0;
+	Node0x106dab0 [shape=record,label="{%54}"];
+	Node0x106dab0 -> Node0x10352d0;
+	Node0x106dab0 -> Node0x11072b0;
+	Node0x10352d0 [shape=record,label="{%59}"];
+	Node0x10352d0 -> Node0x1081ea0;
+	Node0x10352d0 -> Node0x106f590;
+	Node0x1081ea0 [shape=record,label="{%70}"];
+	Node0x1081ea0 -> Node0x106f590;
+	Node0x106f590 [shape=record,label="{%79}"];
+	Node0x106f590 -> Node0x105b5f0;
+	Node0x106f590 -> Node0x1056480;
+	Node0x105b5f0 [shape=record,label="{%84}"];
+	Node0x105b5f0 -> Node0x1056480;
+	Node0x1056480 [shape=record,label="{%87}"];
+	Node0x1056480 -> Node0x104c540;
+	Node0x1056480 -> Node0x1052e70;
+	Node0x104c540 [shape=record,label="{%95}"];
+	Node0x104c540 -> Node0xf605f0;
+	Node0x1052e70 [shape=record,label="{%96}"];
+	Node0x1052e70 -> Node0x105c410;
+	Node0x105c410 [shape=record,label="{%118}"];
+	Node0x105c410 -> Node0xfb4e50;
+	Node0xfb4e50 [shape=record,label="{%119}"];
+	Node0xfb4e50 -> Node0x1021400;
+	Node0xfb4e50 -> Node0x104e270;
+	Node0x1021400 [shape=record,label="{%124}"];
+	Node0x1021400 -> Node0x11169e0;
+	Node0x1021400 -> Node0x10457c0;
+	Node0x11169e0 [shape=record,label="{%129}"];
+	Node0x11169e0 -> Node0x106dc50;
+	Node0x11169e0 -> Node0xdc90e0;
+	Node0x106dc50 [shape=record,label="{%134}"];
+	Node0x106dc50 -> Node0xdc90e0;
+	Node0xdc90e0 [shape=record,label="{%143}"];
+	Node0xdc90e0 -> Node0xeaf0f0;
+	Node0xdc90e0 -> Node0x1041a40;
+	Node0xeaf0f0 [shape=record,label="{%151}"];
+	Node0xeaf0f0 -> Node0xf605f0;
+	Node0x1041a40 [shape=record,label="{%152}"];
+	Node0x1041a40 -> Node0xf605f0;
+	Node0x10457c0 [shape=record,label="{%154}"];
+	Node0x10457c0 -> Node0x105e730;
+	Node0x10457c0 -> Node0x1063600;
+	Node0x105e730 [shape=record,label="{%159}"];
+	Node0x105e730 -> Node0xf605f0;
+	Node0x1063600 [shape=record,label="{%161}"];
+	Node0x1063600 -> Node0x104e270;
+	Node0x104e270 [shape=record,label="{%162}"];
+	Node0x104e270 -> Node0x10af090[constraint=false];
+	Node0x11072b0 [shape=record,label="{%117}"];
+	Node0x11072b0 -> Node0xf605f0;
+	Node0x10fa170 [shape=record,label="{%43}"];
+	Node0x10fa170 -> Node0xfc1790;
+	colorscheme = "paired12"
+        subgraph cluster_0xda11c0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xd7e860 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0x1120470 {
+              label = "";
+              style = filled;
+              color = 5
+              subgraph cluster_0x111e8a0 {
+                label = "";
+                style = filled;
+                color = 7
+                subgraph cluster_0x1148f40 {
+                  label = "";
+                  style = filled;
+                  color = 9
+                  subgraph cluster_0xd7f370 {
+                    label = "";
+                    style = filled;
+                    color = 11
+                    Node0x10f5750;
+                    Node0x1115f70;
+                    Node0x10fa170;
+                  }
+                  subgraph cluster_0x110d880 {
+                    label = "";
+                    style = filled;
+                    color = 11
+                    Node0x10352d0;
+                    Node0x1081ea0;
+                  }
+                  subgraph cluster_0x111f760 {
+                    label = "";
+                    style = filled;
+                    color = 11
+                    Node0x106f590;
+                    Node0x105b5f0;
+                  }
+                  subgraph cluster_0x1149140 {
+                    label = "";
+                    style = filled;
+                    color = 11
+                    Node0x11169e0;
+                    Node0x106dc50;
+                  }
+                  subgraph cluster_0x11491c0 {
+                    label = "";
+                    style = filled;
+                    color = 11
+                    Node0xdc90e0;
+                    Node0xeaf0f0;
+                    Node0x1041a40;
+                  }
+                  Node0x10af090;
+                  Node0x110d080;
+                  Node0xf60330;
+                  Node0xfc1790;
+                  Node0x106dab0;
+                  Node0x1056480;
+                  Node0x104c540;
+                  Node0x1052e70;
+                  Node0x105c410;
+                  Node0xfb4e50;
+                  Node0x1021400;
+                  Node0x10457c0;
+                  Node0x105e730;
+                  Node0x1063600;
+                  Node0x104e270;
+                  Node0x11072b0;
+                }
+                Node0xe1d780;
+                Node0x1045a60;
+                Node0xf5ef90;
+              }
+              Node0x1063700;
+              Node0xf6c720;
+            }
+            Node0x1047450;
+            Node0x110d660;
+          }
+          Node0xf605f0;
+        }
+}

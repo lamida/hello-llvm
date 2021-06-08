@@ -1,0 +1,12 @@
+digraph "Scop Graph for 'default_bzalloc' function" {
+	label="Scop Graph for 'default_bzalloc' function";
+
+	Node0x23dee40 [shape=record,label="{%3}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x2377390 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x23dee40;
+        }
+}

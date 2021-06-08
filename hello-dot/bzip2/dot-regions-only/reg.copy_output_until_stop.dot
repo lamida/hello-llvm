@@ -1,0 +1,49 @@
+digraph "Region Graph for 'copy_output_until_stop' function" {
+	label="Region Graph for 'copy_output_until_stop' function";
+
+	Node0x104b570 [shape=record,label="{%1}"];
+	Node0x104b570 -> Node0x10430a0;
+	Node0x10430a0 [shape=record,label="{%4}"];
+	Node0x10430a0 -> Node0x102dd70;
+	Node0x10430a0 -> Node0x106dc50;
+	Node0x102dd70 [shape=record,label="{%11}"];
+	Node0x102dd70 -> Node0x1044380;
+	Node0x1044380 [shape=record,label="{%72}"];
+	Node0x106dc50 [shape=record,label="{%12}"];
+	Node0x106dc50 -> Node0x10f9d70;
+	Node0x106dc50 -> Node0xe815f0;
+	Node0x10f9d70 [shape=record,label="{%20}"];
+	Node0x10f9d70 -> Node0x1044380;
+	Node0xe815f0 [shape=record,label="{%21}"];
+	Node0xe815f0 -> Node0x1031330;
+	Node0xe815f0 -> Node0xddf670;
+	Node0x1031330 [shape=record,label="{%64}"];
+	Node0x1031330 -> Node0xddf670;
+	Node0xddf670 [shape=record,label="{%71}"];
+	Node0xddf670 -> Node0x10430a0[constraint=false];
+	colorscheme = "paired12"
+        subgraph cluster_0xd7d8c0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xd732d0 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0x111c5d0 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0xe815f0;
+              Node0x1031330;
+            }
+            Node0x10430a0;
+            Node0x102dd70;
+            Node0x106dc50;
+            Node0x10f9d70;
+            Node0xddf670;
+          }
+          Node0x104b570;
+          Node0x1044380;
+        }
+}

@@ -1,0 +1,9 @@
+digraph "Dominator tree for 'BZ2_bz__AssertH__fail' function" {
+	label="Dominator tree for 'BZ2_bz__AssertH__fail' function";
+
+	Node0xe654f0 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %4 = load i32, i32* %2, align 4\l  %5 = call i8* @BZ2_bzlibVersion()\l  %6 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %3,\l... i8* getelementptr inbounds ([442 x i8], [442 x i8]* @.str.6, i64 0, i64 0),\l... i32 %4, i8* %5)\l  %7 = load i32, i32* %2, align 4\l  %8 = icmp eq i32 %7, 1007\l  br i1 %8, label %9, label %12\l}"];
+	Node0xe654f0 -> Node0xcb74d0;
+	Node0xe654f0 -> Node0xdbed10;
+	Node0xcb74d0 [shape=record,label="{%9:\l9:                                                \l  %10 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %11 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %10,\l... i8* getelementptr inbounds ([1057 x i8], [1057 x i8]* @.str.7, i64 0, i64 0))\l  br label %12\l}"];
+	Node0xdbed10 [shape=record,label="{%12:\l12:                                               \l  call void @exit(i32 3) #8\l  unreachable\l}"];
+}

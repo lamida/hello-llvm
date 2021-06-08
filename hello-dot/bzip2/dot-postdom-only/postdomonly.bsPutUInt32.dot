@@ -1,0 +1,7 @@
+digraph "Post dominator tree for 'bsPutUInt32' function" {
+	label="Post dominator tree for 'bsPutUInt32' function";
+
+	Node0xbf0370 [shape=record,label="{Post dominance root node}"];
+	Node0xbf0370 -> Node0xc0b340;
+	Node0xc0b340 [shape=record,label="{%2}"];
+}

@@ -1,0 +1,9 @@
+digraph "Dominator tree for 'setExit' function" {
+	label="Dominator tree for 'setExit' function";
+
+	Node0xe5ac90 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load i32, i32* %2, align 4\l  %4 = load i32, i32* @exitValue, align 4\l  %5 = icmp sgt i32 %3, %4\l  br i1 %5, label %6, label %8\l}"];
+	Node0xe5ac90 -> Node0xdbd070;
+	Node0xe5ac90 -> Node0xbf0e50;
+	Node0xdbd070 [shape=record,label="{%6:\l6:                                                \l  %7 = load i32, i32* %2, align 4\l  store i32 %7, i32* @exitValue, align 4\l  br label %8\l}"];
+	Node0xbf0e50 [shape=record,label="{%8:\l8:                                                \l  ret void\l}"];
+}

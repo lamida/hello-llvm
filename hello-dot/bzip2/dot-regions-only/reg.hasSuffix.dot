@@ -1,0 +1,39 @@
+digraph "Region Graph for 'hasSuffix' function" {
+	label="Region Graph for 'hasSuffix' function";
+
+	Node0x107f970 [shape=record,label="{%2}"];
+	Node0x107f970 -> Node0x1017ec0;
+	Node0x107f970 -> Node0x107c780;
+	Node0x1017ec0 [shape=record,label="{%17}"];
+	Node0x1017ec0 -> Node0x104c540;
+	Node0x104c540 [shape=record,label="{%32}"];
+	Node0x107c780 [shape=record,label="{%18}"];
+	Node0x107c780 -> Node0x10452b0;
+	Node0x107c780 -> Node0x10f8b80;
+	Node0x10452b0 [shape=record,label="{%30}"];
+	Node0x10452b0 -> Node0x104c540;
+	Node0x10f8b80 [shape=record,label="{%31}"];
+	Node0x10f8b80 -> Node0x104c540;
+	colorscheme = "paired12"
+        subgraph cluster_0x1064e90 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x11218a0 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0x111c5d0 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0x107c780;
+              Node0x10452b0;
+              Node0x10f8b80;
+            }
+            Node0x107f970;
+            Node0x1017ec0;
+          }
+          Node0x104c540;
+        }
+}

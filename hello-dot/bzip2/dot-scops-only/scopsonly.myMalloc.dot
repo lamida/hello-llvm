@@ -1,0 +1,18 @@
+digraph "Scop Graph for 'myMalloc' function" {
+	label="Scop Graph for 'myMalloc' function";
+
+	Node0x22aae40 [shape=record,label="{%1}"];
+	Node0x22aae40 -> Node0x2101fe0;
+	Node0x22aae40 -> Node0x2070f10;
+	Node0x2101fe0 [shape=record,label="{%9}"];
+	Node0x2070f10 [shape=record,label="{%10}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x239dc20 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x22aae40;
+          Node0x2101fe0;
+          Node0x2070f10;
+        }
+}

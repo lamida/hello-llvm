@@ -1,0 +1,15 @@
+digraph "Dominator tree for 'mySIGSEGVorSIGBUScatcher' function" {
+	label="Dominator tree for 'mySIGSEGVorSIGBUScatcher' function";
+
+	Node0xbc6790 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load i32, i32* @opMode, align 4\l  %4 = icmp eq i32 %3, 1\l  br i1 %4, label %5, label %9\l}"];
+	Node0xbc6790 -> Node0xd77120;
+	Node0xbc6790 -> Node0xbe95e0;
+	Node0xbc6790 -> Node0xdc0220;
+	Node0xd77120 [shape=record,label="{%5:\l5:                                                \l  %6 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %7 = load i8*, i8** @progName, align 8\l  %8 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %6,\l... i8* getelementptr inbounds ([868 x i8], [868 x i8]* @.str.78, i64 0, i64 0),\l... i8* %7)\l  br label %13\l}"];
+	Node0xbe95e0 [shape=record,label="{%13:\l13:                                               \l  call void @showFileNames()\l  %14 = load i32, i32* @opMode, align 4\l  %15 = icmp eq i32 %14, 1\l  br i1 %15, label %16, label %17\l}"];
+	Node0xbe95e0 -> Node0xdbf410;
+	Node0xbe95e0 -> Node0xd9f260;
+	Node0xdbf410 [shape=record,label="{%16:\l16:                                               \l  call void @cleanUpAndFail(i32 3) #8\l  unreachable\l}"];
+	Node0xd9f260 [shape=record,label="{%17:\l17:                                               \l  call void @cadvise()\l  call void @cleanUpAndFail(i32 2) #8\l  unreachable\l}"];
+	Node0xdc0220 [shape=record,label="{%9:\l9:                                                \l  %10 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %11 = load i8*, i8** @progName, align 8\l  %12 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %10,\l... i8* getelementptr inbounds ([995 x i8], [995 x i8]* @.str.79, i64 0, i64 0),\l... i8* %11)\l  br label %13\l}"];
+}

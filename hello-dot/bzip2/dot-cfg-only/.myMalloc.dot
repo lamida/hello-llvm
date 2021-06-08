@@ -1,0 +1,9 @@
+digraph "CFG for 'myMalloc' function" {
+	label="CFG for 'myMalloc' function";
+
+	Node0x1924960 [shape=record,label="{%1|{<s0>T|<s1>F}}"];
+	Node0x1924960:s0 -> Node0x1924b20;
+	Node0x1924960:s1 -> Node0x1924df0;
+	Node0x1924b20 [shape=record,label="{%9}"];
+	Node0x1924df0 [shape=record,label="{%10}"];
+}

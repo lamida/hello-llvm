@@ -1,0 +1,27 @@
+digraph "Region Graph for 'bsFinishWrite' function" {
+	label="Region Graph for 'bsFinishWrite' function";
+
+	Node0xe7f750 [shape=record,label="{%1}"];
+	Node0xe7f750 -> Node0xea1390;
+	Node0xea1390 [shape=record,label="{%3}"];
+	Node0xea1390 -> Node0x105db50;
+	Node0xea1390 -> Node0x1107190;
+	Node0x105db50 [shape=record,label="{%8}"];
+	Node0x105db50 -> Node0xea1390[constraint=false];
+	Node0x1107190 [shape=record,label="{%34}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1149040 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x1148fc0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0xea1390;
+            Node0x105db50;
+          }
+          Node0xe7f750;
+          Node0x1107190;
+        }
+}

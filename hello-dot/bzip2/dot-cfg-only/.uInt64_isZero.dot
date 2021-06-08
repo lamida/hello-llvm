@@ -1,0 +1,21 @@
+digraph "CFG for 'uInt64_isZero' function" {
+	label="CFG for 'uInt64_isZero' function";
+
+	Node0x193b070 [shape=record,label="{%1}"];
+	Node0x193b070 -> Node0x193b2d0;
+	Node0x193b2d0 [shape=record,label="{%5|{<s0>T|<s1>F}}"];
+	Node0x193b2d0:s0 -> Node0x193b450;
+	Node0x193b2d0:s1 -> Node0x193b4a0;
+	Node0x193b450 [shape=record,label="{%8|{<s0>T|<s1>F}}"];
+	Node0x193b450:s0 -> Node0x193b180;
+	Node0x193b450:s1 -> Node0x193b910;
+	Node0x193b180 [shape=record,label="{%17}"];
+	Node0x193b180 -> Node0x193ba20;
+	Node0x193b910 [shape=record,label="{%18}"];
+	Node0x193b910 -> Node0x193bad0;
+	Node0x193bad0 [shape=record,label="{%19}"];
+	Node0x193bad0 -> Node0x193b2d0;
+	Node0x193b4a0 [shape=record,label="{%22}"];
+	Node0x193b4a0 -> Node0x193ba20;
+	Node0x193ba20 [shape=record,label="{%23}"];
+}

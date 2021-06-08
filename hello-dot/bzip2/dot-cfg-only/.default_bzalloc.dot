@@ -1,0 +1,5 @@
+digraph "CFG for 'default_bzalloc' function" {
+	label="CFG for 'default_bzalloc' function";
+
+	Node0x179a650 [shape=record,label="{%3}"];
+}

@@ -1,0 +1,72 @@
+digraph "Scop Graph for 'BZ2_bzclose' function" {
+	label="Scop Graph for 'BZ2_bzclose' function";
+
+	Node0x208a7f0 [shape=record,label="{%1}"];
+	Node0x208a7f0 -> Node0x225a9f0;
+	Node0x208a7f0 -> Node0x21c1f70;
+	Node0x225a9f0 [shape=record,label="{%11}"];
+	Node0x225a9f0 -> Node0x22c6590;
+	Node0x22c6590 [shape=record,label="{%38}"];
+	Node0x21c1f70 [shape=record,label="{%12}"];
+	Node0x21c1f70 -> Node0x2203fe0;
+	Node0x21c1f70 -> Node0x2107b00;
+	Node0x2203fe0 [shape=record,label="{%18}"];
+	Node0x2203fe0 -> Node0x23647e0;
+	Node0x2203fe0 -> Node0x226d780;
+	Node0x23647e0 [shape=record,label="{%22}"];
+	Node0x23647e0 -> Node0x226d780;
+	Node0x226d780 [shape=record,label="{%24}"];
+	Node0x226d780 -> Node0x23463c0;
+	Node0x23463c0 [shape=record,label="{%27}"];
+	Node0x23463c0 -> Node0x214be60;
+	Node0x23463c0 -> Node0x22c6590;
+	Node0x214be60 [shape=record,label="{%31}"];
+	Node0x214be60 -> Node0x229bdf0;
+	Node0x214be60 -> Node0x22c6590;
+	Node0x229bdf0 [shape=record,label="{%35}"];
+	Node0x229bdf0 -> Node0x22c6590;
+	Node0x2107b00 [shape=record,label="{%25}"];
+	Node0x2107b00 -> Node0x23463c0;
+	colorscheme = "paired12"
+        subgraph cluster_0x23b10b0 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x23b1030 {
+            label = "";
+            style = solid;
+            color = 6
+            subgraph cluster_0x2406120 {
+              label = "";
+              style = solid;
+              color = 5
+              subgraph cluster_0x1fd3530 {
+                label = "";
+                style = solid;
+                color = 7
+                Node0x2203fe0;
+                Node0x23647e0;
+              }
+              Node0x21c1f70;
+              Node0x226d780;
+              Node0x2107b00;
+            }
+            subgraph cluster_0x239e240 {
+              label = "";
+              style = solid;
+              color = 5
+              subgraph cluster_0x2406830 {
+                label = "";
+                style = solid;
+                color = 7
+                Node0x214be60;
+                Node0x229bdf0;
+              }
+              Node0x23463c0;
+            }
+            Node0x208a7f0;
+            Node0x225a9f0;
+          }
+          Node0x22c6590;
+        }
+}

@@ -1,0 +1,27 @@
+digraph "Region Graph for 'mapSuffix' function" {
+	label="Region Graph for 'mapSuffix' function";
+
+	Node0x103de50 [shape=record,label="{%3}"];
+	Node0x103de50 -> Node0xeaa410;
+	Node0x103de50 -> Node0x102ce20;
+	Node0xeaa410 [shape=record,label="{%13}"];
+	Node0xeaa410 -> Node0x110b270;
+	Node0x110b270 [shape=record,label="{%24}"];
+	Node0x102ce20 [shape=record,label="{%12}"];
+	Node0x102ce20 -> Node0x110b270;
+	colorscheme = "paired12"
+        subgraph cluster_0x1064e90 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x111c5d0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x103de50;
+            Node0xeaa410;
+            Node0x102ce20;
+          }
+          Node0x110b270;
+        }
+}

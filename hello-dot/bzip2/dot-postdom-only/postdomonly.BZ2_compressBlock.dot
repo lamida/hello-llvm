@@ -1,0 +1,35 @@
+digraph "Post dominator tree for 'BZ2_compressBlock' function" {
+	label="Post dominator tree for 'BZ2_compressBlock' function";
+
+	Node0xbc9050 [shape=record,label="{Post dominance root node}"];
+	Node0xbc9050 -> Node0xc17650;
+	Node0xc17650 [shape=record,label="{%139}"];
+	Node0xc17650 -> Node0xbf88a0;
+	Node0xc17650 -> Node0xb83060;
+	Node0xbf88a0 [shape=record,label="{%113}"];
+	Node0xbf88a0 -> Node0xbed220;
+	Node0xbf88a0 -> Node0xa59150;
+	Node0xbed220 [shape=record,label="{%90}"];
+	Node0xbed220 -> Node0xbc0580;
+	Node0xbed220 -> Node0xa2cd90;
+	Node0xbc0580 [shape=record,label="{%63}"];
+	Node0xbc0580 -> Node0xbc7180;
+	Node0xbc0580 -> Node0xc6a4a0;
+	Node0xbc7180 [shape=record,label="{%2}"];
+	Node0xc6a4a0 [shape=record,label="{%61}"];
+	Node0xc6a4a0 -> Node0xc6b7e0;
+	Node0xc6a4a0 -> Node0xc6ab10;
+	Node0xc6b7e0 [shape=record,label="{%41}"];
+	Node0xc6b7e0 -> Node0x9998f0;
+	Node0xc6b7e0 -> Node0xbe2270;
+	Node0x9998f0 [shape=record,label="{%9}"];
+	Node0xbe2270 [shape=record,label="{%38}"];
+	Node0xc6ab10 [shape=record,label="{%46}"];
+	Node0xa2cd90 [shape=record,label="{%79}"];
+	Node0xa59150 [shape=record,label="{%95}"];
+	Node0xb83060 [shape=record,label="{%137}"];
+	Node0xb83060 -> Node0xbf8bd0;
+	Node0xb83060 -> Node0xc68900;
+	Node0xbf8bd0 [shape=record,label="{%116}"];
+	Node0xc68900 [shape=record,label="{%131}"];
+}

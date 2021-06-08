@@ -1,0 +1,210 @@
+digraph "Scop Graph for 'bzopen_or_bzdopen' function" {
+	label="Scop Graph for 'bzopen_or_bzdopen' function";
+
+	Node0x1dcff00 [shape=record,label="{%4:\l  %5 = alloca i8*, align 8\l  %6 = alloca i8*, align 8\l  %7 = alloca i32, align 4\l  %8 = alloca i8*, align 8\l  %9 = alloca i32, align 4\l  %10 = alloca i32, align 4\l  %11 = alloca [5000 x i8], align 16\l  %12 = alloca i32, align 4\l  %13 = alloca i32, align 4\l  %14 = alloca [10 x i8], align 1\l  %15 = alloca %struct._IO_FILE*, align 8\l  %16 = alloca i8*, align 8\l  %17 = alloca i32, align 4\l  %18 = alloca i32, align 4\l  %19 = alloca i32, align 4\l  %20 = alloca i32, align 4\l  store i8* %0, i8** %6, align 8\l  store i32 %1, i32* %7, align 4\l  store i8* %2, i8** %8, align 8\l  store i32 %3, i32* %9, align 4\l  store i32 9, i32* %12, align 4\l  store i32 0, i32* %13, align 4\l  %21 = bitcast [10 x i8]* %14 to i8*\l  call void @llvm.memset.p0i8.i64(i8* align 1 %21, i8 0, i64 10, i1 false)\l  store %struct._IO_FILE* null, %struct._IO_FILE** %15, align 8\l  store i8* null, i8** %16, align 8\l  store i32 0, i32* %17, align 4\l  store i32 30, i32* %18, align 4\l  store i32 0, i32* %19, align 4\l  store i32 0, i32* %20, align 4\l  %22 = load i8*, i8** %8, align 8\l  %23 = icmp eq i8* %22, null\l  br i1 %23, label %24, label %25\l}"];
+	Node0x1dcff00 -> Node0x1e40ec0;
+	Node0x1dcff00 -> Node0x1ed6cc0;
+	Node0x1e40ec0 [shape=record,label="{%24:\l24:                                               \l  store i8* null, i8** %5, align 8\l  br label %139\l}"];
+	Node0x1e40ec0 -> Node0x1e2ce20;
+	Node0x1e2ce20 [shape=record,label="{%139:\l139:                                              \l  %140 = load i8*, i8** %5, align 8\l  ret i8* %140\l}"];
+	Node0x1ed6cc0 [shape=record,label="{%25:\l25:                                               \l  br label %26\l}"];
+	Node0x1ed6cc0 -> Node0x1ec1660;
+	Node0x1ec1660 [shape=record,label="{%26:\l26:                                               \l  %27 = load i8*, i8** %8, align 8\l  %28 = load i8, i8* %27, align 1\l  %29 = icmp ne i8 %28, 0\l  br i1 %29, label %30, label %58\l}"];
+	Node0x1ec1660 -> Node0x1e0f4c0;
+	Node0x1ec1660 -> Node0x1e03630;
+	Node0x1e0f4c0 [shape=record,label="{%30:\l30:                                               \l  %31 = load i8*, i8** %8, align 8\l  %32 = load i8, i8* %31, align 1\l  %33 = sext i8 %32 to i32\l  switch i32 %33, label %37 [\l    i32 114, label %34\l    i32 119, label %35\l    i32 115, label %36\l  ]\l}"];
+	Node0x1e0f4c0 -> Node0x1dd54a0;
+	Node0x1e0f4c0 -> Node0x1c86b80;
+	Node0x1e0f4c0 -> Node0x1ebab60;
+	Node0x1e0f4c0 -> Node0x1ed0ae0;
+	Node0x1dd54a0 [shape=record,label="{%37:\l37:                                               \l  %38 = call i16** @__ctype_b_loc() #8\l  %39 = load i16*, i16** %38, align 8\l  %40 = load i8*, i8** %8, align 8\l  %41 = load i8, i8* %40, align 1\l  %42 = sext i8 %41 to i32\l  %43 = sext i32 %42 to i64\l  %44 = getelementptr inbounds i16, i16* %39, i64 %43\l  %45 = load i16, i16* %44, align 2\l  %46 = zext i16 %45 to i32\l  %47 = and i32 %46, 2048\l  %48 = icmp ne i32 %47, 0\l  br i1 %48, label %49, label %54\l}"];
+	Node0x1dd54a0 -> Node0x1ed89d0;
+	Node0x1dd54a0 -> Node0x1d33500;
+	Node0x1ed89d0 [shape=record,label="{%49:\l49:                                               \l  %50 = load i8*, i8** %8, align 8\l  %51 = load i8, i8* %50, align 1\l  %52 = sext i8 %51 to i32\l  %53 = sub nsw i32 %52, 48\l  store i32 %53, i32* %12, align 4\l  br label %54\l}"];
+	Node0x1ed89d0 -> Node0x1d33500;
+	Node0x1d33500 [shape=record,label="{%54:\l54:                                               \l  br label %55\l}"];
+	Node0x1d33500 -> Node0x1f57b40;
+	Node0x1f57b40 [shape=record,label="{%55:\l55:                                               \l  %56 = load i8*, i8** %8, align 8\l  %57 = getelementptr inbounds i8, i8* %56, i32 1\l  store i8* %57, i8** %8, align 8\l  br label %26\l}"];
+	Node0x1f57b40 -> Node0x1ec1660[constraint=false];
+	Node0x1c86b80 [shape=record,label="{%34:\l34:                                               \l  store i32 0, i32* %13, align 4\l  br label %55\l}"];
+	Node0x1c86b80 -> Node0x1f57b40;
+	Node0x1ebab60 [shape=record,label="{%35:\l35:                                               \l  store i32 1, i32* %13, align 4\l  br label %55\l}"];
+	Node0x1ebab60 -> Node0x1f57b40;
+	Node0x1ed0ae0 [shape=record,label="{%36:\l36:                                               \l  store i32 1, i32* %19, align 4\l  br label %55\l}"];
+	Node0x1ed0ae0 -> Node0x1f57b40;
+	Node0x1e03630 [shape=record,label="{%58:\l58:                                               \l  %59 = getelementptr inbounds [10 x i8], [10 x i8]* %14, i64 0, i64 0\l  %60 = load i32, i32* %13, align 4\l  %61 = icmp ne i32 %60, 0\l  %62 = zext i1 %61 to i64\l  %63 = select i1 %61, i8* getelementptr inbounds ([2 x i8], [2 x i8]*\l... @.str.64, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]*\l... @.str.65, i64 0, i64 0)\l  %64 = call i8* @strcat(i8* %59, i8* %63) #9\l  %65 = getelementptr inbounds [10 x i8], [10 x i8]* %14, i64 0, i64 0\l  %66 = call i8* @strcat(i8* %65, i8* getelementptr inbounds ([2 x i8], [2 x\l... i8]* @.str.66, i64 0, i64 0)) #9\l  %67 = load i32, i32* %9, align 4\l  %68 = icmp eq i32 %67, 0\l  br i1 %68, label %69, label %90\l}"];
+	Node0x1e03630 -> Node0x1e31d80;
+	Node0x1e03630 -> Node0x1df9d30;
+	Node0x1e31d80 [shape=record,label="{%69:\l69:                                               \l  %70 = load i8*, i8** %6, align 8\l  %71 = icmp eq i8* %70, null\l  br i1 %71, label %76, label %72\l}"];
+	Node0x1e31d80 -> Node0x1ec6d20;
+	Node0x1e31d80 -> Node0x1e47250;
+	Node0x1ec6d20 [shape=record,label="{%76:\l76:                                               \l  %77 = load i32, i32* %13, align 4\l  %78 = icmp ne i32 %77, 0\l  br i1 %78, label %79, label %81\l}"];
+	Node0x1ec6d20 -> Node0x1e0e2b0;
+	Node0x1ec6d20 -> Node0x1f0b3d0;
+	Node0x1e0e2b0 [shape=record,label="{%79:\l79:                                               \l  %80 = load %struct._IO_FILE*, %struct._IO_FILE** @stdout, align 8\l  br label %83\l}"];
+	Node0x1e0e2b0 -> Node0x1e4fd70;
+	Node0x1e4fd70 [shape=record,label="{%83:\l83:                                               \l  %84 = phi %struct._IO_FILE* [ %80, %79 ], [ %82, %81 ]\l  store %struct._IO_FILE* %84, %struct._IO_FILE** %15, align 8\l  br label %89\l}"];
+	Node0x1e4fd70 -> Node0x1c71aa0;
+	Node0x1c71aa0 [shape=record,label="{%89:\l89:                                               \l  br label %94\l}"];
+	Node0x1c71aa0 -> Node0x1c09b60;
+	Node0x1c09b60 [shape=record,label="{%94:\l94:                                               \l  %95 = load %struct._IO_FILE*, %struct._IO_FILE** %15, align 8\l  %96 = icmp eq %struct._IO_FILE* %95, null\l  br i1 %96, label %97, label %98\l}"];
+	Node0x1c09b60 -> Node0x1ed5c80;
+	Node0x1c09b60 -> Node0x1e4a3c0;
+	Node0x1ed5c80 [shape=record,label="{%97:\l97:                                               \l  store i8* null, i8** %5, align 8\l  br label %139\l}"];
+	Node0x1ed5c80 -> Node0x1e2ce20;
+	Node0x1e4a3c0 [shape=record,label="{%98:\l98:                                               \l  %99 = load i32, i32* %13, align 4\l  %100 = icmp ne i32 %99, 0\l  br i1 %100, label %101, label %115\l}"];
+	Node0x1e4a3c0 -> Node0x1ebb090;
+	Node0x1e4a3c0 -> Node0x1b6a550;
+	Node0x1ebb090 [shape=record,label="{%101:\l101:                                              \l  %102 = load i32, i32* %12, align 4\l  %103 = icmp slt i32 %102, 1\l  br i1 %103, label %104, label %105\l}"];
+	Node0x1ebb090 -> Node0x1e3cf70;
+	Node0x1ebb090 -> Node0x1edbdf0;
+	Node0x1e3cf70 [shape=record,label="{%104:\l104:                                              \l  store i32 1, i32* %12, align 4\l  br label %105\l}"];
+	Node0x1e3cf70 -> Node0x1edbdf0;
+	Node0x1edbdf0 [shape=record,label="{%105:\l105:                                              \l  %106 = load i32, i32* %12, align 4\l  %107 = icmp sgt i32 %106, 9\l  br i1 %107, label %108, label %109\l}"];
+	Node0x1edbdf0 -> Node0x1dd2090;
+	Node0x1edbdf0 -> Node0x1d71270;
+	Node0x1dd2090 [shape=record,label="{%108:\l108:                                              \l  store i32 9, i32* %12, align 4\l  br label %109\l}"];
+	Node0x1dd2090 -> Node0x1d71270;
+	Node0x1d71270 [shape=record,label="{%109:\l109:                                              \l  %110 = load %struct._IO_FILE*, %struct._IO_FILE** %15, align 8\l  %111 = load i32, i32* %12, align 4\l  %112 = load i32, i32* %17, align 4\l  %113 = load i32, i32* %18, align 4\l  %114 = call i8* @BZ2_bzWriteOpen(i32* %10, %struct._IO_FILE* %110, i32 %111,\l... i32 %112, i32 %113)\l  store i8* %114, i8** %16, align 8\l  br label %122\l}"];
+	Node0x1d71270 -> Node0x1ec5a60;
+	Node0x1ec5a60 [shape=record,label="{%122:\l122:                                              \l  %123 = load i8*, i8** %16, align 8\l  %124 = icmp eq i8* %123, null\l  br i1 %124, label %125, label %137\l}"];
+	Node0x1ec5a60 -> Node0x1eb92c0;
+	Node0x1ec5a60 -> Node0x1ec4060;
+	Node0x1eb92c0 [shape=record,label="{%125:\l125:                                              \l  %126 = load %struct._IO_FILE*, %struct._IO_FILE** %15, align 8\l  %127 = load %struct._IO_FILE*, %struct._IO_FILE** @stdin, align 8\l  %128 = icmp ne %struct._IO_FILE* %126, %127\l  br i1 %128, label %129, label %136\l}"];
+	Node0x1eb92c0 -> Node0x1eb1e80;
+	Node0x1eb92c0 -> Node0x1e246c0;
+	Node0x1eb1e80 [shape=record,label="{%129:\l129:                                              \l  %130 = load %struct._IO_FILE*, %struct._IO_FILE** %15, align 8\l  %131 = load %struct._IO_FILE*, %struct._IO_FILE** @stdout, align 8\l  %132 = icmp ne %struct._IO_FILE* %130, %131\l  br i1 %132, label %133, label %136\l}"];
+	Node0x1eb1e80 -> Node0x1cff4d0;
+	Node0x1eb1e80 -> Node0x1e246c0;
+	Node0x1cff4d0 [shape=record,label="{%133:\l133:                                              \l  %134 = load %struct._IO_FILE*, %struct._IO_FILE** %15, align 8\l  %135 = call i32 @fclose(%struct._IO_FILE* %134)\l  br label %136\l}"];
+	Node0x1cff4d0 -> Node0x1e246c0;
+	Node0x1e246c0 [shape=record,label="{%136:\l136:                                              \l  store i8* null, i8** %5, align 8\l  br label %139\l}"];
+	Node0x1e246c0 -> Node0x1e2ce20;
+	Node0x1ec4060 [shape=record,label="{%137:\l137:                                              \l  %138 = load i8*, i8** %16, align 8\l  store i8* %138, i8** %5, align 8\l  br label %139\l}"];
+	Node0x1ec4060 -> Node0x1e2ce20;
+	Node0x1b6a550 [shape=record,label="{%115:\l115:                                              \l  %116 = load %struct._IO_FILE*, %struct._IO_FILE** %15, align 8\l  %117 = load i32, i32* %17, align 4\l  %118 = load i32, i32* %19, align 4\l  %119 = getelementptr inbounds [5000 x i8], [5000 x i8]* %11, i64 0, i64 0\l  %120 = load i32, i32* %20, align 4\l  %121 = call i8* @BZ2_bzReadOpen(i32* %10, %struct._IO_FILE* %116, i32 %117,\l... i32 %118, i8* %119, i32 %120)\l  store i8* %121, i8** %16, align 8\l  br label %122\l}"];
+	Node0x1b6a550 -> Node0x1ec5a60;
+	Node0x1f0b3d0 [shape=record,label="{%81:\l81:                                               \l  %82 = load %struct._IO_FILE*, %struct._IO_FILE** @stdin, align 8\l  br label %83\l}"];
+	Node0x1f0b3d0 -> Node0x1e4fd70;
+	Node0x1e47250 [shape=record,label="{%72:\l72:                                               \l  %73 = load i8*, i8** %6, align 8\l  %74 = call i32 @strcmp(i8* %73, i8* getelementptr inbounds ([1 x i8], [1 x\l... i8]* @.str.16, i64 0, i64 0)) #10\l  %75 = icmp eq i32 %74, 0\l  br i1 %75, label %76, label %85\l}"];
+	Node0x1e47250 -> Node0x1ec6d20;
+	Node0x1e47250 -> Node0x1eb83c0;
+	Node0x1eb83c0 [shape=record,label="{%85:\l85:                                               \l  %86 = load i8*, i8** %6, align 8\l  %87 = getelementptr inbounds [10 x i8], [10 x i8]* %14, i64 0, i64 0\l  %88 = call %struct._IO_FILE* @fopen(i8* %86, i8* %87)\l  store %struct._IO_FILE* %88, %struct._IO_FILE** %15, align 8\l  br label %89\l}"];
+	Node0x1eb83c0 -> Node0x1c71aa0;
+	Node0x1df9d30 [shape=record,label="{%90:\l90:                                               \l  %91 = load i32, i32* %7, align 4\l  %92 = getelementptr inbounds [10 x i8], [10 x i8]* %14, i64 0, i64 0\l  %93 = call %struct._IO_FILE* @fdopen(i32 %91, i8* %92) #9\l  store %struct._IO_FILE* %93, %struct._IO_FILE** %15, align 8\l  br label %94\l}"];
+	Node0x1df9d30 -> Node0x1c09b60;
+	colorscheme = "paired12"
+        subgraph cluster_0x1f6c7b0 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1f42c20 {
+            label = "Region containing entry block of function is invalid!";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1f42ba0 {
+              label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+              style = solid;
+              color = 5
+              subgraph cluster_0x1f6cbd0 {
+                label = "Region can not profitably be optimized!";
+                style = solid;
+                color = 7
+                subgraph cluster_0x1f6cac0 {
+                  label = "Region can not profitably be optimized!";
+                  style = solid;
+                  color = 9
+                  Node0x1dd54a0;
+                  Node0x1ed89d0;
+                }
+                Node0x1e0f4c0;
+                Node0x1d33500;
+                Node0x1c86b80;
+                Node0x1ebab60;
+                Node0x1ed0ae0;
+              }
+              Node0x1ec1660;
+              Node0x1f57b40;
+            }
+            subgraph cluster_0x1f1e860 {
+              label = "Region can not profitably be optimized!";
+              style = solid;
+              color = 5
+              subgraph cluster_0x1f48d10 {
+                label = "Region can not profitably be optimized!";
+                style = solid;
+                color = 7
+                subgraph cluster_0x1f6cc50 {
+                  label = "Region can not profitably be optimized!";
+                  style = solid;
+                  color = 9
+                  Node0x1ec6d20;
+                  Node0x1e0e2b0;
+                  Node0x1f0b3d0;
+                }
+                Node0x1e31d80;
+                Node0x1e4fd70;
+                Node0x1e47250;
+                Node0x1eb83c0;
+              }
+              Node0x1e03630;
+              Node0x1c71aa0;
+              Node0x1df9d30;
+            }
+            subgraph cluster_0x1f1e7e0 {
+              label = "Region can not profitably be optimized!";
+              style = solid;
+              color = 5
+              subgraph cluster_0x1f0e200 {
+                label = "Region can not profitably be optimized!";
+                style = solid;
+                color = 7
+                subgraph cluster_0x1ee85d0 {
+                  label = "Region can not profitably be optimized!";
+                  style = solid;
+                  color = 9
+                  Node0x1ebb090;
+                  Node0x1e3cf70;
+                }
+                subgraph cluster_0x1f205e0 {
+                  label = "Region can not profitably be optimized!";
+                  style = solid;
+                  color = 9
+                  Node0x1edbdf0;
+                  Node0x1dd2090;
+                }
+                Node0x1e4a3c0;
+                Node0x1d71270;
+                Node0x1b6a550;
+              }
+              subgraph cluster_0x1f0e180 {
+                label = "Region can not profitably be optimized!";
+                style = solid;
+                color = 7
+                subgraph cluster_0x1ee97d0 {
+                  label = "Region can not profitably be optimized!";
+                  style = solid;
+                  color = 9
+                  subgraph cluster_0x1ee9750 {
+                    label = "Region can not profitably be optimized!";
+                    style = solid;
+                    color = 11
+                    Node0x1eb1e80;
+                    Node0x1cff4d0;
+                  }
+                  Node0x1eb92c0;
+                }
+                Node0x1ec5a60;
+                Node0x1e246c0;
+                Node0x1ec4060;
+              }
+              Node0x1c09b60;
+              Node0x1ed5c80;
+            }
+            Node0x1dcff00;
+            Node0x1e40ec0;
+            Node0x1ed6cc0;
+          }
+          Node0x1e2ce20;
+        }
+}

@@ -1,0 +1,20 @@
+digraph "CFG for 'BZ2_bzread' function" {
+	label="CFG for 'BZ2_bzread' function";
+
+	Node0x186db20 [shape=record,label="{%3|{<s0>T|<s1>F}}"];
+	Node0x186db20:s0 -> Node0x186e4f0;
+	Node0x186db20:s1 -> Node0x186eb60;
+	Node0x186e4f0 [shape=record,label="{%15}"];
+	Node0x186e4f0 -> Node0x186ecc0;
+	Node0x186eb60 [shape=record,label="{%16|{<s0>T|<s1>F}}"];
+	Node0x186eb60:s0 -> Node0x186f100;
+	Node0x186eb60:s1 -> Node0x186f150;
+	Node0x186f150 [shape=record,label="{%23|{<s0>T|<s1>F}}"];
+	Node0x186f150:s0 -> Node0x186f100;
+	Node0x186f150:s1 -> Node0x186f270;
+	Node0x186f100 [shape=record,label="{%26}"];
+	Node0x186f100 -> Node0x186ecc0;
+	Node0x186f270 [shape=record,label="{%28}"];
+	Node0x186f270 -> Node0x186ecc0;
+	Node0x186ecc0 [shape=record,label="{%29}"];
+}

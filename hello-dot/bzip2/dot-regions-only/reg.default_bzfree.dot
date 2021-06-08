@@ -1,0 +1,24 @@
+digraph "Region Graph for 'default_bzfree' function" {
+	label="Region Graph for 'default_bzfree' function";
+
+	Node0x10f5750 [shape=record,label="{%2}"];
+	Node0x10f5750 -> Node0x1116060;
+	Node0x10f5750 -> Node0xf5ef90;
+	Node0x1116060 [shape=record,label="{%7}"];
+	Node0x1116060 -> Node0xf5ef90;
+	Node0xf5ef90 [shape=record,label="{%9}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xd7e8e0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x11491c0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x10f5750;
+            Node0x1116060;
+          }
+          Node0xf5ef90;
+        }
+}

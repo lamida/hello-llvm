@@ -1,0 +1,5 @@
+digraph "CFG for 'panic' function" {
+	label="CFG for 'panic' function";
+
+	Node0x1925710 [shape=record,label="{%1}"];
+}

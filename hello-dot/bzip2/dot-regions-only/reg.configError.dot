@@ -1,0 +1,12 @@
+digraph "Region Graph for 'configError' function" {
+	label="Region Graph for 'configError' function";
+
+	Node0xfd7fb0 [shape=record,label="{%0}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1064e90 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0xfd7fb0;
+        }
+}

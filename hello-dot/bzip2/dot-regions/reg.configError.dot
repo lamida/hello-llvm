@@ -1,0 +1,12 @@
+digraph "Region Graph for 'configError' function" {
+	label="Region Graph for 'configError' function";
+
+	Node0x998390 [shape=record,label="{%0:\l  %1 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %2 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %1,\l... i8* getelementptr inbounds ([236 x i8], [236 x i8]* @.str.118, i64 0, i64 0))\l  call void @setExit(i32 3)\l  %3 = load i32, i32* @exitValue, align 4\l  call void @exit(i32 %3) #8\l  unreachable\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xc3fe80 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0x998390;
+        }
+}

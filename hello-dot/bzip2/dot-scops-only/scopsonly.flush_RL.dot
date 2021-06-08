@@ -1,0 +1,24 @@
+digraph "Scop Graph for 'flush_RL' function" {
+	label="Scop Graph for 'flush_RL' function";
+
+	Node0x20704a0 [shape=record,label="{%1}"];
+	Node0x20704a0 -> Node0x2352060;
+	Node0x20704a0 -> Node0x234fb80;
+	Node0x2352060 [shape=record,label="{%7}"];
+	Node0x2352060 -> Node0x234fb80;
+	Node0x234fb80 [shape=record,label="{%9}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x2396c50 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x2396bd0 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0x20704a0;
+            Node0x2352060;
+          }
+          Node0x234fb80;
+        }
+}

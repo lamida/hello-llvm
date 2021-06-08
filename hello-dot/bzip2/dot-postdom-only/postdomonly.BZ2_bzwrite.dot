@@ -1,0 +1,13 @@
+digraph "Post dominator tree for 'BZ2_bzwrite' function" {
+	label="Post dominator tree for 'BZ2_bzwrite' function";
+
+	Node0xc6d270 [shape=record,label="{Post dominance root node}"];
+	Node0xc6d270 -> Node0xbd3250;
+	Node0xbd3250 [shape=record,label="{%17}"];
+	Node0xbd3250 -> Node0xc876f0;
+	Node0xbd3250 -> Node0xc78cd0;
+	Node0xbd3250 -> Node0xc8a410;
+	Node0xc876f0 [shape=record,label="{%14}"];
+	Node0xc78cd0 [shape=record,label="{%3}"];
+	Node0xc8a410 [shape=record,label="{%16}"];
+}

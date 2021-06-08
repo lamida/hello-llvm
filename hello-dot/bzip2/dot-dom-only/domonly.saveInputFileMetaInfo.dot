@@ -1,0 +1,9 @@
+digraph "Dominator tree for 'saveInputFileMetaInfo' function" {
+	label="Dominator tree for 'saveInputFileMetaInfo' function";
+
+	Node0x22ebf70 [shape=record,label="{%1}"];
+	Node0x22ebf70 -> Node0x1f3d370;
+	Node0x22ebf70 -> Node0x22ec010;
+	Node0x1f3d370 [shape=record,label="{%8}"];
+	Node0x22ec010 [shape=record,label="{%9}"];
+}

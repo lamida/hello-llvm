@@ -1,0 +1,33 @@
+digraph "Dominator tree for 'BZ2_compressBlock' function" {
+	label="Dominator tree for 'BZ2_compressBlock' function";
+
+	Node0x223a760 [shape=record,label="{%2}"];
+	Node0x223a760 -> Node0x22ccef0;
+	Node0x223a760 -> Node0x22d9cd0;
+	Node0x22ccef0 [shape=record,label="{%9}"];
+	Node0x22ccef0 -> Node0x21e5590;
+	Node0x22ccef0 -> Node0x22263e0;
+	Node0x21e5590 [shape=record,label="{%38}"];
+	Node0x22263e0 [shape=record,label="{%41}"];
+	Node0x22263e0 -> Node0x22e0db0;
+	Node0x22263e0 -> Node0x22451e0;
+	Node0x22e0db0 [shape=record,label="{%46}"];
+	Node0x22451e0 [shape=record,label="{%61}"];
+	Node0x22d9cd0 [shape=record,label="{%63}"];
+	Node0x22d9cd0 -> Node0x217d800;
+	Node0x22d9cd0 -> Node0x223aac0;
+	Node0x217d800 [shape=record,label="{%79}"];
+	Node0x223aac0 [shape=record,label="{%90}"];
+	Node0x223aac0 -> Node0x21a3800;
+	Node0x223aac0 -> Node0x224e0f0;
+	Node0x21a3800 [shape=record,label="{%95}"];
+	Node0x224e0f0 [shape=record,label="{%113}"];
+	Node0x224e0f0 -> Node0x22c4140;
+	Node0x224e0f0 -> Node0x22836d0;
+	Node0x22c4140 [shape=record,label="{%116}"];
+	Node0x22c4140 -> Node0x2214f60;
+	Node0x22c4140 -> Node0x1f6b520;
+	Node0x2214f60 [shape=record,label="{%131}"];
+	Node0x1f6b520 [shape=record,label="{%137}"];
+	Node0x22836d0 [shape=record,label="{%139}"];
+}

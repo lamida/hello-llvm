@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'license' function" {
+	label="Dominator tree for 'license' function";
+
+	Node0x2239000 [shape=record,label="{%0}"];
+}

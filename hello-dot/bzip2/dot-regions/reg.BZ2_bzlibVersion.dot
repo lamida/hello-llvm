@@ -1,0 +1,12 @@
+digraph "Region Graph for 'BZ2_bzlibVersion' function" {
+	label="Region Graph for 'BZ2_bzlibVersion' function";
+
+	Node0xc16280 [shape=record,label="{%0:\l  ret i8* getelementptr inbounds ([19 x i8], [19 x i8]* @.str.11, i64 0, i64 0)\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xc3d1e0 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0xc16280;
+        }
+}

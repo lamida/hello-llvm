@@ -1,0 +1,12 @@
+digraph "CFG for 'bsW' function" {
+	label="CFG for 'bsW' function";
+
+	Node0x1654d20 [shape=record,label="{%3}"];
+	Node0x1654d20 -> Node0x1655040;
+	Node0x1655040 [shape=record,label="{%7|{<s0>T|<s1>F}}"];
+	Node0x1655040:s0 -> Node0x1654db0;
+	Node0x1655040:s1 -> Node0x16552c0;
+	Node0x1654db0 [shape=record,label="{%12}"];
+	Node0x1654db0 -> Node0x1655040;
+	Node0x16552c0 [shape=record,label="{%38}"];
+}

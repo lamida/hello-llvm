@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'mySignalCatcher' function" {
+	label="Dominator tree for 'mySignalCatcher' function";
+
+	Node0x22ebf70 [shape=record,label="{%1}"];
+}

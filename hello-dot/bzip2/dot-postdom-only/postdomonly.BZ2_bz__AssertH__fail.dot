@@ -1,0 +1,11 @@
+digraph "Post dominator tree for 'BZ2_bz__AssertH__fail' function" {
+	label="Post dominator tree for 'BZ2_bz__AssertH__fail' function";
+
+	Node0xbc6110 [shape=record,label="{Post dominance root node}"];
+	Node0xbc6110 -> Node0x939720;
+	Node0x939720 [shape=record,label="{%12}"];
+	Node0x939720 -> Node0xc01370;
+	Node0x939720 -> Node0xc78cd0;
+	Node0xc01370 [shape=record,label="{%1}"];
+	Node0xc78cd0 [shape=record,label="{%9}"];
+}

@@ -1,0 +1,24 @@
+digraph "Scop Graph for 'applySavedMetaInfoToOutputFile' function" {
+	label="Scop Graph for 'applySavedMetaInfoToOutputFile' function";
+
+	Node0x235ec30 [shape=record,label="{%1}"];
+	Node0x235ec30 -> Node0x20d3be0;
+	Node0x235ec30 -> Node0x2114b80;
+	Node0x20d3be0 [shape=record,label="{%14}"];
+	Node0x2114b80 [shape=record,label="{%15}"];
+	Node0x2114b80 -> Node0x228be50;
+	Node0x2114b80 -> Node0x2366590;
+	Node0x228be50 [shape=record,label="{%20}"];
+	Node0x2366590 [shape=record,label="{%21}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x2376130 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x235ec30;
+          Node0x20d3be0;
+          Node0x2114b80;
+          Node0x228be50;
+          Node0x2366590;
+        }
+}

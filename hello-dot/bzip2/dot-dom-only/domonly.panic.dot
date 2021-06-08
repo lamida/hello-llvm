@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'panic' function" {
+	label="Dominator tree for 'panic' function";
+
+	Node0x22ebf70 [shape=record,label="{%1}"];
+}

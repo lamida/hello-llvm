@@ -1,0 +1,12 @@
+digraph "Region Graph for 'BZ2_bsInitWrite' function" {
+	label="Region Graph for 'BZ2_bsInitWrite' function";
+
+	Node0x1026950 [shape=record,label="{%1}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xd7e960 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0x1026950;
+        }
+}

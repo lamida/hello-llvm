@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'BZ2_bzWriteClose' function" {
+	label="Dominator tree for 'BZ2_bzWriteClose' function";
+
+	Node0x2243860 [shape=record,label="{%5}"];
+}

@@ -1,0 +1,9 @@
+digraph "Dominator tree for 'copyFileName' function" {
+	label="Dominator tree for 'copyFileName' function";
+
+	Node0xe91e00 [shape=record,label="{%2:\l  %3 = alloca i8*, align 8\l  %4 = alloca i8*, align 8\l  store i8* %0, i8** %3, align 8\l  store i8* %1, i8** %4, align 8\l  %5 = load i8*, i8** %4, align 8\l  %6 = call i64 @strlen(i8* %5) #8\l  %7 = icmp ugt i64 %6, 1024\l  br i1 %7, label %8, label %13\l}"];
+	Node0xe91e00 -> Node0xe46880;
+	Node0xe91e00 -> Node0xdfc060;
+	Node0xe46880 [shape=record,label="{%8:\l8:                                                \l  %9 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %10 = load i8*, i8** %4, align 8\l  %11 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %9,\l... i8* getelementptr inbounds ([120 x i8], [120 x i8]* @.str.89, i64 0, i64 0),\l... i8* %10, i32 1024)\l  call void @setExit(i32 1)\l  %12 = load i32, i32* @exitValue, align 4\l  call void @exit(i32 %12) #9\l  unreachable\l}"];
+	Node0xdfc060 [shape=record,label="{%13:\l13:                                               \l  %14 = load i8*, i8** %3, align 8\l  %15 = load i8*, i8** %4, align 8\l  %16 = call i8* @strncpy(i8* %14, i8* %15, i64 1024) #10\l  %17 = load i8*, i8** %3, align 8\l  %18 = getelementptr inbounds i8, i8* %17, i64 1024\l  store i8 0, i8* %18, align 1\l  ret void\l}"];
+}

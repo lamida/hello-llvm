@@ -1,0 +1,5 @@
+digraph "CFG for 'Forbidden' function" {
+	label="CFG for 'Forbidden' function";
+
+	Node0x23339c0 [shape=record,label="{%1}"];
+}

@@ -1,0 +1,13 @@
+digraph "Dominator tree for 'SetEnv' function" {
+	label="Dominator tree for 'SetEnv' function";
+
+	Node0x1e8d9c0 [shape=record,label="{%2:\l  %3 = alloca i8*, align 8\l  %4 = alloca i8*, align 8\l  %5 = alloca i8*, align 8\l  %6 = alloca i64, align 8\l  store i8* %0, i8** %3, align 8\l  store i8* %1, i8** %4, align 8\l  %7 = load i8*, i8** %4, align 8\l  %8 = icmp eq i8* %7, null\l  br i1 %8, label %9, label %10\l}"];
+	Node0x1e8d9c0 -> Node0x1e64810;
+	Node0x1e8d9c0 -> Node0x1d2ca50;
+	Node0x1e64810 [shape=record,label="{%9:\l9:                                                \l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.379, i64 0, i64\l... 0), i8** %4, align 8\l  br label %10\l}"];
+	Node0x1d2ca50 [shape=record,label="{%10:\l10:                                               \l  %11 = load i8*, i8** %4, align 8\l  %12 = call i32 @strncmp(i8* %11, i8* getelementptr inbounds ([5 x i8], [5 x\l... i8]* @.str.508, i64 0, i64 0), i64 4) #8\l  %13 = icmp eq i32 %12, 0\l  br i1 %13, label %14, label %15\l}"];
+	Node0x1d2ca50 -> Node0x1e85a10;
+	Node0x1d2ca50 -> Node0x1e8d780;
+	Node0x1e85a10 [shape=record,label="{%14:\l14:                                               \l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.379, i64 0, i64\l... 0), i8** %4, align 8\l  br label %15\l}"];
+	Node0x1e8d780 [shape=record,label="{%15:\l15:                                               \l  %16 = load i8*, i8** %3, align 8\l  %17 = call i64 @strlen(i8* %16) #8\l  %18 = load i8*, i8** %4, align 8\l  %19 = call i64 @strlen(i8* %18) #8\l  %20 = add i64 %17, %19\l  %21 = add i64 %20, 2\l  store i64 %21, i64* %6, align 8\l  %22 = load i64, i64* %6, align 8\l  %23 = call i8* @SafeMalloc(i64 %22)\l  store i8* %23, i8** %5, align 8\l  %24 = load i8*, i8** %5, align 8\l  %25 = load i8*, i8** %3, align 8\l  %26 = load i8*, i8** %4, align 8\l  %27 = call i32 (i8*, i8*, ...) @sprintf(i8* %24, i8* getelementptr inbounds\l... ([6 x i8], [6 x i8]* @.str.509, i64 0, i64 0), i8* %25, i8* %26) #7\l  %28 = load i8*, i8** %5, align 8\l  %29 = call i32 @putenv(i8* %28) #7\l  ret void\l}"];
+}

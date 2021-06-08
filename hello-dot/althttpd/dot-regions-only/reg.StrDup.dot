@@ -1,0 +1,27 @@
+digraph "Region Graph for 'StrDup' function" {
+	label="Region Graph for 'StrDup' function";
+
+	Node0x145ca10 [shape=record,label="{%1}"];
+	Node0x145ca10 -> Node0x13abcb0;
+	Node0x145ca10 -> Node0x14348d0;
+	Node0x13abcb0 [shape=record,label="{%8}"];
+	Node0x13abcb0 -> Node0x13d2770;
+	Node0x13d2770 [shape=record,label="{%19}"];
+	Node0x14348d0 [shape=record,label="{%9}"];
+	Node0x14348d0 -> Node0x13d2770;
+	colorscheme = "paired12"
+        subgraph cluster_0x14a3510 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x14a3590 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x145ca10;
+            Node0x13abcb0;
+            Node0x14348d0;
+          }
+          Node0x13d2770;
+        }
+}

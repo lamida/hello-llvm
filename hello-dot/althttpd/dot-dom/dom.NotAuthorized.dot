@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'NotAuthorized' function" {
+	label="Dominator tree for 'NotAuthorized' function";
+
+	Node0x1d2ca50 [shape=record,label="{%1:\l  %2 = alloca i8*, align 8\l  store i8* %0, i8** %2, align 8\l  call void @StartResponse(i8* getelementptr inbounds ([27 x i8], [27 x i8]*\l... @.str.476, i64 0, i64 0))\l  %3 = load i8*, i8** %2, align 8\l  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([216 x i8],\l... [216 x i8]* @.str.477, i64 0, i64 0), i8* %3)\l  %5 = load i32, i32* @nOut, align 4\l  %6 = add nsw i32 %5, %4\l  store i32 %6, i32* @nOut, align 4\l  call void @MakeLogEntry(i32 0, i32 110)\l  ret void\l}"];
+}

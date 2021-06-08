@@ -1,0 +1,7 @@
+digraph "Post dominator tree for 'CgiError' function" {
+	label="Post dominator tree for 'CgiError' function";
+
+	Node0xcdf780 [shape=record,label="{Post dominance root node}"];
+	Node0xcdf780 -> Node0xcb6bb0;
+	Node0xcb6bb0 [shape=record,label="{%0}"];
+}

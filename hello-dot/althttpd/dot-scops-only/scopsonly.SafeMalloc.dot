@@ -1,0 +1,18 @@
+digraph "Scop Graph for 'SafeMalloc' function" {
+	label="Scop Graph for 'SafeMalloc' function";
+
+	Node0x1abfd00 [shape=record,label="{%1}"];
+	Node0x1abfd00 -> Node0x1b0e6e0;
+	Node0x1abfd00 -> Node0x1b507b0;
+	Node0x1b0e6e0 [shape=record,label="{%8}"];
+	Node0x1b507b0 [shape=record,label="{%10}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1b86360 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x1abfd00;
+          Node0x1b0e6e0;
+          Node0x1b507b0;
+        }
+}

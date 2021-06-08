@@ -1,0 +1,7 @@
+digraph "Post dominator tree for 'Rfc822Date' function" {
+	label="Post dominator tree for 'Rfc822Date' function";
+
+	Node0xd57940 [shape=record,label="{Post dominance root node}"];
+	Node0xd57940 -> Node0xd59a90;
+	Node0xd59a90 [shape=record,label="{%1}"];
+}

@@ -1,0 +1,31 @@
+digraph "Dominator tree for 'sanitizeString' function" {
+	label="Dominator tree for 'sanitizeString' function";
+
+	Node0x1b354e0 [shape=record,label="{%1}"];
+	Node0x1b354e0 -> Node0x1ba1c00;
+	Node0x1ba1c00 [shape=record,label="{%5}"];
+	Node0x1ba1c00 -> Node0x1b63ce0;
+	Node0x1ba1c00 -> Node0x1b56540;
+	Node0x1b63ce0 [shape=record,label="{%9}"];
+	Node0x1b63ce0 -> Node0x1b02930;
+	Node0x1b63ce0 -> Node0x1b22fd0;
+	Node0x1b02930 [shape=record,label="{%56}"];
+	Node0x1b22fd0 [shape=record,label="{%16}"];
+	Node0x1b22fd0 -> Node0x1b4fd80;
+	Node0x1b22fd0 -> Node0x1b3cec0;
+	Node0x1b4fd80 [shape=record,label="{%21}"];
+	Node0x1b4fd80 -> Node0x1afbf70;
+	Node0x1afbf70 [shape=record,label="{%27}"];
+	Node0x1afbf70 -> Node0x1b5f450;
+	Node0x1b5f450 [shape=record,label="{%33}"];
+	Node0x1b5f450 -> Node0x1b90ad0;
+	Node0x1b90ad0 [shape=record,label="{%34}"];
+	Node0x1b90ad0 -> Node0x1b6e1e0;
+	Node0x1b90ad0 -> Node0x1b6dc30;
+	Node0x1b6e1e0 [shape=record,label="{%47}"];
+	Node0x1b6e1e0 -> Node0x1b4f5e0;
+	Node0x1b4f5e0 [shape=record,label="{%48}"];
+	Node0x1b6dc30 [shape=record,label="{%51}"];
+	Node0x1b3cec0 [shape=record,label="{%52}"];
+	Node0x1b56540 [shape=record,label="{%59}"];
+}

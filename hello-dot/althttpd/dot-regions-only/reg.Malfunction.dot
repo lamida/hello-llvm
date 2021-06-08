@@ -1,0 +1,24 @@
+digraph "Region Graph for 'Malfunction' function" {
+	label="Region Graph for 'Malfunction' function";
+
+	Node0x1407ad0 [shape=record,label="{%2}"];
+	Node0x1407ad0 -> Node0x13d2060;
+	Node0x1407ad0 -> Node0x141d5f0;
+	Node0x13d2060 [shape=record,label="{%14}"];
+	Node0x13d2060 -> Node0x141d5f0;
+	Node0x141d5f0 [shape=record,label="{%23}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x14a3510 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x14a3490 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x1407ad0;
+            Node0x13d2060;
+          }
+          Node0x141d5f0;
+        }
+}

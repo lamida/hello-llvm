@@ -1,0 +1,7 @@
+digraph "Post dominator tree for 'tvms' function" {
+	label="Post dominator tree for 'tvms' function";
+
+	Node0xd448d0 [shape=record,label="{Post dominance root node}"];
+	Node0xd448d0 -> Node0xd22640;
+	Node0xd22640 [shape=record,label="{%1}"];
+}

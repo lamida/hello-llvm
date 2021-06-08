@@ -1,0 +1,163 @@
+digraph "Scop Graph for 'CheckBasicAuthorization' function" {
+	label="Scop Graph for 'CheckBasicAuthorization' function";
+
+	Node0x1b0d430 [shape=record,label="{%1}"];
+	Node0x1b0d430 -> Node0x1b58b50;
+	Node0x1b0d430 -> Node0x1b5b3f0;
+	Node0x1b58b50 [shape=record,label="{%15}"];
+	Node0x1b58b50 -> Node0x1b296f0;
+	Node0x1b296f0 [shape=record,label="{%124}"];
+	Node0x1b5b3f0 [shape=record,label="{%16}"];
+	Node0x1b5b3f0 -> Node0x1b1e670;
+	Node0x1b5b3f0 -> Node0x1ae2db0;
+	Node0x1b1e670 [shape=record,label="{%19}"];
+	Node0x1b1e670 -> Node0x1ae2db0;
+	Node0x1ae2db0 [shape=record,label="{%21}"];
+	Node0x1ae2db0 -> Node0x1b69c70;
+	Node0x1b69c70 [shape=record,label="{%22}"];
+	Node0x1b69c70 -> Node0x1b5e8e0;
+	Node0x1b69c70 -> Node0x1b53720;
+	Node0x1b5e8e0 [shape=record,label="{%27}"];
+	Node0x1b5e8e0 -> Node0x1b3fdb0;
+	Node0x1b5e8e0 -> Node0x1b325f0;
+	Node0x1b3fdb0 [shape=record,label="{%37}"];
+	Node0x1b3fdb0 -> Node0x1b69c70[constraint=false];
+	Node0x1b325f0 [shape=record,label="{%32}"];
+	Node0x1b325f0 -> Node0x1b3fdb0;
+	Node0x1b325f0 -> Node0x1b49700;
+	Node0x1b49700 [shape=record,label="{%38}"];
+	Node0x1b49700 -> Node0x1b5e5a0;
+	Node0x1b49700 -> Node0x1b3a2e0;
+	Node0x1b5e5a0 [shape=record,label="{%44}"];
+	Node0x1b5e5a0 -> Node0x1b69c70[constraint=false];
+	Node0x1b3a2e0 [shape=record,label="{%45}"];
+	Node0x1b3a2e0 -> Node0x1ae12d0;
+	Node0x1b3a2e0 -> Node0x1b67850;
+	Node0x1ae12d0 [shape=record,label="{%50}"];
+	Node0x1ae12d0 -> Node0x1b2f820;
+	Node0x1b2f820 [shape=record,label="{%119}"];
+	Node0x1b2f820 -> Node0x1b69c70[constraint=false];
+	Node0x1b67850 [shape=record,label="{%53}"];
+	Node0x1b67850 -> Node0x1b242d0;
+	Node0x1b67850 -> Node0x1b29bd0;
+	Node0x1b242d0 [shape=record,label="{%57}"];
+	Node0x1b242d0 -> Node0x1b6a5c0;
+	Node0x1b242d0 -> Node0x1b087d0;
+	Node0x1b6a5c0 [shape=record,label="{%60}"];
+	Node0x1b6a5c0 -> Node0x1b69c70[constraint=false];
+	Node0x1b087d0 [shape=record,label="{%61}"];
+	Node0x1b087d0 -> Node0x1ad79e0;
+	Node0x1b087d0 -> Node0x1ae83c0;
+	Node0x1ad79e0 [shape=record,label="{%68}"];
+	Node0x1ad79e0 -> Node0x1b69c70[constraint=false];
+	Node0x1ae83c0 [shape=record,label="{%69}"];
+	Node0x1ae83c0 -> Node0x1ae0ca0;
+	Node0x1ae83c0 -> Node0x1b53bc0;
+	Node0x1ae0ca0 [shape=record,label="{%72}"];
+	Node0x1ae0ca0 -> Node0x1b6aae0;
+	Node0x1ae0ca0 -> Node0x1b53bc0;
+	Node0x1b6aae0 [shape=record,label="{%77}"];
+	Node0x1b6aae0 -> Node0x1b296f0;
+	Node0x1b53bc0 [shape=record,label="{%82}"];
+	Node0x1b53bc0 -> Node0x1b574e0;
+	Node0x1b574e0 [shape=record,label="{%118}"];
+	Node0x1b574e0 -> Node0x1b2f820;
+	Node0x1b29bd0 [shape=record,label="{%83}"];
+	Node0x1b29bd0 -> Node0x1b530a0;
+	Node0x1b29bd0 -> Node0x1b56e60;
+	Node0x1b530a0 [shape=record,label="{%87}"];
+	Node0x1b530a0 -> Node0x1b387b0;
+	Node0x1b530a0 -> Node0x1ae7060;
+	Node0x1b387b0 [shape=record,label="{%93}"];
+	Node0x1b387b0 -> Node0x1b4ffd0;
+	Node0x1b4ffd0 [shape=record,label="{%117}"];
+	Node0x1b4ffd0 -> Node0x1b574e0;
+	Node0x1ae7060 [shape=record,label="{%90}"];
+	Node0x1ae7060 -> Node0x1b296f0;
+	Node0x1b56e60 [shape=record,label="{%94}"];
+	Node0x1b56e60 -> Node0x1b4c6c0;
+	Node0x1b56e60 -> Node0x1b27960;
+	Node0x1b4c6c0 [shape=record,label="{%98}"];
+	Node0x1b4c6c0 -> Node0x1b4db00;
+	Node0x1b4c6c0 -> Node0x1b5f5b0;
+	Node0x1b4db00 [shape=record,label="{%105}"];
+	Node0x1b4db00 -> Node0x1b00540;
+	Node0x1b00540 [shape=record,label="{%116}"];
+	Node0x1b00540 -> Node0x1b4ffd0;
+	Node0x1b5f5b0 [shape=record,label="{%101}"];
+	Node0x1b5f5b0 -> Node0x1b296f0;
+	Node0x1b27960 [shape=record,label="{%106}"];
+	Node0x1b27960 -> Node0x1b885c0;
+	Node0x1b27960 -> Node0x1b53cb0;
+	Node0x1b885c0 [shape=record,label="{%110}"];
+	Node0x1b885c0 -> Node0x1b296f0;
+	Node0x1b53cb0 [shape=record,label="{%113}"];
+	Node0x1b53cb0 -> Node0x1b296f0;
+	Node0x1b53720 [shape=record,label="{%120}"];
+	Node0x1b53720 -> Node0x1b296f0;
+	colorscheme = "paired12"
+        subgraph cluster_0x1b86460 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1bc3840 {
+            label = "Region containing entry block of function is invalid!";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1bc37c0 {
+              label = "Region can not profitably be optimized!";
+              style = solid;
+              color = 5
+              Node0x1b5b3f0;
+              Node0x1b1e670;
+            }
+            subgraph cluster_0x1b86360 {
+              label = "Loop  has multiple exits.";
+              style = solid;
+              color = 5
+              subgraph cluster_0x1bc6870 {
+                label = "Region can not profitably be optimized!";
+                style = solid;
+                color = 7
+                Node0x1b27960;
+                Node0x1b885c0;
+                Node0x1b53cb0;
+              }
+              Node0x1b69c70;
+              Node0x1b5e8e0;
+              Node0x1b3fdb0;
+              Node0x1b325f0;
+              Node0x1b49700;
+              Node0x1b5e5a0;
+              Node0x1b3a2e0;
+              Node0x1ae12d0;
+              Node0x1b2f820;
+              Node0x1b67850;
+              Node0x1b242d0;
+              Node0x1b6a5c0;
+              Node0x1b087d0;
+              Node0x1ad79e0;
+              Node0x1ae83c0;
+              Node0x1ae0ca0;
+              Node0x1b6aae0;
+              Node0x1b53bc0;
+              Node0x1b574e0;
+              Node0x1b29bd0;
+              Node0x1b530a0;
+              Node0x1b387b0;
+              Node0x1b4ffd0;
+              Node0x1ae7060;
+              Node0x1b56e60;
+              Node0x1b4c6c0;
+              Node0x1b4db00;
+              Node0x1b00540;
+              Node0x1b5f5b0;
+              Node0x1b53720;
+            }
+            Node0x1b0d430;
+            Node0x1b58b50;
+            Node0x1ae2db0;
+          }
+          Node0x1b296f0;
+        }
+}

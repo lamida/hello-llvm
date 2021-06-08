@@ -1,0 +1,37 @@
+digraph "CFG for 'sanitizeString' function" {
+	label="CFG for 'sanitizeString' function";
+
+	Node0x2336760 [shape=record,label="{%1}"];
+	Node0x2336760 -> Node0x23369c0;
+	Node0x23369c0 [shape=record,label="{%5|{<s0>T|<s1>F}}"];
+	Node0x23369c0:s0 -> Node0x2336870;
+	Node0x23369c0:s1 -> Node0x2336c30;
+	Node0x2336870 [shape=record,label="{%9|{<s0>T|<s1>F}}"];
+	Node0x2336870:s0 -> Node0x2336fa0;
+	Node0x2336870:s1 -> Node0x2336ff0;
+	Node0x2336ff0 [shape=record,label="{%16|{<s0>T|<s1>F}}"];
+	Node0x2336ff0:s0 -> Node0x23372a0;
+	Node0x2336ff0:s1 -> Node0x23372f0;
+	Node0x23372a0 [shape=record,label="{%21|{<s0>T|<s1>F}}"];
+	Node0x23372a0:s0 -> Node0x2337590;
+	Node0x23372a0:s1 -> Node0x23372f0;
+	Node0x2337590 [shape=record,label="{%27|{<s0>T|<s1>F}}"];
+	Node0x2337590:s0 -> Node0x2337880;
+	Node0x2337590:s1 -> Node0x23372f0;
+	Node0x2337880 [shape=record,label="{%33}"];
+	Node0x2337880 -> Node0x23379e0;
+	Node0x23379e0 [shape=record,label="{%34|{<s0>T|<s1>F}}"];
+	Node0x23379e0:s0 -> Node0x2337ff0;
+	Node0x23379e0:s1 -> Node0x2338040;
+	Node0x2337ff0 [shape=record,label="{%47}"];
+	Node0x2337ff0 -> Node0x2338160;
+	Node0x2338160 [shape=record,label="{%48}"];
+	Node0x2338160 -> Node0x23379e0;
+	Node0x2338040 [shape=record,label="{%51}"];
+	Node0x2338040 -> Node0x23372f0;
+	Node0x23372f0 [shape=record,label="{%52}"];
+	Node0x23372f0 -> Node0x2336fa0;
+	Node0x2336fa0 [shape=record,label="{%56}"];
+	Node0x2336fa0 -> Node0x23369c0;
+	Node0x2336c30 [shape=record,label="{%59}"];
+}

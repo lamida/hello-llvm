@@ -1,0 +1,11 @@
+digraph "Post dominator tree for 'SafeMalloc' function" {
+	label="Post dominator tree for 'SafeMalloc' function";
+
+	Node0xd5ea30 [shape=record,label="{Post dominance root node}"];
+	Node0xd5ea30 -> Node0xced7e0;
+	Node0xd5ea30 -> Node0xcfd1c0;
+	Node0xd5ea30 -> Node0xd27c30;
+	Node0xced7e0 [shape=record,label="{%8}"];
+	Node0xcfd1c0 [shape=record,label="{%1}"];
+	Node0xd27c30 [shape=record,label="{%10}"];
+}

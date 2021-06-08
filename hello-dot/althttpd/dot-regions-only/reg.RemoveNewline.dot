@@ -1,0 +1,63 @@
+digraph "Region Graph for 'RemoveNewline' function" {
+	label="Region Graph for 'RemoveNewline' function";
+
+	Node0x14550a0 [shape=record,label="{%1}"];
+	Node0x14550a0 -> Node0x1441b40;
+	Node0x14550a0 -> Node0x1445e80;
+	Node0x1441b40 [shape=record,label="{%5}"];
+	Node0x1441b40 -> Node0x13bead0;
+	Node0x13bead0 [shape=record,label="{%29}"];
+	Node0x1445e80 [shape=record,label="{%6}"];
+	Node0x1445e80 -> Node0x14495a0;
+	Node0x14495a0 [shape=record,label="{%7}"];
+	Node0x14495a0 -> Node0x13dd1f0;
+	Node0x14495a0 -> Node0x13f96e0;
+	Node0x13dd1f0 [shape=record,label="{%12}"];
+	Node0x13dd1f0 -> Node0x13c4400;
+	Node0x13dd1f0 -> Node0x13f96e0;
+	Node0x13c4400 [shape=record,label="{%17}"];
+	Node0x13c4400 -> Node0x13f96e0;
+	Node0x13f96e0 [shape=record,label="{%22}"];
+	Node0x13f96e0 -> Node0x140a190;
+	Node0x13f96e0 -> Node0x1445870;
+	Node0x140a190 [shape=record,label="{%24}"];
+	Node0x140a190 -> Node0x14495a0[constraint=false];
+	Node0x1445870 [shape=record,label="{%27}"];
+	Node0x1445870 -> Node0x13bead0;
+	colorscheme = "paired12"
+        subgraph cluster_0x14a3710 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x145fbc0 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0x145fb40 {
+              label = "";
+              style = filled;
+              color = 5
+              subgraph cluster_0x14a3590 {
+                label = "";
+                style = filled;
+                color = 7
+                subgraph cluster_0x13f5380 {
+                  label = "";
+                  style = filled;
+                  color = 9
+                  Node0x13dd1f0;
+                  Node0x13c4400;
+                }
+                Node0x14495a0;
+              }
+              Node0x13f96e0;
+              Node0x140a190;
+            }
+            Node0x14550a0;
+            Node0x1441b40;
+            Node0x1445e80;
+            Node0x1445870;
+          }
+          Node0x13bead0;
+        }
+}

@@ -1,0 +1,7 @@
+digraph "Post dominator tree for 'Rfc822Date' function" {
+	label="Post dominator tree for 'Rfc822Date' function";
+
+	Node0x26e1a90 [shape=record,label="{Post dominance root node}"];
+	Node0x26e1a90 -> Node0x26e3c00;
+	Node0x26e3c00 [shape=record,label="{%1:\l  %2 = alloca i64, align 8\l  %3 = alloca %struct.tm*, align 8\l  store i64 %0, i64* %2, align 8\l  %4 = call %struct.tm* @gmtime(i64* %2) #7\l  store %struct.tm* %4, %struct.tm** %3, align 8\l  %5 = load %struct.tm*, %struct.tm** %3, align 8\l  %6 = call i64 @strftime(i8* getelementptr inbounds ([100 x i8], [100 x i8]*\l... @Rfc822Date.zDate, i64 0, i64 0), i64 100, i8* getelementptr inbounds ([25 x\l... i8], [25 x i8]* @.str.445, i64 0, i64 0), %struct.tm* %5) #7\l  ret i8* getelementptr inbounds ([100 x i8], [100 x i8]* @Rfc822Date.zDate,\l... i64 0, i64 0)\l}"];
+}

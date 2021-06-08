@@ -1,0 +1,80 @@
+digraph "Scop Graph for 'xferBytes' function" {
+	label="Scop Graph for 'xferBytes' function";
+
+	Node0x1b65060 [shape=record,label="{%4}"];
+	Node0x1b65060 -> Node0x1b71a10;
+	Node0x1b71a10 [shape=record,label="{%12}"];
+	Node0x1b71a10 -> Node0x1ae12d0;
+	Node0x1b71a10 -> Node0x1b32d30;
+	Node0x1ae12d0 [shape=record,label="{%15}"];
+	Node0x1ae12d0 -> Node0x1b44fc0;
+	Node0x1ae12d0 -> Node0x1af07a0;
+	Node0x1b44fc0 [shape=record,label="{%20}"];
+	Node0x1b44fc0 -> Node0x1af07a0;
+	Node0x1af07a0 [shape=record,label="{%21}"];
+	Node0x1af07a0 -> Node0x1b087d0;
+	Node0x1af07a0 -> Node0x1b66f50;
+	Node0x1b087d0 [shape=record,label="{%28}"];
+	Node0x1b087d0 -> Node0x1b32d30;
+	Node0x1b32d30 [shape=record,label="{%35}"];
+	Node0x1b32d30 -> Node0x1abfd00;
+	Node0x1abfd00 [shape=record,label="{%36}"];
+	Node0x1abfd00 -> Node0x1b0fb60;
+	Node0x1abfd00 -> Node0x1b52d30;
+	Node0x1b0fb60 [shape=record,label="{%39}"];
+	Node0x1b0fb60 -> Node0x1b66900;
+	Node0x1b0fb60 -> Node0x1b5b670;
+	Node0x1b66900 [shape=record,label="{%44}"];
+	Node0x1b66900 -> Node0x1b5b670;
+	Node0x1b5b670 [shape=record,label="{%45}"];
+	Node0x1b5b670 -> Node0x1b17580;
+	Node0x1b5b670 -> Node0x1b526b0;
+	Node0x1b17580 [shape=record,label="{%52}"];
+	Node0x1b17580 -> Node0x1b52d30;
+	Node0x1b52d30 [shape=record,label="{%68}"];
+	Node0x1b526b0 [shape=record,label="{%53}"];
+	Node0x1b526b0 -> Node0x1abfd00[constraint=false];
+	Node0x1b66f50 [shape=record,label="{%29}"];
+	Node0x1b66f50 -> Node0x1b71a10[constraint=false];
+	colorscheme = "paired12"
+        subgraph cluster_0x1bcb590 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1b863e0 {
+            label = "Loop  has multiple exits.";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1bc4150 {
+              label = "Region can not profitably be optimized!";
+              style = solid;
+              color = 5
+              Node0x1ae12d0;
+              Node0x1b44fc0;
+            }
+            Node0x1b71a10;
+            Node0x1af07a0;
+            Node0x1b087d0;
+            Node0x1b66f50;
+          }
+          subgraph cluster_0x1bc41d0 {
+            label = "Loop  has multiple exits.";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1bc6870 {
+              label = "Region can not profitably be optimized!";
+              style = solid;
+              color = 5
+              Node0x1b0fb60;
+              Node0x1b66900;
+            }
+            Node0x1abfd00;
+            Node0x1b5b670;
+            Node0x1b17580;
+            Node0x1b526b0;
+          }
+          Node0x1b65060;
+          Node0x1b32d30;
+          Node0x1b52d30;
+        }
+}

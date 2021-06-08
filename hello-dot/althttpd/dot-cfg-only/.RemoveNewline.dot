@@ -1,0 +1,27 @@
+digraph "CFG for 'RemoveNewline' function" {
+	label="CFG for 'RemoveNewline' function";
+
+	Node0x23327d0 [shape=record,label="{%1|{<s0>T|<s1>F}}"];
+	Node0x23327d0:s0 -> Node0x2332a30;
+	Node0x23327d0:s1 -> Node0x2332a80;
+	Node0x2332a30 [shape=record,label="{%5}"];
+	Node0x2332a30 -> Node0x2332b10;
+	Node0x2332a80 [shape=record,label="{%6}"];
+	Node0x2332a80 -> Node0x2332bc0;
+	Node0x2332bc0 [shape=record,label="{%7|{<s0>T|<s1>F}}"];
+	Node0x2332bc0:s0 -> Node0x23329e0;
+	Node0x2332bc0:s1 -> Node0x2332e90;
+	Node0x23329e0 [shape=record,label="{%12|{<s0>T|<s1>F}}"];
+	Node0x23329e0:s0 -> Node0x2333140;
+	Node0x23329e0:s1 -> Node0x2332e90;
+	Node0x2333140 [shape=record,label="{%17}"];
+	Node0x2333140 -> Node0x2332e90;
+	Node0x2332e90 [shape=record,label="{%22|{<s0>T|<s1>F}}"];
+	Node0x2332e90:s0 -> Node0x2333440;
+	Node0x2332e90:s1 -> Node0x2333490;
+	Node0x2333440 [shape=record,label="{%24}"];
+	Node0x2333440 -> Node0x2332bc0;
+	Node0x2333490 [shape=record,label="{%27}"];
+	Node0x2333490 -> Node0x2332b10;
+	Node0x2332b10 [shape=record,label="{%29}"];
+}

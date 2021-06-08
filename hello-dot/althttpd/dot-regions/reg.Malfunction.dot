@@ -1,0 +1,24 @@
+digraph "Region Graph for 'Malfunction' function" {
+	label="Region Graph for 'Malfunction' function";
+
+	Node0x1a5fa00 [shape=record,label="{%2:\l  %3 = alloca i32, align 4\l  %4 = alloca i8*, align 8\l  %5 = alloca [1 x %struct.__va_list_tag], align 16\l  store i32 %0, i32* %3, align 4\l  store i8* %1, i8** %4, align 8\l  %6 = getelementptr inbounds [1 x %struct.__va_list_tag], [1 x\l... %struct.__va_list_tag]* %5, i64 0, i64 0\l  %7 = bitcast %struct.__va_list_tag* %6 to i8*\l  call void @llvm.va_start(i8* %7)\l  call void @StartResponse(i8* getelementptr inbounds ([23 x i8], [23 x i8]*\l... @.str.446, i64 0, i64 0))\l  %8 = load i32, i32* %3, align 4\l  %9 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([87 x i8], [87\l... x i8]* @.str.447, i64 0, i64 0), i32 %8)\l  %10 = load i32, i32* @nOut, align 4\l  %11 = add nsw i32 %10, %9\l  store i32 %11, i32* @nOut, align 4\l  %12 = load i8*, i8** %4, align 8\l  %13 = icmp ne i8* %12, null\l  br i1 %13, label %14, label %23\l}"];
+	Node0x1a5fa00 -> Node0x1a36580;
+	Node0x1a5fa00 -> Node0x1a2c650;
+	Node0x1a36580 [shape=record,label="{%14:\l14:                                               \l  %15 = load i8*, i8** %4, align 8\l  %16 = getelementptr inbounds [1 x %struct.__va_list_tag], [1 x\l... %struct.__va_list_tag]* %5, i64 0, i64 0\l  %17 = call i32 @vprintf(i8* %15, %struct.__va_list_tag* %16)\l  %18 = load i32, i32* @nOut, align 4\l  %19 = add nsw i32 %18, %17\l  store i32 %19, i32* @nOut, align 4\l  %20 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([2 x i8], [2 x\l... i8]* @.str.448, i64 0, i64 0))\l  %21 = load i32, i32* @nOut, align 4\l  %22 = add nsw i32 %21, 1\l  store i32 %22, i32* @nOut, align 4\l  br label %23\l}"];
+	Node0x1a36580 -> Node0x1a2c650;
+	Node0x1a2c650 [shape=record,label="{%23:\l23:                                               \l  %24 = load i32, i32* %3, align 4\l  call void @MakeLogEntry(i32 0, i32 %24)\l  call void @exit(i32 0) #8\l  unreachable\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1adcce0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x1adcd60 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x1a5fa00;
+            Node0x1a36580;
+          }
+          Node0x1a2c650;
+        }
+}

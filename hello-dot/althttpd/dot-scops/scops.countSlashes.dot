@@ -1,0 +1,39 @@
+digraph "Scop Graph for 'countSlashes' function" {
+	label="Scop Graph for 'countSlashes' function";
+
+	Node0x18c6720 [shape=record,label="{%1:\l  %2 = alloca i8*, align 8\l  %3 = alloca i32, align 4\l  store i8* %0, i8** %2, align 8\l  store i32 0, i32* %3, align 4\l  br label %4\l}"];
+	Node0x18c6720 -> Node0x1880430;
+	Node0x1880430 [shape=record,label="{%4:\l4:                                                \l  %5 = load i8*, i8** %2, align 8\l  %6 = load i8, i8* %5, align 1\l  %7 = icmp ne i8 %6, 0\l  br i1 %7, label %8, label %18\l}"];
+	Node0x1880430 -> Node0x185a060;
+	Node0x1880430 -> Node0x18e7ff0;
+	Node0x185a060 [shape=record,label="{%8:\l8:                                                \l  %9 = load i8*, i8** %2, align 8\l  %10 = getelementptr inbounds i8, i8* %9, i32 1\l  store i8* %10, i8** %2, align 8\l  %11 = load i8, i8* %9, align 1\l  %12 = sext i8 %11 to i32\l  %13 = icmp eq i32 %12, 47\l  br i1 %13, label %14, label %17\l}"];
+	Node0x185a060 -> Node0x18bce90;
+	Node0x185a060 -> Node0x18c3f70;
+	Node0x18bce90 [shape=record,label="{%14:\l14:                                               \l  %15 = load i32, i32* %3, align 4\l  %16 = add nsw i32 %15, 1\l  store i32 %16, i32* %3, align 4\l  br label %17\l}"];
+	Node0x18bce90 -> Node0x18c3f70;
+	Node0x18c3f70 [shape=record,label="{%17:\l17:                                               \l  br label %4\l}"];
+	Node0x18c3f70 -> Node0x1880430[constraint=false];
+	Node0x18e7ff0 [shape=record,label="{%18:\l18:                                               \l  %19 = load i32, i32* %3, align 4\l  ret i32 %19\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1969e60 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1968210 {
+            label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1968190 {
+              label = "Region can not profitably be optimized!";
+              style = solid;
+              color = 5
+              Node0x185a060;
+              Node0x18bce90;
+            }
+            Node0x1880430;
+            Node0x18c3f70;
+          }
+          Node0x18c6720;
+          Node0x18e7ff0;
+        }
+}

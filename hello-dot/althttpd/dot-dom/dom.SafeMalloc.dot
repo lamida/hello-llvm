@@ -1,0 +1,9 @@
+digraph "Dominator tree for 'SafeMalloc' function" {
+	label="Dominator tree for 'SafeMalloc' function";
+
+	Node0x1df6a00 [shape=record,label="{%1:\l  %2 = alloca i64, align 8\l  %3 = alloca i8*, align 8\l  store i64 %0, i64* %2, align 8\l  %4 = load i64, i64* %2, align 8\l  %5 = call noalias i8* @malloc(i64 %4) #7\l  store i8* %5, i8** %3, align 8\l  %6 = load i8*, i8** %3, align 8\l  %7 = icmp eq i8* %6, null\l  br i1 %7, label %8, label %10\l}"];
+	Node0x1df6a00 -> Node0x1dab2e0;
+	Node0x1df6a00 -> Node0x1d71140;
+	Node0x1dab2e0 [shape=record,label="{%8:\l8:                                                \l  %9 = call i8* @strcpy(i8* getelementptr inbounds ([4 x i8], [4 x i8]*\l... @zReplyStatus, i64 0, i64 0), i8* getelementptr inbounds ([4 x i8], [4 x i8]*\l... @.str.462, i64 0, i64 0)) #7\l  call void @MakeLogEntry(i32 1, i32 100)\l  call void @exit(i32 1) #8\l  unreachable\l}"];
+	Node0x1d71140 [shape=record,label="{%10:\l10:                                               \l  %11 = load i8*, i8** %3, align 8\l  ret i8* %11\l}"];
+}

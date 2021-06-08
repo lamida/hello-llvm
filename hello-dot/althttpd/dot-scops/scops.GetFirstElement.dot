@@ -1,0 +1,120 @@
+digraph "Scop Graph for 'GetFirstElement' function" {
+	label="Scop Graph for 'GetFirstElement' function";
+
+	Node0x18c3310 [shape=record,label="{%2:\l  %3 = alloca i8*, align 8\l  %4 = alloca i8*, align 8\l  %5 = alloca i8**, align 8\l  %6 = alloca i8*, align 8\l  store i8* %0, i8** %4, align 8\l  store i8** %1, i8*** %5, align 8\l  store i8* null, i8** %6, align 8\l  %7 = load i8*, i8** %4, align 8\l  %8 = icmp eq i8* %7, null\l  br i1 %8, label %9, label %15\l}"];
+	Node0x18c3310 -> Node0x18c5180;
+	Node0x18c3310 -> Node0x18761e0;
+	Node0x18c5180 [shape=record,label="{%9:\l9:                                                \l  %10 = load i8**, i8*** %5, align 8\l  %11 = icmp ne i8** %10, null\l  br i1 %11, label %12, label %14\l}"];
+	Node0x18c5180 -> Node0x184a600;
+	Node0x18c5180 -> Node0x1878cb0;
+	Node0x184a600 [shape=record,label="{%12:\l12:                                               \l  %13 = load i8**, i8*** %5, align 8\l  store i8* null, i8** %13, align 8\l  br label %14\l}"];
+	Node0x184a600 -> Node0x1878cb0;
+	Node0x1878cb0 [shape=record,label="{%14:\l14:                                               \l  store i8* null, i8** %3, align 8\l  br label %88\l}"];
+	Node0x1878cb0 -> Node0x18d3b10;
+	Node0x18d3b10 [shape=record,label="{%88:\l88:                                               \l  %89 = load i8*, i8** %3, align 8\l  ret i8* %89\l}"];
+	Node0x18761e0 [shape=record,label="{%15:\l15:                                               \l  br label %16\l}"];
+	Node0x18761e0 -> Node0x18bc8d0;
+	Node0x18bc8d0 [shape=record,label="{%16:\l16:                                               \l  %17 = call i16** @__ctype_b_loc() #8\l  %18 = load i16*, i16** %17, align 8\l  %19 = load i8*, i8** %4, align 8\l  %20 = load i8, i8* %19, align 1\l  %21 = zext i8 %20 to i32\l  %22 = sext i32 %21 to i64\l  %23 = getelementptr inbounds i16, i16* %18, i64 %22\l  %24 = load i16, i16* %23, align 2\l  %25 = zext i16 %24 to i32\l  %26 = and i32 %25, 8192\l  %27 = icmp ne i32 %26, 0\l  br i1 %27, label %28, label %31\l}"];
+	Node0x18bc8d0 -> Node0x1864950;
+	Node0x18bc8d0 -> Node0x18bc210;
+	Node0x1864950 [shape=record,label="{%28:\l28:                                               \l  %29 = load i8*, i8** %4, align 8\l  %30 = getelementptr inbounds i8, i8* %29, i32 1\l  store i8* %30, i8** %4, align 8\l  br label %16\l}"];
+	Node0x1864950 -> Node0x18bc8d0[constraint=false];
+	Node0x18bc210 [shape=record,label="{%31:\l31:                                               \l  %32 = load i8*, i8** %4, align 8\l  store i8* %32, i8** %6, align 8\l  br label %33\l}"];
+	Node0x18bc210 -> Node0x1846ad0;
+	Node0x1846ad0 [shape=record,label="{%33:\l33:                                               \l  %34 = load i8*, i8** %4, align 8\l  %35 = load i8, i8* %34, align 1\l  %36 = sext i8 %35 to i32\l  %37 = icmp ne i32 %36, 0\l  br i1 %37, label %38, label %51\l}"];
+	Node0x1846ad0 -> Node0x18c37b0;
+	Node0x1846ad0 -> Node0x18e6f70;
+	Node0x18c37b0 [shape=record,label="{%38:\l38:                                               \l  %39 = call i16** @__ctype_b_loc() #8\l  %40 = load i16*, i16** %39, align 8\l  %41 = load i8*, i8** %4, align 8\l  %42 = load i8, i8* %41, align 1\l  %43 = zext i8 %42 to i32\l  %44 = sext i32 %43 to i64\l  %45 = getelementptr inbounds i16, i16* %40, i64 %44\l  %46 = load i16, i16* %45, align 2\l  %47 = zext i16 %46 to i32\l  %48 = and i32 %47, 8192\l  %49 = icmp ne i32 %48, 0\l  %50 = xor i1 %49, true\l  br label %51\l}"];
+	Node0x18c37b0 -> Node0x18e6f70;
+	Node0x18e6f70 [shape=record,label="{%51:\l51:                                               \l  %52 = phi i1 [ false, %33 ], [ %50, %38 ]\l  br i1 %52, label %53, label %56\l}"];
+	Node0x18e6f70 -> Node0x18c3de0;
+	Node0x18e6f70 -> Node0x18db360;
+	Node0x18c3de0 [shape=record,label="{%53:\l53:                                               \l  %54 = load i8*, i8** %4, align 8\l  %55 = getelementptr inbounds i8, i8* %54, i32 1\l  store i8* %55, i8** %4, align 8\l  br label %33\l}"];
+	Node0x18c3de0 -> Node0x1846ad0[constraint=false];
+	Node0x18db360 [shape=record,label="{%56:\l56:                                               \l  %57 = load i8*, i8** %4, align 8\l  %58 = load i8, i8* %57, align 1\l  %59 = icmp ne i8 %58, 0\l  br i1 %59, label %60, label %80\l}"];
+	Node0x18db360 -> Node0x18c40a0;
+	Node0x18db360 -> Node0x18d4270;
+	Node0x18c40a0 [shape=record,label="{%60:\l60:                                               \l  %61 = load i8*, i8** %4, align 8\l  store i8 0, i8* %61, align 1\l  %62 = load i8*, i8** %4, align 8\l  %63 = getelementptr inbounds i8, i8* %62, i32 1\l  store i8* %63, i8** %4, align 8\l  br label %64\l}"];
+	Node0x18c40a0 -> Node0x18c9250;
+	Node0x18c9250 [shape=record,label="{%64:\l64:                                               \l  %65 = call i16** @__ctype_b_loc() #8\l  %66 = load i16*, i16** %65, align 8\l  %67 = load i8*, i8** %4, align 8\l  %68 = load i8, i8* %67, align 1\l  %69 = zext i8 %68 to i32\l  %70 = sext i32 %69 to i64\l  %71 = getelementptr inbounds i16, i16* %66, i64 %70\l  %72 = load i16, i16* %71, align 2\l  %73 = zext i16 %72 to i32\l  %74 = and i32 %73, 8192\l  %75 = icmp ne i32 %74, 0\l  br i1 %75, label %76, label %79\l}"];
+	Node0x18c9250 -> Node0x18c2600;
+	Node0x18c9250 -> Node0x18f4140;
+	Node0x18c2600 [shape=record,label="{%76:\l76:                                               \l  %77 = load i8*, i8** %4, align 8\l  %78 = getelementptr inbounds i8, i8* %77, i32 1\l  store i8* %78, i8** %4, align 8\l  br label %64\l}"];
+	Node0x18c2600 -> Node0x18c9250[constraint=false];
+	Node0x18f4140 [shape=record,label="{%79:\l79:                                               \l  br label %80\l}"];
+	Node0x18f4140 -> Node0x18d4270;
+	Node0x18d4270 [shape=record,label="{%80:\l80:                                               \l  %81 = load i8**, i8*** %5, align 8\l  %82 = icmp ne i8** %81, null\l  br i1 %82, label %83, label %86\l}"];
+	Node0x18d4270 -> Node0x185b3c0;
+	Node0x18d4270 -> Node0x1880650;
+	Node0x185b3c0 [shape=record,label="{%83:\l83:                                               \l  %84 = load i8*, i8** %4, align 8\l  %85 = load i8**, i8*** %5, align 8\l  store i8* %84, i8** %85, align 8\l  br label %86\l}"];
+	Node0x185b3c0 -> Node0x1880650;
+	Node0x1880650 [shape=record,label="{%86:\l86:                                               \l  %87 = load i8*, i8** %6, align 8\l  store i8* %87, i8** %3, align 8\l  br label %88\l}"];
+	Node0x1880650 -> Node0x18d3b10;
+	colorscheme = "paired12"
+        subgraph cluster_0x193b370 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x192d6a0 {
+            label = "Region containing entry block of function is invalid!";
+            style = solid;
+            color = 6
+            subgraph cluster_0x193b470 {
+              label = "Region can not profitably be optimized!";
+              style = solid;
+              color = 5
+              Node0x18c5180;
+              Node0x184a600;
+            }
+            subgraph cluster_0x1967130 {
+              label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+              style = solid;
+              color = 5
+              Node0x18bc8d0;
+              Node0x1864950;
+            }
+            subgraph cluster_0x1966be0 {
+              label = "Condition in BB '' neither constant nor an icmp instruction";
+              style = solid;
+              color = 5
+              subgraph cluster_0x1966740 {
+                label = "Region can not profitably be optimized!";
+                style = solid;
+                color = 7
+                Node0x1846ad0;
+                Node0x18c37b0;
+              }
+              Node0x18e6f70;
+              Node0x18c3de0;
+            }
+            subgraph cluster_0x18eba70 {
+              label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+              style = solid;
+              color = 5
+              subgraph cluster_0x193b3f0 {
+                label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+                style = solid;
+                color = 7
+                Node0x18c9250;
+                Node0x18c2600;
+              }
+              Node0x18db360;
+              Node0x18c40a0;
+              Node0x18f4140;
+            }
+            subgraph cluster_0x1935ce0 {
+              label = "Region can not profitably be optimized!";
+              style = solid;
+              color = 5
+              Node0x18d4270;
+              Node0x185b3c0;
+            }
+            Node0x18c3310;
+            Node0x1878cb0;
+            Node0x18761e0;
+            Node0x18bc210;
+            Node0x1880650;
+          }
+          Node0x18d3b10;
+        }
+}

@@ -1,0 +1,39 @@
+digraph "Scop Graph for 'StrAppend' function" {
+	label="Scop Graph for 'StrAppend' function";
+
+	Node0x1b57b40 [shape=record,label="{%3}"];
+	Node0x1b57b40 -> Node0x1b51770;
+	Node0x1b57b40 -> Node0x1b49210;
+	Node0x1b51770 [shape=record,label="{%15}"];
+	Node0x1b51770 -> Node0x1b24a60;
+	Node0x1b24a60 [shape=record,label="{%55}"];
+	Node0x1b49210 [shape=record,label="{%16}"];
+	Node0x1b49210 -> Node0x1b5b200;
+	Node0x1b49210 -> Node0x1b497e0;
+	Node0x1b5b200 [shape=record,label="{%19}"];
+	Node0x1b5b200 -> Node0x1b24a60;
+	Node0x1b497e0 [shape=record,label="{%22}"];
+	Node0x1b497e0 -> Node0x1b24a60;
+	colorscheme = "paired12"
+        subgraph cluster_0x1a4de00 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1b863e0 {
+            label = "";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1b86460 {
+              label = "";
+              style = solid;
+              color = 5
+              Node0x1b49210;
+              Node0x1b5b200;
+              Node0x1b497e0;
+            }
+            Node0x1b57b40;
+            Node0x1b51770;
+          }
+          Node0x1b24a60;
+        }
+}

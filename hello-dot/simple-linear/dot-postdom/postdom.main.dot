@@ -1,7 +1,7 @@
 digraph "Post dominator tree for 'main' function" {
 	label="Post dominator tree for 'main' function";
 
-	Node0xbff4b0 [shape=record,label="{Post dominance root node}"];
-	Node0xbff4b0 -> Node0xbff9d0;
-	Node0xbff9d0 [shape=record,label="{%0:\l  call void @linear()\l  ret i32 0\l}"];
+	Node0xc584b0 [shape=record,label="{Post dominance root node}"];
+	Node0xc584b0 -> Node0xc589d0;
+	Node0xc589d0 [shape=record,label="{%0:\l  call void @linear()\l  ret i32 0\l}"];
 }

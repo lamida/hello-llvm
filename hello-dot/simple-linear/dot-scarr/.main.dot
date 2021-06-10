@@ -1,5 +1,5 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x55e316dcb950 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x55e316dcb950 - Thread Start\":\l  %0 = alloca i32, align 4\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = bitcast i32* %0 to i8*\l  call void @llvm.lifetime.start.p0i8(i64 4, i8* %3)\l  %4 = bitcast i32* %1 to i8*\l  call void @llvm.lifetime.start.p0i8(i64 4, i8* %4)\l  %5 = bitcast i32* %2 to i8*\l  call void @llvm.lifetime.start.p0i8(i64 4, i8* %5)\l  store i32 10, i32* %0, align 4\l  store i32 100, i32* %1, align 4\l  %6 = load i32, i32* %0, align 4\l  %7 = load i32, i32* %1, align 4\l  %8 = mul nsw i32 %6, %7\l  store i32 %8, i32* %2, align 4\l  %9 = load i32, i32* %2, align 4\l  %10 = sext i32 %9 to i64\l  %11 = inttoptr i64 %10 to i8*\l  %12 = call i32 (i8*, ...) @printf(i8* %11)\l  %13 = bitcast i32* %0 to i8*\l  call void @llvm.lifetime.end.p0i8(i64 4, i8* %13)\l  %14 = bitcast i32* %1 to i8*\l  call void @llvm.lifetime.end.p0i8(i64 4, i8* %14)\l  %15 = bitcast i32* %2 to i8*\l  call void @llvm.lifetime.end.p0i8(i64 4, i8* %15)\l  ret i32 0\l}"];
+	Node0x556d39f2c920 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556d39f2c920 - Thread Start\":\l  call void @linear()\l  ret i32 0\l}"];
 }

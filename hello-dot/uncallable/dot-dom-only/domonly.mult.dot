@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'mult' function" {
+	label="Dominator tree for 'mult' function";
+
+	Node0x1941ef0 [shape=record,label="{%2}"];
+}

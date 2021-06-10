@@ -1,12 +1,12 @@
 digraph "Scop Graph for 'get_input' function" {
 	label="Scop Graph for 'get_input' function";
 
-	Node0x104a810 [shape=record,label="{%0}"];
+	Node0xb66810 [shape=record,label="{%0}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x1020570 {
+        subgraph cluster_0xb3c570 {
           label = "";
           style = solid;
           color = 1
-          Node0x104a810;
+          Node0xb66810;
         }
 }

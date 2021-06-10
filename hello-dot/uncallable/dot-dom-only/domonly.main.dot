@@ -1,0 +1,11 @@
+digraph "Dominator tree for 'main' function" {
+	label="Dominator tree for 'main' function";
+
+	Node0x1941ef0 [shape=record,label="{%0}"];
+	Node0x1941ef0 -> Node0x1941f60;
+	Node0x1941ef0 -> Node0x1941fa0;
+	Node0x1941ef0 -> Node0x1941fe0;
+	Node0x1941f60 [shape=record,label="{%5}"];
+	Node0x1941fa0 [shape=record,label="{%11}"];
+	Node0x1941fe0 [shape=record,label="{%8}"];
+}

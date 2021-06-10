@@ -1,12 +1,12 @@
 digraph "Scop Graph for 'get_privileged_info' function" {
 	label="Scop Graph for 'get_privileged_info' function";
 
-	Node0x1045ba0 [shape=record,label="{%0}"];
+	Node0xb61ba0 [shape=record,label="{%0}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x104ce30 {
+        subgraph cluster_0xb68e30 {
           label = "";
           style = solid;
           color = 1
-          Node0x1045ba0;
+          Node0xb61ba0;
         }
 }

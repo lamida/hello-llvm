@@ -1,7 +1,7 @@
 digraph "Post dominator tree for 'my_terminate' function" {
 	label="Post dominator tree for 'my_terminate' function";
 
-	Node0xb5f890 [shape=record,label="{Post dominance root node}"];
-	Node0xb5f890 -> Node0xb5f370;
-	Node0xb5f370 [shape=record,label="{%0}"];
+	Node0x10ec890 [shape=record,label="{Post dominance root node}"];
+	Node0x10ec890 -> Node0x10ec370;
+	Node0x10ec370 [shape=record,label="{%0}"];
 }

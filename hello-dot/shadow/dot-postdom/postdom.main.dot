@@ -1,7 +1,7 @@
 digraph "Post dominator tree for 'main' function" {
 	label="Post dominator tree for 'main' function";
 
-	Node0x108e820 [shape=record,label="{Post dominance root node}"];
-	Node0x108e820 -> Node0x108ed40;
-	Node0x108ed40 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  call void @a(i32 10)\l  %2 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11\l... x i8]* @.str.1, i64 0, i64 0))\l  call void @a(i32 6)\l  ret i32 0\l}"];
+	Node0xb18820 [shape=record,label="{Post dominance root node}"];
+	Node0xb18820 -> Node0xb18d40;
+	Node0xb18d40 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  call void @a(i32 10)\l  %2 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11\l... x i8]* @.str.1, i64 0, i64 0))\l  call void @a(i32 6)\l  ret i32 0\l}"];
 }

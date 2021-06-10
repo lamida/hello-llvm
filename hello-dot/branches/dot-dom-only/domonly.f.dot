@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'f' function" {
 	label="Dominator tree for 'f' function";
 
-	Node0x8512d0 [shape=record,label="{%0}"];
+	Node0xf422d0 [shape=record,label="{%0}"];
 }

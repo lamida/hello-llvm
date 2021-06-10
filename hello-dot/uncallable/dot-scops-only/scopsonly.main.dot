@@ -1,0 +1,27 @@
+digraph "Scop Graph for 'main' function" {
+	label="Scop Graph for 'main' function";
+
+	Node0x2803a50 [shape=record,label="{%0}"];
+	Node0x2803a50 -> Node0x27fd960;
+	Node0x2803a50 -> Node0x27fa7d0;
+	Node0x27fd960 [shape=record,label="{%5}"];
+	Node0x27fd960 -> Node0x2802870;
+	Node0x2802870 [shape=record,label="{%11}"];
+	Node0x27fa7d0 [shape=record,label="{%8}"];
+	Node0x27fa7d0 -> Node0x2802870;
+	colorscheme = "paired12"
+        subgraph cluster_0x2800540 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x27d50e0 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0x2803a50;
+            Node0x27fd960;
+            Node0x27fa7d0;
+          }
+          Node0x2802870;
+        }
+}

@@ -1,16 +1,16 @@
 digraph "Call graph" {
 	label="Call graph";
 
-	Node0x25c2860 [shape=record,label="{external node}"];
-	Node0x25c2860 -> Node0x25c2900;
-	Node0x25c2860 -> Node0x25c29a0;
-	Node0x25c2860 -> Node0x25c2e50;
-	Node0x25c2900 [shape=record,label="{a}"];
-	Node0x25c2900 -> Node0x25c29a0;
-	Node0x25c29a0 [shape=record,label="{printf}"];
-	Node0x25c29a0 -> Node0x25c2890;
-	Node0x25c2e50 [shape=record,label="{main}"];
-	Node0x25c2e50 -> Node0x25c2900;
-	Node0x25c2e50 -> Node0x25c29a0;
-	Node0x25c2e50 -> Node0x25c2900;
+	Node0x260a860 [shape=record,label="{external node}"];
+	Node0x260a860 -> Node0x260a900;
+	Node0x260a860 -> Node0x260a9a0;
+	Node0x260a860 -> Node0x260ae50;
+	Node0x260a900 [shape=record,label="{a}"];
+	Node0x260a900 -> Node0x260a9a0;
+	Node0x260a9a0 [shape=record,label="{printf}"];
+	Node0x260a9a0 -> Node0x260a890;
+	Node0x260ae50 [shape=record,label="{main}"];
+	Node0x260ae50 -> Node0x260a900;
+	Node0x260ae50 -> Node0x260a9a0;
+	Node0x260ae50 -> Node0x260a900;
 }

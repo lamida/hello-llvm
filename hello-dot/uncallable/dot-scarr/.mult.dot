@@ -1,0 +1,5 @@
+digraph "CFG for 'mult' function" {
+	label="CFG for 'mult' function";
+
+	Node0x560bfefaf760 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x560bfefaf760\":\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  store i32 %1, i32* %3, align 4\l  %4 = load i32, i32* %2, align 4\l  %5 = load i32, i32* %3, align 4\l  %6 = mul nsw i32 %4, %5\l  ret i32 %6\l}"];
+}

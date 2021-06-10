@@ -1,0 +1,66 @@
+digraph "Scop Graph for 'main' function" {
+	label="Scop Graph for 'main' function";
+
+	Node0x2079310 [shape=record,label="{%0}"];
+	Node0x2079310 -> Node0x207b0d0;
+	Node0x207b0d0 [shape=record,label="{%5}"];
+	Node0x207b0d0 -> Node0x207b190;
+	Node0x207b0d0 -> Node0x207b1f0;
+	Node0x207b190 [shape=record,label="{%8}"];
+	Node0x207b190 -> Node0x207b300;
+	Node0x207b300 [shape=record,label="{%9}"];
+	Node0x207b300 -> Node0x207b360;
+	Node0x207b300 -> Node0x207b3c0;
+	Node0x207b360 [shape=record,label="{%12}"];
+	Node0x207b360 -> Node0x207b570;
+	Node0x207b570 [shape=record,label="{%13}"];
+	Node0x207b570 -> Node0x207b5d0;
+	Node0x207b570 -> Node0x207b630;
+	Node0x207b5d0 [shape=record,label="{%16}"];
+	Node0x207b5d0 -> Node0x207b690;
+	Node0x207b690 [shape=record,label="{%21}"];
+	Node0x207b690 -> Node0x207b570[constraint=false];
+	Node0x207b630 [shape=record,label="{%24}"];
+	Node0x207b630 -> Node0x207b6f0;
+	Node0x207b6f0 [shape=record,label="{%25}"];
+	Node0x207b6f0 -> Node0x207b300[constraint=false];
+	Node0x207b3c0 [shape=record,label="{%28}"];
+	Node0x207b3c0 -> Node0x207bb60;
+	Node0x207bb60 [shape=record,label="{%29}"];
+	Node0x207bb60 -> Node0x207b0d0[constraint=false];
+	Node0x207b1f0 [shape=record,label="{%32}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x2015440 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x206ae40 {
+            label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+            style = solid;
+            color = 6
+            subgraph cluster_0x206adc0 {
+              label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+              style = solid;
+              color = 5
+              subgraph cluster_0x2040600 {
+                label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+                style = solid;
+                color = 7
+                Node0x207b570;
+                Node0x207b5d0;
+                Node0x207b690;
+              }
+              Node0x207b300;
+              Node0x207b360;
+              Node0x207b630;
+              Node0x207b6f0;
+            }
+            Node0x207b0d0;
+            Node0x207b190;
+            Node0x207b3c0;
+            Node0x207bb60;
+          }
+          Node0x2079310;
+          Node0x207b1f0;
+        }
+}

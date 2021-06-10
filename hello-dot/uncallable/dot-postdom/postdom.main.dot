@@ -1,13 +1,13 @@
 digraph "Post dominator tree for 'main' function" {
 	label="Post dominator tree for 'main' function";
 
-	Node0x24640f0 [shape=record,label="{Post dominance root node}"];
-	Node0x24640f0 -> Node0x2463f20;
-	Node0x2463f20 [shape=record,label="{%11:\l11:                                               \l  %12 = load i32, i32* %1, align 4\l  ret i32 %12\l}"];
-	Node0x2463f20 -> Node0x2464050;
-	Node0x2463f20 -> Node0x24b1490;
-	Node0x2463f20 -> Node0x24b14d0;
-	Node0x2464050 [shape=record,label="{%5:\l5:                                                \l  %6 = call i32 @add(i32 2, i32 4)\l  %7 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str, i64 0, i64 0), i32 %6)\l  br label %11\l}"];
-	Node0x24b1490 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %3 = load i32, i32* %2, align 4\l  %4 = icmp eq i32 %3, 1\l  br i1 %4, label %5, label %8\l}"];
-	Node0x24b14d0 [shape=record,label="{%8:\l8:                                                \l  %9 = call i32 @sub(i32 2, i32 4)\l  %10 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str, i64 0, i64 0), i32 %9)\l  br label %11\l}"];
+	Node0x15e90f0 [shape=record,label="{Post dominance root node}"];
+	Node0x15e90f0 -> Node0x15e8f20;
+	Node0x15e8f20 [shape=record,label="{%11:\l11:                                               \l  %12 = load i32, i32* %1, align 4\l  ret i32 %12\l}"];
+	Node0x15e8f20 -> Node0x15e9050;
+	Node0x15e8f20 -> Node0x1636490;
+	Node0x15e8f20 -> Node0x16364d0;
+	Node0x15e9050 [shape=record,label="{%5:\l5:                                                \l  %6 = call i32 @add(i32 2, i32 4)\l  %7 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str, i64 0, i64 0), i32 %6)\l  br label %11\l}"];
+	Node0x1636490 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %3 = load i32, i32* %2, align 4\l  %4 = icmp eq i32 %3, 1\l  br i1 %4, label %5, label %8\l}"];
+	Node0x16364d0 [shape=record,label="{%8:\l8:                                                \l  %9 = call i32 @sub(i32 2, i32 4)\l  %10 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str, i64 0, i64 0), i32 %9)\l  br label %11\l}"];
 }

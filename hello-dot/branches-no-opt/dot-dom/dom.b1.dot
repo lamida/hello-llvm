@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'b1' function" {
+	label="Dominator tree for 'b1' function";
+
+	Node0x1e08430 [shape=record,label="{entry:\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8],\l... [14 x i8]* @.str, i64 0, i64 0))\l  ret void\l}"];
+}

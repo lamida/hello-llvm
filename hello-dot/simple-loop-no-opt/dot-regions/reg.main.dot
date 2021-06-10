@@ -1,0 +1,30 @@
+digraph "Region Graph for 'main' function" {
+	label="Region Graph for 'main' function";
+
+	Node0x1d056d0 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %i = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  call void @sA()\l  store i32 0, i32* %i, align 4\l  br label %for.cond\l}"];
+	Node0x1d056d0 -> Node0x1cfce50;
+	Node0x1cfce50 [shape=record,label="{for.cond:                                         \l  %0 = load i32, i32* %i, align 4\l  %cmp = icmp slt i32 %0, 10\l  br i1 %cmp, label %for.body, label %for.end\l}"];
+	Node0x1cfce50 -> Node0x1d06e40;
+	Node0x1cfce50 -> Node0x1d28080;
+	Node0x1d06e40 [shape=record,label="{for.body:                                         \l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3\l... x i8]* @.str.2, i64 0, i64 0))\l  br label %for.inc\l}"];
+	Node0x1d06e40 -> Node0x1d280e0;
+	Node0x1d280e0 [shape=record,label="{for.inc:                                          \l  %1 = load i32, i32* %i, align 4\l  %inc = add nsw i32 %1, 1\l  store i32 %inc, i32* %i, align 4\l  br label %for.cond\l}"];
+	Node0x1d280e0 -> Node0x1cfce50[constraint=false];
+	Node0x1d28080 [shape=record,label="{for.end:                                          \l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8],\l... [3 x i8]* @.str.3, i64 0, i64 0))\l  call void @my_terminate()\l  %2 = load i32, i32* %retval, align 4\l  ret i32 %2\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1d034c0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x1d25de0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x1cfce50;
+            Node0x1d06e40;
+            Node0x1d280e0;
+          }
+          Node0x1d056d0;
+          Node0x1d28080;
+        }
+}

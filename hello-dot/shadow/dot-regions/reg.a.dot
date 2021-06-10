@@ -1,12 +1,12 @@
 digraph "Region Graph for 'a' function" {
 	label="Region Graph for 'a' function";
 
-	Node0x20fd150 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load i32, i32* %2, align 4\l  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str, i64 0, i64 0), i32 %3)\l  ret void\l}"];
+	Node0x25e8150 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load i32, i32* %2, align 4\l  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str, i64 0, i64 0), i32 %3)\l  ret void\l}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x20fd1b0 {
+        subgraph cluster_0x25e81b0 {
           label = "";
           style = filled;
           color = 1
-          Node0x20fd150;
+          Node0x25e8150;
         }
 }

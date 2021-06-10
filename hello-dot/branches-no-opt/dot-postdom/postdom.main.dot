@@ -1,0 +1,31 @@
+digraph "Post dominator tree for 'main' function" {
+	label="Post dominator tree for 'main' function";
+
+	Node0x25dc290 [shape=record,label="{Post dominance root node}"];
+	Node0x25dc290 -> Node0x25dc460;
+	Node0x25dc460 [shape=record,label="{sw.epilog:                                        \l  %4 = load i32, i32* %retval, align 4\l  ret i32 %4\l}"];
+	Node0x25dc460 -> Node0x25dc3f0;
+	Node0x25dc460 -> Node0x25dcf20;
+	Node0x25dc460 -> Node0x25dd0e0;
+	Node0x25dc460 -> Node0x25dd120;
+	Node0x25dc460 -> Node0x25dd160;
+	Node0x25dc460 -> Node0x25dd1a0;
+	Node0x25dc3f0 [shape=record,label="{sw.bb:                                            \l  call void @g1()\l  br label %sw.epilog\l}"];
+	Node0x25dcf20 [shape=record,label="{while.end:                                        \l  %call = call i64 @time(i64* %t) #3\l  %conv = trunc i64 %call to i32\l  call void @srand(i32 %conv) #3\l  %call2 = call i32 @rand() #3\l  %rem = srem i32 %call2, 4\l  %add = add nsw i32 1, %rem\l  store i32 %add, i32* %r, align 4\l  %3 = load i32, i32* %r, align 4\l  switch i32 %3, label %sw.default [\l    i32 1, label %sw.bb\l    i32 2, label %sw.bb3\l    i32 3, label %sw.bb4\l    i32 4, label %sw.bb5\l  ]\l}"];
+	Node0x25dcf20 -> Node0x25dcf60;
+	Node0x25dcf60 [shape=record,label="{while.cond:                                       \l  %1 = load i32, i32* %z, align 4\l  %cmp1 = icmp sgt i32 %1, 0\l  br i1 %cmp1, label %while.body, label %while.end\l}"];
+	Node0x25dcf60 -> Node0x25dcfa0;
+	Node0x25dcf60 -> Node0x25dd0a0;
+	Node0x25dcfa0 [shape=record,label="{if.end:                                           \l  call void @c()\l  call void @d()\l  store i32 10, i32* %z, align 4\l  br label %while.cond\l}"];
+	Node0x25dcfa0 -> Node0x25dcfe0;
+	Node0x25dcfa0 -> Node0x25dd020;
+	Node0x25dcfa0 -> Node0x25dd060;
+	Node0x25dcfe0 [shape=record,label="{if.then:                                          \l  call void @b1()\l  br label %if.end\l}"];
+	Node0x25dd020 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %a = alloca i32, align 4\l  %z = alloca i32, align 4\l  %t = alloca i64, align 8\l  %r = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  store i32 1, i32* %a, align 4\l  %0 = load i32, i32* %a, align 4\l  %cmp = icmp eq i32 %0, 1\l  br i1 %cmp, label %if.then, label %if.else\l}"];
+	Node0x25dd060 [shape=record,label="{if.else:                                          \l  call void @b2()\l  br label %if.end\l}"];
+	Node0x25dd0a0 [shape=record,label="{while.body:                                       \l  call void @f()\l  %2 = load i32, i32* %z, align 4\l  %dec = add nsw i32 %2, -1\l  store i32 %dec, i32* %z, align 4\l  br label %while.cond\l}"];
+	Node0x25dd0e0 [shape=record,label="{sw.bb3:                                           \l  call void @g2()\l  br label %sw.epilog\l}"];
+	Node0x25dd120 [shape=record,label="{sw.bb4:                                           \l  call void @g3()\l  br label %sw.epilog\l}"];
+	Node0x25dd160 [shape=record,label="{sw.bb5:                                           \l  call void @g4()\l  br label %sw.epilog\l}"];
+	Node0x25dd1a0 [shape=record,label="{sw.default:                                       \l  %call6 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8],\l... [13 x i8]* @.str.10, i64 0, i64 0))\l  br label %sw.epilog\l}"];
+}

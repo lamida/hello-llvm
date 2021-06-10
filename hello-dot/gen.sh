@@ -5,19 +5,27 @@ if [ -z "$1" ]
 fi
 
 title=$1
-# clang -emit-llvm $title.c -c
-clang -emit-llvm $title.c -S
-rm -rf $title
+if [ -n "$2" ] && [  "$2" = "no-opt" ]
+  then
+    echo "Running with no-opt"
+    out_title=$1-no-opt
+    clang -emit-llvm $title.c -S -Xclang -disable-O0-optnone -fno-discard-value-names -o $out_title.ll
+  else
+    out_title=$1
+    clang -emit-llvm $title.c -S -o $out_title.ll
+fi
+
+rm -rf $out_title
 DOTS="callgraph\ncfg\ncfg-only\ndom\ndom-only\npostdom\npostdom-only\nregions\nregions-only\nscops\nscops-only" 
-echo $DOTS| xargs -I{} mkdir -p $title/dot-{}
-for dot in $(ls -d $title/*/); do
+echo $DOTS| xargs -I{} mkdir -p $out_title/dot-{}
+for dot in $(ls -d $out_title/*/); do
 echo "processing $dot"
 cd $dot
-opt "--${PWD##*/}" ../../$title.ll
+opt "--${PWD##*/}" ../../$out_title.ll
 ls *.dot | xargs -I{} dot -Tpng {} -o {}.png
 # generate png for hidden files too
 ls .*.dot | xargs -I{} dot -Tpng {} -o {}.png
 cd ../..
 done
 
-./gen-scarr.sh $title
+./gen-scarr.sh $title $2

@@ -1,0 +1,12 @@
+digraph "Scop Graph for 'linear' function" {
+	label="Scop Graph for 'linear' function";
+
+	Node0x21799e0 [shape=record,label="{entry}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x21556e0 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x21799e0;
+        }
+}

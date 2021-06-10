@@ -1,0 +1,30 @@
+digraph "Scop Graph for 'main' function" {
+	label="Scop Graph for 'main' function";
+
+	Node0x2614cf0 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %i = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  call void @sA()\l  store i32 0, i32* %i, align 4\l  br label %for.cond\l}"];
+	Node0x2614cf0 -> Node0x2614d10;
+	Node0x2614d10 [shape=record,label="{for.cond:                                         \l  %0 = load i32, i32* %i, align 4\l  %cmp = icmp slt i32 %0, 10\l  br i1 %cmp, label %for.body, label %for.end\l}"];
+	Node0x2614d10 -> Node0x2626510;
+	Node0x2614d10 -> Node0x2626530;
+	Node0x2626510 [shape=record,label="{for.body:                                         \l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3\l... x i8]* @.str.2, i64 0, i64 0))\l  br label %for.inc\l}"];
+	Node0x2626510 -> Node0x2626590;
+	Node0x2626590 [shape=record,label="{for.inc:                                          \l  %1 = load i32, i32* %i, align 4\l  %inc = add nsw i32 %1, 1\l  store i32 %inc, i32* %i, align 4\l  br label %for.cond\l}"];
+	Node0x2626590 -> Node0x2614d10[constraint=false];
+	Node0x2626530 [shape=record,label="{for.end:                                          \l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8],\l... [3 x i8]* @.str.3, i64 0, i64 0))\l  call void @my_terminate()\l  %2 = load i32, i32* %retval, align 4\l  ret i32 %2\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x25c24d0 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x25ed4c0 {
+            label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: for.cond";
+            style = solid;
+            color = 6
+            Node0x2614d10;
+            Node0x2626510;
+            Node0x2626590;
+          }
+          Node0x2614cf0;
+          Node0x2626530;
+        }
+}

@@ -1,0 +1,12 @@
+digraph "Region Graph for 'my_terminate' function" {
+	label="Region Graph for 'my_terminate' function";
+
+	Node0xbb3ce0 [shape=record,label="{entry}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xbbb770 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0xbb3ce0;
+        }
+}

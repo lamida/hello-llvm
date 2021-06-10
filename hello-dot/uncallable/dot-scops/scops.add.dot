@@ -1,12 +1,12 @@
 digraph "Scop Graph for 'add' function" {
 	label="Scop Graph for 'add' function";
 
-	Node0x1ff9ef0 [shape=record,label="{%2:\l  %3 = alloca i32, align 4\l  %4 = alloca i32, align 4\l  store i32 %0, i32* %3, align 4\l  store i32 %1, i32* %4, align 4\l  %5 = load i32, i32* %3, align 4\l  %6 = load i32, i32* %4, align 4\l  %7 = add nsw i32 %5, %6\l  ret i32 %7\l}"];
+	Node0x9d6ef0 [shape=record,label="{%2:\l  %3 = alloca i32, align 4\l  %4 = alloca i32, align 4\l  store i32 %0, i32* %3, align 4\l  store i32 %1, i32* %4, align 4\l  %5 = load i32, i32* %3, align 4\l  %6 = load i32, i32* %4, align 4\l  %7 = add nsw i32 %5, %6\l  ret i32 %7\l}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x1fcb0e0 {
+        subgraph cluster_0x9a80e0 {
           label = "";
           style = solid;
           color = 1
-          Node0x1ff9ef0;
+          Node0x9d6ef0;
         }
 }

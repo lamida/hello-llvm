@@ -1,0 +1,5 @@
+digraph "CFG for 'my_terminate' function" {
+	label="CFG for 'my_terminate' function";
+
+	Node0x162e0e0 [shape=record,label="{entry:\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8],\l... [11 x i8]* @.str.1, i64 0, i64 0))\l  ret void\l}"];
+}

@@ -1,0 +1,12 @@
+digraph "Scop Graph for 'get_privileged_info' function" {
+	label="Scop Graph for 'get_privileged_info' function";
+
+	Node0x1af5900 [shape=record,label="{entry:\l  ret i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.2, i64 0, i64 0)\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1af9770 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x1af5900;
+        }
+}

@@ -1,0 +1,29 @@
+digraph "Dominator tree for 'main' function" {
+	label="Dominator tree for 'main' function";
+
+	Node0x8d4260 [shape=record,label="{entry}"];
+	Node0x8d4260 -> Node0x8d42a0;
+	Node0x8d4260 -> Node0x8d42e0;
+	Node0x8d4260 -> Node0x8d4e00;
+	Node0x8d42a0 [shape=record,label="{if.then}"];
+	Node0x8d42e0 [shape=record,label="{if.end}"];
+	Node0x8d42e0 -> Node0x8d4320;
+	Node0x8d4320 [shape=record,label="{while.cond}"];
+	Node0x8d4320 -> Node0x8d4360;
+	Node0x8d4320 -> Node0x8d43a0;
+	Node0x8d4360 [shape=record,label="{while.body}"];
+	Node0x8d43a0 [shape=record,label="{while.end}"];
+	Node0x8d43a0 -> Node0x8d43e0;
+	Node0x8d43a0 -> Node0x8d4cc0;
+	Node0x8d43a0 -> Node0x8d4d00;
+	Node0x8d43a0 -> Node0x8d4d40;
+	Node0x8d43a0 -> Node0x8d4d80;
+	Node0x8d43a0 -> Node0x8d4dc0;
+	Node0x8d43e0 [shape=record,label="{sw.default}"];
+	Node0x8d4cc0 [shape=record,label="{sw.epilog}"];
+	Node0x8d4d00 [shape=record,label="{sw.bb}"];
+	Node0x8d4d40 [shape=record,label="{sw.bb3}"];
+	Node0x8d4d80 [shape=record,label="{sw.bb4}"];
+	Node0x8d4dc0 [shape=record,label="{sw.bb5}"];
+	Node0x8d4e00 [shape=record,label="{if.else}"];
+}

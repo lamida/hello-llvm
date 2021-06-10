@@ -1,0 +1,12 @@
+digraph "Region Graph for 'get_unprivileged_info' function" {
+	label="Region Graph for 'get_unprivileged_info' function";
+
+	Node0xbbb710 [shape=record,label="{entry}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xbbb770 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0xbbb710;
+        }
+}

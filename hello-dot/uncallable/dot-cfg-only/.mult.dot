@@ -1,5 +1,5 @@
 digraph "CFG for 'mult' function" {
 	label="CFG for 'mult' function";
 
-	Node0x1930170 [shape=record,label="{%2}"];
+	Node0x14e2170 [shape=record,label="{%2}"];
 }

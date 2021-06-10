@@ -1,0 +1,12 @@
+digraph "Scop Graph for 'g1' function" {
+	label="Scop Graph for 'g1' function";
+
+	Node0x926370 [shape=record,label="{entry}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x8f1450 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x926370;
+        }
+}

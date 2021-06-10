@@ -1,0 +1,5 @@
+digraph "CFG for 'get_unprivileged_info' function" {
+	label="CFG for 'get_unprivileged_info' function";
+
+	Node0x13613c0 [shape=record,label="{entry:\l  ret i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str.3, i64 0, i64 0)\l}"];
+}

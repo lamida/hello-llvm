@@ -1,0 +1,27 @@
+digraph "Region Graph for 'main' function" {
+	label="Region Graph for 'main' function";
+
+	Node0xbb3ce0 [shape=record,label="{entry}"];
+	Node0xbb3ce0 -> Node0xbba560;
+	Node0xbb3ce0 -> Node0xbb9870;
+	Node0xbba560 [shape=record,label="{if.then}"];
+	Node0xbba560 -> Node0xbb8fa0;
+	Node0xbb8fa0 [shape=record,label="{if.end}"];
+	Node0xbb9870 [shape=record,label="{if.else}"];
+	Node0xbb9870 -> Node0xbb8fa0;
+	colorscheme = "paired12"
+        subgraph cluster_0xbbb770 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xb912b0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0xbb3ce0;
+            Node0xbba560;
+            Node0xbb9870;
+          }
+          Node0xbb8fa0;
+        }
+}

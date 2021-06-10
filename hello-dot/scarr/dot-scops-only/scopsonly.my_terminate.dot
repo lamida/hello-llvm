@@ -1,12 +1,12 @@
 digraph "Scop Graph for 'my_terminate' function" {
 	label="Scop Graph for 'my_terminate' function";
 
-	Node0xb66810 [shape=record,label="{%0}"];
+	Node0xdb5810 [shape=record,label="{%0}"];
 	colorscheme = "paired12"
-        subgraph cluster_0xb3c570 {
+        subgraph cluster_0xd8b570 {
           label = "";
           style = solid;
           color = 1
-          Node0xb66810;
+          Node0xdb5810;
         }
 }

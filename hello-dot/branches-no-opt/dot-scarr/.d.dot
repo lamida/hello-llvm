@@ -1,0 +1,5 @@
+digraph "CFG for 'd' function" {
+	label="CFG for 'd' function";
+
+	Node0x5637d0ab8d50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5637d0ab8d50 - Exit Point\":\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8],\l... [13 x i8]* @.str.4, i64 0, i64 0))\l  call void @e()\l  ret void\l}"];
+}

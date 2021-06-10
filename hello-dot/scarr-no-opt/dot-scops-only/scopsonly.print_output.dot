@@ -1,0 +1,12 @@
+digraph "Scop Graph for 'print_output' function" {
+	label="Scop Graph for 'print_output' function";
+
+	Node0x1a5c1f0 [shape=record,label="{entry}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1a59770 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x1a5c1f0;
+        }
+}

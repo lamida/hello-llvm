@@ -1,0 +1,12 @@
+digraph "Region Graph for 'print_output' function" {
+	label="Region Graph for 'print_output' function";
+
+	Node0x116c810 [shape=record,label="{entry:\l  %result.addr = alloca i8*, align 8\l  store i8* %result, i8** %result.addr, align 8\l  %0 = load i8*, i8** %result.addr, align 8\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3\l... x i8]* @.str.4, i64 0, i64 0), i8* %0)\l  ret void\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x116a770 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0x116c810;
+        }
+}

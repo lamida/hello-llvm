@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'my_terminate' function" {
+	label="Dominator tree for 'my_terminate' function";
+
+	Node0x15ffb60 [shape=record,label="{entry}"];
+}

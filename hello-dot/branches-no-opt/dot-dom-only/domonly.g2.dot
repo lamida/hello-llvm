@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'g2' function" {
+	label="Dominator tree for 'g2' function";
+
+	Node0x8d4260 [shape=record,label="{entry}"];
+}

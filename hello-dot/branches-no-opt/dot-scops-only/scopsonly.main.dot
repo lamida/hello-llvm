@@ -1,0 +1,69 @@
+digraph "Scop Graph for 'main' function" {
+	label="Scop Graph for 'main' function";
+
+	Node0x921610 [shape=record,label="{entry}"];
+	Node0x921610 -> Node0x920a60;
+	Node0x921610 -> Node0x91e570;
+	Node0x920a60 [shape=record,label="{if.then}"];
+	Node0x920a60 -> Node0x8e9390;
+	Node0x8e9390 [shape=record,label="{if.end}"];
+	Node0x8e9390 -> Node0x9261b0;
+	Node0x9261b0 [shape=record,label="{while.cond}"];
+	Node0x9261b0 -> Node0x927910;
+	Node0x9261b0 -> Node0x927360;
+	Node0x927910 [shape=record,label="{while.body}"];
+	Node0x927910 -> Node0x9261b0[constraint=false];
+	Node0x927360 [shape=record,label="{while.end}"];
+	Node0x927360 -> Node0x94b670;
+	Node0x927360 -> Node0x9267f0;
+	Node0x927360 -> Node0x91d0d0;
+	Node0x927360 -> Node0x9226d0;
+	Node0x927360 -> Node0x947240;
+	Node0x94b670 [shape=record,label="{sw.default}"];
+	Node0x94b670 -> Node0x926900;
+	Node0x926900 [shape=record,label="{sw.epilog}"];
+	Node0x9267f0 [shape=record,label="{sw.bb}"];
+	Node0x9267f0 -> Node0x926900;
+	Node0x91d0d0 [shape=record,label="{sw.bb3}"];
+	Node0x91d0d0 -> Node0x926900;
+	Node0x9226d0 [shape=record,label="{sw.bb4}"];
+	Node0x9226d0 -> Node0x926900;
+	Node0x947240 [shape=record,label="{sw.bb5}"];
+	Node0x947240 -> Node0x926900;
+	Node0x91e570 [shape=record,label="{if.else}"];
+	Node0x91e570 -> Node0x8e9390;
+	colorscheme = "paired12"
+        subgraph cluster_0x8f1450 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x94e930 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x921610;
+            Node0x920a60;
+            Node0x91e570;
+          }
+          subgraph cluster_0x94e8b0 {
+            label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: while.cond";
+            style = solid;
+            color = 6
+            Node0x9261b0;
+            Node0x927910;
+          }
+          subgraph cluster_0x9242c0 {
+            label = "Region can not profitably be optimized!";
+            style = solid;
+            color = 6
+            Node0x927360;
+            Node0x94b670;
+            Node0x9267f0;
+            Node0x91d0d0;
+            Node0x9226d0;
+            Node0x947240;
+          }
+          Node0x8e9390;
+          Node0x926900;
+        }
+}

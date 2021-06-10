@@ -1,0 +1,13 @@
+digraph "Post dominator tree for 'main' function" {
+	label="Post dominator tree for 'main' function";
+
+	Node0x16a4270 [shape=record,label="{Post dominance root node}"];
+	Node0x16a4270 -> Node0x16a4790;
+	Node0x16a4790 [shape=record,label="{if.end:                                           \l  %1 = load i8*, i8** %result, align 8\l  call void @print_output(i8* %1)\l  call void @my_terminate()\l  %2 = load i32, i32* %retval, align 4\l  ret i32 %2\l}"];
+	Node0x16a4790 -> Node0x16a47d0;
+	Node0x16a4790 -> Node0x16a5200;
+	Node0x16a4790 -> Node0x16a53c0;
+	Node0x16a47d0 [shape=record,label="{if.then:                                          \l  %call2 = call i8* @get_privileged_info()\l  store i8* %call2, i8** %result, align 8\l  br label %if.end\l}"];
+	Node0x16a5200 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %access = alloca i8*, align 8\l  %result = alloca i8*, align 8\l  store i32 0, i32* %retval, align 4\l  %call = call i8* @get_input()\l  store i8* %call, i8** %access, align 8\l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.6, i64 0, i64\l... 0), i8** %result, align 8\l  %0 = load i8*, i8** %access, align 8\l  %call1 = call i32 @strcmp(i8* %0, i8* getelementptr inbounds ([5 x i8], [5 x\l... i8]* @.str, i64 0, i64 0))\l  %cmp = icmp eq i32 %call1, 0\l  br i1 %cmp, label %if.then, label %if.else\l}"];
+	Node0x16a53c0 [shape=record,label="{if.else:                                          \l  %call3 = call i8* @get_unprivileged_info()\l  store i8* %call3, i8** %result, align 8\l  br label %if.end\l}"];
+}

@@ -1,0 +1,12 @@
+digraph "Region Graph for 'a' function" {
+	label="Region Graph for 'a' function";
+
+	Node0x2830470 [shape=record,label="{entry}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x282e4f0 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0x2830470;
+        }
+}

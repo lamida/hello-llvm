@@ -1,0 +1,5 @@
+digraph "CFG for 'get_input' function" {
+	label="CFG for 'get_input' function";
+
+	Node0x2616fc0 [shape=record,label="{entry}"];
+}

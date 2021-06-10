@@ -1,0 +1,5 @@
+digraph "CFG for 'get_unprivileged_info' function" {
+	label="CFG for 'get_unprivileged_info' function";
+
+	Node0x26183c0 [shape=record,label="{entry}"];
+}

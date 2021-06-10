@@ -1,0 +1,27 @@
+digraph "Scop Graph for 'main' function" {
+	label="Scop Graph for 'main' function";
+
+	Node0x20f5e30 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %x = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  store i32 1, i32* %x, align 4\l  %0 = load i32, i32* %x, align 4\l  %cmp = icmp eq i32 %0, 1\l  br i1 %cmp, label %if.then, label %if.else\l}"];
+	Node0x20f5e30 -> Node0x20f76c0;
+	Node0x20f5e30 -> Node0x20f7220;
+	Node0x20f76c0 [shape=record,label="{if.then:                                          \l  %call = call i32 @add(i32 2, i32 4)\l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8],\l... [4 x i8]* @.str, i64 0, i64 0), i32 %call)\l  br label %if.end\l}"];
+	Node0x20f76c0 -> Node0x20ed8b0;
+	Node0x20ed8b0 [shape=record,label="{if.end:                                           \l  %1 = load i32, i32* %retval, align 4\l  ret i32 %1\l}"];
+	Node0x20f7220 [shape=record,label="{if.else:                                          \l  %call2 = call i32 @sub(i32 2, i32 4)\l  %call3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8],\l... [4 x i8]* @.str, i64 0, i64 0), i32 %call2)\l  br label %if.end\l}"];
+	Node0x20f7220 -> Node0x20ed8b0;
+	colorscheme = "paired12"
+        subgraph cluster_0x20f3d40 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x20c7ff0 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0x20f5e30;
+            Node0x20f76c0;
+            Node0x20f7220;
+          }
+          Node0x20ed8b0;
+        }
+}

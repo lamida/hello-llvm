@@ -1,5 +1,5 @@
 digraph "CFG for 'linear' function" {
 	label="CFG for 'linear' function";
 
-	Node0x556d39f2bb20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556d39f2bb20 - Exit Point\":\l  %0 = alloca i32, align 4\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 10, i32* %0, align 4\l  store i32 100, i32* %1, align 4\l  %3 = load i32, i32* %0, align 4\l  %4 = load i32, i32* %1, align 4\l  %5 = mul nsw i32 %3, %4\l  store i32 %5, i32* %2, align 4\l  %6 = load i32, i32* %2, align 4\l  %7 = sext i32 %6 to i64\l  %8 = inttoptr i64 %7 to i8*\l  %9 = call i32 (i8*, ...) @printf(i8* %8)\l  ret void\l}"];
+	Node0x5632f1913b20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5632f1913b20 - Exit Point\":\l  %0 = alloca i32, align 4\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 10, i32* %0, align 4\l  store i32 100, i32* %1, align 4\l  %3 = load i32, i32* %0, align 4\l  %4 = load i32, i32* %1, align 4\l  %5 = mul nsw i32 %3, %4\l  store i32 %5, i32* %2, align 4\l  %6 = load i32, i32* %2, align 4\l  %7 = sext i32 %6 to i64\l  %8 = inttoptr i64 %7 to i8*\l  %9 = call i32 (i8*, ...) @printf(i8* %8)\l  ret void\l}"];
 }

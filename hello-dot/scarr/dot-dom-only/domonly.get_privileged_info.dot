@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'get_privileged_info' function" {
 	label="Dominator tree for 'get_privileged_info' function";
 
-	Node0x2011040 [shape=record,label="{%0}"];
+	Node0xa32040 [shape=record,label="{%0}"];
 }

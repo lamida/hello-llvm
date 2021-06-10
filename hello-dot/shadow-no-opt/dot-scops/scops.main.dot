@@ -1,0 +1,12 @@
+digraph "Scop Graph for 'main' function" {
+	label="Scop Graph for 'main' function";
+
+	Node0x9ddcd0 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  call void @a(i32 10)\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8],\l... [11 x i8]* @.str.1, i64 0, i64 0))\l  call void @a(i32 6)\l  ret i32 0\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x9e44f0 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x9ddcd0;
+        }
+}

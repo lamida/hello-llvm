@@ -1,0 +1,31 @@
+digraph "Call graph" {
+	label="Call graph";
+
+	Node0x21fea30 [shape=record,label="{external node}"];
+	Node0x21fea30 -> Node0x21fead0;
+	Node0x21fea30 -> Node0x21feb70;
+	Node0x21fea30 -> Node0x21ff020;
+	Node0x21fea30 -> Node0x21feba0;
+	Node0x21fea30 -> Node0x21ff0d0;
+	Node0x21fea30 -> Node0x21ff140;
+	Node0x21fea30 -> Node0x21ff1b0;
+	Node0x21fead0 [shape=record,label="{main}"];
+	Node0x21fead0 -> Node0x21feb70;
+	Node0x21fead0 -> Node0x21ff020;
+	Node0x21fead0 -> Node0x21feba0;
+	Node0x21fead0 -> Node0x21ff0d0;
+	Node0x21fead0 -> Node0x21ff140;
+	Node0x21fead0 -> Node0x21ff1b0;
+	Node0x21feb70 [shape=record,label="{get_input}"];
+	Node0x21feb70 -> Node0x21fea60;
+	Node0x21ff020 [shape=record,label="{strcmp}"];
+	Node0x21ff020 -> Node0x21fea60;
+	Node0x21feba0 [shape=record,label="{get_privileged_info}"];
+	Node0x21feba0 -> Node0x21fea60;
+	Node0x21ff0d0 [shape=record,label="{get_unprivileged_info}"];
+	Node0x21ff0d0 -> Node0x21fea60;
+	Node0x21ff140 [shape=record,label="{print_output}"];
+	Node0x21ff140 -> Node0x21fea60;
+	Node0x21ff1b0 [shape=record,label="{my_terminate}"];
+	Node0x21ff1b0 -> Node0x21fea60;
+}

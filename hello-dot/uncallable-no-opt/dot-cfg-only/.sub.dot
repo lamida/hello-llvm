@@ -1,0 +1,5 @@
+digraph "CFG for 'sub' function" {
+	label="CFG for 'sub' function";
+
+	Node0x1940010 [shape=record,label="{entry}"];
+}

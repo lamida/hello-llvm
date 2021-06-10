@@ -1,20 +1,20 @@
 digraph "Call graph" {
 	label="Call graph";
 
-	Node0x2168f20 [shape=record,label="{external node}"];
-	Node0x2168f20 -> Node0x2168fc0;
-	Node0x2168f20 -> Node0x2169060;
-	Node0x2168f20 -> Node0x2168ff0;
-	Node0x2168f20 -> Node0x2169110;
-	Node0x2168f20 -> Node0x21695c0;
-	Node0x2168fc0 [shape=record,label="{add}"];
-	Node0x2169060 [shape=record,label="{sub}"];
-	Node0x2168ff0 [shape=record,label="{mult}"];
-	Node0x2169110 [shape=record,label="{main}"];
-	Node0x2169110 -> Node0x2168fc0;
-	Node0x2169110 -> Node0x21695c0;
-	Node0x2169110 -> Node0x2169060;
-	Node0x2169110 -> Node0x21695c0;
-	Node0x21695c0 [shape=record,label="{printf}"];
-	Node0x21695c0 -> Node0x2168f50;
+	Node0x2457f20 [shape=record,label="{external node}"];
+	Node0x2457f20 -> Node0x2457fc0;
+	Node0x2457f20 -> Node0x2458060;
+	Node0x2457f20 -> Node0x2457ff0;
+	Node0x2457f20 -> Node0x2458110;
+	Node0x2457f20 -> Node0x24585c0;
+	Node0x2457fc0 [shape=record,label="{add}"];
+	Node0x2458060 [shape=record,label="{sub}"];
+	Node0x2457ff0 [shape=record,label="{mult}"];
+	Node0x2458110 [shape=record,label="{main}"];
+	Node0x2458110 -> Node0x2457fc0;
+	Node0x2458110 -> Node0x24585c0;
+	Node0x2458110 -> Node0x2458060;
+	Node0x2458110 -> Node0x24585c0;
+	Node0x24585c0 [shape=record,label="{printf}"];
+	Node0x24585c0 -> Node0x2457f50;
 }

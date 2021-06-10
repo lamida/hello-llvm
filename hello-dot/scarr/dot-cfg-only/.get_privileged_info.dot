@@ -1,5 +1,5 @@
 digraph "CFG for 'get_privileged_info' function" {
 	label="CFG for 'get_privileged_info' function";
 
-	Node0x224ee80 [shape=record,label="{%0}"];
+	Node0x2030e80 [shape=record,label="{%0}"];
 }

@@ -1,42 +1,42 @@
 digraph "Scop Graph for 'main' function" {
 	label="Scop Graph for 'main' function";
 
-	Node0xaf0b60 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %a = alloca i32, align 4\l  %z = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  store i32 1, i32* %a, align 4\l  %0 = load i32, i32* %a, align 4\l  %cmp = icmp eq i32 %0, 1\l  br i1 %cmp, label %if.then, label %if.else\l}"];
-	Node0xaf0b60 -> Node0xaf2d80;
-	Node0xaf0b60 -> Node0xaf0f20;
-	Node0xaf2d80 [shape=record,label="{if.then:                                          \l  call void @b1()\l  br label %if.end\l}"];
-	Node0xaf2d80 -> Node0xaf3a40;
-	Node0xaf3a40 [shape=record,label="{if.end:                                           \l  call void @c()\l  call void @d()\l  store i32 10, i32* %z, align 4\l  br label %while.cond\l}"];
-	Node0xaf3a40 -> Node0xaf3b00;
-	Node0xaf3b00 [shape=record,label="{while.cond:                                       \l  %1 = load i32, i32* %z, align 4\l  %cmp1 = icmp sgt i32 %1, 0\l  br i1 %cmp1, label %while.body, label %while.end\l}"];
-	Node0xaf3b00 -> Node0xb1c3d0;
-	Node0xaf3b00 -> Node0xac8020;
-	Node0xb1c3d0 [shape=record,label="{while.body:                                       \l  call void @f()\l  %2 = load i32, i32* %z, align 4\l  %dec = add nsw i32 %2, -1\l  store i32 %dec, i32* %z, align 4\l  br label %while.cond\l}"];
-	Node0xb1c3d0 -> Node0xaf3b00[constraint=false];
-	Node0xac8020 [shape=record,label="{while.end:                                        \l  call void @g()\l  %3 = load i32, i32* %retval, align 4\l  ret i32 %3\l}"];
-	Node0xaf0f20 [shape=record,label="{if.else:                                          \l  call void @b2()\l  br label %if.end\l}"];
-	Node0xaf0f20 -> Node0xaf3a40;
+	Node0x1bd0470 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %a = alloca i32, align 4\l  %z = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  store i32 1, i32* %a, align 4\l  %0 = load i32, i32* %a, align 4\l  %cmp = icmp eq i32 %0, 1\l  br i1 %cmp, label %if.then, label %if.else\l}"];
+	Node0x1bd0470 -> Node0x1bd1dd0;
+	Node0x1bd0470 -> Node0x1bd2230;
+	Node0x1bd1dd0 [shape=record,label="{if.then:                                          \l  call void @b1()\l  br label %if.end\l}"];
+	Node0x1bd1dd0 -> Node0x1bccbd0;
+	Node0x1bccbd0 [shape=record,label="{if.end:                                           \l  call void @c()\l  call void @d()\l  store i32 10, i32* %z, align 4\l  br label %while.cond\l}"];
+	Node0x1bccbd0 -> Node0x1bcffe0;
+	Node0x1bcffe0 [shape=record,label="{while.cond:                                       \l  %1 = load i32, i32* %z, align 4\l  %cmp1 = icmp sgt i32 %1, 0\l  br i1 %cmp1, label %while.body, label %while.end\l}"];
+	Node0x1bcffe0 -> Node0x1bd2040;
+	Node0x1bcffe0 -> Node0x1bd8680;
+	Node0x1bd2040 [shape=record,label="{while.body:                                       \l  call void @f()\l  %2 = load i32, i32* %z, align 4\l  %dec = add nsw i32 %2, -1\l  store i32 %dec, i32* %z, align 4\l  br label %while.cond\l}"];
+	Node0x1bd2040 -> Node0x1bcffe0[constraint=false];
+	Node0x1bd8680 [shape=record,label="{while.end:                                        \l  call void @switchDeterministic()\l  call void @switchNonDeterministic()\l  %3 = load i32, i32* %retval, align 4\l  ret i32 %3\l}"];
+	Node0x1bd2230 [shape=record,label="{if.else:                                          \l  call void @b2()\l  br label %if.end\l}"];
+	Node0x1bd2230 -> Node0x1bccbd0;
 	colorscheme = "paired12"
-        subgraph cluster_0xaf6750 {
+        subgraph cluster_0x1b9f8b0 {
           label = "";
           style = solid;
           color = 1
-          subgraph cluster_0xb1d9f0 {
+          subgraph cluster_0x1bfb1a0 {
             label = "Region can not profitably be optimized!";
             style = solid;
             color = 6
-            Node0xaf0b60;
-            Node0xaf2d80;
-            Node0xaf0f20;
+            Node0x1bd0470;
+            Node0x1bd1dd0;
+            Node0x1bd2230;
           }
-          subgraph cluster_0xac4870 {
+          subgraph cluster_0x1bd5150 {
             label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: while.cond";
             style = solid;
             color = 6
-            Node0xaf3b00;
-            Node0xb1c3d0;
+            Node0x1bcffe0;
+            Node0x1bd2040;
           }
-          Node0xaf3a40;
-          Node0xac8020;
+          Node0x1bccbd0;
+          Node0x1bd8680;
         }
 }

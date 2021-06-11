@@ -58,13 +58,34 @@ void g4()
     printf("g4 is called\n");
 }
 
-void g()
+void switchDeterministic()
+{
+    int r = 4;
+    switch (r)
+    {
+        case 1:
+            g1();
+            break;
+        case 2:
+            g2();
+            break;
+        case 3:
+            g3();
+            break;
+        case 4:
+            g4();
+            break;
+        default:
+            printf("nothing here");
+    };
+}
+
+void switchNonDeterministic()
 {
     // Random will prevent the method from being inlined
-    // time_t t;
-    // srand((unsigned)time(&t));
-    // int r = 1 + rand() % 4;
-    int r = 4;
+    time_t t;
+    srand((unsigned)time(&t));
+    int r = 1 + rand() % 4;
     switch (r)
     {
         case 1:
@@ -105,5 +126,6 @@ int main()
         z--;
     }
 
-    g();
+    switchDeterministic();
+    switchNonDeterministic(); // this will not be inlined
 }

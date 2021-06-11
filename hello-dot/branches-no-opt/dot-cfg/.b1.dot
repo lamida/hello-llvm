@@ -1,12 +1,12 @@
 digraph "CFG for 'b1' function" {
 	label="CFG for 'b1' function";
 
-	Node0x1164dd0 [shape=record,label="{entry:\l  %x = alloca i32, align 4\l  store i32 10, i32* %x, align 4\l  %0 = load i32, i32* %x, align 4\l  %cmp = icmp eq i32 %0, 10\l  br i1 %cmp, label %if.then, label %if.else\l|{<s0>T|<s1>F}}"];
-	Node0x1164dd0:s0 -> Node0x1165780;
-	Node0x1164dd0:s1 -> Node0x1165850;
-	Node0x1165780 [shape=record,label="{if.then:                                          \l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([30 x i8],\l... [30 x i8]* @.str, i64 0, i64 0))\l  br label %if.end\l}"];
-	Node0x1165780 -> Node0x1165d20;
-	Node0x1165850 [shape=record,label="{if.else:                                          \l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([31 x i8],\l... [31 x i8]* @.str.1, i64 0, i64 0))\l  br label %if.end\l}"];
-	Node0x1165850 -> Node0x1165d20;
-	Node0x1165d20 [shape=record,label="{if.end:                                           \l  ret void\l}"];
+	Node0x23e15c0 [shape=record,label="{entry:\l  %x = alloca i32, align 4\l  store i32 10, i32* %x, align 4\l  %0 = load i32, i32* %x, align 4\l  %cmp = icmp eq i32 %0, 10\l  br i1 %cmp, label %if.then, label %if.else\l|{<s0>T|<s1>F}}"];
+	Node0x23e15c0:s0 -> Node0x23e1f70;
+	Node0x23e15c0:s1 -> Node0x23e2040;
+	Node0x23e1f70 [shape=record,label="{if.then:                                          \l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([30 x i8],\l... [30 x i8]* @.str, i64 0, i64 0))\l  br label %if.end\l}"];
+	Node0x23e1f70 -> Node0x23e2510;
+	Node0x23e2040 [shape=record,label="{if.else:                                          \l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([31 x i8],\l... [31 x i8]* @.str.1, i64 0, i64 0))\l  br label %if.end\l}"];
+	Node0x23e2040 -> Node0x23e2510;
+	Node0x23e2510 [shape=record,label="{if.end:                                           \l  ret void\l}"];
 }

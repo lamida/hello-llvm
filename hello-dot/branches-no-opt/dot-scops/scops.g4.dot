@@ -1,12 +1,12 @@
 digraph "Scop Graph for 'g4' function" {
 	label="Scop Graph for 'g4' function";
 
-	Node0xaf3c70 [shape=record,label="{entry:\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8],\l... [14 x i8]* @.str.10, i64 0, i64 0))\l  ret void\l}"];
+	Node0x1bd1c30 [shape=record,label="{entry:\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8],\l... [14 x i8]* @.str.10, i64 0, i64 0))\l  ret void\l}"];
 	colorscheme = "paired12"
-        subgraph cluster_0xb1d9f0 {
+        subgraph cluster_0x1b9f8b0 {
           label = "";
           style = solid;
           color = 1
-          Node0xaf3c70;
+          Node0x1bd1c30;
         }
 }

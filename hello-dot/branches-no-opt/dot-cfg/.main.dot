@@ -1,19 +1,19 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x116a140 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %a = alloca i32, align 4\l  %z = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  store i32 1, i32* %a, align 4\l  %0 = load i32, i32* %a, align 4\l  %cmp = icmp eq i32 %0, 1\l  br i1 %cmp, label %if.then, label %if.else\l|{<s0>T|<s1>F}}"];
-	Node0x116a140:s0 -> Node0x116a5d0;
-	Node0x116a140:s1 -> Node0x116a6a0;
-	Node0x116a5d0 [shape=record,label="{if.then:                                          \l  call void @b1()\l  br label %if.end\l}"];
-	Node0x116a5d0 -> Node0x116a8c0;
-	Node0x116a6a0 [shape=record,label="{if.else:                                          \l  call void @b2()\l  br label %if.end\l}"];
-	Node0x116a6a0 -> Node0x116a8c0;
-	Node0x116a8c0 [shape=record,label="{if.end:                                           \l  call void @c()\l  call void @d()\l  store i32 10, i32* %z, align 4\l  br label %while.cond\l}"];
-	Node0x116a8c0 -> Node0x116ac50;
-	Node0x116ac50 [shape=record,label="{while.cond:                                       \l  %1 = load i32, i32* %z, align 4\l  %cmp1 = icmp sgt i32 %1, 0\l  br i1 %cmp1, label %while.body, label %while.end\l|{<s0>T|<s1>F}}"];
-	Node0x116ac50:s0 -> Node0x116adc0;
-	Node0x116ac50:s1 -> Node0x116aea0;
-	Node0x116adc0 [shape=record,label="{while.body:                                       \l  call void @f()\l  %2 = load i32, i32* %z, align 4\l  %dec = add nsw i32 %2, -1\l  store i32 %dec, i32* %z, align 4\l  br label %while.cond\l}"];
-	Node0x116adc0 -> Node0x116ac50;
-	Node0x116aea0 [shape=record,label="{while.end:                                        \l  call void @g()\l  %3 = load i32, i32* %retval, align 4\l  ret i32 %3\l}"];
+	Node0x23e83a0 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %a = alloca i32, align 4\l  %z = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  store i32 1, i32* %a, align 4\l  %0 = load i32, i32* %a, align 4\l  %cmp = icmp eq i32 %0, 1\l  br i1 %cmp, label %if.then, label %if.else\l|{<s0>T|<s1>F}}"];
+	Node0x23e83a0:s0 -> Node0x23e8710;
+	Node0x23e83a0:s1 -> Node0x23e87e0;
+	Node0x23e8710 [shape=record,label="{if.then:                                          \l  call void @b1()\l  br label %if.end\l}"];
+	Node0x23e8710 -> Node0x23e8a00;
+	Node0x23e87e0 [shape=record,label="{if.else:                                          \l  call void @b2()\l  br label %if.end\l}"];
+	Node0x23e87e0 -> Node0x23e8a00;
+	Node0x23e8a00 [shape=record,label="{if.end:                                           \l  call void @c()\l  call void @d()\l  store i32 10, i32* %z, align 4\l  br label %while.cond\l}"];
+	Node0x23e8a00 -> Node0x23e8d90;
+	Node0x23e8d90 [shape=record,label="{while.cond:                                       \l  %1 = load i32, i32* %z, align 4\l  %cmp1 = icmp sgt i32 %1, 0\l  br i1 %cmp1, label %while.body, label %while.end\l|{<s0>T|<s1>F}}"];
+	Node0x23e8d90:s0 -> Node0x23e8f00;
+	Node0x23e8d90:s1 -> Node0x23e8fe0;
+	Node0x23e8f00 [shape=record,label="{while.body:                                       \l  call void @f()\l  %2 = load i32, i32* %z, align 4\l  %dec = add nsw i32 %2, -1\l  store i32 %dec, i32* %z, align 4\l  br label %while.cond\l}"];
+	Node0x23e8f00 -> Node0x23e8d90;
+	Node0x23e8fe0 [shape=record,label="{while.end:                                        \l  call void @switchDeterministic()\l  call void @switchNonDeterministic()\l  %3 = load i32, i32* %retval, align 4\l  ret i32 %3\l}"];
 }

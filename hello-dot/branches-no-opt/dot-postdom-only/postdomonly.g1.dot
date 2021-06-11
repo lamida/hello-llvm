@@ -1,7 +1,7 @@
 digraph "Post dominator tree for 'g1' function" {
 	label="Post dominator tree for 'g1' function";
 
-	Node0x2709d50 [shape=record,label="{Post dominance root node}"];
-	Node0x2709d50 -> Node0x2709d10;
-	Node0x2709d10 [shape=record,label="{entry}"];
+	Node0x136e200 [shape=record,label="{Post dominance root node}"];
+	Node0x136e200 -> Node0x136e1c0;
+	Node0x136e1c0 [shape=record,label="{entry}"];
 }

@@ -1,17 +1,17 @@
 digraph "Dominator tree for 'main' function" {
 	label="Dominator tree for 'main' function";
 
-	Node0x1879370 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %4 = load i32, i32* %2, align 4\l  %5 = icmp eq i32 %4, 1\l  br i1 %5, label %6, label %7\l}"];
-	Node0x1879370 -> Node0x186e370;
-	Node0x1879370 -> Node0x18cac80;
-	Node0x1879370 -> Node0x18cad80;
-	Node0x186e370 [shape=record,label="{%6:\l6:                                                \l  call void @b1()\l  br label %8\l}"];
-	Node0x18cac80 [shape=record,label="{%8:\l8:                                                \l  call void @c()\l  call void @d()\l  store i32 10, i32* %3, align 4\l  br label %9\l}"];
-	Node0x18cac80 -> Node0x18cacc0;
-	Node0x18cacc0 [shape=record,label="{%9:\l9:                                                \l  %10 = load i32, i32* %3, align 4\l  %11 = icmp sgt i32 %10, 0\l  br i1 %11, label %12, label %15\l}"];
-	Node0x18cacc0 -> Node0x18cad00;
-	Node0x18cacc0 -> Node0x18cad40;
-	Node0x18cad00 [shape=record,label="{%12:\l12:                                               \l  call void @f()\l  %13 = load i32, i32* %3, align 4\l  %14 = add nsw i32 %13, -1\l  store i32 %14, i32* %3, align 4\l  br label %9\l}"];
-	Node0x18cad40 [shape=record,label="{%15:\l15:                                               \l  call void @g()\l  %16 = load i32, i32* %1, align 4\l  ret i32 %16\l}"];
-	Node0x18cad80 [shape=record,label="{%7:\l7:                                                \l  call void @b2()\l  br label %8\l}"];
+	Node0x822af0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %4 = load i32, i32* %2, align 4\l  %5 = icmp eq i32 %4, 1\l  br i1 %5, label %6, label %7\l}"];
+	Node0x822af0 -> Node0x876150;
+	Node0x822af0 -> Node0x876190;
+	Node0x822af0 -> Node0x818270;
+	Node0x876150 [shape=record,label="{%6:\l6:                                                \l  call void @b1()\l  br label %8\l}"];
+	Node0x876190 [shape=record,label="{%8:\l8:                                                \l  call void @c()\l  call void @d()\l  store i32 10, i32* %3, align 4\l  br label %9\l}"];
+	Node0x876190 -> Node0x875df0;
+	Node0x875df0 [shape=record,label="{%9:\l9:                                                \l  %10 = load i32, i32* %3, align 4\l  %11 = icmp sgt i32 %10, 0\l  br i1 %11, label %12, label %15\l}"];
+	Node0x875df0 -> Node0x875e30;
+	Node0x875df0 -> Node0x875e70;
+	Node0x875e30 [shape=record,label="{%12:\l12:                                               \l  call void @f()\l  %13 = load i32, i32* %3, align 4\l  %14 = add nsw i32 %13, -1\l  store i32 %14, i32* %3, align 4\l  br label %9\l}"];
+	Node0x875e70 [shape=record,label="{%15:\l15:                                               \l  call void @switchDeterministic()\l  call void @switchNonDeterministic()\l  %16 = load i32, i32* %1, align 4\l  ret i32 %16\l}"];
+	Node0x818270 [shape=record,label="{%7:\l7:                                                \l  call void @b2()\l  br label %8\l}"];
 }

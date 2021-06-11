@@ -1,17 +1,17 @@
 digraph "Dominator tree for 'main' function" {
 	label="Dominator tree for 'main' function";
 
-	Node0x13d1cd0 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %a = alloca i32, align 4\l  %z = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  store i32 1, i32* %a, align 4\l  %0 = load i32, i32* %a, align 4\l  %cmp = icmp eq i32 %0, 1\l  br i1 %cmp, label %if.then, label %if.else\l}"];
-	Node0x13d1cd0 -> Node0x13d1d10;
-	Node0x13d1cd0 -> Node0x1423b00;
-	Node0x13d1cd0 -> Node0x1423c00;
-	Node0x13d1d10 [shape=record,label="{if.then:                                          \l  call void @b1()\l  br label %if.end\l}"];
-	Node0x1423b00 [shape=record,label="{if.end:                                           \l  call void @c()\l  call void @d()\l  store i32 10, i32* %z, align 4\l  br label %while.cond\l}"];
-	Node0x1423b00 -> Node0x1423b40;
-	Node0x1423b40 [shape=record,label="{while.cond:                                       \l  %1 = load i32, i32* %z, align 4\l  %cmp1 = icmp sgt i32 %1, 0\l  br i1 %cmp1, label %while.body, label %while.end\l}"];
-	Node0x1423b40 -> Node0x1423b80;
-	Node0x1423b40 -> Node0x1423bc0;
-	Node0x1423b80 [shape=record,label="{while.body:                                       \l  call void @f()\l  %2 = load i32, i32* %z, align 4\l  %dec = add nsw i32 %2, -1\l  store i32 %dec, i32* %z, align 4\l  br label %while.cond\l}"];
-	Node0x1423bc0 [shape=record,label="{while.end:                                        \l  call void @g()\l  %3 = load i32, i32* %retval, align 4\l  ret i32 %3\l}"];
-	Node0x1423c00 [shape=record,label="{if.else:                                          \l  call void @b2()\l  br label %if.end\l}"];
+	Node0x10483e0 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %a = alloca i32, align 4\l  %z = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  store i32 1, i32* %a, align 4\l  %0 = load i32, i32* %a, align 4\l  %cmp = icmp eq i32 %0, 1\l  br i1 %cmp, label %if.then, label %if.else\l}"];
+	Node0x10483e0 -> Node0x1047dd0;
+	Node0x10483e0 -> Node0x1047e10;
+	Node0x10483e0 -> Node0x103c1c0;
+	Node0x1047dd0 [shape=record,label="{if.then:                                          \l  call void @b1()\l  br label %if.end\l}"];
+	Node0x1047e10 [shape=record,label="{if.end:                                           \l  call void @c()\l  call void @d()\l  store i32 10, i32* %z, align 4\l  br label %while.cond\l}"];
+	Node0x1047e10 -> Node0x1047e50;
+	Node0x1047e50 [shape=record,label="{while.cond:                                       \l  %1 = load i32, i32* %z, align 4\l  %cmp1 = icmp sgt i32 %1, 0\l  br i1 %cmp1, label %while.body, label %while.end\l}"];
+	Node0x1047e50 -> Node0x1047e90;
+	Node0x1047e50 -> Node0x103c180;
+	Node0x1047e90 [shape=record,label="{while.body:                                       \l  call void @f()\l  %2 = load i32, i32* %z, align 4\l  %dec = add nsw i32 %2, -1\l  store i32 %dec, i32* %z, align 4\l  br label %while.cond\l}"];
+	Node0x103c180 [shape=record,label="{while.end:                                        \l  call void @switchDeterministic()\l  call void @switchNonDeterministic()\l  %3 = load i32, i32* %retval, align 4\l  ret i32 %3\l}"];
+	Node0x103c1c0 [shape=record,label="{if.else:                                          \l  call void @b2()\l  br label %if.end\l}"];
 }

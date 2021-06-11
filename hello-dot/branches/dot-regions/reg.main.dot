@@ -1,42 +1,42 @@
 digraph "Region Graph for 'main' function" {
 	label="Region Graph for 'main' function";
 
-	Node0x2764330 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %4 = load i32, i32* %2, align 4\l  %5 = icmp eq i32 %4, 1\l  br i1 %5, label %6, label %7\l}"];
-	Node0x2764330 -> Node0x27694b0;
-	Node0x2764330 -> Node0x2764a30;
-	Node0x27694b0 [shape=record,label="{%6:\l6:                                                \l  call void @b1()\l  br label %8\l}"];
-	Node0x27694b0 -> Node0x2763a10;
-	Node0x2763a10 [shape=record,label="{%8:\l8:                                                \l  call void @c()\l  call void @d()\l  store i32 10, i32* %3, align 4\l  br label %9\l}"];
-	Node0x2763a10 -> Node0x2761680;
-	Node0x2761680 [shape=record,label="{%9:\l9:                                                \l  %10 = load i32, i32* %3, align 4\l  %11 = icmp sgt i32 %10, 0\l  br i1 %11, label %12, label %15\l}"];
-	Node0x2761680 -> Node0x275d680;
-	Node0x2761680 -> Node0x2761a70;
-	Node0x275d680 [shape=record,label="{%12:\l12:                                               \l  call void @f()\l  %13 = load i32, i32* %3, align 4\l  %14 = add nsw i32 %13, -1\l  store i32 %14, i32* %3, align 4\l  br label %9\l}"];
-	Node0x275d680 -> Node0x2761680[constraint=false];
-	Node0x2761a70 [shape=record,label="{%15:\l15:                                               \l  call void @g()\l  %16 = load i32, i32* %1, align 4\l  ret i32 %16\l}"];
-	Node0x2764a30 [shape=record,label="{%7:\l7:                                                \l  call void @b2()\l  br label %8\l}"];
-	Node0x2764a30 -> Node0x2763a10;
+	Node0x191cfe0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %4 = load i32, i32* %2, align 4\l  %5 = icmp eq i32 %4, 1\l  br i1 %5, label %6, label %7\l}"];
+	Node0x191cfe0 -> Node0x191d390;
+	Node0x191cfe0 -> Node0x1921fe0;
+	Node0x191d390 [shape=record,label="{%6:\l6:                                                \l  call void @b1()\l  br label %8\l}"];
+	Node0x191d390 -> Node0x1920120;
+	Node0x1920120 [shape=record,label="{%8:\l8:                                                \l  call void @c()\l  call void @d()\l  store i32 10, i32* %3, align 4\l  br label %9\l}"];
+	Node0x1920120 -> Node0x1914df0;
+	Node0x1914df0 [shape=record,label="{%9:\l9:                                                \l  %10 = load i32, i32* %3, align 4\l  %11 = icmp sgt i32 %10, 0\l  br i1 %11, label %12, label %15\l}"];
+	Node0x1914df0 -> Node0x19144d0;
+	Node0x1914df0 -> Node0x1923670;
+	Node0x19144d0 [shape=record,label="{%12:\l12:                                               \l  call void @f()\l  %13 = load i32, i32* %3, align 4\l  %14 = add nsw i32 %13, -1\l  store i32 %14, i32* %3, align 4\l  br label %9\l}"];
+	Node0x19144d0 -> Node0x1914df0[constraint=false];
+	Node0x1923670 [shape=record,label="{%15:\l15:                                               \l  call void @switchDeterministic()\l  call void @switchNonDeterministic()\l  %16 = load i32, i32* %1, align 4\l  ret i32 %16\l}"];
+	Node0x1921fe0 [shape=record,label="{%7:\l7:                                                \l  call void @b2()\l  br label %8\l}"];
+	Node0x1921fe0 -> Node0x1920120;
 	colorscheme = "paired12"
-        subgraph cluster_0x2766c40 {
+        subgraph cluster_0x1920140 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0x278bd90 {
+          subgraph cluster_0x18f07c0 {
             label = "";
             style = filled;
             color = 3
-            Node0x2764330;
-            Node0x27694b0;
-            Node0x2764a30;
+            Node0x191cfe0;
+            Node0x191d390;
+            Node0x1921fe0;
           }
-          subgraph cluster_0x273a0f0 {
+          subgraph cluster_0x18f0f60 {
             label = "";
             style = filled;
             color = 3
-            Node0x2761680;
-            Node0x275d680;
+            Node0x1914df0;
+            Node0x19144d0;
           }
-          Node0x2763a10;
-          Node0x2761a70;
+          Node0x1920120;
+          Node0x1923670;
         }
 }

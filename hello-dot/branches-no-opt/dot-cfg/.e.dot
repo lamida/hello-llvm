@@ -1,5 +1,5 @@
 digraph "CFG for 'e' function" {
 	label="CFG for 'e' function";
 
-	Node0x11668e0 [shape=record,label="{entry:\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8],\l... [13 x i8]* @.str.4, i64 0, i64 0))\l  ret void\l}"];
+	Node0x23e30d0 [shape=record,label="{entry:\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8],\l... [13 x i8]* @.str.4, i64 0, i64 0))\l  ret void\l}"];
 }

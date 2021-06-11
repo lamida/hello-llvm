@@ -1,25 +1,25 @@
 digraph "CFG for 'CompareEtags' function" {
 	label="CFG for 'CompareEtags' function";
 
-	Node0x5649f8074cf0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5649f8074cf0\":\l  %2 = alloca i32, align 4\l  %3 = alloca i8*, align 8\l  %4 = alloca i8*, align 8\l  %5 = alloca i32, align 4\l  store i8* %0, i8** %3, align 8\l  store i8* %1, i8** %4, align 8\l  %6 = load i8*, i8** %3, align 8\l  %7 = icmp eq i8* %6, null\l  br i1 %7, label %\"0x5649f8074e50\", label %\"0x5649f8075230\"\l|{<s0>T|<s1>F}}"];
-	Node0x5649f8074cf0:s0 -> Node0x5649f8074e50;
-	Node0x5649f8074cf0:s1 -> Node0x5649f8075230;
-	Node0x5649f8074e50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{\"0x5649f8074e50\":                                 \l  store i32 1, i32* %2, align 4\l  br label %\"0x5649f80753c0\"\l}"];
-	Node0x5649f8074e50 -> Node0x5649f80753c0;
-	Node0x5649f8075230 [shape=record,color="#b70d28ff", style=filled, fillcolor="#d6524470",label="{\"0x5649f8075230\":                                 \l  %8 = load i8*, i8** %3, align 8\l  %9 = getelementptr inbounds i8, i8* %8, i64 0\l  %10 = load i8, i8* %9, align 1\l  %11 = sext i8 %10 to i32\l  %12 = icmp eq i32 %11, 34\l  br i1 %12, label %\"0x5649f8075700 - Exit Point\", label %\"0x5649f8075750 -\l... Exit Point\"\l|{<s0>T|<s1>F}}"];
-	Node0x5649f8075230:s0 -> Node0x5649f8075700;
-	Node0x5649f8075230:s1 -> Node0x5649f8075750;
-	Node0x5649f8075700 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x5649f8075700 - Exit Point\":                    \l  %13 = load i8*, i8** %4, align 8\l  %14 = call i64 @strlen(i8* %13)\l  %15 = trunc i64 %14 to i32\l  store i32 %15, i32* %5, align 4\l  %16 = load i8*, i8** %3, align 8\l  %17 = getelementptr inbounds i8, i8* %16, i64 1\l  %18 = load i8*, i8** %4, align 8\l  %19 = load i32, i32* %5, align 4\l  %20 = sext i32 %19 to i64\l  %21 = call i32 @strncmp(i8* %17, i8* %18, i64 %20)\l  %22 = icmp eq i32 %21, 0\l  br i1 %22, label %\"0x5649f8075e80\", label %\"0x5649f8075ed0\"\l|{<s0>T|<s1>F}}"];
-	Node0x5649f8075700:s0 -> Node0x5649f8075e80;
-	Node0x5649f8075700:s1 -> Node0x5649f8075ed0;
-	Node0x5649f8075e80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{\"0x5649f8075e80\":                                 \l  %23 = load i8*, i8** %3, align 8\l  %24 = load i32, i32* %5, align 4\l  %25 = add nsw i32 %24, 1\l  %26 = sext i32 %25 to i64\l  %27 = getelementptr inbounds i8, i8* %23, i64 %26\l  %28 = load i8, i8* %27, align 1\l  %29 = sext i8 %28 to i32\l  %30 = icmp eq i32 %29, 34\l  br i1 %30, label %\"0x5649f80763c0\", label %\"0x5649f8075ed0\"\l|{<s0>T|<s1>F}}"];
-	Node0x5649f8075e80:s0 -> Node0x5649f80763c0;
-	Node0x5649f8075e80:s1 -> Node0x5649f8075ed0;
-	Node0x5649f80763c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{\"0x5649f80763c0\":                                 \l  store i32 0, i32* %2, align 4\l  br label %\"0x5649f80753c0\"\l}"];
-	Node0x5649f80763c0 -> Node0x5649f80753c0;
-	Node0x5649f8075ed0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7a88970",label="{\"0x5649f8075ed0\":                                 \l  br label %\"0x5649f8075750 - Exit Point\"\l}"];
-	Node0x5649f8075ed0 -> Node0x5649f8075750;
-	Node0x5649f8075750 [shape=record,color="#b70d28ff", style=filled, fillcolor="#dc5d4a70",label="{\"0x5649f8075750 - Exit Point\":                    \l  %31 = load i8*, i8** %3, align 8\l  %32 = load i8*, i8** %4, align 8\l  %33 = call i32 @strcmp(i8* %31, i8* %32)\l  store i32 %33, i32* %2, align 4\l  br label %\"0x5649f80753c0\"\l}"];
-	Node0x5649f8075750 -> Node0x5649f80753c0;
-	Node0x5649f80753c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5649f80753c0\":                                 \l  %34 = load i32, i32* %2, align 4\l  ret i32 %34\l}"];
+	Node0x562a72057cf0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x562a72057cf0\":\l  %2 = alloca i32, align 4\l  %3 = alloca i8*, align 8\l  %4 = alloca i8*, align 8\l  %5 = alloca i32, align 4\l  store i8* %0, i8** %3, align 8\l  store i8* %1, i8** %4, align 8\l  %6 = load i8*, i8** %3, align 8\l  %7 = icmp eq i8* %6, null\l  br i1 %7, label %\"0x562a72057e50\", label %\"0x562a72058230\"\l|{<s0>T|<s1>F}}"];
+	Node0x562a72057cf0:s0 -> Node0x562a72057e50;
+	Node0x562a72057cf0:s1 -> Node0x562a72058230;
+	Node0x562a72057e50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{\"0x562a72057e50\":                                 \l  store i32 1, i32* %2, align 4\l  br label %\"0x562a720583c0\"\l}"];
+	Node0x562a72057e50 -> Node0x562a720583c0;
+	Node0x562a72058230 [shape=record,color="#b70d28ff", style=filled, fillcolor="#d6524470",label="{\"0x562a72058230\":                                 \l  %8 = load i8*, i8** %3, align 8\l  %9 = getelementptr inbounds i8, i8* %8, i64 0\l  %10 = load i8, i8* %9, align 1\l  %11 = sext i8 %10 to i32\l  %12 = icmp eq i32 %11, 34\l  br i1 %12, label %\"0x562a72058700 - Exit Point\", label %\"0x562a72058750 -\l... Exit Point\"\l|{<s0>T|<s1>F}}"];
+	Node0x562a72058230:s0 -> Node0x562a72058700;
+	Node0x562a72058230:s1 -> Node0x562a72058750;
+	Node0x562a72058700 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x562a72058700 - Exit Point\":                    \l  %13 = load i8*, i8** %4, align 8\l  %14 = call i64 @strlen(i8* %13)\l  %15 = trunc i64 %14 to i32\l  store i32 %15, i32* %5, align 4\l  %16 = load i8*, i8** %3, align 8\l  %17 = getelementptr inbounds i8, i8* %16, i64 1\l  %18 = load i8*, i8** %4, align 8\l  %19 = load i32, i32* %5, align 4\l  %20 = sext i32 %19 to i64\l  %21 = call i32 @strncmp(i8* %17, i8* %18, i64 %20)\l  %22 = icmp eq i32 %21, 0\l  br i1 %22, label %\"0x562a72058e80\", label %\"0x562a72058ed0\"\l|{<s0>T|<s1>F}}"];
+	Node0x562a72058700:s0 -> Node0x562a72058e80;
+	Node0x562a72058700:s1 -> Node0x562a72058ed0;
+	Node0x562a72058e80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{\"0x562a72058e80\":                                 \l  %23 = load i8*, i8** %3, align 8\l  %24 = load i32, i32* %5, align 4\l  %25 = add nsw i32 %24, 1\l  %26 = sext i32 %25 to i64\l  %27 = getelementptr inbounds i8, i8* %23, i64 %26\l  %28 = load i8, i8* %27, align 1\l  %29 = sext i8 %28 to i32\l  %30 = icmp eq i32 %29, 34\l  br i1 %30, label %\"0x562a720593c0\", label %\"0x562a72058ed0\"\l|{<s0>T|<s1>F}}"];
+	Node0x562a72058e80:s0 -> Node0x562a720593c0;
+	Node0x562a72058e80:s1 -> Node0x562a72058ed0;
+	Node0x562a720593c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{\"0x562a720593c0\":                                 \l  store i32 0, i32* %2, align 4\l  br label %\"0x562a720583c0\"\l}"];
+	Node0x562a720593c0 -> Node0x562a720583c0;
+	Node0x562a72058ed0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7a88970",label="{\"0x562a72058ed0\":                                 \l  br label %\"0x562a72058750 - Exit Point\"\l}"];
+	Node0x562a72058ed0 -> Node0x562a72058750;
+	Node0x562a72058750 [shape=record,color="#b70d28ff", style=filled, fillcolor="#dc5d4a70",label="{\"0x562a72058750 - Exit Point\":                    \l  %31 = load i8*, i8** %3, align 8\l  %32 = load i8*, i8** %4, align 8\l  %33 = call i32 @strcmp(i8* %31, i8* %32)\l  store i32 %33, i32* %2, align 4\l  br label %\"0x562a720583c0\"\l}"];
+	Node0x562a72058750 -> Node0x562a720583c0;
+	Node0x562a720583c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x562a720583c0\":                                 \l  %34 = load i32, i32* %2, align 4\l  ret i32 %34\l}"];
 }

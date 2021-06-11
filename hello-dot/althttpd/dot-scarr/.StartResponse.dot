@@ -1,24 +1,24 @@
 digraph "CFG for 'StartResponse' function" {
 	label="CFG for 'StartResponse' function";
 
-	Node0x5649f7ffd830 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5649f7ffd830 - Exit Point\":\l  %1 = alloca i8*, align 8\l  %2 = alloca i64, align 8\l  store i8* %0, i8** %1, align 8\l  %3 = call i64 @time(i64* %2)\l  %4 = load i32, i32* @statusSent, align 4\l  %5 = icmp ne i32 %4, 0\l  br i1 %5, label %\"0x5649f7ffdd40\", label %\"0x5649f7ffdd90 - Exit Point\"\l|{<s0>T|<s1>F}}"];
-	Node0x5649f7ffd830:s0 -> Node0x5649f7ffdd40;
-	Node0x5649f7ffd830:s1 -> Node0x5649f7ffdd90;
-	Node0x5649f7ffdd40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#de614d70",label="{\"0x5649f7ffdd40\":                                 \l  br label %\"0x5649f7ffde90\"\l}"];
-	Node0x5649f7ffdd40 -> Node0x5649f7ffde90;
-	Node0x5649f7ffdd90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x5649f7ffdd90 - Exit Point\":                    \l  %6 = load i8*, i8** @zProtocol, align 8\l  %7 = load i8*, i8** %1, align 8\l  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([8 x i8], [8 x\l... i8]* @.str.449, i64 0, i64 0), i8* %6, i8* %7)\l  %9 = load i32, i32* @nOut, align 4\l  %10 = add nsw i32 %9, %8\l  store i32 %10, i32* @nOut, align 4\l  %11 = load i8*, i8** %1, align 8\l  %12 = call i8* @strncpy(i8* getelementptr inbounds ([4 x i8], [4 x i8]*\l... @zReplyStatus, i64 0, i64 0), i8* %11, i64 3)\l  store i8 0, i8* getelementptr inbounds ([4 x i8], [4 x i8]* @zReplyStatus,\l... i64 0, i64 3), align 1\l  %13 = load i8, i8* getelementptr inbounds ([4 x i8], [4 x i8]*\l... @zReplyStatus, i64 0, i64 0), align 1\l  %14 = sext i8 %13 to i32\l  %15 = icmp sge i32 %14, 52\l  br i1 %15, label %\"0x5649f7ffe860\", label %\"0x5649f7ffe8b0\"\l|{<s0>T|<s1>F}}"];
-	Node0x5649f7ffdd90:s0 -> Node0x5649f7ffe860;
-	Node0x5649f7ffdd90:s1 -> Node0x5649f7ffe8b0;
-	Node0x5649f7ffe860 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#eed0c070",label="{\"0x5649f7ffe860\":                                 \l  store i32 1, i32* @closeConnection, align 4\l  br label %\"0x5649f7ffe8b0\"\l}"];
-	Node0x5649f7ffe860 -> Node0x5649f7ffe8b0;
-	Node0x5649f7ffe8b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x5649f7ffe8b0\":                                 \l  %16 = load i32, i32* @closeConnection, align 4\l  %17 = icmp ne i32 %16, 0\l  br i1 %17, label %\"0x5649f7ffebe0 - Exit Point\", label %\"0x5649f7ffec30 -\l... Exit Point\"\l|{<s0>T|<s1>F}}"];
-	Node0x5649f7ffe8b0:s0 -> Node0x5649f7ffebe0;
-	Node0x5649f7ffe8b0:s1 -> Node0x5649f7ffec30;
-	Node0x5649f7ffebe0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f5c1a970",label="{\"0x5649f7ffebe0 - Exit Point\":                    \l  %18 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([20 x i8], [20\l... x i8]* @.str.450, i64 0, i64 0))\l  %19 = load i32, i32* @nOut, align 4\l  %20 = add nsw i32 %19, %18\l  store i32 %20, i32* @nOut, align 4\l  br label %\"0x5649f7fff040\"\l}"];
-	Node0x5649f7ffebe0 -> Node0x5649f7fff040;
-	Node0x5649f7ffec30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e0dbd870",label="{\"0x5649f7ffec30 - Exit Point\":                    \l  %21 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([25 x i8], [25\l... x i8]* @.str.451, i64 0, i64 0))\l  %22 = load i32, i32* @nOut, align 4\l  %23 = add nsw i32 %22, %21\l  store i32 %23, i32* @nOut, align 4\l  br label %\"0x5649f7fff040\"\l}"];
-	Node0x5649f7ffec30 -> Node0x5649f7fff040;
-	Node0x5649f7fff040 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x5649f7fff040\":                                 \l  %24 = load i64, i64* %2, align 8\l  %25 = call i32 @DateTag(i8* getelementptr inbounds ([5 x i8], [5 x i8]*\l... @.str.452, i64 0, i64 0), i64 %24)\l  %26 = load i32, i32* @nOut, align 4\l  %27 = add nsw i32 %26, %25\l  store i32 %27, i32* @nOut, align 4\l  store i32 1, i32* @statusSent, align 4\l  br label %\"0x5649f7ffde90\"\l}"];
-	Node0x5649f7fff040 -> Node0x5649f7ffde90;
-	Node0x5649f7ffde90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5649f7ffde90\":                                 \l  ret void\l}"];
+	Node0x562a71fe0830 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x562a71fe0830 - Exit Point\":\l  %1 = alloca i8*, align 8\l  %2 = alloca i64, align 8\l  store i8* %0, i8** %1, align 8\l  %3 = call i64 @time(i64* %2)\l  %4 = load i32, i32* @statusSent, align 4\l  %5 = icmp ne i32 %4, 0\l  br i1 %5, label %\"0x562a71fe0d40\", label %\"0x562a71fe0d90 - Exit Point\"\l|{<s0>T|<s1>F}}"];
+	Node0x562a71fe0830:s0 -> Node0x562a71fe0d40;
+	Node0x562a71fe0830:s1 -> Node0x562a71fe0d90;
+	Node0x562a71fe0d40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#de614d70",label="{\"0x562a71fe0d40\":                                 \l  br label %\"0x562a71fe0e90\"\l}"];
+	Node0x562a71fe0d40 -> Node0x562a71fe0e90;
+	Node0x562a71fe0d90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x562a71fe0d90 - Exit Point\":                    \l  %6 = load i8*, i8** @zProtocol, align 8\l  %7 = load i8*, i8** %1, align 8\l  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([8 x i8], [8 x\l... i8]* @.str.449, i64 0, i64 0), i8* %6, i8* %7)\l  %9 = load i32, i32* @nOut, align 4\l  %10 = add nsw i32 %9, %8\l  store i32 %10, i32* @nOut, align 4\l  %11 = load i8*, i8** %1, align 8\l  %12 = call i8* @strncpy(i8* getelementptr inbounds ([4 x i8], [4 x i8]*\l... @zReplyStatus, i64 0, i64 0), i8* %11, i64 3)\l  store i8 0, i8* getelementptr inbounds ([4 x i8], [4 x i8]* @zReplyStatus,\l... i64 0, i64 3), align 1\l  %13 = load i8, i8* getelementptr inbounds ([4 x i8], [4 x i8]*\l... @zReplyStatus, i64 0, i64 0), align 1\l  %14 = sext i8 %13 to i32\l  %15 = icmp sge i32 %14, 52\l  br i1 %15, label %\"0x562a71fe1860\", label %\"0x562a71fe18b0\"\l|{<s0>T|<s1>F}}"];
+	Node0x562a71fe0d90:s0 -> Node0x562a71fe1860;
+	Node0x562a71fe0d90:s1 -> Node0x562a71fe18b0;
+	Node0x562a71fe1860 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#eed0c070",label="{\"0x562a71fe1860\":                                 \l  store i32 1, i32* @closeConnection, align 4\l  br label %\"0x562a71fe18b0\"\l}"];
+	Node0x562a71fe1860 -> Node0x562a71fe18b0;
+	Node0x562a71fe18b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x562a71fe18b0\":                                 \l  %16 = load i32, i32* @closeConnection, align 4\l  %17 = icmp ne i32 %16, 0\l  br i1 %17, label %\"0x562a71fe1be0 - Exit Point\", label %\"0x562a71fe1c30 -\l... Exit Point\"\l|{<s0>T|<s1>F}}"];
+	Node0x562a71fe18b0:s0 -> Node0x562a71fe1be0;
+	Node0x562a71fe18b0:s1 -> Node0x562a71fe1c30;
+	Node0x562a71fe1be0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f5c1a970",label="{\"0x562a71fe1be0 - Exit Point\":                    \l  %18 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([20 x i8], [20\l... x i8]* @.str.450, i64 0, i64 0))\l  %19 = load i32, i32* @nOut, align 4\l  %20 = add nsw i32 %19, %18\l  store i32 %20, i32* @nOut, align 4\l  br label %\"0x562a71fe2040\"\l}"];
+	Node0x562a71fe1be0 -> Node0x562a71fe2040;
+	Node0x562a71fe1c30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e0dbd870",label="{\"0x562a71fe1c30 - Exit Point\":                    \l  %21 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([25 x i8], [25\l... x i8]* @.str.451, i64 0, i64 0))\l  %22 = load i32, i32* @nOut, align 4\l  %23 = add nsw i32 %22, %21\l  store i32 %23, i32* @nOut, align 4\l  br label %\"0x562a71fe2040\"\l}"];
+	Node0x562a71fe1c30 -> Node0x562a71fe2040;
+	Node0x562a71fe2040 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x562a71fe2040\":                                 \l  %24 = load i64, i64* %2, align 8\l  %25 = call i32 @DateTag(i8* getelementptr inbounds ([5 x i8], [5 x i8]*\l... @.str.452, i64 0, i64 0), i64 %24)\l  %26 = load i32, i32* @nOut, align 4\l  %27 = add nsw i32 %26, %25\l  store i32 %27, i32* @nOut, align 4\l  store i32 1, i32* @statusSent, align 4\l  br label %\"0x562a71fe0e90\"\l}"];
+	Node0x562a71fe2040 -> Node0x562a71fe0e90;
+	Node0x562a71fe0e90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x562a71fe0e90\":                                 \l  ret void\l}"];
 }

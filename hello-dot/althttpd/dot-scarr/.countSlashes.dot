@@ -1,17 +1,17 @@
 digraph "CFG for 'countSlashes' function" {
 	label="CFG for 'countSlashes' function";
 
-	Node0x5649f8038a30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x5649f8038a30\":\l  %1 = alloca i8*, align 8\l  %2 = alloca i32, align 4\l  store i8* %0, i8** %1, align 8\l  store i32 0, i32* %2, align 4\l  br label %\"0x5649f8038c80\"\l}"];
-	Node0x5649f8038a30 -> Node0x5649f8038c80;
-	Node0x5649f8038c80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5649f8038c80\":                                 \l  %3 = load i8*, i8** %1, align 8\l  %4 = load i8, i8* %3, align 1\l  %5 = icmp ne i8 %4, 0\l  br i1 %5, label %\"0x5649f8038f00\", label %\"0x5649f8038f50\"\l|{<s0>T|<s1>F}}"];
-	Node0x5649f8038c80:s0 -> Node0x5649f8038f00;
-	Node0x5649f8038c80:s1 -> Node0x5649f8038f50;
-	Node0x5649f8038f00 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x5649f8038f00\":                                 \l  %6 = load i8*, i8** %1, align 8\l  %7 = getelementptr inbounds i8, i8* %6, i32 1\l  store i8* %7, i8** %1, align 8\l  %8 = load i8, i8* %6, align 1\l  %9 = sext i8 %8 to i32\l  %10 = icmp eq i32 %9, 47\l  br i1 %10, label %\"0x5649f8038d40\", label %\"0x5649f80393f0\"\l|{<s0>T|<s1>F}}"];
-	Node0x5649f8038f00:s0 -> Node0x5649f8038d40;
-	Node0x5649f8038f00:s1 -> Node0x5649f80393f0;
-	Node0x5649f8038d40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e1675170",label="{\"0x5649f8038d40\":                                 \l  %11 = load i32, i32* %2, align 4\l  %12 = add nsw i32 %11, 1\l  store i32 %12, i32* %2, align 4\l  br label %\"0x5649f80393f0\"\l}"];
-	Node0x5649f8038d40 -> Node0x5649f80393f0;
-	Node0x5649f80393f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x5649f80393f0\":                                 \l  br label %\"0x5649f8038c80\"\l}"];
-	Node0x5649f80393f0 -> Node0x5649f8038c80;
-	Node0x5649f8038f50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x5649f8038f50\":                                 \l  %13 = load i32, i32* %2, align 4\l  ret i32 %13\l}"];
+	Node0x562a7201ba30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x562a7201ba30\":\l  %1 = alloca i8*, align 8\l  %2 = alloca i32, align 4\l  store i8* %0, i8** %1, align 8\l  store i32 0, i32* %2, align 4\l  br label %\"0x562a7201c3f0 - Virtual Checkpoint\"\l}"];
+	Node0x562a7201ba30 -> Node0x562a7201bc80;
+	Node0x562a7201bc80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x562a7201c3f0 - Virtual Checkpoint\":            \l  %3 = load i8*, i8** %1, align 8\l  %4 = load i8, i8* %3, align 1\l  %5 = icmp ne i8 %4, 0\l  br i1 %5, label %\"0x562a7201bf00\", label %\"0x562a7201bf50\"\l|{<s0>T|<s1>F}}"];
+	Node0x562a7201bc80:s0 -> Node0x562a7201bf00;
+	Node0x562a7201bc80:s1 -> Node0x562a7201bf50;
+	Node0x562a7201bf00 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x562a7201bf00\":                                 \l  %6 = load i8*, i8** %1, align 8\l  %7 = getelementptr inbounds i8, i8* %6, i32 1\l  store i8* %7, i8** %1, align 8\l  %8 = load i8, i8* %6, align 1\l  %9 = sext i8 %8 to i32\l  %10 = icmp eq i32 %9, 47\l  br i1 %10, label %\"0x562a7201bd40\", label %\"0x562a7201c3f0\"\l|{<s0>T|<s1>F}}"];
+	Node0x562a7201bf00:s0 -> Node0x562a7201bd40;
+	Node0x562a7201bf00:s1 -> Node0x562a7201c3f0;
+	Node0x562a7201bd40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e1675170",label="{\"0x562a7201bd40\":                                 \l  %11 = load i32, i32* %2, align 4\l  %12 = add nsw i32 %11, 1\l  store i32 %12, i32* %2, align 4\l  br label %\"0x562a7201c3f0\"\l}"];
+	Node0x562a7201bd40 -> Node0x562a7201c3f0;
+	Node0x562a7201c3f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x562a7201c3f0\":                                 \l  br label %\"0x562a7201c3f0 - Virtual Checkpoint\"\l}"];
+	Node0x562a7201c3f0 -> Node0x562a7201bc80;
+	Node0x562a7201bf50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x562a7201bf50\":                                 \l  %13 = load i32, i32* %2, align 4\l  ret i32 %13\l}"];
 }

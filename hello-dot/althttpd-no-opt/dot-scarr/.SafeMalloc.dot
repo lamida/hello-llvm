@@ -1,9 +1,9 @@
 digraph "CFG for 'SafeMalloc' function" {
 	label="CFG for 'SafeMalloc' function";
 
-	Node0x5595128cf230 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5595128cf230 - Exit Point\":\l  %size.addr = alloca i64, align 8\l  %p = alloca i8*, align 8\l  store i64 %size, i64* %size.addr, align 8\l  %0 = load i64, i64* %size.addr, align 8\l  %call = call noalias i8* @malloc(i64 %0)\l  store i8* %call, i8** %p, align 8\l  %1 = load i8*, i8** %p, align 8\l  %cmp = icmp eq i8* %1, null\l  br i1 %cmp, label %\"0x5595128cf850 - Exit Point\", label %\"0x5595128cf8c0\"\l|{<s0>T|<s1>F}}"];
-	Node0x5595128cf230:s0 -> Node0x5595128cf850;
-	Node0x5595128cf230:s1 -> Node0x5595128cf8c0;
-	Node0x5595128cf850 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#5977e370",label="{\"0x5595128cf850 - Exit Point\":                    \l  %call1 = call i8* @strcpy(i8* getelementptr inbounds ([4 x i8], [4 x i8]*\l... @zReplyStatus, i64 0, i64 0), i8* getelementptr inbounds ([4 x i8], [4 x i8]*\l... @.str.462, i64 0, i64 0))\l  call void @MakeLogEntry(i32 1, i32 100)\l  call void @exit(i32 1)\l  unreachable\l}"];
-	Node0x5595128cf8c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5595128cf8c0\":                                 \l  %2 = load i8*, i8** %p, align 8\l  ret i8* %2\l}"];
+	Node0x561239144230 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x561239144230 - Exit Point\":\l  %size.addr = alloca i64, align 8\l  %p = alloca i8*, align 8\l  store i64 %size, i64* %size.addr, align 8\l  %0 = load i64, i64* %size.addr, align 8\l  %call = call noalias i8* @malloc(i64 %0)\l  store i8* %call, i8** %p, align 8\l  %1 = load i8*, i8** %p, align 8\l  %cmp = icmp eq i8* %1, null\l  br i1 %cmp, label %\"0x561239144850 - Exit Point\", label %\"0x5612391448c0\"\l|{<s0>T|<s1>F}}"];
+	Node0x561239144230:s0 -> Node0x561239144850;
+	Node0x561239144230:s1 -> Node0x5612391448c0;
+	Node0x561239144850 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#5977e370",label="{\"0x561239144850 - Exit Point\":                    \l  %call1 = call i8* @strcpy(i8* getelementptr inbounds ([4 x i8], [4 x i8]*\l... @zReplyStatus, i64 0, i64 0), i8* getelementptr inbounds ([4 x i8], [4 x i8]*\l... @.str.462, i64 0, i64 0))\l  call void @MakeLogEntry(i32 1, i32 100)\l  call void @exit(i32 1)\l  unreachable\l}"];
+	Node0x5612391448c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5612391448c0\":                                 \l  %2 = load i8*, i8** %p, align 8\l  ret i8* %2\l}"];
 }

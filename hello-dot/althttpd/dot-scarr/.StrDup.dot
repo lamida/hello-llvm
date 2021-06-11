@@ -1,12 +1,12 @@
 digraph "CFG for 'StrDup' function" {
 	label="CFG for 'StrDup' function";
 
-	Node0x5649f7ff8d10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5649f7ff8d10\":\l  %1 = alloca i8*, align 8\l  %2 = alloca i8*, align 8\l  %3 = alloca i8*, align 8\l  %4 = alloca i64, align 8\l  store i8* %0, i8** %2, align 8\l  %5 = load i8*, i8** %2, align 8\l  %6 = icmp eq i8* %5, null\l  br i1 %6, label %\"0x5649f7ff9130\", label %\"0x5649f7ff9180 - Exit Point\"\l|{<s0>T|<s1>F}}"];
-	Node0x5649f7ff8d10:s0 -> Node0x5649f7ff9130;
-	Node0x5649f7ff8d10:s1 -> Node0x5649f7ff9180;
-	Node0x5649f7ff9130 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{\"0x5649f7ff9130\":                                 \l  store i8* null, i8** %1, align 8\l  br label %\"0x5649f7ff8ee0\"\l}"];
-	Node0x5649f7ff9130 -> Node0x5649f7ff8ee0;
-	Node0x5649f7ff9180 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{\"0x5649f7ff9180 - Exit Point\":                    \l  %7 = load i8*, i8** %2, align 8\l  %8 = call i64 @strlen(i8* %7)\l  %9 = add i64 %8, 1\l  store i64 %9, i64* %4, align 8\l  %10 = load i64, i64* %4, align 8\l  %11 = call i8* @SafeMalloc(i64 %10)\l  store i8* %11, i8** %3, align 8\l  %12 = load i8*, i8** %3, align 8\l  %13 = load i8*, i8** %2, align 8\l  %14 = call i8* @strcpy(i8* %12, i8* %13)\l  %15 = load i8*, i8** %3, align 8\l  store i8* %15, i8** %1, align 8\l  br label %\"0x5649f7ff8ee0\"\l}"];
-	Node0x5649f7ff9180 -> Node0x5649f7ff8ee0;
-	Node0x5649f7ff8ee0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5649f7ff8ee0\":                                 \l  %16 = load i8*, i8** %1, align 8\l  ret i8* %16\l}"];
+	Node0x562a71fdbd10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x562a71fdbd10\":\l  %1 = alloca i8*, align 8\l  %2 = alloca i8*, align 8\l  %3 = alloca i8*, align 8\l  %4 = alloca i64, align 8\l  store i8* %0, i8** %2, align 8\l  %5 = load i8*, i8** %2, align 8\l  %6 = icmp eq i8* %5, null\l  br i1 %6, label %\"0x562a71fdc130\", label %\"0x562a71fdc180 - Exit Point\"\l|{<s0>T|<s1>F}}"];
+	Node0x562a71fdbd10:s0 -> Node0x562a71fdc130;
+	Node0x562a71fdbd10:s1 -> Node0x562a71fdc180;
+	Node0x562a71fdc130 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{\"0x562a71fdc130\":                                 \l  store i8* null, i8** %1, align 8\l  br label %\"0x562a71fdbee0\"\l}"];
+	Node0x562a71fdc130 -> Node0x562a71fdbee0;
+	Node0x562a71fdc180 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{\"0x562a71fdc180 - Exit Point\":                    \l  %7 = load i8*, i8** %2, align 8\l  %8 = call i64 @strlen(i8* %7)\l  %9 = add i64 %8, 1\l  store i64 %9, i64* %4, align 8\l  %10 = load i64, i64* %4, align 8\l  %11 = call i8* @SafeMalloc(i64 %10)\l  store i8* %11, i8** %3, align 8\l  %12 = load i8*, i8** %3, align 8\l  %13 = load i8*, i8** %2, align 8\l  %14 = call i8* @strcpy(i8* %12, i8* %13)\l  %15 = load i8*, i8** %3, align 8\l  store i8* %15, i8** %1, align 8\l  br label %\"0x562a71fdbee0\"\l}"];
+	Node0x562a71fdc180 -> Node0x562a71fdbee0;
+	Node0x562a71fdbee0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x562a71fdbee0\":                                 \l  %16 = load i8*, i8** %1, align 8\l  ret i8* %16\l}"];
 }

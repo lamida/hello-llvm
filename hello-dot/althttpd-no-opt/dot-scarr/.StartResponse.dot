@@ -1,24 +1,24 @@
 digraph "CFG for 'StartResponse' function" {
 	label="CFG for 'StartResponse' function";
 
-	Node0x5595128b93f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5595128b93f0 - Exit Point\":\l  %zResultCode.addr = alloca i8*, align 8\l  %now = alloca i64, align 8\l  store i8* %zResultCode, i8** %zResultCode.addr, align 8\l  %call = call i64 @time(i64* %now)\l  %0 = load i32, i32* @statusSent, align 4\l  %tobool = icmp ne i32 %0, 0\l  br i1 %tobool, label %\"0x5595128b9990\", label %\"0x5595128b9a00 - Exit Point\"\l|{<s0>T|<s1>F}}"];
-	Node0x5595128b93f0:s0 -> Node0x5595128b9990;
-	Node0x5595128b93f0:s1 -> Node0x5595128b9a00;
-	Node0x5595128b9990 [shape=record,color="#b70d28ff", style=filled, fillcolor="#de614d70",label="{\"0x5595128b9990\":                                 \l  br label %\"0x5595128b9b20\"\l}"];
-	Node0x5595128b9990 -> Node0x5595128b9b20;
-	Node0x5595128b9a00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x5595128b9a00 - Exit Point\":                    \l  %1 = load i8*, i8** @zProtocol, align 8\l  %2 = load i8*, i8** %zResultCode.addr, align 8\l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([8 x i8],\l... [8 x i8]* @.str.449, i64 0, i64 0), i8* %1, i8* %2)\l  %3 = load i32, i32* @nOut, align 4\l  %add = add nsw i32 %3, %call1\l  store i32 %add, i32* @nOut, align 4\l  %4 = load i8*, i8** %zResultCode.addr, align 8\l  %call2 = call i8* @strncpy(i8* getelementptr inbounds ([4 x i8], [4 x i8]*\l... @zReplyStatus, i64 0, i64 0), i8* %4, i64 3)\l  store i8 0, i8* getelementptr inbounds ([4 x i8], [4 x i8]* @zReplyStatus,\l... i64 0, i64 3), align 1\l  %5 = load i8, i8* getelementptr inbounds ([4 x i8], [4 x i8]* @zReplyStatus,\l... i64 0, i64 0), align 1\l  %conv = sext i8 %5 to i32\l  %cmp = icmp sge i32 %conv, 52\l  br i1 %cmp, label %\"0x5595128ba610\", label %\"0x5595128ba660\"\l|{<s0>T|<s1>F}}"];
-	Node0x5595128b9a00:s0 -> Node0x5595128ba610;
-	Node0x5595128b9a00:s1 -> Node0x5595128ba660;
-	Node0x5595128ba610 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#eed0c070",label="{\"0x5595128ba610\":                                 \l  store i32 1, i32* @closeConnection, align 4\l  br label %\"0x5595128ba660\"\l}"];
-	Node0x5595128ba610 -> Node0x5595128ba660;
-	Node0x5595128ba660 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x5595128ba660\":                                 \l  %6 = load i32, i32* @closeConnection, align 4\l  %tobool6 = icmp ne i32 %6, 0\l  br i1 %tobool6, label %\"0x5595128ba9d0 - Exit Point\", label %\"0x5595128baa20\l... - Exit Point\"\l|{<s0>T|<s1>F}}"];
-	Node0x5595128ba660:s0 -> Node0x5595128ba9d0;
-	Node0x5595128ba660:s1 -> Node0x5595128baa20;
-	Node0x5595128ba9d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f5c1a970",label="{\"0x5595128ba9d0 - Exit Point\":                    \l  %call8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([20 x i8],\l... [20 x i8]* @.str.450, i64 0, i64 0))\l  %7 = load i32, i32* @nOut, align 4\l  %add9 = add nsw i32 %7, %call8\l  store i32 %add9, i32* @nOut, align 4\l  br label %\"0x5595128bae90\"\l}"];
-	Node0x5595128ba9d0 -> Node0x5595128bae90;
-	Node0x5595128baa20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e0dbd870",label="{\"0x5595128baa20 - Exit Point\":                    \l  %call10 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([25 x i8],\l... [25 x i8]* @.str.451, i64 0, i64 0))\l  %8 = load i32, i32* @nOut, align 4\l  %add11 = add nsw i32 %8, %call10\l  store i32 %add11, i32* @nOut, align 4\l  br label %\"0x5595128bae90\"\l}"];
-	Node0x5595128baa20 -> Node0x5595128bae90;
-	Node0x5595128bae90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x5595128bae90\":                                 \l  %9 = load i64, i64* %now, align 8\l  %call13 = call i32 @DateTag(i8* getelementptr inbounds ([5 x i8], [5 x i8]*\l... @.str.452, i64 0, i64 0), i64 %9)\l  %10 = load i32, i32* @nOut, align 4\l  %add14 = add nsw i32 %10, %call13\l  store i32 %add14, i32* @nOut, align 4\l  store i32 1, i32* @statusSent, align 4\l  br label %\"0x5595128b9b20\"\l}"];
-	Node0x5595128bae90 -> Node0x5595128b9b20;
-	Node0x5595128b9b20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5595128b9b20\":                                 \l  ret void\l}"];
+	Node0x56123912e3f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x56123912e3f0 - Exit Point\":\l  %zResultCode.addr = alloca i8*, align 8\l  %now = alloca i64, align 8\l  store i8* %zResultCode, i8** %zResultCode.addr, align 8\l  %call = call i64 @time(i64* %now)\l  %0 = load i32, i32* @statusSent, align 4\l  %tobool = icmp ne i32 %0, 0\l  br i1 %tobool, label %\"0x56123912e990\", label %\"0x56123912ea00 - Exit Point\"\l|{<s0>T|<s1>F}}"];
+	Node0x56123912e3f0:s0 -> Node0x56123912e990;
+	Node0x56123912e3f0:s1 -> Node0x56123912ea00;
+	Node0x56123912e990 [shape=record,color="#b70d28ff", style=filled, fillcolor="#de614d70",label="{\"0x56123912e990\":                                 \l  br label %\"0x56123912eb20\"\l}"];
+	Node0x56123912e990 -> Node0x56123912eb20;
+	Node0x56123912ea00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x56123912ea00 - Exit Point\":                    \l  %1 = load i8*, i8** @zProtocol, align 8\l  %2 = load i8*, i8** %zResultCode.addr, align 8\l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([8 x i8],\l... [8 x i8]* @.str.449, i64 0, i64 0), i8* %1, i8* %2)\l  %3 = load i32, i32* @nOut, align 4\l  %add = add nsw i32 %3, %call1\l  store i32 %add, i32* @nOut, align 4\l  %4 = load i8*, i8** %zResultCode.addr, align 8\l  %call2 = call i8* @strncpy(i8* getelementptr inbounds ([4 x i8], [4 x i8]*\l... @zReplyStatus, i64 0, i64 0), i8* %4, i64 3)\l  store i8 0, i8* getelementptr inbounds ([4 x i8], [4 x i8]* @zReplyStatus,\l... i64 0, i64 3), align 1\l  %5 = load i8, i8* getelementptr inbounds ([4 x i8], [4 x i8]* @zReplyStatus,\l... i64 0, i64 0), align 1\l  %conv = sext i8 %5 to i32\l  %cmp = icmp sge i32 %conv, 52\l  br i1 %cmp, label %\"0x56123912f610\", label %\"0x56123912f660\"\l|{<s0>T|<s1>F}}"];
+	Node0x56123912ea00:s0 -> Node0x56123912f610;
+	Node0x56123912ea00:s1 -> Node0x56123912f660;
+	Node0x56123912f610 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#eed0c070",label="{\"0x56123912f610\":                                 \l  store i32 1, i32* @closeConnection, align 4\l  br label %\"0x56123912f660\"\l}"];
+	Node0x56123912f610 -> Node0x56123912f660;
+	Node0x56123912f660 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x56123912f660\":                                 \l  %6 = load i32, i32* @closeConnection, align 4\l  %tobool6 = icmp ne i32 %6, 0\l  br i1 %tobool6, label %\"0x56123912f9d0 - Exit Point\", label %\"0x56123912fa20\l... - Exit Point\"\l|{<s0>T|<s1>F}}"];
+	Node0x56123912f660:s0 -> Node0x56123912f9d0;
+	Node0x56123912f660:s1 -> Node0x56123912fa20;
+	Node0x56123912f9d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f5c1a970",label="{\"0x56123912f9d0 - Exit Point\":                    \l  %call8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([20 x i8],\l... [20 x i8]* @.str.450, i64 0, i64 0))\l  %7 = load i32, i32* @nOut, align 4\l  %add9 = add nsw i32 %7, %call8\l  store i32 %add9, i32* @nOut, align 4\l  br label %\"0x56123912fe90\"\l}"];
+	Node0x56123912f9d0 -> Node0x56123912fe90;
+	Node0x56123912fa20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e0dbd870",label="{\"0x56123912fa20 - Exit Point\":                    \l  %call10 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([25 x i8],\l... [25 x i8]* @.str.451, i64 0, i64 0))\l  %8 = load i32, i32* @nOut, align 4\l  %add11 = add nsw i32 %8, %call10\l  store i32 %add11, i32* @nOut, align 4\l  br label %\"0x56123912fe90\"\l}"];
+	Node0x56123912fa20 -> Node0x56123912fe90;
+	Node0x56123912fe90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x56123912fe90\":                                 \l  %9 = load i64, i64* %now, align 8\l  %call13 = call i32 @DateTag(i8* getelementptr inbounds ([5 x i8], [5 x i8]*\l... @.str.452, i64 0, i64 0), i64 %9)\l  %10 = load i32, i32* @nOut, align 4\l  %add14 = add nsw i32 %10, %call13\l  store i32 %add14, i32* @nOut, align 4\l  store i32 1, i32* @statusSent, align 4\l  br label %\"0x56123912eb20\"\l}"];
+	Node0x56123912fe90 -> Node0x56123912eb20;
+	Node0x56123912eb20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x56123912eb20\":                                 \l  ret void\l}"];
 }

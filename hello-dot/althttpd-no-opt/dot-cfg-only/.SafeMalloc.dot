@@ -1,0 +1,9 @@
+digraph "CFG for 'SafeMalloc' function" {
+	label="CFG for 'SafeMalloc' function";
+
+	Node0x1c14e90 [shape=record,label="{entry|{<s0>T|<s1>F}}"];
+	Node0x1c14e90:s0 -> Node0x1c15350;
+	Node0x1c14e90:s1 -> Node0x1c15420;
+	Node0x1c15350 [shape=record,label="{if.then}"];
+	Node0x1c15420 [shape=record,label="{if.end}"];
+}

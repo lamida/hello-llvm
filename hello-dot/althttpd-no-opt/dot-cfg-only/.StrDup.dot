@@ -1,0 +1,12 @@
+digraph "CFG for 'StrDup' function" {
+	label="CFG for 'StrDup' function";
+
+	Node0x1bfaff0 [shape=record,label="{entry|{<s0>T|<s1>F}}"];
+	Node0x1bfaff0:s0 -> Node0x1bfb1e0;
+	Node0x1bfaff0:s1 -> Node0x1bfb250;
+	Node0x1bfb1e0 [shape=record,label="{if.then}"];
+	Node0x1bfb1e0 -> Node0x1bfb430;
+	Node0x1bfb250 [shape=record,label="{if.end}"];
+	Node0x1bfb250 -> Node0x1bfb430;
+	Node0x1bfb430 [shape=record,label="{return}"];
+}

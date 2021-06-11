@@ -1,5 +1,5 @@
 digraph "CFG for 'bsPutUInt32' function" {
 	label="CFG for 'bsPutUInt32' function";
 
-	Node0x1653390 [shape=record,label="{%2}"];
+	Node0x1793390 [shape=record,label="{%2}"];
 }

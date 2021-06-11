@@ -1,5 +1,5 @@
 digraph "CFG for 'BZ2_bsInitWrite' function" {
 	label="CFG for 'BZ2_bsInitWrite' function";
 
-	Node0x1648fb0 [shape=record,label="{%1}"];
+	Node0x1788fb0 [shape=record,label="{%1}"];
 }

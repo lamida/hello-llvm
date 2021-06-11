@@ -1,0 +1,5 @@
+digraph "CFG for 'DateTag' function" {
+	label="CFG for 'DateTag' function";
+
+	Node0x1c68150 [shape=record,label="{entry}"];
+}

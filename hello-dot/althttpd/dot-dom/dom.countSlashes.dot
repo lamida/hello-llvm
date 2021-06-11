@@ -1,15 +1,15 @@
 digraph "Dominator tree for 'countSlashes' function" {
 	label="Dominator tree for 'countSlashes' function";
 
-	Node0x1dfcc60 [shape=record,label="{%1:\l  %2 = alloca i8*, align 8\l  %3 = alloca i32, align 4\l  store i8* %0, i8** %2, align 8\l  store i32 0, i32* %3, align 4\l  br label %4\l}"];
-	Node0x1dfcc60 -> Node0x1e08030;
-	Node0x1e08030 [shape=record,label="{%4:\l4:                                                \l  %5 = load i8*, i8** %2, align 8\l  %6 = load i8, i8* %5, align 1\l  %7 = icmp ne i8 %6, 0\l  br i1 %7, label %8, label %18\l}"];
-	Node0x1e08030 -> Node0x1dc2580;
-	Node0x1e08030 -> Node0x1dda090;
-	Node0x1dc2580 [shape=record,label="{%8:\l8:                                                \l  %9 = load i8*, i8** %2, align 8\l  %10 = getelementptr inbounds i8, i8* %9, i32 1\l  store i8* %10, i8** %2, align 8\l  %11 = load i8, i8* %9, align 1\l  %12 = sext i8 %11 to i32\l  %13 = icmp eq i32 %12, 47\l  br i1 %13, label %14, label %17\l}"];
-	Node0x1dc2580 -> Node0x1e0e0d0;
-	Node0x1dc2580 -> Node0x1de8ba0;
-	Node0x1e0e0d0 [shape=record,label="{%14:\l14:                                               \l  %15 = load i32, i32* %3, align 4\l  %16 = add nsw i32 %15, 1\l  store i32 %16, i32* %3, align 4\l  br label %17\l}"];
-	Node0x1de8ba0 [shape=record,label="{%17:\l17:                                               \l  br label %4\l}"];
-	Node0x1dda090 [shape=record,label="{%18:\l18:                                               \l  %19 = load i32, i32* %3, align 4\l  ret i32 %19\l}"];
+	Node0x22a7a20 [shape=record,label="{%1:\l  %2 = alloca i8*, align 8\l  %3 = alloca i32, align 4\l  store i8* %0, i8** %2, align 8\l  store i32 0, i32* %3, align 4\l  br label %4\l}"];
+	Node0x22a7a20 -> Node0x224b8b0;
+	Node0x224b8b0 [shape=record,label="{%4:\l4:                                                \l  %5 = load i8*, i8** %2, align 8\l  %6 = load i8, i8* %5, align 1\l  %7 = icmp ne i8 %6, 0\l  br i1 %7, label %8, label %18\l}"];
+	Node0x224b8b0 -> Node0x225abc0;
+	Node0x224b8b0 -> Node0x2298090;
+	Node0x225abc0 [shape=record,label="{%8:\l8:                                                \l  %9 = load i8*, i8** %2, align 8\l  %10 = getelementptr inbounds i8, i8* %9, i32 1\l  store i8* %10, i8** %2, align 8\l  %11 = load i8, i8* %9, align 1\l  %12 = sext i8 %11 to i32\l  %13 = icmp eq i32 %12, 47\l  br i1 %13, label %14, label %17\l}"];
+	Node0x225abc0 -> Node0x22af1c0;
+	Node0x225abc0 -> Node0x2223bc0;
+	Node0x22af1c0 [shape=record,label="{%14:\l14:                                               \l  %15 = load i32, i32* %3, align 4\l  %16 = add nsw i32 %15, 1\l  store i32 %16, i32* %3, align 4\l  br label %17\l}"];
+	Node0x2223bc0 [shape=record,label="{%17:\l17:                                               \l  br label %4\l}"];
+	Node0x2298090 [shape=record,label="{%18:\l18:                                               \l  %19 = load i32, i32* %3, align 4\l  ret i32 %19\l}"];
 }

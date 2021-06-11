@@ -1,0 +1,5 @@
+digraph "CFG for 'CgiScriptWritable' function" {
+	label="CFG for 'CgiScriptWritable' function";
+
+	Node0x5649f801a630 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5649f801a630 - Exit Point\":\l  call void @StartResponse(i8* getelementptr inbounds ([28 x i8], [28 x i8]*\l... @.str.478, i64 0, i64 0))\l  %0 = load i8*, i8** @zRealScript, align 8\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([106 x i8],\l... [106 x i8]* @.str.479, i64 0, i64 0), i8* %0)\l  %2 = load i32, i32* @nOut, align 4\l  %3 = add nsw i32 %2, %1\l  store i32 %3, i32* @nOut, align 4\l  call void @MakeLogEntry(i32 0, i32 140)\l  call void @exit(i32 0)\l  unreachable\l}"];
+}

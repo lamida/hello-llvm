@@ -1,0 +1,17 @@
+digraph "CFG for 'countSlashes' function" {
+	label="CFG for 'countSlashes' function";
+
+	Node0xc4e4f0 [shape=record,label="{entry:\l  %z.addr = alloca i8*, align 8\l  %n = alloca i32, align 4\l  store i8* %z, i8** %z.addr, align 8\l  store i32 0, i32* %n, align 4\l  br label %while.cond\l}"];
+	Node0xc4e4f0 -> Node0xc4e6c0;
+	Node0xc4e6c0 [shape=record,label="{while.cond:                                       \l  %0 = load i8*, i8** %z.addr, align 8\l  %1 = load i8, i8* %0, align 1\l  %tobool = icmp ne i8 %1, 0\l  br i1 %tobool, label %while.body, label %while.end\l|{<s0>T|<s1>F}}"];
+	Node0xc4e6c0:s0 -> Node0xc4e910;
+	Node0xc4e6c0:s1 -> Node0xc4e9f0;
+	Node0xc4e910 [shape=record,label="{while.body:                                       \l  %2 = load i8*, i8** %z.addr, align 8\l  %incdec.ptr = getelementptr inbounds i8, i8* %2, i32 1\l  store i8* %incdec.ptr, i8** %z.addr, align 8\l  %3 = load i8, i8* %2, align 1\l  %conv = sext i8 %3 to i32\l  %cmp = icmp eq i32 %conv, 47\l  br i1 %cmp, label %if.then, label %if.end\l|{<s0>T|<s1>F}}"];
+	Node0xc4e910:s0 -> Node0xc4f990;
+	Node0xc4e910:s1 -> Node0xc4fa60;
+	Node0xc4f990 [shape=record,label="{if.then:                                          \l  %4 = load i32, i32* %n, align 4\l  %inc = add nsw i32 %4, 1\l  store i32 %inc, i32* %n, align 4\l  br label %if.end\l}"];
+	Node0xc4f990 -> Node0xc4fa60;
+	Node0xc4fa60 [shape=record,label="{if.end:                                           \l  br label %while.cond\l}"];
+	Node0xc4fa60 -> Node0xc4e6c0;
+	Node0xc4e9f0 [shape=record,label="{while.end:                                        \l  %5 = load i32, i32* %n, align 4\l  ret i32 %5\l}"];
+}

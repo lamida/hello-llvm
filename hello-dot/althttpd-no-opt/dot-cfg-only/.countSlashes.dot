@@ -1,0 +1,17 @@
+digraph "CFG for 'countSlashes' function" {
+	label="CFG for 'countSlashes' function";
+
+	Node0x1c454f0 [shape=record,label="{entry}"];
+	Node0x1c454f0 -> Node0x1c456c0;
+	Node0x1c456c0 [shape=record,label="{while.cond|{<s0>T|<s1>F}}"];
+	Node0x1c456c0:s0 -> Node0x1c45910;
+	Node0x1c456c0:s1 -> Node0x1c459f0;
+	Node0x1c45910 [shape=record,label="{while.body|{<s0>T|<s1>F}}"];
+	Node0x1c45910:s0 -> Node0x1c46990;
+	Node0x1c45910:s1 -> Node0x1c46a60;
+	Node0x1c46990 [shape=record,label="{if.then}"];
+	Node0x1c46990 -> Node0x1c46a60;
+	Node0x1c46a60 [shape=record,label="{if.end}"];
+	Node0x1c46a60 -> Node0x1c456c0;
+	Node0x1c459f0 [shape=record,label="{while.end}"];
+}

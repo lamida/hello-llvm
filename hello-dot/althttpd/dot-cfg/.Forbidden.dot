@@ -1,5 +1,5 @@
 digraph "CFG for 'Forbidden' function" {
 	label="CFG for 'Forbidden' function";
 
-	Node0x116a9c0 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  call void @StartResponse(i8* getelementptr inbounds ([14 x i8], [14 x i8]*\l... @.str.459, i64 0, i64 0))\l  %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([58 x i8], [58\l... x i8]* @.str.460, i64 0, i64 0))\l  %4 = load i32, i32* @nOut, align 4\l  %5 = add nsw i32 %4, %3\l  store i32 %5, i32* @nOut, align 4\l  store i32 1, i32* @closeConnection, align 4\l  %6 = load i32, i32* %2, align 4\l  call void @MakeLogEntry(i32 0, i32 %6)\l  call void @exit(i32 0) #8\l  unreachable\l}"];
+	Node0x16eb9c0 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  call void @StartResponse(i8* getelementptr inbounds ([14 x i8], [14 x i8]*\l... @.str.459, i64 0, i64 0))\l  %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([58 x i8], [58\l... x i8]* @.str.460, i64 0, i64 0))\l  %4 = load i32, i32* @nOut, align 4\l  %5 = add nsw i32 %4, %3\l  store i32 %5, i32* @nOut, align 4\l  store i32 1, i32* @closeConnection, align 4\l  %6 = load i32, i32* %2, align 4\l  call void @MakeLogEntry(i32 0, i32 %6)\l  call void @exit(i32 0) #8\l  unreachable\l}"];
 }

@@ -1,5 +1,5 @@
 digraph "CFG for 'BZ2_bzlibVersion' function" {
 	label="CFG for 'BZ2_bzlibVersion' function";
 
-	Node0x17951c0 [shape=record,label="{%0}"];
+	Node0x18d51c0 [shape=record,label="{%0}"];
 }

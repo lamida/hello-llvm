@@ -1,5 +1,5 @@
 digraph "CFG for 'DateTag' function" {
 	label="CFG for 'DateTag' function";
 
-	Node0x23866c0 [shape=record,label="{%2}"];
+	Node0x10b16c0 [shape=record,label="{%2}"];
 }

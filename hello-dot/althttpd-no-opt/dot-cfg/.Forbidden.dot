@@ -1,0 +1,5 @@
+digraph "CFG for 'Forbidden' function" {
+	label="CFG for 'Forbidden' function";
+
+	Node0xc17ba0 [shape=record,label="{entry:\l  %lineno.addr = alloca i32, align 4\l  store i32 %lineno, i32* %lineno.addr, align 4\l  call void @StartResponse(i8* getelementptr inbounds ([14 x i8], [14 x i8]*\l... @.str.459, i64 0, i64 0))\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([58 x i8],\l... [58 x i8]* @.str.460, i64 0, i64 0))\l  %0 = load i32, i32* @nOut, align 4\l  %add = add nsw i32 %0, %call\l  store i32 %add, i32* @nOut, align 4\l  store i32 1, i32* @closeConnection, align 4\l  %1 = load i32, i32* %lineno.addr, align 4\l  call void @MakeLogEntry(i32 0, i32 %1)\l  call void @exit(i32 0) #8\l  unreachable\l}"];
+}

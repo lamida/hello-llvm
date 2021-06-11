@@ -1,0 +1,39 @@
+digraph "CFG for 'xferBytes' function" {
+	label="CFG for 'xferBytes' function";
+
+	Node0x1c6e330 [shape=record,label="{entry}"];
+	Node0x1c6e330 -> Node0x1c6e840;
+	Node0x1c6e840 [shape=record,label="{while.cond|{<s0>T|<s1>F}}"];
+	Node0x1c6e840:s0 -> Node0x1c6ebd0;
+	Node0x1c6e840:s1 -> Node0x1c6ecb0;
+	Node0x1c6ebd0 [shape=record,label="{while.body|{<s0>T|<s1>F}}"];
+	Node0x1c6ebd0:s0 -> Node0x1c6f050;
+	Node0x1c6ebd0:s1 -> Node0x1c6f120;
+	Node0x1c6f050 [shape=record,label="{if.then}"];
+	Node0x1c6f050 -> Node0x1c6f120;
+	Node0x1c6f120 [shape=record,label="{if.end|{<s0>T|<s1>F}}"];
+	Node0x1c6f120:s0 -> Node0x1c6f730;
+	Node0x1c6f120:s1 -> Node0x1c6f7e0;
+	Node0x1c6f730 [shape=record,label="{if.then5}"];
+	Node0x1c6f730 -> Node0x1c6ecb0;
+	Node0x1c6f7e0 [shape=record,label="{if.end6}"];
+	Node0x1c6f7e0 -> Node0x1c6e840;
+	Node0x1c6ecb0 [shape=record,label="{while.end}"];
+	Node0x1c6ecb0 -> Node0x1c6fda0;
+	Node0x1c6fda0 [shape=record,label="{while.cond9|{<s0>T|<s1>F}}"];
+	Node0x1c6fda0:s0 -> Node0x1c6f430;
+	Node0x1c6fda0:s1 -> Node0x1c70030;
+	Node0x1c6f430 [shape=record,label="{while.body12|{<s0>T|<s1>F}}"];
+	Node0x1c6f430:s0 -> Node0x1c70390;
+	Node0x1c6f430:s1 -> Node0x1c70470;
+	Node0x1c70390 [shape=record,label="{if.then16}"];
+	Node0x1c70390 -> Node0x1c70470;
+	Node0x1c70470 [shape=record,label="{if.end17|{<s0>T|<s1>F}}"];
+	Node0x1c70470:s0 -> Node0x1c70a70;
+	Node0x1c70470:s1 -> Node0x1c70b20;
+	Node0x1c70a70 [shape=record,label="{if.then22}"];
+	Node0x1c70a70 -> Node0x1c70030;
+	Node0x1c70b20 [shape=record,label="{if.end23}"];
+	Node0x1c70b20 -> Node0x1c6fda0;
+	Node0x1c70030 [shape=record,label="{while.end31}"];
+}

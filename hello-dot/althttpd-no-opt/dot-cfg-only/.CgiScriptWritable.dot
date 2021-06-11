@@ -1,0 +1,5 @@
+digraph "CFG for 'CgiScriptWritable' function" {
+	label="CFG for 'CgiScriptWritable' function";
+
+	Node0x1c202a0 [shape=record,label="{entry}"];
+}

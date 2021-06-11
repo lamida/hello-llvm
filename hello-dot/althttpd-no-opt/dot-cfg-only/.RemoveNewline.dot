@@ -1,0 +1,27 @@
+digraph "CFG for 'RemoveNewline' function" {
+	label="CFG for 'RemoveNewline' function";
+
+	Node0x1c0d4b0 [shape=record,label="{entry|{<s0>T|<s1>F}}"];
+	Node0x1c0d4b0:s0 -> Node0x1c0d690;
+	Node0x1c0d4b0:s1 -> Node0x1c0d760;
+	Node0x1c0d690 [shape=record,label="{if.then}"];
+	Node0x1c0d690 -> Node0x1c0d830;
+	Node0x1c0d760 [shape=record,label="{if.end}"];
+	Node0x1c0d760 -> Node0x1c0d900;
+	Node0x1c0d900 [shape=record,label="{while.cond|{<s0>T|<s1>F}}"];
+	Node0x1c0d900:s0 -> Node0x1c0db60;
+	Node0x1c0d900:s1 -> Node0x1c0dc40;
+	Node0x1c0db60 [shape=record,label="{land.lhs.true|{<s0>T|<s1>F}}"];
+	Node0x1c0db60:s0 -> Node0x1c0d440;
+	Node0x1c0db60:s1 -> Node0x1c0dc40;
+	Node0x1c0d440 [shape=record,label="{land.rhs}"];
+	Node0x1c0d440 -> Node0x1c0dc40;
+	Node0x1c0dc40 [shape=record,label="{land.end|{<s0>T|<s1>F}}"];
+	Node0x1c0dc40:s0 -> Node0x1c0e400;
+	Node0x1c0dc40:s1 -> Node0x1c0e480;
+	Node0x1c0e400 [shape=record,label="{while.body}"];
+	Node0x1c0e400 -> Node0x1c0d900;
+	Node0x1c0e480 [shape=record,label="{while.end}"];
+	Node0x1c0e480 -> Node0x1c0d830;
+	Node0x1c0d830 [shape=record,label="{return}"];
+}

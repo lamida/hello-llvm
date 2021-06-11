@@ -1,0 +1,10 @@
+digraph "CFG for 'Malfunction' function" {
+	label="CFG for 'Malfunction' function";
+
+	Node0x1be4120 [shape=record,label="{entry|{<s0>T|<s1>F}}"];
+	Node0x1be4120:s0 -> Node0x1be4ce0;
+	Node0x1be4120:s1 -> Node0x1be4db0;
+	Node0x1be4ce0 [shape=record,label="{if.then}"];
+	Node0x1be4ce0 -> Node0x1be4db0;
+	Node0x1be4db0 [shape=record,label="{if.end}"];
+}

@@ -1,5 +1,5 @@
 digraph "CFG for 'BZ2_bzWriteClose' function" {
 	label="CFG for 'BZ2_bzWriteClose' function";
 
-	Node0x1838bf0 [shape=record,label="{%5}"];
+	Node0x1978bf0 [shape=record,label="{%5}"];
 }

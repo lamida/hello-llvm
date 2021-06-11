@@ -1,0 +1,20 @@
+digraph "CFG for 'TestParseRfc822Date' function" {
+	label="CFG for 'TestParseRfc822Date' function";
+
+	Node0x557a63c179e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e5705870",label="{\"0x557a63c179e0\":\l  %0 = alloca i64, align 8\l  %1 = alloca %struct.tm*, align 8\l  %2 = alloca i64, align 8\l  %3 = alloca i64, align 8\l  store i64 0, i64* %2, align 8\l  br label %\"0x557a63c17bc0\"\l}"];
+	Node0x557a63c179e0 -> Node0x557a63c17bc0;
+	Node0x557a63c17bc0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x557a63c17bc0\":                                 \l  %4 = load i64, i64* %2, align 8\l  %5 = icmp slt i64 %4, 2147483647\l  br i1 %5, label %\"0x557a63c17dd0 - Exit Point\", label %\"0x557a63c17e20\"\l|{<s0>T|<s1>F}}"];
+	Node0x557a63c17bc0:s0 -> Node0x557a63c17dd0;
+	Node0x557a63c17bc0:s1 -> Node0x557a63c17e20;
+	Node0x557a63c17dd0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x557a63c17dd0 - Exit Point\":                    \l  %6 = load i64, i64* %2, align 8\l  %7 = bitcast i64* %0 to i8*\l  call void @llvm.lifetime.start.p0i8(i64 8, i8* %7)\l  %8 = bitcast %struct.tm** %1 to i8*\l  call void @llvm.lifetime.start.p0i8(i64 8, i8* %8)\l  store i64 %6, i64* %0, align 8\l  %9 = call %struct.tm* @gmtime(i64* %0)\l  store %struct.tm* %9, %struct.tm** %1, align 8\l  %10 = load %struct.tm*, %struct.tm** %1, align 8\l  %11 = call i64 @strftime(i8* getelementptr inbounds ([100 x i8], [100 x i8]*\l... @Rfc822Date.zDate, i64 0, i64 0), i64 100, i8* getelementptr inbounds ([25 x\l... i8], [25 x i8]* @.str.445, i64 0, i64 0), %struct.tm* %10)\l  %12 = bitcast i64* %0 to i8*\l  call void @llvm.lifetime.end.p0i8(i64 8, i8* %12)\l  %13 = bitcast %struct.tm** %1 to i8*\l  call void @llvm.lifetime.end.p0i8(i64 8, i8* %13)\l  %14 = call i64 @ParseRfc822Date(i8* getelementptr inbounds ([100 x i8], [100\l... x i8]* @Rfc822Date.zDate, i64 0, i64 0))\l  store i64 %14, i64* %3, align 8\l  %15 = load i64, i64* %2, align 8\l  %16 = load i64, i64* %3, align 8\l  %17 = icmp eq i64 %15, %16\l  br i1 %17, label %\"0x557a63c184d0\", label %\"0x557a63c18520 - Exit Point\"\l|{<s0>T|<s1>F}}"];
+	Node0x557a63c17dd0:s0 -> Node0x557a63c184d0;
+	Node0x557a63c17dd0:s1 -> Node0x557a63c18520;
+	Node0x557a63c184d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x557a63c184d0\":                                 \l  br label %\"0x557a63c18620\"\l}"];
+	Node0x557a63c184d0 -> Node0x557a63c18620;
+	Node0x557a63c18520 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#5977e370",label="{\"0x557a63c18520 - Exit Point\":                    \l  call void @__assert_fail(i8* getelementptr inbounds ([7 x i8], [7 x i8]*\l... @.str.13, i64 0, i64 0), i8* getelementptr inbounds ([11 x i8], [11 x i8]*\l... @.str.14, i64 0, i64 0), i32 670, i8* getelementptr inbounds ([31 x i8], [31\l... x i8]* @__PRETTY_FUNCTION__.TestParseRfc822Date, i64 0, i64 0))\l  unreachable\l}"];
+	Node0x557a63c18620 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x557a63c18620\":                                 \l  br label %\"0x557a63beb610\"\l}"];
+	Node0x557a63c18620 -> Node0x557a63beb610;
+	Node0x557a63beb610 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x557a63beb610\":                                 \l  %18 = load i64, i64* %2, align 8\l  %19 = add nsw i64 %18, 127\l  store i64 %19, i64* %2, align 8\l  br label %\"0x557a63c17bc0\"\l}"];
+	Node0x557a63beb610 -> Node0x557a63c17bc0;
+	Node0x557a63c17e20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e5705870",label="{\"0x557a63c17e20\":                                 \l  ret void\l}"];
+}

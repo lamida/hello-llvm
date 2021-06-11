@@ -1,5 +1,5 @@
 digraph "CFG for 'bsPutUChar' function" {
 	label="CFG for 'bsPutUChar' function";
 
-	Node0x1652ec0 [shape=record,label="{%2}"];
+	Node0x1792ec0 [shape=record,label="{%2}"];
 }

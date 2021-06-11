@@ -1,23 +1,23 @@
 digraph "Dominator tree for 'RemoveNewline' function" {
 	label="Dominator tree for 'RemoveNewline' function";
 
-	Node0x1b9d610 [shape=record,label="{%1}"];
-	Node0x1b9d610 -> Node0x1b90480;
-	Node0x1b9d610 -> Node0x1b4ccb0;
-	Node0x1b9d610 -> Node0x1b04780;
-	Node0x1b90480 [shape=record,label="{%5}"];
-	Node0x1b4ccb0 [shape=record,label="{%29}"];
-	Node0x1b04780 [shape=record,label="{%6}"];
-	Node0x1b04780 -> Node0x1b2f980;
-	Node0x1b2f980 [shape=record,label="{%7}"];
-	Node0x1b2f980 -> Node0x1af8ca0;
-	Node0x1b2f980 -> Node0x1b253b0;
-	Node0x1af8ca0 [shape=record,label="{%12}"];
-	Node0x1af8ca0 -> Node0x1b54560;
-	Node0x1b54560 [shape=record,label="{%17}"];
-	Node0x1b253b0 [shape=record,label="{%22}"];
-	Node0x1b253b0 -> Node0x1b66f40;
-	Node0x1b253b0 -> Node0x1b20710;
-	Node0x1b66f40 [shape=record,label="{%24}"];
-	Node0x1b20710 [shape=record,label="{%27}"];
+	Node0x257f590 [shape=record,label="{%1}"];
+	Node0x257f590 -> Node0x25637d0;
+	Node0x257f590 -> Node0x25bcf40;
+	Node0x257f590 -> Node0x255b0d0;
+	Node0x25637d0 [shape=record,label="{%5}"];
+	Node0x25bcf40 [shape=record,label="{%29}"];
+	Node0x255b0d0 [shape=record,label="{%6}"];
+	Node0x255b0d0 -> Node0x25f0e70;
+	Node0x25f0e70 [shape=record,label="{%7}"];
+	Node0x25f0e70 -> Node0x2570d30;
+	Node0x25f0e70 -> Node0x25ac540;
+	Node0x2570d30 [shape=record,label="{%12}"];
+	Node0x2570d30 -> Node0x25c16e0;
+	Node0x25c16e0 [shape=record,label="{%17}"];
+	Node0x25ac540 [shape=record,label="{%22}"];
+	Node0x25ac540 -> Node0x25ac230;
+	Node0x25ac540 -> Node0x256d0e0;
+	Node0x25ac230 [shape=record,label="{%24}"];
+	Node0x256d0e0 [shape=record,label="{%27}"];
 }

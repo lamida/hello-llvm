@@ -1,63 +1,63 @@
 digraph "Scop Graph for 'RemoveNewline' function" {
 	label="Scop Graph for 'RemoveNewline' function";
 
-	Node0x18bc5e0 [shape=record,label="{%1:\l  %2 = alloca i8*, align 8\l  store i8* %0, i8** %2, align 8\l  %3 = load i8*, i8** %2, align 8\l  %4 = icmp eq i8* %3, null\l  br i1 %4, label %5, label %6\l}"];
-	Node0x18bc5e0 -> Node0x18dff20;
-	Node0x18bc5e0 -> Node0x1897100;
-	Node0x18dff20 [shape=record,label="{%5:\l5:                                                \l  br label %29\l}"];
-	Node0x18dff20 -> Node0x18c56b0;
-	Node0x18c56b0 [shape=record,label="{%29:\l29:                                               \l  ret void\l}"];
-	Node0x1897100 [shape=record,label="{%6:\l6:                                                \l  br label %7\l}"];
-	Node0x1897100 -> Node0x189a960;
-	Node0x189a960 [shape=record,label="{%7:\l7:                                                \l  %8 = load i8*, i8** %2, align 8\l  %9 = load i8, i8* %8, align 1\l  %10 = sext i8 %9 to i32\l  %11 = icmp ne i32 %10, 0\l  br i1 %11, label %12, label %22\l}"];
-	Node0x189a960 -> Node0x186bab0;
-	Node0x189a960 -> Node0x18c9e60;
-	Node0x186bab0 [shape=record,label="{%12:\l12:                                               \l  %13 = load i8*, i8** %2, align 8\l  %14 = load i8, i8* %13, align 1\l  %15 = sext i8 %14 to i32\l  %16 = icmp ne i32 %15, 10\l  br i1 %16, label %17, label %22\l}"];
-	Node0x186bab0 -> Node0x18ef910;
-	Node0x186bab0 -> Node0x18c9e60;
-	Node0x18ef910 [shape=record,label="{%17:\l17:                                               \l  %18 = load i8*, i8** %2, align 8\l  %19 = load i8, i8* %18, align 1\l  %20 = sext i8 %19 to i32\l  %21 = icmp ne i32 %20, 13\l  br label %22\l}"];
-	Node0x18ef910 -> Node0x18c9e60;
-	Node0x18c9e60 [shape=record,label="{%22:\l22:                                               \l  %23 = phi i1 [ false, %12 ], [ false, %7 ], [ %21, %17 ]\l  br i1 %23, label %24, label %27\l}"];
-	Node0x18c9e60 -> Node0x18ce3f0;
-	Node0x18c9e60 -> Node0x189c6f0;
-	Node0x18ce3f0 [shape=record,label="{%24:\l24:                                               \l  %25 = load i8*, i8** %2, align 8\l  %26 = getelementptr inbounds i8, i8* %25, i32 1\l  store i8* %26, i8** %2, align 8\l  br label %7\l}"];
-	Node0x18ce3f0 -> Node0x189a960[constraint=false];
-	Node0x189c6f0 [shape=record,label="{%27:\l27:                                               \l  %28 = load i8*, i8** %2, align 8\l  store i8 0, i8* %28, align 1\l  br label %29\l}"];
-	Node0x189c6f0 -> Node0x18c56b0;
+	Node0x1b189e0 [shape=record,label="{%1:\l  %2 = alloca i8*, align 8\l  store i8* %0, i8** %2, align 8\l  %3 = load i8*, i8** %2, align 8\l  %4 = icmp eq i8* %3, null\l  br i1 %4, label %5, label %6\l}"];
+	Node0x1b189e0 -> Node0x1b8cbc0;
+	Node0x1b189e0 -> Node0x1b83c00;
+	Node0x1b8cbc0 [shape=record,label="{%5:\l5:                                                \l  br label %29\l}"];
+	Node0x1b8cbc0 -> Node0x1b23da0;
+	Node0x1b23da0 [shape=record,label="{%29:\l29:                                               \l  ret void\l}"];
+	Node0x1b83c00 [shape=record,label="{%6:\l6:                                                \l  br label %7\l}"];
+	Node0x1b83c00 -> Node0x1b79a00;
+	Node0x1b79a00 [shape=record,label="{%7:\l7:                                                \l  %8 = load i8*, i8** %2, align 8\l  %9 = load i8, i8* %8, align 1\l  %10 = sext i8 %9 to i32\l  %11 = icmp ne i32 %10, 0\l  br i1 %11, label %12, label %22\l}"];
+	Node0x1b79a00 -> Node0x1b9be30;
+	Node0x1b79a00 -> Node0x1b88840;
+	Node0x1b9be30 [shape=record,label="{%12:\l12:                                               \l  %13 = load i8*, i8** %2, align 8\l  %14 = load i8, i8* %13, align 1\l  %15 = sext i8 %14 to i32\l  %16 = icmp ne i32 %15, 10\l  br i1 %16, label %17, label %22\l}"];
+	Node0x1b9be30 -> Node0x1b99b10;
+	Node0x1b9be30 -> Node0x1b88840;
+	Node0x1b99b10 [shape=record,label="{%17:\l17:                                               \l  %18 = load i8*, i8** %2, align 8\l  %19 = load i8, i8* %18, align 1\l  %20 = sext i8 %19 to i32\l  %21 = icmp ne i32 %20, 13\l  br label %22\l}"];
+	Node0x1b99b10 -> Node0x1b88840;
+	Node0x1b88840 [shape=record,label="{%22:\l22:                                               \l  %23 = phi i1 [ false, %12 ], [ false, %7 ], [ %21, %17 ]\l  br i1 %23, label %24, label %27\l}"];
+	Node0x1b88840 -> Node0x1b838e0;
+	Node0x1b88840 -> Node0x1a882e0;
+	Node0x1b838e0 [shape=record,label="{%24:\l24:                                               \l  %25 = load i8*, i8** %2, align 8\l  %26 = getelementptr inbounds i8, i8* %25, i32 1\l  store i8* %26, i8** %2, align 8\l  br label %7\l}"];
+	Node0x1b838e0 -> Node0x1b79a00[constraint=false];
+	Node0x1a882e0 [shape=record,label="{%27:\l27:                                               \l  %28 = load i8*, i8** %2, align 8\l  store i8 0, i8* %28, align 1\l  br label %29\l}"];
+	Node0x1a882e0 -> Node0x1b23da0;
 	colorscheme = "paired12"
-        subgraph cluster_0x1919080 {
+        subgraph cluster_0x1be1a10 {
           label = "";
           style = solid;
           color = 1
-          subgraph cluster_0x196a330 {
+          subgraph cluster_0x1badb40 {
             label = "Region containing entry block of function is invalid!";
             style = solid;
             color = 6
-            subgraph cluster_0x1969e60 {
+            subgraph cluster_0x1bbf1a0 {
               label = "Condition in BB '' neither constant nor an icmp instruction";
               style = solid;
               color = 5
-              subgraph cluster_0x1967ef0 {
+              subgraph cluster_0x1bbf120 {
                 label = "Region can not profitably be optimized!";
                 style = solid;
                 color = 7
-                subgraph cluster_0x1967e70 {
+                subgraph cluster_0x1c00e50 {
                   label = "Region can not profitably be optimized!";
                   style = solid;
                   color = 9
-                  Node0x186bab0;
-                  Node0x18ef910;
+                  Node0x1b9be30;
+                  Node0x1b99b10;
                 }
-                Node0x189a960;
+                Node0x1b79a00;
               }
-              Node0x18c9e60;
-              Node0x18ce3f0;
+              Node0x1b88840;
+              Node0x1b838e0;
             }
-            Node0x18bc5e0;
-            Node0x18dff20;
-            Node0x1897100;
-            Node0x189c6f0;
+            Node0x1b189e0;
+            Node0x1b8cbc0;
+            Node0x1b83c00;
+            Node0x1a882e0;
           }
-          Node0x18c56b0;
+          Node0x1b23da0;
         }
 }

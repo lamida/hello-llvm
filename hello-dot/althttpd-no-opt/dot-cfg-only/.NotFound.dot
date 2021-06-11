@@ -1,0 +1,5 @@
+digraph "CFG for 'NotFound' function" {
+	label="CFG for 'NotFound' function";
+
+	Node0x1c0cab0 [shape=record,label="{entry}"];
+}

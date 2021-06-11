@@ -1,0 +1,17 @@
+digraph "CFG for 'Timeout' function" {
+	label="CFG for 'Timeout' function";
+
+	Node0x1bf8f00 [shape=record,label="{entry|{<s0>T|<s1>F}}"];
+	Node0x1bf8f00:s0 -> Node0x1bf9170;
+	Node0x1bf8f00:s1 -> Node0x1bf9250;
+	Node0x1bf9250 [shape=record,label="{if.then|{<s0>T|<s1>F}}"];
+	Node0x1bf9250:s0 -> Node0x1bf9440;
+	Node0x1bf9250:s1 -> Node0x1bf9520;
+	Node0x1bf9440 [shape=record,label="{land.lhs.true|{<s0>T|<s1>F}}"];
+	Node0x1bf9440:s0 -> Node0x1bf8e00;
+	Node0x1bf9440:s1 -> Node0x1bf9520;
+	Node0x1bf8e00 [shape=record,label="{if.then3}"];
+	Node0x1bf8e00 -> Node0x1bf9520;
+	Node0x1bf9520 [shape=record,label="{if.end}"];
+	Node0x1bf9170 [shape=record,label="{if.end12}"];
+}

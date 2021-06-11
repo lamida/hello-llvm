@@ -1,0 +1,5 @@
+digraph "CFG for 'Rfc822Date' function" {
+	label="CFG for 'Rfc822Date' function";
+
+	Node0x1b8e280 [shape=record,label="{entry}"];
+}

@@ -1,0 +1,37 @@
+digraph "CFG for 'sanitizeString' function" {
+	label="CFG for 'sanitizeString' function";
+
+	Node0xc1b1b0 [shape=record,label="{entry:\l  %z.addr = alloca i8*, align 8\l  %nChange = alloca i32, align 4\l  %i = alloca i32, align 4\l  store i8* %z, i8** %z.addr, align 8\l  store i32 0, i32* %nChange, align 4\l  br label %while.cond\l}"];
+	Node0xc1b1b0 -> Node0xc1b400;
+	Node0xc1b400 [shape=record,label="{while.cond:                                       \l  %0 = load i8*, i8** %z.addr, align 8\l  %1 = load i8, i8* %0, align 1\l  %tobool = icmp ne i8 %1, 0\l  br i1 %tobool, label %while.body, label %while.end\l|{<s0>T|<s1>F}}"];
+	Node0xc1b400:s0 -> Node0xc1b620;
+	Node0xc1b400:s1 -> Node0xc1b700;
+	Node0xc1b620 [shape=record,label="{while.body:                                       \l  %2 = load i8*, i8** %z.addr, align 8\l  %3 = load i8, i8* %2, align 1\l  %idxprom = zext i8 %3 to i64\l  %arrayidx = getelementptr inbounds [256 x i8], [256 x i8]* bitcast (\<\{ [127\l... x i8], [129 x i8] \}\>* @allowedInName to [256 x i8]*), i64 0, i64 %idxprom\l  %4 = load i8, i8* %arrayidx, align 1\l  %tobool1 = icmp ne i8 %4, 0\l  br i1 %tobool1, label %if.end21, label %if.then\l|{<s0>T|<s1>F}}"];
+	Node0xc1b620:s0 -> Node0xc1bb20;
+	Node0xc1b620:s1 -> Node0xc1b110;
+	Node0xc1b110 [shape=record,label="{if.then:                                          \l  %5 = load i8*, i8** %z.addr, align 8\l  %6 = load i8, i8* %5, align 1\l  %conv = sext i8 %6 to i32\l  %cmp = icmp eq i32 %conv, 37\l  br i1 %cmp, label %land.lhs.true, label %if.end\l|{<s0>T|<s1>F}}"];
+	Node0xc1b110:s0 -> Node0xc1bfa0;
+	Node0xc1b110:s1 -> Node0xc1c080;
+	Node0xc1bfa0 [shape=record,label="{land.lhs.true:                                    \l  %7 = load i8*, i8** %z.addr, align 8\l  %arrayidx3 = getelementptr inbounds i8, i8* %7, i64 1\l  %8 = load i8, i8* %arrayidx3, align 1\l  %conv4 = sext i8 %8 to i32\l  %cmp5 = icmp ne i32 %conv4, 0\l  br i1 %cmp5, label %land.lhs.true7, label %if.end\l|{<s0>T|<s1>F}}"];
+	Node0xc1bfa0:s0 -> Node0xc1ba40;
+	Node0xc1bfa0:s1 -> Node0xc1c080;
+	Node0xc1ba40 [shape=record,label="{land.lhs.true7:                                   \l  %9 = load i8*, i8** %z.addr, align 8\l  %arrayidx8 = getelementptr inbounds i8, i8* %9, i64 2\l  %10 = load i8, i8* %arrayidx8, align 1\l  %conv9 = sext i8 %10 to i32\l  %cmp10 = icmp ne i32 %conv9, 0\l  br i1 %cmp10, label %if.then12, label %if.end\l|{<s0>T|<s1>F}}"];
+	Node0xc1ba40:s0 -> Node0xc1bb70;
+	Node0xc1ba40:s1 -> Node0xc1c080;
+	Node0xc1bb70 [shape=record,label="{if.then12:                                        \l  store i32 3, i32* %i, align 4\l  br label %for.cond\l}"];
+	Node0xc1bb70 -> Node0xc1cb70;
+	Node0xc1cb70 [shape=record,label="{for.cond:                                         \l  %11 = load i8*, i8** %z.addr, align 8\l  %12 = load i32, i32* %i, align 4\l  %idxprom13 = sext i32 %12 to i64\l  %arrayidx14 = getelementptr inbounds i8, i8* %11, i64 %idxprom13\l  %13 = load i8, i8* %arrayidx14, align 1\l  %14 = load i8*, i8** %z.addr, align 8\l  %15 = load i32, i32* %i, align 4\l  %sub = sub nsw i32 %15, 2\l  %idxprom15 = sext i32 %sub to i64\l  %arrayidx16 = getelementptr inbounds i8, i8* %14, i64 %idxprom15\l  store i8 %13, i8* %arrayidx16, align 1\l  %conv17 = sext i8 %13 to i32\l  %cmp18 = icmp ne i32 %conv17, 0\l  br i1 %cmp18, label %for.body, label %for.end\l|{<s0>T|<s1>F}}"];
+	Node0xc1cb70:s0 -> Node0xc1d240;
+	Node0xc1cb70:s1 -> Node0xc1d320;
+	Node0xc1d240 [shape=record,label="{for.body:                                         \l  br label %for.inc\l}"];
+	Node0xc1d240 -> Node0xc1d480;
+	Node0xc1d480 [shape=record,label="{for.inc:                                          \l  %16 = load i32, i32* %i, align 4\l  %inc = add nsw i32 %16, 1\l  store i32 %inc, i32* %i, align 4\l  br label %for.cond\l}"];
+	Node0xc1d480 -> Node0xc1cb70;
+	Node0xc1d320 [shape=record,label="{for.end:                                          \l  br label %if.end\l}"];
+	Node0xc1d320 -> Node0xc1c080;
+	Node0xc1c080 [shape=record,label="{if.end:                                           \l  %17 = load i8*, i8** %z.addr, align 8\l  store i8 95, i8* %17, align 1\l  %18 = load i32, i32* %nChange, align 4\l  %inc20 = add nsw i32 %18, 1\l  store i32 %inc20, i32* %nChange, align 4\l  br label %if.end21\l}"];
+	Node0xc1c080 -> Node0xc1bb20;
+	Node0xc1bb20 [shape=record,label="{if.end21:                                         \l  %19 = load i8*, i8** %z.addr, align 8\l  %incdec.ptr = getelementptr inbounds i8, i8* %19, i32 1\l  store i8* %incdec.ptr, i8** %z.addr, align 8\l  br label %while.cond\l}"];
+	Node0xc1bb20 -> Node0xc1b400;
+	Node0xc1b700 [shape=record,label="{while.end:                                        \l  %20 = load i32, i32* %nChange, align 4\l  ret i32 %20\l}"];
+}

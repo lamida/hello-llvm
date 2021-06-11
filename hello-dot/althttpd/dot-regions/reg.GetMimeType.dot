@@ -1,107 +1,107 @@
 digraph "Region Graph for 'GetMimeType' function" {
 	label="Region Graph for 'GetMimeType' function";
 
-	Node0x1a74390 [shape=record,label="{%2:\l  %3 = alloca i8*, align 8\l  %4 = alloca i8*, align 8\l  %5 = alloca i32, align 4\l  %6 = alloca i8*, align 8\l  %7 = alloca i32, align 4\l  %8 = alloca i32, align 4\l  %9 = alloca i32, align 4\l  %10 = alloca i32, align 4\l  %11 = alloca [20 x i8], align 16\l  %12 = alloca i32, align 4\l  store i8* %0, i8** %4, align 8\l  store i32 %1, i32* %5, align 4\l  %13 = load i32, i32* %5, align 4\l  %14 = sub nsw i32 %13, 1\l  store i32 %14, i32* %7, align 4\l  br label %15\l}"];
-	Node0x1a74390 -> Node0x1a75e60;
-	Node0x1a75e60 [shape=record,label="{%15:\l15:                                               \l  %16 = load i32, i32* %7, align 4\l  %17 = icmp sgt i32 %16, 0\l  br i1 %17, label %18, label %26\l}"];
-	Node0x1a75e60 -> Node0x1a77740;
-	Node0x1a75e60 -> Node0x1a771c0;
-	Node0x1a77740 [shape=record,label="{%18:\l18:                                               \l  %19 = load i8*, i8** %4, align 8\l  %20 = load i32, i32* %7, align 4\l  %21 = sext i32 %20 to i64\l  %22 = getelementptr inbounds i8, i8* %19, i64 %21\l  %23 = load i8, i8* %22, align 1\l  %24 = sext i8 %23 to i32\l  %25 = icmp ne i32 %24, 46\l  br label %26\l}"];
-	Node0x1a77740 -> Node0x1a771c0;
-	Node0x1a771c0 [shape=record,label="{%26:\l26:                                               \l  %27 = phi i1 [ false, %15 ], [ %25, %18 ]\l  br i1 %27, label %28, label %32\l}"];
-	Node0x1a771c0 -> Node0x1a76b40;
-	Node0x1a771c0 -> Node0x1a76a10;
-	Node0x1a76b40 [shape=record,label="{%28:\l28:                                               \l  br label %29\l}"];
-	Node0x1a76b40 -> Node0x1a768e0;
-	Node0x1a768e0 [shape=record,label="{%29:\l29:                                               \l  %30 = load i32, i32* %7, align 4\l  %31 = add nsw i32 %30, -1\l  store i32 %31, i32* %7, align 4\l  br label %15\l}"];
-	Node0x1a768e0 -> Node0x1a75e60[constraint=false];
-	Node0x1a76a10 [shape=record,label="{%32:\l32:                                               \l  %33 = load i8*, i8** %4, align 8\l  %34 = load i32, i32* %7, align 4\l  %35 = add nsw i32 %34, 1\l  %36 = sext i32 %35 to i64\l  %37 = getelementptr inbounds i8, i8* %33, i64 %36\l  store i8* %37, i8** %6, align 8\l  %38 = load i32, i32* %5, align 4\l  %39 = load i32, i32* %7, align 4\l  %40 = sub nsw i32 %38, %39\l  store i32 %40, i32* %10, align 4\l  %41 = load i32, i32* %10, align 4\l  %42 = icmp slt i32 %41, 19\l  br i1 %42, label %43, label %103\l}"];
-	Node0x1a76a10 -> Node0x1a764e0;
-	Node0x1a76a10 -> Node0x1a76260;
-	Node0x1a764e0 [shape=record,label="{%43:\l43:                                               \l  %44 = getelementptr inbounds [20 x i8], [20 x i8]* %11, i64 0, i64 0\l  %45 = load i8*, i8** %6, align 8\l  %46 = call i8* @strcpy(i8* %44, i8* %45) #7\l  store i32 0, i32* %7, align 4\l  br label %47\l}"];
-	Node0x1a764e0 -> Node0x1a77b50;
-	Node0x1a77b50 [shape=record,label="{%47:\l47:                                               \l  %48 = load i32, i32* %7, align 4\l  %49 = sext i32 %48 to i64\l  %50 = getelementptr inbounds [20 x i8], [20 x i8]* %11, i64 0, i64 %49\l  %51 = load i8, i8* %50, align 1\l  %52 = icmp ne i8 %51, 0\l  br i1 %52, label %53, label %67\l}"];
-	Node0x1a77b50 -> Node0x1a7b470;
-	Node0x1a77b50 -> Node0x1a7a670;
-	Node0x1a7b470 [shape=record,label="{%53:\l53:                                               \l  %54 = load i32, i32* %7, align 4\l  %55 = sext i32 %54 to i64\l  %56 = getelementptr inbounds [20 x i8], [20 x i8]* %11, i64 0, i64 %55\l  %57 = load i8, i8* %56, align 1\l  %58 = sext i8 %57 to i32\l  %59 = call i32 @tolower(i32 %58) #8\l  %60 = trunc i32 %59 to i8\l  %61 = load i32, i32* %7, align 4\l  %62 = sext i32 %61 to i64\l  %63 = getelementptr inbounds [20 x i8], [20 x i8]* %11, i64 0, i64 %62\l  store i8 %60, i8* %63, align 1\l  br label %64\l}"];
-	Node0x1a7b470 -> Node0x1a7a3f0;
-	Node0x1a7a3f0 [shape=record,label="{%64:\l64:                                               \l  %65 = load i32, i32* %7, align 4\l  %66 = add nsw i32 %65, 1\l  store i32 %66, i32* %7, align 4\l  br label %47\l}"];
-	Node0x1a7a3f0 -> Node0x1a77b50[constraint=false];
-	Node0x1a7a670 [shape=record,label="{%67:\l67:                                               \l  store i32 0, i32* %8, align 4\l  store i32 191, i32* %9, align 4\l  br label %68\l}"];
-	Node0x1a7a670 -> Node0x1a79e80;
-	Node0x1a79e80 [shape=record,label="{%68:\l68:                                               \l  %69 = load i32, i32* %8, align 4\l  %70 = load i32, i32* %9, align 4\l  %71 = icmp sle i32 %69, %70\l  br i1 %71, label %72, label %102\l}"];
-	Node0x1a79e80 -> Node0x1a79870;
-	Node0x1a79e80 -> Node0x1a753e0;
-	Node0x1a79870 [shape=record,label="{%72:\l72:                                               \l  %73 = load i32, i32* %8, align 4\l  %74 = load i32, i32* %9, align 4\l  %75 = add nsw i32 %73, %74\l  %76 = sdiv i32 %75, 2\l  store i32 %76, i32* %7, align 4\l  %77 = getelementptr inbounds [20 x i8], [20 x i8]* %11, i64 0, i64 0\l  %78 = load i32, i32* %7, align 4\l  %79 = sext i32 %78 to i64\l  %80 = getelementptr inbounds [191 x %struct.anon], [191 x %struct.anon]*\l... @GetMimeType.aMime, i64 0, i64 %79\l  %81 = getelementptr inbounds %struct.anon, %struct.anon* %80, i32 0, i32 0\l  %82 = load i8*, i8** %81, align 8\l  %83 = call i32 @strcmp(i8* %77, i8* %82) #8\l  store i32 %83, i32* %12, align 4\l  %84 = load i32, i32* %12, align 4\l  %85 = icmp eq i32 %84, 0\l  br i1 %85, label %86, label %92\l}"];
-	Node0x1a79870 -> Node0x1a77e90;
-	Node0x1a79870 -> Node0x1a7cb30;
-	Node0x1a77e90 [shape=record,label="{%86:\l86:                                               \l  %87 = load i32, i32* %7, align 4\l  %88 = sext i32 %87 to i64\l  %89 = getelementptr inbounds [191 x %struct.anon], [191 x %struct.anon]*\l... @GetMimeType.aMime, i64 0, i64 %88\l  %90 = getelementptr inbounds %struct.anon, %struct.anon* %89, i32 0, i32 2\l  %91 = load i8*, i8** %90, align 8\l  store i8* %91, i8** %3, align 8\l  br label %104\l}"];
-	Node0x1a77e90 -> Node0x1a69360;
-	Node0x1a69360 [shape=record,label="{%104:\l104:                                              \l  %105 = load i8*, i8** %3, align 8\l  ret i8* %105\l}"];
-	Node0x1a7cb30 [shape=record,label="{%92:\l92:                                               \l  %93 = load i32, i32* %12, align 4\l  %94 = icmp slt i32 %93, 0\l  br i1 %94, label %95, label %98\l}"];
-	Node0x1a7cb30 -> Node0x1a92f70;
-	Node0x1a7cb30 -> Node0x1a8f310;
-	Node0x1a92f70 [shape=record,label="{%95:\l95:                                               \l  %96 = load i32, i32* %7, align 4\l  %97 = sub nsw i32 %96, 1\l  store i32 %97, i32* %9, align 4\l  br label %101\l}"];
-	Node0x1a92f70 -> Node0x1a43a60;
-	Node0x1a43a60 [shape=record,label="{%101:\l101:                                              \l  br label %68\l}"];
-	Node0x1a43a60 -> Node0x1a79e80;
-	Node0x1a8f310 [shape=record,label="{%98:\l98:                                               \l  %99 = load i32, i32* %7, align 4\l  %100 = add nsw i32 %99, 1\l  store i32 %100, i32* %8, align 4\l  br label %101\l}"];
-	Node0x1a8f310 -> Node0x1a43a60;
-	Node0x1a753e0 [shape=record,label="{%102:\l102:                                              \l  br label %103\l}"];
-	Node0x1a753e0 -> Node0x1a76260;
-	Node0x1a76260 [shape=record,label="{%103:\l103:                                              \l  store i8* getelementptr inbounds ([25 x i8], [25 x i8]* @.str.38, i64 0, i64\l... 0), i8** %3, align 8\l  br label %104\l}"];
-	Node0x1a76260 -> Node0x1a69360;
+	Node0xc4f390 [shape=record,label="{%2:\l  %3 = alloca i8*, align 8\l  %4 = alloca i8*, align 8\l  %5 = alloca i32, align 4\l  %6 = alloca i8*, align 8\l  %7 = alloca i32, align 4\l  %8 = alloca i32, align 4\l  %9 = alloca i32, align 4\l  %10 = alloca i32, align 4\l  %11 = alloca [20 x i8], align 16\l  %12 = alloca i32, align 4\l  store i8* %0, i8** %4, align 8\l  store i32 %1, i32* %5, align 4\l  %13 = load i32, i32* %5, align 4\l  %14 = sub nsw i32 %13, 1\l  store i32 %14, i32* %7, align 4\l  br label %15\l}"];
+	Node0xc4f390 -> Node0xc50e60;
+	Node0xc50e60 [shape=record,label="{%15:\l15:                                               \l  %16 = load i32, i32* %7, align 4\l  %17 = icmp sgt i32 %16, 0\l  br i1 %17, label %18, label %26\l}"];
+	Node0xc50e60 -> Node0xc52740;
+	Node0xc50e60 -> Node0xc521c0;
+	Node0xc52740 [shape=record,label="{%18:\l18:                                               \l  %19 = load i8*, i8** %4, align 8\l  %20 = load i32, i32* %7, align 4\l  %21 = sext i32 %20 to i64\l  %22 = getelementptr inbounds i8, i8* %19, i64 %21\l  %23 = load i8, i8* %22, align 1\l  %24 = sext i8 %23 to i32\l  %25 = icmp ne i32 %24, 46\l  br label %26\l}"];
+	Node0xc52740 -> Node0xc521c0;
+	Node0xc521c0 [shape=record,label="{%26:\l26:                                               \l  %27 = phi i1 [ false, %15 ], [ %25, %18 ]\l  br i1 %27, label %28, label %32\l}"];
+	Node0xc521c0 -> Node0xc51b40;
+	Node0xc521c0 -> Node0xc51a10;
+	Node0xc51b40 [shape=record,label="{%28:\l28:                                               \l  br label %29\l}"];
+	Node0xc51b40 -> Node0xc518e0;
+	Node0xc518e0 [shape=record,label="{%29:\l29:                                               \l  %30 = load i32, i32* %7, align 4\l  %31 = add nsw i32 %30, -1\l  store i32 %31, i32* %7, align 4\l  br label %15\l}"];
+	Node0xc518e0 -> Node0xc50e60[constraint=false];
+	Node0xc51a10 [shape=record,label="{%32:\l32:                                               \l  %33 = load i8*, i8** %4, align 8\l  %34 = load i32, i32* %7, align 4\l  %35 = add nsw i32 %34, 1\l  %36 = sext i32 %35 to i64\l  %37 = getelementptr inbounds i8, i8* %33, i64 %36\l  store i8* %37, i8** %6, align 8\l  %38 = load i32, i32* %5, align 4\l  %39 = load i32, i32* %7, align 4\l  %40 = sub nsw i32 %38, %39\l  store i32 %40, i32* %10, align 4\l  %41 = load i32, i32* %10, align 4\l  %42 = icmp slt i32 %41, 19\l  br i1 %42, label %43, label %103\l}"];
+	Node0xc51a10 -> Node0xc514e0;
+	Node0xc51a10 -> Node0xc51260;
+	Node0xc514e0 [shape=record,label="{%43:\l43:                                               \l  %44 = getelementptr inbounds [20 x i8], [20 x i8]* %11, i64 0, i64 0\l  %45 = load i8*, i8** %6, align 8\l  %46 = call i8* @strcpy(i8* %44, i8* %45) #7\l  store i32 0, i32* %7, align 4\l  br label %47\l}"];
+	Node0xc514e0 -> Node0xc52b50;
+	Node0xc52b50 [shape=record,label="{%47:\l47:                                               \l  %48 = load i32, i32* %7, align 4\l  %49 = sext i32 %48 to i64\l  %50 = getelementptr inbounds [20 x i8], [20 x i8]* %11, i64 0, i64 %49\l  %51 = load i8, i8* %50, align 1\l  %52 = icmp ne i8 %51, 0\l  br i1 %52, label %53, label %67\l}"];
+	Node0xc52b50 -> Node0xc56470;
+	Node0xc52b50 -> Node0xc55670;
+	Node0xc56470 [shape=record,label="{%53:\l53:                                               \l  %54 = load i32, i32* %7, align 4\l  %55 = sext i32 %54 to i64\l  %56 = getelementptr inbounds [20 x i8], [20 x i8]* %11, i64 0, i64 %55\l  %57 = load i8, i8* %56, align 1\l  %58 = sext i8 %57 to i32\l  %59 = call i32 @tolower(i32 %58) #8\l  %60 = trunc i32 %59 to i8\l  %61 = load i32, i32* %7, align 4\l  %62 = sext i32 %61 to i64\l  %63 = getelementptr inbounds [20 x i8], [20 x i8]* %11, i64 0, i64 %62\l  store i8 %60, i8* %63, align 1\l  br label %64\l}"];
+	Node0xc56470 -> Node0xc553f0;
+	Node0xc553f0 [shape=record,label="{%64:\l64:                                               \l  %65 = load i32, i32* %7, align 4\l  %66 = add nsw i32 %65, 1\l  store i32 %66, i32* %7, align 4\l  br label %47\l}"];
+	Node0xc553f0 -> Node0xc52b50[constraint=false];
+	Node0xc55670 [shape=record,label="{%67:\l67:                                               \l  store i32 0, i32* %8, align 4\l  store i32 191, i32* %9, align 4\l  br label %68\l}"];
+	Node0xc55670 -> Node0xc54e80;
+	Node0xc54e80 [shape=record,label="{%68:\l68:                                               \l  %69 = load i32, i32* %8, align 4\l  %70 = load i32, i32* %9, align 4\l  %71 = icmp sle i32 %69, %70\l  br i1 %71, label %72, label %102\l}"];
+	Node0xc54e80 -> Node0xc54870;
+	Node0xc54e80 -> Node0xc503e0;
+	Node0xc54870 [shape=record,label="{%72:\l72:                                               \l  %73 = load i32, i32* %8, align 4\l  %74 = load i32, i32* %9, align 4\l  %75 = add nsw i32 %73, %74\l  %76 = sdiv i32 %75, 2\l  store i32 %76, i32* %7, align 4\l  %77 = getelementptr inbounds [20 x i8], [20 x i8]* %11, i64 0, i64 0\l  %78 = load i32, i32* %7, align 4\l  %79 = sext i32 %78 to i64\l  %80 = getelementptr inbounds [191 x %struct.anon], [191 x %struct.anon]*\l... @GetMimeType.aMime, i64 0, i64 %79\l  %81 = getelementptr inbounds %struct.anon, %struct.anon* %80, i32 0, i32 0\l  %82 = load i8*, i8** %81, align 8\l  %83 = call i32 @strcmp(i8* %77, i8* %82) #8\l  store i32 %83, i32* %12, align 4\l  %84 = load i32, i32* %12, align 4\l  %85 = icmp eq i32 %84, 0\l  br i1 %85, label %86, label %92\l}"];
+	Node0xc54870 -> Node0xc52e90;
+	Node0xc54870 -> Node0xc57b30;
+	Node0xc52e90 [shape=record,label="{%86:\l86:                                               \l  %87 = load i32, i32* %7, align 4\l  %88 = sext i32 %87 to i64\l  %89 = getelementptr inbounds [191 x %struct.anon], [191 x %struct.anon]*\l... @GetMimeType.aMime, i64 0, i64 %88\l  %90 = getelementptr inbounds %struct.anon, %struct.anon* %89, i32 0, i32 2\l  %91 = load i8*, i8** %90, align 8\l  store i8* %91, i8** %3, align 8\l  br label %104\l}"];
+	Node0xc52e90 -> Node0xbd1600;
+	Node0xbd1600 [shape=record,label="{%104:\l104:                                              \l  %105 = load i8*, i8** %3, align 8\l  ret i8* %105\l}"];
+	Node0xc57b30 [shape=record,label="{%92:\l92:                                               \l  %93 = load i32, i32* %12, align 4\l  %94 = icmp slt i32 %93, 0\l  br i1 %94, label %95, label %98\l}"];
+	Node0xc57b30 -> Node0xc711f0;
+	Node0xc57b30 -> Node0xbd19e0;
+	Node0xc711f0 [shape=record,label="{%95:\l95:                                               \l  %96 = load i32, i32* %7, align 4\l  %97 = sub nsw i32 %96, 1\l  store i32 %97, i32* %9, align 4\l  br label %101\l}"];
+	Node0xc711f0 -> Node0xbb9d00;
+	Node0xbb9d00 [shape=record,label="{%101:\l101:                                              \l  br label %68\l}"];
+	Node0xbb9d00 -> Node0xc54e80;
+	Node0xbd19e0 [shape=record,label="{%98:\l98:                                               \l  %99 = load i32, i32* %7, align 4\l  %100 = add nsw i32 %99, 1\l  store i32 %100, i32* %8, align 4\l  br label %101\l}"];
+	Node0xbd19e0 -> Node0xbb9d00;
+	Node0xc503e0 [shape=record,label="{%102:\l102:                                              \l  br label %103\l}"];
+	Node0xc503e0 -> Node0xc51260;
+	Node0xc51260 [shape=record,label="{%103:\l103:                                              \l  store i8* getelementptr inbounds ([25 x i8], [25 x i8]* @.str.38, i64 0, i64\l... 0), i8** %3, align 8\l  br label %104\l}"];
+	Node0xc51260 -> Node0xbd1600;
 	colorscheme = "paired12"
-        subgraph cluster_0x19f3c40 {
+        subgraph cluster_0xbcec40 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0x1aa38a0 {
+          subgraph cluster_0xc72b80 {
             label = "";
             style = filled;
             color = 3
-            subgraph cluster_0x1aa69e0 {
+            subgraph cluster_0xb47640 {
               label = "";
               style = filled;
               color = 5
-              Node0x1a75e60;
-              Node0x1a77740;
+              Node0xc50e60;
+              Node0xc52740;
             }
-            Node0x1a771c0;
-            Node0x1a76b40;
-            Node0x1a768e0;
+            Node0xc521c0;
+            Node0xc51b40;
+            Node0xc518e0;
           }
-          subgraph cluster_0x1aa0510 {
+          subgraph cluster_0xc7b510 {
             label = "";
             style = filled;
             color = 3
-            subgraph cluster_0x1a47760 {
+            subgraph cluster_0xc22760 {
               label = "";
               style = filled;
               color = 5
-              Node0x1a77b50;
-              Node0x1a7b470;
-              Node0x1a7a3f0;
+              Node0xc52b50;
+              Node0xc56470;
+              Node0xc553f0;
             }
-            subgraph cluster_0x1aa3760 {
+            subgraph cluster_0xc7e760 {
               label = "";
               style = filled;
               color = 5
-              Node0x1a7cb30;
-              Node0x1a92f70;
-              Node0x1a8f310;
+              Node0xc57b30;
+              Node0xc711f0;
+              Node0xbd19e0;
             }
-            Node0x1a76a10;
-            Node0x1a764e0;
-            Node0x1a7a670;
-            Node0x1a79e80;
-            Node0x1a79870;
-            Node0x1a77e90;
-            Node0x1a43a60;
-            Node0x1a753e0;
-            Node0x1a76260;
+            Node0xc51a10;
+            Node0xc514e0;
+            Node0xc55670;
+            Node0xc54e80;
+            Node0xc54870;
+            Node0xc52e90;
+            Node0xbb9d00;
+            Node0xc503e0;
+            Node0xc51260;
           }
-          Node0x1a74390;
-          Node0x1a69360;
+          Node0xc4f390;
+          Node0xbd1600;
         }
 }

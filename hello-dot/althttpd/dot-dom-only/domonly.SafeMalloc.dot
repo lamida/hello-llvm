@@ -1,9 +1,9 @@
 digraph "Dominator tree for 'SafeMalloc' function" {
 	label="Dominator tree for 'SafeMalloc' function";
 
-	Node0x1b15840 [shape=record,label="{%1}"];
-	Node0x1b15840 -> Node0x1b91c10;
-	Node0x1b15840 -> Node0x1b9cea0;
-	Node0x1b91c10 [shape=record,label="{%8}"];
-	Node0x1b9cea0 [shape=record,label="{%10}"];
+	Node0x25a43d0 [shape=record,label="{%1}"];
+	Node0x25a43d0 -> Node0x25e5e70;
+	Node0x25a43d0 -> Node0x25a6230;
+	Node0x25e5e70 [shape=record,label="{%8}"];
+	Node0x25a6230 [shape=record,label="{%10}"];
 }

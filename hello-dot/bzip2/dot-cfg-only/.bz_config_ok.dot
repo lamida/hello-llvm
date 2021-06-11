@@ -1,5 +1,5 @@
 digraph "CFG for 'bz_config_ok' function" {
 	label="CFG for 'bz_config_ok' function";
 
-	Node0x179a4f0 [shape=record,label="{%0}"];
+	Node0x18da4f0 [shape=record,label="{%0}"];
 }

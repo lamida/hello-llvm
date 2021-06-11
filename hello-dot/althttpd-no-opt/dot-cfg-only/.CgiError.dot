@@ -1,0 +1,5 @@
+digraph "CFG for 'CgiError' function" {
+	label="CFG for 'CgiError' function";
+
+	Node0x1c22880 [shape=record,label="{entry}"];
+}

@@ -1,0 +1,20 @@
+digraph "CFG for 'TestParseRfc822Date' function" {
+	label="CFG for 'TestParseRfc822Date' function";
+
+	Node0xb94aa0 [shape=record,label="{entry:\l  %t1 = alloca i64, align 8\l  %t2 = alloca i64, align 8\l  store i64 0, i64* %t1, align 8\l  br label %for.cond\l}"];
+	Node0xb94aa0 -> Node0xb94cf0;
+	Node0xb94cf0 [shape=record,label="{for.cond:                                         \l  %0 = load i64, i64* %t1, align 8\l  %cmp = icmp slt i64 %0, 2147483647\l  br i1 %cmp, label %for.body, label %for.end\l|{<s0>T|<s1>F}}"];
+	Node0xb94cf0:s0 -> Node0xb94ee0;
+	Node0xb94cf0:s1 -> Node0xb94fc0;
+	Node0xb94ee0 [shape=record,label="{for.body:                                         \l  %1 = load i64, i64* %t1, align 8\l  %call = call i8* @Rfc822Date(i64 %1)\l  %call1 = call i64 @ParseRfc822Date(i8* %call)\l  store i64 %call1, i64* %t2, align 8\l  %2 = load i64, i64* %t1, align 8\l  %3 = load i64, i64* %t2, align 8\l  %cmp2 = icmp eq i64 %2, %3\l  br i1 %cmp2, label %if.then, label %if.else\l|{<s0>T|<s1>F}}"];
+	Node0xb94ee0:s0 -> Node0xb95630;
+	Node0xb94ee0:s1 -> Node0xb95700;
+	Node0xb95630 [shape=record,label="{if.then:                                          \l  br label %if.end\l}"];
+	Node0xb95630 -> Node0xb95860;
+	Node0xb95700 [shape=record,label="{if.else:                                          \l  call void @__assert_fail(i8* getelementptr inbounds ([7 x i8], [7 x i8]*\l... @.str.13, i64 0, i64 0), i8* getelementptr inbounds ([11 x i8], [11 x i8]*\l... @.str.14, i64 0, i64 0), i32 670, i8* getelementptr inbounds ([31 x i8], [31\l... x i8]* @__PRETTY_FUNCTION__.TestParseRfc822Date, i64 0, i64 0)) #8\l  unreachable\l}"];
+	Node0xb95860 [shape=record,label="{if.end:                                           \l  br label %for.inc\l}"];
+	Node0xb95860 -> Node0xb96e60;
+	Node0xb96e60 [shape=record,label="{for.inc:                                          \l  %4 = load i64, i64* %t1, align 8\l  %add = add nsw i64 %4, 127\l  store i64 %add, i64* %t1, align 8\l  br label %for.cond\l}"];
+	Node0xb96e60 -> Node0xb94cf0;
+	Node0xb94fc0 [shape=record,label="{for.end:                                          \l  ret void\l}"];
+}

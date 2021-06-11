@@ -1,0 +1,19 @@
+digraph "Post dominator tree for 'switchDeterministic' function" {
+	label="Post dominator tree for 'switchDeterministic' function";
+
+	Node0x136e200 [shape=record,label="{Post dominance root node}"];
+	Node0x136e200 -> Node0x136e1c0;
+	Node0x136e1c0 [shape=record,label="{sw.epilog}"];
+	Node0x136e1c0 -> Node0x136e280;
+	Node0x136e1c0 -> Node0x13788d0;
+	Node0x136e1c0 -> Node0x136e180;
+	Node0x136e1c0 -> Node0x1378910;
+	Node0x136e1c0 -> Node0x13789e0;
+	Node0x136e1c0 -> Node0x1378a20;
+	Node0x136e280 [shape=record,label="{sw.bb}"];
+	Node0x13788d0 [shape=record,label="{entry}"];
+	Node0x136e180 [shape=record,label="{sw.bb1}"];
+	Node0x1378910 [shape=record,label="{sw.bb2}"];
+	Node0x13789e0 [shape=record,label="{sw.bb3}"];
+	Node0x1378a20 [shape=record,label="{sw.default}"];
+}

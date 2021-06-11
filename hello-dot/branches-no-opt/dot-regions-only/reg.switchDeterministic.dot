@@ -1,0 +1,39 @@
+digraph "Region Graph for 'switchDeterministic' function" {
+	label="Region Graph for 'switchDeterministic' function";
+
+	Node0xf7d910 [shape=record,label="{entry}"];
+	Node0xf7d910 -> Node0xf7d4c0;
+	Node0xf7d910 -> Node0xf7d070;
+	Node0xf7d910 -> Node0xf7cc20;
+	Node0xf7d910 -> Node0xf7c7d0;
+	Node0xf7d910 -> Node0xf7f180;
+	Node0xf7d4c0 [shape=record,label="{sw.default}"];
+	Node0xf7d4c0 -> Node0xf80e90;
+	Node0xf80e90 [shape=record,label="{sw.epilog}"];
+	Node0xf7d070 [shape=record,label="{sw.bb}"];
+	Node0xf7d070 -> Node0xf80e90;
+	Node0xf7cc20 [shape=record,label="{sw.bb1}"];
+	Node0xf7cc20 -> Node0xf80e90;
+	Node0xf7c7d0 [shape=record,label="{sw.bb2}"];
+	Node0xf7c7d0 -> Node0xf80e90;
+	Node0xf7f180 [shape=record,label="{sw.bb3}"];
+	Node0xf7f180 -> Node0xf80e90;
+	colorscheme = "paired12"
+        subgraph cluster_0xf84150 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xf52aa0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0xf7d910;
+            Node0xf7d4c0;
+            Node0xf7d070;
+            Node0xf7cc20;
+            Node0xf7c7d0;
+            Node0xf7f180;
+          }
+          Node0xf80e90;
+        }
+}

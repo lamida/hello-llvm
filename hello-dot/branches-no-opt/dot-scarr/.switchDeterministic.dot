@@ -1,0 +1,21 @@
+digraph "CFG for 'switchDeterministic' function" {
+	label="CFG for 'switchDeterministic' function";
+
+	Node0x561170339240 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x561170339240\":\l  %r = alloca i32, align 4\l  store i32 4, i32* %r, align 4\l  %0 = load i32, i32* %r, align 4\l  switch i32 %0, label %\"0x561170339520 - Exit Point\" [\l    i32 1, label %\"0x5611703395a0\"\l    i32 2, label %\"0x561170339640\"\l    i32 3, label %\"0x5611703396e0\"\l    i32 4, label %\"0x5611703397b0\"\l  ]\l|{<s0>def|<s1>1|<s2>2|<s3>3|<s4>4}}"];
+	Node0x561170339240:s0 -> Node0x561170339520;
+	Node0x561170339240:s1 -> Node0x5611703395a0;
+	Node0x561170339240:s2 -> Node0x561170339640;
+	Node0x561170339240:s3 -> Node0x5611703396e0;
+	Node0x561170339240:s4 -> Node0x5611703397b0;
+	Node0x5611703395a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{\"0x5611703395a0\":                                 \l  call void @g1()\l  br label %\"0x561170339af0\"\l}"];
+	Node0x5611703395a0 -> Node0x561170339af0;
+	Node0x561170339640 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{\"0x561170339640\":                                 \l  call void @g2()\l  br label %\"0x561170339af0\"\l}"];
+	Node0x561170339640 -> Node0x561170339af0;
+	Node0x5611703396e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{\"0x5611703396e0\":                                 \l  call void @g3()\l  br label %\"0x561170339af0\"\l}"];
+	Node0x5611703396e0 -> Node0x561170339af0;
+	Node0x5611703397b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{\"0x5611703397b0\":                                 \l  call void @g4()\l  br label %\"0x561170339af0\"\l}"];
+	Node0x5611703397b0 -> Node0x561170339af0;
+	Node0x561170339520 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{\"0x561170339520 - Exit Point\":                    \l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8],\l... [13 x i8]* @.str.11, i64 0, i64 0))\l  br label %\"0x561170339af0\"\l}"];
+	Node0x561170339520 -> Node0x561170339af0;
+	Node0x561170339af0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x561170339af0\":                                 \l  ret void\l}"];
+}

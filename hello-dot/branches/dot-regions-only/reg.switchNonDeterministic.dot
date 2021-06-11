@@ -1,0 +1,39 @@
+digraph "Region Graph for 'switchNonDeterministic' function" {
+	label="Region Graph for 'switchNonDeterministic' function";
+
+	Node0x201cfb0 [shape=record,label="{%0}"];
+	Node0x201cfb0 -> Node0x201dfa0;
+	Node0x201cfb0 -> Node0x201dc70;
+	Node0x201cfb0 -> Node0x201d940;
+	Node0x201cfb0 -> Node0x201d610;
+	Node0x201cfb0 -> Node0x201eab0;
+	Node0x201dfa0 [shape=record,label="{%13}"];
+	Node0x201dfa0 -> Node0x2020270;
+	Node0x2020270 [shape=record,label="{%15}"];
+	Node0x201dc70 [shape=record,label="{%9}"];
+	Node0x201dc70 -> Node0x2020270;
+	Node0x201d940 [shape=record,label="{%10}"];
+	Node0x201d940 -> Node0x2020270;
+	Node0x201d610 [shape=record,label="{%11}"];
+	Node0x201d610 -> Node0x2020270;
+	Node0x201eab0 [shape=record,label="{%12}"];
+	Node0x201eab0 -> Node0x2020270;
+	colorscheme = "paired12"
+        subgraph cluster_0x2023140 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x1ff3f60 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x201cfb0;
+            Node0x201dfa0;
+            Node0x201dc70;
+            Node0x201d940;
+            Node0x201d610;
+            Node0x201eab0;
+          }
+          Node0x2020270;
+        }
+}

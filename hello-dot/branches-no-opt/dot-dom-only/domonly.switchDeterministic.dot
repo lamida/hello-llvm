@@ -1,0 +1,17 @@
+digraph "Dominator tree for 'switchDeterministic' function" {
+	label="Dominator tree for 'switchDeterministic' function";
+
+	Node0x260f200 [shape=record,label="{entry}"];
+	Node0x260f200 -> Node0x260f1c0;
+	Node0x260f200 -> Node0x260f180;
+	Node0x260f200 -> Node0x260f2e0;
+	Node0x260f200 -> Node0x260f320;
+	Node0x260f200 -> Node0x260f360;
+	Node0x260f200 -> Node0x261a2f0;
+	Node0x260f1c0 [shape=record,label="{sw.default}"];
+	Node0x260f180 [shape=record,label="{sw.epilog}"];
+	Node0x260f2e0 [shape=record,label="{sw.bb}"];
+	Node0x260f320 [shape=record,label="{sw.bb1}"];
+	Node0x260f360 [shape=record,label="{sw.bb2}"];
+	Node0x261a2f0 [shape=record,label="{sw.bb3}"];
+}

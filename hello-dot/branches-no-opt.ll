@@ -104,7 +104,7 @@ entry:
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define dso_local void @g() #0 {
+define dso_local void @switchDeterministic() #0 {
 entry:
   %r = alloca i32, align 4
   store i32 4, i32* %r, align 4
@@ -139,6 +139,59 @@ sw.default:                                       ; preds = %entry
 sw.epilog:                                        ; preds = %sw.default, %sw.bb3, %sw.bb2, %sw.bb1, %sw.bb
   ret void
 }
+
+; Function Attrs: noinline nounwind uwtable
+define dso_local void @switchNonDeterministic() #0 {
+entry:
+  %t = alloca i64, align 8
+  %r = alloca i32, align 4
+  %call = call i64 @time(i64* %t) #3
+  %conv = trunc i64 %call to i32
+  call void @srand(i32 %conv) #3
+  %call1 = call i32 @rand() #3
+  %rem = srem i32 %call1, 4
+  %add = add nsw i32 1, %rem
+  store i32 %add, i32* %r, align 4
+  %0 = load i32, i32* %r, align 4
+  switch i32 %0, label %sw.default [
+    i32 1, label %sw.bb
+    i32 2, label %sw.bb2
+    i32 3, label %sw.bb3
+    i32 4, label %sw.bb4
+  ]
+
+sw.bb:                                            ; preds = %entry
+  call void @g1()
+  br label %sw.epilog
+
+sw.bb2:                                           ; preds = %entry
+  call void @g2()
+  br label %sw.epilog
+
+sw.bb3:                                           ; preds = %entry
+  call void @g3()
+  br label %sw.epilog
+
+sw.bb4:                                           ; preds = %entry
+  call void @g4()
+  br label %sw.epilog
+
+sw.default:                                       ; preds = %entry
+  %call5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.11, i64 0, i64 0))
+  br label %sw.epilog
+
+sw.epilog:                                        ; preds = %sw.default, %sw.bb4, %sw.bb3, %sw.bb2, %sw.bb
+  ret void
+}
+
+; Function Attrs: nounwind
+declare dso_local void @srand(i32) #2
+
+; Function Attrs: nounwind
+declare dso_local i64 @time(i64*) #2
+
+; Function Attrs: nounwind
+declare dso_local i32 @rand() #2
 
 ; Function Attrs: noinline nounwind uwtable
 define dso_local i32 @main() #0 {
@@ -179,13 +232,16 @@ while.body:                                       ; preds = %while.cond
   br label %while.cond
 
 while.end:                                        ; preds = %while.cond
-  call void @g()
+  call void @switchDeterministic()
+  call void @switchNonDeterministic()
   %3 = load i32, i32* %retval, align 4
   ret i32 %3
 }
 
 ;attributes #0 = { noinline nounwind uwtable "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "min-legal-vector-width"="0" "no-infs-fp-math"="false" "no-jump-tables"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
 ;attributes #1 = { "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
+;attributes #2 = { nounwind "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
+;attributes #3 = { nounwind }
 
 !llvm.module.flags = !{!0}
 !llvm.ident = !{!1}

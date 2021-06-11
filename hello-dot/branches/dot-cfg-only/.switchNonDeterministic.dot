@@ -1,0 +1,21 @@
+digraph "CFG for 'switchNonDeterministic' function" {
+	label="CFG for 'switchNonDeterministic' function";
+
+	Node0xb14210 [shape=record,label="{%0|{<s0>def|<s1>1|<s2>2|<s3>3|<s4>4}}"];
+	Node0xb14210:s0 -> Node0xb145b0;
+	Node0xb14210:s1 -> Node0xb14c70;
+	Node0xb14210:s2 -> Node0xb14cc0;
+	Node0xb14210:s3 -> Node0xb14d10;
+	Node0xb14210:s4 -> Node0xb14d60;
+	Node0xb14c70 [shape=record,label="{%9}"];
+	Node0xb14c70 -> Node0xb15000;
+	Node0xb14cc0 [shape=record,label="{%10}"];
+	Node0xb14cc0 -> Node0xb15000;
+	Node0xb14d10 [shape=record,label="{%11}"];
+	Node0xb14d10 -> Node0xb15000;
+	Node0xb14d60 [shape=record,label="{%12}"];
+	Node0xb14d60 -> Node0xb15000;
+	Node0xb145b0 [shape=record,label="{%13}"];
+	Node0xb145b0 -> Node0xb15000;
+	Node0xb15000 [shape=record,label="{%15}"];
+}

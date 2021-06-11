@@ -1,0 +1,118 @@
+digraph "Scop Graph for 'SendFile' function" {
+	label="Scop Graph for 'SendFile' function";
+
+	Node0x1a39fd0 [shape=record,label="{entry}"];
+	Node0x1a39fd0 -> Node0x1a9f350;
+	Node0x1a39fd0 -> Node0x1a11480;
+	Node0x1a9f350 [shape=record,label="{if.then}"];
+	Node0x1a9f350 -> Node0x1a11480;
+	Node0x1a11480 [shape=record,label="{if.end}"];
+	Node0x1a11480 -> Node0x1a92c80;
+	Node0x1a11480 -> Node0x1ab8790;
+	Node0x1a92c80 [shape=record,label="{if.then17}"];
+	Node0x1a92c80 -> Node0x1a843a0;
+	Node0x1a843a0 [shape=record,label="{return}"];
+	Node0x1ab8790 [shape=record,label="{lor.lhs.false}"];
+	Node0x1ab8790 -> Node0x1a063c0;
+	Node0x1ab8790 -> Node0x1ab90b0;
+	Node0x1a063c0 [shape=record,label="{land.lhs.true}"];
+	Node0x1a063c0 -> Node0x1aba5c0;
+	Node0x1a063c0 -> Node0x1ab90b0;
+	Node0x1aba5c0 [shape=record,label="{land.lhs.true12}"];
+	Node0x1aba5c0 -> Node0x1a92c80;
+	Node0x1aba5c0 -> Node0x1ab90b0;
+	Node0x1ab90b0 [shape=record,label="{if.end29}"];
+	Node0x1ab90b0 -> Node0x1a0ad00;
+	Node0x1ab90b0 -> Node0x1aba250;
+	Node0x1a0ad00 [shape=record,label="{if.then33}"];
+	Node0x1a0ad00 -> Node0x1aba250;
+	Node0x1aba250 [shape=record,label="{if.end34}"];
+	Node0x1aba250 -> Node0x1a497f0;
+	Node0x1aba250 -> Node0x1ac0000;
+	Node0x1a497f0 [shape=record,label="{land.lhs.true37}"];
+	Node0x1a497f0 -> Node0x1a0a1b0;
+	Node0x1a497f0 -> Node0x1ac0000;
+	Node0x1a0a1b0 [shape=record,label="{if.then42}"];
+	Node0x1a0a1b0 -> Node0x1ab9af0;
+	Node0x1a0a1b0 -> Node0x1a4d120;
+	Node0x1ab9af0 [shape=record,label="{if.then47}"];
+	Node0x1ab9af0 -> Node0x1a4d120;
+	Node0x1a4d120 [shape=record,label="{if.end50}"];
+	Node0x1a4d120 -> Node0x1a963c0;
+	Node0x1a963c0 [shape=record,label="{if.end59}"];
+	Node0x1a963c0 -> Node0x1a17660;
+	Node0x1a963c0 -> Node0x1acd020;
+	Node0x1a17660 [shape=record,label="{if.then79}"];
+	Node0x1a17660 -> Node0x1a843a0;
+	Node0x1acd020 [shape=record,label="{if.end82}"];
+	Node0x1acd020 -> Node0x1ab5530;
+	Node0x1acd020 -> Node0x1a37280;
+	Node0x1ab5530 [shape=record,label="{if.then84}"];
+	Node0x1ab5530 -> Node0x1a37280;
+	Node0x1a37280 [shape=record,label="{if.end89}"];
+	Node0x1a37280 -> Node0x1a843a0;
+	Node0x1ac0000 [shape=record,label="{if.else}"];
+	Node0x1ac0000 -> Node0x1a963c0;
+	colorscheme = "paired12"
+        subgraph cluster_0x1b18cc0 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1aca500 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0x1a39fd0;
+            Node0x1a9f350;
+          }
+          subgraph cluster_0x1b18e40 {
+            label = "";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1b18dc0 {
+              label = "";
+              style = solid;
+              color = 5
+              Node0x1ab90b0;
+              Node0x1a0ad00;
+            }
+            subgraph cluster_0x1b18d40 {
+              label = "";
+              style = solid;
+              color = 5
+              subgraph cluster_0x1b18030 {
+                label = "";
+                style = solid;
+                color = 7
+                Node0x1a0a1b0;
+                Node0x1ab9af0;
+              }
+              Node0x1aba250;
+              Node0x1a497f0;
+              Node0x1a4d120;
+              Node0x1ac0000;
+            }
+            subgraph cluster_0x1ab5360 {
+              label = "";
+              style = solid;
+              color = 5
+              subgraph cluster_0x1ab4ed0 {
+                label = "";
+                style = solid;
+                color = 7
+                Node0x1acd020;
+                Node0x1ab5530;
+              }
+              Node0x1a963c0;
+              Node0x1a17660;
+              Node0x1a37280;
+            }
+            Node0x1a11480;
+            Node0x1a92c80;
+            Node0x1ab8790;
+            Node0x1a063c0;
+            Node0x1aba5c0;
+          }
+          Node0x1a843a0;
+        }
+}

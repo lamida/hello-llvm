@@ -1,0 +1,27 @@
+digraph "Dominator tree for 'Redirect' function" {
+	label="Dominator tree for 'Redirect' function";
+
+	Node0xeaece0 [shape=record,label="{entry}"];
+	Node0xeaece0 -> Node0xea7390;
+	Node0xeaece0 -> Node0xed0680;
+	Node0xeaece0 -> Node0xe631c0;
+	Node0xeaece0 -> Node0xeab780;
+	Node0xea7390 [shape=record,label="{sw.default}"];
+	Node0xed0680 [shape=record,label="{sw.epilog}"];
+	Node0xed0680 -> Node0xeabd00;
+	Node0xed0680 -> Node0xedde90;
+	Node0xed0680 -> Node0xe61310;
+	Node0xeabd00 [shape=record,label="{if.then}"];
+	Node0xedde90 [shape=record,label="{if.end}"];
+	Node0xedde90 -> Node0xead180;
+	Node0xedde90 -> Node0xe8f630;
+	Node0xead180 [shape=record,label="{if.then10}"];
+	Node0xe8f630 [shape=record,label="{if.end15}"];
+	Node0xe61310 [shape=record,label="{lor.lhs.false}"];
+	Node0xe61310 -> Node0xedf9b0;
+	Node0xedf9b0 [shape=record,label="{lor.lhs.false4}"];
+	Node0xedf9b0 -> Node0xea8aa0;
+	Node0xea8aa0 [shape=record,label="{if.else}"];
+	Node0xe631c0 [shape=record,label="{sw.bb}"];
+	Node0xeab780 [shape=record,label="{sw.bb1}"];
+}

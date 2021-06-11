@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'BZ2_bzopen' function" {
 	label="Dominator tree for 'BZ2_bzopen' function";
 
-	Node0x2064ce0 [shape=record,label="{%2}"];
+	Node0x2195220 [shape=record,label="{%2}"];
 }

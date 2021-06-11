@@ -1,0 +1,50 @@
+digraph "Scop Graph for 'CompareEtags' function" {
+	label="Scop Graph for 'CompareEtags' function";
+
+	Node0x1a699d0 [shape=record,label="{entry}"];
+	Node0x1a699d0 -> Node0x1aa6520;
+	Node0x1a699d0 -> Node0x1a2c1f0;
+	Node0x1aa6520 [shape=record,label="{if.then}"];
+	Node0x1aa6520 -> Node0x1a7a780;
+	Node0x1a7a780 [shape=record,label="{return}"];
+	Node0x1a2c1f0 [shape=record,label="{if.end}"];
+	Node0x1a2c1f0 -> Node0x1a58e30;
+	Node0x1a2c1f0 -> Node0x1a2c520;
+	Node0x1a58e30 [shape=record,label="{if.then3}"];
+	Node0x1a58e30 -> Node0x1a72550;
+	Node0x1a58e30 -> Node0x19f9a00;
+	Node0x1a72550 [shape=record,label="{land.lhs.true}"];
+	Node0x1a72550 -> Node0x1a62ec0;
+	Node0x1a72550 -> Node0x19f9a00;
+	Node0x1a62ec0 [shape=record,label="{if.then13}"];
+	Node0x1a62ec0 -> Node0x1a7a780;
+	Node0x19f9a00 [shape=record,label="{if.end14}"];
+	Node0x19f9a00 -> Node0x1a2c520;
+	Node0x1a2c520 [shape=record,label="{if.end15}"];
+	Node0x1a2c520 -> Node0x1a7a780;
+	colorscheme = "paired12"
+        subgraph cluster_0x1ab5360 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1b244b0 {
+            label = "";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1b18d40 {
+              label = "";
+              style = solid;
+              color = 5
+              Node0x1a2c1f0;
+              Node0x1a58e30;
+              Node0x1a72550;
+              Node0x1a62ec0;
+              Node0x19f9a00;
+              Node0x1a2c520;
+            }
+            Node0x1a699d0;
+            Node0x1aa6520;
+          }
+          Node0x1a7a780;
+        }
+}

@@ -1,0 +1,12 @@
+digraph "Region Graph for 'CgiScriptWritable' function" {
+	label="Region Graph for 'CgiScriptWritable' function";
+
+	Node0x8ae720 [shape=record,label="{entry:\l  call void @StartResponse(i8* getelementptr inbounds ([28 x i8], [28 x i8]*\l... @.str.478, i64 0, i64 0))\l  %0 = load i8*, i8** @zRealScript, align 8\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([106 x i8],\l... [106 x i8]* @.str.479, i64 0, i64 0), i8* %0)\l  %1 = load i32, i32* @nOut, align 4\l  %add = add nsw i32 %1, %call\l  store i32 %add, i32* @nOut, align 4\l  call void @MakeLogEntry(i32 0, i32 140)\l  call void @exit(i32 0) #8\l  unreachable\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x97ce50 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0x8ae720;
+        }
+}

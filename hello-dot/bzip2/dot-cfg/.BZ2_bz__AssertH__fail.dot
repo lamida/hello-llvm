@@ -1,10 +1,10 @@
 digraph "CFG for 'BZ2_bz__AssertH__fail' function" {
 	label="CFG for 'BZ2_bz__AssertH__fail' function";
 
-	Node0xf8a330 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %4 = load i32, i32* %2, align 4\l  %5 = call i8* @BZ2_bzlibVersion()\l  %6 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %3,\l... i8* getelementptr inbounds ([442 x i8], [442 x i8]* @.str.6, i64 0, i64 0),\l... i32 %4, i8* %5)\l  %7 = load i32, i32* %2, align 4\l  %8 = icmp eq i32 %7, 1007\l  br i1 %8, label %9, label %12\l|{<s0>T|<s1>F}}"];
-	Node0xf8a330:s0 -> Node0xf8a4c0;
-	Node0xf8a330:s1 -> Node0xf8aa20;
-	Node0xf8a4c0 [shape=record,label="{%9:\l9:                                                \l  %10 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %11 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %10,\l... i8* getelementptr inbounds ([1057 x i8], [1057 x i8]* @.str.7, i64 0, i64 0))\l  br label %12\l}"];
-	Node0xf8a4c0 -> Node0xf8aa20;
-	Node0xf8aa20 [shape=record,label="{%12:\l12:                                               \l  call void @exit(i32 3) #8\l  unreachable\l}"];
+	Node0xa6a330 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %4 = load i32, i32* %2, align 4\l  %5 = call i8* @BZ2_bzlibVersion()\l  %6 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %3,\l... i8* getelementptr inbounds ([442 x i8], [442 x i8]* @.str.6, i64 0, i64 0),\l... i32 %4, i8* %5)\l  %7 = load i32, i32* %2, align 4\l  %8 = icmp eq i32 %7, 1007\l  br i1 %8, label %9, label %12\l|{<s0>T|<s1>F}}"];
+	Node0xa6a330:s0 -> Node0xa6a4c0;
+	Node0xa6a330:s1 -> Node0xa6aa20;
+	Node0xa6a4c0 [shape=record,label="{%9:\l9:                                                \l  %10 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %11 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %10,\l... i8* getelementptr inbounds ([1057 x i8], [1057 x i8]* @.str.7, i64 0, i64 0))\l  br label %12\l}"];
+	Node0xa6a4c0 -> Node0xa6aa20;
+	Node0xa6aa20 [shape=record,label="{%12:\l12:                                               \l  call void @exit(i32 3) #8\l  unreachable\l}"];
 }

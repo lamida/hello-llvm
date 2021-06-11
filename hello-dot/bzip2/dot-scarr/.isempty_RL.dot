@@ -1,0 +1,15 @@
+digraph "CFG for 'isempty_RL' function" {
+	label="CFG for 'isempty_RL' function";
+
+	Node0x556a61d54e60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61d54e60\":\l  %1 = alloca i8, align 1\l  %2 = alloca %struct.EState*, align 8\l  store %struct.EState* %0, %struct.EState** %2, align 8\l  %3 = load %struct.EState*, %struct.EState** %2, align 8\l  %4 = getelementptr inbounds %struct.EState, %struct.EState* %3, i32 0, i32 13\l  %5 = load i32, i32* %4, align 4\l  %6 = icmp ult i32 %5, 256\l  br i1 %6, label %\"0x556a61d552d0\", label %\"0x556a61d55320\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61d54e60:s0 -> Node0x556a61d552d0;
+	Node0x556a61d54e60:s1 -> Node0x556a61d55320;
+	Node0x556a61d552d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3947570",label="{\"0x556a61d552d0\":                                 \l  %7 = load %struct.EState*, %struct.EState** %2, align 8\l  %8 = getelementptr inbounds %struct.EState, %struct.EState* %7, i32 0, i32 14\l  %9 = load i32, i32* %8, align 8\l  %10 = icmp sgt i32 %9, 0\l  br i1 %10, label %\"0x556a61d550c0\", label %\"0x556a61d55320\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61d552d0:s0 -> Node0x556a61d550c0;
+	Node0x556a61d552d0:s1 -> Node0x556a61d55320;
+	Node0x556a61d550c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{\"0x556a61d550c0\":                                 \l  store i8 0, i8* %1, align 1\l  br label %\"0x556a61d55c10\"\l}"];
+	Node0x556a61d550c0 -> Node0x556a61d55c10;
+	Node0x556a61d55320 [shape=record,color="#b70d28ff", style=filled, fillcolor="#de614d70",label="{\"0x556a61d55320\":                                 \l  store i8 1, i8* %1, align 1\l  br label %\"0x556a61d55c10\"\l}"];
+	Node0x556a61d55320 -> Node0x556a61d55c10;
+	Node0x556a61d55c10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61d55c10\":                                 \l  %11 = load i8, i8* %1, align 1\l  ret i8 %11\l}"];
+}

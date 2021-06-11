@@ -1,0 +1,27 @@
+digraph "Scop Graph for 'StrDup' function" {
+	label="Scop Graph for 'StrDup' function";
+
+	Node0x1ff81f0 [shape=record,label="{entry:\l  %retval = alloca i8*, align 8\l  %zSrc.addr = alloca i8*, align 8\l  %zDest = alloca i8*, align 8\l  %size = alloca i64, align 8\l  store i8* %zSrc, i8** %zSrc.addr, align 8\l  %0 = load i8*, i8** %zSrc.addr, align 8\l  %cmp = icmp eq i8* %0, null\l  br i1 %cmp, label %if.then, label %if.end\l}"];
+	Node0x1ff81f0 -> Node0x2044e70;
+	Node0x1ff81f0 -> Node0x203a380;
+	Node0x2044e70 [shape=record,label="{if.then:                                          \l  store i8* null, i8** %retval, align 8\l  br label %return\l}"];
+	Node0x2044e70 -> Node0x203b1f0;
+	Node0x203b1f0 [shape=record,label="{return:                                           \l  %6 = load i8*, i8** %retval, align 8\l  ret i8* %6\l}"];
+	Node0x203a380 [shape=record,label="{if.end:                                           \l  %1 = load i8*, i8** %zSrc.addr, align 8\l  %call = call i64 @strlen(i8* %1) #8\l  %add = add i64 %call, 1\l  store i64 %add, i64* %size, align 8\l  %2 = load i64, i64* %size, align 8\l  %call1 = call i8* @SafeMalloc(i64 %2)\l  store i8* %call1, i8** %zDest, align 8\l  %3 = load i8*, i8** %zDest, align 8\l  %4 = load i8*, i8** %zSrc.addr, align 8\l  %call2 = call i8* @strcpy(i8* %3, i8* %4) #7\l  %5 = load i8*, i8** %zDest, align 8\l  store i8* %5, i8** %retval, align 8\l  br label %return\l}"];
+	Node0x203a380 -> Node0x203b1f0;
+	colorscheme = "paired12"
+        subgraph cluster_0x20e83f0 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x20e8370 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0x1ff81f0;
+            Node0x2044e70;
+            Node0x203a380;
+          }
+          Node0x203b1f0;
+        }
+}

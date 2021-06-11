@@ -1,20 +1,20 @@
 digraph "CFG for 'BZ2_bzread' function" {
 	label="CFG for 'BZ2_bzread' function";
 
-	Node0x11d1b20 [shape=record,label="{%3:\l  %4 = alloca i32, align 4\l  %5 = alloca i8*, align 8\l  %6 = alloca i8*, align 8\l  %7 = alloca i32, align 4\l  %8 = alloca i32, align 4\l  %9 = alloca i32, align 4\l  store i8* %0, i8** %5, align 8\l  store i8* %1, i8** %6, align 8\l  store i32 %2, i32* %7, align 4\l  %10 = load i8*, i8** %5, align 8\l  %11 = bitcast i8* %10 to %struct.bzFile*\l  %12 = getelementptr inbounds %struct.bzFile, %struct.bzFile* %11, i32 0, i32\l... 5\l  %13 = load i32, i32* %12, align 8\l  %14 = icmp eq i32 %13, 4\l  br i1 %14, label %15, label %16\l|{<s0>T|<s1>F}}"];
-	Node0x11d1b20:s0 -> Node0x11d24f0;
-	Node0x11d1b20:s1 -> Node0x11d2b60;
-	Node0x11d24f0 [shape=record,label="{%15:\l15:                                               \l  store i32 0, i32* %4, align 4\l  br label %29\l}"];
-	Node0x11d24f0 -> Node0x11d2cc0;
-	Node0x11d2b60 [shape=record,label="{%16:\l16:                                               \l  %17 = load i8*, i8** %5, align 8\l  %18 = load i8*, i8** %6, align 8\l  %19 = load i32, i32* %7, align 4\l  %20 = call i32 @BZ2_bzRead(i32* %8, i8* %17, i8* %18, i32 %19)\l  store i32 %20, i32* %9, align 4\l  %21 = load i32, i32* %8, align 4\l  %22 = icmp eq i32 %21, 0\l  br i1 %22, label %26, label %23\l|{<s0>T|<s1>F}}"];
-	Node0x11d2b60:s0 -> Node0x11d3100;
-	Node0x11d2b60:s1 -> Node0x11d3150;
-	Node0x11d3150 [shape=record,label="{%23:\l23:                                               \l  %24 = load i32, i32* %8, align 4\l  %25 = icmp eq i32 %24, 4\l  br i1 %25, label %26, label %28\l|{<s0>T|<s1>F}}"];
-	Node0x11d3150:s0 -> Node0x11d3100;
-	Node0x11d3150:s1 -> Node0x11d3270;
-	Node0x11d3100 [shape=record,label="{%26:\l26:                                               \l  %27 = load i32, i32* %9, align 4\l  store i32 %27, i32* %4, align 4\l  br label %29\l}"];
-	Node0x11d3100 -> Node0x11d2cc0;
-	Node0x11d3270 [shape=record,label="{%28:\l28:                                               \l  store i32 -1, i32* %4, align 4\l  br label %29\l}"];
-	Node0x11d3270 -> Node0x11d2cc0;
-	Node0x11d2cc0 [shape=record,label="{%29:\l29:                                               \l  %30 = load i32, i32* %4, align 4\l  ret i32 %30\l}"];
+	Node0xcb1b20 [shape=record,label="{%3:\l  %4 = alloca i32, align 4\l  %5 = alloca i8*, align 8\l  %6 = alloca i8*, align 8\l  %7 = alloca i32, align 4\l  %8 = alloca i32, align 4\l  %9 = alloca i32, align 4\l  store i8* %0, i8** %5, align 8\l  store i8* %1, i8** %6, align 8\l  store i32 %2, i32* %7, align 4\l  %10 = load i8*, i8** %5, align 8\l  %11 = bitcast i8* %10 to %struct.bzFile*\l  %12 = getelementptr inbounds %struct.bzFile, %struct.bzFile* %11, i32 0, i32\l... 5\l  %13 = load i32, i32* %12, align 8\l  %14 = icmp eq i32 %13, 4\l  br i1 %14, label %15, label %16\l|{<s0>T|<s1>F}}"];
+	Node0xcb1b20:s0 -> Node0xcb24f0;
+	Node0xcb1b20:s1 -> Node0xcb2b60;
+	Node0xcb24f0 [shape=record,label="{%15:\l15:                                               \l  store i32 0, i32* %4, align 4\l  br label %29\l}"];
+	Node0xcb24f0 -> Node0xcb2cc0;
+	Node0xcb2b60 [shape=record,label="{%16:\l16:                                               \l  %17 = load i8*, i8** %5, align 8\l  %18 = load i8*, i8** %6, align 8\l  %19 = load i32, i32* %7, align 4\l  %20 = call i32 @BZ2_bzRead(i32* %8, i8* %17, i8* %18, i32 %19)\l  store i32 %20, i32* %9, align 4\l  %21 = load i32, i32* %8, align 4\l  %22 = icmp eq i32 %21, 0\l  br i1 %22, label %26, label %23\l|{<s0>T|<s1>F}}"];
+	Node0xcb2b60:s0 -> Node0xcb3100;
+	Node0xcb2b60:s1 -> Node0xcb3150;
+	Node0xcb3150 [shape=record,label="{%23:\l23:                                               \l  %24 = load i32, i32* %8, align 4\l  %25 = icmp eq i32 %24, 4\l  br i1 %25, label %26, label %28\l|{<s0>T|<s1>F}}"];
+	Node0xcb3150:s0 -> Node0xcb3100;
+	Node0xcb3150:s1 -> Node0xcb3270;
+	Node0xcb3100 [shape=record,label="{%26:\l26:                                               \l  %27 = load i32, i32* %9, align 4\l  store i32 %27, i32* %4, align 4\l  br label %29\l}"];
+	Node0xcb3100 -> Node0xcb2cc0;
+	Node0xcb3270 [shape=record,label="{%28:\l28:                                               \l  store i32 -1, i32* %4, align 4\l  br label %29\l}"];
+	Node0xcb3270 -> Node0xcb2cc0;
+	Node0xcb2cc0 [shape=record,label="{%29:\l29:                                               \l  %30 = load i32, i32* %4, align 4\l  ret i32 %30\l}"];
 }

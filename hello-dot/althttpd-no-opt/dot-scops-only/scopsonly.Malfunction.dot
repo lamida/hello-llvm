@@ -1,0 +1,24 @@
+digraph "Scop Graph for 'Malfunction' function" {
+	label="Scop Graph for 'Malfunction' function";
+
+	Node0x1a81c50 [shape=record,label="{entry}"];
+	Node0x1a81c50 -> Node0x1a5c7f0;
+	Node0x1a81c50 -> Node0x1a92cf0;
+	Node0x1a5c7f0 [shape=record,label="{if.then}"];
+	Node0x1a5c7f0 -> Node0x1a92cf0;
+	Node0x1a92cf0 [shape=record,label="{if.end}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1b17e30 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1b17f30 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0x1a81c50;
+            Node0x1a5c7f0;
+          }
+          Node0x1a92cf0;
+        }
+}

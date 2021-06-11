@@ -1,9 +1,9 @@
 digraph "Dominator tree for 'BZ2_bzerror' function" {
 	label="Dominator tree for 'BZ2_bzerror' function";
 
-	Node0x1fbbc80 [shape=record,label="{%2}"];
-	Node0x1fbbc80 -> Node0x224a420;
-	Node0x1fbbc80 -> Node0x2214f60;
-	Node0x224a420 [shape=record,label="{%12}"];
-	Node0x2214f60 [shape=record,label="{%13}"];
+	Node0x22061b0 [shape=record,label="{%2}"];
+	Node0x22061b0 -> Node0x2197b10;
+	Node0x22061b0 -> Node0x2227030;
+	Node0x2197b10 [shape=record,label="{%12}"];
+	Node0x2227030 [shape=record,label="{%13}"];
 }

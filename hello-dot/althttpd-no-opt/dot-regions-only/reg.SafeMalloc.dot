@@ -1,0 +1,18 @@
+digraph "Region Graph for 'SafeMalloc' function" {
+	label="Region Graph for 'SafeMalloc' function";
+
+	Node0x9d22d0 [shape=record,label="{entry}"];
+	Node0x9d22d0 -> Node0xa4a980;
+	Node0x9d22d0 -> Node0xa3ce50;
+	Node0xa4a980 [shape=record,label="{if.then}"];
+	Node0xa3ce50 [shape=record,label="{if.end}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xa977c0 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0x9d22d0;
+          Node0xa4a980;
+          Node0xa3ce50;
+        }
+}

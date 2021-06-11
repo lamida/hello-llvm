@@ -1,0 +1,17 @@
+digraph "CFG for 'fopen_output_safely' function" {
+	label="CFG for 'fopen_output_safely' function";
+
+	Node0x556a61e01470 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61e01470 - Exit Point\":\l  %2 = alloca %struct._IO_FILE*, align 8\l  %3 = alloca i8*, align 8\l  %4 = alloca i8*, align 8\l  %5 = alloca %struct._IO_FILE*, align 8\l  %6 = alloca i32, align 4\l  store i8* %0, i8** %3, align 8\l  store i8* %1, i8** %4, align 8\l  %7 = load i8*, i8** %3, align 8\l  %8 = call i32 (i8*, i32, ...) @open(i8* %7, i32 193, i32 384)\l  store i32 %8, i32* %6, align 4\l  %9 = load i32, i32* %6, align 4\l  %10 = icmp eq i32 %9, -1\l  br i1 %10, label %\"0x556a61e01cc0\", label %\"0x556a61e01d10 - Exit Point\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61e01470:s0 -> Node0x556a61e01cc0;
+	Node0x556a61e01470:s1 -> Node0x556a61e01d10;
+	Node0x556a61e01cc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7ac8e70",label="{\"0x556a61e01cc0\":                                 \l  store %struct._IO_FILE* null, %struct._IO_FILE** %2, align 8\l  br label %\"0x556a61e01ea0\"\l}"];
+	Node0x556a61e01cc0 -> Node0x556a61e01ea0;
+	Node0x556a61e01d10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e36c5570",label="{\"0x556a61e01d10 - Exit Point\":                    \l  %11 = load i32, i32* %6, align 4\l  %12 = load i8*, i8** %4, align 8\l  %13 = call %struct._IO_FILE* @fdopen(i32 %11, i8* %12)\l  store %struct._IO_FILE* %13, %struct._IO_FILE** %5, align 8\l  %14 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8\l  %15 = icmp eq %struct._IO_FILE* %14, null\l  br i1 %15, label %\"0x556a61e02290 - Exit Point\", label %\"0x556a61e022e0\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61e01d10:s0 -> Node0x556a61e02290;
+	Node0x556a61e01d10:s1 -> Node0x556a61e022e0;
+	Node0x556a61e02290 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{\"0x556a61e02290 - Exit Point\":                    \l  %16 = load i32, i32* %6, align 4\l  %17 = call i32 @close(i32 %16)\l  br label %\"0x556a61e022e0\"\l}"];
+	Node0x556a61e02290 -> Node0x556a61e022e0;
+	Node0x556a61e022e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e36c5570",label="{\"0x556a61e022e0\":                                 \l  %18 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8\l  store %struct._IO_FILE* %18, %struct._IO_FILE** %2, align 8\l  br label %\"0x556a61e01ea0\"\l}"];
+	Node0x556a61e022e0 -> Node0x556a61e01ea0;
+	Node0x556a61e01ea0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61e01ea0\":                                 \l  %19 = load %struct._IO_FILE*, %struct._IO_FILE** %2, align 8\l  ret %struct._IO_FILE* %19\l}"];
+}

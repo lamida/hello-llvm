@@ -1,0 +1,31 @@
+digraph "Dominator tree for 'sanitizeString' function" {
+	label="Dominator tree for 'sanitizeString' function";
+
+	Node0xe95830 [shape=record,label="{entry}"];
+	Node0xe95830 -> Node0xe62f20;
+	Node0xe62f20 [shape=record,label="{while.cond}"];
+	Node0xe62f20 -> Node0xebc280;
+	Node0xe62f20 -> Node0xe9d2b0;
+	Node0xebc280 [shape=record,label="{while.body}"];
+	Node0xebc280 -> Node0xed4130;
+	Node0xebc280 -> Node0xed4500;
+	Node0xed4130 [shape=record,label="{if.end21}"];
+	Node0xed4500 [shape=record,label="{if.then}"];
+	Node0xed4500 -> Node0xeb6970;
+	Node0xed4500 -> Node0xecc2a0;
+	Node0xeb6970 [shape=record,label="{land.lhs.true}"];
+	Node0xeb6970 -> Node0xe9d6d0;
+	Node0xe9d6d0 [shape=record,label="{land.lhs.true7}"];
+	Node0xe9d6d0 -> Node0xe9aea0;
+	Node0xe9aea0 [shape=record,label="{if.then12}"];
+	Node0xe9aea0 -> Node0xed5e20;
+	Node0xed5e20 [shape=record,label="{for.cond}"];
+	Node0xed5e20 -> Node0xed50a0;
+	Node0xed5e20 -> Node0xe90e00;
+	Node0xed50a0 [shape=record,label="{for.body}"];
+	Node0xed50a0 -> Node0xe85e10;
+	Node0xe85e10 [shape=record,label="{for.inc}"];
+	Node0xe90e00 [shape=record,label="{for.end}"];
+	Node0xecc2a0 [shape=record,label="{if.end}"];
+	Node0xe9d2b0 [shape=record,label="{while.end}"];
+}

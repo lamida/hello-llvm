@@ -1,0 +1,36 @@
+digraph "Scop Graph for 'SetEnv' function" {
+	label="Scop Graph for 'SetEnv' function";
+
+	Node0x1a1caa0 [shape=record,label="{entry}"];
+	Node0x1a1caa0 -> Node0x1a67b60;
+	Node0x1a1caa0 -> Node0x1a17af0;
+	Node0x1a67b60 [shape=record,label="{if.then}"];
+	Node0x1a67b60 -> Node0x1a17af0;
+	Node0x1a17af0 [shape=record,label="{if.end}"];
+	Node0x1a17af0 -> Node0x1a4c840;
+	Node0x1a17af0 -> Node0x19f9a00;
+	Node0x1a4c840 [shape=record,label="{if.then2}"];
+	Node0x1a4c840 -> Node0x19f9a00;
+	Node0x19f9a00 [shape=record,label="{if.end3}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1ab53e0 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1b18030 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0x1a1caa0;
+            Node0x1a67b60;
+          }
+          subgraph cluster_0x1ab5360 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0x1a17af0;
+            Node0x1a4c840;
+          }
+          Node0x19f9a00;
+        }
+}

@@ -1,0 +1,21 @@
+digraph "Dominator tree for 'StartResponse' function" {
+	label="Dominator tree for 'StartResponse' function";
+
+	Node0xcaaaa0 [shape=record,label="{entry:\l  %zResultCode.addr = alloca i8*, align 8\l  %now = alloca i64, align 8\l  store i8* %zResultCode, i8** %zResultCode.addr, align 8\l  %call = call i64 @time(i64* %now) #7\l  %0 = load i32, i32* @statusSent, align 4\l  %tobool = icmp ne i32 %0, 0\l  br i1 %tobool, label %if.then, label %if.end\l}"];
+	Node0xcaaaa0 -> Node0xc852b0;
+	Node0xcaaaa0 -> Node0xc44a20;
+	Node0xcaaaa0 -> Node0xcabc50;
+	Node0xc852b0 [shape=record,label="{if.then:                                          \l  br label %return\l}"];
+	Node0xc44a20 [shape=record,label="{return:                                           \l  ret void\l}"];
+	Node0xcabc50 [shape=record,label="{if.end:                                           \l  %1 = load i8*, i8** @zProtocol, align 8\l  %2 = load i8*, i8** %zResultCode.addr, align 8\l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([8 x i8],\l... [8 x i8]* @.str.449, i64 0, i64 0), i8* %1, i8* %2)\l  %3 = load i32, i32* @nOut, align 4\l  %add = add nsw i32 %3, %call1\l  store i32 %add, i32* @nOut, align 4\l  %4 = load i8*, i8** %zResultCode.addr, align 8\l  %call2 = call i8* @strncpy(i8* getelementptr inbounds ([4 x i8], [4 x i8]*\l... @zReplyStatus, i64 0, i64 0), i8* %4, i64 3) #7\l  store i8 0, i8* getelementptr inbounds ([4 x i8], [4 x i8]* @zReplyStatus,\l... i64 0, i64 3), align 1\l  %5 = load i8, i8* getelementptr inbounds ([4 x i8], [4 x i8]* @zReplyStatus,\l... i64 0, i64 0), align 1\l  %conv = sext i8 %5 to i32\l  %cmp = icmp sge i32 %conv, 52\l  br i1 %cmp, label %if.then4, label %if.end5\l}"];
+	Node0xcabc50 -> Node0xc7d830;
+	Node0xcabc50 -> Node0xccb0c0;
+	Node0xc7d830 [shape=record,label="{if.then4:                                         \l  store i32 1, i32* @closeConnection, align 4\l  br label %if.end5\l}"];
+	Node0xccb0c0 [shape=record,label="{if.end5:                                          \l  %6 = load i32, i32* @closeConnection, align 4\l  %tobool6 = icmp ne i32 %6, 0\l  br i1 %tobool6, label %if.then7, label %if.else\l}"];
+	Node0xccb0c0 -> Node0xc75810;
+	Node0xccb0c0 -> Node0xc0c3b0;
+	Node0xccb0c0 -> Node0xc416a0;
+	Node0xc75810 [shape=record,label="{if.then7:                                         \l  %call8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([20 x i8],\l... [20 x i8]* @.str.450, i64 0, i64 0))\l  %7 = load i32, i32* @nOut, align 4\l  %add9 = add nsw i32 %7, %call8\l  store i32 %add9, i32* @nOut, align 4\l  br label %if.end12\l}"];
+	Node0xc0c3b0 [shape=record,label="{if.end12:                                         \l  %9 = load i64, i64* %now, align 8\l  %call13 = call i32 @DateTag(i8* getelementptr inbounds ([5 x i8], [5 x i8]*\l... @.str.452, i64 0, i64 0), i64 %9)\l  %10 = load i32, i32* @nOut, align 4\l  %add14 = add nsw i32 %10, %call13\l  store i32 %add14, i32* @nOut, align 4\l  store i32 1, i32* @statusSent, align 4\l  br label %return\l}"];
+	Node0xc416a0 [shape=record,label="{if.else:                                          \l  %call10 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([25 x i8],\l... [25 x i8]* @.str.451, i64 0, i64 0))\l  %8 = load i32, i32* @nOut, align 4\l  %add11 = add nsw i32 %8, %call10\l  store i32 %add11, i32* @nOut, align 4\l  br label %if.end12\l}"];
+}

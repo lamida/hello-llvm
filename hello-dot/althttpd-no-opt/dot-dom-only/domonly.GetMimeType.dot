@@ -1,0 +1,47 @@
+digraph "Dominator tree for 'GetMimeType' function" {
+	label="Dominator tree for 'GetMimeType' function";
+
+	Node0xea2870 [shape=record,label="{entry}"];
+	Node0xea2870 -> Node0xe9d2b0;
+	Node0xe9d2b0 [shape=record,label="{for.cond}"];
+	Node0xe9d2b0 -> Node0xea00a0;
+	Node0xe9d2b0 -> Node0xeab070;
+	Node0xea00a0 [shape=record,label="{land.rhs}"];
+	Node0xeab070 [shape=record,label="{land.end}"];
+	Node0xeab070 -> Node0xea3290;
+	Node0xeab070 -> Node0xea5830;
+	Node0xea3290 [shape=record,label="{for.body}"];
+	Node0xea3290 -> Node0xeab780;
+	Node0xeab780 [shape=record,label="{for.inc}"];
+	Node0xea5830 [shape=record,label="{for.end}"];
+	Node0xea5830 -> Node0xeabd00;
+	Node0xea5830 -> Node0xeaac00;
+	Node0xea5830 -> Node0xead180;
+	Node0xeabd00 [shape=record,label="{if.then}"];
+	Node0xeabd00 -> Node0xeaa950;
+	Node0xeaa950 [shape=record,label="{for.cond8}"];
+	Node0xeaa950 -> Node0xea3ce0;
+	Node0xeaa950 -> Node0xeace20;
+	Node0xea3ce0 [shape=record,label="{for.body11}"];
+	Node0xea3ce0 -> Node0xea8bd0;
+	Node0xea8bd0 [shape=record,label="{for.inc19}"];
+	Node0xeace20 [shape=record,label="{for.end20}"];
+	Node0xeace20 -> Node0xea8820;
+	Node0xea8820 [shape=record,label="{while.cond}"];
+	Node0xea8820 -> Node0xea68b0;
+	Node0xea8820 -> Node0xea8400;
+	Node0xea68b0 [shape=record,label="{while.body}"];
+	Node0xea68b0 -> Node0xea64a0;
+	Node0xea68b0 -> Node0xea5f00;
+	Node0xea64a0 [shape=record,label="{if.then31}"];
+	Node0xea5f00 [shape=record,label="{if.end}"];
+	Node0xea5f00 -> Node0xea8aa0;
+	Node0xea5f00 -> Node0xea7880;
+	Node0xea5f00 -> Node0xea4a70;
+	Node0xea8aa0 [shape=record,label="{if.then36}"];
+	Node0xea7880 [shape=record,label="{if.end39}"];
+	Node0xea4a70 [shape=record,label="{if.else}"];
+	Node0xea8400 [shape=record,label="{while.end}"];
+	Node0xeaac00 [shape=record,label="{return}"];
+	Node0xead180 [shape=record,label="{if.end40}"];
+}

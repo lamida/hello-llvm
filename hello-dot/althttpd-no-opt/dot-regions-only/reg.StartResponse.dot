@@ -1,0 +1,54 @@
+digraph "Region Graph for 'StartResponse' function" {
+	label="Region Graph for 'StartResponse' function";
+
+	Node0x9a80a0 [shape=record,label="{entry}"];
+	Node0x9a80a0 -> Node0x9a4b50;
+	Node0x9a80a0 -> Node0xa0b560;
+	Node0x9a4b50 [shape=record,label="{if.then}"];
+	Node0x9a4b50 -> Node0x9d80a0;
+	Node0x9d80a0 [shape=record,label="{return}"];
+	Node0xa0b560 [shape=record,label="{if.end}"];
+	Node0xa0b560 -> Node0x9d81f0;
+	Node0xa0b560 -> Node0xa07310;
+	Node0x9d81f0 [shape=record,label="{if.then4}"];
+	Node0x9d81f0 -> Node0xa07310;
+	Node0xa07310 [shape=record,label="{if.end5}"];
+	Node0xa07310 -> Node0x99e910;
+	Node0xa07310 -> Node0x9fc290;
+	Node0x99e910 [shape=record,label="{if.then7}"];
+	Node0x99e910 -> Node0x9d2e20;
+	Node0x9d2e20 [shape=record,label="{if.end12}"];
+	Node0x9d2e20 -> Node0x9d80a0;
+	Node0x9fc290 [shape=record,label="{if.else}"];
+	Node0x9fc290 -> Node0x9d2e20;
+	colorscheme = "paired12"
+        subgraph cluster_0xa97940 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xa97ac0 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xa977c0 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0xa0b560;
+              Node0x9d81f0;
+            }
+            subgraph cluster_0xa979c0 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0xa07310;
+              Node0x99e910;
+              Node0x9fc290;
+            }
+            Node0x9a80a0;
+            Node0x9a4b50;
+            Node0x9d2e20;
+          }
+          Node0x9d80a0;
+        }
+}

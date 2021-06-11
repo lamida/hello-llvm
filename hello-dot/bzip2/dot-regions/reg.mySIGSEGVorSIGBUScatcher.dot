@@ -1,33 +1,33 @@
 digraph "Region Graph for 'mySIGSEGVorSIGBUScatcher' function" {
 	label="Region Graph for 'mySIGSEGVorSIGBUScatcher' function";
 
-	Node0xaa2e40 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load i32, i32* @opMode, align 4\l  %4 = icmp eq i32 %3, 1\l  br i1 %4, label %5, label %9\l}"];
-	Node0xaa2e40 -> Node0x8b70c0;
-	Node0xaa2e40 -> Node0xb77cf0;
-	Node0x8b70c0 [shape=record,label="{%5:\l5:                                                \l  %6 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %7 = load i8*, i8** @progName, align 8\l  %8 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %6,\l... i8* getelementptr inbounds ([868 x i8], [868 x i8]* @.str.78, i64 0, i64 0),\l... i8* %7)\l  br label %13\l}"];
-	Node0x8b70c0 -> Node0xaede50;
-	Node0xaede50 [shape=record,label="{%13:\l13:                                               \l  call void @showFileNames()\l  %14 = load i32, i32* @opMode, align 4\l  %15 = icmp eq i32 %14, 1\l  br i1 %15, label %16, label %17\l}"];
-	Node0xaede50 -> Node0x8c2f10;
-	Node0xaede50 -> Node0xbef660;
-	Node0x8c2f10 [shape=record,label="{%16:\l16:                                               \l  call void @cleanUpAndFail(i32 3) #8\l  unreachable\l}"];
-	Node0xbef660 [shape=record,label="{%17:\l17:                                               \l  call void @cadvise()\l  call void @cleanUpAndFail(i32 2) #8\l  unreachable\l}"];
-	Node0xb77cf0 [shape=record,label="{%9:\l9:                                                \l  %10 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %11 = load i8*, i8** @progName, align 8\l  %12 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %10,\l... i8* getelementptr inbounds ([995 x i8], [995 x i8]* @.str.79, i64 0, i64 0),\l... i8* %11)\l  br label %13\l}"];
-	Node0xb77cf0 -> Node0xaede50;
+	Node0x28fdd50 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load i32, i32* @opMode, align 4\l  %4 = icmp eq i32 %3, 1\l  br i1 %4, label %5, label %9\l}"];
+	Node0x28fdd50 -> Node0x2a7f8f0;
+	Node0x28fdd50 -> Node0x2b565a0;
+	Node0x2a7f8f0 [shape=record,label="{%5:\l5:                                                \l  %6 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %7 = load i8*, i8** @progName, align 8\l  %8 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %6,\l... i8* getelementptr inbounds ([868 x i8], [868 x i8]* @.str.78, i64 0, i64 0),\l... i8* %7)\l  br label %13\l}"];
+	Node0x2a7f8f0 -> Node0x2a8a7c0;
+	Node0x2a8a7c0 [shape=record,label="{%13:\l13:                                               \l  call void @showFileNames()\l  %14 = load i32, i32* @opMode, align 4\l  %15 = icmp eq i32 %14, 1\l  br i1 %15, label %16, label %17\l}"];
+	Node0x2a8a7c0 -> Node0x2a8a6d0;
+	Node0x2a8a7c0 -> Node0x2aa8700;
+	Node0x2a8a6d0 [shape=record,label="{%16:\l16:                                               \l  call void @cleanUpAndFail(i32 3) #8\l  unreachable\l}"];
+	Node0x2aa8700 [shape=record,label="{%17:\l17:                                               \l  call void @cadvise()\l  call void @cleanUpAndFail(i32 2) #8\l  unreachable\l}"];
+	Node0x2b565a0 [shape=record,label="{%9:\l9:                                                \l  %10 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %11 = load i8*, i8** @progName, align 8\l  %12 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %10,\l... i8* getelementptr inbounds ([995 x i8], [995 x i8]* @.str.79, i64 0, i64 0),\l... i8* %11)\l  br label %13\l}"];
+	Node0x2b565a0 -> Node0x2a8a7c0;
 	colorscheme = "paired12"
-        subgraph cluster_0xc443e0 {
+        subgraph cluster_0x2b92380 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0xc158a0 {
+          subgraph cluster_0x2b35630 {
             label = "";
             style = filled;
             color = 3
-            Node0xaa2e40;
-            Node0x8b70c0;
-            Node0xb77cf0;
+            Node0x28fdd50;
+            Node0x2a7f8f0;
+            Node0x2b565a0;
           }
-          Node0xaede50;
-          Node0x8c2f10;
-          Node0xbef660;
+          Node0x2a8a7c0;
+          Node0x2a8a6d0;
+          Node0x2aa8700;
         }
 }

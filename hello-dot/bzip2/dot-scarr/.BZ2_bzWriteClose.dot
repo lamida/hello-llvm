@@ -1,0 +1,5 @@
+digraph "CFG for 'BZ2_bzWriteClose' function" {
+	label="CFG for 'BZ2_bzWriteClose' function";
+
+	Node0x556a61dbe870 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61dbe870\":\l  %5 = alloca i32*, align 8\l  %6 = alloca i8*, align 8\l  %7 = alloca i32, align 4\l  %8 = alloca i32*, align 8\l  %9 = alloca i32*, align 8\l  store i32* %0, i32** %5, align 8\l  store i8* %1, i8** %6, align 8\l  store i32 %2, i32* %7, align 4\l  store i32* %3, i32** %8, align 8\l  store i32* %4, i32** %9, align 8\l  %10 = load i32*, i32** %5, align 8\l  %11 = load i8*, i8** %6, align 8\l  %12 = load i32, i32* %7, align 4\l  %13 = load i32*, i32** %8, align 8\l  %14 = load i32*, i32** %9, align 8\l  call void @BZ2_bzWriteClose64(i32* %10, i8* %11, i32 %12, i32* %13, i32*\l... null, i32* %14, i32* null)\l  ret void\l}"];
+}

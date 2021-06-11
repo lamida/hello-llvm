@@ -1,0 +1,21 @@
+digraph "CFG for 'g' function" {
+	label="CFG for 'g' function";
+
+	Node0x1ac9980 [shape=record,label="{%0|{<s0>def|<s1>1|<s2>2|<s3>3|<s4>4}}"];
+	Node0x1ac9980:s0 -> Node0x1ac9b70;
+	Node0x1ac9980:s1 -> Node0x1ac9bc0;
+	Node0x1ac9980:s2 -> Node0x1ac9c80;
+	Node0x1ac9980:s3 -> Node0x1ac9d40;
+	Node0x1ac9980:s4 -> Node0x1ac9dd0;
+	Node0x1ac9bc0 [shape=record,label="{%3}"];
+	Node0x1ac9bc0 -> Node0x1aca070;
+	Node0x1ac9c80 [shape=record,label="{%4}"];
+	Node0x1ac9c80 -> Node0x1aca070;
+	Node0x1ac9d40 [shape=record,label="{%5}"];
+	Node0x1ac9d40 -> Node0x1aca070;
+	Node0x1ac9dd0 [shape=record,label="{%6}"];
+	Node0x1ac9dd0 -> Node0x1aca070;
+	Node0x1ac9b70 [shape=record,label="{%7}"];
+	Node0x1ac9b70 -> Node0x1aca070;
+	Node0x1aca070 [shape=record,label="{%9}"];
+}

@@ -1,0 +1,12 @@
+digraph "Region Graph for 'CgiScriptWritable' function" {
+	label="Region Graph for 'CgiScriptWritable' function";
+
+	Node0xa0e8c0 [shape=record,label="{entry}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xa977c0 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0xa0e8c0;
+        }
+}

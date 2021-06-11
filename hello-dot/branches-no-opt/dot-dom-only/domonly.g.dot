@@ -1,0 +1,17 @@
+digraph "Dominator tree for 'g' function" {
+	label="Dominator tree for 'g' function";
+
+	Node0x16c2cd0 [shape=record,label="{entry}"];
+	Node0x16c2cd0 -> Node0x16c2d10;
+	Node0x16c2cd0 -> Node0x16c2d50;
+	Node0x16c2cd0 -> Node0x16c2680;
+	Node0x16c2cd0 -> Node0x16c26c0;
+	Node0x16c2cd0 -> Node0x16c2700;
+	Node0x16c2cd0 -> Node0x16c2740;
+	Node0x16c2d10 [shape=record,label="{sw.default}"];
+	Node0x16c2d50 [shape=record,label="{sw.epilog}"];
+	Node0x16c2680 [shape=record,label="{sw.bb}"];
+	Node0x16c26c0 [shape=record,label="{sw.bb1}"];
+	Node0x16c2700 [shape=record,label="{sw.bb2}"];
+	Node0x16c2740 [shape=record,label="{sw.bb3}"];
+}

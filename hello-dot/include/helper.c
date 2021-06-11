@@ -5,7 +5,8 @@
 // See section 4
 // https://arxiv.org/abs/1807.08003
 
-char* get_input() { int rnd = rand() % 2;
+char* get_input() {
+    int rnd = rand() % 2;
     return rnd == 1 ? "auth" : "error";
 }
 

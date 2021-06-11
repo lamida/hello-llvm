@@ -1,0 +1,39 @@
+digraph "Scop Graph for 'StrAppend' function" {
+	label="Scop Graph for 'StrAppend' function";
+
+	Node0x1a258e0 [shape=record,label="{entry}"];
+	Node0x1a258e0 -> Node0x1a6aae0;
+	Node0x1a258e0 -> Node0x1a5ccd0;
+	Node0x1a6aae0 [shape=record,label="{if.then}"];
+	Node0x1a6aae0 -> Node0x1a72430;
+	Node0x1a72430 [shape=record,label="{return}"];
+	Node0x1a5ccd0 [shape=record,label="{if.end}"];
+	Node0x1a5ccd0 -> Node0x1a496d0;
+	Node0x1a5ccd0 -> Node0x1a78e70;
+	Node0x1a496d0 [shape=record,label="{if.then2}"];
+	Node0x1a496d0 -> Node0x1a72430;
+	Node0x1a78e70 [shape=record,label="{if.end3}"];
+	Node0x1a78e70 -> Node0x1a72430;
+	colorscheme = "paired12"
+        subgraph cluster_0x1aca500 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1ab5360 {
+            label = "";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1ab53e0 {
+              label = "";
+              style = solid;
+              color = 5
+              Node0x1a5ccd0;
+              Node0x1a496d0;
+              Node0x1a78e70;
+            }
+            Node0x1a258e0;
+            Node0x1a6aae0;
+          }
+          Node0x1a72430;
+        }
+}

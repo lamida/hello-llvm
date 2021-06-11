@@ -1,0 +1,43 @@
+digraph "Post dominator tree for 'ParseRfc822Date' function" {
+	label="Post dominator tree for 'ParseRfc822Date' function";
+
+	Node0x22ca460 [shape=record,label="{Post dominance root node}"];
+	Node0x22ca460 -> Node0x2267ea0;
+	Node0x2267ea0 [shape=record,label="{return:                                           \l  %27 = load i64, i64* %retval, align 8\l  ret i64 %27\l}"];
+	Node0x2267ea0 -> Node0x228ffb0;
+	Node0x2267ea0 -> Node0x22c1c50;
+	Node0x2267ea0 -> Node0x2296a40;
+	Node0x2267ea0 -> Node0x22a3330;
+	Node0x2267ea0 -> Node0x22800d0;
+	Node0x228ffb0 [shape=record,label="{if.end20:                                         \l  %17 = load i32, i32* %year, align 4\l  %sub21 = sub nsw i32 %17, 70\l  %mul = mul nsw i32 %sub21, 365\l  %18 = load i32, i32* %year, align 4\l  %sub22 = sub nsw i32 %18, 69\l  %div = sdiv i32 %sub22, 4\l  %add23 = add nsw i32 %mul, %div\l  %19 = load i32, i32* %year, align 4\l  %div24 = sdiv i32 %19, 100\l  %sub25 = sub nsw i32 %add23, %div24\l  %20 = load i32, i32* %year, align 4\l  %add26 = add nsw i32 %20, 300\l  %div27 = sdiv i32 %add26, 400\l  %add28 = add nsw i32 %sub25, %div27\l  %21 = load i32, i32* %yday, align 4\l  %add29 = add nsw i32 %add28, %21\l  store i32 %add29, i32* %nDay, align 4\l  %22 = load i32, i32* %nDay, align 4\l  %mul30 = mul nsw i32 %22, 24\l  %23 = load i32, i32* %hour, align 4\l  %add31 = add nsw i32 %mul30, %23\l  %conv = sext i32 %add31 to i64\l  %mul32 = mul nsw i64 %conv, 60\l  %24 = load i32, i32* %min, align 4\l  %conv33 = sext i32 %24 to i64\l  %add34 = add nsw i64 %mul32, %conv33\l  %mul35 = mul nsw i64 %add34, 60\l  %25 = load i32, i32* %sec, align 4\l  %conv36 = sext i32 %25 to i64\l  %add37 = add nsw i64 %mul35, %conv36\l  store i64 %add37, i64* %retval, align 8\l  br label %return\l}"];
+	Node0x228ffb0 -> Node0x2245c70;
+	Node0x228ffb0 -> Node0x2267af0;
+	Node0x228ffb0 -> Node0x224bf00;
+	Node0x2245c70 [shape=record,label="{land.end:                                         \l  %10 = phi i1 [ false, %if.then7 ], [ %9, %lor.end ]\l  %land.ext = zext i1 %10 to i32\l  store i32 %land.ext, i32* %isLeapYr, align 4\l  %11 = load i32, i32* %mon, align 4\l  %idxprom13 = sext i32 %11 to i64\l  %arrayidx14 = getelementptr inbounds [12 x i32], [12 x i32]*\l... @ParseRfc822Date.priorDays, i64 0, i64 %idxprom13\l  %12 = load i32, i32* %arrayidx14, align 4\l  %13 = load i32, i32* %mday, align 4\l  %add15 = add nsw i32 %12, %13\l  %sub16 = sub nsw i32 %add15, 1\l  store i32 %sub16, i32* %yday, align 4\l  %14 = load i32, i32* %isLeapYr, align 4\l  %tobool17 = icmp ne i32 %14, 0\l  br i1 %tobool17, label %land.lhs.true, label %if.end20\l}"];
+	Node0x2245c70 -> Node0x22bde50;
+	Node0x2245c70 -> Node0x2277400;
+	Node0x22bde50 [shape=record,label="{if.then7:                                         \l  %6 = load i32, i32* %year, align 4\l  %rem = srem i32 %6, 4\l  %cmp8 = icmp eq i32 %rem, 0\l  br i1 %cmp8, label %land.rhs, label %land.end\l}"];
+	Node0x2277400 [shape=record,label="{lor.end:                                          \l  %9 = phi i1 [ true, %land.rhs ], [ %cmp12, %lor.rhs ]\l  br label %land.end\l}"];
+	Node0x2277400 -> Node0x226b8c0;
+	Node0x2277400 -> Node0x22cc090;
+	Node0x226b8c0 [shape=record,label="{land.rhs:                                         \l  %7 = load i32, i32* %year, align 4\l  %rem9 = srem i32 %7, 100\l  %cmp10 = icmp ne i32 %rem9, 0\l  br i1 %cmp10, label %lor.end, label %lor.rhs\l}"];
+	Node0x22cc090 [shape=record,label="{lor.rhs:                                          \l  %8 = load i32, i32* %year, align 4\l  %add = add nsw i32 %8, 300\l  %rem11 = srem i32 %add, 400\l  %cmp12 = icmp eq i32 %rem11, 0\l  br label %lor.end\l}"];
+	Node0x2267af0 [shape=record,label="{land.lhs.true:                                    \l  %15 = load i32, i32* %mon, align 4\l  %cmp18 = icmp sgt i32 %15, 1\l  br i1 %cmp18, label %if.then19, label %if.end20\l}"];
+	Node0x224bf00 [shape=record,label="{if.then19:                                        \l  %16 = load i32, i32* %yday, align 4\l  %inc = add nsw i32 %16, 1\l  store i32 %inc, i32* %yday, align 4\l  br label %if.end20\l}"];
+	Node0x22c1c50 [shape=record,label="{for.body:                                         \l  %4 = load i32, i32* %mon, align 4\l  %idxprom = sext i32 %4 to i64\l  %arrayidx = getelementptr inbounds [12 x i8*], [12 x i8*]*\l... @ParseRfc822Date.azMonths, i64 0, i64 %idxprom\l  %5 = load i8*, i8** %arrayidx, align 8\l  %arraydecay5 = getelementptr inbounds [4 x i8], [4 x i8]* %zMonth, i64 0,\l... i64 0\l  %call6 = call i32 @strncmp(i8* %5, i8* %arraydecay5, i64 3) #8\l  %tobool = icmp ne i32 %call6, 0\l  br i1 %tobool, label %if.end38, label %if.then7\l}"];
+	Node0x2296a40 [shape=record,label="{for.cond:                                         \l  %3 = load i32, i32* %mon, align 4\l  %cmp4 = icmp slt i32 %3, 12\l  br i1 %cmp4, label %for.body, label %for.end\l}"];
+	Node0x2296a40 -> Node0x2284bd0;
+	Node0x2296a40 -> Node0x22570c0;
+	Node0x2284bd0 [shape=record,label="{if.end:                                           \l  store i32 0, i32* %mon, align 4\l  br label %for.cond\l}"];
+	Node0x2284bd0 -> Node0x2268260;
+	Node0x2284bd0 -> Node0x225eb10;
+	Node0x2268260 [shape=record,label="{if.then:                                          \l  %1 = load i32, i32* %year, align 4\l  %cmp2 = icmp sgt i32 %1, 1900\l  br i1 %cmp2, label %if.then3, label %if.end\l}"];
+	Node0x225eb10 [shape=record,label="{if.then3:                                         \l  %2 = load i32, i32* %year, align 4\l  %sub = sub nsw i32 %2, 1900\l  store i32 %sub, i32* %year, align 4\l  br label %if.end\l}"];
+	Node0x22570c0 [shape=record,label="{for.inc:                                          \l  %26 = load i32, i32* %mon, align 4\l  %inc39 = add nsw i32 %26, 1\l  store i32 %inc39, i32* %mon, align 4\l  br label %for.cond\l}"];
+	Node0x22570c0 -> Node0x229f350;
+	Node0x229f350 [shape=record,label="{if.end38:                                         \l  br label %for.inc\l}"];
+	Node0x22a3330 [shape=record,label="{entry:\l  %retval = alloca i64, align 8\l  %zDate.addr = alloca i8*, align 8\l  %mday = alloca i32, align 4\l  %mon = alloca i32, align 4\l  %year = alloca i32, align 4\l  %yday = alloca i32, align 4\l  %hour = alloca i32, align 4\l  %min = alloca i32, align 4\l  %sec = alloca i32, align 4\l  %zIgnore = alloca [4 x i8], align 1\l  %zMonth = alloca [4 x i8], align 1\l  %nDay = alloca i32, align 4\l  %isLeapYr = alloca i32, align 4\l  store i8* %zDate, i8** %zDate.addr, align 8\l  %0 = load i8*, i8** %zDate.addr, align 8\l  %arraydecay = getelementptr inbounds [4 x i8], [4 x i8]* %zIgnore, i64 0,\l... i64 0\l  %arraydecay1 = getelementptr inbounds [4 x i8], [4 x i8]* %zMonth, i64 0,\l... i64 0\l  %call = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %0, i8* getelementptr\l... inbounds ([38 x i8], [38 x i8]* @.str.12, i64 0, i64 0), i8* %arraydecay,\l... i32* %mday, i8* %arraydecay1, i32* %year, i32* %hour, i32* %min, i32* %sec) #7\l  %cmp = icmp eq i32 7, %call\l  br i1 %cmp, label %if.then, label %if.end40\l}"];
+	Node0x22800d0 [shape=record,label="{if.end40:                                         \l  store i64 0, i64* %retval, align 8\l  br label %return\l}"];
+	Node0x22800d0 -> Node0x2291bc0;
+	Node0x2291bc0 [shape=record,label="{for.end:                                          \l  br label %if.end40\l}"];
+}

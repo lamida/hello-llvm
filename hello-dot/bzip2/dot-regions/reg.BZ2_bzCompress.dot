@@ -1,199 +1,199 @@
 digraph "Region Graph for 'BZ2_bzCompress' function" {
 	label="Region Graph for 'BZ2_bzCompress' function";
 
-	Node0x8cf6c0 [shape=record,label="{%2:\l  %3 = alloca i32, align 4\l  %4 = alloca %struct.bz_stream*, align 8\l  %5 = alloca i32, align 4\l  %6 = alloca i8, align 1\l  %7 = alloca %struct.EState*, align 8\l  store %struct.bz_stream* %0, %struct.bz_stream** %4, align 8\l  store i32 %1, i32* %5, align 4\l  %8 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %9 = icmp eq %struct.bz_stream* %8, null\l  br i1 %9, label %10, label %11\l}"];
-	Node0x8cf6c0 -> Node0x914d30;
-	Node0x8cf6c0 -> Node0x9a06c0;
-	Node0x914d30 [shape=record,label="{%10:\l10:                                               \l  store i32 -2, i32* %3, align 4\l  br label %147\l}"];
-	Node0x914d30 -> Node0xb3c6d0;
-	Node0xb3c6d0 [shape=record,label="{%147:\l147:                                              \l  %148 = load i32, i32* %3, align 4\l  ret i32 %148\l}"];
-	Node0x9a06c0 [shape=record,label="{%11:\l11:                                               \l  %12 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %13 = getelementptr inbounds %struct.bz_stream, %struct.bz_stream* %12, i32\l... 0, i32 8\l  %14 = load i8*, i8** %13, align 8\l  %15 = bitcast i8* %14 to %struct.EState*\l  store %struct.EState* %15, %struct.EState** %7, align 8\l  %16 = load %struct.EState*, %struct.EState** %7, align 8\l  %17 = icmp eq %struct.EState* %16, null\l  br i1 %17, label %18, label %19\l}"];
-	Node0x9a06c0 -> Node0x9ebe60;
-	Node0x9a06c0 -> Node0xa63720;
-	Node0x9ebe60 [shape=record,label="{%18:\l18:                                               \l  store i32 -2, i32* %3, align 4\l  br label %147\l}"];
-	Node0x9ebe60 -> Node0xb3c6d0;
-	Node0xa63720 [shape=record,label="{%19:\l19:                                               \l  %20 = load %struct.EState*, %struct.EState** %7, align 8\l  %21 = getelementptr inbounds %struct.EState, %struct.EState* %20, i32 0, i32\l... 0\l  %22 = load %struct.bz_stream*, %struct.bz_stream** %21, align 8\l  %23 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %24 = icmp ne %struct.bz_stream* %22, %23\l  br i1 %24, label %25, label %26\l}"];
-	Node0xa63720 -> Node0xb783c0;
-	Node0xa63720 -> Node0xb36580;
-	Node0xb783c0 [shape=record,label="{%25:\l25:                                               \l  store i32 -2, i32* %3, align 4\l  br label %147\l}"];
-	Node0xb783c0 -> Node0xb3c6d0;
-	Node0xb36580 [shape=record,label="{%26:\l26:                                               \l  br label %27\l}"];
-	Node0xb36580 -> Node0xb6a250;
-	Node0xb6a250 [shape=record,label="{%27:\l27:                                               \l  %28 = load %struct.EState*, %struct.EState** %7, align 8\l  %29 = getelementptr inbounds %struct.EState, %struct.EState* %28, i32 0, i32\l... 1\l  %30 = load i32, i32* %29, align 8\l  switch i32 %30, label %146 [\l    i32 1, label %31\l    i32 2, label %32\l    i32 3, label %66\l    i32 4, label %104\l  ]\l}"];
-	Node0xb6a250 -> Node0xb3c3a0;
-	Node0xb6a250 -> Node0xbedb40;
-	Node0xb6a250 -> Node0xb3cda0;
-	Node0xb6a250 -> Node0xa9a8f0;
-	Node0xb6a250 -> Node0xc10ff0;
-	Node0xb3c3a0 [shape=record,label="{%146:\l146:                                              \l  store i32 0, i32* %3, align 4\l  br label %147\l}"];
-	Node0xb3c3a0 -> Node0xb3c6d0;
-	Node0xbedb40 [shape=record,label="{%31:\l31:                                               \l  store i32 -1, i32* %3, align 4\l  br label %147\l}"];
-	Node0xbedb40 -> Node0xb3c6d0;
-	Node0xb3cda0 [shape=record,label="{%32:\l32:                                               \l  %33 = load i32, i32* %5, align 4\l  %34 = icmp eq i32 %33, 0\l  br i1 %34, label %35, label %43\l}"];
-	Node0xb3cda0 -> Node0xb7dd70;
-	Node0xb3cda0 -> Node0xb756d0;
-	Node0xb7dd70 [shape=record,label="{%35:\l35:                                               \l  %36 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %37 = call zeroext i8 @handle_compress(%struct.bz_stream* %36)\l  store i8 %37, i8* %6, align 1\l  %38 = load i8, i8* %6, align 1\l  %39 = zext i8 %38 to i32\l  %40 = icmp ne i32 %39, 0\l  %41 = zext i1 %40 to i64\l  %42 = select i1 %40, i32 1, i32 -2\l  store i32 %42, i32* %3, align 4\l  br label %147\l}"];
-	Node0xb7dd70 -> Node0xb3c6d0;
-	Node0xb756d0 [shape=record,label="{%43:\l43:                                               \l  %44 = load i32, i32* %5, align 4\l  %45 = icmp eq i32 %44, 1\l  br i1 %45, label %46, label %54\l}"];
-	Node0xb756d0 -> Node0xbf2e50;
-	Node0xb756d0 -> Node0xbf5d00;
-	Node0xbf2e50 [shape=record,label="{%46:\l46:                                               \l  %47 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %48 = getelementptr inbounds %struct.bz_stream, %struct.bz_stream* %47, i32\l... 0, i32 1\l  %49 = load i32, i32* %48, align 8\l  %50 = load %struct.EState*, %struct.EState** %7, align 8\l  %51 = getelementptr inbounds %struct.EState, %struct.EState* %50, i32 0, i32\l... 3\l  store i32 %49, i32* %51, align 8\l  %52 = load %struct.EState*, %struct.EState** %7, align 8\l  %53 = getelementptr inbounds %struct.EState, %struct.EState* %52, i32 0, i32\l... 1\l  store i32 3, i32* %53, align 8\l  br label %27\l}"];
-	Node0xbf2e50 -> Node0xb6a250[constraint=false];
-	Node0xbf5d00 [shape=record,label="{%54:\l54:                                               \l  %55 = load i32, i32* %5, align 4\l  %56 = icmp eq i32 %55, 2\l  br i1 %56, label %57, label %65\l}"];
-	Node0xbf5d00 -> Node0xbef660;
-	Node0xbf5d00 -> Node0xa61f70;
-	Node0xbef660 [shape=record,label="{%57:\l57:                                               \l  %58 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %59 = getelementptr inbounds %struct.bz_stream, %struct.bz_stream* %58, i32\l... 0, i32 1\l  %60 = load i32, i32* %59, align 8\l  %61 = load %struct.EState*, %struct.EState** %7, align 8\l  %62 = getelementptr inbounds %struct.EState, %struct.EState* %61, i32 0, i32\l... 3\l  store i32 %60, i32* %62, align 8\l  %63 = load %struct.EState*, %struct.EState** %7, align 8\l  %64 = getelementptr inbounds %struct.EState, %struct.EState* %63, i32 0, i32\l... 1\l  store i32 4, i32* %64, align 8\l  br label %27\l}"];
-	Node0xbef660 -> Node0xb6a250[constraint=false];
-	Node0xa61f70 [shape=record,label="{%65:\l65:                                               \l  store i32 -2, i32* %3, align 4\l  br label %147\l}"];
-	Node0xa61f70 -> Node0xb3c6d0;
-	Node0xa9a8f0 [shape=record,label="{%66:\l66:                                               \l  %67 = load i32, i32* %5, align 4\l  %68 = icmp ne i32 %67, 1\l  br i1 %68, label %69, label %70\l}"];
-	Node0xa9a8f0 -> Node0xb70890;
-	Node0xa9a8f0 -> Node0xb28e00;
-	Node0xb70890 [shape=record,label="{%69:\l69:                                               \l  store i32 -1, i32* %3, align 4\l  br label %147\l}"];
-	Node0xb70890 -> Node0xb3c6d0;
-	Node0xb28e00 [shape=record,label="{%70:\l70:                                               \l  %71 = load %struct.EState*, %struct.EState** %7, align 8\l  %72 = getelementptr inbounds %struct.EState, %struct.EState* %71, i32 0, i32\l... 3\l  %73 = load i32, i32* %72, align 8\l  %74 = load %struct.EState*, %struct.EState** %7, align 8\l  %75 = getelementptr inbounds %struct.EState, %struct.EState* %74, i32 0, i32\l... 0\l  %76 = load %struct.bz_stream*, %struct.bz_stream** %75, align 8\l  %77 = getelementptr inbounds %struct.bz_stream, %struct.bz_stream* %76, i32\l... 0, i32 1\l  %78 = load i32, i32* %77, align 8\l  %79 = icmp ne i32 %73, %78\l  br i1 %79, label %80, label %81\l}"];
-	Node0xb28e00 -> Node0xaecbf0;
-	Node0xb28e00 -> Node0xb34e50;
-	Node0xaecbf0 [shape=record,label="{%80:\l80:                                               \l  store i32 -1, i32* %3, align 4\l  br label %147\l}"];
-	Node0xaecbf0 -> Node0xb3c6d0;
-	Node0xb34e50 [shape=record,label="{%81:\l81:                                               \l  %82 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %83 = call zeroext i8 @handle_compress(%struct.bz_stream* %82)\l  store i8 %83, i8* %6, align 1\l  %84 = load %struct.EState*, %struct.EState** %7, align 8\l  %85 = getelementptr inbounds %struct.EState, %struct.EState* %84, i32 0, i32\l... 3\l  %86 = load i32, i32* %85, align 8\l  %87 = icmp ugt i32 %86, 0\l  br i1 %87, label %100, label %88\l}"];
-	Node0xb34e50 -> Node0xbdfe80;
-	Node0xb34e50 -> Node0xbe0280;
-	Node0xbdfe80 [shape=record,label="{%100:\l100:                                              \l  store i32 2, i32* %3, align 4\l  br label %147\l}"];
-	Node0xbdfe80 -> Node0xb3c6d0;
-	Node0xbe0280 [shape=record,label="{%88:\l88:                                               \l  %89 = load %struct.EState*, %struct.EState** %7, align 8\l  %90 = call zeroext i8 @isempty_RL(%struct.EState* %89)\l  %91 = icmp ne i8 %90, 0\l  br i1 %91, label %92, label %100\l}"];
-	Node0xbe0280 -> Node0x8ecfb0;
-	Node0xbe0280 -> Node0xbdfe80;
-	Node0x8ecfb0 [shape=record,label="{%92:\l92:                                               \l  %93 = load %struct.EState*, %struct.EState** %7, align 8\l  %94 = getelementptr inbounds %struct.EState, %struct.EState* %93, i32 0, i32\l... 20\l  %95 = load i32, i32* %94, align 8\l  %96 = load %struct.EState*, %struct.EState** %7, align 8\l  %97 = getelementptr inbounds %struct.EState, %struct.EState* %96, i32 0, i32\l... 19\l  %98 = load i32, i32* %97, align 4\l  %99 = icmp slt i32 %95, %98\l  br i1 %99, label %100, label %101\l}"];
-	Node0x8ecfb0 -> Node0xbdfe80;
-	Node0x8ecfb0 -> Node0xaae360;
-	Node0xaae360 [shape=record,label="{%101:\l101:                                              \l  %102 = load %struct.EState*, %struct.EState** %7, align 8\l  %103 = getelementptr inbounds %struct.EState, %struct.EState* %102, i32 0,\l... i32 1\l  store i32 2, i32* %103, align 8\l  store i32 1, i32* %3, align 4\l  br label %147\l}"];
-	Node0xaae360 -> Node0xb3c6d0;
-	Node0xc10ff0 [shape=record,label="{%104:\l104:                                              \l  %105 = load i32, i32* %5, align 4\l  %106 = icmp ne i32 %105, 2\l  br i1 %106, label %107, label %108\l}"];
-	Node0xc10ff0 -> Node0xbf08b0;
-	Node0xc10ff0 -> Node0xb4a4c0;
-	Node0xbf08b0 [shape=record,label="{%107:\l107:                                              \l  store i32 -1, i32* %3, align 4\l  br label %147\l}"];
-	Node0xbf08b0 -> Node0xb3c6d0;
-	Node0xb4a4c0 [shape=record,label="{%108:\l108:                                              \l  %109 = load %struct.EState*, %struct.EState** %7, align 8\l  %110 = getelementptr inbounds %struct.EState, %struct.EState* %109, i32 0,\l... i32 3\l  %111 = load i32, i32* %110, align 8\l  %112 = load %struct.EState*, %struct.EState** %7, align 8\l  %113 = getelementptr inbounds %struct.EState, %struct.EState* %112, i32 0,\l... i32 0\l  %114 = load %struct.bz_stream*, %struct.bz_stream** %113, align 8\l  %115 = getelementptr inbounds %struct.bz_stream, %struct.bz_stream* %114,\l... i32 0, i32 1\l  %116 = load i32, i32* %115, align 8\l  %117 = icmp ne i32 %111, %116\l  br i1 %117, label %118, label %119\l}"];
-	Node0xb4a4c0 -> Node0xb43540;
-	Node0xb4a4c0 -> Node0xbdfba0;
-	Node0xb43540 [shape=record,label="{%118:\l118:                                              \l  store i32 -1, i32* %3, align 4\l  br label %147\l}"];
-	Node0xb43540 -> Node0xb3c6d0;
-	Node0xbdfba0 [shape=record,label="{%119:\l119:                                              \l  %120 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %121 = call zeroext i8 @handle_compress(%struct.bz_stream* %120)\l  store i8 %121, i8* %6, align 1\l  %122 = load i8, i8* %6, align 1\l  %123 = icmp ne i8 %122, 0\l  br i1 %123, label %125, label %124\l}"];
-	Node0xbdfba0 -> Node0x9afd50;
-	Node0xbdfba0 -> Node0xb525f0;
-	Node0x9afd50 [shape=record,label="{%125:\l125:                                              \l  %126 = load %struct.EState*, %struct.EState** %7, align 8\l  %127 = getelementptr inbounds %struct.EState, %struct.EState* %126, i32 0,\l... i32 3\l  %128 = load i32, i32* %127, align 8\l  %129 = icmp ugt i32 %128, 0\l  br i1 %129, label %142, label %130\l}"];
-	Node0x9afd50 -> Node0xbecfd0;
-	Node0x9afd50 -> Node0xbdfef0;
-	Node0xbecfd0 [shape=record,label="{%142:\l142:                                              \l  store i32 3, i32* %3, align 4\l  br label %147\l}"];
-	Node0xbecfd0 -> Node0xb3c6d0;
-	Node0xbdfef0 [shape=record,label="{%130:\l130:                                              \l  %131 = load %struct.EState*, %struct.EState** %7, align 8\l  %132 = call zeroext i8 @isempty_RL(%struct.EState* %131)\l  %133 = icmp ne i8 %132, 0\l  br i1 %133, label %134, label %142\l}"];
-	Node0xbdfef0 -> Node0x973be0;
-	Node0xbdfef0 -> Node0xbecfd0;
-	Node0x973be0 [shape=record,label="{%134:\l134:                                              \l  %135 = load %struct.EState*, %struct.EState** %7, align 8\l  %136 = getelementptr inbounds %struct.EState, %struct.EState* %135, i32 0,\l... i32 20\l  %137 = load i32, i32* %136, align 8\l  %138 = load %struct.EState*, %struct.EState** %7, align 8\l  %139 = getelementptr inbounds %struct.EState, %struct.EState* %138, i32 0,\l... i32 19\l  %140 = load i32, i32* %139, align 4\l  %141 = icmp slt i32 %137, %140\l  br i1 %141, label %142, label %143\l}"];
-	Node0x973be0 -> Node0xbecfd0;
-	Node0x973be0 -> Node0xbe5cf0;
-	Node0xbe5cf0 [shape=record,label="{%143:\l143:                                              \l  %144 = load %struct.EState*, %struct.EState** %7, align 8\l  %145 = getelementptr inbounds %struct.EState, %struct.EState* %144, i32 0,\l... i32 1\l  store i32 1, i32* %145, align 8\l  store i32 4, i32* %3, align 4\l  br label %147\l}"];
-	Node0xbe5cf0 -> Node0xb3c6d0;
-	Node0xb525f0 [shape=record,label="{%124:\l124:                                              \l  store i32 -1, i32* %3, align 4\l  br label %147\l}"];
-	Node0xb525f0 -> Node0xb3c6d0;
+	Node0x2a8c360 [shape=record,label="{%2:\l  %3 = alloca i32, align 4\l  %4 = alloca %struct.bz_stream*, align 8\l  %5 = alloca i32, align 4\l  %6 = alloca i8, align 1\l  %7 = alloca %struct.EState*, align 8\l  store %struct.bz_stream* %0, %struct.bz_stream** %4, align 8\l  store i32 %1, i32* %5, align 4\l  %8 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %9 = icmp eq %struct.bz_stream* %8, null\l  br i1 %9, label %10, label %11\l}"];
+	Node0x2a8c360 -> Node0x2ab6780;
+	Node0x2a8c360 -> Node0x2aa8700;
+	Node0x2ab6780 [shape=record,label="{%10:\l10:                                               \l  store i32 -2, i32* %3, align 4\l  br label %147\l}"];
+	Node0x2ab6780 -> Node0x2aa8e20;
+	Node0x2aa8e20 [shape=record,label="{%147:\l147:                                              \l  %148 = load i32, i32* %3, align 4\l  ret i32 %148\l}"];
+	Node0x2aa8700 [shape=record,label="{%11:\l11:                                               \l  %12 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %13 = getelementptr inbounds %struct.bz_stream, %struct.bz_stream* %12, i32\l... 0, i32 8\l  %14 = load i8*, i8** %13, align 8\l  %15 = bitcast i8* %14 to %struct.EState*\l  store %struct.EState* %15, %struct.EState** %7, align 8\l  %16 = load %struct.EState*, %struct.EState** %7, align 8\l  %17 = icmp eq %struct.EState* %16, null\l  br i1 %17, label %18, label %19\l}"];
+	Node0x2aa8700 -> Node0x2ac6ea0;
+	Node0x2aa8700 -> Node0x2a984c0;
+	Node0x2ac6ea0 [shape=record,label="{%18:\l18:                                               \l  store i32 -2, i32* %3, align 4\l  br label %147\l}"];
+	Node0x2ac6ea0 -> Node0x2aa8e20;
+	Node0x2a984c0 [shape=record,label="{%19:\l19:                                               \l  %20 = load %struct.EState*, %struct.EState** %7, align 8\l  %21 = getelementptr inbounds %struct.EState, %struct.EState* %20, i32 0, i32\l... 0\l  %22 = load %struct.bz_stream*, %struct.bz_stream** %21, align 8\l  %23 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %24 = icmp ne %struct.bz_stream* %22, %23\l  br i1 %24, label %25, label %26\l}"];
+	Node0x2a984c0 -> Node0x29ed650;
+	Node0x2a984c0 -> Node0x2810f10;
+	Node0x29ed650 [shape=record,label="{%25:\l25:                                               \l  store i32 -2, i32* %3, align 4\l  br label %147\l}"];
+	Node0x29ed650 -> Node0x2aa8e20;
+	Node0x2810f10 [shape=record,label="{%26:\l26:                                               \l  br label %27\l}"];
+	Node0x2810f10 -> Node0x2a9b340;
+	Node0x2a9b340 [shape=record,label="{%27:\l27:                                               \l  %28 = load %struct.EState*, %struct.EState** %7, align 8\l  %29 = getelementptr inbounds %struct.EState, %struct.EState* %28, i32 0, i32\l... 1\l  %30 = load i32, i32* %29, align 8\l  switch i32 %30, label %146 [\l    i32 1, label %31\l    i32 2, label %32\l    i32 3, label %66\l    i32 4, label %104\l  ]\l}"];
+	Node0x2a9b340 -> Node0x2a3abf0;
+	Node0x2a9b340 -> Node0x2aba260;
+	Node0x2a9b340 -> Node0x2a8b0e0;
+	Node0x2a9b340 -> Node0x2b3fd60;
+	Node0x2a9b340 -> Node0x2b40e50;
+	Node0x2a3abf0 [shape=record,label="{%146:\l146:                                              \l  store i32 0, i32* %3, align 4\l  br label %147\l}"];
+	Node0x2a3abf0 -> Node0x2aa8e20;
+	Node0x2aba260 [shape=record,label="{%31:\l31:                                               \l  store i32 -1, i32* %3, align 4\l  br label %147\l}"];
+	Node0x2aba260 -> Node0x2aa8e20;
+	Node0x2a8b0e0 [shape=record,label="{%32:\l32:                                               \l  %33 = load i32, i32* %5, align 4\l  %34 = icmp eq i32 %33, 0\l  br i1 %34, label %35, label %43\l}"];
+	Node0x2a8b0e0 -> Node0x29fc360;
+	Node0x2a8b0e0 -> Node0x29ac6a0;
+	Node0x29fc360 [shape=record,label="{%35:\l35:                                               \l  %36 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %37 = call zeroext i8 @handle_compress(%struct.bz_stream* %36)\l  store i8 %37, i8* %6, align 1\l  %38 = load i8, i8* %6, align 1\l  %39 = zext i8 %38 to i32\l  %40 = icmp ne i32 %39, 0\l  %41 = zext i1 %40 to i64\l  %42 = select i1 %40, i32 1, i32 -2\l  store i32 %42, i32* %3, align 4\l  br label %147\l}"];
+	Node0x29fc360 -> Node0x2aa8e20;
+	Node0x29ac6a0 [shape=record,label="{%43:\l43:                                               \l  %44 = load i32, i32* %5, align 4\l  %45 = icmp eq i32 %44, 1\l  br i1 %45, label %46, label %54\l}"];
+	Node0x29ac6a0 -> Node0x2b4c2b0;
+	Node0x29ac6a0 -> Node0x2a7ca90;
+	Node0x2b4c2b0 [shape=record,label="{%46:\l46:                                               \l  %47 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %48 = getelementptr inbounds %struct.bz_stream, %struct.bz_stream* %47, i32\l... 0, i32 1\l  %49 = load i32, i32* %48, align 8\l  %50 = load %struct.EState*, %struct.EState** %7, align 8\l  %51 = getelementptr inbounds %struct.EState, %struct.EState* %50, i32 0, i32\l... 3\l  store i32 %49, i32* %51, align 8\l  %52 = load %struct.EState*, %struct.EState** %7, align 8\l  %53 = getelementptr inbounds %struct.EState, %struct.EState* %52, i32 0, i32\l... 1\l  store i32 3, i32* %53, align 8\l  br label %27\l}"];
+	Node0x2b4c2b0 -> Node0x2a9b340[constraint=false];
+	Node0x2a7ca90 [shape=record,label="{%54:\l54:                                               \l  %55 = load i32, i32* %5, align 4\l  %56 = icmp eq i32 %55, 2\l  br i1 %56, label %57, label %65\l}"];
+	Node0x2a7ca90 -> Node0x2810ab0;
+	Node0x2a7ca90 -> Node0x2aa7b00;
+	Node0x2810ab0 [shape=record,label="{%57:\l57:                                               \l  %58 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %59 = getelementptr inbounds %struct.bz_stream, %struct.bz_stream* %58, i32\l... 0, i32 1\l  %60 = load i32, i32* %59, align 8\l  %61 = load %struct.EState*, %struct.EState** %7, align 8\l  %62 = getelementptr inbounds %struct.EState, %struct.EState* %61, i32 0, i32\l... 3\l  store i32 %60, i32* %62, align 8\l  %63 = load %struct.EState*, %struct.EState** %7, align 8\l  %64 = getelementptr inbounds %struct.EState, %struct.EState* %63, i32 0, i32\l... 1\l  store i32 4, i32* %64, align 8\l  br label %27\l}"];
+	Node0x2810ab0 -> Node0x2a9b340[constraint=false];
+	Node0x2aa7b00 [shape=record,label="{%65:\l65:                                               \l  store i32 -2, i32* %3, align 4\l  br label %147\l}"];
+	Node0x2aa7b00 -> Node0x2aa8e20;
+	Node0x2b3fd60 [shape=record,label="{%66:\l66:                                               \l  %67 = load i32, i32* %5, align 4\l  %68 = icmp ne i32 %67, 1\l  br i1 %68, label %69, label %70\l}"];
+	Node0x2b3fd60 -> Node0x27e6550;
+	Node0x2b3fd60 -> Node0x2915960;
+	Node0x27e6550 [shape=record,label="{%69:\l69:                                               \l  store i32 -1, i32* %3, align 4\l  br label %147\l}"];
+	Node0x27e6550 -> Node0x2aa8e20;
+	Node0x2915960 [shape=record,label="{%70:\l70:                                               \l  %71 = load %struct.EState*, %struct.EState** %7, align 8\l  %72 = getelementptr inbounds %struct.EState, %struct.EState* %71, i32 0, i32\l... 3\l  %73 = load i32, i32* %72, align 8\l  %74 = load %struct.EState*, %struct.EState** %7, align 8\l  %75 = getelementptr inbounds %struct.EState, %struct.EState* %74, i32 0, i32\l... 0\l  %76 = load %struct.bz_stream*, %struct.bz_stream** %75, align 8\l  %77 = getelementptr inbounds %struct.bz_stream, %struct.bz_stream* %76, i32\l... 0, i32 1\l  %78 = load i32, i32* %77, align 8\l  %79 = icmp ne i32 %73, %78\l  br i1 %79, label %80, label %81\l}"];
+	Node0x2915960 -> Node0x2810f90;
+	Node0x2915960 -> Node0x2ab8bd0;
+	Node0x2810f90 [shape=record,label="{%80:\l80:                                               \l  store i32 -1, i32* %3, align 4\l  br label %147\l}"];
+	Node0x2810f90 -> Node0x2aa8e20;
+	Node0x2ab8bd0 [shape=record,label="{%81:\l81:                                               \l  %82 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %83 = call zeroext i8 @handle_compress(%struct.bz_stream* %82)\l  store i8 %83, i8* %6, align 1\l  %84 = load %struct.EState*, %struct.EState** %7, align 8\l  %85 = getelementptr inbounds %struct.EState, %struct.EState* %84, i32 0, i32\l... 3\l  %86 = load i32, i32* %85, align 8\l  %87 = icmp ugt i32 %86, 0\l  br i1 %87, label %100, label %88\l}"];
+	Node0x2ab8bd0 -> Node0x2885b60;
+	Node0x2ab8bd0 -> Node0x2a6bbb0;
+	Node0x2885b60 [shape=record,label="{%100:\l100:                                              \l  store i32 2, i32* %3, align 4\l  br label %147\l}"];
+	Node0x2885b60 -> Node0x2aa8e20;
+	Node0x2a6bbb0 [shape=record,label="{%88:\l88:                                               \l  %89 = load %struct.EState*, %struct.EState** %7, align 8\l  %90 = call zeroext i8 @isempty_RL(%struct.EState* %89)\l  %91 = icmp ne i8 %90, 0\l  br i1 %91, label %92, label %100\l}"];
+	Node0x2a6bbb0 -> Node0x2a7ca10;
+	Node0x2a6bbb0 -> Node0x2885b60;
+	Node0x2a7ca10 [shape=record,label="{%92:\l92:                                               \l  %93 = load %struct.EState*, %struct.EState** %7, align 8\l  %94 = getelementptr inbounds %struct.EState, %struct.EState* %93, i32 0, i32\l... 20\l  %95 = load i32, i32* %94, align 8\l  %96 = load %struct.EState*, %struct.EState** %7, align 8\l  %97 = getelementptr inbounds %struct.EState, %struct.EState* %96, i32 0, i32\l... 19\l  %98 = load i32, i32* %97, align 4\l  %99 = icmp slt i32 %95, %98\l  br i1 %99, label %100, label %101\l}"];
+	Node0x2a7ca10 -> Node0x2885b60;
+	Node0x2a7ca10 -> Node0x29a9470;
+	Node0x29a9470 [shape=record,label="{%101:\l101:                                              \l  %102 = load %struct.EState*, %struct.EState** %7, align 8\l  %103 = getelementptr inbounds %struct.EState, %struct.EState* %102, i32 0,\l... i32 1\l  store i32 2, i32* %103, align 8\l  store i32 1, i32* %3, align 4\l  br label %147\l}"];
+	Node0x29a9470 -> Node0x2aa8e20;
+	Node0x2b40e50 [shape=record,label="{%104:\l104:                                              \l  %105 = load i32, i32* %5, align 4\l  %106 = icmp ne i32 %105, 2\l  br i1 %106, label %107, label %108\l}"];
+	Node0x2b40e50 -> Node0x2a76180;
+	Node0x2b40e50 -> Node0x2ab84e0;
+	Node0x2a76180 [shape=record,label="{%107:\l107:                                              \l  store i32 -1, i32* %3, align 4\l  br label %147\l}"];
+	Node0x2a76180 -> Node0x2aa8e20;
+	Node0x2ab84e0 [shape=record,label="{%108:\l108:                                              \l  %109 = load %struct.EState*, %struct.EState** %7, align 8\l  %110 = getelementptr inbounds %struct.EState, %struct.EState* %109, i32 0,\l... i32 3\l  %111 = load i32, i32* %110, align 8\l  %112 = load %struct.EState*, %struct.EState** %7, align 8\l  %113 = getelementptr inbounds %struct.EState, %struct.EState* %112, i32 0,\l... i32 0\l  %114 = load %struct.bz_stream*, %struct.bz_stream** %113, align 8\l  %115 = getelementptr inbounds %struct.bz_stream, %struct.bz_stream* %114,\l... i32 0, i32 1\l  %116 = load i32, i32* %115, align 8\l  %117 = icmp ne i32 %111, %116\l  br i1 %117, label %118, label %119\l}"];
+	Node0x2ab84e0 -> Node0x2b33b40;
+	Node0x2ab84e0 -> Node0x2a97e70;
+	Node0x2b33b40 [shape=record,label="{%118:\l118:                                              \l  store i32 -1, i32* %3, align 4\l  br label %147\l}"];
+	Node0x2b33b40 -> Node0x2aa8e20;
+	Node0x2a97e70 [shape=record,label="{%119:\l119:                                              \l  %120 = load %struct.bz_stream*, %struct.bz_stream** %4, align 8\l  %121 = call zeroext i8 @handle_compress(%struct.bz_stream* %120)\l  store i8 %121, i8* %6, align 1\l  %122 = load i8, i8* %6, align 1\l  %123 = icmp ne i8 %122, 0\l  br i1 %123, label %125, label %124\l}"];
+	Node0x2a97e70 -> Node0x2aa3730;
+	Node0x2a97e70 -> Node0x2862a80;
+	Node0x2aa3730 [shape=record,label="{%125:\l125:                                              \l  %126 = load %struct.EState*, %struct.EState** %7, align 8\l  %127 = getelementptr inbounds %struct.EState, %struct.EState* %126, i32 0,\l... i32 3\l  %128 = load i32, i32* %127, align 8\l  %129 = icmp ugt i32 %128, 0\l  br i1 %129, label %142, label %130\l}"];
+	Node0x2aa3730 -> Node0x2b55970;
+	Node0x2aa3730 -> Node0x2a86a40;
+	Node0x2b55970 [shape=record,label="{%142:\l142:                                              \l  store i32 3, i32* %3, align 4\l  br label %147\l}"];
+	Node0x2b55970 -> Node0x2aa8e20;
+	Node0x2a86a40 [shape=record,label="{%130:\l130:                                              \l  %131 = load %struct.EState*, %struct.EState** %7, align 8\l  %132 = call zeroext i8 @isempty_RL(%struct.EState* %131)\l  %133 = icmp ne i8 %132, 0\l  br i1 %133, label %134, label %142\l}"];
+	Node0x2a86a40 -> Node0x2863e60;
+	Node0x2a86a40 -> Node0x2b55970;
+	Node0x2863e60 [shape=record,label="{%134:\l134:                                              \l  %135 = load %struct.EState*, %struct.EState** %7, align 8\l  %136 = getelementptr inbounds %struct.EState, %struct.EState* %135, i32 0,\l... i32 20\l  %137 = load i32, i32* %136, align 8\l  %138 = load %struct.EState*, %struct.EState** %7, align 8\l  %139 = getelementptr inbounds %struct.EState, %struct.EState* %138, i32 0,\l... i32 19\l  %140 = load i32, i32* %139, align 4\l  %141 = icmp slt i32 %137, %140\l  br i1 %141, label %142, label %143\l}"];
+	Node0x2863e60 -> Node0x2b55970;
+	Node0x2863e60 -> Node0x2a94620;
+	Node0x2a94620 [shape=record,label="{%143:\l143:                                              \l  %144 = load %struct.EState*, %struct.EState** %7, align 8\l  %145 = getelementptr inbounds %struct.EState, %struct.EState* %144, i32 0,\l... i32 1\l  store i32 1, i32* %145, align 8\l  store i32 4, i32* %3, align 4\l  br label %147\l}"];
+	Node0x2a94620 -> Node0x2aa8e20;
+	Node0x2862a80 [shape=record,label="{%124:\l124:                                              \l  store i32 -1, i32* %3, align 4\l  br label %147\l}"];
+	Node0x2862a80 -> Node0x2aa8e20;
 	colorscheme = "paired12"
-        subgraph cluster_0xc165d0 {
+        subgraph cluster_0x2bc57b0 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0xc17470 {
+          subgraph cluster_0x2b2da90 {
             label = "";
             style = filled;
             color = 3
-            subgraph cluster_0xbe7190 {
+            subgraph cluster_0x2ac5d90 {
               label = "";
               style = filled;
               color = 5
-              subgraph cluster_0xb77d90 {
+              subgraph cluster_0x2b638a0 {
                 label = "";
                 style = filled;
                 color = 7
-                subgraph cluster_0xb5be90 {
+                subgraph cluster_0x2aa9e90 {
                   label = "";
                   style = filled;
                   color = 9
-                  subgraph cluster_0xc16760 {
+                  subgraph cluster_0x2b99840 {
                     label = "";
                     style = filled;
                     color = 11
-                    subgraph cluster_0xc4b850 {
+                    subgraph cluster_0x27c3c00 {
                       label = "";
                       style = filled;
                       color = 1
-                      subgraph cluster_0xc4b8d0 {
+                      subgraph cluster_0x2b998c0 {
                         label = "";
                         style = filled;
                         color = 3
-                        Node0xb34e50;
-                        Node0xbdfe80;
-                        Node0xbe0280;
-                        Node0x8ecfb0;
-                        Node0xaae360;
+                        Node0x2ab8bd0;
+                        Node0x2885b60;
+                        Node0x2a6bbb0;
+                        Node0x2a7ca10;
+                        Node0x29a9470;
                       }
-                      Node0xb28e00;
-                      Node0xaecbf0;
+                      Node0x2915960;
+                      Node0x2810f90;
                     }
-                    Node0xa9a8f0;
-                    Node0xb70890;
+                    Node0x2b3fd60;
+                    Node0x27e6550;
                   }
-                  subgraph cluster_0xc44f20 {
+                  subgraph cluster_0x2b35630 {
                     label = "";
                     style = filled;
                     color = 11
-                    subgraph cluster_0xb5c580 {
+                    subgraph cluster_0x2b914b0 {
                       label = "";
                       style = filled;
                       color = 1
-                      subgraph cluster_0xc41620 {
+                      subgraph cluster_0x2b62410 {
                         label = "";
                         style = filled;
                         color = 3
-                        subgraph cluster_0x8983a0 {
+                        subgraph cluster_0x2b997c0 {
                           label = "";
                           style = filled;
                           color = 5
-                          Node0x9afd50;
-                          Node0xbecfd0;
-                          Node0xbdfef0;
-                          Node0x973be0;
-                          Node0xbe5cf0;
+                          Node0x2aa3730;
+                          Node0x2b55970;
+                          Node0x2a86a40;
+                          Node0x2863e60;
+                          Node0x2a94620;
                         }
-                        Node0xbdfba0;
-                        Node0xb525f0;
+                        Node0x2a97e70;
+                        Node0x2862a80;
                       }
-                      Node0xb4a4c0;
-                      Node0xb43540;
+                      Node0x2ab84e0;
+                      Node0x2b33b40;
                     }
-                    Node0xc10ff0;
-                    Node0xbf08b0;
+                    Node0x2b40e50;
+                    Node0x2a76180;
                   }
-                  Node0xb6a250;
-                  Node0xb3c3a0;
-                  Node0xbedb40;
-                  Node0xb3cda0;
-                  Node0xb7dd70;
-                  Node0xb756d0;
-                  Node0xbf2e50;
-                  Node0xbf5d00;
-                  Node0xbef660;
-                  Node0xa61f70;
+                  Node0x2a9b340;
+                  Node0x2a3abf0;
+                  Node0x2aba260;
+                  Node0x2a8b0e0;
+                  Node0x29fc360;
+                  Node0x29ac6a0;
+                  Node0x2b4c2b0;
+                  Node0x2a7ca90;
+                  Node0x2810ab0;
+                  Node0x2aa7b00;
                 }
-                Node0xa63720;
-                Node0xb783c0;
-                Node0xb36580;
+                Node0x2a984c0;
+                Node0x29ed650;
+                Node0x2810f10;
               }
-              Node0x9a06c0;
-              Node0x9ebe60;
+              Node0x2aa8700;
+              Node0x2ac6ea0;
             }
-            Node0x8cf6c0;
-            Node0x914d30;
+            Node0x2a8c360;
+            Node0x2ab6780;
           }
-          Node0xb3c6d0;
+          Node0x2aa8e20;
         }
 }

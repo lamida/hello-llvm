@@ -1,0 +1,27 @@
+digraph "CFG for 'RemoveNewline' function" {
+	label="CFG for 'RemoveNewline' function";
+
+	Node0x5595128c65f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{\"0x5595128c65f0\":\l  %z.addr = alloca i8*, align 8\l  store i8* %z, i8** %z.addr, align 8\l  %0 = load i8*, i8** %z.addr, align 8\l  %cmp = icmp eq i8* %0, null\l  br i1 %cmp, label %\"0x5595128c6880\", label %\"0x5595128c68f0\"\l|{<s0>T|<s1>F}}"];
+	Node0x5595128c65f0:s0 -> Node0x5595128c6880;
+	Node0x5595128c65f0:s1 -> Node0x5595128c68f0;
+	Node0x5595128c6880 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#aec9fc70",label="{\"0x5595128c6880\":                                 \l  br label %\"0x5595128c6a10\"\l}"];
+	Node0x5595128c6880 -> Node0x5595128c6a10;
+	Node0x5595128c68f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{\"0x5595128c68f0\":                                 \l  br label %\"0x5595128c6af0\"\l}"];
+	Node0x5595128c68f0 -> Node0x5595128c6af0;
+	Node0x5595128c6af0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5595128c6af0\":                                 \l  %1 = load i8*, i8** %z.addr, align 8\l  %2 = load i8, i8* %1, align 1\l  %conv = sext i8 %2 to i32\l  %tobool = icmp ne i32 %conv, 0\l  br i1 %tobool, label %\"0x5595128c6e10\", label %\"0x5595128c6e90\"\l|{<s0>T|<s1>F}}"];
+	Node0x5595128c6af0:s0 -> Node0x5595128c6e10;
+	Node0x5595128c6af0:s1 -> Node0x5595128c6e90;
+	Node0x5595128c6e10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#d24b4070",label="{\"0x5595128c6e10\":                                 \l  %3 = load i8*, i8** %z.addr, align 8\l  %4 = load i8, i8* %3, align 1\l  %conv1 = sext i8 %4 to i32\l  %cmp2 = icmp ne i32 %conv1, 10\l  br i1 %cmp2, label %\"0x5595128c73d0\", label %\"0x5595128c6e90\"\l|{<s0>T|<s1>F}}"];
+	Node0x5595128c6e10:s0 -> Node0x5595128c73d0;
+	Node0x5595128c6e10:s1 -> Node0x5595128c6e90;
+	Node0x5595128c73d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ed836670",label="{\"0x5595128c73d0\":                                 \l  %5 = load i8*, i8** %z.addr, align 8\l  %6 = load i8, i8* %5, align 1\l  %conv4 = sext i8 %6 to i32\l  %cmp5 = icmp ne i32 %conv4, 13\l  br label %\"0x5595128c6e90\"\l}"];
+	Node0x5595128c73d0 -> Node0x5595128c6e90;
+	Node0x5595128c6e90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5595128c6e90\":                                 \l  %7 = phi i1 [ false, %\"0x5595128c6e10\" ], [ false, %\"0x5595128c6af0\" ], [\l... %cmp5, %\"0x5595128c73d0\" ]\l  br i1 %7, label %\"0x5595128c7830\", label %\"0x5595128c78b0\"\l|{<s0>T|<s1>F}}"];
+	Node0x5595128c6e90:s0 -> Node0x5595128c7830;
+	Node0x5595128c6e90:s1 -> Node0x5595128c78b0;
+	Node0x5595128c7830 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x5595128c7830\":                                 \l  %8 = load i8*, i8** %z.addr, align 8\l  %incdec.ptr = getelementptr inbounds i8, i8* %8, i32 1\l  store i8* %incdec.ptr, i8** %z.addr, align 8\l  br label %\"0x5595128c6af0\"\l}"];
+	Node0x5595128c7830 -> Node0x5595128c6af0;
+	Node0x5595128c78b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{\"0x5595128c78b0\":                                 \l  %9 = load i8*, i8** %z.addr, align 8\l  store i8 0, i8* %9, align 1\l  br label %\"0x5595128c6a10\"\l}"];
+	Node0x5595128c78b0 -> Node0x5595128c6a10;
+	Node0x5595128c6a10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{\"0x5595128c6a10\":                                 \l  ret void\l}"];
+}

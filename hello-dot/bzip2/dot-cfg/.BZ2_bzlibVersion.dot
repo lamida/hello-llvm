@@ -1,5 +1,5 @@
 digraph "CFG for 'BZ2_bzlibVersion' function" {
 	label="CFG for 'BZ2_bzlibVersion' function";
 
-	Node0x10f91c0 [shape=record,label="{%0:\l  ret i8* getelementptr inbounds ([19 x i8], [19 x i8]* @.str.11, i64 0, i64 0)\l}"];
+	Node0xbd91c0 [shape=record,label="{%0:\l  ret i8* getelementptr inbounds ([19 x i8], [19 x i8]* @.str.11, i64 0, i64 0)\l}"];
 }

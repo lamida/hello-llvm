@@ -1,0 +1,30 @@
+digraph "CFG for 'BZ2_bzclose' function" {
+	label="CFG for 'BZ2_bzclose' function";
+
+	Node0x556a61dfe750 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61dfe750\":\l  %1 = alloca i8*, align 8\l  %2 = alloca i32, align 4\l  %3 = alloca %struct._IO_FILE*, align 8\l  store i8* %0, i8** %1, align 8\l  %4 = load i8*, i8** %1, align 8\l  %5 = bitcast i8* %4 to %struct.bzFile*\l  %6 = getelementptr inbounds %struct.bzFile, %struct.bzFile* %5, i32 0, i32 0\l  %7 = load %struct._IO_FILE*, %struct._IO_FILE** %6, align 8\l  store %struct._IO_FILE* %7, %struct._IO_FILE** %3, align 8\l  %8 = load i8*, i8** %1, align 8\l  %9 = icmp eq i8* %8, null\l  br i1 %9, label %\"0x556a61dfe920\", label %\"0x556a61dfee30\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61dfe750:s0 -> Node0x556a61dfe920;
+	Node0x556a61dfe750:s1 -> Node0x556a61dfee30;
+	Node0x556a61dfe920 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7ac8e70",label="{\"0x556a61dfe920\":                                 \l  br label %\"0x556a61dfef30\"\l}"];
+	Node0x556a61dfe920 -> Node0x556a61dfef30;
+	Node0x556a61dfee30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e36c5570",label="{\"0x556a61dfee30\":                                 \l  %10 = load i8*, i8** %1, align 8\l  %11 = bitcast i8* %10 to %struct.bzFile*\l  %12 = getelementptr inbounds %struct.bzFile, %struct.bzFile* %11, i32 0, i32\l... 3\l  %13 = load i8, i8* %12, align 4\l  %14 = icmp ne i8 %13, 0\l  br i1 %14, label %\"0x556a61dff200\", label %\"0x556a61dff250\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61dfee30:s0 -> Node0x556a61dff200;
+	Node0x556a61dfee30:s1 -> Node0x556a61dff250;
+	Node0x556a61dff200 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6a38570",label="{\"0x556a61dff200\":                                 \l  %15 = load i8*, i8** %1, align 8\l  call void @BZ2_bzWriteClose(i32* %2, i8* %15, i32 0, i32* null, i32* null)\l  %16 = load i32, i32* %2, align 4\l  %17 = icmp ne i32 %16, 0\l  br i1 %17, label %\"0x556a61dff660\", label %\"0x556a61dff6b0\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61dff200:s0 -> Node0x556a61dff660;
+	Node0x556a61dff200:s1 -> Node0x556a61dff6b0;
+	Node0x556a61dff660 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{\"0x556a61dff660\":                                 \l  %18 = load i8*, i8** %1, align 8\l  call void @BZ2_bzWriteClose(i32* null, i8* %18, i32 1, i32* null, i32* null)\l  br label %\"0x556a61dff6b0\"\l}"];
+	Node0x556a61dff660 -> Node0x556a61dff6b0;
+	Node0x556a61dff6b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6a38570",label="{\"0x556a61dff6b0\":                                 \l  br label %\"0x556a61dffa00\"\l}"];
+	Node0x556a61dff6b0 -> Node0x556a61dffa00;
+	Node0x556a61dff250 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{\"0x556a61dff250\":                                 \l  %19 = load i8*, i8** %1, align 8\l  call void @BZ2_bzReadClose(i32* %2, i8* %19)\l  br label %\"0x556a61dffa00\"\l}"];
+	Node0x556a61dff250 -> Node0x556a61dffa00;
+	Node0x556a61dffa00 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e36c5570",label="{\"0x556a61dffa00\":                                 \l  %20 = load %struct._IO_FILE*, %struct._IO_FILE** %3, align 8\l  %21 = load %struct._IO_FILE*, %struct._IO_FILE** @stdin, align 8\l  %22 = icmp ne %struct._IO_FILE* %20, %21\l  br i1 %22, label %\"0x556a61dffe20\", label %\"0x556a61dfef30\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61dffa00:s0 -> Node0x556a61dffe20;
+	Node0x556a61dffa00:s1 -> Node0x556a61dfef30;
+	Node0x556a61dffe20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6a38570",label="{\"0x556a61dffe20\":                                 \l  %23 = load %struct._IO_FILE*, %struct._IO_FILE** %3, align 8\l  %24 = load %struct._IO_FILE*, %struct._IO_FILE** @stdout, align 8\l  %25 = icmp ne %struct._IO_FILE* %23, %24\l  br i1 %25, label %\"0x556a61e00090 - Exit Point\", label %\"0x556a61dfef30\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61dffe20:s0 -> Node0x556a61e00090;
+	Node0x556a61dffe20:s1 -> Node0x556a61dfef30;
+	Node0x556a61e00090 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{\"0x556a61e00090 - Exit Point\":                    \l  %26 = load %struct._IO_FILE*, %struct._IO_FILE** %3, align 8\l  %27 = call i32 @fclose(%struct._IO_FILE* %26)\l  br label %\"0x556a61dfef30\"\l}"];
+	Node0x556a61e00090 -> Node0x556a61dfef30;
+	Node0x556a61dfef30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61dfef30\":                                 \l  ret void\l}"];
+}

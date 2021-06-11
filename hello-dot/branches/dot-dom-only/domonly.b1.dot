@@ -1,5 +1,11 @@
 digraph "Dominator tree for 'b1' function" {
 	label="Dominator tree for 'b1' function";
 
-	Node0x1de7630 [shape=record,label="{%0}"];
+	Node0x23a9370 [shape=record,label="{%0}"];
+	Node0x23a9370 -> Node0x23b42f0;
+	Node0x23a9370 -> Node0x23b4330;
+	Node0x23a9370 -> Node0x23b4370;
+	Node0x23b42f0 [shape=record,label="{%4}"];
+	Node0x23b4330 [shape=record,label="{%8}"];
+	Node0x23b4370 [shape=record,label="{%6}"];
 }

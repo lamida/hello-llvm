@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'BZ2_bzflush' function" {
 	label="Dominator tree for 'BZ2_bzflush' function";
 
-	Node0x1f3d2b0 [shape=record,label="{%1}"];
+	Node0x1e8fff0 [shape=record,label="{%1}"];
 }

@@ -1,0 +1,63 @@
+digraph "Scop Graph for 'RemoveNewline' function" {
+	label="Scop Graph for 'RemoveNewline' function";
+
+	Node0x1a7f4a0 [shape=record,label="{entry}"];
+	Node0x1a7f4a0 -> Node0x1a9d000;
+	Node0x1a7f4a0 -> Node0x1a29110;
+	Node0x1a9d000 [shape=record,label="{if.then}"];
+	Node0x1a9d000 -> Node0x1aa1f00;
+	Node0x1aa1f00 [shape=record,label="{return}"];
+	Node0x1a29110 [shape=record,label="{if.end}"];
+	Node0x1a29110 -> Node0x1aa0330;
+	Node0x1aa0330 [shape=record,label="{while.cond}"];
+	Node0x1aa0330 -> Node0x1a54440;
+	Node0x1aa0330 -> Node0x1a1d2f0;
+	Node0x1a54440 [shape=record,label="{land.lhs.true}"];
+	Node0x1a54440 -> Node0x1a82b70;
+	Node0x1a54440 -> Node0x1a1d2f0;
+	Node0x1a82b70 [shape=record,label="{land.rhs}"];
+	Node0x1a82b70 -> Node0x1a1d2f0;
+	Node0x1a1d2f0 [shape=record,label="{land.end}"];
+	Node0x1a1d2f0 -> Node0x1a6aae0;
+	Node0x1a1d2f0 -> Node0x19fa780;
+	Node0x1a6aae0 [shape=record,label="{while.body}"];
+	Node0x1a6aae0 -> Node0x1aa0330[constraint=false];
+	Node0x19fa780 [shape=record,label="{while.end}"];
+	Node0x19fa780 -> Node0x1aa1f00;
+	colorscheme = "paired12"
+        subgraph cluster_0x1aca500 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1ab5360 {
+            label = "Region containing entry block of function is invalid!";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1ab52e0 {
+              label = "Condition in BB 'land.end' neither constant nor an icmp instruction";
+              style = solid;
+              color = 5
+              subgraph cluster_0x1b18030 {
+                label = "Region can not profitably be optimized!";
+                style = solid;
+                color = 7
+                subgraph cluster_0x1b17fb0 {
+                  label = "Region can not profitably be optimized!";
+                  style = solid;
+                  color = 9
+                  Node0x1a54440;
+                  Node0x1a82b70;
+                }
+                Node0x1aa0330;
+              }
+              Node0x1a1d2f0;
+              Node0x1a6aae0;
+            }
+            Node0x1a7f4a0;
+            Node0x1a9d000;
+            Node0x1a29110;
+            Node0x19fa780;
+          }
+          Node0x1aa1f00;
+        }
+}

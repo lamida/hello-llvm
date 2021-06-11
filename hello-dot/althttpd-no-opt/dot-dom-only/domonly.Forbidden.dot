@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'Forbidden' function" {
+	label="Dominator tree for 'Forbidden' function";
+
+	Node0xed5f90 [shape=record,label="{entry}"];
+}

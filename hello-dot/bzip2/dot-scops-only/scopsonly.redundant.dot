@@ -1,12 +1,12 @@
 digraph "Scop Graph for 'redundant' function" {
 	label="Scop Graph for 'redundant' function";
 
-	Node0x2115430 [shape=record,label="{%1}"];
+	Node0x18d0cf0 [shape=record,label="{%1}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x23b1030 {
+        subgraph cluster_0x19027f0 {
           label = "";
           style = solid;
           color = 1
-          Node0x2115430;
+          Node0x18d0cf0;
         }
 }

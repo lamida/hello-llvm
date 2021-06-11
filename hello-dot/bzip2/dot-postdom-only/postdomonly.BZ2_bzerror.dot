@@ -1,11 +1,11 @@
 digraph "Post dominator tree for 'BZ2_bzerror' function" {
 	label="Post dominator tree for 'BZ2_bzerror' function";
 
-	Node0x998e30 [shape=record,label="{Post dominance root node}"];
-	Node0x998e30 -> Node0xb92bb0;
-	Node0xb92bb0 [shape=record,label="{%13}"];
-	Node0xb92bb0 -> Node0xbc0580;
-	Node0xb92bb0 -> Node0xb35ed0;
-	Node0xbc0580 [shape=record,label="{%2}"];
-	Node0xb35ed0 [shape=record,label="{%12}"];
+	Node0x125db80 [shape=record,label="{Post dominance root node}"];
+	Node0x125db80 -> Node0x12d5690;
+	Node0x12d5690 [shape=record,label="{%13}"];
+	Node0x12d5690 -> Node0x12959e0;
+	Node0x12d5690 -> Node0x10e13e0;
+	Node0x12959e0 [shape=record,label="{%2}"];
+	Node0x10e13e0 [shape=record,label="{%12}"];
 }

@@ -1,31 +1,19 @@
 digraph "Post dominator tree for 'main' function" {
 	label="Post dominator tree for 'main' function";
 
-	Node0x12d2290 [shape=record,label="{Post dominance root node}"];
-	Node0x12d2290 -> Node0x12d2460;
-	Node0x12d2460 [shape=record,label="{sw.epilog}"];
-	Node0x12d2460 -> Node0x12d22d0;
-	Node0x12d2460 -> Node0x12d23a0;
-	Node0x12d2460 -> Node0x12d2ea0;
-	Node0x12d2460 -> Node0x12d2ee0;
-	Node0x12d2460 -> Node0x12d2f20;
-	Node0x12d2460 -> Node0x12d2f60;
-	Node0x12d22d0 [shape=record,label="{sw.bb}"];
-	Node0x12d23a0 [shape=record,label="{while.end}"];
-	Node0x12d23a0 -> Node0x12d23e0;
-	Node0x12d23e0 [shape=record,label="{while.cond}"];
-	Node0x12d23e0 -> Node0x12d2d60;
-	Node0x12d23e0 -> Node0x12d2e60;
-	Node0x12d2d60 [shape=record,label="{if.end}"];
-	Node0x12d2d60 -> Node0x12d2da0;
-	Node0x12d2d60 -> Node0x12d2de0;
-	Node0x12d2d60 -> Node0x12d2e20;
-	Node0x12d2da0 [shape=record,label="{if.then}"];
-	Node0x12d2de0 [shape=record,label="{entry}"];
-	Node0x12d2e20 [shape=record,label="{if.else}"];
-	Node0x12d2e60 [shape=record,label="{while.body}"];
-	Node0x12d2ea0 [shape=record,label="{sw.bb3}"];
-	Node0x12d2ee0 [shape=record,label="{sw.bb4}"];
-	Node0x12d2f20 [shape=record,label="{sw.bb5}"];
-	Node0x12d2f60 [shape=record,label="{sw.default}"];
+	Node0x2709cd0 [shape=record,label="{Post dominance root node}"];
+	Node0x2709cd0 -> Node0x27097c0;
+	Node0x27097c0 [shape=record,label="{while.end}"];
+	Node0x27097c0 -> Node0x270a2b0;
+	Node0x270a2b0 [shape=record,label="{while.cond}"];
+	Node0x270a2b0 -> Node0x270a2f0;
+	Node0x270a2b0 -> Node0x2708640;
+	Node0x270a2f0 [shape=record,label="{if.end}"];
+	Node0x270a2f0 -> Node0x270a330;
+	Node0x270a2f0 -> Node0x270a370;
+	Node0x270a2f0 -> Node0x270a3b0;
+	Node0x270a330 [shape=record,label="{if.then}"];
+	Node0x270a370 [shape=record,label="{entry}"];
+	Node0x270a3b0 [shape=record,label="{if.else}"];
+	Node0x2708640 [shape=record,label="{while.body}"];
 }

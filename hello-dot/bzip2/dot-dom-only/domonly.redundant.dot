@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'redundant' function" {
 	label="Dominator tree for 'redundant' function";
 
-	Node0x22ebf70 [shape=record,label="{%1}"];
+	Node0x1e8fff0 [shape=record,label="{%1}"];
 }

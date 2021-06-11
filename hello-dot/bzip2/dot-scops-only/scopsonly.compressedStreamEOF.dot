@@ -1,24 +1,24 @@
 digraph "Scop Graph for 'compressedStreamEOF' function" {
 	label="Scop Graph for 'compressedStreamEOF' function";
 
-	Node0x234afd0 [shape=record,label="{%0}"];
-	Node0x234afd0 -> Node0x2024c60;
-	Node0x234afd0 -> Node0x22be470;
-	Node0x2024c60 [shape=record,label="{%3}"];
-	Node0x2024c60 -> Node0x22be470;
-	Node0x22be470 [shape=record,label="{%8}"];
+	Node0x17ee4a0 [shape=record,label="{%0}"];
+	Node0x17ee4a0 -> Node0x18cae80;
+	Node0x17ee4a0 -> Node0x1816e50;
+	Node0x18cae80 [shape=record,label="{%3}"];
+	Node0x18cae80 -> Node0x1816e50;
+	Node0x1816e50 [shape=record,label="{%8}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x239e240 {
+        subgraph cluster_0x19027f0 {
           label = "";
           style = solid;
           color = 1
-          subgraph cluster_0x23a9080 {
+          subgraph cluster_0x18ff570 {
             label = "";
             style = solid;
             color = 6
-            Node0x234afd0;
-            Node0x2024c60;
+            Node0x17ee4a0;
+            Node0x18cae80;
           }
-          Node0x22be470;
+          Node0x1816e50;
         }
 }

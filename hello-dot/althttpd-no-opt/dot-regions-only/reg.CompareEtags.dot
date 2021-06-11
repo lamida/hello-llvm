@@ -1,0 +1,50 @@
+digraph "Region Graph for 'CompareEtags' function" {
+	label="Region Graph for 'CompareEtags' function";
+
+	Node0x99bc40 [shape=record,label="{entry}"];
+	Node0x99bc40 -> Node0x99c480;
+	Node0x99bc40 -> Node0x9d79a0;
+	Node0x99c480 [shape=record,label="{if.then}"];
+	Node0x99c480 -> Node0x9c2280;
+	Node0x9c2280 [shape=record,label="{return}"];
+	Node0x9d79a0 [shape=record,label="{if.end}"];
+	Node0x9d79a0 -> Node0x982a60;
+	Node0x9d79a0 -> Node0xa46d30;
+	Node0x982a60 [shape=record,label="{if.then3}"];
+	Node0x982a60 -> Node0x9a0520;
+	Node0x982a60 -> Node0x9a95e0;
+	Node0x9a0520 [shape=record,label="{land.lhs.true}"];
+	Node0x9a0520 -> Node0xa58020;
+	Node0x9a0520 -> Node0x9a95e0;
+	Node0xa58020 [shape=record,label="{if.then13}"];
+	Node0xa58020 -> Node0x9c2280;
+	Node0x9a95e0 [shape=record,label="{if.end14}"];
+	Node0x9a95e0 -> Node0xa46d30;
+	Node0xa46d30 [shape=record,label="{if.end15}"];
+	Node0xa46d30 -> Node0x9c2280;
+	colorscheme = "paired12"
+        subgraph cluster_0xa86e80 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xa64050 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xa85130 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0x9d79a0;
+              Node0x982a60;
+              Node0x9a0520;
+              Node0xa58020;
+              Node0x9a95e0;
+              Node0xa46d30;
+            }
+            Node0x99bc40;
+            Node0x99c480;
+          }
+          Node0x9c2280;
+        }
+}

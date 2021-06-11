@@ -1,0 +1,169 @@
+digraph "Region Graph for 'MakeLogEntry' function" {
+	label="Region Graph for 'MakeLogEntry' function";
+
+	Node0x8e00c0 [shape=record,label="{entry:\l  %exitCode.addr = alloca i32, align 4\l  %lineNum.addr = alloca i32, align 4\l  %log = alloca %struct._IO_FILE*, align 8\l  %now = alloca %struct.timeval, align 8\l  %pTm = alloca %struct.tm*, align 8\l  %self = alloca %struct.rusage, align 8\l  %children = alloca %struct.rusage, align 8\l  %waitStatus = alloca i32, align 4\l  %zRM = alloca i8*, align 8\l  %zFilename = alloca i8*, align 8\l  %sz = alloca i64, align 8\l  %zDate = alloca [200 x i8], align 16\l  %zExpLogFile = alloca [500 x i8], align 16\l  store i32 %exitCode, i32* %exitCode.addr, align 4\l  store i32 %lineNum, i32* %lineNum.addr, align 4\l  %0 = load i8*, i8** @zTmpNam, align 8\l  %tobool = icmp ne i8* %0, null\l  br i1 %tobool, label %if.then, label %if.end\l}"];
+	Node0x8e00c0 -> Node0x945f00;
+	Node0x8e00c0 -> Node0x8c1a30;
+	Node0x945f00 [shape=record,label="{if.then:                                          \l  %1 = load i8*, i8** @zTmpNam, align 8\l  %call = call i32 @unlink(i8* %1) #7\l  br label %if.end\l}"];
+	Node0x945f00 -> Node0x8c1a30;
+	Node0x8c1a30 [shape=record,label="{if.end:                                           \l  %2 = load i8*, i8** @zLogFile, align 8\l  %tobool1 = icmp ne i8* %2, null\l  br i1 %tobool1, label %land.lhs.true, label %if.end71\l}"];
+	Node0x8c1a30 -> Node0x8d5b80;
+	Node0x8c1a30 -> Node0x92cdd0;
+	Node0x8d5b80 [shape=record,label="{land.lhs.true:                                    \l  %3 = load i32, i32* @omitLog, align 4\l  %tobool2 = icmp ne i32 %3, 0\l  br i1 %tobool2, label %if.end71, label %if.then3\l}"];
+	Node0x8d5b80 -> Node0x92cdd0;
+	Node0x8d5b80 -> Node0x961a80;
+	Node0x92cdd0 [shape=record,label="{if.end71:                                         \l  %38 = load i32, i32* @closeConnection, align 4\l  %tobool72 = icmp ne i32 %38, 0\l  br i1 %tobool72, label %if.then73, label %if.end74\l}"];
+	Node0x92cdd0 -> Node0x924800;
+	Node0x92cdd0 -> Node0x95acb0;
+	Node0x924800 [shape=record,label="{if.then73:                                        \l  %39 = load i32, i32* %exitCode.addr, align 4\l  call void @exit(i32 %39) #9\l  unreachable\l}"];
+	Node0x95acb0 [shape=record,label="{if.end74:                                         \l  store i32 0, i32* @statusSent, align 4\l  ret void\l}"];
+	Node0x961a80 [shape=record,label="{if.then3:                                         \l  %4 = load i8*, i8** @zRemoteUser, align 8\l  %tobool4 = icmp ne i8* %4, null\l  br i1 %tobool4, label %cond.true, label %cond.false\l}"];
+	Node0x961a80 -> Node0x943be0;
+	Node0x961a80 -> Node0x956110;
+	Node0x943be0 [shape=record,label="{cond.true:                                        \l  %5 = load i8*, i8** @zRemoteUser, align 8\l  br label %cond.end\l}"];
+	Node0x943be0 -> Node0x899760;
+	Node0x899760 [shape=record,label="{cond.end:                                         \l  %cond = phi i8* [ %5, %cond.true ], [ getelementptr inbounds ([1 x i8], [1 x\l... i8]* @.str.379, i64 0, i64 0), %cond.false ]\l  store i8* %cond, i8** %zRM, align 8\l  %6 = load i8*, i8** @zScript, align 8\l  %cmp = icmp eq i8* %6, null\l  br i1 %cmp, label %if.then5, label %if.end6\l}"];
+	Node0x899760 -> Node0x92b0f0;
+	Node0x899760 -> Node0x93d700;
+	Node0x92b0f0 [shape=record,label="{if.then5:                                         \l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.379, i64 0, i64\l... 0), i8** @zScript, align 8\l  br label %if.end6\l}"];
+	Node0x92b0f0 -> Node0x93d700;
+	Node0x93d700 [shape=record,label="{if.end6:                                          \l  %7 = load i8*, i8** @zRealScript, align 8\l  %cmp7 = icmp eq i8* %7, null\l  br i1 %cmp7, label %if.then8, label %if.end9\l}"];
+	Node0x93d700 -> Node0x927420;
+	Node0x93d700 -> Node0x95f660;
+	Node0x927420 [shape=record,label="{if.then8:                                         \l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.379, i64 0, i64\l... 0), i8** @zRealScript, align 8\l  br label %if.end9\l}"];
+	Node0x927420 -> Node0x95f660;
+	Node0x95f660 [shape=record,label="{if.end9:                                          \l  %8 = load i8*, i8** @zRemoteAddr, align 8\l  %cmp10 = icmp eq i8* %8, null\l  br i1 %cmp10, label %if.then11, label %if.end12\l}"];
+	Node0x95f660 -> Node0x963980;
+	Node0x95f660 -> Node0x9234a0;
+	Node0x963980 [shape=record,label="{if.then11:                                        \l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.379, i64 0, i64\l... 0), i8** @zRemoteAddr, align 8\l  br label %if.end12\l}"];
+	Node0x963980 -> Node0x9234a0;
+	Node0x9234a0 [shape=record,label="{if.end12:                                         \l  %9 = load i8*, i8** @zHttpHost, align 8\l  %cmp13 = icmp eq i8* %9, null\l  br i1 %cmp13, label %if.then14, label %if.end15\l}"];
+	Node0x9234a0 -> Node0x9558d0;
+	Node0x9234a0 -> Node0x95d0b0;
+	Node0x9558d0 [shape=record,label="{if.then14:                                        \l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.379, i64 0, i64\l... 0), i8** @zHttpHost, align 8\l  br label %if.end15\l}"];
+	Node0x9558d0 -> Node0x95d0b0;
+	Node0x95d0b0 [shape=record,label="{if.end15:                                         \l  %10 = load i8*, i8** @zReferer, align 8\l  %cmp16 = icmp eq i8* %10, null\l  br i1 %cmp16, label %if.then17, label %if.end18\l}"];
+	Node0x95d0b0 -> Node0x94de00;
+	Node0x95d0b0 -> Node0x95a1e0;
+	Node0x94de00 [shape=record,label="{if.then17:                                        \l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.379, i64 0, i64\l... 0), i8** @zReferer, align 8\l  br label %if.end18\l}"];
+	Node0x94de00 -> Node0x95a1e0;
+	Node0x95a1e0 [shape=record,label="{if.end18:                                         \l  %11 = load i8*, i8** @zAgent, align 8\l  %cmp19 = icmp eq i8* %11, null\l  br i1 %cmp19, label %if.then20, label %if.end21\l}"];
+	Node0x95a1e0 -> Node0x8d9d90;
+	Node0x95a1e0 -> Node0x9544e0;
+	Node0x8d9d90 [shape=record,label="{if.then20:                                        \l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.379, i64 0, i64\l... 0), i8** @zAgent, align 8\l  br label %if.end21\l}"];
+	Node0x8d9d90 -> Node0x9544e0;
+	Node0x9544e0 [shape=record,label="{if.end21:                                         \l  %call22 = call i32 @gettimeofday(%struct.timeval* %now, i8* null) #7\l  %tv_sec = getelementptr inbounds %struct.timeval, %struct.timeval* %now, i32\l... 0, i32 0\l  %call23 = call %struct.tm* @localtime(i64* %tv_sec) #7\l  store %struct.tm* %call23, %struct.tm** %pTm, align 8\l  %arraydecay = getelementptr inbounds [200 x i8], [200 x i8]* %zDate, i64 0,\l... i64 0\l  %12 = load %struct.tm*, %struct.tm** %pTm, align 8\l  %call24 = call i64 @strftime(i8* %arraydecay, i64 200, i8* getelementptr\l... inbounds ([18 x i8], [18 x i8]* @.str.454, i64 0, i64 0), %struct.tm* %12) #7\l  %arraydecay25 = getelementptr inbounds [500 x i8], [500 x i8]* %zExpLogFile,\l... i64 0, i64 0\l  %13 = load i8*, i8** @zLogFile, align 8\l  %14 = load %struct.tm*, %struct.tm** %pTm, align 8\l  %call26 = call i64 @strftime(i8* %arraydecay25, i64 500, i8* %13,\l... %struct.tm* %14) #7\l  store i64 %call26, i64* %sz, align 8\l  %15 = load i64, i64* %sz, align 8\l  %cmp27 = icmp ugt i64 %15, 0\l  br i1 %cmp27, label %land.lhs.true28, label %if.else\l}"];
+	Node0x9544e0 -> Node0x8b1c40;
+	Node0x9544e0 -> Node0x8aed00;
+	Node0x8b1c40 [shape=record,label="{land.lhs.true28:                                  \l  %16 = load i64, i64* %sz, align 8\l  %cmp29 = icmp ult i64 %16, 498\l  br i1 %cmp29, label %if.then30, label %if.else\l}"];
+	Node0x8b1c40 -> Node0x92f360;
+	Node0x8b1c40 -> Node0x8aed00;
+	Node0x92f360 [shape=record,label="{if.then30:                                        \l  %arraydecay31 = getelementptr inbounds [500 x i8], [500 x i8]* %zExpLogFile,\l... i64 0, i64 0\l  store i8* %arraydecay31, i8** %zFilename, align 8\l  br label %if.end32\l}"];
+	Node0x92f360 -> Node0x946460;
+	Node0x946460 [shape=record,label="{if.end32:                                         \l  %call33 = call i32 @waitpid(i32 -1, i32* %waitStatus, i32 1)\l  %call34 = call i32 @getrusage(i32 0, %struct.rusage* %self) #7\l  %call35 = call i32 @getrusage(i32 -1, %struct.rusage* %children) #7\l  %18 = load i8*, i8** %zFilename, align 8\l  %call36 = call %struct._IO_FILE* @fopen(i8* %18, i8* getelementptr inbounds\l... ([2 x i8], [2 x i8]* @.str.455, i64 0, i64 0))\l  store %struct._IO_FILE* %call36, %struct._IO_FILE** %log, align 8\l  %cmp37 = icmp ne %struct._IO_FILE* %call36, null\l  br i1 %cmp37, label %if.then38, label %if.end70\l}"];
+	Node0x946460 -> Node0x8dbc80;
+	Node0x946460 -> Node0x96d960;
+	Node0x8dbc80 [shape=record,label="{if.then38:                                        \l  %arraydecay39 = getelementptr inbounds [200 x i8], [200 x i8]* %zDate, i64\l... 0, i64 0\l  %19 = load %struct.tm*, %struct.tm** %pTm, align 8\l  %call40 = call i64 @strftime(i8* %arraydecay39, i64 200, i8* getelementptr\l... inbounds ([18 x i8], [18 x i8]* @.str.454, i64 0, i64 0), %struct.tm* %19) #7\l  %20 = load %struct._IO_FILE*, %struct._IO_FILE** %log, align 8\l  %arraydecay41 = getelementptr inbounds [200 x i8], [200 x i8]* %zDate, i64\l... 0, i64 0\l  %21 = load i8*, i8** @zRemoteAddr, align 8\l  %22 = load i8*, i8** @zHttp, align 8\l  %23 = load i8*, i8** @zHttpHost, align 8\l  %call42 = call i8* @Escape(i8* %23)\l  %24 = load i8*, i8** @zScript, align 8\l  %call43 = call i8* @Escape(i8* %24)\l  %25 = load i8*, i8** @zReferer, align 8\l  %call44 = call i8* @Escape(i8* %25)\l  %26 = load i32, i32* @nIn, align 4\l  %27 = load i32, i32* @nOut, align 4\l  %ru_utime = getelementptr inbounds %struct.rusage, %struct.rusage* %self,\l... i32 0, i32 0\l  %call45 = call i64 @tvms(%struct.timeval* %ru_utime)\l  %call46 = call i64 @tvms(%struct.timeval* getelementptr inbounds\l... (%struct.rusage, %struct.rusage* @priorSelf, i32 0, i32 0))\l  %sub = sub nsw i64 %call45, %call46\l  %ru_stime = getelementptr inbounds %struct.rusage, %struct.rusage* %self,\l... i32 0, i32 1\l  %call47 = call i64 @tvms(%struct.timeval* %ru_stime)\l  %call48 = call i64 @tvms(%struct.timeval* getelementptr inbounds\l... (%struct.rusage, %struct.rusage* @priorSelf, i32 0, i32 1))\l  %sub49 = sub nsw i64 %call47, %call48\l  %ru_utime50 = getelementptr inbounds %struct.rusage, %struct.rusage*\l... %children, i32 0, i32 0\l  %call51 = call i64 @tvms(%struct.timeval* %ru_utime50)\l  %call52 = call i64 @tvms(%struct.timeval* getelementptr inbounds\l... (%struct.rusage, %struct.rusage* @priorChild, i32 0, i32 0))\l  %sub53 = sub nsw i64 %call51, %call52\l  %ru_stime54 = getelementptr inbounds %struct.rusage, %struct.rusage*\l... %children, i32 0, i32 1\l  %call55 = call i64 @tvms(%struct.timeval* %ru_stime54)\l  %call56 = call i64 @tvms(%struct.timeval* getelementptr inbounds\l... (%struct.rusage, %struct.rusage* @priorChild, i32 0, i32 1))\l  %sub57 = sub nsw i64 %call55, %call56\l  %call58 = call i64 @tvms(%struct.timeval* %now)\l  %call59 = call i64 @tvms(%struct.timeval* @beginTime)\l  %sub60 = sub nsw i64 %call58, %call59\l  %28 = load i32, i32* @nRequest, align 4\l  %29 = load i8*, i8** @zAgent, align 8\l  %call61 = call i8* @Escape(i8* %29)\l  %30 = load i8*, i8** %zRM, align 8\l  %call62 = call i8* @Escape(i8* %30)\l  %31 = load i8*, i8** @zHttp, align 8\l  %call63 = call i64 @strlen(i8* %31) #8\l  %32 = load i8*, i8** @zHttpHost, align 8\l  %call64 = call i64 @strlen(i8* %32) #8\l  %add = add i64 %call63, %call64\l  %33 = load i8*, i8** @zRealScript, align 8\l  %call65 = call i64 @strlen(i8* %33) #8\l  %add66 = add i64 %add, %call65\l  %add67 = add i64 %add66, 3\l  %conv = trunc i64 %add67 to i32\l  %34 = load i32, i32* %lineNum.addr, align 4\l  %call68 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE*\l... %20, i8* getelementptr inbounds ([77 x i8], [77 x i8]* @.str.456, i64 0, i64\l... 0), i8* %arraydecay41, i8* %21, i8* %22, i8* %call42, i8* %call43, i8*\l... %call44, i8* getelementptr inbounds ([4 x i8], [4 x i8]* @zReplyStatus, i64\l... 0, i64 0), i32 %26, i32 %27, i64 %sub, i64 %sub49, i64 %sub53, i64 %sub57,\l... i64 %sub60, i32 %28, i8* %call61, i8* %call62, i32 %conv, i32 %34)\l  %35 = bitcast %struct.rusage* %self to i8*\l  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 8 bitcast (%struct.rusage*\l... @priorSelf to i8*), i8* align 8 %35, i64 144, i1 false)\l  %36 = bitcast %struct.rusage* %children to i8*\l  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 8 bitcast (%struct.rusage*\l... @priorChild to i8*), i8* align 8 %36, i64 144, i1 false)\l  %37 = load %struct._IO_FILE*, %struct._IO_FILE** %log, align 8\l  %call69 = call i32 @fclose(%struct._IO_FILE* %37)\l  store i32 0, i32* @nOut, align 4\l  store i32 0, i32* @nIn, align 4\l  br label %if.end70\l}"];
+	Node0x8dbc80 -> Node0x96d960;
+	Node0x96d960 [shape=record,label="{if.end70:                                         \l  br label %if.end71\l}"];
+	Node0x96d960 -> Node0x92cdd0;
+	Node0x8aed00 [shape=record,label="{if.else:                                          \l  %17 = load i8*, i8** @zLogFile, align 8\l  store i8* %17, i8** %zFilename, align 8\l  br label %if.end32\l}"];
+	Node0x8aed00 -> Node0x946460;
+	Node0x956110 [shape=record,label="{cond.false:                                       \l  br label %cond.end\l}"];
+	Node0x956110 -> Node0x899760;
+	colorscheme = "paired12"
+        subgraph cluster_0x9b61d0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x97d050 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x8e00c0;
+            Node0x945f00;
+          }
+          subgraph cluster_0x97cfd0 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0x97ec80 {
+              label = "";
+              style = filled;
+              color = 5
+              subgraph cluster_0x97ec00 {
+                label = "";
+                style = filled;
+                color = 7
+                Node0x961a80;
+                Node0x943be0;
+                Node0x956110;
+              }
+              subgraph cluster_0x9b8ba0 {
+                label = "";
+                style = filled;
+                color = 7
+                Node0x899760;
+                Node0x92b0f0;
+              }
+              subgraph cluster_0x9b8b20 {
+                label = "";
+                style = filled;
+                color = 7
+                Node0x93d700;
+                Node0x927420;
+              }
+              subgraph cluster_0x959090 {
+                label = "";
+                style = filled;
+                color = 7
+                Node0x95f660;
+                Node0x963980;
+              }
+              subgraph cluster_0x9b60d0 {
+                label = "";
+                style = filled;
+                color = 7
+                Node0x9234a0;
+                Node0x9558d0;
+              }
+              subgraph cluster_0x99d890 {
+                label = "";
+                style = filled;
+                color = 7
+                Node0x95d0b0;
+                Node0x94de00;
+              }
+              subgraph cluster_0x9b08c0 {
+                label = "";
+                style = filled;
+                color = 7
+                Node0x95a1e0;
+                Node0x8d9d90;
+              }
+              subgraph cluster_0x9b6050 {
+                label = "";
+                style = filled;
+                color = 7
+                Node0x9544e0;
+                Node0x8b1c40;
+                Node0x92f360;
+                Node0x8aed00;
+              }
+              subgraph cluster_0x9b0420 {
+                label = "";
+                style = filled;
+                color = 7
+                Node0x946460;
+                Node0x8dbc80;
+              }
+              Node0x8d5b80;
+              Node0x96d960;
+            }
+            Node0x8c1a30;
+          }
+          Node0x92cdd0;
+          Node0x924800;
+          Node0x95acb0;
+        }
+}

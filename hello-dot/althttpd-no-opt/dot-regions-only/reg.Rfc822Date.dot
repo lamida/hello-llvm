@@ -1,0 +1,12 @@
+digraph "Region Graph for 'Rfc822Date' function" {
+	label="Region Graph for 'Rfc822Date' function";
+
+	Node0xa67db0 [shape=record,label="{entry}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x9c78b0 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0xa67db0;
+        }
+}

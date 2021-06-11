@@ -1,0 +1,35 @@
+digraph "Post dominator tree for 'xferBytes' function" {
+	label="Post dominator tree for 'xferBytes' function";
+
+	Node0x21b6370 [shape=record,label="{Post dominance root node}"];
+	Node0x21b6370 -> Node0x22ce840;
+	Node0x22ce840 [shape=record,label="{while.end31:                                      \l  ret void\l}"];
+	Node0x22ce840 -> Node0x2344a70;
+	Node0x22ce840 -> Node0x22543b0;
+	Node0x22ce840 -> Node0x227f690;
+	Node0x2344a70 [shape=record,label="{while.cond9:                                      \l  %8 = load i32, i32* %nXfer.addr, align 4\l  %cmp10 = icmp sgt i32 %8, 0\l  br i1 %cmp10, label %while.body12, label %while.end31\l}"];
+	Node0x2344a70 -> Node0x22e76c0;
+	Node0x2344a70 -> Node0x22f2d60;
+	Node0x22e76c0 [shape=record,label="{while.end:                                        \l  br label %while.cond9\l}"];
+	Node0x22e76c0 -> Node0x225d580;
+	Node0x22e76c0 -> Node0x22cda10;
+	Node0x22e76c0 -> Node0x22800d0;
+	Node0x225d580 [shape=record,label="{while.cond:                                       \l  %0 = load i32, i32* %nSkip.addr, align 4\l  %cmp = icmp sgt i32 %0, 0\l  br i1 %cmp, label %while.body, label %while.end\l}"];
+	Node0x225d580 -> Node0x22e83b0;
+	Node0x225d580 -> Node0x22b1890;
+	Node0x22e83b0 [shape=record,label="{entry:\l  %in.addr = alloca %struct._IO_FILE*, align 8\l  %out.addr = alloca %struct._IO_FILE*, align 8\l  %nXfer.addr = alloca i32, align 4\l  %nSkip.addr = alloca i32, align 4\l  %n = alloca i64, align 8\l  %got = alloca i64, align 8\l  %zBuf = alloca [16384 x i8], align 16\l  store %struct._IO_FILE* %in, %struct._IO_FILE** %in.addr, align 8\l  store %struct._IO_FILE* %out, %struct._IO_FILE** %out.addr, align 8\l  store i32 %nXfer, i32* %nXfer.addr, align 4\l  store i32 %nSkip, i32* %nSkip.addr, align 4\l  br label %while.cond\l}"];
+	Node0x22b1890 [shape=record,label="{if.end6:                                          \l  %6 = load i64, i64* %got, align 8\l  %7 = load i32, i32* %nSkip.addr, align 4\l  %conv7 = sext i32 %7 to i64\l  %sub = sub i64 %conv7, %6\l  %conv8 = trunc i64 %sub to i32\l  store i32 %conv8, i32* %nSkip.addr, align 4\l  br label %while.cond\l}"];
+	Node0x22cda10 [shape=record,label="{if.end:                                           \l  %arraydecay = getelementptr inbounds [16384 x i8], [16384 x i8]* %zBuf, i64\l... 0, i64 0\l  %3 = load i64, i64* %n, align 8\l  %4 = load %struct._IO_FILE*, %struct._IO_FILE** %in.addr, align 8\l  %call = call i64 @fread(i8* %arraydecay, i64 1, i64 %3, %struct._IO_FILE* %4)\l  store i64 %call, i64* %got, align 8\l  %5 = load i64, i64* %got, align 8\l  %cmp3 = icmp eq i64 %5, 0\l  br i1 %cmp3, label %if.then5, label %if.end6\l}"];
+	Node0x22cda10 -> Node0x22a2aa0;
+	Node0x22cda10 -> Node0x2310540;
+	Node0x22a2aa0 [shape=record,label="{while.body:                                       \l  %1 = load i32, i32* %nSkip.addr, align 4\l  %conv = sext i32 %1 to i64\l  store i64 %conv, i64* %n, align 8\l  %2 = load i64, i64* %n, align 8\l  %cmp1 = icmp ugt i64 %2, 16384\l  br i1 %cmp1, label %if.then, label %if.end\l}"];
+	Node0x2310540 [shape=record,label="{if.then:                                          \l  store i64 16384, i64* %n, align 8\l  br label %if.end\l}"];
+	Node0x22800d0 [shape=record,label="{if.then5:                                         \l  br label %while.end\l}"];
+	Node0x22f2d60 [shape=record,label="{if.end23:                                         \l  %arraydecay24 = getelementptr inbounds [16384 x i8], [16384 x i8]* %zBuf,\l... i64 0, i64 0\l  %14 = load i64, i64* %got, align 8\l  %15 = load %struct._IO_FILE*, %struct._IO_FILE** %out.addr, align 8\l  %call25 = call i64 @fwrite(i8* %arraydecay24, i64 %14, i64 1,\l... %struct._IO_FILE* %15)\l  %16 = load i64, i64* %got, align 8\l  %17 = load i32, i32* @nOut, align 4\l  %conv26 = sext i32 %17 to i64\l  %add = add i64 %conv26, %16\l  %conv27 = trunc i64 %add to i32\l  store i32 %conv27, i32* @nOut, align 4\l  %18 = load i64, i64* %got, align 8\l  %19 = load i32, i32* %nXfer.addr, align 4\l  %conv28 = sext i32 %19 to i64\l  %sub29 = sub i64 %conv28, %18\l  %conv30 = trunc i64 %sub29 to i32\l  store i32 %conv30, i32* %nXfer.addr, align 4\l  br label %while.cond9\l}"];
+	Node0x22543b0 [shape=record,label="{if.end17:                                         \l  %arraydecay18 = getelementptr inbounds [16384 x i8], [16384 x i8]* %zBuf,\l... i64 0, i64 0\l  %11 = load i64, i64* %n, align 8\l  %12 = load %struct._IO_FILE*, %struct._IO_FILE** %in.addr, align 8\l  %call19 = call i64 @fread(i8* %arraydecay18, i64 1, i64 %11,\l... %struct._IO_FILE* %12)\l  store i64 %call19, i64* %got, align 8\l  %13 = load i64, i64* %got, align 8\l  %cmp20 = icmp eq i64 %13, 0\l  br i1 %cmp20, label %if.then22, label %if.end23\l}"];
+	Node0x22543b0 -> Node0x2309750;
+	Node0x22543b0 -> Node0x22a7a80;
+	Node0x2309750 [shape=record,label="{while.body12:                                     \l  %9 = load i32, i32* %nXfer.addr, align 4\l  %conv13 = sext i32 %9 to i64\l  store i64 %conv13, i64* %n, align 8\l  %10 = load i64, i64* %n, align 8\l  %cmp14 = icmp ugt i64 %10, 16384\l  br i1 %cmp14, label %if.then16, label %if.end17\l}"];
+	Node0x22a7a80 [shape=record,label="{if.then16:                                        \l  store i64 16384, i64* %n, align 8\l  br label %if.end17\l}"];
+	Node0x227f690 [shape=record,label="{if.then22:                                        \l  br label %while.end31\l}"];
+}

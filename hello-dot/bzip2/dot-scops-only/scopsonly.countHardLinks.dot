@@ -1,27 +1,27 @@
 digraph "Scop Graph for 'countHardLinks' function" {
 	label="Scop Graph for 'countHardLinks' function";
 
-	Node0x233fe80 [shape=record,label="{%1}"];
-	Node0x233fe80 -> Node0x2288e00;
-	Node0x233fe80 -> Node0x22ad340;
-	Node0x2288e00 [shape=record,label="{%10}"];
-	Node0x2288e00 -> Node0x2134830;
-	Node0x2134830 [shape=record,label="{%16}"];
-	Node0x22ad340 [shape=record,label="{%11}"];
-	Node0x22ad340 -> Node0x2134830;
+	Node0x18354c0 [shape=record,label="{%1}"];
+	Node0x18354c0 -> Node0x18137e0;
+	Node0x18354c0 -> Node0x1814ca0;
+	Node0x18137e0 [shape=record,label="{%10}"];
+	Node0x18137e0 -> Node0x1851030;
+	Node0x1851030 [shape=record,label="{%16}"];
+	Node0x1814ca0 [shape=record,label="{%11}"];
+	Node0x1814ca0 -> Node0x1851030;
 	colorscheme = "paired12"
-        subgraph cluster_0x239dc20 {
+        subgraph cluster_0x1967160 {
           label = "";
           style = solid;
           color = 1
-          subgraph cluster_0x2396bd0 {
+          subgraph cluster_0x1967310 {
             label = "";
             style = solid;
             color = 6
-            Node0x233fe80;
-            Node0x2288e00;
-            Node0x22ad340;
+            Node0x18354c0;
+            Node0x18137e0;
+            Node0x1814ca0;
           }
-          Node0x2134830;
+          Node0x1851030;
         }
 }

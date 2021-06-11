@@ -1,24 +1,24 @@
 digraph "Region Graph for 'cadvise' function" {
 	label="Region Graph for 'cadvise' function";
 
-	Node0x90af60 [shape=record,label="{%0:\l  %1 = load i8, i8* @noisy, align 1\l  %2 = icmp ne i8 %1, 0\l  br i1 %2, label %3, label %6\l}"];
-	Node0x90af60 -> Node0xa61500;
-	Node0x90af60 -> Node0xb45270;
-	Node0xa61500 [shape=record,label="{%3:\l3:                                                \l  %4 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %5 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %4,\l... i8* getelementptr inbounds ([241 x i8], [241 x i8]* @.str.88, i64 0, i64 0))\l  br label %6\l}"];
-	Node0xa61500 -> Node0xb45270;
-	Node0xb45270 [shape=record,label="{%6:\l6:                                                \l  ret void\l}"];
+	Node0x28594f0 [shape=record,label="{%0:\l  %1 = load i8, i8* @noisy, align 1\l  %2 = icmp ne i8 %1, 0\l  br i1 %2, label %3, label %6\l}"];
+	Node0x28594f0 -> Node0x2b53660;
+	Node0x28594f0 -> Node0x2ab71c0;
+	Node0x2b53660 [shape=record,label="{%3:\l3:                                                \l  %4 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %5 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %4,\l... i8* getelementptr inbounds ([241 x i8], [241 x i8]* @.str.88, i64 0, i64 0))\l  br label %6\l}"];
+	Node0x2b53660 -> Node0x2ab71c0;
+	Node0x2ab71c0 [shape=record,label="{%6:\l6:                                                \l  ret void\l}"];
 	colorscheme = "paired12"
-        subgraph cluster_0xc3fe80 {
+        subgraph cluster_0x2b841c0 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0xc48300 {
+          subgraph cluster_0x2b89ce0 {
             label = "";
             style = filled;
             color = 3
-            Node0x90af60;
-            Node0xa61500;
+            Node0x28594f0;
+            Node0x2b53660;
           }
-          Node0xb45270;
+          Node0x2ab71c0;
         }
 }

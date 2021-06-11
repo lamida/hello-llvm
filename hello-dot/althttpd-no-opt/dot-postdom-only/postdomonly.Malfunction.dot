@@ -1,0 +1,11 @@
+digraph "Post dominator tree for 'Malfunction' function" {
+	label="Post dominator tree for 'Malfunction' function";
+
+	Node0xc93fd0 [shape=record,label="{Post dominance root node}"];
+	Node0xc93fd0 -> Node0xd9d000;
+	Node0xd9d000 [shape=record,label="{if.end}"];
+	Node0xd9d000 -> Node0xdb8040;
+	Node0xd9d000 -> Node0xd089d0;
+	Node0xdb8040 [shape=record,label="{entry}"];
+	Node0xd089d0 [shape=record,label="{if.then}"];
+}

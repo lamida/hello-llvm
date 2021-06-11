@@ -1,199 +1,199 @@
 digraph "Region Graph for 'BZ2_bzCompress' function" {
 	label="Region Graph for 'BZ2_bzCompress' function";
 
-	Node0x103a630 [shape=record,label="{%2}"];
-	Node0x103a630 -> Node0xfd5e50;
-	Node0x103a630 -> Node0x10a62b0;
-	Node0xfd5e50 [shape=record,label="{%10}"];
-	Node0xfd5e50 -> Node0x104cb00;
-	Node0x104cb00 [shape=record,label="{%147}"];
-	Node0x10a62b0 [shape=record,label="{%11}"];
-	Node0x10a62b0 -> Node0x107d1a0;
-	Node0x10a62b0 -> Node0x110dbf0;
-	Node0x107d1a0 [shape=record,label="{%18}"];
-	Node0x107d1a0 -> Node0x104cb00;
-	Node0x110dbf0 [shape=record,label="{%19}"];
-	Node0x110dbf0 -> Node0x1063600;
-	Node0x110dbf0 -> Node0x104ae80;
-	Node0x1063600 [shape=record,label="{%25}"];
-	Node0x1063600 -> Node0x104cb00;
-	Node0x104ae80 [shape=record,label="{%26}"];
-	Node0x104ae80 -> Node0xef4e60;
-	Node0xef4e60 [shape=record,label="{%27}"];
-	Node0xef4e60 -> Node0x1014890;
-	Node0xef4e60 -> Node0x10f9240;
-	Node0xef4e60 -> Node0x103a770;
-	Node0xef4e60 -> Node0x10eeb40;
-	Node0xef4e60 -> Node0x1092290;
-	Node0x1014890 [shape=record,label="{%146}"];
-	Node0x1014890 -> Node0x104cb00;
-	Node0x10f9240 [shape=record,label="{%31}"];
-	Node0x10f9240 -> Node0x104cb00;
-	Node0x103a770 [shape=record,label="{%32}"];
-	Node0x103a770 -> Node0x10e8c20;
-	Node0x103a770 -> Node0xfd7fb0;
-	Node0x10e8c20 [shape=record,label="{%35}"];
-	Node0x10e8c20 -> Node0x104cb00;
-	Node0xfd7fb0 [shape=record,label="{%43}"];
-	Node0xfd7fb0 -> Node0xf6c7a0;
-	Node0xfd7fb0 -> Node0xe079d0;
-	Node0xf6c7a0 [shape=record,label="{%46}"];
-	Node0xf6c7a0 -> Node0xef4e60[constraint=false];
-	Node0xe079d0 [shape=record,label="{%54}"];
-	Node0xe079d0 -> Node0xdc00c0;
-	Node0xe079d0 -> Node0x10e8e80;
-	Node0xdc00c0 [shape=record,label="{%57}"];
-	Node0xdc00c0 -> Node0xef4e60[constraint=false];
-	Node0x10e8e80 [shape=record,label="{%65}"];
-	Node0x10e8e80 -> Node0x104cb00;
-	Node0x10eeb40 [shape=record,label="{%66}"];
-	Node0x10eeb40 -> Node0x110dcc0;
-	Node0x10eeb40 -> Node0x100b3e0;
-	Node0x110dcc0 [shape=record,label="{%69}"];
-	Node0x110dcc0 -> Node0x104cb00;
-	Node0x100b3e0 [shape=record,label="{%70}"];
-	Node0x100b3e0 -> Node0x103de50;
-	Node0x100b3e0 -> Node0x105b7a0;
-	Node0x103de50 [shape=record,label="{%80}"];
-	Node0x103de50 -> Node0x104cb00;
-	Node0x105b7a0 [shape=record,label="{%81}"];
-	Node0x105b7a0 -> Node0x10389c0;
-	Node0x105b7a0 -> Node0x104aec0;
-	Node0x10389c0 [shape=record,label="{%100}"];
-	Node0x10389c0 -> Node0x104cb00;
-	Node0x104aec0 [shape=record,label="{%88}"];
-	Node0x104aec0 -> Node0x1110320;
-	Node0x104aec0 -> Node0x10389c0;
-	Node0x1110320 [shape=record,label="{%92}"];
-	Node0x1110320 -> Node0x10389c0;
-	Node0x1110320 -> Node0x105db50;
-	Node0x105db50 [shape=record,label="{%101}"];
-	Node0x105db50 -> Node0x104cb00;
-	Node0x1092290 [shape=record,label="{%104}"];
-	Node0x1092290 -> Node0x1107190;
-	Node0x1092290 -> Node0x1045da0;
-	Node0x1107190 [shape=record,label="{%107}"];
-	Node0x1107190 -> Node0x104cb00;
-	Node0x1045da0 [shape=record,label="{%108}"];
-	Node0x1045da0 -> Node0xffd510;
-	Node0x1045da0 -> Node0x1036ac0;
-	Node0xffd510 [shape=record,label="{%118}"];
-	Node0xffd510 -> Node0x104cb00;
-	Node0x1036ac0 [shape=record,label="{%119}"];
-	Node0x1036ac0 -> Node0xe40b60;
-	Node0x1036ac0 -> Node0x10fb190;
-	Node0xe40b60 [shape=record,label="{%125}"];
-	Node0xe40b60 -> Node0xe815f0;
-	Node0xe40b60 -> Node0x100d980;
-	Node0xe815f0 [shape=record,label="{%142}"];
-	Node0xe815f0 -> Node0x104cb00;
-	Node0x100d980 [shape=record,label="{%130}"];
-	Node0x100d980 -> Node0x10f1810;
-	Node0x100d980 -> Node0xe815f0;
-	Node0x10f1810 [shape=record,label="{%134}"];
-	Node0x10f1810 -> Node0xe815f0;
-	Node0x10f1810 -> Node0x10863d0;
-	Node0x10863d0 [shape=record,label="{%143}"];
-	Node0x10863d0 -> Node0x104cb00;
-	Node0x10fb190 [shape=record,label="{%124}"];
-	Node0x10fb190 -> Node0x104cb00;
+	Node0x131cc70 [shape=record,label="{%2}"];
+	Node0x131cc70 -> Node0x1388340;
+	Node0x131cc70 -> Node0x1437d20;
+	Node0x1388340 [shape=record,label="{%10}"];
+	Node0x1388340 -> Node0x13c03d0;
+	Node0x13c03d0 [shape=record,label="{%147}"];
+	Node0x1437d20 [shape=record,label="{%11}"];
+	Node0x1437d20 -> Node0x1351ec0;
+	Node0x1437d20 -> Node0x1390430;
+	Node0x1351ec0 [shape=record,label="{%18}"];
+	Node0x1351ec0 -> Node0x13c03d0;
+	Node0x1390430 [shape=record,label="{%19}"];
+	Node0x1390430 -> Node0x12a6720;
+	Node0x1390430 -> Node0x12704d0;
+	Node0x12a6720 [shape=record,label="{%25}"];
+	Node0x12a6720 -> Node0x13c03d0;
+	Node0x12704d0 [shape=record,label="{%26}"];
+	Node0x12704d0 -> Node0x1435e50;
+	Node0x1435e50 [shape=record,label="{%27}"];
+	Node0x1435e50 -> Node0x144cd30;
+	Node0x1435e50 -> Node0x1355830;
+	Node0x1435e50 -> Node0x143d640;
+	Node0x1435e50 -> Node0x13955f0;
+	Node0x1435e50 -> Node0x137d0a0;
+	Node0x144cd30 [shape=record,label="{%146}"];
+	Node0x144cd30 -> Node0x13c03d0;
+	Node0x1355830 [shape=record,label="{%31}"];
+	Node0x1355830 -> Node0x13c03d0;
+	Node0x143d640 [shape=record,label="{%32}"];
+	Node0x143d640 -> Node0x13805b0;
+	Node0x143d640 -> Node0x1203be0;
+	Node0x13805b0 [shape=record,label="{%35}"];
+	Node0x13805b0 -> Node0x13c03d0;
+	Node0x1203be0 [shape=record,label="{%43}"];
+	Node0x1203be0 -> Node0x13acd20;
+	Node0x1203be0 -> Node0x13adf70;
+	Node0x13acd20 [shape=record,label="{%46}"];
+	Node0x13acd20 -> Node0x1435e50[constraint=false];
+	Node0x13adf70 [shape=record,label="{%54}"];
+	Node0x13adf70 -> Node0x1390340;
+	Node0x13adf70 -> Node0x1433e40;
+	Node0x1390340 [shape=record,label="{%57}"];
+	Node0x1390340 -> Node0x1435e50[constraint=false];
+	Node0x1433e40 [shape=record,label="{%65}"];
+	Node0x1433e40 -> Node0x13c03d0;
+	Node0x13955f0 [shape=record,label="{%66}"];
+	Node0x13955f0 -> Node0x12a4f70;
+	Node0x13955f0 -> Node0x139de20;
+	Node0x12a4f70 [shape=record,label="{%69}"];
+	Node0x12a4f70 -> Node0x13c03d0;
+	Node0x139de20 [shape=record,label="{%70}"];
+	Node0x139de20 -> Node0x133d8a0;
+	Node0x139de20 -> Node0x133d0f0;
+	Node0x133d8a0 [shape=record,label="{%80}"];
+	Node0x133d8a0 -> Node0x13c03d0;
+	Node0x133d0f0 [shape=record,label="{%81}"];
+	Node0x133d0f0 -> Node0x135b400;
+	Node0x133d0f0 -> Node0x13a7ab0;
+	Node0x135b400 [shape=record,label="{%100}"];
+	Node0x135b400 -> Node0x13c03d0;
+	Node0x13a7ab0 [shape=record,label="{%88}"];
+	Node0x13a7ab0 -> Node0x1441f90;
+	Node0x13a7ab0 -> Node0x135b400;
+	Node0x1441f90 [shape=record,label="{%92}"];
+	Node0x1441f90 -> Node0x135b400;
+	Node0x1441f90 -> Node0x137f2b0;
+	Node0x137f2b0 [shape=record,label="{%101}"];
+	Node0x137f2b0 -> Node0x13c03d0;
+	Node0x137d0a0 [shape=record,label="{%104}"];
+	Node0x137d0a0 -> Node0x10fa0c0;
+	Node0x137d0a0 -> Node0x1386b00;
+	Node0x10fa0c0 [shape=record,label="{%107}"];
+	Node0x10fa0c0 -> Node0x13c03d0;
+	Node0x1386b00 [shape=record,label="{%108}"];
+	Node0x1386b00 -> Node0x13804c0;
+	Node0x1386b00 -> Node0x144a320;
+	Node0x13804c0 [shape=record,label="{%118}"];
+	Node0x13804c0 -> Node0x13c03d0;
+	Node0x144a320 [shape=record,label="{%119}"];
+	Node0x144a320 -> Node0x133f050;
+	Node0x144a320 -> Node0x1389080;
+	Node0x133f050 [shape=record,label="{%125}"];
+	Node0x133f050 -> Node0x1313830;
+	Node0x133f050 -> Node0x110cf80;
+	Node0x1313830 [shape=record,label="{%142}"];
+	Node0x1313830 -> Node0x13c03d0;
+	Node0x110cf80 [shape=record,label="{%130}"];
+	Node0x110cf80 -> Node0x13309d0;
+	Node0x110cf80 -> Node0x1313830;
+	Node0x13309d0 [shape=record,label="{%134}"];
+	Node0x13309d0 -> Node0x1313830;
+	Node0x13309d0 -> Node0x11dde80;
+	Node0x11dde80 [shape=record,label="{%143}"];
+	Node0x11dde80 -> Node0x13c03d0;
+	Node0x1389080 [shape=record,label="{%124}"];
+	Node0x1389080 -> Node0x13c03d0;
 	colorscheme = "paired12"
-        subgraph cluster_0xd7e8e0 {
+        subgraph cluster_0x145b610 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0x1121610 {
+          subgraph cluster_0x10db1c0 {
             label = "";
             style = filled;
             color = 3
-            subgraph cluster_0x10ef1b0 {
+            subgraph cluster_0x142ee90 {
               label = "";
               style = filled;
               color = 5
-              subgraph cluster_0x10ef130 {
+              subgraph cluster_0x142ee10 {
                 label = "";
                 style = filled;
                 color = 7
-                subgraph cluster_0xda1240 {
+                subgraph cluster_0x14291b0 {
                   label = "";
                   style = filled;
                   color = 9
-                  subgraph cluster_0x1148f40 {
+                  subgraph cluster_0x1482fd0 {
                     label = "";
                     style = filled;
                     color = 11
-                    subgraph cluster_0x1149140 {
+                    subgraph cluster_0x14831d0 {
                       label = "";
                       style = filled;
                       color = 1
-                      subgraph cluster_0x11491c0 {
+                      subgraph cluster_0x1483250 {
                         label = "";
                         style = filled;
                         color = 3
-                        Node0x105b7a0;
-                        Node0x10389c0;
-                        Node0x104aec0;
-                        Node0x1110320;
-                        Node0x105db50;
+                        Node0x133d0f0;
+                        Node0x135b400;
+                        Node0x13a7ab0;
+                        Node0x1441f90;
+                        Node0x137f2b0;
                       }
-                      Node0x100b3e0;
-                      Node0x103de50;
+                      Node0x139de20;
+                      Node0x133d8a0;
                     }
-                    Node0x10eeb40;
-                    Node0x110dcc0;
+                    Node0x13955f0;
+                    Node0x12a4f70;
                   }
-                  subgraph cluster_0xda11c0 {
+                  subgraph cluster_0x1429130 {
                     label = "";
                     style = filled;
                     color = 11
-                    subgraph cluster_0xd7f370 {
+                    subgraph cluster_0x1459760 {
                       label = "";
                       style = filled;
                       color = 1
-                      subgraph cluster_0x110d880 {
+                      subgraph cluster_0x112b290 {
                         label = "";
                         style = filled;
                         color = 3
-                        subgraph cluster_0x111f760 {
+                        subgraph cluster_0x139f580 {
                           label = "";
                           style = filled;
                           color = 5
-                          Node0xe40b60;
-                          Node0xe815f0;
-                          Node0x100d980;
-                          Node0x10f1810;
-                          Node0x10863d0;
+                          Node0x133f050;
+                          Node0x1313830;
+                          Node0x110cf80;
+                          Node0x13309d0;
+                          Node0x11dde80;
                         }
-                        Node0x1036ac0;
-                        Node0x10fb190;
+                        Node0x144a320;
+                        Node0x1389080;
                       }
-                      Node0x1045da0;
-                      Node0xffd510;
+                      Node0x1386b00;
+                      Node0x13804c0;
                     }
-                    Node0x1092290;
-                    Node0x1107190;
+                    Node0x137d0a0;
+                    Node0x10fa0c0;
                   }
-                  Node0xef4e60;
-                  Node0x1014890;
-                  Node0x10f9240;
-                  Node0x103a770;
-                  Node0x10e8c20;
-                  Node0xfd7fb0;
-                  Node0xf6c7a0;
-                  Node0xe079d0;
-                  Node0xdc00c0;
-                  Node0x10e8e80;
+                  Node0x1435e50;
+                  Node0x144cd30;
+                  Node0x1355830;
+                  Node0x143d640;
+                  Node0x13805b0;
+                  Node0x1203be0;
+                  Node0x13acd20;
+                  Node0x13adf70;
+                  Node0x1390340;
+                  Node0x1433e40;
                 }
-                Node0x110dbf0;
-                Node0x1063600;
-                Node0x104ae80;
+                Node0x1390430;
+                Node0x12a6720;
+                Node0x12704d0;
               }
-              Node0x10a62b0;
-              Node0x107d1a0;
+              Node0x1437d20;
+              Node0x1351ec0;
             }
-            Node0x103a630;
-            Node0xfd5e50;
+            Node0x131cc70;
+            Node0x1388340;
           }
-          Node0x104cb00;
+          Node0x13c03d0;
         }
 }

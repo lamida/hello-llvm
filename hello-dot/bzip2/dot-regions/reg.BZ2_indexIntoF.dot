@@ -1,42 +1,42 @@
 digraph "Region Graph for 'BZ2_indexIntoF' function" {
 	label="Region Graph for 'BZ2_indexIntoF' function";
 
-	Node0xb2fa40 [shape=record,label="{%2:\l  %3 = alloca i32, align 4\l  %4 = alloca i32*, align 8\l  %5 = alloca i32, align 4\l  %6 = alloca i32, align 4\l  %7 = alloca i32, align 4\l  store i32 %0, i32* %3, align 4\l  store i32* %1, i32** %4, align 8\l  store i32 0, i32* %5, align 4\l  store i32 256, i32* %6, align 4\l  br label %8\l}"];
-	Node0xb2fa40 -> Node0x9ad1e0;
-	Node0x9ad1e0 [shape=record,label="{%8:\l8:                                                \l  %9 = load i32, i32* %5, align 4\l  %10 = load i32, i32* %6, align 4\l  %11 = add nsw i32 %9, %10\l  %12 = ashr i32 %11, 1\l  store i32 %12, i32* %7, align 4\l  %13 = load i32, i32* %3, align 4\l  %14 = load i32*, i32** %4, align 8\l  %15 = load i32, i32* %7, align 4\l  %16 = sext i32 %15 to i64\l  %17 = getelementptr inbounds i32, i32* %14, i64 %16\l  %18 = load i32, i32* %17, align 4\l  %19 = icmp sge i32 %13, %18\l  br i1 %19, label %20, label %22\l}"];
-	Node0x9ad1e0 -> Node0xb70760;
-	Node0x9ad1e0 -> Node0xb3a0a0;
-	Node0xb70760 [shape=record,label="{%20:\l20:                                               \l  %21 = load i32, i32* %7, align 4\l  store i32 %21, i32* %5, align 4\l  br label %24\l}"];
-	Node0xb70760 -> Node0xb3cb50;
-	Node0xb3cb50 [shape=record,label="{%24:\l24:                                               \l  br label %25\l}"];
-	Node0xb3cb50 -> Node0xc04bf0;
-	Node0xc04bf0 [shape=record,label="{%25:\l25:                                               \l  %26 = load i32, i32* %6, align 4\l  %27 = load i32, i32* %5, align 4\l  %28 = sub nsw i32 %26, %27\l  %29 = icmp ne i32 %28, 1\l  br i1 %29, label %8, label %30\l}"];
-	Node0xc04bf0 -> Node0x9ad1e0[constraint=false];
-	Node0xc04bf0 -> Node0x912970;
-	Node0x912970 [shape=record,label="{%30:\l30:                                               \l  %31 = load i32, i32* %5, align 4\l  ret i32 %31\l}"];
-	Node0xb3a0a0 [shape=record,label="{%22:\l22:                                               \l  %23 = load i32, i32* %7, align 4\l  store i32 %23, i32* %6, align 4\l  br label %24\l}"];
-	Node0xb3a0a0 -> Node0xb3cb50;
+	Node0x2b4ddd0 [shape=record,label="{%2:\l  %3 = alloca i32, align 4\l  %4 = alloca i32*, align 8\l  %5 = alloca i32, align 4\l  %6 = alloca i32, align 4\l  %7 = alloca i32, align 4\l  store i32 %0, i32* %3, align 4\l  store i32* %1, i32** %4, align 8\l  store i32 0, i32* %5, align 4\l  store i32 256, i32* %6, align 4\l  br label %8\l}"];
+	Node0x2b4ddd0 -> Node0x2b424f0;
+	Node0x2b424f0 [shape=record,label="{%8:\l8:                                                \l  %9 = load i32, i32* %5, align 4\l  %10 = load i32, i32* %6, align 4\l  %11 = add nsw i32 %9, %10\l  %12 = ashr i32 %11, 1\l  store i32 %12, i32* %7, align 4\l  %13 = load i32, i32* %3, align 4\l  %14 = load i32*, i32** %4, align 8\l  %15 = load i32, i32* %7, align 4\l  %16 = sext i32 %15 to i64\l  %17 = getelementptr inbounds i32, i32* %14, i64 %16\l  %18 = load i32, i32* %17, align 4\l  %19 = icmp sge i32 %13, %18\l  br i1 %19, label %20, label %22\l}"];
+	Node0x2b424f0 -> Node0x2b57780;
+	Node0x2b424f0 -> Node0x2ab5170;
+	Node0x2b57780 [shape=record,label="{%20:\l20:                                               \l  %21 = load i32, i32* %7, align 4\l  store i32 %21, i32* %5, align 4\l  br label %24\l}"];
+	Node0x2b57780 -> Node0x2b3bb40;
+	Node0x2b3bb40 [shape=record,label="{%24:\l24:                                               \l  br label %25\l}"];
+	Node0x2b3bb40 -> Node0x2817f80;
+	Node0x2817f80 [shape=record,label="{%25:\l25:                                               \l  %26 = load i32, i32* %6, align 4\l  %27 = load i32, i32* %5, align 4\l  %28 = sub nsw i32 %26, %27\l  %29 = icmp ne i32 %28, 1\l  br i1 %29, label %8, label %30\l}"];
+	Node0x2817f80 -> Node0x2b424f0[constraint=false];
+	Node0x2817f80 -> Node0x28645c0;
+	Node0x28645c0 [shape=record,label="{%30:\l30:                                               \l  %31 = load i32, i32* %5, align 4\l  ret i32 %31\l}"];
+	Node0x2ab5170 [shape=record,label="{%22:\l22:                                               \l  %23 = load i32, i32* %7, align 4\l  store i32 %23, i32* %6, align 4\l  br label %24\l}"];
+	Node0x2ab5170 -> Node0x2b3bb40;
 	colorscheme = "paired12"
-        subgraph cluster_0xc3d1e0 {
+        subgraph cluster_0x2b8aa50 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0xc4b950 {
+          subgraph cluster_0x2b998c0 {
             label = "";
             style = filled;
             color = 3
-            subgraph cluster_0xc165d0 {
+            subgraph cluster_0x27c3c00 {
               label = "";
               style = filled;
               color = 5
-              Node0x9ad1e0;
-              Node0xb70760;
-              Node0xb3a0a0;
+              Node0x2b424f0;
+              Node0x2b57780;
+              Node0x2ab5170;
             }
-            Node0xb3cb50;
-            Node0xc04bf0;
+            Node0x2b3bb40;
+            Node0x2817f80;
           }
-          Node0xb2fa40;
-          Node0x912970;
+          Node0x2b4ddd0;
+          Node0x28645c0;
         }
 }

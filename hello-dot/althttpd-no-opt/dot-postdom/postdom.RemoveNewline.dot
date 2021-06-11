@@ -1,0 +1,25 @@
+digraph "Post dominator tree for 'RemoveNewline' function" {
+	label="Post dominator tree for 'RemoveNewline' function";
+
+	Node0x2344a70 [shape=record,label="{Post dominance root node}"];
+	Node0x2344a70 -> Node0x23483e0;
+	Node0x23483e0 [shape=record,label="{return:                                           \l  ret void\l}"];
+	Node0x23483e0 -> Node0x22ce840;
+	Node0x23483e0 -> Node0x2303b90;
+	Node0x23483e0 -> Node0x22cb5a0;
+	Node0x22ce840 [shape=record,label="{if.then:                                          \l  br label %return\l}"];
+	Node0x2303b90 [shape=record,label="{entry:\l  %z.addr = alloca i8*, align 8\l  store i8* %z, i8** %z.addr, align 8\l  %0 = load i8*, i8** %z.addr, align 8\l  %cmp = icmp eq i8* %0, null\l  br i1 %cmp, label %if.then, label %if.end\l}"];
+	Node0x22cb5a0 [shape=record,label="{while.end:                                        \l  %9 = load i8*, i8** %z.addr, align 8\l  store i8 0, i8* %9, align 1\l  br label %return\l}"];
+	Node0x22cb5a0 -> Node0x2308b20;
+	Node0x2308b20 [shape=record,label="{land.end:                                         \l  %7 = phi i1 [ false, %land.lhs.true ], [ false, %while.cond ], [ %cmp5,\l... %land.rhs ]\l  br i1 %7, label %while.body, label %while.end\l}"];
+	Node0x2308b20 -> Node0x22a36e0;
+	Node0x2308b20 -> Node0x22cc250;
+	Node0x2308b20 -> Node0x22a3bc0;
+	Node0x22a36e0 [shape=record,label="{while.cond:                                       \l  %1 = load i8*, i8** %z.addr, align 8\l  %2 = load i8, i8* %1, align 1\l  %conv = sext i8 %2 to i32\l  %tobool = icmp ne i32 %conv, 0\l  br i1 %tobool, label %land.lhs.true, label %land.end\l}"];
+	Node0x22a36e0 -> Node0x22dccc0;
+	Node0x22a36e0 -> Node0x231cf00;
+	Node0x22dccc0 [shape=record,label="{if.end:                                           \l  br label %while.cond\l}"];
+	Node0x231cf00 [shape=record,label="{while.body:                                       \l  %8 = load i8*, i8** %z.addr, align 8\l  %incdec.ptr = getelementptr inbounds i8, i8* %8, i32 1\l  store i8* %incdec.ptr, i8** %z.addr, align 8\l  br label %while.cond\l}"];
+	Node0x22cc250 [shape=record,label="{land.lhs.true:                                    \l  %3 = load i8*, i8** %z.addr, align 8\l  %4 = load i8, i8* %3, align 1\l  %conv1 = sext i8 %4 to i32\l  %cmp2 = icmp ne i32 %conv1, 10\l  br i1 %cmp2, label %land.rhs, label %land.end\l}"];
+	Node0x22a3bc0 [shape=record,label="{land.rhs:                                         \l  %5 = load i8*, i8** %z.addr, align 8\l  %6 = load i8, i8* %5, align 1\l  %conv4 = sext i8 %6 to i32\l  %cmp5 = icmp ne i32 %conv4, 13\l  br label %land.end\l}"];
+}

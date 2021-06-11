@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'Rfc822Date' function" {
+	label="Dominator tree for 'Rfc822Date' function";
+
+	Node0xe301a0 [shape=record,label="{entry}"];
+}

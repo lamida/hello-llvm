@@ -1,39 +1,39 @@
 digraph "Region Graph for 'notAStandardFile' function" {
 	label="Region Graph for 'notAStandardFile' function";
 
-	Node0xbe0280 [shape=record,label="{%1:\l  %2 = alloca i8, align 1\l  %3 = alloca i8*, align 8\l  %4 = alloca i32, align 4\l  %5 = alloca %struct.stat, align 8\l  store i8* %0, i8** %3, align 8\l  %6 = load i8*, i8** %3, align 8\l  %7 = call i32 @lstat(i8* %6, %struct.stat* %5) #8\l  store i32 %7, i32* %4, align 4\l  %8 = load i32, i32* %4, align 4\l  %9 = icmp ne i32 %8, 0\l  br i1 %9, label %10, label %11\l}"];
-	Node0xbe0280 -> Node0xc04ff0;
-	Node0xbe0280 -> Node0xbecfd0;
-	Node0xc04ff0 [shape=record,label="{%10:\l10:                                               \l  store i8 1, i8* %2, align 1\l  br label %18\l}"];
-	Node0xc04ff0 -> Node0xb66590;
-	Node0xb66590 [shape=record,label="{%18:\l18:                                               \l  %19 = load i8, i8* %2, align 1\l  ret i8 %19\l}"];
-	Node0xbecfd0 [shape=record,label="{%11:\l11:                                               \l  %12 = getelementptr inbounds %struct.stat, %struct.stat* %5, i32 0, i32 3\l  %13 = load i32, i32* %12, align 8\l  %14 = and i32 %13, 61440\l  %15 = icmp eq i32 %14, 32768\l  br i1 %15, label %16, label %17\l}"];
-	Node0xbecfd0 -> Node0xb43b00;
-	Node0xbecfd0 -> Node0x9a06c0;
-	Node0xb43b00 [shape=record,label="{%16:\l16:                                               \l  store i8 0, i8* %2, align 1\l  br label %18\l}"];
-	Node0xb43b00 -> Node0xb66590;
-	Node0x9a06c0 [shape=record,label="{%17:\l17:                                               \l  store i8 1, i8* %2, align 1\l  br label %18\l}"];
-	Node0x9a06c0 -> Node0xb66590;
+	Node0x2a661b0 [shape=record,label="{%1:\l  %2 = alloca i8, align 1\l  %3 = alloca i8*, align 8\l  %4 = alloca i32, align 4\l  %5 = alloca %struct.stat, align 8\l  store i8* %0, i8** %3, align 8\l  %6 = load i8*, i8** %3, align 8\l  %7 = call i32 @lstat(i8* %6, %struct.stat* %5) #8\l  store i32 %7, i32* %4, align 4\l  %8 = load i32, i32* %4, align 4\l  %9 = icmp ne i32 %8, 0\l  br i1 %9, label %10, label %11\l}"];
+	Node0x2a661b0 -> Node0x2b40060;
+	Node0x2a661b0 -> Node0x2a6bb30;
+	Node0x2b40060 [shape=record,label="{%10:\l10:                                               \l  store i8 1, i8* %2, align 1\l  br label %18\l}"];
+	Node0x2b40060 -> Node0x2a27c70;
+	Node0x2a27c70 [shape=record,label="{%18:\l18:                                               \l  %19 = load i8, i8* %2, align 1\l  ret i8 %19\l}"];
+	Node0x2a6bb30 [shape=record,label="{%11:\l11:                                               \l  %12 = getelementptr inbounds %struct.stat, %struct.stat* %5, i32 0, i32 3\l  %13 = load i32, i32* %12, align 8\l  %14 = and i32 %13, 61440\l  %15 = icmp eq i32 %14, 32768\l  br i1 %15, label %16, label %17\l}"];
+	Node0x2a6bb30 -> Node0x2b2de80;
+	Node0x2a6bb30 -> Node0x284cb30;
+	Node0x2b2de80 [shape=record,label="{%16:\l16:                                               \l  store i8 0, i8* %2, align 1\l  br label %18\l}"];
+	Node0x2b2de80 -> Node0x2a27c70;
+	Node0x284cb30 [shape=record,label="{%17:\l17:                                               \l  store i8 1, i8* %2, align 1\l  br label %18\l}"];
+	Node0x284cb30 -> Node0x2a27c70;
 	colorscheme = "paired12"
-        subgraph cluster_0xc3fe80 {
+        subgraph cluster_0x2b841c0 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0xc48300 {
+          subgraph cluster_0x2b89ce0 {
             label = "";
             style = filled;
             color = 3
-            subgraph cluster_0xc4dec0 {
+            subgraph cluster_0x2b93270 {
               label = "";
               style = filled;
               color = 5
-              Node0xbecfd0;
-              Node0xb43b00;
-              Node0x9a06c0;
+              Node0x2a6bb30;
+              Node0x2b2de80;
+              Node0x284cb30;
             }
-            Node0xbe0280;
-            Node0xc04ff0;
+            Node0x2a661b0;
+            Node0x2b40060;
           }
-          Node0xb66590;
+          Node0x2a27c70;
         }
 }

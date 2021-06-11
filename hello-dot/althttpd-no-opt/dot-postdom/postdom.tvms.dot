@@ -1,0 +1,7 @@
+digraph "Post dominator tree for 'tvms' function" {
+	label="Post dominator tree for 'tvms' function";
+
+	Node0x22c5de0 [shape=record,label="{Post dominance root node}"];
+	Node0x22c5de0 -> Node0x2303170;
+	Node0x2303170 [shape=record,label="{entry:\l  %p.addr = alloca %struct.timeval*, align 8\l  store %struct.timeval* %p, %struct.timeval** %p.addr, align 8\l  %0 = load %struct.timeval*, %struct.timeval** %p.addr, align 8\l  %tv_sec = getelementptr inbounds %struct.timeval, %struct.timeval* %0, i32\l... 0, i32 0\l  %1 = load i64, i64* %tv_sec, align 8\l  %mul = mul nsw i64 %1, 1000000\l  %2 = load %struct.timeval*, %struct.timeval** %p.addr, align 8\l  %tv_usec = getelementptr inbounds %struct.timeval, %struct.timeval* %2, i32\l... 0, i32 1\l  %3 = load i64, i64* %tv_usec, align 8\l  %add = add nsw i64 %mul, %3\l  ret i64 %add\l}"];
+}

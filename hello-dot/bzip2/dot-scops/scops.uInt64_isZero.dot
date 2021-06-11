@@ -1,40 +1,40 @@
 digraph "Scop Graph for 'uInt64_isZero' function" {
 	label="Scop Graph for 'uInt64_isZero' function";
 
-	Node0x1f183c0 [shape=record,label="{%1:\l  %2 = alloca i8, align 1\l  %3 = alloca %struct.UInt64*, align 8\l  %4 = alloca i32, align 4\l  store %struct.UInt64* %0, %struct.UInt64** %3, align 8\l  store i32 0, i32* %4, align 4\l  br label %5\l}"];
-	Node0x1f183c0 -> Node0x1ede1d0;
-	Node0x1ede1d0 [shape=record,label="{%5:\l5:                                                \l  %6 = load i32, i32* %4, align 4\l  %7 = icmp slt i32 %6, 8\l  br i1 %7, label %8, label %22\l}"];
-	Node0x1ede1d0 -> Node0x1e27940;
-	Node0x1ede1d0 -> Node0x1e3f9b0;
-	Node0x1e27940 [shape=record,label="{%8:\l8:                                                \l  %9 = load %struct.UInt64*, %struct.UInt64** %3, align 8\l  %10 = getelementptr inbounds %struct.UInt64, %struct.UInt64* %9, i32 0, i32 0\l  %11 = load i32, i32* %4, align 4\l  %12 = sext i32 %11 to i64\l  %13 = getelementptr inbounds [8 x i8], [8 x i8]* %10, i64 0, i64 %12\l  %14 = load i8, i8* %13, align 1\l  %15 = zext i8 %14 to i32\l  %16 = icmp ne i32 %15, 0\l  br i1 %16, label %17, label %18\l}"];
-	Node0x1e27940 -> Node0x1e40ec0;
-	Node0x1e27940 -> Node0x1e45fa0;
-	Node0x1e40ec0 [shape=record,label="{%17:\l17:                                               \l  store i8 0, i8* %2, align 1\l  br label %23\l}"];
-	Node0x1e40ec0 -> Node0x1e160c0;
-	Node0x1e160c0 [shape=record,label="{%23:\l23:                                               \l  %24 = load i8, i8* %2, align 1\l  ret i8 %24\l}"];
-	Node0x1e45fa0 [shape=record,label="{%18:\l18:                                               \l  br label %19\l}"];
-	Node0x1e45fa0 -> Node0x1e461a0;
-	Node0x1e461a0 [shape=record,label="{%19:\l19:                                               \l  %20 = load i32, i32* %4, align 4\l  %21 = add nsw i32 %20, 1\l  store i32 %21, i32* %4, align 4\l  br label %5\l}"];
-	Node0x1e461a0 -> Node0x1ede1d0[constraint=false];
-	Node0x1e3f9b0 [shape=record,label="{%22:\l22:                                               \l  store i8 1, i8* %2, align 1\l  br label %23\l}"];
-	Node0x1e3f9b0 -> Node0x1e160c0;
+	Node0x27487b0 [shape=record,label="{%1:\l  %2 = alloca i8, align 1\l  %3 = alloca %struct.UInt64*, align 8\l  %4 = alloca i32, align 4\l  store %struct.UInt64* %0, %struct.UInt64** %3, align 8\l  store i32 0, i32* %4, align 4\l  br label %5\l}"];
+	Node0x27487b0 -> Node0x26851e0;
+	Node0x26851e0 [shape=record,label="{%5:\l5:                                                \l  %6 = load i32, i32* %4, align 4\l  %7 = icmp slt i32 %6, 8\l  br i1 %7, label %8, label %22\l}"];
+	Node0x26851e0 -> Node0x25f1db0;
+	Node0x26851e0 -> Node0x2828280;
+	Node0x25f1db0 [shape=record,label="{%8:\l8:                                                \l  %9 = load %struct.UInt64*, %struct.UInt64** %3, align 8\l  %10 = getelementptr inbounds %struct.UInt64, %struct.UInt64* %9, i32 0, i32 0\l  %11 = load i32, i32* %4, align 4\l  %12 = sext i32 %11 to i64\l  %13 = getelementptr inbounds [8 x i8], [8 x i8]* %10, i64 0, i64 %12\l  %14 = load i8, i8* %13, align 1\l  %15 = zext i8 %14 to i32\l  %16 = icmp ne i32 %15, 0\l  br i1 %16, label %17, label %18\l}"];
+	Node0x25f1db0 -> Node0x2951720;
+	Node0x25f1db0 -> Node0x25eac70;
+	Node0x2951720 [shape=record,label="{%17:\l17:                                               \l  store i8 0, i8* %2, align 1\l  br label %23\l}"];
+	Node0x2951720 -> Node0x25cdcf0;
+	Node0x25cdcf0 [shape=record,label="{%23:\l23:                                               \l  %24 = load i8, i8* %2, align 1\l  ret i8 %24\l}"];
+	Node0x25eac70 [shape=record,label="{%18:\l18:                                               \l  br label %19\l}"];
+	Node0x25eac70 -> Node0x2669d10;
+	Node0x2669d10 [shape=record,label="{%19:\l19:                                               \l  %20 = load i32, i32* %4, align 4\l  %21 = add nsw i32 %20, 1\l  store i32 %21, i32* %4, align 4\l  br label %5\l}"];
+	Node0x2669d10 -> Node0x26851e0[constraint=false];
+	Node0x2828280 [shape=record,label="{%22:\l22:                                               \l  store i8 1, i8* %2, align 1\l  br label %23\l}"];
+	Node0x2828280 -> Node0x25cdcf0;
 	colorscheme = "paired12"
-        subgraph cluster_0x1f18fa0 {
+        subgraph cluster_0x292a4f0 {
           label = "";
           style = solid;
           color = 1
-          subgraph cluster_0x1f84370 {
+          subgraph cluster_0x29723f0 {
             label = "Loop  has multiple exits.";
             style = solid;
             color = 6
-            Node0x1ede1d0;
-            Node0x1e27940;
-            Node0x1e40ec0;
-            Node0x1e45fa0;
-            Node0x1e461a0;
-            Node0x1e3f9b0;
+            Node0x26851e0;
+            Node0x25f1db0;
+            Node0x2951720;
+            Node0x25eac70;
+            Node0x2669d10;
+            Node0x2828280;
           }
-          Node0x1f183c0;
-          Node0x1e160c0;
+          Node0x27487b0;
+          Node0x25cdcf0;
         }
 }

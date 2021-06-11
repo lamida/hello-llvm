@@ -1,19 +1,19 @@
 digraph "Post dominator tree for 'BZ2_bzread' function" {
 	label="Post dominator tree for 'BZ2_bzread' function";
 
-	Node0x16e50a0 [shape=record,label="{Post dominance root node}"];
-	Node0x16e50a0 -> Node0x1702fb0;
-	Node0x1702fb0 [shape=record,label="{%29:\l29:                                               \l  %30 = load i32, i32* %4, align 4\l  ret i32 %30\l}"];
-	Node0x1702fb0 -> Node0x16df700;
-	Node0x1702fb0 -> Node0x1713920;
-	Node0x1702fb0 -> Node0x1713a20;
-	Node0x1702fb0 -> Node0x17139c0;
-	Node0x1702fb0 -> Node0x1479a60;
-	Node0x1702fb0 -> Node0x164a370;
-	Node0x16df700 [shape=record,label="{%15:\l15:                                               \l  store i32 0, i32* %4, align 4\l  br label %29\l}"];
-	Node0x1713920 [shape=record,label="{%3:\l  %4 = alloca i32, align 4\l  %5 = alloca i8*, align 8\l  %6 = alloca i8*, align 8\l  %7 = alloca i32, align 4\l  %8 = alloca i32, align 4\l  %9 = alloca i32, align 4\l  store i8* %0, i8** %5, align 8\l  store i8* %1, i8** %6, align 8\l  store i32 %2, i32* %7, align 4\l  %10 = load i8*, i8** %5, align 8\l  %11 = bitcast i8* %10 to %struct.bzFile*\l  %12 = getelementptr inbounds %struct.bzFile, %struct.bzFile* %11, i32 0, i32\l... 5\l  %13 = load i32, i32* %12, align 8\l  %14 = icmp eq i32 %13, 4\l  br i1 %14, label %15, label %16\l}"];
-	Node0x1713a20 [shape=record,label="{%26:\l26:                                               \l  %27 = load i32, i32* %9, align 4\l  store i32 %27, i32* %4, align 4\l  br label %29\l}"];
-	Node0x17139c0 [shape=record,label="{%16:\l16:                                               \l  %17 = load i8*, i8** %5, align 8\l  %18 = load i8*, i8** %6, align 8\l  %19 = load i32, i32* %7, align 4\l  %20 = call i32 @BZ2_bzRead(i32* %8, i8* %17, i8* %18, i32 %19)\l  store i32 %20, i32* %9, align 4\l  %21 = load i32, i32* %8, align 4\l  %22 = icmp eq i32 %21, 0\l  br i1 %22, label %26, label %23\l}"];
-	Node0x1479a60 [shape=record,label="{%23:\l23:                                               \l  %24 = load i32, i32* %8, align 4\l  %25 = icmp eq i32 %24, 4\l  br i1 %25, label %26, label %28\l}"];
-	Node0x164a370 [shape=record,label="{%28:\l28:                                               \l  store i32 -1, i32* %4, align 4\l  br label %29\l}"];
+	Node0x16245c0 [shape=record,label="{Post dominance root node}"];
+	Node0x16245c0 -> Node0x15f8700;
+	Node0x15f8700 [shape=record,label="{%29:\l29:                                               \l  %30 = load i32, i32* %4, align 4\l  ret i32 %30\l}"];
+	Node0x15f8700 -> Node0x161c270;
+	Node0x15f8700 -> Node0x161bc70;
+	Node0x15f8700 -> Node0x15fe0a0;
+	Node0x15f8700 -> Node0x1257e20;
+	Node0x15f8700 -> Node0x154f350;
+	Node0x15f8700 -> Node0x152bdf0;
+	Node0x161c270 [shape=record,label="{%15:\l15:                                               \l  store i32 0, i32* %4, align 4\l  br label %29\l}"];
+	Node0x161bc70 [shape=record,label="{%3:\l  %4 = alloca i32, align 4\l  %5 = alloca i8*, align 8\l  %6 = alloca i8*, align 8\l  %7 = alloca i32, align 4\l  %8 = alloca i32, align 4\l  %9 = alloca i32, align 4\l  store i8* %0, i8** %5, align 8\l  store i8* %1, i8** %6, align 8\l  store i32 %2, i32* %7, align 4\l  %10 = load i8*, i8** %5, align 8\l  %11 = bitcast i8* %10 to %struct.bzFile*\l  %12 = getelementptr inbounds %struct.bzFile, %struct.bzFile* %11, i32 0, i32\l... 5\l  %13 = load i32, i32* %12, align 8\l  %14 = icmp eq i32 %13, 4\l  br i1 %14, label %15, label %16\l}"];
+	Node0x15fe0a0 [shape=record,label="{%26:\l26:                                               \l  %27 = load i32, i32* %9, align 4\l  store i32 %27, i32* %4, align 4\l  br label %29\l}"];
+	Node0x1257e20 [shape=record,label="{%16:\l16:                                               \l  %17 = load i8*, i8** %5, align 8\l  %18 = load i8*, i8** %6, align 8\l  %19 = load i32, i32* %7, align 4\l  %20 = call i32 @BZ2_bzRead(i32* %8, i8* %17, i8* %18, i32 %19)\l  store i32 %20, i32* %9, align 4\l  %21 = load i32, i32* %8, align 4\l  %22 = icmp eq i32 %21, 0\l  br i1 %22, label %26, label %23\l}"];
+	Node0x154f350 [shape=record,label="{%23:\l23:                                               \l  %24 = load i32, i32* %8, align 4\l  %25 = icmp eq i32 %24, 4\l  br i1 %25, label %26, label %28\l}"];
+	Node0x152bdf0 [shape=record,label="{%28:\l28:                                               \l  store i32 -1, i32* %4, align 4\l  br label %29\l}"];
 }

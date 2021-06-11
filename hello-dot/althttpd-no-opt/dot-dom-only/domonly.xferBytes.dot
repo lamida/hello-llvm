@@ -1,0 +1,33 @@
+digraph "Dominator tree for 'xferBytes' function" {
+	label="Dominator tree for 'xferBytes' function";
+
+	Node0xeae530 [shape=record,label="{entry}"];
+	Node0xeae530 -> Node0xee9ae0;
+	Node0xee9ae0 [shape=record,label="{while.cond}"];
+	Node0xee9ae0 -> Node0xe814a0;
+	Node0xee9ae0 -> Node0xeb36c0;
+	Node0xe814a0 [shape=record,label="{while.body}"];
+	Node0xe814a0 -> Node0xe39450;
+	Node0xe814a0 -> Node0xe81830;
+	Node0xe39450 [shape=record,label="{if.then}"];
+	Node0xe81830 [shape=record,label="{if.end}"];
+	Node0xe81830 -> Node0xe6a280;
+	Node0xe81830 -> Node0xe10750;
+	Node0xe6a280 [shape=record,label="{if.then5}"];
+	Node0xe10750 [shape=record,label="{if.end6}"];
+	Node0xeb36c0 [shape=record,label="{while.end}"];
+	Node0xeb36c0 -> Node0xe3dbb0;
+	Node0xe3dbb0 [shape=record,label="{while.cond9}"];
+	Node0xe3dbb0 -> Node0xeb0b90;
+	Node0xe3dbb0 -> Node0xe3f0e0;
+	Node0xeb0b90 [shape=record,label="{while.body12}"];
+	Node0xeb0b90 -> Node0xe2fb20;
+	Node0xeb0b90 -> Node0xeb8500;
+	Node0xe2fb20 [shape=record,label="{if.then16}"];
+	Node0xeb8500 [shape=record,label="{if.end17}"];
+	Node0xeb8500 -> Node0xed74f0;
+	Node0xeb8500 -> Node0xe3ae20;
+	Node0xed74f0 [shape=record,label="{if.then22}"];
+	Node0xe3ae20 [shape=record,label="{if.end23}"];
+	Node0xe3f0e0 [shape=record,label="{while.end31}"];
+}

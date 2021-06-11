@@ -1,0 +1,54 @@
+digraph "Scop Graph for 'StartResponse' function" {
+	label="Scop Graph for 'StartResponse' function";
+
+	Node0x1a1da30 [shape=record,label="{entry}"];
+	Node0x1a1da30 -> Node0x1a83ae0;
+	Node0x1a1da30 -> Node0x1a8a630;
+	Node0x1a83ae0 [shape=record,label="{if.then}"];
+	Node0x1a83ae0 -> Node0x1a3e580;
+	Node0x1a3e580 [shape=record,label="{return}"];
+	Node0x1a8a630 [shape=record,label="{if.end}"];
+	Node0x1a8a630 -> Node0x1a1e5e0;
+	Node0x1a8a630 -> Node0x1ab04e0;
+	Node0x1a1e5e0 [shape=record,label="{if.then4}"];
+	Node0x1a1e5e0 -> Node0x1ab04e0;
+	Node0x1ab04e0 [shape=record,label="{if.end5}"];
+	Node0x1ab04e0 -> Node0x1a2dca0;
+	Node0x1ab04e0 -> Node0x1abd690;
+	Node0x1a2dca0 [shape=record,label="{if.then7}"];
+	Node0x1a2dca0 -> Node0x1a98360;
+	Node0x1a98360 [shape=record,label="{if.end12}"];
+	Node0x1a98360 -> Node0x1a3e580;
+	Node0x1abd690 [shape=record,label="{if.else}"];
+	Node0x1abd690 -> Node0x1a98360;
+	colorscheme = "paired12"
+        subgraph cluster_0x1b17e30 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1a84750 {
+            label = "";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1b17fb0 {
+              label = "";
+              style = solid;
+              color = 5
+              Node0x1a8a630;
+              Node0x1a1e5e0;
+            }
+            subgraph cluster_0x1b180b0 {
+              label = "";
+              style = solid;
+              color = 5
+              Node0x1ab04e0;
+              Node0x1a2dca0;
+              Node0x1abd690;
+            }
+            Node0x1a1da30;
+            Node0x1a83ae0;
+            Node0x1a98360;
+          }
+          Node0x1a3e580;
+        }
+}

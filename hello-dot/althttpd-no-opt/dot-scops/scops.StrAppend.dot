@@ -1,0 +1,39 @@
+digraph "Scop Graph for 'StrAppend' function" {
+	label="Scop Graph for 'StrAppend' function";
+
+	Node0x203ea50 [shape=record,label="{entry:\l  %retval = alloca i8*, align 8\l  %zPrior.addr = alloca i8*, align 8\l  %zSep.addr = alloca i8*, align 8\l  %zSrc.addr = alloca i8*, align 8\l  %zDest = alloca i8*, align 8\l  %size = alloca i64, align 8\l  %n0 = alloca i64, align 8\l  %n1 = alloca i64, align 8\l  %n2 = alloca i64, align 8\l  store i8* %zPrior, i8** %zPrior.addr, align 8\l  store i8* %zSep, i8** %zSep.addr, align 8\l  store i8* %zSrc, i8** %zSrc.addr, align 8\l  %0 = load i8*, i8** %zSrc.addr, align 8\l  %cmp = icmp eq i8* %0, null\l  br i1 %cmp, label %if.then, label %if.end\l}"];
+	Node0x203ea50 -> Node0x2005fd0;
+	Node0x203ea50 -> Node0x20881c0;
+	Node0x2005fd0 [shape=record,label="{if.then:                                          \l  store i8* null, i8** %retval, align 8\l  br label %return\l}"];
+	Node0x2005fd0 -> Node0x1fc13d0;
+	Node0x1fc13d0 [shape=record,label="{return:                                           \l  %24 = load i8*, i8** %retval, align 8\l  ret i8* %24\l}"];
+	Node0x20881c0 [shape=record,label="{if.end:                                           \l  %1 = load i8*, i8** %zPrior.addr, align 8\l  %cmp1 = icmp eq i8* %1, null\l  br i1 %cmp1, label %if.then2, label %if.end3\l}"];
+	Node0x20881c0 -> Node0x20530f0;
+	Node0x20881c0 -> Node0x2028c50;
+	Node0x20530f0 [shape=record,label="{if.then2:                                         \l  %2 = load i8*, i8** %zSrc.addr, align 8\l  %call = call i8* @StrDup(i8* %2)\l  store i8* %call, i8** %retval, align 8\l  br label %return\l}"];
+	Node0x20530f0 -> Node0x1fc13d0;
+	Node0x2028c50 [shape=record,label="{if.end3:                                          \l  %3 = load i8*, i8** %zPrior.addr, align 8\l  %call4 = call i64 @strlen(i8* %3) #8\l  store i64 %call4, i64* %n0, align 8\l  %4 = load i8*, i8** %zSep.addr, align 8\l  %call5 = call i64 @strlen(i8* %4) #8\l  store i64 %call5, i64* %n1, align 8\l  %5 = load i8*, i8** %zSrc.addr, align 8\l  %call6 = call i64 @strlen(i8* %5) #8\l  store i64 %call6, i64* %n2, align 8\l  %6 = load i64, i64* %n0, align 8\l  %7 = load i64, i64* %n1, align 8\l  %add = add i64 %6, %7\l  %8 = load i64, i64* %n2, align 8\l  %add7 = add i64 %add, %8\l  %add8 = add i64 %add7, 1\l  store i64 %add8, i64* %size, align 8\l  %9 = load i64, i64* %size, align 8\l  %call9 = call i8* @SafeMalloc(i64 %9)\l  store i8* %call9, i8** %zDest, align 8\l  %10 = load i8*, i8** %zDest, align 8\l  %11 = load i8*, i8** %zPrior.addr, align 8\l  %12 = load i64, i64* %n0, align 8\l  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %10, i8* align 1 %11, i64\l... %12, i1 false)\l  %13 = load i8*, i8** %zPrior.addr, align 8\l  call void @free(i8* %13) #7\l  %14 = load i8*, i8** %zDest, align 8\l  %15 = load i64, i64* %n0, align 8\l  %arrayidx = getelementptr inbounds i8, i8* %14, i64 %15\l  %16 = load i8*, i8** %zSep.addr, align 8\l  %17 = load i64, i64* %n1, align 8\l  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %arrayidx, i8* align 1 %16,\l... i64 %17, i1 false)\l  %18 = load i8*, i8** %zDest, align 8\l  %19 = load i64, i64* %n0, align 8\l  %20 = load i64, i64* %n1, align 8\l  %add10 = add i64 %19, %20\l  %arrayidx11 = getelementptr inbounds i8, i8* %18, i64 %add10\l  %21 = load i8*, i8** %zSrc.addr, align 8\l  %22 = load i64, i64* %n2, align 8\l  %add12 = add i64 %22, 1\l  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %arrayidx11, i8* align 1\l... %21, i64 %add12, i1 false)\l  %23 = load i8*, i8** %zDest, align 8\l  store i8* %23, i8** %retval, align 8\l  br label %return\l}"];
+	Node0x2028c50 -> Node0x1fc13d0;
+	colorscheme = "paired12"
+        subgraph cluster_0x211a860 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x20a4e70 {
+            label = "";
+            style = solid;
+            color = 6
+            subgraph cluster_0x20e1c30 {
+              label = "";
+              style = solid;
+              color = 5
+              Node0x20881c0;
+              Node0x20530f0;
+              Node0x2028c50;
+            }
+            Node0x203ea50;
+            Node0x2005fd0;
+          }
+          Node0x1fc13d0;
+        }
+}

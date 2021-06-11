@@ -1,0 +1,20 @@
+digraph "CFG for 'BZ2_bzread' function" {
+	label="CFG for 'BZ2_bzread' function";
+
+	Node0x556a61dfbe80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61dfbe80\":\l  %3 = alloca i32, align 4\l  %4 = alloca i8*, align 8\l  %5 = alloca i8*, align 8\l  %6 = alloca i32, align 4\l  %7 = alloca i32, align 4\l  %8 = alloca i32, align 4\l  store i8* %0, i8** %4, align 8\l  store i8* %1, i8** %5, align 8\l  store i32 %2, i32* %6, align 4\l  %9 = load i8*, i8** %4, align 8\l  %10 = bitcast i8* %9 to %struct.bzFile*\l  %11 = getelementptr inbounds %struct.bzFile, %struct.bzFile* %10, i32 0, i32\l... 5\l  %12 = load i32, i32* %11, align 8\l  %13 = icmp eq i32 %12, 4\l  br i1 %13, label %\"0x556a61dfbf40\", label %\"0x556a61dfc6a0\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61dfbe80:s0 -> Node0x556a61dfbf40;
+	Node0x556a61dfbe80:s1 -> Node0x556a61dfc6a0;
+	Node0x556a61dfbf40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{\"0x556a61dfbf40\":                                 \l  store i32 0, i32* %3, align 4\l  br label %\"0x556a61dfc830\"\l}"];
+	Node0x556a61dfbf40 -> Node0x556a61dfc830;
+	Node0x556a61dfc6a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{\"0x556a61dfc6a0\":                                 \l  %14 = load i8*, i8** %4, align 8\l  %15 = load i8*, i8** %5, align 8\l  %16 = load i32, i32* %6, align 4\l  %17 = call i32 @BZ2_bzRead(i32* %7, i8* %14, i8* %15, i32 %16)\l  store i32 %17, i32* %8, align 4\l  %18 = load i32, i32* %7, align 4\l  %19 = icmp eq i32 %18, 0\l  br i1 %19, label %\"0x556a61dfcda0\", label %\"0x556a61dfcdf0\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61dfc6a0:s0 -> Node0x556a61dfcda0;
+	Node0x556a61dfc6a0:s1 -> Node0x556a61dfcdf0;
+	Node0x556a61dfcdf0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7ac8e70",label="{\"0x556a61dfcdf0\":                                 \l  %20 = load i32, i32* %7, align 4\l  %21 = icmp eq i32 %20, 4\l  br i1 %21, label %\"0x556a61dfcda0\", label %\"0x556a61dfcff0\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61dfcdf0:s0 -> Node0x556a61dfcda0;
+	Node0x556a61dfcdf0:s1 -> Node0x556a61dfcff0;
+	Node0x556a61dfcda0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7a88970",label="{\"0x556a61dfcda0\":                                 \l  %22 = load i32, i32* %8, align 4\l  store i32 %22, i32* %3, align 4\l  br label %\"0x556a61dfc830\"\l}"];
+	Node0x556a61dfcda0 -> Node0x556a61dfc830;
+	Node0x556a61dfcff0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{\"0x556a61dfcff0\":                                 \l  store i32 -1, i32* %3, align 4\l  br label %\"0x556a61dfc830\"\l}"];
+	Node0x556a61dfcff0 -> Node0x556a61dfc830;
+	Node0x556a61dfc830 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61dfc830\":                                 \l  %23 = load i32, i32* %3, align 4\l  ret i32 %23\l}"];
+}

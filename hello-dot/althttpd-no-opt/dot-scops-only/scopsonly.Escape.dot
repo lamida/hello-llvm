@@ -1,0 +1,129 @@
+digraph "Scop Graph for 'Escape' function" {
+	label="Scop Graph for 'Escape' function";
+
+	Node0x1a435c0 [shape=record,label="{entry}"];
+	Node0x1a435c0 -> Node0x1a6f2c0;
+	Node0x1a6f2c0 [shape=record,label="{for.cond}"];
+	Node0x1a6f2c0 -> Node0x1a870f0;
+	Node0x1a6f2c0 -> Node0x1a32400;
+	Node0x1a870f0 [shape=record,label="{land.rhs}"];
+	Node0x1a870f0 -> Node0x1a32400;
+	Node0x1a32400 [shape=record,label="{land.end}"];
+	Node0x1a32400 -> Node0x1a72790;
+	Node0x1a32400 -> Node0x1a9d000;
+	Node0x1a72790 [shape=record,label="{for.body}"];
+	Node0x1a72790 -> Node0x1a820c0;
+	Node0x1a820c0 [shape=record,label="{for.inc}"];
+	Node0x1a820c0 -> Node0x1a6f2c0[constraint=false];
+	Node0x1a9d000 [shape=record,label="{for.end}"];
+	Node0x1a9d000 -> Node0x1ac9ea0;
+	Node0x1a9d000 -> Node0x1a146a0;
+	Node0x1ac9ea0 [shape=record,label="{if.then}"];
+	Node0x1ac9ea0 -> Node0x1a0d450;
+	Node0x1a0d450 [shape=record,label="{return}"];
+	Node0x1a146a0 [shape=record,label="{if.end}"];
+	Node0x1a146a0 -> Node0x1a72430;
+	Node0x1a72430 [shape=record,label="{for.cond9}"];
+	Node0x1a72430 -> Node0x1a5cc50;
+	Node0x1a72430 -> Node0x1a32640;
+	Node0x1a5cc50 [shape=record,label="{for.body14}"];
+	Node0x1a5cc50 -> Node0x1a28f50;
+	Node0x1a5cc50 -> Node0x1a1c800;
+	Node0x1a28f50 [shape=record,label="{if.then18}"];
+	Node0x1a28f50 -> Node0x1a1c800;
+	Node0x1a1c800 [shape=record,label="{if.end20}"];
+	Node0x1a1c800 -> Node0x1a13cc0;
+	Node0x1a13cc0 [shape=record,label="{for.inc21}"];
+	Node0x1a13cc0 -> Node0x1a72430[constraint=false];
+	Node0x1a32640 [shape=record,label="{for.end23}"];
+	Node0x1a32640 -> Node0x1a54440;
+	Node0x1a32640 -> Node0x1a4c9a0;
+	Node0x1a54440 [shape=record,label="{if.then27}"];
+	Node0x1a54440 -> Node0x1a0d450;
+	Node0x1a4c9a0 [shape=record,label="{if.end28}"];
+	Node0x1a4c9a0 -> Node0x1a7f4a0;
+	Node0x1a7f4a0 [shape=record,label="{for.cond29}"];
+	Node0x1a7f4a0 -> Node0x1a55d10;
+	Node0x1a7f4a0 -> Node0x1a72980;
+	Node0x1a55d10 [shape=record,label="{for.body34}"];
+	Node0x1a55d10 -> Node0x1a07790;
+	Node0x1a55d10 -> Node0x19f53d0;
+	Node0x1a07790 [shape=record,label="{if.then40}"];
+	Node0x1a07790 -> Node0x19f53d0;
+	Node0x19f53d0 [shape=record,label="{if.end43}"];
+	Node0x19f53d0 -> Node0x1a58ad0;
+	Node0x1a58ad0 [shape=record,label="{for.inc44}"];
+	Node0x1a58ad0 -> Node0x1a7f4a0[constraint=false];
+	Node0x1a72980 [shape=record,label="{for.end46}"];
+	Node0x1a72980 -> Node0x1a0d450;
+	colorscheme = "paired12"
+        subgraph cluster_0x1ab4ed0 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1ab5360 {
+            label = "Condition in BB 'land.end' neither constant nor an icmp instruction";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1ab52e0 {
+              label = "Region can not profitably be optimized!";
+              style = solid;
+              color = 5
+              Node0x1a6f2c0;
+              Node0x1a870f0;
+            }
+            Node0x1a32400;
+            Node0x1a72790;
+            Node0x1a820c0;
+          }
+          subgraph cluster_0x1afdd90 {
+            label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: for.cond9";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1b244b0 {
+              label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: for.cond9";
+              style = solid;
+              color = 5
+              subgraph cluster_0x1b18c40 {
+                label = "Region can not profitably be optimized!";
+                style = solid;
+                color = 7
+                Node0x1a5cc50;
+                Node0x1a28f50;
+              }
+              Node0x1a72430;
+              Node0x1a1c800;
+              Node0x1a13cc0;
+            }
+            subgraph cluster_0x1b18d40 {
+              label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: for.cond29";
+              style = solid;
+              color = 5
+              subgraph cluster_0x1b24430 {
+                label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: for.cond29";
+                style = solid;
+                color = 7
+                subgraph cluster_0x1b182b0 {
+                  label = "Region can not profitably be optimized!";
+                  style = solid;
+                  color = 9
+                  Node0x1a55d10;
+                  Node0x1a07790;
+                }
+                Node0x1a7f4a0;
+                Node0x19f53d0;
+                Node0x1a58ad0;
+              }
+              Node0x1a32640;
+              Node0x1a54440;
+              Node0x1a4c9a0;
+              Node0x1a72980;
+            }
+            Node0x1a9d000;
+            Node0x1ac9ea0;
+            Node0x1a146a0;
+          }
+          Node0x1a435c0;
+          Node0x1a0d450;
+        }
+}

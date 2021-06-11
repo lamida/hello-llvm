@@ -1,0 +1,39 @@
+digraph "Region Graph for 'Timeout' function" {
+	label="Region Graph for 'Timeout' function";
+
+	Node0xa3b4e0 [shape=record,label="{entry}"];
+	Node0xa3b4e0 -> Node0x9aca30;
+	Node0xa3b4e0 -> Node0x980760;
+	Node0x9aca30 [shape=record,label="{if.end12}"];
+	Node0x980760 [shape=record,label="{if.then}"];
+	Node0x980760 -> Node0xa2a070;
+	Node0x980760 -> Node0x9b8e10;
+	Node0xa2a070 [shape=record,label="{land.lhs.true}"];
+	Node0xa2a070 -> Node0xa44e60;
+	Node0xa2a070 -> Node0x9b8e10;
+	Node0xa44e60 [shape=record,label="{if.then3}"];
+	Node0xa44e60 -> Node0x9b8e10;
+	Node0x9b8e10 [shape=record,label="{if.end}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xa97840 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xa978c0 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xa977c0 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0xa2a070;
+              Node0xa44e60;
+            }
+            Node0x980760;
+          }
+          Node0xa3b4e0;
+          Node0x9aca30;
+          Node0x9b8e10;
+        }
+}

@@ -1,0 +1,87 @@
+digraph "Scop Graph for 'sanitizeString' function" {
+	label="Scop Graph for 'sanitizeString' function";
+
+	Node0x1a5d5f0 [shape=record,label="{entry}"];
+	Node0x1a5d5f0 -> Node0x1a53e70;
+	Node0x1a53e70 [shape=record,label="{while.cond}"];
+	Node0x1a53e70 -> Node0x1a3a0a0;
+	Node0x1a53e70 -> Node0x1a4d1f0;
+	Node0x1a3a0a0 [shape=record,label="{while.body}"];
+	Node0x1a3a0a0 -> Node0x1a4c100;
+	Node0x1a3a0a0 -> Node0x1a3ba90;
+	Node0x1a4c100 [shape=record,label="{if.end21}"];
+	Node0x1a4c100 -> Node0x1a53e70[constraint=false];
+	Node0x1a3ba90 [shape=record,label="{if.then}"];
+	Node0x1a3ba90 -> Node0x1a78d20;
+	Node0x1a3ba90 -> Node0x1a12460;
+	Node0x1a78d20 [shape=record,label="{land.lhs.true}"];
+	Node0x1a78d20 -> Node0x1a648a0;
+	Node0x1a78d20 -> Node0x1a12460;
+	Node0x1a648a0 [shape=record,label="{land.lhs.true7}"];
+	Node0x1a648a0 -> Node0x1a4d0a0;
+	Node0x1a648a0 -> Node0x1a12460;
+	Node0x1a4d0a0 [shape=record,label="{if.then12}"];
+	Node0x1a4d0a0 -> Node0x1a73510;
+	Node0x1a73510 [shape=record,label="{for.cond}"];
+	Node0x1a73510 -> Node0x1a2c380;
+	Node0x1a73510 -> Node0x1a53370;
+	Node0x1a2c380 [shape=record,label="{for.body}"];
+	Node0x1a2c380 -> Node0x1a159c0;
+	Node0x1a159c0 [shape=record,label="{for.inc}"];
+	Node0x1a159c0 -> Node0x1a73510[constraint=false];
+	Node0x1a53370 [shape=record,label="{for.end}"];
+	Node0x1a53370 -> Node0x1a12460;
+	Node0x1a12460 [shape=record,label="{if.end}"];
+	Node0x1a12460 -> Node0x1a4c100;
+	Node0x1a4d1f0 [shape=record,label="{while.end}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1ab52e0 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1ab4ed0 {
+            label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: while.cond";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1b17fb0 {
+              label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: for.cond";
+              style = solid;
+              color = 5
+              subgraph cluster_0x1b18030 {
+                label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: for.cond";
+                style = solid;
+                color = 7
+                subgraph cluster_0x1ab53e0 {
+                  label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: for.cond";
+                  style = solid;
+                  color = 9
+                  subgraph cluster_0x1ab5360 {
+                    label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: for.cond";
+                    style = solid;
+                    color = 11
+                    subgraph cluster_0x1aca500 {
+                      label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: for.cond";
+                      style = solid;
+                      color = 1
+                      Node0x1a73510;
+                      Node0x1a2c380;
+                      Node0x1a159c0;
+                    }
+                    Node0x1a648a0;
+                    Node0x1a4d0a0;
+                    Node0x1a53370;
+                  }
+                  Node0x1a78d20;
+                }
+                Node0x1a3ba90;
+              }
+              Node0x1a3a0a0;
+              Node0x1a12460;
+            }
+            Node0x1a53e70;
+            Node0x1a4c100;
+          }
+          Node0x1a5d5f0;
+          Node0x1a4d1f0;
+        }
+}

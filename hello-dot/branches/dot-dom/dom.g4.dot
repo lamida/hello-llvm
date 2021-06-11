@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'g4' function" {
 	label="Dominator tree for 'g4' function";
 
-	Node0x1b3f360 [shape=record,label="{%0:\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14\l... x i8]* @.str.9, i64 0, i64 0))\l  ret void\l}"];
+	Node0x18792f0 [shape=record,label="{%0:\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14\l... x i8]* @.str.10, i64 0, i64 0))\l  ret void\l}"];
 }

@@ -1,0 +1,23 @@
+digraph "Dominator tree for 'RemoveNewline' function" {
+	label="Dominator tree for 'RemoveNewline' function";
+
+	Node0xed7a60 [shape=record,label="{entry}"];
+	Node0xed7a60 -> Node0xee9a70;
+	Node0xed7a60 -> Node0xec19b0;
+	Node0xed7a60 -> Node0xeade20;
+	Node0xee9a70 [shape=record,label="{if.then}"];
+	Node0xec19b0 [shape=record,label="{return}"];
+	Node0xeade20 [shape=record,label="{if.end}"];
+	Node0xeade20 -> Node0xe47c20;
+	Node0xe47c20 [shape=record,label="{while.cond}"];
+	Node0xe47c20 -> Node0xe71c60;
+	Node0xe47c20 -> Node0xe99520;
+	Node0xe71c60 [shape=record,label="{land.lhs.true}"];
+	Node0xe71c60 -> Node0xe8dc50;
+	Node0xe8dc50 [shape=record,label="{land.rhs}"];
+	Node0xe99520 [shape=record,label="{land.end}"];
+	Node0xe99520 -> Node0xe95a00;
+	Node0xe99520 -> Node0xe7dc00;
+	Node0xe95a00 [shape=record,label="{while.body}"];
+	Node0xe7dc00 [shape=record,label="{while.end}"];
+}

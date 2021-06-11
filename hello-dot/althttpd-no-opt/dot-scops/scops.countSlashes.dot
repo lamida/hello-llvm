@@ -1,0 +1,39 @@
+digraph "Scop Graph for 'countSlashes' function" {
+	label="Scop Graph for 'countSlashes' function";
+
+	Node0x2019120 [shape=record,label="{entry:\l  %z.addr = alloca i8*, align 8\l  %n = alloca i32, align 4\l  store i8* %z, i8** %z.addr, align 8\l  store i32 0, i32* %n, align 4\l  br label %while.cond\l}"];
+	Node0x2019120 -> Node0x203e790;
+	Node0x203e790 [shape=record,label="{while.cond:                                       \l  %0 = load i8*, i8** %z.addr, align 8\l  %1 = load i8, i8* %0, align 1\l  %tobool = icmp ne i8 %1, 0\l  br i1 %tobool, label %while.body, label %while.end\l}"];
+	Node0x203e790 -> Node0x2084790;
+	Node0x203e790 -> Node0x2089a80;
+	Node0x2084790 [shape=record,label="{while.body:                                       \l  %2 = load i8*, i8** %z.addr, align 8\l  %incdec.ptr = getelementptr inbounds i8, i8* %2, i32 1\l  store i8* %incdec.ptr, i8** %z.addr, align 8\l  %3 = load i8, i8* %2, align 1\l  %conv = sext i8 %3 to i32\l  %cmp = icmp eq i32 %conv, 47\l  br i1 %cmp, label %if.then, label %if.end\l}"];
+	Node0x2084790 -> Node0x204f420;
+	Node0x2084790 -> Node0x20100a0;
+	Node0x204f420 [shape=record,label="{if.then:                                          \l  %4 = load i32, i32* %n, align 4\l  %inc = add nsw i32 %4, 1\l  store i32 %inc, i32* %n, align 4\l  br label %if.end\l}"];
+	Node0x204f420 -> Node0x20100a0;
+	Node0x20100a0 [shape=record,label="{if.end:                                           \l  br label %while.cond\l}"];
+	Node0x20100a0 -> Node0x203e790[constraint=false];
+	Node0x2089a80 [shape=record,label="{while.end:                                        \l  %5 = load i32, i32* %n, align 4\l  ret i32 %5\l}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x20a4e70 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x1f42bf0 {
+            label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: while.cond";
+            style = solid;
+            color = 6
+            subgraph cluster_0x1f42b70 {
+              label = "Region can not profitably be optimized!";
+              style = solid;
+              color = 5
+              Node0x2084790;
+              Node0x204f420;
+            }
+            Node0x203e790;
+            Node0x20100a0;
+          }
+          Node0x2019120;
+          Node0x2089a80;
+        }
+}

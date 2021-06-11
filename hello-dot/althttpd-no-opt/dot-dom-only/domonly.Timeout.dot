@@ -1,0 +1,15 @@
+digraph "Dominator tree for 'Timeout' function" {
+	label="Dominator tree for 'Timeout' function";
+
+	Node0xebfea0 [shape=record,label="{entry}"];
+	Node0xebfea0 -> Node0xe72b10;
+	Node0xebfea0 -> Node0xebe280;
+	Node0xe72b10 [shape=record,label="{if.end12}"];
+	Node0xebe280 [shape=record,label="{if.then}"];
+	Node0xebe280 -> Node0xe98920;
+	Node0xebe280 -> Node0xe421c0;
+	Node0xe98920 [shape=record,label="{land.lhs.true}"];
+	Node0xe98920 -> Node0xe9beb0;
+	Node0xe9beb0 [shape=record,label="{if.then3}"];
+	Node0xe421c0 [shape=record,label="{if.end}"];
+}

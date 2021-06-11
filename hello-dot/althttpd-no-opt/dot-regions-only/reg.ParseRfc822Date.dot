@@ -1,0 +1,104 @@
+digraph "Region Graph for 'ParseRfc822Date' function" {
+	label="Region Graph for 'ParseRfc822Date' function";
+
+	Node0x9b0100 [shape=record,label="{entry}"];
+	Node0x9b0100 -> Node0x9b3f50;
+	Node0x9b0100 -> Node0xa0c4e0;
+	Node0x9b3f50 [shape=record,label="{if.then}"];
+	Node0x9b3f50 -> Node0x9a1cc0;
+	Node0x9b3f50 -> Node0x9fd550;
+	Node0x9a1cc0 [shape=record,label="{if.then3}"];
+	Node0x9a1cc0 -> Node0x9fd550;
+	Node0x9fd550 [shape=record,label="{if.end}"];
+	Node0x9fd550 -> Node0x9b07f0;
+	Node0x9b07f0 [shape=record,label="{for.cond}"];
+	Node0x9b07f0 -> Node0x9f27d0;
+	Node0x9b07f0 -> Node0x99c0a0;
+	Node0x9f27d0 [shape=record,label="{for.body}"];
+	Node0x9f27d0 -> Node0x9fd790;
+	Node0x9f27d0 -> Node0xa28000;
+	Node0x9fd790 [shape=record,label="{if.end38}"];
+	Node0x9fd790 -> Node0xa29310;
+	Node0xa29310 [shape=record,label="{for.inc}"];
+	Node0xa29310 -> Node0x9b07f0;
+	Node0xa28000 [shape=record,label="{if.then7}"];
+	Node0xa28000 -> Node0x9d7010;
+	Node0xa28000 -> Node0x9995c0;
+	Node0x9d7010 [shape=record,label="{land.rhs}"];
+	Node0x9d7010 -> Node0xa1c2d0;
+	Node0x9d7010 -> Node0xa23b10;
+	Node0xa1c2d0 [shape=record,label="{lor.end}"];
+	Node0xa1c2d0 -> Node0x9995c0;
+	Node0x9995c0 [shape=record,label="{land.end}"];
+	Node0x9995c0 -> Node0xa15630;
+	Node0x9995c0 -> Node0x9d64e0;
+	Node0xa15630 [shape=record,label="{land.lhs.true}"];
+	Node0xa15630 -> Node0x997500;
+	Node0xa15630 -> Node0x9d64e0;
+	Node0x997500 [shape=record,label="{if.then19}"];
+	Node0x997500 -> Node0x9d64e0;
+	Node0x9d64e0 [shape=record,label="{if.end20}"];
+	Node0x9d64e0 -> Node0xa29a10;
+	Node0xa29a10 [shape=record,label="{return}"];
+	Node0xa23b10 [shape=record,label="{lor.rhs}"];
+	Node0xa23b10 -> Node0xa1c2d0;
+	Node0x99c0a0 [shape=record,label="{for.end}"];
+	Node0x99c0a0 -> Node0xa0c4e0;
+	Node0xa0c4e0 [shape=record,label="{if.end40}"];
+	Node0xa0c4e0 -> Node0xa29a10;
+	colorscheme = "paired12"
+        subgraph cluster_0x9c78b0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xa68010 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xa55500 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0x9b3f50;
+              Node0x9a1cc0;
+            }
+            subgraph cluster_0xa547b0 {
+              label = "";
+              style = filled;
+              color = 5
+              subgraph cluster_0xa64050 {
+                label = "";
+                style = filled;
+                color = 7
+                Node0x9d7010;
+                Node0xa23b10;
+              }
+              Node0xa28000;
+              Node0xa1c2d0;
+            }
+            subgraph cluster_0xa5a660 {
+              label = "";
+              style = filled;
+              color = 5
+              subgraph cluster_0xa63e90 {
+                label = "";
+                style = filled;
+                color = 7
+                Node0xa15630;
+                Node0x997500;
+              }
+              Node0x9995c0;
+            }
+            Node0x9b0100;
+            Node0x9fd550;
+            Node0x9b07f0;
+            Node0x9f27d0;
+            Node0x9fd790;
+            Node0xa29310;
+            Node0x9d64e0;
+            Node0x99c0a0;
+            Node0xa0c4e0;
+          }
+          Node0xa29a10;
+        }
+}

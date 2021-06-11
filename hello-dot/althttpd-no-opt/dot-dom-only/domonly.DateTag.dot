@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'DateTag' function" {
+	label="Dominator tree for 'DateTag' function";
+
+	Node0xea7390 [shape=record,label="{entry}"];
+}

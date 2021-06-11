@@ -1,12 +1,12 @@
 digraph "Region Graph for 'BZ2_bzWriteClose' function" {
 	label="Region Graph for 'BZ2_bzWriteClose' function";
 
-	Node0xdcb450 [shape=record,label="{%5}"];
+	Node0x13a3f70 [shape=record,label="{%5}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x114c6c0 {
+        subgraph cluster_0x145a7d0 {
           label = "";
           style = filled;
           color = 1
-          Node0xdcb450;
+          Node0x13a3f70;
         }
 }

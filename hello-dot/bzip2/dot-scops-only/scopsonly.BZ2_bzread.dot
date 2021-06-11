@@ -1,43 +1,43 @@
 digraph "Scop Graph for 'BZ2_bzread' function" {
 	label="Scop Graph for 'BZ2_bzread' function";
 
-	Node0x22d5250 [shape=record,label="{%3}"];
-	Node0x22d5250 -> Node0x2363c80;
-	Node0x22d5250 -> Node0x2115430;
-	Node0x2363c80 [shape=record,label="{%15}"];
-	Node0x2363c80 -> Node0x1ff73c0;
-	Node0x1ff73c0 [shape=record,label="{%29}"];
-	Node0x2115430 [shape=record,label="{%16}"];
-	Node0x2115430 -> Node0x22d7240;
-	Node0x2115430 -> Node0x22caf70;
-	Node0x22d7240 [shape=record,label="{%26}"];
-	Node0x22d7240 -> Node0x1ff73c0;
-	Node0x22caf70 [shape=record,label="{%23}"];
-	Node0x22caf70 -> Node0x22d7240;
-	Node0x22caf70 -> Node0x23554a0;
-	Node0x23554a0 [shape=record,label="{%28}"];
-	Node0x23554a0 -> Node0x1ff73c0;
+	Node0x181c630 [shape=record,label="{%3}"];
+	Node0x181c630 -> Node0x1840940;
+	Node0x181c630 -> Node0x17a3790;
+	Node0x1840940 [shape=record,label="{%15}"];
+	Node0x1840940 -> Node0x15ff300;
+	Node0x15ff300 [shape=record,label="{%29}"];
+	Node0x17a3790 [shape=record,label="{%16}"];
+	Node0x17a3790 -> Node0x1789830;
+	Node0x17a3790 -> Node0x181a4c0;
+	Node0x1789830 [shape=record,label="{%26}"];
+	Node0x1789830 -> Node0x15ff300;
+	Node0x181a4c0 [shape=record,label="{%23}"];
+	Node0x181a4c0 -> Node0x1789830;
+	Node0x181a4c0 -> Node0x15c64b0;
+	Node0x15c64b0 [shape=record,label="{%28}"];
+	Node0x15c64b0 -> Node0x15ff300;
 	colorscheme = "paired12"
-        subgraph cluster_0x2406830 {
+        subgraph cluster_0x155dfa0 {
           label = "";
           style = solid;
           color = 1
-          subgraph cluster_0x1fd3530 {
+          subgraph cluster_0x1958e40 {
             label = "";
             style = solid;
             color = 6
-            subgraph cluster_0x239e240 {
+            subgraph cluster_0x1958cb0 {
               label = "";
               style = solid;
               color = 5
-              Node0x2115430;
-              Node0x22d7240;
-              Node0x22caf70;
-              Node0x23554a0;
+              Node0x17a3790;
+              Node0x1789830;
+              Node0x181a4c0;
+              Node0x15c64b0;
             }
-            Node0x22d5250;
-            Node0x2363c80;
+            Node0x181c630;
+            Node0x1840940;
           }
-          Node0x1ff73c0;
+          Node0x15ff300;
         }
 }

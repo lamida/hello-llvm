@@ -1,27 +1,27 @@
 digraph "Scop Graph for 'BZ2_bzwrite' function" {
 	label="Scop Graph for 'BZ2_bzwrite' function";
 
-	Node0x2378eb0 [shape=record,label="{%3}"];
-	Node0x2378eb0 -> Node0x22be470;
-	Node0x2378eb0 -> Node0x22a9290;
-	Node0x22be470 [shape=record,label="{%14}"];
-	Node0x22be470 -> Node0x226b960;
-	Node0x226b960 [shape=record,label="{%17}"];
-	Node0x22a9290 [shape=record,label="{%16}"];
-	Node0x22a9290 -> Node0x226b960;
+	Node0x18d3fc0 [shape=record,label="{%3}"];
+	Node0x18d3fc0 -> Node0x18ef080;
+	Node0x18d3fc0 -> Node0x18d0cf0;
+	Node0x18ef080 [shape=record,label="{%14}"];
+	Node0x18ef080 -> Node0x1853a60;
+	Node0x1853a60 [shape=record,label="{%17}"];
+	Node0x18d0cf0 [shape=record,label="{%16}"];
+	Node0x18d0cf0 -> Node0x1853a60;
 	colorscheme = "paired12"
-        subgraph cluster_0x23b10b0 {
+        subgraph cluster_0x155dfa0 {
           label = "";
           style = solid;
           color = 1
-          subgraph cluster_0x2406830 {
+          subgraph cluster_0x1958e40 {
             label = "";
             style = solid;
             color = 6
-            Node0x2378eb0;
-            Node0x22be470;
-            Node0x22a9290;
+            Node0x18d3fc0;
+            Node0x18ef080;
+            Node0x18d0cf0;
           }
-          Node0x226b960;
+          Node0x1853a60;
         }
 }

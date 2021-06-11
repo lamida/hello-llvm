@@ -1,0 +1,39 @@
+digraph "Scop Graph for 'g' function" {
+	label="Scop Graph for 'g' function";
+
+	Node0xe34910 [shape=record,label="{entry}"];
+	Node0xe34910 -> Node0xe2e980;
+	Node0xe34910 -> Node0xe2e7e0;
+	Node0xe34910 -> Node0xe33d90;
+	Node0xe34910 -> Node0xe2bfe0;
+	Node0xe34910 -> Node0xe2ccd0;
+	Node0xe2e980 [shape=record,label="{sw.default}"];
+	Node0xe2e980 -> Node0xe2d120;
+	Node0xe2d120 [shape=record,label="{sw.epilog}"];
+	Node0xe2e7e0 [shape=record,label="{sw.bb}"];
+	Node0xe2e7e0 -> Node0xe2d120;
+	Node0xe33d90 [shape=record,label="{sw.bb1}"];
+	Node0xe33d90 -> Node0xe2d120;
+	Node0xe2bfe0 [shape=record,label="{sw.bb2}"];
+	Node0xe2bfe0 -> Node0xe2d120;
+	Node0xe2ccd0 [shape=record,label="{sw.bb3}"];
+	Node0xe2ccd0 -> Node0xe2d120;
+	colorscheme = "paired12"
+        subgraph cluster_0xdff870 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0xe31750 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0xe34910;
+            Node0xe2e980;
+            Node0xe2e7e0;
+            Node0xe33d90;
+            Node0xe2bfe0;
+            Node0xe2ccd0;
+          }
+          Node0xe2d120;
+        }
+}

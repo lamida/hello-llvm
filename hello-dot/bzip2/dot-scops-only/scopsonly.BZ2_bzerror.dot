@@ -1,24 +1,24 @@
 digraph "Scop Graph for 'BZ2_bzerror' function" {
 	label="Scop Graph for 'BZ2_bzerror' function";
 
-	Node0x227dd60 [shape=record,label="{%2}"];
-	Node0x227dd60 -> Node0x22c7170;
-	Node0x227dd60 -> Node0x22623e0;
-	Node0x22c7170 [shape=record,label="{%12}"];
-	Node0x22c7170 -> Node0x22623e0;
-	Node0x22623e0 [shape=record,label="{%13}"];
+	Node0x1904680 [shape=record,label="{%2}"];
+	Node0x1904680 -> Node0x1823a40;
+	Node0x1904680 -> Node0x17474d0;
+	Node0x1823a40 [shape=record,label="{%12}"];
+	Node0x1823a40 -> Node0x17474d0;
+	Node0x17474d0 [shape=record,label="{%13}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x239e0a0 {
+        subgraph cluster_0x155dfa0 {
           label = "";
           style = solid;
           color = 1
-          subgraph cluster_0x23b10b0 {
+          subgraph cluster_0x1958d30 {
             label = "";
             style = solid;
             color = 6
-            Node0x227dd60;
-            Node0x22c7170;
+            Node0x1904680;
+            Node0x1823a40;
           }
-          Node0x22623e0;
+          Node0x17474d0;
         }
 }

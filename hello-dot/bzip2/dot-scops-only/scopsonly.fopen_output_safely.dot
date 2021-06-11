@@ -1,39 +1,39 @@
 digraph "Scop Graph for 'fopen_output_safely' function" {
 	label="Scop Graph for 'fopen_output_safely' function";
 
-	Node0x2059630 [shape=record,label="{%2}"];
-	Node0x2059630 -> Node0x235eb60;
-	Node0x2059630 -> Node0x2367a60;
-	Node0x235eb60 [shape=record,label="{%12}"];
-	Node0x235eb60 -> Node0x2134830;
-	Node0x2134830 [shape=record,label="{%24}"];
-	Node0x2367a60 [shape=record,label="{%13}"];
-	Node0x2367a60 -> Node0x2355a90;
-	Node0x2367a60 -> Node0x2340280;
-	Node0x2355a90 [shape=record,label="{%19}"];
-	Node0x2355a90 -> Node0x2340280;
-	Node0x2340280 [shape=record,label="{%22}"];
-	Node0x2340280 -> Node0x2134830;
+	Node0x1862240 [shape=record,label="{%2}"];
+	Node0x1862240 -> Node0x16bf830;
+	Node0x1862240 -> Node0x16fdd50;
+	Node0x16bf830 [shape=record,label="{%12}"];
+	Node0x16bf830 -> Node0x1819a90;
+	Node0x1819a90 [shape=record,label="{%24}"];
+	Node0x16fdd50 [shape=record,label="{%13}"];
+	Node0x16fdd50 -> Node0x17ee4a0;
+	Node0x16fdd50 -> Node0x1831620;
+	Node0x17ee4a0 [shape=record,label="{%19}"];
+	Node0x17ee4a0 -> Node0x1831620;
+	Node0x1831620 [shape=record,label="{%22}"];
+	Node0x1831620 -> Node0x1819a90;
 	colorscheme = "paired12"
-        subgraph cluster_0x23b1030 {
+        subgraph cluster_0x155dfa0 {
           label = "";
           style = solid;
           color = 1
-          subgraph cluster_0x23b10b0 {
+          subgraph cluster_0x155e020 {
             label = "";
             style = solid;
             color = 6
-            subgraph cluster_0x239e0a0 {
+            subgraph cluster_0x1958d30 {
               label = "";
               style = solid;
               color = 5
-              Node0x2367a60;
-              Node0x2355a90;
+              Node0x16fdd50;
+              Node0x17ee4a0;
             }
-            Node0x2059630;
-            Node0x235eb60;
-            Node0x2340280;
+            Node0x1862240;
+            Node0x16bf830;
+            Node0x1831620;
           }
-          Node0x2134830;
+          Node0x1819a90;
         }
 }

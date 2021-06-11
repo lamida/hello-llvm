@@ -1,0 +1,132 @@
+digraph "Region Graph for 'Decode64' function" {
+	label="Region Graph for 'Decode64' function";
+
+	Node0xa536a0 [shape=record,label="{entry}"];
+	Node0xa536a0 -> Node0x9c35d0;
+	Node0xa536a0 -> Node0xa269a0;
+	Node0x9c35d0 [shape=record,label="{if.end}"];
+	Node0x9c35d0 -> Node0x985190;
+	Node0x985190 [shape=record,label="{while.cond}"];
+	Node0x985190 -> Node0x984710;
+	Node0x985190 -> Node0xa49a60;
+	Node0x984710 [shape=record,label="{land.rhs}"];
+	Node0x984710 -> Node0xa49a60;
+	Node0xa49a60 [shape=record,label="{land.end}"];
+	Node0xa49a60 -> Node0x9b7120;
+	Node0xa49a60 -> Node0x99fde0;
+	Node0x9b7120 [shape=record,label="{while.body}"];
+	Node0x9b7120 -> Node0x985190[constraint=false];
+	Node0x99fde0 [shape=record,label="{while.end}"];
+	Node0x99fde0 -> Node0xa53160;
+	Node0xa53160 [shape=record,label="{for.cond21}"];
+	Node0xa53160 -> Node0xa120f0;
+	Node0xa53160 -> Node0xa0b800;
+	Node0xa120f0 [shape=record,label="{for.body24}"];
+	Node0xa120f0 -> Node0x98f050;
+	Node0x98f050 [shape=record,label="{for.inc75}"];
+	Node0x98f050 -> Node0xa53160[constraint=false];
+	Node0xa0b800 [shape=record,label="{for.end77}"];
+	Node0xa0b800 -> Node0x9e8520;
+	Node0xa0b800 -> Node0xa16360;
+	Node0x9e8520 [shape=record,label="{if.then81}"];
+	Node0x9e8520 -> Node0xa23720;
+	Node0xa23720 [shape=record,label="{if.end147}"];
+	Node0xa16360 [shape=record,label="{if.else}"];
+	Node0xa16360 -> Node0x986820;
+	Node0xa16360 -> Node0xa5fc20;
+	Node0x986820 [shape=record,label="{if.then123}"];
+	Node0x986820 -> Node0xa5fc20;
+	Node0xa5fc20 [shape=record,label="{if.end146}"];
+	Node0xa5fc20 -> Node0xa23720;
+	Node0xa269a0 [shape=record,label="{if.then}"];
+	Node0xa269a0 -> Node0x99ef60;
+	Node0x99ef60 [shape=record,label="{for.cond}"];
+	Node0x99ef60 -> Node0x9b8e10;
+	Node0x99ef60 -> Node0xa0e420;
+	Node0x9b8e10 [shape=record,label="{for.body}"];
+	Node0x9b8e10 -> Node0xa51eb0;
+	Node0xa51eb0 [shape=record,label="{for.inc}"];
+	Node0xa51eb0 -> Node0x99ef60[constraint=false];
+	Node0xa0e420 [shape=record,label="{for.end}"];
+	Node0xa0e420 -> Node0x9d6250;
+	Node0x9d6250 [shape=record,label="{for.cond1}"];
+	Node0x9d6250 -> Node0x9d5a00;
+	Node0x9d6250 -> Node0xa22f70;
+	Node0x9d5a00 [shape=record,label="{for.body5}"];
+	Node0x9d5a00 -> Node0x9e22f0;
+	Node0x9e22f0 [shape=record,label="{for.inc10}"];
+	Node0x9e22f0 -> Node0x9d6250[constraint=false];
+	Node0xa22f70 [shape=record,label="{for.end12}"];
+	Node0xa22f70 -> Node0x9c35d0;
+	colorscheme = "paired12"
+        subgraph cluster_0x9c78b0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xa54530 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xa544b0 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0x99ef60;
+              Node0x9b8e10;
+              Node0xa51eb0;
+            }
+            subgraph cluster_0xa55500 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0x9d6250;
+              Node0x9d5a00;
+              Node0x9e22f0;
+            }
+            Node0xa536a0;
+            Node0xa269a0;
+            Node0xa0e420;
+            Node0xa22f70;
+          }
+          subgraph cluster_0xa64050 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xa547b0 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0x985190;
+              Node0x984710;
+            }
+            Node0xa49a60;
+            Node0x9b7120;
+          }
+          subgraph cluster_0xa63e90 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0xa53160;
+            Node0xa120f0;
+            Node0x98f050;
+          }
+          subgraph cluster_0xa5a660 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xa68010 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0xa16360;
+              Node0x986820;
+            }
+            Node0xa0b800;
+            Node0x9e8520;
+            Node0xa5fc20;
+          }
+          Node0x9c35d0;
+          Node0x99fde0;
+          Node0xa23720;
+        }
+}

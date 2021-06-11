@@ -1,18 +1,18 @@
 digraph "Scop Graph for 'myMalloc' function" {
 	label="Scop Graph for 'myMalloc' function";
 
-	Node0x1d3fa60 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  %3 = alloca i8*, align 8\l  store i32 %0, i32* %2, align 4\l  %4 = load i32, i32* %2, align 4\l  %5 = sext i32 %4 to i64\l  %6 = call noalias i8* @malloc(i64 %5) #8\l  store i8* %6, i8** %3, align 8\l  %7 = load i8*, i8** %3, align 8\l  %8 = icmp eq i8* %7, null\l  br i1 %8, label %9, label %10\l}"];
-	Node0x1d3fa60 -> Node0x1bdd4f0;
-	Node0x1d3fa60 -> Node0x1e09720;
-	Node0x1bdd4f0 [shape=record,label="{%9:\l9:                                                \l  call void @outOfMemory() #9\l  unreachable\l}"];
-	Node0x1e09720 [shape=record,label="{%10:\l10:                                               \l  %11 = load i8*, i8** %3, align 8\l  ret i8* %11\l}"];
+	Node0x28ca190 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  %3 = alloca i8*, align 8\l  store i32 %0, i32* %2, align 4\l  %4 = load i32, i32* %2, align 4\l  %5 = sext i32 %4 to i64\l  %6 = call noalias i8* @malloc(i64 %5) #8\l  store i8* %6, i8** %3, align 8\l  %7 = load i8*, i8** %3, align 8\l  %8 = icmp eq i8* %7, null\l  br i1 %8, label %9, label %10\l}"];
+	Node0x28ca190 -> Node0x28be940;
+	Node0x28ca190 -> Node0x28cdf40;
+	Node0x28be940 [shape=record,label="{%9:\l9:                                                \l  call void @outOfMemory() #9\l  unreachable\l}"];
+	Node0x28cdf40 [shape=record,label="{%10:\l10:                                               \l  %11 = load i8*, i8** %3, align 8\l  ret i8* %11\l}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x1f18fa0 {
+        subgraph cluster_0x2941dd0 {
           label = "";
           style = solid;
           color = 1
-          Node0x1d3fa60;
-          Node0x1bdd4f0;
-          Node0x1e09720;
+          Node0x28ca190;
+          Node0x28be940;
+          Node0x28cdf40;
         }
 }

@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'NotAuthorized' function" {
+	label="Dominator tree for 'NotAuthorized' function";
+
+	Node0xeb6200 [shape=record,label="{entry}"];
+}

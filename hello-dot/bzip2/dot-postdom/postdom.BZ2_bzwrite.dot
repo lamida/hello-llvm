@@ -1,13 +1,13 @@
 digraph "Post dominator tree for 'BZ2_bzwrite' function" {
 	label="Post dominator tree for 'BZ2_bzwrite' function";
 
-	Node0x1584760 [shape=record,label="{Post dominance root node}"];
-	Node0x1584760 -> Node0x15fd8c0;
-	Node0x15fd8c0 [shape=record,label="{%17:\l17:                                               \l  %18 = load i32, i32* %4, align 4\l  ret i32 %18\l}"];
-	Node0x15fd8c0 -> Node0x1601a30;
-	Node0x15fd8c0 -> Node0x13dc2e0;
-	Node0x15fd8c0 -> Node0x15d1ef0;
-	Node0x1601a30 [shape=record,label="{%14:\l14:                                               \l  %15 = load i32, i32* %7, align 4\l  store i32 %15, i32* %4, align 4\l  br label %17\l}"];
-	Node0x13dc2e0 [shape=record,label="{%3:\l  %4 = alloca i32, align 4\l  %5 = alloca i8*, align 8\l  %6 = alloca i8*, align 8\l  %7 = alloca i32, align 4\l  %8 = alloca i32, align 4\l  store i8* %0, i8** %5, align 8\l  store i8* %1, i8** %6, align 8\l  store i32 %2, i32* %7, align 4\l  %9 = load i8*, i8** %5, align 8\l  %10 = load i8*, i8** %6, align 8\l  %11 = load i32, i32* %7, align 4\l  call void @BZ2_bzWrite(i32* %8, i8* %9, i8* %10, i32 %11)\l  %12 = load i32, i32* %8, align 4\l  %13 = icmp eq i32 %12, 0\l  br i1 %13, label %14, label %16\l}"];
-	Node0x15d1ef0 [shape=record,label="{%16:\l16:                                               \l  store i32 -1, i32* %4, align 4\l  br label %17\l}"];
+	Node0x150dff0 [shape=record,label="{Post dominance root node}"];
+	Node0x150dff0 -> Node0x1543780;
+	Node0x1543780 [shape=record,label="{%17:\l17:                                               \l  %18 = load i32, i32* %4, align 4\l  ret i32 %18\l}"];
+	Node0x1543780 -> Node0x1552c20;
+	Node0x1543780 -> Node0x15dec10;
+	Node0x1543780 -> Node0x1552d10;
+	Node0x1552c20 [shape=record,label="{%14:\l14:                                               \l  %15 = load i32, i32* %7, align 4\l  store i32 %15, i32* %4, align 4\l  br label %17\l}"];
+	Node0x15dec10 [shape=record,label="{%3:\l  %4 = alloca i32, align 4\l  %5 = alloca i8*, align 8\l  %6 = alloca i8*, align 8\l  %7 = alloca i32, align 4\l  %8 = alloca i32, align 4\l  store i8* %0, i8** %5, align 8\l  store i8* %1, i8** %6, align 8\l  store i32 %2, i32* %7, align 4\l  %9 = load i8*, i8** %5, align 8\l  %10 = load i8*, i8** %6, align 8\l  %11 = load i32, i32* %7, align 4\l  call void @BZ2_bzWrite(i32* %8, i8* %9, i8* %10, i32 %11)\l  %12 = load i32, i32* %8, align 4\l  %13 = icmp eq i32 %12, 0\l  br i1 %13, label %14, label %16\l}"];
+	Node0x1552d10 [shape=record,label="{%16:\l16:                                               \l  store i32 -1, i32* %4, align 4\l  br label %17\l}"];
 }

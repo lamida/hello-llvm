@@ -1,0 +1,12 @@
+digraph "Region Graph for 'DateTag' function" {
+	label="Region Graph for 'DateTag' function";
+
+	Node0x9e8b10 [shape=record,label="{entry}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xa86e00 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0x9e8b10;
+        }
+}

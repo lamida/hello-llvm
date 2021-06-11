@@ -1,12 +1,12 @@
 digraph "Region Graph for 'outOfMemory' function" {
 	label="Region Graph for 'outOfMemory' function";
 
-	Node0xb77cf0 [shape=record,label="{%0:\l  %1 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %2 = load i8*, i8** @progName, align 8\l  %3 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %1,\l... i8* getelementptr inbounds ([38 x i8], [38 x i8]* @.str.90, i64 0, i64 0),\l... i8* %2)\l  call void @showFileNames()\l  call void @cleanUpAndFail(i32 1) #8\l  unreachable\l}"];
+	Node0x2a3fd50 [shape=record,label="{%0:\l  %1 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %2 = load i8*, i8** @progName, align 8\l  %3 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %1,\l... i8* getelementptr inbounds ([38 x i8], [38 x i8]* @.str.90, i64 0, i64 0),\l... i8* %2)\l  call void @showFileNames()\l  call void @cleanUpAndFail(i32 1) #8\l  unreachable\l}"];
 	colorscheme = "paired12"
-        subgraph cluster_0xc3fe80 {
+        subgraph cluster_0x2b841c0 {
           label = "";
           style = filled;
           color = 1
-          Node0xb77cf0;
+          Node0x2a3fd50;
         }
 }

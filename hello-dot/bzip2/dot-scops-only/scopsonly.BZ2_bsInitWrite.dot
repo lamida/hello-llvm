@@ -1,12 +1,12 @@
 digraph "Scop Graph for 'BZ2_bsInitWrite' function" {
 	label="Scop Graph for 'BZ2_bsInitWrite' function";
 
-	Node0x2346490 [shape=record,label="{%1}"];
+	Node0x1844b00 [shape=record,label="{%1}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x1fd4730 {
+        subgraph cluster_0x155dfa0 {
           label = "";
           style = solid;
           color = 1
-          Node0x2346490;
+          Node0x1844b00;
         }
 }

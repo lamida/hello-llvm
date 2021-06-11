@@ -1,12 +1,12 @@
 digraph "Scop Graph for 'bsPutUChar' function" {
 	label="Scop Graph for 'bsPutUChar' function";
 
-	Node0x22d56d0 [shape=record,label="{%2}"];
+	Node0x18dd060 [shape=record,label="{%2}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x2377390 {
+        subgraph cluster_0x18d11b0 {
           label = "";
           style = solid;
           color = 1
-          Node0x22d56d0;
+          Node0x18dd060;
         }
 }

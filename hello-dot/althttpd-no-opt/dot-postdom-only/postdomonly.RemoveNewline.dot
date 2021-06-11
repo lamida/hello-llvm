@@ -1,0 +1,25 @@
+digraph "Post dominator tree for 'RemoveNewline' function" {
+	label="Post dominator tree for 'RemoveNewline' function";
+
+	Node0xd61e70 [shape=record,label="{Post dominance root node}"];
+	Node0xd61e70 -> Node0xd7bc60;
+	Node0xd7bc60 [shape=record,label="{return}"];
+	Node0xd7bc60 -> Node0xda36b0;
+	Node0xd7bc60 -> Node0xdb12f0;
+	Node0xd7bc60 -> Node0xd33790;
+	Node0xda36b0 [shape=record,label="{if.then}"];
+	Node0xdb12f0 [shape=record,label="{entry}"];
+	Node0xd33790 [shape=record,label="{while.end}"];
+	Node0xd33790 -> Node0xd1c1e0;
+	Node0xd1c1e0 [shape=record,label="{land.end}"];
+	Node0xd1c1e0 -> Node0xd09cf0;
+	Node0xd1c1e0 -> Node0xd545c0;
+	Node0xd1c1e0 -> Node0xd9c650;
+	Node0xd09cf0 [shape=record,label="{while.cond}"];
+	Node0xd09cf0 -> Node0xd6dc20;
+	Node0xd09cf0 -> Node0xd93980;
+	Node0xd6dc20 [shape=record,label="{if.end}"];
+	Node0xd93980 [shape=record,label="{while.body}"];
+	Node0xd545c0 [shape=record,label="{land.lhs.true}"];
+	Node0xd9c650 [shape=record,label="{land.rhs}"];
+}

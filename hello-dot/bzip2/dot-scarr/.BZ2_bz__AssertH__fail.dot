@@ -1,0 +1,10 @@
+digraph "CFG for 'BZ2_bz__AssertH__fail' function" {
+	label="CFG for 'BZ2_bz__AssertH__fail' function";
+
+	Node0x556a61b50c10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61b50c10 - Exit Point\":\l  %1 = alloca i32, align 4\l  store i32 %0, i32* %1, align 4\l  %2 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %3 = load i32, i32* %1, align 4\l  %4 = call i8* @BZ2_bzlibVersion()\l  %5 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %2,\l... i8* getelementptr inbounds ([442 x i8], [442 x i8]* @.str.6, i64 0, i64 0),\l... i32 %3, i8* %4)\l  %6 = load i32, i32* %1, align 4\l  %7 = icmp eq i32 %6, 1007\l  br i1 %7, label %\"0x556a61b50e40 - Exit Point\", label %\"0x556a61b513c0 -\l... Exit Point\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61b50c10:s0 -> Node0x556a61b50e40;
+	Node0x556a61b50c10:s1 -> Node0x556a61b513c0;
+	Node0x556a61b50e40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{\"0x556a61b50e40 - Exit Point\":                    \l  %8 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %9 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %8,\l... i8* getelementptr inbounds ([1057 x i8], [1057 x i8]* @.str.7, i64 0, i64 0))\l  br label %\"0x556a61b513c0 - Exit Point\"\l}"];
+	Node0x556a61b50e40 -> Node0x556a61b513c0;
+	Node0x556a61b513c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61b513c0 - Exit Point\":                    \l  call void @exit(i32 3)\l  unreachable\l}"];
+}

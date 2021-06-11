@@ -1,0 +1,17 @@
+digraph "Post dominator tree for 'Timeout' function" {
+	label="Post dominator tree for 'Timeout' function";
+
+	Node0x225eb10 [shape=record,label="{Post dominance root node}"];
+	Node0x225eb10 -> Node0x2296a40;
+	Node0x225eb10 -> Node0x22f0bb0;
+	Node0x225eb10 -> Node0x22344d0;
+	Node0x2296a40 [shape=record,label="{if.end:                                           \l  call void @exit(i32 0) #8\l  unreachable\l}"];
+	Node0x2296a40 -> Node0x2206170;
+	Node0x2296a40 -> Node0x2284790;
+	Node0x2296a40 -> Node0x22f9ca0;
+	Node0x2206170 [shape=record,label="{if.then:                                          \l  %1 = load i8*, i8** @zScript, align 8\l  %tobool1 = icmp ne i8* %1, null\l  br i1 %tobool1, label %land.lhs.true, label %if.end\l}"];
+	Node0x2284790 [shape=record,label="{land.lhs.true:                                    \l  %2 = load i8*, i8** @zScript, align 8\l  %arrayidx = getelementptr inbounds i8, i8* %2, i64 0\l  %3 = load i8, i8* %arrayidx, align 1\l  %conv = sext i8 %3 to i32\l  %tobool2 = icmp ne i32 %conv, 0\l  br i1 %tobool2, label %if.then3, label %if.end\l}"];
+	Node0x22f9ca0 [shape=record,label="{if.then3:                                         \l  %arrayidx4 = getelementptr inbounds [10 x i8], [10 x i8]* %zBuf, i64 0, i64 0\l  store i8 57, i8* %arrayidx4, align 1\l  %4 = load i32, i32* %iSig.addr, align 4\l  %div = sdiv i32 %4, 10\l  %rem = srem i32 %div, 10\l  %add = add nsw i32 48, %rem\l  %conv5 = trunc i32 %add to i8\l  %arrayidx6 = getelementptr inbounds [10 x i8], [10 x i8]* %zBuf, i64 0, i64 1\l  store i8 %conv5, i8* %arrayidx6, align 1\l  %5 = load i32, i32* %iSig.addr, align 4\l  %rem7 = srem i32 %5, 10\l  %add8 = add nsw i32 48, %rem7\l  %conv9 = trunc i32 %add8 to i8\l  %arrayidx10 = getelementptr inbounds [10 x i8], [10 x i8]* %zBuf, i64 0, i64\l... 2\l  store i8 %conv9, i8* %arrayidx10, align 1\l  %arrayidx11 = getelementptr inbounds [10 x i8], [10 x i8]* %zBuf, i64 0, i64\l... 3\l  store i8 0, i8* %arrayidx11, align 1\l  %arraydecay = getelementptr inbounds [10 x i8], [10 x i8]* %zBuf, i64 0, i64\l... 0\l  %call = call i8* @strcpy(i8* getelementptr inbounds ([4 x i8], [4 x i8]*\l... @zReplyStatus, i64 0, i64 0), i8* %arraydecay) #7\l  call void @MakeLogEntry(i32 0, i32 130)\l  br label %if.end\l}"];
+	Node0x22f0bb0 [shape=record,label="{entry:\l  %iSig.addr = alloca i32, align 4\l  %zBuf = alloca [10 x i8], align 1\l  store i32 %iSig, i32* %iSig.addr, align 4\l  %0 = load i32, i32* @debugFlag, align 4\l  %tobool = icmp ne i32 %0, 0\l  br i1 %tobool, label %if.end12, label %if.then\l}"];
+	Node0x22344d0 [shape=record,label="{if.end12:                                         \l  ret void\l}"];
+}

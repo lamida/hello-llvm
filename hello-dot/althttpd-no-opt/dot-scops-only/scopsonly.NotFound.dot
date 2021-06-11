@@ -1,0 +1,12 @@
+digraph "Scop Graph for 'NotFound' function" {
+	label="Scop Graph for 'NotFound' function";
+
+	Node0x1ab1e50 [shape=record,label="{entry}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1b17fb0 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x1ab1e50;
+        }
+}

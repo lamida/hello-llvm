@@ -1,12 +1,12 @@
 digraph "Scop Graph for 'bz_config_ok' function" {
 	label="Scop Graph for 'bz_config_ok' function";
 
-	Node0x23dee40 [shape=record,label="{%0}"];
+	Node0x19450a0 [shape=record,label="{%0}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x23b1f60 {
+        subgraph cluster_0x192ad10 {
           label = "";
           style = solid;
           color = 1
-          Node0x23dee40;
+          Node0x19450a0;
         }
 }

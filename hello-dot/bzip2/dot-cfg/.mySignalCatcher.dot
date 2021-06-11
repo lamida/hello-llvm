@@ -1,5 +1,5 @@
 digraph "CFG for 'mySignalCatcher' function" {
 	label="CFG for 'mySignalCatcher' function";
 
-	Node0x11fed30 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %4 = load i8*, i8** @progName, align 8\l  %5 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %3,\l... i8* getelementptr inbounds ([45 x i8], [45 x i8]* @.str.94, i64 0, i64 0),\l... i8* %4)\l  call void @cleanUpAndFail(i32 1) #8\l  unreachable\l}"];
+	Node0xcded30 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %4 = load i8*, i8** @progName, align 8\l  %5 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %3,\l... i8* getelementptr inbounds ([45 x i8], [45 x i8]* @.str.94, i64 0, i64 0),\l... i8* %4)\l  call void @cleanUpAndFail(i32 1) #8\l  unreachable\l}"];
 }

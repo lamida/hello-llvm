@@ -1,0 +1,25 @@
+digraph "CFG for 'CompareEtags' function" {
+	label="CFG for 'CompareEtags' function";
+
+	Node0x5595129388d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5595129388d0\":\l  %retval = alloca i32, align 4\l  %zA.addr = alloca i8*, align 8\l  %zB.addr = alloca i8*, align 8\l  %lenB = alloca i32, align 4\l  store i8* %zA, i8** %zA.addr, align 8\l  store i8* %zB, i8** %zB.addr, align 8\l  %0 = load i8*, i8** %zA.addr, align 8\l  %cmp = icmp eq i8* %0, null\l  br i1 %cmp, label %\"0x559512938d60\", label %\"0x559512938dd0\"\l|{<s0>T|<s1>F}}"];
+	Node0x5595129388d0:s0 -> Node0x559512938d60;
+	Node0x5595129388d0:s1 -> Node0x559512938dd0;
+	Node0x559512938d60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{\"0x559512938d60\":                                 \l  store i32 1, i32* %retval, align 4\l  br label %\"0x559512938f80\"\l}"];
+	Node0x559512938d60 -> Node0x559512938f80;
+	Node0x559512938dd0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#d6524470",label="{\"0x559512938dd0\":                                 \l  %1 = load i8*, i8** %zA.addr, align 8\l  %arrayidx = getelementptr inbounds i8, i8* %1, i64 0\l  %2 = load i8, i8* %arrayidx, align 1\l  %conv = sext i8 %2 to i32\l  %cmp1 = icmp eq i32 %conv, 34\l  br i1 %cmp1, label %\"0x559512939500 - Exit Point\", label %\"0x559512939580 -\l... Exit Point\"\l|{<s0>T|<s1>F}}"];
+	Node0x559512938dd0:s0 -> Node0x559512939500;
+	Node0x559512938dd0:s1 -> Node0x559512939580;
+	Node0x559512939500 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{\"0x559512939500 - Exit Point\":                    \l  %3 = load i8*, i8** %zB.addr, align 8\l  %call = call i64 @strlen(i8* %3)\l  %conv4 = trunc i64 %call to i32\l  store i32 %conv4, i32* %lenB, align 4\l  %4 = load i8*, i8** %zA.addr, align 8\l  %add.ptr = getelementptr inbounds i8, i8* %4, i64 1\l  %5 = load i8*, i8** %zB.addr, align 8\l  %6 = load i32, i32* %lenB, align 4\l  %conv5 = sext i32 %6 to i64\l  %call6 = call i32 @strncmp(i8* %add.ptr, i8* %5, i64 %conv5)\l  %cmp7 = icmp eq i32 %call6, 0\l  br i1 %cmp7, label %\"0x559512939da0\", label %\"0x559512939df0\"\l|{<s0>T|<s1>F}}"];
+	Node0x559512939500:s0 -> Node0x559512939da0;
+	Node0x559512939500:s1 -> Node0x559512939df0;
+	Node0x559512939da0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{\"0x559512939da0\":                                 \l  %7 = load i8*, i8** %zA.addr, align 8\l  %8 = load i32, i32* %lenB, align 4\l  %add = add nsw i32 %8, 1\l  %idxprom = sext i32 %add to i64\l  %arrayidx9 = getelementptr inbounds i8, i8* %7, i64 %idxprom\l  %9 = load i8, i8* %arrayidx9, align 1\l  %conv10 = sext i8 %9 to i32\l  %cmp11 = icmp eq i32 %conv10, 34\l  br i1 %cmp11, label %\"0x5595129399e0\", label %\"0x559512939df0\"\l|{<s0>T|<s1>F}}"];
+	Node0x559512939da0:s0 -> Node0x5595129399e0;
+	Node0x559512939da0:s1 -> Node0x559512939df0;
+	Node0x5595129399e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{\"0x5595129399e0\":                                 \l  store i32 0, i32* %retval, align 4\l  br label %\"0x559512938f80\"\l}"];
+	Node0x5595129399e0 -> Node0x559512938f80;
+	Node0x559512939df0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7a88970",label="{\"0x559512939df0\":                                 \l  br label %\"0x559512939580 - Exit Point\"\l}"];
+	Node0x559512939df0 -> Node0x559512939580;
+	Node0x559512939580 [shape=record,color="#b70d28ff", style=filled, fillcolor="#dc5d4a70",label="{\"0x559512939580 - Exit Point\":                    \l  %10 = load i8*, i8** %zA.addr, align 8\l  %11 = load i8*, i8** %zB.addr, align 8\l  %call16 = call i32 @strcmp(i8* %10, i8* %11)\l  store i32 %call16, i32* %retval, align 4\l  br label %\"0x559512938f80\"\l}"];
+	Node0x559512939580 -> Node0x559512938f80;
+	Node0x559512938f80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x559512938f80\":                                 \l  %12 = load i32, i32* %retval, align 4\l  ret i32 %12\l}"];
+}

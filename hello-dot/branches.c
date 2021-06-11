@@ -4,7 +4,12 @@
 
 void b1()
 {
-    printf("b1 is called\n");
+    int x = 10;
+    if (x == 10) {
+        printf("b1 is called in first branch\n");
+    } else {
+        printf("b1 is called in second branch\n");
+    }
 }
 
 void b2()
@@ -53,29 +58,13 @@ void g4()
     printf("g4 is called\n");
 }
 
-int main()
+void g()
 {
-    int a = 1;
-    if (a == 1)
-    {
-        b1();
-    }
-    else
-    {
-        b2();
-    }
-    c();
-    d();
-    int z = 10;
-    while (z > 0)
-    {
-        f();
-        z--;
-    }
-
-    time_t t;
-    srand((unsigned)time(&t));
-    int r = 1 + rand() % 4;
+    // Random will prevent the method from being inlined
+    // time_t t;
+    // srand((unsigned)time(&t));
+    // int r = 1 + rand() % 4;
+    int r = 4;
     switch (r)
     {
         case 1:
@@ -93,4 +82,28 @@ int main()
         default:
             printf("nothing here");
     };
+}
+
+int main()
+{
+    int a = 1;
+    if (a == 1)
+    {
+        b1();
+    }
+    else
+    {
+        b2();
+    }
+    c();
+    d();
+
+    int z = 10;
+    while (z > 0)
+    {
+        f();
+        z--;
+    }
+
+    g();
 }

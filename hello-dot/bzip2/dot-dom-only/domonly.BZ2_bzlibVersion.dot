@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'BZ2_bzlibVersion' function" {
 	label="Dominator tree for 'BZ2_bzlibVersion' function";
 
-	Node0x22d1280 [shape=record,label="{%0}"];
+	Node0x1e84290 [shape=record,label="{%0}"];
 }

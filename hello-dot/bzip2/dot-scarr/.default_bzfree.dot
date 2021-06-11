@@ -1,0 +1,10 @@
+digraph "CFG for 'default_bzfree' function" {
+	label="CFG for 'default_bzfree' function";
+
+	Node0x556a61d09700 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61d09700\":\l  %2 = alloca i8*, align 8\l  %3 = alloca i8*, align 8\l  store i8* %0, i8** %2, align 8\l  store i8* %1, i8** %3, align 8\l  %4 = load i8*, i8** %3, align 8\l  %5 = icmp ne i8* %4, null\l  br i1 %5, label %\"0x556a61d09a40 - Exit Point\", label %\"0x556a61d09a90\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61d09700:s0 -> Node0x556a61d09a40;
+	Node0x556a61d09700:s1 -> Node0x556a61d09a90;
+	Node0x556a61d09a40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{\"0x556a61d09a40 - Exit Point\":                    \l  %6 = load i8*, i8** %3, align 8\l  call void @free(i8* %6)\l  br label %\"0x556a61d09a90\"\l}"];
+	Node0x556a61d09a40 -> Node0x556a61d09a90;
+	Node0x556a61d09a90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61d09a90\":                                 \l  ret void\l}"];
+}

@@ -1,0 +1,15 @@
+digraph "Dominator tree for 'StrAppend' function" {
+	label="Dominator tree for 'StrAppend' function";
+
+	Node0xe33070 [shape=record,label="{entry}"];
+	Node0xe33070 -> Node0xe5f260;
+	Node0xe33070 -> Node0xe3d4d0;
+	Node0xe33070 -> Node0xe32f10;
+	Node0xe5f260 [shape=record,label="{if.then}"];
+	Node0xe3d4d0 [shape=record,label="{return}"];
+	Node0xe32f10 [shape=record,label="{if.end}"];
+	Node0xe32f10 -> Node0xea0560;
+	Node0xe32f10 -> Node0xe70c50;
+	Node0xea0560 [shape=record,label="{if.then2}"];
+	Node0xe70c50 [shape=record,label="{if.end3}"];
+}

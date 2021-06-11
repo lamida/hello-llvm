@@ -1,7 +1,7 @@
 digraph "Post dominator tree for 'BZ2_bzlibVersion' function" {
 	label="Post dominator tree for 'BZ2_bzlibVersion' function";
 
-	Node0xb95910 [shape=record,label="{Post dominance root node}"];
-	Node0xb95910 -> Node0xb6fbc0;
-	Node0xb6fbc0 [shape=record,label="{%0}"];
+	Node0xfb5980 [shape=record,label="{Post dominance root node}"];
+	Node0xfb5980 -> Node0x1210800;
+	Node0x1210800 [shape=record,label="{%0}"];
 }

@@ -1,0 +1,39 @@
+digraph "Region Graph for 'StrAppend' function" {
+	label="Region Graph for 'StrAppend' function";
+
+	Node0xa08ae0 [shape=record,label="{entry}"];
+	Node0xa08ae0 -> Node0x9d1710;
+	Node0xa08ae0 -> Node0x9f4370;
+	Node0x9d1710 [shape=record,label="{if.then}"];
+	Node0x9d1710 -> Node0x98cf30;
+	Node0x98cf30 [shape=record,label="{return}"];
+	Node0x9f4370 [shape=record,label="{if.end}"];
+	Node0x9f4370 -> Node0xa05a00;
+	Node0x9f4370 -> Node0x995f50;
+	Node0xa05a00 [shape=record,label="{if.then2}"];
+	Node0xa05a00 -> Node0x98cf30;
+	Node0x995f50 [shape=record,label="{if.end3}"];
+	Node0x995f50 -> Node0x98cf30;
+	colorscheme = "paired12"
+        subgraph cluster_0xa977c0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xa978c0 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xa63fd0 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0x9f4370;
+              Node0xa05a00;
+              Node0x995f50;
+            }
+            Node0xa08ae0;
+            Node0x9d1710;
+          }
+          Node0x98cf30;
+        }
+}

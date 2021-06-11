@@ -1,0 +1,107 @@
+digraph "Region Graph for 'GetMimeType' function" {
+	label="Region Graph for 'GetMimeType' function";
+
+	Node0x9ce600 [shape=record,label="{entry}"];
+	Node0x9ce600 -> Node0x9c0f10;
+	Node0x9c0f10 [shape=record,label="{for.cond}"];
+	Node0x9c0f10 -> Node0xa40220;
+	Node0x9c0f10 -> Node0x9a91a0;
+	Node0xa40220 [shape=record,label="{land.rhs}"];
+	Node0xa40220 -> Node0x9a91a0;
+	Node0x9a91a0 [shape=record,label="{land.end}"];
+	Node0x9a91a0 -> Node0x9e8b10;
+	Node0x9a91a0 -> Node0x9a95e0;
+	Node0x9e8b10 [shape=record,label="{for.body}"];
+	Node0x9e8b10 -> Node0x9f49d0;
+	Node0x9f49d0 [shape=record,label="{for.inc}"];
+	Node0x9f49d0 -> Node0x9c0f10[constraint=false];
+	Node0x9a95e0 [shape=record,label="{for.end}"];
+	Node0x9a95e0 -> Node0xa10e10;
+	Node0x9a95e0 -> Node0xa04570;
+	Node0xa10e10 [shape=record,label="{if.then}"];
+	Node0xa10e10 -> Node0x9d22d0;
+	Node0x9d22d0 [shape=record,label="{for.cond8}"];
+	Node0x9d22d0 -> Node0x9ef830;
+	Node0x9d22d0 -> Node0xa13dd0;
+	Node0x9ef830 [shape=record,label="{for.body11}"];
+	Node0x9ef830 -> Node0x9f2b60;
+	Node0x9f2b60 [shape=record,label="{for.inc19}"];
+	Node0x9f2b60 -> Node0x9d22d0[constraint=false];
+	Node0xa13dd0 [shape=record,label="{for.end20}"];
+	Node0xa13dd0 -> Node0xa0e8c0;
+	Node0xa0e8c0 [shape=record,label="{while.cond}"];
+	Node0xa0e8c0 -> Node0x99d810;
+	Node0xa0e8c0 -> Node0x9e4c30;
+	Node0x99d810 [shape=record,label="{while.body}"];
+	Node0x99d810 -> Node0x9e7c50;
+	Node0x99d810 -> Node0xa0f3a0;
+	Node0x9e7c50 [shape=record,label="{if.then31}"];
+	Node0x9e7c50 -> Node0x99bc40;
+	Node0x99bc40 [shape=record,label="{return}"];
+	Node0xa0f3a0 [shape=record,label="{if.end}"];
+	Node0xa0f3a0 -> Node0x9d43b0;
+	Node0xa0f3a0 -> Node0xa54ea0;
+	Node0x9d43b0 [shape=record,label="{if.then36}"];
+	Node0x9d43b0 -> Node0xa0eae0;
+	Node0xa0eae0 [shape=record,label="{if.end39}"];
+	Node0xa0eae0 -> Node0xa0e8c0;
+	Node0xa54ea0 [shape=record,label="{if.else}"];
+	Node0xa54ea0 -> Node0xa0eae0;
+	Node0x9e4c30 [shape=record,label="{while.end}"];
+	Node0x9e4c30 -> Node0xa04570;
+	Node0xa04570 [shape=record,label="{if.end40}"];
+	Node0xa04570 -> Node0x99bc40;
+	colorscheme = "paired12"
+        subgraph cluster_0xa68010 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xa55500 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xa54530 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0x9c0f10;
+              Node0xa40220;
+            }
+            Node0x9a91a0;
+            Node0x9e8b10;
+            Node0x9f49d0;
+          }
+          subgraph cluster_0xa547b0 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xa64050 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0x9d22d0;
+              Node0x9ef830;
+              Node0x9f2b60;
+            }
+            subgraph cluster_0xa63e90 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0xa0f3a0;
+              Node0x9d43b0;
+              Node0xa54ea0;
+            }
+            Node0x9a95e0;
+            Node0xa10e10;
+            Node0xa13dd0;
+            Node0xa0e8c0;
+            Node0x99d810;
+            Node0x9e7c50;
+            Node0xa0eae0;
+            Node0x9e4c30;
+            Node0xa04570;
+          }
+          Node0x9ce600;
+          Node0x99bc40;
+        }
+}

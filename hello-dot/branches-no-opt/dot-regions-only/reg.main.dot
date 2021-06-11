@@ -1,69 +1,42 @@
 digraph "Region Graph for 'main' function" {
 	label="Region Graph for 'main' function";
 
-	Node0xfaba60 [shape=record,label="{entry}"];
-	Node0xfaba60 -> Node0xfa9570;
-	Node0xfaba60 -> Node0xfab2d0;
-	Node0xfa9570 [shape=record,label="{if.then}"];
-	Node0xfa9570 -> Node0xfab210;
-	Node0xfab210 [shape=record,label="{if.end}"];
-	Node0xfab210 -> Node0xfab080;
-	Node0xfab080 [shape=record,label="{while.cond}"];
-	Node0xfab080 -> Node0xfa9e10;
-	Node0xfab080 -> Node0xfa99c0;
-	Node0xfa9e10 [shape=record,label="{while.body}"];
-	Node0xfa9e10 -> Node0xfab080[constraint=false];
-	Node0xfa99c0 [shape=record,label="{while.end}"];
-	Node0xfa99c0 -> Node0xfb1900;
-	Node0xfa99c0 -> Node0xfa3860;
-	Node0xfa99c0 -> Node0xfa80d0;
-	Node0xfa99c0 -> Node0xfad880;
-	Node0xfa99c0 -> Node0xfa8490;
-	Node0xfb1900 [shape=record,label="{sw.default}"];
-	Node0xfb1900 -> Node0xfa7890;
-	Node0xfa7890 [shape=record,label="{sw.epilog}"];
-	Node0xfa3860 [shape=record,label="{sw.bb}"];
-	Node0xfa3860 -> Node0xfa7890;
-	Node0xfa80d0 [shape=record,label="{sw.bb3}"];
-	Node0xfa80d0 -> Node0xfa7890;
-	Node0xfad880 [shape=record,label="{sw.bb4}"];
-	Node0xfad880 -> Node0xfa7890;
-	Node0xfa8490 [shape=record,label="{sw.bb5}"];
-	Node0xfa8490 -> Node0xfa7890;
-	Node0xfab2d0 [shape=record,label="{if.else}"];
-	Node0xfab2d0 -> Node0xfab210;
+	Node0x1130c70 [shape=record,label="{entry}"];
+	Node0x1130c70 -> Node0x1135d90;
+	Node0x1130c70 -> Node0x112d7a0;
+	Node0x1135d90 [shape=record,label="{if.then}"];
+	Node0x1135d90 -> Node0x1131120;
+	Node0x1131120 [shape=record,label="{if.end}"];
+	Node0x1131120 -> Node0x11336f0;
+	Node0x11336f0 [shape=record,label="{while.cond}"];
+	Node0x11336f0 -> Node0x1127140;
+	Node0x11336f0 -> Node0x112cfa0;
+	Node0x1127140 [shape=record,label="{while.body}"];
+	Node0x1127140 -> Node0x11336f0[constraint=false];
+	Node0x112cfa0 [shape=record,label="{while.end}"];
+	Node0x112d7a0 [shape=record,label="{if.else}"];
+	Node0x112d7a0 -> Node0x1131120;
 	colorscheme = "paired12"
-        subgraph cluster_0xfaf2c0 {
+        subgraph cluster_0x1133750 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0xf7f200 {
+          subgraph cluster_0x11046b0 {
             label = "";
             style = filled;
             color = 3
-            Node0xfaba60;
-            Node0xfa9570;
-            Node0xfab2d0;
+            Node0x1130c70;
+            Node0x1135d90;
+            Node0x112d7a0;
           }
-          subgraph cluster_0xf7f180 {
+          subgraph cluster_0x1103d80 {
             label = "";
             style = filled;
             color = 3
-            Node0xfab080;
-            Node0xfa9e10;
+            Node0x11336f0;
+            Node0x1127140;
           }
-          subgraph cluster_0xf7f100 {
-            label = "";
-            style = filled;
-            color = 3
-            Node0xfa99c0;
-            Node0xfb1900;
-            Node0xfa3860;
-            Node0xfa80d0;
-            Node0xfad880;
-            Node0xfa8490;
-          }
-          Node0xfab210;
-          Node0xfa7890;
+          Node0x1131120;
+          Node0x112cfa0;
         }
 }

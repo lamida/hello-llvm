@@ -1,11 +1,11 @@
 digraph "Post dominator tree for 'setExit' function" {
 	label="Post dominator tree for 'setExit' function";
 
-	Node0x152a670 [shape=record,label="{Post dominance root node}"];
-	Node0x152a670 -> Node0x163e1e0;
-	Node0x163e1e0 [shape=record,label="{%8:\l8:                                                \l  ret void\l}"];
-	Node0x163e1e0 -> Node0x1648e80;
-	Node0x163e1e0 -> Node0x1635410;
-	Node0x1648e80 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load i32, i32* %2, align 4\l  %4 = load i32, i32* @exitValue, align 4\l  %5 = icmp sgt i32 %3, %4\l  br i1 %5, label %6, label %8\l}"];
-	Node0x1635410 [shape=record,label="{%6:\l6:                                                \l  %7 = load i32, i32* %2, align 4\l  store i32 %7, i32* @exitValue, align 4\l  br label %8\l}"];
+	Node0x151b550 [shape=record,label="{Post dominance root node}"];
+	Node0x151b550 -> Node0x1518640;
+	Node0x1518640 [shape=record,label="{%8:\l8:                                                \l  ret void\l}"];
+	Node0x1518640 -> Node0x155dc70;
+	Node0x1518640 -> Node0x1539110;
+	Node0x155dc70 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load i32, i32* %2, align 4\l  %4 = load i32, i32* @exitValue, align 4\l  %5 = icmp sgt i32 %3, %4\l  br i1 %5, label %6, label %8\l}"];
+	Node0x1539110 [shape=record,label="{%6:\l6:                                                \l  %7 = load i32, i32* %2, align 4\l  store i32 %7, i32* @exitValue, align 4\l  br label %8\l}"];
 }

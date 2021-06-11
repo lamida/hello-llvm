@@ -1,0 +1,12 @@
+digraph "Scop Graph for 'CgiError' function" {
+	label="Scop Graph for 'CgiError' function";
+
+	Node0x1a189e0 [shape=record,label="{entry}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1ab52e0 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x1a189e0;
+        }
+}

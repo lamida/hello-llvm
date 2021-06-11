@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'usage' function" {
 	label="Dominator tree for 'usage' function";
 
-	Node0xe91e00 [shape=record,label="{%1:\l  %2 = alloca i8*, align 8\l  store i8* %0, i8** %2, align 8\l  %3 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %4 = call i8* @BZ2_bzlibVersion()\l  %5 = load i8*, i8** %2, align 8\l  %6 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %3,\l... i8* getelementptr inbounds ([1230 x i8], [1230 x i8]* @.str.92, i64 0, i64\l... 0), i8* %4, i8* %5)\l  ret void\l}"];
+	Node0xdaf610 [shape=record,label="{%1:\l  %2 = alloca i8*, align 8\l  store i8* %0, i8** %2, align 8\l  %3 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %4 = call i8* @BZ2_bzlibVersion()\l  %5 = load i8*, i8** %2, align 8\l  %6 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %3,\l... i8* getelementptr inbounds ([1230 x i8], [1230 x i8]* @.str.92, i64 0, i64\l... 0), i8* %4, i8* %5)\l  ret void\l}"];
 }

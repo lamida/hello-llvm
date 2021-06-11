@@ -1,0 +1,63 @@
+digraph "Region Graph for 'RemoveNewline' function" {
+	label="Region Graph for 'RemoveNewline' function";
+
+	Node0xa07d10 [shape=record,label="{entry}"];
+	Node0xa07d10 -> Node0x9a1cc0;
+	Node0xa07d10 -> Node0xa0d950;
+	Node0x9a1cc0 [shape=record,label="{if.then}"];
+	Node0x9a1cc0 -> Node0x9b3f50;
+	Node0x9b3f50 [shape=record,label="{return}"];
+	Node0xa0d950 [shape=record,label="{if.end}"];
+	Node0xa0d950 -> Node0x9e5bb0;
+	Node0x9e5bb0 [shape=record,label="{while.cond}"];
+	Node0x9e5bb0 -> Node0x9f69d0;
+	Node0x9e5bb0 -> Node0x9cc280;
+	Node0x9f69d0 [shape=record,label="{land.lhs.true}"];
+	Node0x9f69d0 -> Node0x9a51d0;
+	Node0x9f69d0 -> Node0x9cc280;
+	Node0x9a51d0 [shape=record,label="{land.rhs}"];
+	Node0x9a51d0 -> Node0x9cc280;
+	Node0x9cc280 [shape=record,label="{land.end}"];
+	Node0x9cc280 -> Node0xa0db70;
+	Node0x9cc280 -> Node0x9ac8f0;
+	Node0xa0db70 [shape=record,label="{while.body}"];
+	Node0xa0db70 -> Node0x9e5bb0[constraint=false];
+	Node0x9ac8f0 [shape=record,label="{while.end}"];
+	Node0x9ac8f0 -> Node0x9b3f50;
+	colorscheme = "paired12"
+        subgraph cluster_0xa977c0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xa63fd0 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xa978c0 {
+              label = "";
+              style = filled;
+              color = 5
+              subgraph cluster_0x9fb9b0 {
+                label = "";
+                style = filled;
+                color = 7
+                subgraph cluster_0xa97a40 {
+                  label = "";
+                  style = filled;
+                  color = 9
+                  Node0x9f69d0;
+                  Node0x9a51d0;
+                }
+                Node0x9e5bb0;
+              }
+              Node0x9cc280;
+              Node0xa0db70;
+            }
+            Node0xa07d10;
+            Node0x9a1cc0;
+            Node0xa0d950;
+            Node0x9ac8f0;
+          }
+          Node0x9b3f50;
+        }
+}

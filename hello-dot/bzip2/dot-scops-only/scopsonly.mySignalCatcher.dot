@@ -1,12 +1,12 @@
 digraph "Scop Graph for 'mySignalCatcher' function" {
 	label="Scop Graph for 'mySignalCatcher' function";
 
-	Node0x22c7170 [shape=record,label="{%1}"];
+	Node0x1874290 [shape=record,label="{%1}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x2406830 {
+        subgraph cluster_0x19027f0 {
           label = "";
           style = solid;
           color = 1
-          Node0x22c7170;
+          Node0x1874290;
         }
 }

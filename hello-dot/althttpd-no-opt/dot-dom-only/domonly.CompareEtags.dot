@@ -1,0 +1,21 @@
+digraph "Dominator tree for 'CompareEtags' function" {
+	label="Dominator tree for 'CompareEtags' function";
+
+	Node0xedfc20 [shape=record,label="{entry}"];
+	Node0xedfc20 -> Node0xe5ef50;
+	Node0xedfc20 -> Node0xee8f00;
+	Node0xedfc20 -> Node0xe2c0d0;
+	Node0xe5ef50 [shape=record,label="{if.then}"];
+	Node0xee8f00 [shape=record,label="{return}"];
+	Node0xe2c0d0 [shape=record,label="{if.end}"];
+	Node0xe2c0d0 -> Node0xec34a0;
+	Node0xe2c0d0 -> Node0xedd5d0;
+	Node0xec34a0 [shape=record,label="{if.then3}"];
+	Node0xec34a0 -> Node0xed9070;
+	Node0xec34a0 -> Node0xedcac0;
+	Node0xed9070 [shape=record,label="{land.lhs.true}"];
+	Node0xed9070 -> Node0xe6b350;
+	Node0xe6b350 [shape=record,label="{if.then13}"];
+	Node0xedcac0 [shape=record,label="{if.end14}"];
+	Node0xedd5d0 [shape=record,label="{if.end15}"];
+}

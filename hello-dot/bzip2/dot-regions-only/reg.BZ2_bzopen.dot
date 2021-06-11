@@ -1,12 +1,12 @@
 digraph "Region Graph for 'BZ2_bzopen' function" {
 	label="Region Graph for 'BZ2_bzopen' function";
 
-	Node0x110f590 [shape=record,label="{%2}"];
+	Node0x1451410 [shape=record,label="{%2}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x10e2c20 {
+        subgraph cluster_0x1447880 {
           label = "";
           style = filled;
           color = 1
-          Node0x110f590;
+          Node0x1451410;
         }
 }

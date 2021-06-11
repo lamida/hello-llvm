@@ -1,0 +1,19 @@
+digraph "CFG for 'BZ2_indexIntoF' function" {
+	label="CFG for 'BZ2_indexIntoF' function";
+
+	Node0x556a61cfc0b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x556a61cfc0b0\":\l  %2 = alloca i32, align 4\l  %3 = alloca i32*, align 8\l  %4 = alloca i32, align 4\l  %5 = alloca i32, align 4\l  %6 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  store i32* %1, i32** %3, align 8\l  store i32 0, i32* %4, align 4\l  store i32 256, i32* %5, align 4\l  br label %\"0x556a61cfc5c0\"\l}"];
+	Node0x556a61cfc0b0 -> Node0x556a61cfc5c0;
+	Node0x556a61cfc5c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61cfc5c0\":                                 \l  %7 = load i32, i32* %4, align 4\l  %8 = load i32, i32* %5, align 4\l  %9 = add nsw i32 %7, %8\l  %10 = ashr i32 %9, 1\l  store i32 %10, i32* %6, align 4\l  %11 = load i32, i32* %2, align 4\l  %12 = load i32*, i32** %3, align 8\l  %13 = load i32, i32* %6, align 4\l  %14 = sext i32 %13 to i64\l  %15 = getelementptr inbounds i32, i32* %12, i64 %14\l  %16 = load i32, i32* %15, align 4\l  %17 = icmp sge i32 %11, %16\l  br i1 %17, label %\"0x556a61cfc1e0\", label %\"0x556a61cfcc70\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61cfc5c0:s0 -> Node0x556a61cfc1e0;
+	Node0x556a61cfc5c0:s1 -> Node0x556a61cfcc70;
+	Node0x556a61cfc1e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{\"0x556a61cfc1e0\":                                 \l  %18 = load i32, i32* %6, align 4\l  store i32 %18, i32* %4, align 4\l  br label %\"0x556a61cfce70\"\l}"];
+	Node0x556a61cfc1e0 -> Node0x556a61cfce70;
+	Node0x556a61cfcc70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{\"0x556a61cfcc70\":                                 \l  %19 = load i32, i32* %6, align 4\l  store i32 %19, i32* %5, align 4\l  br label %\"0x556a61cfce70\"\l}"];
+	Node0x556a61cfcc70 -> Node0x556a61cfce70;
+	Node0x556a61cfce70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61cfce70\":                                 \l  br label %\"0x556a61cfd0a0\"\l}"];
+	Node0x556a61cfce70 -> Node0x556a61cfd0a0;
+	Node0x556a61cfd0a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61cfd0a0\":                                 \l  %20 = load i32, i32* %5, align 4\l  %21 = load i32, i32* %4, align 4\l  %22 = sub nsw i32 %20, %21\l  %23 = icmp ne i32 %22, 1\l  br i1 %23, label %\"0x556a61cfc5c0\", label %\"0x556a61cfd360\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61cfd0a0:s0 -> Node0x556a61cfc5c0;
+	Node0x556a61cfd0a0:s1 -> Node0x556a61cfd360;
+	Node0x556a61cfd360 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x556a61cfd360\":                                 \l  %24 = load i32, i32* %4, align 4\l  ret i32 %24\l}"];
+}

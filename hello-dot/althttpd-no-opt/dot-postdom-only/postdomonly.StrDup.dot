@@ -1,0 +1,13 @@
+digraph "Post dominator tree for 'StrDup' function" {
+	label="Post dominator tree for 'StrDup' function";
+
+	Node0xdcb800 [shape=record,label="{Post dominance root node}"];
+	Node0xdcb800 -> Node0xdb3920;
+	Node0xdb3920 [shape=record,label="{return}"];
+	Node0xdb3920 -> Node0xd9ba40;
+	Node0xdb3920 -> Node0xd7aec0;
+	Node0xdb3920 -> Node0xd78950;
+	Node0xd9ba40 [shape=record,label="{if.then}"];
+	Node0xd7aec0 [shape=record,label="{entry}"];
+	Node0xd78950 [shape=record,label="{if.end}"];
+}

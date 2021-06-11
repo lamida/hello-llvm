@@ -1,12 +1,12 @@
 digraph "Region Graph for 'bsPutUInt32' function" {
 	label="Region Graph for 'bsPutUInt32' function";
 
-	Node0x10f0940 [shape=record,label="{%2}"];
+	Node0x135b400 [shape=record,label="{%2}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x10e8a90 {
+        subgraph cluster_0x10b9270 {
           label = "";
           style = filled;
           color = 1
-          Node0x10f0940;
+          Node0x135b400;
         }
 }

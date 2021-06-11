@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'bz_config_ok' function" {
 	label="Dominator tree for 'bz_config_ok' function";
 
-	Node0xe29c30 [shape=record,label="{%0:\l  ret i32 1\l}"];
+	Node0xa66600 [shape=record,label="{%0:\l  ret i32 1\l}"];
 }

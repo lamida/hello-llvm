@@ -1,12 +1,12 @@
 digraph "Scop Graph for 'BZ2_bzlibVersion' function" {
 	label="Scop Graph for 'BZ2_bzlibVersion' function";
 
-	Node0x1d357a0 [shape=record,label="{%0:\l  ret i8* getelementptr inbounds ([19 x i8], [19 x i8]* @.str.11, i64 0, i64 0)\l}"];
+	Node0x27cd780 [shape=record,label="{%0:\l  ret i8* getelementptr inbounds ([19 x i8], [19 x i8]* @.str.11, i64 0, i64 0)\l}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x1f1e2e0 {
+        subgraph cluster_0x29125a0 {
           label = "";
           style = solid;
           color = 1
-          Node0x1d357a0;
+          Node0x27cd780;
         }
 }

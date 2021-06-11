@@ -1,9 +1,9 @@
 digraph "Dominator tree for 'BZ2_bz__AssertH__fail' function" {
 	label="Dominator tree for 'BZ2_bz__AssertH__fail' function";
 
-	Node0x2209550 [shape=record,label="{%1}"];
-	Node0x2209550 -> Node0x224c1b0;
-	Node0x2209550 -> Node0x22d1280;
-	Node0x224c1b0 [shape=record,label="{%9}"];
-	Node0x22d1280 [shape=record,label="{%12}"];
+	Node0x2187d10 [shape=record,label="{%1}"];
+	Node0x2187d10 -> Node0x2183410;
+	Node0x2187d10 -> Node0x2183260;
+	Node0x2183410 [shape=record,label="{%9}"];
+	Node0x2183260 [shape=record,label="{%12}"];
 }

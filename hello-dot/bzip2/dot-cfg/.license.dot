@@ -1,5 +1,5 @@
 digraph "CFG for 'license' function" {
 	label="CFG for 'license' function";
 
-	Node0x11fe060 [shape=record,label="{%0:\l  %1 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %2 = call i8* @BZ2_bzlibVersion()\l  %3 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %1,\l... i8* getelementptr inbounds ([529 x i8], [529 x i8]* @.str.91, i64 0, i64 0),\l... i8* %2)\l  ret void\l}"];
+	Node0xcde060 [shape=record,label="{%0:\l  %1 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8\l  %2 = call i8* @BZ2_bzlibVersion()\l  %3 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %1,\l... i8* getelementptr inbounds ([529 x i8], [529 x i8]* @.str.91, i64 0, i64 0),\l... i8* %2)\l  ret void\l}"];
 }

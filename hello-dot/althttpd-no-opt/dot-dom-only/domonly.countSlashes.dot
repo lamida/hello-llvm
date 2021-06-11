@@ -1,0 +1,15 @@
+digraph "Dominator tree for 'countSlashes' function" {
+	label="Dominator tree for 'countSlashes' function";
+
+	Node0xe2b990 [shape=record,label="{entry}"];
+	Node0xe2b990 -> Node0xe6eaa0;
+	Node0xe6eaa0 [shape=record,label="{while.cond}"];
+	Node0xe6eaa0 -> Node0xe80070;
+	Node0xe6eaa0 -> Node0xe69340;
+	Node0xe80070 [shape=record,label="{while.body}"];
+	Node0xe80070 -> Node0xe3ba80;
+	Node0xe80070 -> Node0xe8ee40;
+	Node0xe3ba80 [shape=record,label="{if.then}"];
+	Node0xe8ee40 [shape=record,label="{if.end}"];
+	Node0xe69340 [shape=record,label="{while.end}"];
+}

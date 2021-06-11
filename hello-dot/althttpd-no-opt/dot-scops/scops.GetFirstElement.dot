@@ -1,0 +1,120 @@
+digraph "Scop Graph for 'GetFirstElement' function" {
+	label="Scop Graph for 'GetFirstElement' function";
+
+	Node0x204e950 [shape=record,label="{entry:\l  %retval = alloca i8*, align 8\l  %zInput.addr = alloca i8*, align 8\l  %zLeftOver.addr = alloca i8**, align 8\l  %zResult = alloca i8*, align 8\l  store i8* %zInput, i8** %zInput.addr, align 8\l  store i8** %zLeftOver, i8*** %zLeftOver.addr, align 8\l  store i8* null, i8** %zResult, align 8\l  %0 = load i8*, i8** %zInput.addr, align 8\l  %cmp = icmp eq i8* %0, null\l  br i1 %cmp, label %if.then, label %if.end2\l}"];
+	Node0x204e950 -> Node0x1fe1610;
+	Node0x204e950 -> Node0x2021d10;
+	Node0x1fe1610 [shape=record,label="{if.then:                                          \l  %1 = load i8**, i8*** %zLeftOver.addr, align 8\l  %tobool = icmp ne i8** %1, null\l  br i1 %tobool, label %if.then1, label %if.end\l}"];
+	Node0x1fe1610 -> Node0x2025bf0;
+	Node0x1fe1610 -> Node0x2054070;
+	Node0x2025bf0 [shape=record,label="{if.then1:                                         \l  %2 = load i8**, i8*** %zLeftOver.addr, align 8\l  store i8* null, i8** %2, align 8\l  br label %if.end\l}"];
+	Node0x2025bf0 -> Node0x2054070;
+	Node0x2054070 [shape=record,label="{if.end:                                           \l  store i8* null, i8** %retval, align 8\l  br label %return\l}"];
+	Node0x2054070 -> Node0x20679a0;
+	Node0x20679a0 [shape=record,label="{return:                                           \l  %30 = load i8*, i8** %retval, align 8\l  ret i8* %30\l}"];
+	Node0x2021d10 [shape=record,label="{if.end2:                                          \l  br label %while.cond\l}"];
+	Node0x2021d10 -> Node0x1fc1760;
+	Node0x1fc1760 [shape=record,label="{while.cond:                                       \l  %call = call i16** @__ctype_b_loc() #8\l  %3 = load i16*, i16** %call, align 8\l  %4 = load i8*, i8** %zInput.addr, align 8\l  %5 = load i8, i8* %4, align 1\l  %conv = zext i8 %5 to i32\l  %idxprom = sext i32 %conv to i64\l  %arrayidx = getelementptr inbounds i16, i16* %3, i64 %idxprom\l  %6 = load i16, i16* %arrayidx, align 2\l  %conv3 = zext i16 %6 to i32\l  %and = and i32 %conv3, 8192\l  %tobool4 = icmp ne i32 %and, 0\l  br i1 %tobool4, label %while.body, label %while.end\l}"];
+	Node0x1fc1760 -> Node0x1fd25f0;
+	Node0x1fc1760 -> Node0x204b590;
+	Node0x1fd25f0 [shape=record,label="{while.body:                                       \l  %7 = load i8*, i8** %zInput.addr, align 8\l  %incdec.ptr = getelementptr inbounds i8, i8* %7, i32 1\l  store i8* %incdec.ptr, i8** %zInput.addr, align 8\l  br label %while.cond\l}"];
+	Node0x1fd25f0 -> Node0x1fc1760[constraint=false];
+	Node0x204b590 [shape=record,label="{while.end:                                        \l  %8 = load i8*, i8** %zInput.addr, align 8\l  store i8* %8, i8** %zResult, align 8\l  br label %while.cond5\l}"];
+	Node0x204b590 -> Node0x2064360;
+	Node0x2064360 [shape=record,label="{while.cond5:                                      \l  %9 = load i8*, i8** %zInput.addr, align 8\l  %10 = load i8, i8* %9, align 1\l  %conv6 = sext i8 %10 to i32\l  %tobool7 = icmp ne i32 %conv6, 0\l  br i1 %tobool7, label %land.rhs, label %land.end\l}"];
+	Node0x2064360 -> Node0x20623c0;
+	Node0x2064360 -> Node0x1fe19c0;
+	Node0x20623c0 [shape=record,label="{land.rhs:                                         \l  %call8 = call i16** @__ctype_b_loc() #8\l  %11 = load i16*, i16** %call8, align 8\l  %12 = load i8*, i8** %zInput.addr, align 8\l  %13 = load i8, i8* %12, align 1\l  %conv9 = zext i8 %13 to i32\l  %idxprom10 = sext i32 %conv9 to i64\l  %arrayidx11 = getelementptr inbounds i16, i16* %11, i64 %idxprom10\l  %14 = load i16, i16* %arrayidx11, align 2\l  %conv12 = zext i16 %14 to i32\l  %and13 = and i32 %conv12, 8192\l  %tobool14 = icmp ne i32 %and13, 0\l  %lnot = xor i1 %tobool14, true\l  br label %land.end\l}"];
+	Node0x20623c0 -> Node0x1fe19c0;
+	Node0x1fe19c0 [shape=record,label="{land.end:                                         \l  %15 = phi i1 [ false, %while.cond5 ], [ %lnot, %land.rhs ]\l  br i1 %15, label %while.body15, label %while.end17\l}"];
+	Node0x1fe19c0 -> Node0x204de20;
+	Node0x1fe19c0 -> Node0x1ff9d70;
+	Node0x204de20 [shape=record,label="{while.body15:                                     \l  %16 = load i8*, i8** %zInput.addr, align 8\l  %incdec.ptr16 = getelementptr inbounds i8, i8* %16, i32 1\l  store i8* %incdec.ptr16, i8** %zInput.addr, align 8\l  br label %while.cond5\l}"];
+	Node0x204de20 -> Node0x2064360[constraint=false];
+	Node0x1ff9d70 [shape=record,label="{while.end17:                                      \l  %17 = load i8*, i8** %zInput.addr, align 8\l  %18 = load i8, i8* %17, align 1\l  %tobool18 = icmp ne i8 %18, 0\l  br i1 %tobool18, label %if.then19, label %if.end32\l}"];
+	Node0x1ff9d70 -> Node0x2005230;
+	Node0x1ff9d70 -> Node0x20295f0;
+	Node0x2005230 [shape=record,label="{if.then19:                                        \l  %19 = load i8*, i8** %zInput.addr, align 8\l  store i8 0, i8* %19, align 1\l  %20 = load i8*, i8** %zInput.addr, align 8\l  %incdec.ptr20 = getelementptr inbounds i8, i8* %20, i32 1\l  store i8* %incdec.ptr20, i8** %zInput.addr, align 8\l  br label %while.cond21\l}"];
+	Node0x2005230 -> Node0x204f550;
+	Node0x204f550 [shape=record,label="{while.cond21:                                     \l  %call22 = call i16** @__ctype_b_loc() #8\l  %21 = load i16*, i16** %call22, align 8\l  %22 = load i8*, i8** %zInput.addr, align 8\l  %23 = load i8, i8* %22, align 1\l  %conv23 = zext i8 %23 to i32\l  %idxprom24 = sext i32 %conv23 to i64\l  %arrayidx25 = getelementptr inbounds i16, i16* %21, i64 %idxprom24\l  %24 = load i16, i16* %arrayidx25, align 2\l  %conv26 = zext i16 %24 to i32\l  %and27 = and i32 %conv26, 8192\l  %tobool28 = icmp ne i32 %and27, 0\l  br i1 %tobool28, label %while.body29, label %while.end31\l}"];
+	Node0x204f550 -> Node0x207fa20;
+	Node0x204f550 -> Node0x202f0d0;
+	Node0x207fa20 [shape=record,label="{while.body29:                                     \l  %25 = load i8*, i8** %zInput.addr, align 8\l  %incdec.ptr30 = getelementptr inbounds i8, i8* %25, i32 1\l  store i8* %incdec.ptr30, i8** %zInput.addr, align 8\l  br label %while.cond21\l}"];
+	Node0x207fa20 -> Node0x204f550[constraint=false];
+	Node0x202f0d0 [shape=record,label="{while.end31:                                      \l  br label %if.end32\l}"];
+	Node0x202f0d0 -> Node0x20295f0;
+	Node0x20295f0 [shape=record,label="{if.end32:                                         \l  %26 = load i8**, i8*** %zLeftOver.addr, align 8\l  %tobool33 = icmp ne i8** %26, null\l  br i1 %tobool33, label %if.then34, label %if.end35\l}"];
+	Node0x20295f0 -> Node0x2081220;
+	Node0x20295f0 -> Node0x1fd9a20;
+	Node0x2081220 [shape=record,label="{if.then34:                                        \l  %27 = load i8*, i8** %zInput.addr, align 8\l  %28 = load i8**, i8*** %zLeftOver.addr, align 8\l  store i8* %27, i8** %28, align 8\l  br label %if.end35\l}"];
+	Node0x2081220 -> Node0x1fd9a20;
+	Node0x1fd9a20 [shape=record,label="{if.end35:                                         \l  %29 = load i8*, i8** %zResult, align 8\l  store i8* %29, i8** %retval, align 8\l  br label %return\l}"];
+	Node0x1fd9a20 -> Node0x20679a0;
+	colorscheme = "paired12"
+        subgraph cluster_0x20e82f0 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x2043f80 {
+            label = "Region containing entry block of function is invalid!";
+            style = solid;
+            color = 6
+            subgraph cluster_0x20e83f0 {
+              label = "Region can not profitably be optimized!";
+              style = solid;
+              color = 5
+              Node0x1fe1610;
+              Node0x2025bf0;
+            }
+            subgraph cluster_0x20a9010 {
+              label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: while.cond";
+              style = solid;
+              color = 5
+              Node0x1fc1760;
+              Node0x1fd25f0;
+            }
+            subgraph cluster_0x2112a20 {
+              label = "Condition in BB 'land.end' neither constant nor an icmp instruction";
+              style = solid;
+              color = 5
+              subgraph cluster_0x20f5650 {
+                label = "Region can not profitably be optimized!";
+                style = solid;
+                color = 7
+                Node0x2064360;
+                Node0x20623c0;
+              }
+              Node0x1fe19c0;
+              Node0x204de20;
+            }
+            subgraph cluster_0x20e8470 {
+              label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: while.cond21";
+              style = solid;
+              color = 5
+              subgraph cluster_0x20e8370 {
+                label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: while.cond21";
+                style = solid;
+                color = 7
+                Node0x204f550;
+                Node0x207fa20;
+              }
+              Node0x1ff9d70;
+              Node0x2005230;
+              Node0x202f0d0;
+            }
+            subgraph cluster_0x20e8270 {
+              label = "Region can not profitably be optimized!";
+              style = solid;
+              color = 5
+              Node0x20295f0;
+              Node0x2081220;
+            }
+            Node0x204e950;
+            Node0x2054070;
+            Node0x2021d10;
+            Node0x204b590;
+            Node0x1fd9a20;
+          }
+          Node0x20679a0;
+        }
+}

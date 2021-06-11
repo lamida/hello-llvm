@@ -1,27 +1,27 @@
 digraph "Region Graph for 'BZ2_bzwrite' function" {
 	label="Region Graph for 'BZ2_bzwrite' function";
 
-	Node0x105c410 [shape=record,label="{%3}"];
-	Node0x105c410 -> Node0x1032ca0;
-	Node0x105c410 -> Node0xf6c7a0;
-	Node0x1032ca0 [shape=record,label="{%14}"];
-	Node0x1032ca0 -> Node0x104b570;
-	Node0x104b570 [shape=record,label="{%17}"];
-	Node0xf6c7a0 [shape=record,label="{%16}"];
-	Node0xf6c7a0 -> Node0x104b570;
+	Node0x1381450 [shape=record,label="{%3}"];
+	Node0x1381450 -> Node0x1360c80;
+	Node0x1381450 -> Node0x13804c0;
+	Node0x1360c80 [shape=record,label="{%14}"];
+	Node0x1360c80 -> Node0x14412b0;
+	Node0x14412b0 [shape=record,label="{%17}"];
+	Node0x13804c0 [shape=record,label="{%16}"];
+	Node0x13804c0 -> Node0x14412b0;
 	colorscheme = "paired12"
-        subgraph cluster_0x10e8a90 {
+        subgraph cluster_0x1484d00 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0x114abf0 {
+          subgraph cluster_0x145b920 {
             label = "";
             style = filled;
             color = 3
-            Node0x105c410;
-            Node0x1032ca0;
-            Node0xf6c7a0;
+            Node0x1381450;
+            Node0x1360c80;
+            Node0x13804c0;
           }
-          Node0x104b570;
+          Node0x14412b0;
         }
 }

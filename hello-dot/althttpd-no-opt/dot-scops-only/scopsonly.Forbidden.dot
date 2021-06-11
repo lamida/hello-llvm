@@ -1,0 +1,12 @@
+digraph "Scop Graph for 'Forbidden' function" {
+	label="Scop Graph for 'Forbidden' function";
+
+	Node0x1abf980 [shape=record,label="{entry}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x1ab53e0 {
+          label = "";
+          style = solid;
+          color = 1
+          Node0x1abf980;
+        }
+}

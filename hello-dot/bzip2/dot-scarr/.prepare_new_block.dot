@@ -1,0 +1,14 @@
+digraph "CFG for 'prepare_new_block' function" {
+	label="CFG for 'prepare_new_block' function";
+
+	Node0x556a61d0a4a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x556a61d0a4a0\":\l  %1 = alloca %struct.EState*, align 8\l  %2 = alloca i32, align 4\l  store %struct.EState* %0, %struct.EState** %1, align 8\l  %3 = load %struct.EState*, %struct.EState** %1, align 8\l  %4 = getelementptr inbounds %struct.EState, %struct.EState* %3, i32 0, i32 17\l  store i32 0, i32* %4, align 4\l  %5 = load %struct.EState*, %struct.EState** %1, align 8\l  %6 = getelementptr inbounds %struct.EState, %struct.EState* %5, i32 0, i32 19\l  store i32 0, i32* %6, align 4\l  %7 = load %struct.EState*, %struct.EState** %1, align 8\l  %8 = getelementptr inbounds %struct.EState, %struct.EState* %7, i32 0, i32 20\l  store i32 0, i32* %8, align 8\l  %9 = load %struct.EState*, %struct.EState** %1, align 8\l  %10 = getelementptr inbounds %struct.EState, %struct.EState* %9, i32 0, i32\l... 26\l  store i32 -1, i32* %10, align 8\l  store i32 0, i32* %2, align 4\l  br label %\"0x556a61d0a6d0\"\l}"];
+	Node0x556a61d0a4a0 -> Node0x556a61d0a6d0;
+	Node0x556a61d0a6d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61d0a6d0\":                                 \l  %11 = load i32, i32* %2, align 4\l  %12 = icmp slt i32 %11, 256\l  br i1 %12, label %\"0x556a61d479d0\", label %\"0x556a61d47a20\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61d0a6d0:s0 -> Node0x556a61d479d0;
+	Node0x556a61d0a6d0:s1 -> Node0x556a61d47a20;
+	Node0x556a61d479d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x556a61d479d0\":                                 \l  %13 = load %struct.EState*, %struct.EState** %1, align 8\l  %14 = getelementptr inbounds %struct.EState, %struct.EState* %13, i32 0, i32\l... 22\l  %15 = load i32, i32* %2, align 4\l  %16 = sext i32 %15 to i64\l  %17 = getelementptr inbounds [256 x i8], [256 x i8]* %14, i64 0, i64 %16\l  store i8 0, i8* %17, align 1\l  br label %\"0x556a61d47df0\"\l}"];
+	Node0x556a61d479d0 -> Node0x556a61d47df0;
+	Node0x556a61d47df0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x556a61d47df0\":                                 \l  %18 = load i32, i32* %2, align 4\l  %19 = add nsw i32 %18, 1\l  store i32 %19, i32* %2, align 4\l  br label %\"0x556a61d0a6d0\"\l}"];
+	Node0x556a61d47df0 -> Node0x556a61d0a6d0;
+	Node0x556a61d47a20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x556a61d47a20\":                                 \l  %20 = load %struct.EState*, %struct.EState** %1, align 8\l  %21 = getelementptr inbounds %struct.EState, %struct.EState* %20, i32 0, i32\l... 29\l  %22 = load i32, i32* %21, align 4\l  %23 = add nsw i32 %22, 1\l  store i32 %23, i32* %21, align 4\l  ret void\l}"];
+}

@@ -1,0 +1,12 @@
+digraph "CFG for 'myfeof' function" {
+	label="CFG for 'myfeof' function";
+
+	Node0x556a61de0260 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61de0260 - Exit Point\":\l  %1 = alloca i8, align 1\l  %2 = alloca %struct._IO_FILE*, align 8\l  %3 = alloca i32, align 4\l  store %struct._IO_FILE* %0, %struct._IO_FILE** %2, align 8\l  %4 = load %struct._IO_FILE*, %struct._IO_FILE** %2, align 8\l  %5 = call i32 @fgetc(%struct._IO_FILE* %4)\l  store i32 %5, i32* %3, align 4\l  %6 = load i32, i32* %3, align 4\l  %7 = icmp eq i32 %6, -1\l  br i1 %7, label %\"0x556a61de0430\", label %\"0x556a61de66e0 - Exit Point\"\l|{<s0>T|<s1>F}}"];
+	Node0x556a61de0260:s0 -> Node0x556a61de0430;
+	Node0x556a61de0260:s1 -> Node0x556a61de66e0;
+	Node0x556a61de0430 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{\"0x556a61de0430\":                                 \l  store i8 1, i8* %1, align 1\l  br label %\"0x556a61de6870\"\l}"];
+	Node0x556a61de0430 -> Node0x556a61de6870;
+	Node0x556a61de66e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{\"0x556a61de66e0 - Exit Point\":                    \l  %8 = load i32, i32* %3, align 4\l  %9 = load %struct._IO_FILE*, %struct._IO_FILE** %2, align 8\l  %10 = call i32 @ungetc(i32 %8, %struct._IO_FILE* %9)\l  store i8 0, i8* %1, align 1\l  br label %\"0x556a61de6870\"\l}"];
+	Node0x556a61de66e0 -> Node0x556a61de6870;
+	Node0x556a61de6870 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556a61de6870\":                                 \l  %11 = load i8, i8* %1, align 1\l  ret i8 %11\l}"];
+}

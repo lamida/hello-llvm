@@ -1,0 +1,45 @@
+digraph "Dominator tree for 'SendFile' function" {
+	label="Dominator tree for 'SendFile' function";
+
+	Node0xeab780 [shape=record,label="{entry}"];
+	Node0xeab780 -> Node0xe61310;
+	Node0xeab780 -> Node0xeabd00;
+	Node0xe61310 [shape=record,label="{if.then}"];
+	Node0xeabd00 [shape=record,label="{if.end}"];
+	Node0xeabd00 -> Node0xe5f450;
+	Node0xeabd00 -> Node0xea4a70;
+	Node0xeabd00 -> Node0xe6c710;
+	Node0xe5f450 [shape=record,label="{if.then17}"];
+	Node0xea4a70 [shape=record,label="{return}"];
+	Node0xe6c710 [shape=record,label="{lor.lhs.false}"];
+	Node0xe6c710 -> Node0xe9aad0;
+	Node0xe6c710 -> Node0xed9d20;
+	Node0xe9aad0 [shape=record,label="{land.lhs.true}"];
+	Node0xe9aad0 -> Node0xe97c20;
+	Node0xe97c20 [shape=record,label="{land.lhs.true12}"];
+	Node0xed9d20 [shape=record,label="{if.end29}"];
+	Node0xed9d20 -> Node0xeb3c20;
+	Node0xed9d20 -> Node0xe4f2d0;
+	Node0xeb3c20 [shape=record,label="{if.then33}"];
+	Node0xe4f2d0 [shape=record,label="{if.end34}"];
+	Node0xe4f2d0 -> Node0xebcbb0;
+	Node0xe4f2d0 -> Node0xedffe0;
+	Node0xe4f2d0 -> Node0xe5ddf0;
+	Node0xebcbb0 [shape=record,label="{land.lhs.true37}"];
+	Node0xebcbb0 -> Node0xe28cf0;
+	Node0xe28cf0 [shape=record,label="{if.then42}"];
+	Node0xe28cf0 -> Node0xe80940;
+	Node0xe28cf0 -> Node0xe288b0;
+	Node0xe80940 [shape=record,label="{if.then47}"];
+	Node0xe288b0 [shape=record,label="{if.end50}"];
+	Node0xedffe0 [shape=record,label="{if.end59}"];
+	Node0xedffe0 -> Node0xe42f10;
+	Node0xedffe0 -> Node0xec26b0;
+	Node0xe42f10 [shape=record,label="{if.then79}"];
+	Node0xec26b0 [shape=record,label="{if.end82}"];
+	Node0xec26b0 -> Node0xe03920;
+	Node0xec26b0 -> Node0xe806f0;
+	Node0xe03920 [shape=record,label="{if.then84}"];
+	Node0xe806f0 [shape=record,label="{if.end89}"];
+	Node0xe5ddf0 [shape=record,label="{if.else}"];
+}

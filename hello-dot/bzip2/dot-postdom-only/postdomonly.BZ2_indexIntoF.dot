@@ -1,19 +1,19 @@
 digraph "Post dominator tree for 'BZ2_indexIntoF' function" {
 	label="Post dominator tree for 'BZ2_indexIntoF' function";
 
-	Node0x8f6b70 [shape=record,label="{Post dominance root node}"];
-	Node0x8f6b70 -> Node0x8f6b10;
-	Node0x8f6b10 [shape=record,label="{%30}"];
-	Node0x8f6b10 -> Node0xb7f590;
-	Node0xb7f590 [shape=record,label="{%25}"];
-	Node0xb7f590 -> Node0xc89630;
-	Node0xc89630 [shape=record,label="{%24}"];
-	Node0xc89630 -> Node0xbbab40;
-	Node0xc89630 -> Node0xbd4530;
-	Node0xc89630 -> Node0xc00b10;
-	Node0xbbab40 [shape=record,label="{%20}"];
-	Node0xbd4530 [shape=record,label="{%8}"];
-	Node0xbd4530 -> Node0xbec260;
-	Node0xbec260 [shape=record,label="{%2}"];
-	Node0xc00b10 [shape=record,label="{%22}"];
+	Node0xfb5b20 [shape=record,label="{Post dominance root node}"];
+	Node0xfb5b20 -> Node0x1357830;
+	Node0x1357830 [shape=record,label="{%30}"];
+	Node0x1357830 -> Node0xfb5ac0;
+	Node0xfb5ac0 [shape=record,label="{%25}"];
+	Node0xfb5ac0 -> Node0x12a9110;
+	Node0x12a9110 [shape=record,label="{%24}"];
+	Node0x12a9110 -> Node0x1152d20;
+	Node0x12a9110 -> Node0x102b880;
+	Node0x12a9110 -> Node0x1050ee0;
+	Node0x1152d20 [shape=record,label="{%20}"];
+	Node0x102b880 [shape=record,label="{%8}"];
+	Node0x102b880 -> Node0x133ec00;
+	Node0x133ec00 [shape=record,label="{%2}"];
+	Node0x1050ee0 [shape=record,label="{%22}"];
 }

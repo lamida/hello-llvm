@@ -1,12 +1,12 @@
 digraph "Region Graph for 'bz_config_ok' function" {
 	label="Region Graph for 'bz_config_ok' function";
 
-	Node0x10fa170 [shape=record,label="{%0}"];
+	Node0x14290b0 [shape=record,label="{%0}"];
 	colorscheme = "paired12"
-        subgraph cluster_0xd7e8e0 {
+        subgraph cluster_0x145b610 {
           label = "";
           style = filled;
           color = 1
-          Node0x10fa170;
+          Node0x14290b0;
         }
 }

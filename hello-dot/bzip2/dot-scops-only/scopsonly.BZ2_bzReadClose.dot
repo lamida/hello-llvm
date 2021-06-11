@@ -1,123 +1,123 @@
 digraph "Scop Graph for 'BZ2_bzReadClose' function" {
 	label="Scop Graph for 'BZ2_bzReadClose' function";
 
-	Node0x22c91c0 [shape=record,label="{%2}"];
-	Node0x22c91c0 -> Node0x22c4ab0;
-	Node0x22c91c0 -> Node0x234f660;
-	Node0x22c4ab0 [shape=record,label="{%10}"];
-	Node0x22c4ab0 -> Node0x234f660;
-	Node0x234f660 [shape=record,label="{%12}"];
-	Node0x234f660 -> Node0x22543a0;
-	Node0x234f660 -> Node0x22b0190;
-	Node0x22543a0 [shape=record,label="{%15}"];
-	Node0x22543a0 -> Node0x22b0190;
-	Node0x22b0190 [shape=record,label="{%18}"];
-	Node0x22b0190 -> Node0x234ff10;
-	Node0x22b0190 -> Node0x22d91e0;
-	Node0x234ff10 [shape=record,label="{%21}"];
-	Node0x234ff10 -> Node0x2101fe0;
-	Node0x234ff10 -> Node0x22dd940;
-	Node0x2101fe0 [shape=record,label="{%24}"];
-	Node0x2101fe0 -> Node0x22dd940;
-	Node0x22dd940 [shape=record,label="{%26}"];
-	Node0x22dd940 -> Node0x22d0f60;
-	Node0x22dd940 -> Node0x2079db0;
-	Node0x22d0f60 [shape=record,label="{%29}"];
-	Node0x22d0f60 -> Node0x2079db0;
-	Node0x2079db0 [shape=record,label="{%32}"];
-	Node0x2079db0 -> Node0x2114b80;
-	Node0x2114b80 [shape=record,label="{%62}"];
-	Node0x22d91e0 [shape=record,label="{%33}"];
-	Node0x22d91e0 -> Node0x205e9d0;
-	Node0x22d91e0 -> Node0x2078a20;
-	Node0x205e9d0 [shape=record,label="{%38}"];
-	Node0x205e9d0 -> Node0x22aae40;
-	Node0x205e9d0 -> Node0x22ceec0;
-	Node0x22aae40 [shape=record,label="{%41}"];
-	Node0x22aae40 -> Node0x22ceec0;
-	Node0x22ceec0 [shape=record,label="{%43}"];
-	Node0x22ceec0 -> Node0x22da8f0;
-	Node0x22ceec0 -> Node0x229b380;
-	Node0x22da8f0 [shape=record,label="{%46}"];
-	Node0x22da8f0 -> Node0x229b380;
-	Node0x229b380 [shape=record,label="{%49}"];
-	Node0x229b380 -> Node0x2114b80;
-	Node0x2078a20 [shape=record,label="{%50}"];
-	Node0x2078a20 -> Node0x22ddd70;
-	Node0x2078a20 -> Node0x229ce90;
-	Node0x22ddd70 [shape=record,label="{%55}"];
-	Node0x22ddd70 -> Node0x229ce90;
-	Node0x229ce90 [shape=record,label="{%59}"];
-	Node0x229ce90 -> Node0x2114b80;
+	Node0x1849510 [shape=record,label="{%2}"];
+	Node0x1849510 -> Node0x18dbe40;
+	Node0x1849510 -> Node0x1827a60;
+	Node0x18dbe40 [shape=record,label="{%10}"];
+	Node0x18dbe40 -> Node0x1827a60;
+	Node0x1827a60 [shape=record,label="{%12}"];
+	Node0x1827a60 -> Node0x18d9e90;
+	Node0x1827a60 -> Node0x17421a0;
+	Node0x18d9e90 [shape=record,label="{%15}"];
+	Node0x18d9e90 -> Node0x17421a0;
+	Node0x17421a0 [shape=record,label="{%18}"];
+	Node0x17421a0 -> Node0x15a1750;
+	Node0x17421a0 -> Node0x17dcd50;
+	Node0x15a1750 [shape=record,label="{%21}"];
+	Node0x15a1750 -> Node0x18d7750;
+	Node0x15a1750 -> Node0x18250a0;
+	Node0x18d7750 [shape=record,label="{%24}"];
+	Node0x18d7750 -> Node0x18250a0;
+	Node0x18250a0 [shape=record,label="{%26}"];
+	Node0x18250a0 -> Node0x15814a0;
+	Node0x18250a0 -> Node0x18e0f40;
+	Node0x15814a0 [shape=record,label="{%29}"];
+	Node0x15814a0 -> Node0x18e0f40;
+	Node0x18e0f40 [shape=record,label="{%32}"];
+	Node0x18e0f40 -> Node0x18caba0;
+	Node0x18caba0 [shape=record,label="{%62}"];
+	Node0x17dcd50 [shape=record,label="{%33}"];
+	Node0x17dcd50 -> Node0x1830270;
+	Node0x17dcd50 -> Node0x15e99d0;
+	Node0x1830270 [shape=record,label="{%38}"];
+	Node0x1830270 -> Node0x15e0cf0;
+	Node0x1830270 -> Node0x18d0b40;
+	Node0x15e0cf0 [shape=record,label="{%41}"];
+	Node0x15e0cf0 -> Node0x18d0b40;
+	Node0x18d0b40 [shape=record,label="{%43}"];
+	Node0x18d0b40 -> Node0x18ed710;
+	Node0x18d0b40 -> Node0x184bf70;
+	Node0x18ed710 [shape=record,label="{%46}"];
+	Node0x18ed710 -> Node0x184bf70;
+	Node0x184bf70 [shape=record,label="{%49}"];
+	Node0x184bf70 -> Node0x18caba0;
+	Node0x15e99d0 [shape=record,label="{%50}"];
+	Node0x15e99d0 -> Node0x182eb00;
+	Node0x15e99d0 -> Node0x1819a10;
+	Node0x182eb00 [shape=record,label="{%55}"];
+	Node0x182eb00 -> Node0x1819a10;
+	Node0x1819a10 [shape=record,label="{%59}"];
+	Node0x1819a10 -> Node0x18caba0;
 	colorscheme = "paired12"
-        subgraph cluster_0x23a7430 {
+        subgraph cluster_0x1924430 {
           label = "";
           style = solid;
           color = 1
-          subgraph cluster_0x235e0a0 {
+          subgraph cluster_0x1840e10 {
             label = "";
             style = solid;
             color = 6
-            Node0x22c91c0;
-            Node0x22c4ab0;
+            Node0x1849510;
+            Node0x18dbe40;
           }
-          subgraph cluster_0x2355e80 {
+          subgraph cluster_0x19037e0 {
             label = "";
             style = solid;
             color = 6
-            Node0x234f660;
-            Node0x22543a0;
+            Node0x1827a60;
+            Node0x18d9e90;
           }
-          subgraph cluster_0x2374570 {
+          subgraph cluster_0x18f4f80 {
             label = "";
             style = solid;
             color = 6
-            subgraph cluster_0x1fd62f0 {
+            subgraph cluster_0x1958850 {
               label = "";
               style = solid;
               color = 5
-              Node0x234ff10;
-              Node0x2101fe0;
+              Node0x15a1750;
+              Node0x18d7750;
             }
-            subgraph cluster_0x239daa0 {
+            subgraph cluster_0x155e0a0 {
               label = "";
               style = solid;
               color = 5
-              Node0x22dd940;
-              Node0x22d0f60;
+              Node0x18250a0;
+              Node0x15814a0;
             }
-            subgraph cluster_0x1fd35b0 {
+            subgraph cluster_0x1958ab0 {
               label = "";
               style = solid;
               color = 5
-              subgraph cluster_0x239e120 {
+              subgraph cluster_0x1958950 {
                 label = "";
                 style = solid;
                 color = 7
-                Node0x205e9d0;
-                Node0x22aae40;
+                Node0x1830270;
+                Node0x15e0cf0;
               }
-              subgraph cluster_0x239e0a0 {
+              subgraph cluster_0x1945120 {
                 label = "";
                 style = solid;
                 color = 7
-                Node0x22ceec0;
-                Node0x22da8f0;
+                Node0x18d0b40;
+                Node0x18ed710;
               }
-              subgraph cluster_0x1fd3530 {
+              subgraph cluster_0x19589d0 {
                 label = "";
                 style = solid;
                 color = 7
-                Node0x2078a20;
-                Node0x22ddd70;
+                Node0x15e99d0;
+                Node0x182eb00;
               }
-              Node0x22d91e0;
-              Node0x229b380;
-              Node0x229ce90;
+              Node0x17dcd50;
+              Node0x184bf70;
+              Node0x1819a10;
             }
-            Node0x22b0190;
-            Node0x2079db0;
+            Node0x17421a0;
+            Node0x18e0f40;
           }
-          Node0x2114b80;
+          Node0x18caba0;
         }
 }

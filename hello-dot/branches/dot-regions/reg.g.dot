@@ -1,0 +1,39 @@
+digraph "Region Graph for 'g' function" {
+	label="Region Graph for 'g' function";
+
+	Node0x2762ea0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  store i32 4, i32* %1, align 4\l  %2 = load i32, i32* %1, align 4\l  switch i32 %2, label %7 [\l    i32 1, label %3\l    i32 2, label %4\l    i32 3, label %5\l    i32 4, label %6\l  ]\l}"];
+	Node0x2762ea0 -> Node0x2762780;
+	Node0x2762ea0 -> Node0x27624e0;
+	Node0x2762ea0 -> Node0x2762240;
+	Node0x2762ea0 -> Node0x2761fa0;
+	Node0x2762ea0 -> Node0x27631d0;
+	Node0x2762780 [shape=record,label="{%7:\l7:                                                \l  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.11, i64 0, i64 0))\l  br label %9\l}"];
+	Node0x2762780 -> Node0x2764600;
+	Node0x2764600 [shape=record,label="{%9:\l9:                                                \l  ret void\l}"];
+	Node0x27624e0 [shape=record,label="{%3:\l3:                                                \l  call void @g1()\l  br label %9\l}"];
+	Node0x27624e0 -> Node0x2764600;
+	Node0x2762240 [shape=record,label="{%4:\l4:                                                \l  call void @g2()\l  br label %9\l}"];
+	Node0x2762240 -> Node0x2764600;
+	Node0x2761fa0 [shape=record,label="{%5:\l5:                                                \l  call void @g3()\l  br label %9\l}"];
+	Node0x2761fa0 -> Node0x2764600;
+	Node0x27631d0 [shape=record,label="{%6:\l6:                                                \l  call void @g4()\l  br label %9\l}"];
+	Node0x27631d0 -> Node0x2764600;
+	colorscheme = "paired12"
+        subgraph cluster_0x2766c40 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x273a0f0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x2762ea0;
+            Node0x2762780;
+            Node0x27624e0;
+            Node0x2762240;
+            Node0x2761fa0;
+            Node0x27631d0;
+          }
+          Node0x2764600;
+        }
+}

@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'bsPutUChar' function" {
 	label="Dominator tree for 'bsPutUChar' function";
 
-	Node0xdc87f0 [shape=record,label="{%2:\l  %3 = alloca %struct.EState*, align 8\l  %4 = alloca i8, align 1\l  store %struct.EState* %0, %struct.EState** %3, align 8\l  store i8 %1, i8* %4, align 1\l  %5 = load %struct.EState*, %struct.EState** %3, align 8\l  %6 = load i8, i8* %4, align 1\l  %7 = zext i8 %6 to i32\l  call void @bsW(%struct.EState* %5, i32 8, i32 %7)\l  ret void\l}"];
+	Node0xa634b0 [shape=record,label="{%2:\l  %3 = alloca %struct.EState*, align 8\l  %4 = alloca i8, align 1\l  store %struct.EState* %0, %struct.EState** %3, align 8\l  store i8 %1, i8* %4, align 1\l  %5 = load %struct.EState*, %struct.EState** %3, align 8\l  %6 = load i8, i8* %4, align 1\l  %7 = zext i8 %6 to i32\l  call void @bsW(%struct.EState* %5, i32 8, i32 %7)\l  ret void\l}"];
 }

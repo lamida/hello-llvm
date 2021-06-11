@@ -1,0 +1,17 @@
+digraph "Post dominator tree for 'countSlashes' function" {
+	label="Post dominator tree for 'countSlashes' function";
+
+	Node0xd5ec00 [shape=record,label="{Post dominance root node}"];
+	Node0xd5ec00 -> Node0xd02c30;
+	Node0xd02c30 [shape=record,label="{while.end}"];
+	Node0xd02c30 -> Node0xd8c390;
+	Node0xd8c390 [shape=record,label="{while.cond}"];
+	Node0xd8c390 -> Node0xdb07c0;
+	Node0xd8c390 -> Node0xda4c50;
+	Node0xdb07c0 [shape=record,label="{entry}"];
+	Node0xda4c50 [shape=record,label="{if.end}"];
+	Node0xda4c50 -> Node0xd3cfb0;
+	Node0xda4c50 -> Node0xd4d710;
+	Node0xd3cfb0 [shape=record,label="{while.body}"];
+	Node0xd4d710 [shape=record,label="{if.then}"];
+}

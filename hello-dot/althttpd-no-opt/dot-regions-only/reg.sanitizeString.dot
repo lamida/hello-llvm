@@ -1,0 +1,87 @@
+digraph "Region Graph for 'sanitizeString' function" {
+	label="Region Graph for 'sanitizeString' function";
+
+	Node0xa4b000 [shape=record,label="{entry}"];
+	Node0xa4b000 -> Node0xa46660;
+	Node0xa46660 [shape=record,label="{while.cond}"];
+	Node0xa46660 -> Node0xa53160;
+	Node0xa46660 -> Node0x9c3b70;
+	Node0xa53160 [shape=record,label="{while.body}"];
+	Node0xa53160 -> Node0x995d00;
+	Node0xa53160 -> Node0xa2abe0;
+	Node0x995d00 [shape=record,label="{if.end21}"];
+	Node0x995d00 -> Node0xa46660[constraint=false];
+	Node0xa2abe0 [shape=record,label="{if.then}"];
+	Node0xa2abe0 -> Node0x9e5aa0;
+	Node0xa2abe0 -> Node0xa31b10;
+	Node0x9e5aa0 [shape=record,label="{land.lhs.true}"];
+	Node0x9e5aa0 -> Node0xa34e00;
+	Node0x9e5aa0 -> Node0xa31b10;
+	Node0xa34e00 [shape=record,label="{land.lhs.true7}"];
+	Node0xa34e00 -> Node0x9a0c60;
+	Node0xa34e00 -> Node0xa31b10;
+	Node0x9a0c60 [shape=record,label="{if.then12}"];
+	Node0x9a0c60 -> Node0x9a12a0;
+	Node0x9a12a0 [shape=record,label="{for.cond}"];
+	Node0x9a12a0 -> Node0x9abd40;
+	Node0x9a12a0 -> Node0x9c0f10;
+	Node0x9abd40 [shape=record,label="{for.body}"];
+	Node0x9abd40 -> Node0xa0f3a0;
+	Node0xa0f3a0 [shape=record,label="{for.inc}"];
+	Node0xa0f3a0 -> Node0x9a12a0[constraint=false];
+	Node0x9c0f10 [shape=record,label="{for.end}"];
+	Node0x9c0f10 -> Node0xa31b10;
+	Node0xa31b10 [shape=record,label="{if.end}"];
+	Node0xa31b10 -> Node0x995d00;
+	Node0x9c3b70 [shape=record,label="{while.end}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xa977c0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xa65a80 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xa64050 {
+              label = "";
+              style = filled;
+              color = 5
+              subgraph cluster_0xa97a40 {
+                label = "";
+                style = filled;
+                color = 7
+                subgraph cluster_0x9fb9b0 {
+                  label = "";
+                  style = filled;
+                  color = 9
+                  subgraph cluster_0xa63fd0 {
+                    label = "";
+                    style = filled;
+                    color = 11
+                    subgraph cluster_0xa978c0 {
+                      label = "";
+                      style = filled;
+                      color = 1
+                      Node0x9a12a0;
+                      Node0x9abd40;
+                      Node0xa0f3a0;
+                    }
+                    Node0xa34e00;
+                    Node0x9a0c60;
+                    Node0x9c0f10;
+                  }
+                  Node0x9e5aa0;
+                }
+                Node0xa2abe0;
+              }
+              Node0xa53160;
+              Node0xa31b10;
+            }
+            Node0xa46660;
+            Node0x995d00;
+          }
+          Node0xa4b000;
+          Node0x9c3b70;
+        }
+}

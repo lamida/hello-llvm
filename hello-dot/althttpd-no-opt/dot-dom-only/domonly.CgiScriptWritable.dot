@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'CgiScriptWritable' function" {
+	label="Dominator tree for 'CgiScriptWritable' function";
+
+	Node0xe3dbb0 [shape=record,label="{entry}"];
+}

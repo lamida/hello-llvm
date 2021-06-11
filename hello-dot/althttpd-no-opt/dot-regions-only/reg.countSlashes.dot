@@ -1,0 +1,39 @@
+digraph "Region Graph for 'countSlashes' function" {
+	label="Region Graph for 'countSlashes' function";
+
+	Node0x9df440 [shape=record,label="{entry}"];
+	Node0x9df440 -> Node0xa25ad0;
+	Node0xa25ad0 [shape=record,label="{while.cond}"];
+	Node0xa25ad0 -> Node0xa03a30;
+	Node0xa25ad0 -> Node0x9fa0e0;
+	Node0xa03a30 [shape=record,label="{while.body}"];
+	Node0xa03a30 -> Node0x9b8e10;
+	Node0xa03a30 -> Node0xa31520;
+	Node0x9b8e10 [shape=record,label="{if.then}"];
+	Node0x9b8e10 -> Node0xa31520;
+	Node0xa31520 [shape=record,label="{if.end}"];
+	Node0xa31520 -> Node0xa25ad0[constraint=false];
+	Node0x9fa0e0 [shape=record,label="{while.end}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xa65a80 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xa97a40 {
+            label = "";
+            style = filled;
+            color = 3
+            subgraph cluster_0xa64050 {
+              label = "";
+              style = filled;
+              color = 5
+              Node0xa03a30;
+              Node0x9b8e10;
+            }
+            Node0xa25ad0;
+            Node0xa31520;
+          }
+          Node0x9df440;
+          Node0x9fa0e0;
+        }
+}

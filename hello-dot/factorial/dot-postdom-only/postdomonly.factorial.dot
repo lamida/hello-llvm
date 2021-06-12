@@ -1,0 +1,13 @@
+digraph "Post dominator tree for 'factorial' function" {
+	label="Post dominator tree for 'factorial' function";
+
+	Node0x15b46c0 [shape=record,label="{Post dominance root node}"];
+	Node0x15b46c0 -> Node0x15b4b10;
+	Node0x15b4b10 [shape=record,label="{%13}"];
+	Node0x15b4b10 -> Node0x15b4b50;
+	Node0x15b4b50 [shape=record,label="{%4}"];
+	Node0x15b4b50 -> Node0x15b4b90;
+	Node0x15b4b50 -> Node0x15b4bd0;
+	Node0x15b4b90 [shape=record,label="{%1}"];
+	Node0x15b4bd0 [shape=record,label="{%7}"];
+}

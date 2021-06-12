@@ -1,0 +1,12 @@
+digraph "Region Graph for 'main' function" {
+	label="Region Graph for 'main' function";
+
+	Node0xdbe7f0 [shape=record,label="{entry}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xdbfab0 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0xdbe7f0;
+        }
+}

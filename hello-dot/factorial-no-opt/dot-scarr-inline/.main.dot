@@ -1,0 +1,12 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x562c949487c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x562c949487c0 - Thread Start\":\l  %n.addr.i = alloca i32, align 4\l  %acc.i = alloca i32, align 4\l  %0 = bitcast i32* %n.addr.i to i8*\l  call void @llvm.lifetime.start.p0i8(i64 4, i8* %0)\l  %1 = bitcast i32* %acc.i to i8*\l  call void @llvm.lifetime.start.p0i8(i64 4, i8* %1)\l  store i32 6, i32* %n.addr.i, align 4\l  store i32 1, i32* %acc.i, align 4\l  br label %\"0x562c94981d30 - Virtual Checkpoint\"\l}"];
+	Node0x562c949487c0 -> Node0x562c94981a10;
+	Node0x562c94981a10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x562c94981d30 - Virtual Checkpoint\":            \l  %2 = load i32, i32* %n.addr.i, align 4\l  %cmp.i = icmp sgt i32 %2, 0\l  br i1 %cmp.i, label %\"0x562c94981d30\", label %\"0x562c949834c0 - Thread End\"\l|{<s0>T|<s1>F}}"];
+	Node0x562c94981a10:s0 -> Node0x562c94981d30;
+	Node0x562c94981a10:s1 -> Node0x562c949834c0;
+	Node0x562c94981d30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x562c94981d30\":                                 \l  %3 = load i32, i32* %n.addr.i, align 4\l  %4 = load i32, i32* %acc.i, align 4\l  %mul.i = mul nsw i32 %4, %3\l  store i32 %mul.i, i32* %acc.i, align 4\l  %5 = load i32, i32* %n.addr.i, align 4\l  %sub.i = sub nsw i32 %5, 1\l  store i32 %sub.i, i32* %n.addr.i, align 4\l  br label %\"0x562c94981d30 - Virtual Checkpoint\"\l}"];
+	Node0x562c94981d30 -> Node0x562c94981a10;
+	Node0x562c949834c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x562c949834c0 - Thread End\":                    \l  %6 = load i32, i32* %acc.i, align 4\l  %7 = bitcast i32* %n.addr.i to i8*\l  call void @llvm.lifetime.end.p0i8(i64 4, i8* %7)\l  %8 = bitcast i32* %acc.i to i8*\l  call void @llvm.lifetime.end.p0i8(i64 4, i8* %8)\l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([19 x i8],\l... [19 x i8]* @.str, i64 0, i64 0), i32 %6)\l  ret i32 0\l}"];
+}

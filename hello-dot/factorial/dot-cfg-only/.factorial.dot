@@ -1,0 +1,12 @@
+digraph "CFG for 'factorial' function" {
+	label="CFG for 'factorial' function";
+
+	Node0x1aaae50 [shape=record,label="{%1}"];
+	Node0x1aaae50 -> Node0x1aab710;
+	Node0x1aab710 [shape=record,label="{%4|{<s0>T|<s1>F}}"];
+	Node0x1aab710:s0 -> Node0x1aab8e0;
+	Node0x1aab710:s1 -> Node0x1aab930;
+	Node0x1aab8e0 [shape=record,label="{%7}"];
+	Node0x1aab8e0 -> Node0x1aab710;
+	Node0x1aab930 [shape=record,label="{%13}"];
+}

@@ -1,0 +1,27 @@
+digraph "Region Graph for 'factorial' function" {
+	label="Region Graph for 'factorial' function";
+
+	Node0xdbafe0 [shape=record,label="{entry}"];
+	Node0xdbafe0 -> Node0xd8c390;
+	Node0xd8c390 [shape=record,label="{while.cond}"];
+	Node0xd8c390 -> Node0xdb8ec0;
+	Node0xd8c390 -> Node0xdb9c40;
+	Node0xdb8ec0 [shape=record,label="{while.body}"];
+	Node0xdb8ec0 -> Node0xd8c390[constraint=false];
+	Node0xdb9c40 [shape=record,label="{while.end}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xdbfab0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0xde1f20 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0xd8c390;
+            Node0xdb8ec0;
+          }
+          Node0xdbafe0;
+          Node0xdb9c40;
+        }
+}

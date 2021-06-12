@@ -1,0 +1,12 @@
+digraph "CFG for 'factorial' function" {
+	label="CFG for 'factorial' function";
+
+	Node0x1081ff0 [shape=record,label="{entry:\l  %n.addr = alloca i32, align 4\l  %acc = alloca i32, align 4\l  store i32 %n, i32* %n.addr, align 4\l  store i32 1, i32* %acc, align 4\l  br label %while.cond\l}"];
+	Node0x1081ff0 -> Node0x1082860;
+	Node0x1082860 [shape=record,label="{while.cond:                                       \l  %0 = load i32, i32* %n.addr, align 4\l  %cmp = icmp sgt i32 %0, 0\l  br i1 %cmp, label %while.body, label %while.end\l|{<s0>T|<s1>F}}"];
+	Node0x1082860:s0 -> Node0x1082a80;
+	Node0x1082860:s1 -> Node0x1082b60;
+	Node0x1082a80 [shape=record,label="{while.body:                                       \l  %1 = load i32, i32* %n.addr, align 4\l  %2 = load i32, i32* %acc, align 4\l  %mul = mul nsw i32 %2, %1\l  store i32 %mul, i32* %acc, align 4\l  %3 = load i32, i32* %n.addr, align 4\l  %sub = sub nsw i32 %3, 1\l  store i32 %sub, i32* %n.addr, align 4\l  br label %while.cond\l}"];
+	Node0x1082a80 -> Node0x1082860;
+	Node0x1082b60 [shape=record,label="{while.end:                                        \l  %4 = load i32, i32* %acc, align 4\l  ret i32 %4\l}"];
+}

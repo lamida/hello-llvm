@@ -1,0 +1,27 @@
+digraph "Scop Graph for 'factorial' function" {
+	label="Scop Graph for 'factorial' function";
+
+	Node0xc40bd0 [shape=record,label="{%1}"];
+	Node0xc40bd0 -> Node0xc40ce0;
+	Node0xc40ce0 [shape=record,label="{%4}"];
+	Node0xc40ce0 -> Node0xc40da0;
+	Node0xc40ce0 -> Node0xc40e00;
+	Node0xc40da0 [shape=record,label="{%7}"];
+	Node0xc40da0 -> Node0xc40ce0[constraint=false];
+	Node0xc40e00 [shape=record,label="{%13}"];
+	colorscheme = "paired12"
+        subgraph cluster_0xbec8c0 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0xc16680 {
+            label = "Non affine loop bound '***COULDNOTCOMPUTE***' in loop: ";
+            style = solid;
+            color = 6
+            Node0xc40ce0;
+            Node0xc40da0;
+          }
+          Node0xc40bd0;
+          Node0xc40e00;
+        }
+}

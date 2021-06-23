@@ -1,0 +1,22 @@
+digraph "Call graph: ../../scarr.ll" {
+	label="Call graph: ../../scarr.ll";
+
+	Node0x5568772816f0 [shape=record,label="{get_input}"];
+	Node0x5568772816f0 -> Node0x5568772af300;
+	Node0x5568772af300 [shape=record,label="{rand}"];
+	Node0x5568772af820 [shape=record,label="{get_privileged_info}"];
+	Node0x5568772af950 [shape=record,label="{get_unprivileged_info}"];
+	Node0x5568772af9d0 [shape=record,label="{print_output}"];
+	Node0x5568772af9d0 -> Node0x5568772afba0;
+	Node0x5568772afba0 [shape=record,label="{printf}"];
+	Node0x5568772afc80 [shape=record,label="{my_terminate}"];
+	Node0x5568772afc80 -> Node0x5568772afba0;
+	Node0x5568772afd30 [shape=record,label="{main}"];
+	Node0x5568772afd30 -> Node0x5568772816f0;
+	Node0x5568772afd30 -> Node0x5568772afde0;
+	Node0x5568772afd30 -> Node0x5568772af820;
+	Node0x5568772afd30 -> Node0x5568772af950;
+	Node0x5568772afd30 -> Node0x5568772af9d0;
+	Node0x5568772afd30 -> Node0x5568772afc80;
+	Node0x5568772afde0 [shape=record,label="{strcmp}"];
+}

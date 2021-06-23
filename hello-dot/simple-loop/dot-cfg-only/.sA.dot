@@ -1,5 +1,5 @@
 digraph "CFG for 'sA' function" {
 	label="CFG for 'sA' function";
 
-	Node0x22af2f0 [shape=record,label="{%0}"];
+	Node0x5644e0780a70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0}"];
 }

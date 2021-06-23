@@ -1,12 +1,12 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x560fb5699cc0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x560fb5699cc0 - Thread Start\":\l  %0 = alloca i32, align 4\l  %1 = alloca i32, align 4\l  store i32 0, i32* %0, align 4\l  store i32 1, i32* %1, align 4\l  %2 = load i32, i32* %1, align 4\l  %3 = icmp eq i32 %2, 1\l  br i1 %3, label %\"0x560fb569a0e0 - Exit Point\", label %\"0x560fb569a130 -\l... Exit Point\"\l|{<s0>T|<s1>F}}"];
-	Node0x560fb5699cc0:s0 -> Node0x560fb569a0e0;
-	Node0x560fb5699cc0:s1 -> Node0x560fb569a130;
-	Node0x560fb569a0e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{\"0x560fb569a0e0 - Exit Point\":                    \l  %4 = call i32 @add(i32 2, i32 4)\l  %5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str, i64 0, i64 0), i32 %4)\l  br label %\"0x560fb569a8b0 - Thread End\"\l}"];
-	Node0x560fb569a0e0 -> Node0x560fb569a8b0;
-	Node0x560fb569a130 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{\"0x560fb569a130 - Exit Point\":                    \l  %6 = call i32 @sub(i32 2, i32 4)\l  %7 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str, i64 0, i64 0), i32 %6)\l  br label %\"0x560fb569a8b0 - Thread End\"\l}"];
-	Node0x560fb569a130 -> Node0x560fb569a8b0;
-	Node0x560fb569a8b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x560fb569a8b0 - Thread End\":                    \l  %8 = load i32, i32* %0, align 4\l  ret i32 %8\l}"];
+	Node0x562260e83cc0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x562260e83cc0 - Thread Start\":\l  %0 = alloca i32, align 4\l  %1 = alloca i32, align 4\l  store i32 0, i32* %0, align 4\l  store i32 1, i32* %1, align 4\l  %2 = load i32, i32* %1, align 4\l  %3 = icmp eq i32 %2, 1\l  br i1 %3, label %\"0x562260e840e0 - Exit Point\", label %\"0x562260e84130 -\l... Exit Point\"\l|{<s0>T|<s1>F}}"];
+	Node0x562260e83cc0:s0 -> Node0x562260e840e0;
+	Node0x562260e83cc0:s1 -> Node0x562260e84130;
+	Node0x562260e840e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{\"0x562260e840e0 - Exit Point\":                    \l  %4 = call i32 @add(i32 2, i32 4)\l  %5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str, i64 0, i64 0), i32 %4)\l  br label %\"0x562260e848b0 - Thread End\"\l}"];
+	Node0x562260e840e0 -> Node0x562260e848b0;
+	Node0x562260e84130 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{\"0x562260e84130 - Exit Point\":                    \l  %6 = call i32 @sub(i32 2, i32 4)\l  %7 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str, i64 0, i64 0), i32 %6)\l  br label %\"0x562260e848b0 - Thread End\"\l}"];
+	Node0x562260e84130 -> Node0x562260e848b0;
+	Node0x562260e848b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x562260e848b0 - Thread End\":                    \l  %8 = load i32, i32* %0, align 4\l  ret i32 %8\l}"];
 }

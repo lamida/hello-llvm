@@ -1,19 +1,19 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x1a847b0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %4 = load i32, i32* %2, align 4\l  %5 = icmp eq i32 %4, 1\l  br i1 %5, label %6, label %7\l|{<s0>T|<s1>F}}"];
-	Node0x1a847b0:s0 -> Node0x1a84aa0;
-	Node0x1a847b0:s1 -> Node0x1a84af0;
-	Node0x1a84aa0 [shape=record,label="{%6:\l6:                                                \l  call void @b1()\l  br label %8\l}"];
-	Node0x1a84aa0 -> Node0x1a84c90;
-	Node0x1a84af0 [shape=record,label="{%7:\l7:                                                \l  call void @b2()\l  br label %8\l}"];
-	Node0x1a84af0 -> Node0x1a84c90;
-	Node0x1a84c90 [shape=record,label="{%8:\l8:                                                \l  call void @c()\l  call void @d()\l  store i32 10, i32* %3, align 4\l  br label %9\l}"];
-	Node0x1a84c90 -> Node0x1a850a0;
-	Node0x1a850a0 [shape=record,label="{%9:\l9:                                                \l  %10 = load i32, i32* %3, align 4\l  %11 = icmp sgt i32 %10, 0\l  br i1 %11, label %12, label %15\l|{<s0>T|<s1>F}}"];
-	Node0x1a850a0:s0 -> Node0x1a85220;
-	Node0x1a850a0:s1 -> Node0x1a85270;
-	Node0x1a85220 [shape=record,label="{%12:\l12:                                               \l  call void @f()\l  %13 = load i32, i32* %3, align 4\l  %14 = add nsw i32 %13, -1\l  store i32 %14, i32* %3, align 4\l  br label %9\l}"];
-	Node0x1a85220 -> Node0x1a850a0;
-	Node0x1a85270 [shape=record,label="{%15:\l15:                                               \l  call void @switchDeterministic()\l  call void @switchNonDeterministic()\l  %16 = load i32, i32* %1, align 4\l  ret i32 %16\l}"];
+	Node0x55f7c16435d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %4 = load i32, i32* %2, align 4\l  %5 = icmp eq i32 %4, 1\l  br i1 %5, label %6, label %7\l|{<s0>T|<s1>F}}"];
+	Node0x55f7c16435d0:s0 -> Node0x55f7c1643a60;
+	Node0x55f7c16435d0:s1 -> Node0x55f7c1643ab0;
+	Node0x55f7c1643a60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%6:\l6:                                                \l  call void @b1()\l  br label %8\l}"];
+	Node0x55f7c1643a60 -> Node0x55f7c1643c80;
+	Node0x55f7c1643ab0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%7:\l7:                                                \l  call void @b2()\l  br label %8\l}"];
+	Node0x55f7c1643ab0 -> Node0x55f7c1643c80;
+	Node0x55f7c1643c80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%8:\l8:                                                \l  call void @c()\l  call void @d()\l  store i32 10, i32* %3, align 4\l  br label %9\l}"];
+	Node0x55f7c1643c80 -> Node0x55f7c16440f0;
+	Node0x55f7c16440f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%9:\l9:                                                \l  %10 = load i32, i32* %3, align 4\l  %11 = icmp sgt i32 %10, 0\l  br i1 %11, label %12, label %15\l|{<s0>T|<s1>F}}"];
+	Node0x55f7c16440f0:s0 -> Node0x55f7c16442b0;
+	Node0x55f7c16440f0:s1 -> Node0x55f7c1644300;
+	Node0x55f7c16442b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%12:\l12:                                               \l  call void @f()\l  %13 = load i32, i32* %3, align 4\l  %14 = add nsw i32 %13, -1\l  store i32 %14, i32* %3, align 4\l  br label %9\l}"];
+	Node0x55f7c16442b0 -> Node0x55f7c16440f0;
+	Node0x55f7c1644300 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%15:\l15:                                               \l  call void @switchDeterministic()\l  call void @switchNonDeterministic()\l  %16 = load i32, i32* %1, align 4\l  ret i32 %16\l}"];
 }

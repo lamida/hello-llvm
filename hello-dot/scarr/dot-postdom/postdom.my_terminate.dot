@@ -1,7 +1,7 @@
 digraph "Post dominator tree for 'my_terminate' function" {
 	label="Post dominator tree for 'my_terminate' function";
 
-	Node0xb60890 [shape=record,label="{Post dominance root node}"];
-	Node0xb60890 -> Node0xb60370;
-	Node0xb60370 [shape=record,label="{%0:\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11\l... x i8]* @.str.5, i64 0, i64 0))\l  ret void\l}"];
+	Node0x556820f108b0 [shape=record,label="{Post dominance root node}"];
+	Node0x556820f108b0 -> Node0x556820f11ac0;
+	Node0x556820f11ac0 [shape=record,label="{%0:\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11\l... x i8]* @.str.5, i64 0, i64 0))\l  ret void\l}"];
 }

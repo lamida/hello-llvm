@@ -5,7 +5,7 @@ target triple = "x86_64-pc-linux-gnu"
 
 @.str = private unnamed_addr constant [3 x i8] c"sA\00", align 1
 @.str.1 = private unnamed_addr constant [11 x i8] c"Exiting...\00", align 1
-@.str.2 = private unnamed_addr constant [3 x i8] c"n2\00", align 1
+@.str.2 = private unnamed_addr constant [7 x i8] c"n2 %d\0A\00", align 1
 @.str.3 = private unnamed_addr constant [3 x i8] c"n3\00", align 1
 
 ; Function Attrs: noinline nounwind uwtable
@@ -40,20 +40,21 @@ for.cond:                                         ; preds = %for.inc, %entry
   br i1 %cmp, label %for.body, label %for.end
 
 for.body:                                         ; preds = %for.cond
-  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.2, i64 0, i64 0))
+  %1 = load i32, i32* %i, align 4
+  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.2, i64 0, i64 0), i32 %1)
   br label %for.inc
 
 for.inc:                                          ; preds = %for.body
-  %1 = load i32, i32* %i, align 4
-  %inc = add nsw i32 %1, 1
+  %2 = load i32, i32* %i, align 4
+  %inc = add nsw i32 %2, 1
   store i32 %inc, i32* %i, align 4
   br label %for.cond
 
 for.end:                                          ; preds = %for.cond
   %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.3, i64 0, i64 0))
   call void @my_terminate()
-  %2 = load i32, i32* %retval, align 4
-  ret i32 %2
+  %3 = load i32, i32* %retval, align 4
+  ret i32 %3
 }
 
 ;attributes #0 = { noinline nounwind uwtable "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "min-legal-vector-width"="0" "no-infs-fp-math"="false" "no-jump-tables"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }

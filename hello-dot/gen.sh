@@ -21,7 +21,7 @@ echo $DOTS| xargs -I{} mkdir -p $out_title/dot-{}
 for dot in $(ls -d $out_title/*/); do
 echo "processing $dot"
 cd $dot
-opt "--${PWD##*/}" ../../$out_title.ll
+/home/lamida/github/llvm/llvm-project/llvm/cmake-build-release/bin/opt "--${PWD##*/}" ../../$out_title.ll
 ls *.dot | xargs -I{} dot -Tpng {} -o {}.png
 # generate png for hidden files too
 ls .*.dot | xargs -I{} dot -Tpng {} -o {}.png

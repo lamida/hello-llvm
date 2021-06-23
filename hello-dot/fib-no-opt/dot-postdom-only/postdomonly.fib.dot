@@ -1,0 +1,13 @@
+digraph "Post dominator tree for 'fib' function" {
+	label="Post dominator tree for 'fib' function";
+
+	Node0xf5c600 [shape=record,label="{Post dominance root node}"];
+	Node0xf5c600 -> Node0xf5ca50;
+	Node0xf5ca50 [shape=record,label="{return}"];
+	Node0xf5ca50 -> Node0xf5ca90;
+	Node0xf5ca50 -> Node0xf5cad0;
+	Node0xf5ca50 -> Node0xf5cb10;
+	Node0xf5ca90 [shape=record,label="{if.then}"];
+	Node0xf5cad0 [shape=record,label="{entry}"];
+	Node0xf5cb10 [shape=record,label="{if.end}"];
+}

@@ -1,0 +1,10 @@
+digraph "Call graph: ../../shadow.ll" {
+	label="Call graph: ../../shadow.ll";
+
+	Node0x560c96566950 [shape=record,label="{a}"];
+	Node0x560c96566950 -> Node0x560c96566a00;
+	Node0x560c96566a00 [shape=record,label="{printf}"];
+	Node0x560c96566f20 [shape=record,label="{main}"];
+	Node0x560c96566f20 -> Node0x560c96566950;
+	Node0x560c96566f20 -> Node0x560c96566a00;
+}

@@ -1,14 +1,14 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x55855821d8c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x55855821d8c0 - Thread Start\":\l  %0 = alloca i32, align 4\l  %1 = alloca i32, align 4\l  store i32 0, i32* %0, align 4\l  %2 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str, i64 0, i64 0))\l  store i32 0, i32* %1, align 4\l  br label %\"0x55855821e120 - Virtual Checkpoint\"\l}"];
-	Node0x55855821d8c0 -> Node0x55855821dc00;
-	Node0x55855821dc00 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x55855821e120 - Virtual Checkpoint\":            \l  %3 = load i32, i32* %1, align 4\l  %4 = icmp slt i32 %3, 10\l  br i1 %4, label %\"0x55855821de10 - Exit Point\", label %\"0x55855821de60 -\l... Thread End\"\l|{<s0>T|<s1>F}}"];
-	Node0x55855821dc00:s0 -> Node0x55855821de10;
-	Node0x55855821dc00:s1 -> Node0x55855821de60;
-	Node0x55855821de10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x55855821de10 - Exit Point\":                    \l  %5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str.2, i64 0, i64 0))\l  br label %\"0x55855821e120\"\l}"];
-	Node0x55855821de10 -> Node0x55855821e120;
-	Node0x55855821e120 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x55855821e120\":                                 \l  %6 = load i32, i32* %1, align 4\l  %7 = add nsw i32 %6, 1\l  store i32 %7, i32* %1, align 4\l  br label %\"0x55855821e120 - Virtual Checkpoint\"\l}"];
-	Node0x55855821e120 -> Node0x55855821dc00;
-	Node0x55855821de60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x55855821de60 - Thread End\":                    \l  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str.3, i64 0, i64 0))\l  %9 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11\l... x i8]* @.str.1, i64 0, i64 0))\l  %10 = load i32, i32* %0, align 4\l  ret i32 %10\l}"];
+	Node0x556477bb7900 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x556477bb7900 - Thread Start\":\l  %0 = alloca i32, align 4\l  %1 = alloca i32, align 4\l  store i32 0, i32* %0, align 4\l  %2 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str, i64 0, i64 0))\l  store i32 0, i32* %1, align 4\l  br label %\"0x556477bb7d70 - Virtual Checkpoint\"\l}"];
+	Node0x556477bb7900 -> Node0x556477bb7c40;
+	Node0x556477bb7c40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556477bb7d70 - Virtual Checkpoint\":            \l  %3 = load i32, i32* %1, align 4\l  %4 = icmp slt i32 %3, 10\l  br i1 %4, label %\"0x556477bb7e50 - Exit Point\", label %\"0x556477bb7ea0 -\l... Thread End\"\l|{<s0>T|<s1>F}}"];
+	Node0x556477bb7c40:s0 -> Node0x556477bb7e50;
+	Node0x556477bb7c40:s1 -> Node0x556477bb7ea0;
+	Node0x556477bb7e50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x556477bb7e50 - Exit Point\":                    \l  %5 = load i32, i32* %1, align 4\l  %6 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([7 x i8], [7 x\l... i8]* @.str.2, i64 0, i64 0), i32 %5)\l  br label %\"0x556477bb7d70\"\l}"];
+	Node0x556477bb7e50 -> Node0x556477bb7d70;
+	Node0x556477bb7d70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x556477bb7d70\":                                 \l  %7 = load i32, i32* %1, align 4\l  %8 = add nsw i32 %7, 1\l  store i32 %8, i32* %1, align 4\l  br label %\"0x556477bb7d70 - Virtual Checkpoint\"\l}"];
+	Node0x556477bb7d70 -> Node0x556477bb7c40;
+	Node0x556477bb7ea0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x556477bb7ea0 - Thread End\":                    \l  %9 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str.3, i64 0, i64 0))\l  %10 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11\l... x i8]* @.str.1, i64 0, i64 0))\l  %11 = load i32, i32* %0, align 4\l  ret i32 %11\l}"];
 }

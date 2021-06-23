@@ -1,0 +1,9 @@
+digraph "Call graph: ../../simple-linear.ll" {
+	label="Call graph: ../../simple-linear.ll";
+
+	Node0x5568a6a8df00 [shape=record,label="{linear}"];
+	Node0x5568a6a8df00 -> Node0x5568a6a8dfb0;
+	Node0x5568a6a8e4d0 [shape=record,label="{main}"];
+	Node0x5568a6a8e4d0 -> Node0x5568a6a8df00;
+	Node0x5568a6a8dfb0 [shape=record,label="{printf}"];
+}

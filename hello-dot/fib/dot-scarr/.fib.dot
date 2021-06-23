@@ -1,0 +1,12 @@
+digraph "CFG for 'fib' function" {
+	label="CFG for 'fib' function";
+
+	Node0x562ccf6834f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x562ccf6834f0\":\l  %1 = alloca i64, align 8\l  %2 = alloca i64, align 8\l  store i64 %0, i64* %2, align 8\l  %3 = load i64, i64* %2, align 8\l  %4 = icmp slt i64 %3, 2\l  br i1 %4, label %\"0x562ccf683d90\", label %\"0x562ccf683de0\"\l|{<s0>T|<s1>F}}"];
+	Node0x562ccf6834f0:s0 -> Node0x562ccf683d90;
+	Node0x562ccf6834f0:s1 -> Node0x562ccf683de0;
+	Node0x562ccf683d90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{\"0x562ccf683d90\":                                 \l  %5 = load i64, i64* %2, align 8\l  store i64 %5, i64* %1, align 8\l  br label %\"0x562ccf683f90\"\l}"];
+	Node0x562ccf683d90 -> Node0x562ccf683f90;
+	Node0x562ccf683de0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{\"0x562ccf683de0\":                                 \l  %6 = load i64, i64* %2, align 8\l  %7 = sub nsw i64 %6, 1\l  %8 = call i64 @fib(i64 %7)\l  %9 = load i64, i64* %2, align 8\l  %10 = sub nsw i64 %9, 2\l  %11 = call i64 @fib(i64 %10)\l  %12 = add nsw i64 %8, %11\l  store i64 %12, i64* %1, align 8\l  br label %\"0x562ccf683f90\"\l}"];
+	Node0x562ccf683de0 -> Node0x562ccf683f90;
+	Node0x562ccf683f90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x562ccf683f90\":                                 \l  %13 = load i64, i64* %1, align 8\l  ret i64 %13\l}"];
+}

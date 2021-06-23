@@ -1,5 +1,5 @@
 digraph "CFG for 'linear' function" {
 	label="CFG for 'linear' function";
 
-	Node0x1fcc410 [shape=record,label="{%0}"];
+	Node0x55828b9a0b60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0}"];
 }

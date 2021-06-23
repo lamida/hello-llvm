@@ -1,0 +1,11 @@
+digraph "Dominator tree for 'fib' function" {
+	label="Dominator tree for 'fib' function";
+
+	Node0x1606600 [shape=record,label="{entry}"];
+	Node0x1606600 -> Node0x1606a50;
+	Node0x1606600 -> Node0x1606a90;
+	Node0x1606600 -> Node0x1606ad0;
+	Node0x1606a50 [shape=record,label="{if.then}"];
+	Node0x1606a90 [shape=record,label="{return}"];
+	Node0x1606ad0 [shape=record,label="{if.end}"];
+}

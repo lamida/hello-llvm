@@ -1,0 +1,12 @@
+digraph "CFG for 'fib' function" {
+	label="CFG for 'fib' function";
+
+	Node0x55ce77965530 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%1|{<s0>T|<s1>F}}"];
+	Node0x55ce77965530:s0 -> Node0x55ce77965dd0;
+	Node0x55ce77965530:s1 -> Node0x55ce77965e20;
+	Node0x55ce77965dd0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%6}"];
+	Node0x55ce77965dd0 -> Node0x55ce77965fd0;
+	Node0x55ce77965e20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%8}"];
+	Node0x55ce77965e20 -> Node0x55ce77965fd0;
+	Node0x55ce77965fd0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%16}"];
+}

@@ -15,7 +15,7 @@ void my_terminate() {
 int main() {
     sA();
     for (int i = 0; i < 10; i++) {
-        printf("n2");
+        printf("n2 %d\n", i);
     }
     printf("n3");
     my_terminate();

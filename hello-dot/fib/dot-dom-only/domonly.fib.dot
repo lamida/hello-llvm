@@ -1,0 +1,11 @@
+digraph "Dominator tree for 'fib' function" {
+	label="Dominator tree for 'fib' function";
+
+	Node0x55632819daa0 [shape=record,label="{%1}"];
+	Node0x55632819daa0 -> Node0x55632819df10;
+	Node0x55632819daa0 -> Node0x55632819df70;
+	Node0x55632819daa0 -> Node0x55632819dfd0;
+	Node0x55632819df10 [shape=record,label="{%6}"];
+	Node0x55632819df70 [shape=record,label="{%16}"];
+	Node0x55632819dfd0 [shape=record,label="{%8}"];
+}

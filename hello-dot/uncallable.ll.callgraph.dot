@@ -1,0 +1,12 @@
+digraph "Call graph: ../../uncallable.ll" {
+	label="Call graph: ../../uncallable.ll";
+
+	Node0x5578923176f0 [shape=record,label="{add}"];
+	Node0x557892343eb0 [shape=record,label="{sub}"];
+	Node0x557892343f90 [shape=record,label="{mult}"];
+	Node0x5578923440c0 [shape=record,label="{main}"];
+	Node0x5578923440c0 -> Node0x5578923176f0;
+	Node0x5578923440c0 -> Node0x557892344550;
+	Node0x5578923440c0 -> Node0x557892343eb0;
+	Node0x557892344550 [shape=record,label="{printf}"];
+}

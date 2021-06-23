@@ -1,12 +1,12 @@
 digraph "CFG for 'factorial' function" {
 	label="CFG for 'factorial' function";
 
-	Node0x5587becd2590 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x5587becd2590\":\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  br label %\"0x5587becd2ef0 - Virtual Checkpoint\"\l}"];
-	Node0x5587becd2590 -> Node0x5587becd2d70;
-	Node0x5587becd2d70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5587becd2ef0 - Virtual Checkpoint\":            \l  %3 = load i32, i32* %1, align 4\l  %4 = icmp sgt i32 %3, 0\l  br i1 %4, label %\"0x5587becd2ef0\", label %\"0x5587becd2f40\"\l|{<s0>T|<s1>F}}"];
-	Node0x5587becd2d70:s0 -> Node0x5587becd2ef0;
-	Node0x5587becd2d70:s1 -> Node0x5587becd2f40;
-	Node0x5587becd2ef0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x5587becd2ef0\":                                 \l  %5 = load i32, i32* %1, align 4\l  %6 = load i32, i32* %2, align 4\l  %7 = mul nsw i32 %6, %5\l  store i32 %7, i32* %2, align 4\l  %8 = load i32, i32* %1, align 4\l  %9 = sub nsw i32 %8, 1\l  store i32 %9, i32* %1, align 4\l  br label %\"0x5587becd2ef0 - Virtual Checkpoint\"\l}"];
-	Node0x5587becd2ef0 -> Node0x5587becd2d70;
-	Node0x5587becd2f40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x5587becd2f40\":                                 \l  %10 = load i32, i32* %2, align 4\l  ret i32 %10\l}"];
+	Node0x560899f85590 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x560899f85590\":\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  br label %\"0x560899f85ef0 - Virtual Checkpoint\"\l}"];
+	Node0x560899f85590 -> Node0x560899f85d70;
+	Node0x560899f85d70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x560899f85ef0 - Virtual Checkpoint\":            \l  %3 = load i32, i32* %1, align 4\l  %4 = icmp sgt i32 %3, 0\l  br i1 %4, label %\"0x560899f85ef0\", label %\"0x560899f85f40\"\l|{<s0>T|<s1>F}}"];
+	Node0x560899f85d70:s0 -> Node0x560899f85ef0;
+	Node0x560899f85d70:s1 -> Node0x560899f85f40;
+	Node0x560899f85ef0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x560899f85ef0\":                                 \l  %5 = load i32, i32* %1, align 4\l  %6 = load i32, i32* %2, align 4\l  %7 = mul nsw i32 %6, %5\l  store i32 %7, i32* %2, align 4\l  %8 = load i32, i32* %1, align 4\l  %9 = sub nsw i32 %8, 1\l  store i32 %9, i32* %1, align 4\l  br label %\"0x560899f85ef0 - Virtual Checkpoint\"\l}"];
+	Node0x560899f85ef0 -> Node0x560899f85d70;
+	Node0x560899f85f40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x560899f85f40\":                                 \l  %10 = load i32, i32* %2, align 4\l  ret i32 %10\l}"];
 }

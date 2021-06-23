@@ -1,5 +1,5 @@
 digraph "CFG for 'g4' function" {
 	label="CFG for 'g4' function";
 
-	Node0xb12dc0 [shape=record,label="{%0}"];
+	Node0x55d3e5a148a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0}"];
 }

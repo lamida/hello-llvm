@@ -1,12 +1,12 @@
 digraph "CFG for 'b1' function" {
 	label="CFG for 'b1' function";
 
-	Node0x5654e230bb20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5654e230bb20\":\l  %0 = alloca i32, align 4\l  store i32 10, i32* %0, align 4\l  %1 = load i32, i32* %0, align 4\l  %2 = icmp eq i32 %1, 10\l  br i1 %2, label %\"0x5654e230c350 - Exit Point\", label %\"0x5654e230c3a0 -\l... Exit Point\"\l|{<s0>T|<s1>F}}"];
-	Node0x5654e230bb20:s0 -> Node0x5654e230c350;
-	Node0x5654e230bb20:s1 -> Node0x5654e230c3a0;
-	Node0x5654e230c350 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{\"0x5654e230c350 - Exit Point\":                    \l  %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([30 x i8], [30\l... x i8]* @.str, i64 0, i64 0))\l  br label %\"0x5654e230c8c0\"\l}"];
-	Node0x5654e230c350 -> Node0x5654e230c8c0;
-	Node0x5654e230c3a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{\"0x5654e230c3a0 - Exit Point\":                    \l  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([31 x i8], [31\l... x i8]* @.str.1, i64 0, i64 0))\l  br label %\"0x5654e230c8c0\"\l}"];
-	Node0x5654e230c3a0 -> Node0x5654e230c8c0;
-	Node0x5654e230c8c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5654e230c8c0\":                                 \l  ret void\l}"];
+	Node0x5605b920cb20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5605b920cb20\":\l  %0 = alloca i32, align 4\l  store i32 10, i32* %0, align 4\l  %1 = load i32, i32* %0, align 4\l  %2 = icmp eq i32 %1, 10\l  br i1 %2, label %\"0x5605b920d350 - Exit Point\", label %\"0x5605b920d3a0 -\l... Exit Point\"\l|{<s0>T|<s1>F}}"];
+	Node0x5605b920cb20:s0 -> Node0x5605b920d350;
+	Node0x5605b920cb20:s1 -> Node0x5605b920d3a0;
+	Node0x5605b920d350 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{\"0x5605b920d350 - Exit Point\":                    \l  %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([30 x i8], [30\l... x i8]* @.str, i64 0, i64 0))\l  br label %\"0x5605b920d8c0\"\l}"];
+	Node0x5605b920d350 -> Node0x5605b920d8c0;
+	Node0x5605b920d3a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{\"0x5605b920d3a0 - Exit Point\":                    \l  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([31 x i8], [31\l... x i8]* @.str.1, i64 0, i64 0))\l  br label %\"0x5605b920d8c0\"\l}"];
+	Node0x5605b920d3a0 -> Node0x5605b920d8c0;
+	Node0x5605b920d8c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5605b920d8c0\":                                 \l  ret void\l}"];
 }

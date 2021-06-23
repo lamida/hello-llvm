@@ -1,39 +1,39 @@
 digraph "Region Graph for 'switchDeterministic' function" {
 	label="Region Graph for 'switchDeterministic' function";
 
-	Node0x55824c83e2b0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  store i32 4, i32* %1, align 4\l  %2 = load i32, i32* %1, align 4\l  switch i32 %2, label %7 [\l    i32 1, label %3\l    i32 2, label %4\l    i32 3, label %5\l    i32 4, label %6\l  ]\l}"];
-	Node0x55824c83e2b0 -> Node0x55824c8338f0;
-	Node0x55824c83e2b0 -> Node0x55824c830b10;
-	Node0x55824c83e2b0 -> Node0x55824c82deb0;
-	Node0x55824c83e2b0 -> Node0x55824c801cc0;
-	Node0x55824c83e2b0 -> Node0x55824c832870;
-	Node0x55824c8338f0 [shape=record,label="{%7:\l7:                                                \l  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.11, i64 0, i64 0))\l  br label %9\l}"];
-	Node0x55824c8338f0 -> Node0x55824c82dce0;
-	Node0x55824c82dce0 [shape=record,label="{%9:\l9:                                                \l  ret void\l}"];
-	Node0x55824c830b10 [shape=record,label="{%3:\l3:                                                \l  call void @g1()\l  br label %9\l}"];
-	Node0x55824c830b10 -> Node0x55824c82dce0;
-	Node0x55824c82deb0 [shape=record,label="{%4:\l4:                                                \l  call void @g2()\l  br label %9\l}"];
-	Node0x55824c82deb0 -> Node0x55824c82dce0;
-	Node0x55824c801cc0 [shape=record,label="{%5:\l5:                                                \l  call void @g3()\l  br label %9\l}"];
-	Node0x55824c801cc0 -> Node0x55824c82dce0;
-	Node0x55824c832870 [shape=record,label="{%6:\l6:                                                \l  call void @g4()\l  br label %9\l}"];
-	Node0x55824c832870 -> Node0x55824c82dce0;
+	Node0x55ec6238d2b0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  store i32 4, i32* %1, align 4\l  %2 = load i32, i32* %1, align 4\l  switch i32 %2, label %7 [\l    i32 1, label %3\l    i32 2, label %4\l    i32 3, label %5\l    i32 4, label %6\l  ]\l}"];
+	Node0x55ec6238d2b0 -> Node0x55ec623828f0;
+	Node0x55ec6238d2b0 -> Node0x55ec6237fb10;
+	Node0x55ec6238d2b0 -> Node0x55ec6237ceb0;
+	Node0x55ec6238d2b0 -> Node0x55ec62350cc0;
+	Node0x55ec6238d2b0 -> Node0x55ec62381870;
+	Node0x55ec623828f0 [shape=record,label="{%7:\l7:                                                \l  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.11, i64 0, i64 0))\l  br label %9\l}"];
+	Node0x55ec623828f0 -> Node0x55ec6237cce0;
+	Node0x55ec6237cce0 [shape=record,label="{%9:\l9:                                                \l  ret void\l}"];
+	Node0x55ec6237fb10 [shape=record,label="{%3:\l3:                                                \l  call void @g1()\l  br label %9\l}"];
+	Node0x55ec6237fb10 -> Node0x55ec6237cce0;
+	Node0x55ec6237ceb0 [shape=record,label="{%4:\l4:                                                \l  call void @g2()\l  br label %9\l}"];
+	Node0x55ec6237ceb0 -> Node0x55ec6237cce0;
+	Node0x55ec62350cc0 [shape=record,label="{%5:\l5:                                                \l  call void @g3()\l  br label %9\l}"];
+	Node0x55ec62350cc0 -> Node0x55ec6237cce0;
+	Node0x55ec62381870 [shape=record,label="{%6:\l6:                                                \l  call void @g4()\l  br label %9\l}"];
+	Node0x55ec62381870 -> Node0x55ec6237cce0;
 	colorscheme = "paired12"
-        subgraph cluster_0x55824c8399a0 {
+        subgraph cluster_0x55ec623889a0 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0x55824c839890 {
+          subgraph cluster_0x55ec62388890 {
             label = "";
             style = filled;
             color = 3
-            Node0x55824c83e2b0;
-            Node0x55824c8338f0;
-            Node0x55824c830b10;
-            Node0x55824c82deb0;
-            Node0x55824c801cc0;
-            Node0x55824c832870;
+            Node0x55ec6238d2b0;
+            Node0x55ec623828f0;
+            Node0x55ec6237fb10;
+            Node0x55ec6237ceb0;
+            Node0x55ec62350cc0;
+            Node0x55ec62381870;
           }
-          Node0x55824c82dce0;
+          Node0x55ec6237cce0;
         }
 }

@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'b2' function" {
 	label="Dominator tree for 'b2' function";
 
-	Node0x562d2bae9840 [shape=record,label="{%0}"];
+	Node0x560bc211f840 [shape=record,label="{%0}"];
 }

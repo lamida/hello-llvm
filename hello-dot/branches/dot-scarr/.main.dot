@@ -1,19 +1,19 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x55d83c89d590 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{\"0x55d83c89d590 - Thread Start\":\l  %0 = alloca i32, align 4\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %0, align 4\l  store i32 1, i32* %1, align 4\l  %3 = load i32, i32* %1, align 4\l  %4 = icmp eq i32 %3, 1\l  br i1 %4, label %\"0x55d83c89da20\", label %\"0x55d83c89da70\"\l|{<s0>T|<s1>F}}"];
-	Node0x55d83c89d590:s0 -> Node0x55d83c89da20;
-	Node0x55d83c89d590:s1 -> Node0x55d83c89da70;
-	Node0x55d83c89da20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{\"0x55d83c89da20\":                                 \l  call void @b1()\l  br label %\"0x55d83c89dc40\"\l}"];
-	Node0x55d83c89da20 -> Node0x55d83c89dc40;
-	Node0x55d83c89da70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{\"0x55d83c89da70\":                                 \l  call void @b2()\l  br label %\"0x55d83c89dc40\"\l}"];
-	Node0x55d83c89da70 -> Node0x55d83c89dc40;
-	Node0x55d83c89dc40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{\"0x55d83c89dc40\":                                 \l  call void @c()\l  call void @d()\l  store i32 10, i32* %2, align 4\l  br label %\"0x55d83c89e270 - Virtual Checkpoint\"\l}"];
-	Node0x55d83c89dc40 -> Node0x55d83c89e0b0;
-	Node0x55d83c89e0b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x55d83c89e270 - Virtual Checkpoint\":            \l  %5 = load i32, i32* %2, align 4\l  %6 = icmp sgt i32 %5, 0\l  br i1 %6, label %\"0x55d83c89e270\", label %\"0x55d83c89e2c0 - Thread End\"\l|{<s0>T|<s1>F}}"];
-	Node0x55d83c89e0b0:s0 -> Node0x55d83c89e270;
-	Node0x55d83c89e0b0:s1 -> Node0x55d83c89e2c0;
-	Node0x55d83c89e270 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x55d83c89e270\":                                 \l  call void @f()\l  %7 = load i32, i32* %2, align 4\l  %8 = add nsw i32 %7, -1\l  store i32 %8, i32* %2, align 4\l  br label %\"0x55d83c89e270 - Virtual Checkpoint\"\l}"];
-	Node0x55d83c89e270 -> Node0x55d83c89e0b0;
-	Node0x55d83c89e2c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{\"0x55d83c89e2c0 - Thread End\":                    \l  call void @switchDeterministic()\l  call void @switchNonDeterministic()\l  %9 = load i32, i32* %0, align 4\l  ret i32 %9\l}"];
+	Node0x55adefe62590 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{\"0x55adefe62590 - Thread Start\":\l  %0 = alloca i32, align 4\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %0, align 4\l  store i32 1, i32* %1, align 4\l  %3 = load i32, i32* %1, align 4\l  %4 = icmp eq i32 %3, 1\l  br i1 %4, label %\"0x55adefe62a20\", label %\"0x55adefe62a70\"\l|{<s0>T|<s1>F}}"];
+	Node0x55adefe62590:s0 -> Node0x55adefe62a20;
+	Node0x55adefe62590:s1 -> Node0x55adefe62a70;
+	Node0x55adefe62a20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{\"0x55adefe62a20\":                                 \l  call void @b1()\l  br label %\"0x55adefe62c40\"\l}"];
+	Node0x55adefe62a20 -> Node0x55adefe62c40;
+	Node0x55adefe62a70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{\"0x55adefe62a70\":                                 \l  call void @b2()\l  br label %\"0x55adefe62c40\"\l}"];
+	Node0x55adefe62a70 -> Node0x55adefe62c40;
+	Node0x55adefe62c40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{\"0x55adefe62c40\":                                 \l  call void @c()\l  call void @d()\l  store i32 10, i32* %2, align 4\l  br label %\"0x55adefe63270 - Virtual Checkpoint\"\l}"];
+	Node0x55adefe62c40 -> Node0x55adefe630b0;
+	Node0x55adefe630b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x55adefe63270 - Virtual Checkpoint\":            \l  %5 = load i32, i32* %2, align 4\l  %6 = icmp sgt i32 %5, 0\l  br i1 %6, label %\"0x55adefe63270\", label %\"0x55adefe632c0 - Thread End\"\l|{<s0>T|<s1>F}}"];
+	Node0x55adefe630b0:s0 -> Node0x55adefe63270;
+	Node0x55adefe630b0:s1 -> Node0x55adefe632c0;
+	Node0x55adefe63270 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x55adefe63270\":                                 \l  call void @f()\l  %7 = load i32, i32* %2, align 4\l  %8 = add nsw i32 %7, -1\l  store i32 %8, i32* %2, align 4\l  br label %\"0x55adefe63270 - Virtual Checkpoint\"\l}"];
+	Node0x55adefe63270 -> Node0x55adefe630b0;
+	Node0x55adefe632c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{\"0x55adefe632c0 - Thread End\":                    \l  call void @switchDeterministic()\l  call void @switchNonDeterministic()\l  %9 = load i32, i32* %0, align 4\l  ret i32 %9\l}"];
 }

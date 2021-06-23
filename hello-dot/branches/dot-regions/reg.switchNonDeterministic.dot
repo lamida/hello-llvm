@@ -1,39 +1,39 @@
 digraph "Region Graph for 'switchNonDeterministic' function" {
 	label="Region Graph for 'switchNonDeterministic' function";
 
-	Node0x55824c832870 [shape=record,label="{%0:\l  %1 = alloca i64, align 8\l  %2 = alloca i32, align 4\l  %3 = call i64 @time(i64* %1) #3\l  %4 = trunc i64 %3 to i32\l  call void @srand(i32 %4) #3\l  %5 = call i32 @rand() #3\l  %6 = srem i32 %5, 4\l  %7 = add nsw i32 1, %6\l  store i32 %7, i32* %2, align 4\l  %8 = load i32, i32* %2, align 4\l  switch i32 %8, label %13 [\l    i32 1, label %9\l    i32 2, label %10\l    i32 3, label %11\l    i32 4, label %12\l  ]\l}"];
-	Node0x55824c832870 -> Node0x55824c82dce0;
-	Node0x55824c832870 -> Node0x55824c832190;
-	Node0x55824c832870 -> Node0x55824c831e20;
-	Node0x55824c832870 -> Node0x55824c831a60;
-	Node0x55824c832870 -> Node0x55824c8318b0;
-	Node0x55824c82dce0 [shape=record,label="{%13:\l13:                                               \l  %14 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.11, i64 0, i64 0))\l  br label %15\l}"];
-	Node0x55824c82dce0 -> Node0x55824c832940;
-	Node0x55824c832940 [shape=record,label="{%15:\l15:                                               \l  ret void\l}"];
-	Node0x55824c832190 [shape=record,label="{%9:\l9:                                                \l  call void @g1()\l  br label %15\l}"];
-	Node0x55824c832190 -> Node0x55824c832940;
-	Node0x55824c831e20 [shape=record,label="{%10:\l10:                                               \l  call void @g2()\l  br label %15\l}"];
-	Node0x55824c831e20 -> Node0x55824c832940;
-	Node0x55824c831a60 [shape=record,label="{%11:\l11:                                               \l  call void @g3()\l  br label %15\l}"];
-	Node0x55824c831a60 -> Node0x55824c832940;
-	Node0x55824c8318b0 [shape=record,label="{%12:\l12:                                               \l  call void @g4()\l  br label %15\l}"];
-	Node0x55824c8318b0 -> Node0x55824c832940;
+	Node0x55ec62381870 [shape=record,label="{%0:\l  %1 = alloca i64, align 8\l  %2 = alloca i32, align 4\l  %3 = call i64 @time(i64* %1) #3\l  %4 = trunc i64 %3 to i32\l  call void @srand(i32 %4) #3\l  %5 = call i32 @rand() #3\l  %6 = srem i32 %5, 4\l  %7 = add nsw i32 1, %6\l  store i32 %7, i32* %2, align 4\l  %8 = load i32, i32* %2, align 4\l  switch i32 %8, label %13 [\l    i32 1, label %9\l    i32 2, label %10\l    i32 3, label %11\l    i32 4, label %12\l  ]\l}"];
+	Node0x55ec62381870 -> Node0x55ec6237cce0;
+	Node0x55ec62381870 -> Node0x55ec62381190;
+	Node0x55ec62381870 -> Node0x55ec62380e20;
+	Node0x55ec62381870 -> Node0x55ec62380a60;
+	Node0x55ec62381870 -> Node0x55ec623808b0;
+	Node0x55ec6237cce0 [shape=record,label="{%13:\l13:                                               \l  %14 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.11, i64 0, i64 0))\l  br label %15\l}"];
+	Node0x55ec6237cce0 -> Node0x55ec62381940;
+	Node0x55ec62381940 [shape=record,label="{%15:\l15:                                               \l  ret void\l}"];
+	Node0x55ec62381190 [shape=record,label="{%9:\l9:                                                \l  call void @g1()\l  br label %15\l}"];
+	Node0x55ec62381190 -> Node0x55ec62381940;
+	Node0x55ec62380e20 [shape=record,label="{%10:\l10:                                               \l  call void @g2()\l  br label %15\l}"];
+	Node0x55ec62380e20 -> Node0x55ec62381940;
+	Node0x55ec62380a60 [shape=record,label="{%11:\l11:                                               \l  call void @g3()\l  br label %15\l}"];
+	Node0x55ec62380a60 -> Node0x55ec62381940;
+	Node0x55ec623808b0 [shape=record,label="{%12:\l12:                                               \l  call void @g4()\l  br label %15\l}"];
+	Node0x55ec623808b0 -> Node0x55ec62381940;
 	colorscheme = "paired12"
-        subgraph cluster_0x55824c8399a0 {
+        subgraph cluster_0x55ec623889a0 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0x55824c839890 {
+          subgraph cluster_0x55ec62388890 {
             label = "";
             style = filled;
             color = 3
-            Node0x55824c832870;
-            Node0x55824c82dce0;
-            Node0x55824c832190;
-            Node0x55824c831e20;
-            Node0x55824c831a60;
-            Node0x55824c8318b0;
+            Node0x55ec62381870;
+            Node0x55ec6237cce0;
+            Node0x55ec62381190;
+            Node0x55ec62380e20;
+            Node0x55ec62380a60;
+            Node0x55ec623808b0;
           }
-          Node0x55824c832940;
+          Node0x55ec62381940;
         }
 }

@@ -1,0 +1,21 @@
+digraph "CFG for 'switchDeterministic' function" {
+	label="CFG for 'switchDeterministic' function";
+
+	Node0x55b37e303280 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{entry:\l  %r = alloca i32, align 4\l  store i32 4, i32* %r, align 4\l  %0 = load i32, i32* %r, align 4\l  switch i32 %0, label %sw.default [\l    i32 1, label %sw.bb\l    i32 2, label %sw.bb1\l    i32 3, label %sw.bb2\l    i32 4, label %sw.bb3\l  ]\l|{<s0>def|<s1>1|<s2>2|<s3>3|<s4>4}}"];
+	Node0x55b37e303280:s0 -> Node0x55b37e303560;
+	Node0x55b37e303280:s1 -> Node0x55b37e3035e0;
+	Node0x55b37e303280:s2 -> Node0x55b37e303680;
+	Node0x55b37e303280:s3 -> Node0x55b37e303720;
+	Node0x55b37e303280:s4 -> Node0x55b37e3037f0;
+	Node0x55b37e3035e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb:                                            \l  call void @g1()\l  br label %sw.epilog\l}"];
+	Node0x55b37e3035e0 -> Node0x55b37e303b30;
+	Node0x55b37e303680 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb1:                                           \l  call void @g2()\l  br label %sw.epilog\l}"];
+	Node0x55b37e303680 -> Node0x55b37e303b30;
+	Node0x55b37e303720 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb2:                                           \l  call void @g3()\l  br label %sw.epilog\l}"];
+	Node0x55b37e303720 -> Node0x55b37e303b30;
+	Node0x55b37e3037f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb3:                                           \l  call void @g4()\l  br label %sw.epilog\l}"];
+	Node0x55b37e3037f0 -> Node0x55b37e303b30;
+	Node0x55b37e303560 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.default:                                       \l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8],\l... [13 x i8]* @.str.11, i64 0, i64 0))\l  br label %sw.epilog\l}"];
+	Node0x55b37e303560 -> Node0x55b37e303b30;
+	Node0x55b37e303b30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{sw.epilog:                                        \l  ret void\l}"];
+}

@@ -1,0 +1,14 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x55705afce8d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x55705afce8d0 - Thread Start\\\l df: 0\\\l idf: 0\\\l bf: 0\\\l po: 4\":\l  %0 = alloca i32, align 4\l  %1 = alloca i32, align 4\l  store i32 0, i32* %0, align 4\l  call void @sA()\l  store i32 0, i32* %1, align 4\l  br label %\"0x55705afced40 - Virtual Checkpoint\\\l df: 1\\\l bf: 1\\\l po: 3\l... \\\l succ: 0\"\l}"];
+	Node0x55705afce8d0 -> Node0x55705afcec10;
+	Node0x55705afcec10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x55705afced40 - Virtual Checkpoint\\\l df: 1\\\l bf: 1\\\l po: 3 \\\l succ: 0\": \l  %2 = load i32, i32* %1, align 4\l  %3 = icmp slt i32 %2, 10\l  br i1 %3, label %\"0x55705afcee20 - Exit Point\\\l df: 2\\\l bf: 2\\\l po: 1\",\l... label %\"0x55705afcee70 - Thread End\\\l df: 4\\\l bf: 3\\\l po: 2\"\l|{<s0>T|<s1>F}}"];
+	Node0x55705afcec10:s0 -> Node0x55705afcee20;
+	Node0x55705afcec10:s1 -> Node0x55705afcee70;
+	Node0x55705afcee20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x55705afcee20 - Exit Point\\\l df: 2\\\l bf: 2\\\l po: 1\": \l  %4 = load i32, i32* %1, align 4\l  %5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([7 x i8], [7 x\l... i8]* @.str.2, i64 0, i64 0), i32 %4)\l  br label %\"0x55705afced40\\\l df: 3\\\l bf: 4\\\l po: 0\"\l}"];
+	Node0x55705afcee20 -> Node0x55705afced40;
+	Node0x55705afced40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x55705afced40\\\l df: 3\\\l bf: 4\\\l po: 0\":      \l  %6 = load i32, i32* %1, align 4\l  %7 = add nsw i32 %6, 1\l  store i32 %7, i32* %1, align 4\l  br label %\"0x55705afced40 - Virtual Checkpoint\\\l df: 1\\\l bf: 1\\\l po: 3\l... \\\l succ: 0\"\l}"];
+	Node0x55705afced40 -> Node0x55705afcec10;
+	Node0x55705afcee70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x55705afcee70 - Thread End\\\l df: 4\\\l bf: 3\\\l po: 2\": \l  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str.3, i64 0, i64 0))\l  call void @my_terminate()\l  %9 = load i32, i32* %0, align 4\l  ret i32 %9\l}"];
+}

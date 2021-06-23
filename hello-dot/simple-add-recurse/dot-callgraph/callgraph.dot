@@ -1,0 +1,8 @@
+digraph "Call graph" {
+	label="Call graph";
+
+	Node0xe55940 [shape=record,label="{external node}"];
+	Node0xe55940 -> Node0xe559e0;
+	Node0xe559e0 [shape=record,label="{addRecurse}"];
+	Node0xe559e0 -> Node0xe559e0;
+}

@@ -1,0 +1,2 @@
+void MakeItRain();
+void MakeItSunny();

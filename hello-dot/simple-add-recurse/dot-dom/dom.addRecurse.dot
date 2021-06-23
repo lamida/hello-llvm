@@ -1,0 +1,11 @@
+digraph "Dominator tree for 'addRecurse' function" {
+	label="Dominator tree for 'addRecurse' function";
+
+	Node0x24ce900 [shape=record,label="{%2:\l  %3 = alloca i32, align 4\l  %4 = alloca i32, align 4\l  %5 = alloca i32, align 4\l  store i32 %0, i32* %4, align 4\l  store i32 %1, i32* %5, align 4\l  %6 = load i32, i32* %4, align 4\l  %7 = icmp eq i32 %6, 0\l  br i1 %7, label %8, label %10\l}"];
+	Node0x24ce900 -> Node0x24ced50;
+	Node0x24ce900 -> Node0x24ced90;
+	Node0x24ce900 -> Node0x24cedd0;
+	Node0x24ced50 [shape=record,label="{%8:\l8:                                                \l  %9 = load i32, i32* %5, align 4\l  store i32 %9, i32* %3, align 4\l  br label %16\l}"];
+	Node0x24ced90 [shape=record,label="{%16:\l16:                                               \l  %17 = load i32, i32* %3, align 4\l  ret i32 %17\l}"];
+	Node0x24cedd0 [shape=record,label="{%10:\l10:                                               \l  %11 = load i32, i32* %4, align 4\l  %12 = sub nsw i32 %11, 1\l  %13 = load i32, i32* %5, align 4\l  %14 = add nsw i32 %13, 1\l  %15 = call i32 @addRecurse(i32 %12, i32 %14)\l  store i32 %15, i32* %3, align 4\l  br label %16\l}"];
+}

@@ -1,0 +1,19 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x55b37e306300 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{entry:\l  %retval = alloca i32, align 4\l  %a = alloca i32, align 4\l  %z = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  store i32 1, i32* %a, align 4\l  %0 = load i32, i32* %a, align 4\l  %cmp = icmp eq i32 %0, 1\l  br i1 %cmp, label %if.then, label %if.else\l|{<s0>T|<s1>F}}"];
+	Node0x55b37e306300:s0 -> Node0x55b37e306870;
+	Node0x55b37e306300:s1 -> Node0x55b37e3068e0;
+	Node0x55b37e306870 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{if.then:                                          \l  call void @b1()\l  br label %if.end\l}"];
+	Node0x55b37e306870 -> Node0x55b37e306ad0;
+	Node0x55b37e3068e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{if.else:                                          \l  call void @b2()\l  br label %if.end\l}"];
+	Node0x55b37e3068e0 -> Node0x55b37e306ad0;
+	Node0x55b37e306ad0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{if.end:                                           \l  call void @c()\l  call void @d()\l  store i32 10, i32* %z, align 4\l  br label %while.cond\l}"];
+	Node0x55b37e306ad0 -> Node0x55b37e306f20;
+	Node0x55b37e306f20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{while.cond:                                       \l  %1 = load i32, i32* %z, align 4\l  %cmp1 = icmp sgt i32 %1, 0\l  br i1 %cmp1, label %while.body, label %while.end\l|{<s0>T|<s1>F}}"];
+	Node0x55b37e306f20:s0 -> Node0x55b37e307130;
+	Node0x55b37e306f20:s1 -> Node0x55b37e3071b0;
+	Node0x55b37e307130 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{while.body:                                       \l  call void @f()\l  %2 = load i32, i32* %z, align 4\l  %dec = add nsw i32 %2, -1\l  store i32 %dec, i32* %z, align 4\l  br label %while.cond\l}"];
+	Node0x55b37e307130 -> Node0x55b37e306f20;
+	Node0x55b37e3071b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{while.end:                                        \l  call void @switchDeterministic()\l  call void @switchNonDeterministic()\l  %3 = load i32, i32* %retval, align 4\l  ret i32 %3\l}"];
+}

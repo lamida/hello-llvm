@@ -1,0 +1,7 @@
+digraph "Post dominator tree for 'b2' function" {
+	label="Post dominator tree for 'b2' function";
+
+	Node0x564211570fd0 [shape=record,label="{Post dominance root node}"];
+	Node0x564211570fd0 -> Node0x5642115755a0;
+	Node0x5642115755a0 [shape=record,label="{%0:\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14\l... x i8]* @.str.2, i64 0, i64 0))\l  ret void\l}"];
+}

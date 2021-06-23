@@ -1,0 +1,11 @@
+digraph "Dominator tree for 'fib' function" {
+	label="Dominator tree for 'fib' function";
+
+	Node0x5590fb24baa0 [shape=record,label="{%1:\l  %2 = alloca i64, align 8\l  %3 = alloca i64, align 8\l  store i64 %0, i64* %3, align 8\l  %4 = load i64, i64* %3, align 8\l  %5 = icmp slt i64 %4, 2\l  br i1 %5, label %6, label %8\l}"];
+	Node0x5590fb24baa0 -> Node0x5590fb24bf10;
+	Node0x5590fb24baa0 -> Node0x5590fb24bf70;
+	Node0x5590fb24baa0 -> Node0x5590fb24bfd0;
+	Node0x5590fb24bf10 [shape=record,label="{%6:\l6:                                                \l  %7 = load i64, i64* %3, align 8\l  store i64 %7, i64* %2, align 8\l  br label %16\l}"];
+	Node0x5590fb24bf70 [shape=record,label="{%16:\l16:                                               \l  %17 = load i64, i64* %2, align 8\l  ret i64 %17\l}"];
+	Node0x5590fb24bfd0 [shape=record,label="{%8:\l8:                                                \l  %9 = load i64, i64* %3, align 8\l  %10 = sub nsw i64 %9, 1\l  %11 = call i64 @fib(i64 %10)\l  %12 = load i64, i64* %3, align 8\l  %13 = sub nsw i64 %12, 2\l  %14 = call i64 @fib(i64 %13)\l  %15 = add nsw i64 %11, %14\l  store i64 %15, i64* %2, align 8\l  br label %16\l}"];
+}

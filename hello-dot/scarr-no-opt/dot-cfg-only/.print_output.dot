@@ -1,0 +1,5 @@
+digraph "CFG for 'print_output' function" {
+	label="CFG for 'print_output' function";
+
+	Node0x558d52db3020 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{entry}"];
+}

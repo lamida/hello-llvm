@@ -1,0 +1,19 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x556653694300 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{entry|{<s0>T|<s1>F}}"];
+	Node0x556653694300:s0 -> Node0x556653694870;
+	Node0x556653694300:s1 -> Node0x5566536948e0;
+	Node0x556653694870 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{if.then}"];
+	Node0x556653694870 -> Node0x556653694ad0;
+	Node0x5566536948e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{if.else}"];
+	Node0x5566536948e0 -> Node0x556653694ad0;
+	Node0x556653694ad0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{if.end}"];
+	Node0x556653694ad0 -> Node0x556653694f20;
+	Node0x556653694f20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{while.cond|{<s0>T|<s1>F}}"];
+	Node0x556653694f20:s0 -> Node0x556653695130;
+	Node0x556653694f20:s1 -> Node0x5566536951b0;
+	Node0x556653695130 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{while.body}"];
+	Node0x556653695130 -> Node0x556653694f20;
+	Node0x5566536951b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{while.end}"];
+}

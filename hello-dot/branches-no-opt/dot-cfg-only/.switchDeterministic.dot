@@ -1,0 +1,21 @@
+digraph "CFG for 'switchDeterministic' function" {
+	label="CFG for 'switchDeterministic' function";
+
+	Node0x556653691280 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{entry|{<s0>def|<s1>1|<s2>2|<s3>3|<s4>4}}"];
+	Node0x556653691280:s0 -> Node0x556653691560;
+	Node0x556653691280:s1 -> Node0x5566536915e0;
+	Node0x556653691280:s2 -> Node0x556653691680;
+	Node0x556653691280:s3 -> Node0x556653691720;
+	Node0x556653691280:s4 -> Node0x5566536917f0;
+	Node0x5566536915e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb}"];
+	Node0x5566536915e0 -> Node0x556653691b30;
+	Node0x556653691680 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb1}"];
+	Node0x556653691680 -> Node0x556653691b30;
+	Node0x556653691720 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb2}"];
+	Node0x556653691720 -> Node0x556653691b30;
+	Node0x5566536917f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb3}"];
+	Node0x5566536917f0 -> Node0x556653691b30;
+	Node0x556653691560 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.default}"];
+	Node0x556653691560 -> Node0x556653691b30;
+	Node0x556653691b30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{sw.epilog}"];
+}

@@ -1,0 +1,27 @@
+digraph "Region Graph for 'fib' function" {
+	label="Region Graph for 'fib' function";
+
+	Node0x55674a757c40 [shape=record,label="{entry}"];
+	Node0x55674a757c40 -> Node0x55674a757ff0;
+	Node0x55674a757c40 -> Node0x55674a758430;
+	Node0x55674a757ff0 [shape=record,label="{if.then}"];
+	Node0x55674a757ff0 -> Node0x55674a758600;
+	Node0x55674a758600 [shape=record,label="{return}"];
+	Node0x55674a758430 [shape=record,label="{if.end}"];
+	Node0x55674a758430 -> Node0x55674a758600;
+	colorscheme = "paired12"
+        subgraph cluster_0x55674a75dba0 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x55674a75d9e0 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x55674a757c40;
+            Node0x55674a757ff0;
+            Node0x55674a758430;
+          }
+          Node0x55674a758600;
+        }
+}

@@ -1,0 +1,5 @@
+digraph "CFG for 'a' function" {
+	label="CFG for 'a' function";
+
+	Node0x55c2edc86620 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{entry}"];
+}

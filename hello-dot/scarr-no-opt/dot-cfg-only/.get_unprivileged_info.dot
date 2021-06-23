@@ -1,0 +1,5 @@
+digraph "CFG for 'get_unprivileged_info' function" {
+	label="CFG for 'get_unprivileged_info' function";
+
+	Node0x558d52db2b50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{entry}"];
+}

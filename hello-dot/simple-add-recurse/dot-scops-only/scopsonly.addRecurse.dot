@@ -1,0 +1,27 @@
+digraph "Scop Graph for 'addRecurse' function" {
+	label="Scop Graph for 'addRecurse' function";
+
+	Node0x1795350 [shape=record,label="{%2}"];
+	Node0x1795350 -> Node0x17957f0;
+	Node0x1795350 -> Node0x1795850;
+	Node0x17957f0 [shape=record,label="{%8}"];
+	Node0x17957f0 -> Node0x1795910;
+	Node0x1795910 [shape=record,label="{%16}"];
+	Node0x1795850 [shape=record,label="{%10}"];
+	Node0x1795850 -> Node0x1795910;
+	colorscheme = "paired12"
+        subgraph cluster_0x1743b00 {
+          label = "";
+          style = solid;
+          color = 1
+          subgraph cluster_0x176bee0 {
+            label = "";
+            style = solid;
+            color = 6
+            Node0x1795350;
+            Node0x17957f0;
+            Node0x1795850;
+          }
+          Node0x1795910;
+        }
+}

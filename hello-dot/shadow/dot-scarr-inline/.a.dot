@@ -1,0 +1,5 @@
+digraph "CFG for 'a' function" {
+	label="CFG for 'a' function";
+
+	Node0x556cf6cdf470 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x556cf6cdf470 - Exit Point\\\l df: 0\\\l idf: 0\\\l bf: 0\\\l po: 0\":\l  %1 = alloca i32, align 4\l  store i32 %0, i32* %1, align 4\l  %2 = load i32, i32* %1, align 4\l  %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str, i64 0, i64 0), i32 %2)\l  ret void\l}"];
+}

@@ -1,0 +1,21 @@
+digraph "CFG for 'switchDeterministic' function" {
+	label="CFG for 'switchDeterministic' function";
+
+	Node0x55dc1ce6d240 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x55dc1ce6d240\\\l df: 0\\\l idf: 0\\\l bf: 0\\\l po: 6\":\l  %r = alloca i32, align 4\l  store i32 4, i32* %r, align 4\l  %0 = load i32, i32* %r, align 4\l  switch i32 %0, label %\"0x55dc1ce6d520 - Exit Point\\\l df: 1\\\l bf: 1\\\l po:\l... 1 \\\l succ: 0\" [\l    i32 1, label %\"0x55dc1ce6d5a0\\\l df: 3\\\l bf: 2\\\l po: 2 \\\l succ: 1\"\l    i32 2, label %\"0x55dc1ce6d640\\\l df: 4\\\l bf: 3\\\l po: 3 \\\l succ: 2\"\l    i32 3, label %\"0x55dc1ce6d6e0\\\l df: 5\\\l bf: 4\\\l po: 4 \\\l succ: 3\"\l    i32 4, label %\"0x55dc1ce6d7b0\\\l df: 6\\\l bf: 5\\\l po: 5 \\\l succ: 4\"\l  ]\l|{<s0>def|<s1>1|<s2>2|<s3>3|<s4>4}}"];
+	Node0x55dc1ce6d240:s0 -> Node0x55dc1ce6d520;
+	Node0x55dc1ce6d240:s1 -> Node0x55dc1ce6d5a0;
+	Node0x55dc1ce6d240:s2 -> Node0x55dc1ce6d640;
+	Node0x55dc1ce6d240:s3 -> Node0x55dc1ce6d6e0;
+	Node0x55dc1ce6d240:s4 -> Node0x55dc1ce6d7b0;
+	Node0x55dc1ce6d5a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{\"0x55dc1ce6d5a0\\\l df: 3\\\l bf: 2\\\l po: 2 \\\l succ: 1\": \l  call void @g1()\l  br label %\"0x55dc1ce6daf0\\\l df: 2\\\l bf: 6\\\l po: 0\"\l}"];
+	Node0x55dc1ce6d5a0 -> Node0x55dc1ce6daf0;
+	Node0x55dc1ce6d640 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{\"0x55dc1ce6d640\\\l df: 4\\\l bf: 3\\\l po: 3 \\\l succ: 2\": \l  call void @g2()\l  br label %\"0x55dc1ce6daf0\\\l df: 2\\\l bf: 6\\\l po: 0\"\l}"];
+	Node0x55dc1ce6d640 -> Node0x55dc1ce6daf0;
+	Node0x55dc1ce6d6e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{\"0x55dc1ce6d6e0\\\l df: 5\\\l bf: 4\\\l po: 4 \\\l succ: 3\": \l  call void @g3()\l  br label %\"0x55dc1ce6daf0\\\l df: 2\\\l bf: 6\\\l po: 0\"\l}"];
+	Node0x55dc1ce6d6e0 -> Node0x55dc1ce6daf0;
+	Node0x55dc1ce6d7b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{\"0x55dc1ce6d7b0\\\l df: 6\\\l bf: 5\\\l po: 5 \\\l succ: 4\": \l  call void @g4()\l  br label %\"0x55dc1ce6daf0\\\l df: 2\\\l bf: 6\\\l po: 0\"\l}"];
+	Node0x55dc1ce6d7b0 -> Node0x55dc1ce6daf0;
+	Node0x55dc1ce6d520 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{\"0x55dc1ce6d520 - Exit Point\\\l df: 1\\\l bf: 1\\\l po: 1 \\\l succ: 0\": \l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8],\l... [13 x i8]* @.str.11, i64 0, i64 0))\l  br label %\"0x55dc1ce6daf0\\\l df: 2\\\l bf: 6\\\l po: 0\"\l}"];
+	Node0x55dc1ce6d520 -> Node0x55dc1ce6daf0;
+	Node0x55dc1ce6daf0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x55dc1ce6daf0\\\l df: 2\\\l bf: 6\\\l po: 0\":      \l  ret void\l}"];
+}

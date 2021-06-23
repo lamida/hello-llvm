@@ -1,0 +1,5 @@
+digraph "CFG for 'sub' function" {
+	label="CFG for 'sub' function";
+
+	Node0x55a18d79b2e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2}"];
+}

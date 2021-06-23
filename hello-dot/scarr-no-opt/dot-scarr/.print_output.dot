@@ -1,0 +1,5 @@
+digraph "CFG for 'print_output' function" {
+	label="CFG for 'print_output' function";
+
+	Node0x557b03371fe0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x557b03371fe0 - Exit Point\\\l df: 0\\\l idf: 0\\\l bf: 0\\\l po: 0\":\l  %result.addr = alloca i8*, align 8\l  store i8* %result, i8** %result.addr, align 8\l  %0 = load i8*, i8** %result.addr, align 8\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3\l... x i8]* @.str.4, i64 0, i64 0), i8* %0)\l  ret void\l}"];
+}

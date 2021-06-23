@@ -1,0 +1,12 @@
+digraph "Region Graph for 'mult' function" {
+	label="Region Graph for 'mult' function";
+
+	Node0x557b907f2630 [shape=record,label="{%2}"];
+	colorscheme = "paired12"
+        subgraph cluster_0x557b907ee540 {
+          label = "";
+          style = filled;
+          color = 1
+          Node0x557b907f2630;
+        }
+}

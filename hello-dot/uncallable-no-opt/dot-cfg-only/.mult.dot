@@ -1,0 +1,5 @@
+digraph "CFG for 'mult' function" {
+	label="CFG for 'mult' function";
+
+	Node0x5643d7805ca0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{entry}"];
+}

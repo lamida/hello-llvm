@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'print_output' function" {
+	label="Dominator tree for 'print_output' function";
+
+	Node0x56135f4e9890 [shape=record,label="{%1}"];
+}

@@ -1,0 +1,5 @@
+digraph "CFG for 'get_privileged_info' function" {
+	label="CFG for 'get_privileged_info' function";
+
+	Node0x5555e6eee500 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0}"];
+}

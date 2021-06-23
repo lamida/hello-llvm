@@ -1,0 +1,5 @@
+digraph "CFG for 'get_input' function" {
+	label="CFG for 'get_input' function";
+
+	Node0x555e7650d5c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x555e7650d5c0 - Exit Point\\\l df: 0\\\l idf: 0\\\l bf: 0\\\l po: 0\":\l  %0 = alloca i32, align 4\l  %1 = call i32 (...) @rand()\l  %2 = srem i32 %1, 2\l  store i32 %2, i32* %0, align 4\l  %3 = load i32, i32* %0, align 4\l  %4 = icmp eq i32 %3, 1\l  %5 = zext i1 %4 to i64\l  %6 = select i1 %4, i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str,\l... i64 0, i64 0), i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.1, i64\l... 0, i64 0)\l  ret i8* %6\l}"];
+}

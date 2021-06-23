@@ -1,0 +1,32 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x556313a6b980 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#7396f570",label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  %4 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 0, i32* %2, align 4\l  br label %5\l}"];
+	Node0x556313a6b980 -> Node0x556313a6c2b0;
+	Node0x556313a6c2b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%5:\l5:                                                \l  %6 = load i32, i32* %2, align 4\l  %7 = icmp slt i32 %6, 10\l  br i1 %7, label %8, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x556313a6c2b0:s0 -> Node0x556313a6c410;
+	Node0x556313a6c2b0:s1 -> Node0x556313a6c460;
+	Node0x556313a6c410 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%8:\l8:                                                \l  store i32 0, i32* %3, align 4\l  br label %9\l}"];
+	Node0x556313a6c410 -> Node0x556313a6c260;
+	Node0x556313a6c260 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6a38570",label="{%9:\l9:                                                \l  %10 = load i32, i32* %3, align 4\l  %11 = icmp slt i32 %10, 5\l  br i1 %11, label %12, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x556313a6c260:s0 -> Node0x556313a6c6b0;
+	Node0x556313a6c260:s1 -> Node0x556313a6c700;
+	Node0x556313a6c6b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7a88970",label="{%12:\l12:                                               \l  store i32 0, i32* %4, align 4\l  br label %13\l}"];
+	Node0x556313a6c6b0 -> Node0x556313a6c8d0;
+	Node0x556313a6c8d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%13:\l13:                                               \l  %14 = load i32, i32* %4, align 4\l  %15 = icmp slt i32 %14, 100\l  br i1 %15, label %16, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x556313a6c8d0:s0 -> Node0x556313a6cac0;
+	Node0x556313a6c8d0:s1 -> Node0x556313a6cb10;
+	Node0x556313a6cac0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%16:\l16:                                               \l  %17 = load i32, i32* %2, align 4\l  %18 = load i32, i32* %3, align 4\l  %19 = load i32, i32* %4, align 4\l  %20 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([29 x i8], [29\l... x i8]* @.str, i64 0, i64 0), i32 %17, i32 %18, i32 %19)\l  br label %21\l}"];
+	Node0x556313a6cac0 -> Node0x556313a6d250;
+	Node0x556313a6d250 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%21:\l21:                                               \l  %22 = load i32, i32* %4, align 4\l  %23 = add nsw i32 %22, 1\l  store i32 %23, i32* %4, align 4\l  br label %13\l}"];
+	Node0x556313a6d250 -> Node0x556313a6c8d0;
+	Node0x556313a6cb10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7a88970",label="{%24:\l24:                                               \l  br label %25\l}"];
+	Node0x556313a6cb10 -> Node0x556313a6d510;
+	Node0x556313a6d510 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7a88970",label="{%25:\l25:                                               \l  %26 = load i32, i32* %3, align 4\l  %27 = add nsw i32 %26, 1\l  store i32 %27, i32* %3, align 4\l  br label %9\l}"];
+	Node0x556313a6d510 -> Node0x556313a6c260;
+	Node0x556313a6c700 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%28:\l28:                                               \l  br label %29\l}"];
+	Node0x556313a6c700 -> Node0x556313a6d7d0;
+	Node0x556313a6d7d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%29:\l29:                                               \l  %30 = load i32, i32* %2, align 4\l  %31 = add nsw i32 %30, 1\l  store i32 %31, i32* %2, align 4\l  br label %5\l}"];
+	Node0x556313a6d7d0 -> Node0x556313a6c2b0;
+	Node0x556313a6c460 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#7396f570",label="{%32:\l32:                                               \l  %33 = load i32, i32* %1, align 4\l  ret i32 %33\l}"];
+}

@@ -1,0 +1,5 @@
+digraph "CFG for 'get_input' function" {
+	label="CFG for 'get_input' function";
+
+	Node0x5555e6eed5d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0}"];
+}

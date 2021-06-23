@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'a' function" {
+	label="Dominator tree for 'a' function";
+
+	Node0x555c7040ca70 [shape=record,label="{entry:\l  %x.addr = alloca i32, align 4\l  store i32 %x, i32* %x.addr, align 4\l  %0 = load i32, i32* %x.addr, align 4\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4\l... x i8]* @.str, i64 0, i64 0), i32 %0)\l  ret void\l}"];
+}

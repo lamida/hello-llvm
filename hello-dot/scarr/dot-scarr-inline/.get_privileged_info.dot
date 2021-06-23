@@ -1,0 +1,5 @@
+digraph "CFG for 'get_privileged_info' function" {
+	label="CFG for 'get_privileged_info' function";
+
+	Node0x555e7650e4f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x555e7650e4f0\\\l df: 0\\\l idf: 0\\\l bf: 0\\\l po: 0\":\l  ret i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.2, i64 0, i64 0)\l}"];
+}

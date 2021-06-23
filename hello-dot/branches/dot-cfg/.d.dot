@@ -1,0 +1,5 @@
+digraph "CFG for 'd' function" {
+	label="CFG for 'd' function";
+
+	Node0x55e2398936a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0:\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.5, i64 0, i64 0))\l  call void @e()\l  ret void\l}"];
+}

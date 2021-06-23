@@ -1,14 +1,14 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0xf1d4d0 [shape=record,label="{entry}"];
-	Node0xf1d4d0 -> Node0xf1d8c0;
-	Node0xf1d8c0 [shape=record,label="{for.cond|{<s0>T|<s1>F}}"];
-	Node0xf1d8c0:s0 -> Node0xf1dae0;
-	Node0xf1d8c0:s1 -> Node0xf1dbc0;
-	Node0xf1dae0 [shape=record,label="{for.body}"];
-	Node0xf1dae0 -> Node0xf1de20;
-	Node0xf1de20 [shape=record,label="{for.inc}"];
-	Node0xf1de20 -> Node0xf1d8c0;
-	Node0xf1dbc0 [shape=record,label="{for.end}"];
+	Node0x5589e6b74b80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{entry}"];
+	Node0x5589e6b74b80 -> Node0x5589e6b74f90;
+	Node0x5589e6b74f90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{for.cond|{<s0>T|<s1>F}}"];
+	Node0x5589e6b74f90:s0 -> Node0x5589e6b751f0;
+	Node0x5589e6b74f90:s1 -> Node0x5589e6b75270;
+	Node0x5589e6b751f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{for.body}"];
+	Node0x5589e6b751f0 -> Node0x5589e6b75620;
+	Node0x5589e6b75620 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{for.inc}"];
+	Node0x5589e6b75620 -> Node0x5589e6b74f90;
+	Node0x5589e6b75270 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{for.end}"];
 }

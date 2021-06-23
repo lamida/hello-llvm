@@ -1,5 +1,5 @@
 digraph "CFG for 'my_terminate' function" {
 	label="CFG for 'my_terminate' function";
 
-	Node0xf1d110 [shape=record,label="{entry}"];
+	Node0x5589e6b74810 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{entry}"];
 }

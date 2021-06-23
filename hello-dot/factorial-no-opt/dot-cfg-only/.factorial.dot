@@ -1,12 +1,12 @@
 digraph "CFG for 'factorial' function" {
 	label="CFG for 'factorial' function";
 
-	Node0x1b4fff0 [shape=record,label="{entry}"];
-	Node0x1b4fff0 -> Node0x1b50860;
-	Node0x1b50860 [shape=record,label="{while.cond|{<s0>T|<s1>F}}"];
-	Node0x1b50860:s0 -> Node0x1b50a80;
-	Node0x1b50860:s1 -> Node0x1b50b60;
-	Node0x1b50a80 [shape=record,label="{while.body}"];
-	Node0x1b50a80 -> Node0x1b50860;
-	Node0x1b50b60 [shape=record,label="{while.end}"];
+	Node0x559f9f7d5740 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{entry}"];
+	Node0x559f9f7d5740 -> Node0x559f9f7d5f30;
+	Node0x559f9f7d5f30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{while.cond|{<s0>T|<s1>F}}"];
+	Node0x559f9f7d5f30:s0 -> Node0x559f9f7d6100;
+	Node0x559f9f7d5f30:s1 -> Node0x559f9f7d6180;
+	Node0x559f9f7d6100 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{while.body}"];
+	Node0x559f9f7d6100 -> Node0x559f9f7d5f30;
+	Node0x559f9f7d6180 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{while.end}"];
 }

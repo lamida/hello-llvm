@@ -1,12 +1,12 @@
 digraph "CFG for 'fib' function" {
 	label="CFG for 'fib' function";
 
-	Node0x1c03fc0 [shape=record,label="{entry|{<s0>T|<s1>F}}"];
-	Node0x1c03fc0:s0 -> Node0x1c048f0;
-	Node0x1c03fc0:s1 -> Node0x1c049c0;
-	Node0x1c048f0 [shape=record,label="{if.then}"];
-	Node0x1c048f0 -> Node0x1c04b30;
-	Node0x1c049c0 [shape=record,label="{if.end}"];
-	Node0x1c049c0 -> Node0x1c04b30;
-	Node0x1c04b30 [shape=record,label="{return}"];
+	Node0x560d0d8af710 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{entry|{<s0>T|<s1>F}}"];
+	Node0x560d0d8af710:s0 -> Node0x560d0d8affe0;
+	Node0x560d0d8af710:s1 -> Node0x560d0d8b0050;
+	Node0x560d0d8affe0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{if.then}"];
+	Node0x560d0d8affe0 -> Node0x560d0d8b0260;
+	Node0x560d0d8b0050 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{if.end}"];
+	Node0x560d0d8b0050 -> Node0x560d0d8b0260;
+	Node0x560d0d8b0260 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{return}"];
 }

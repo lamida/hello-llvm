@@ -1,42 +1,42 @@
 digraph "Region Graph for 'main' function" {
 	label="Region Graph for 'main' function";
 
-	Node0x107b400 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %a = alloca i32, align 4\l  %z = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  store i32 1, i32* %a, align 4\l  %0 = load i32, i32* %a, align 4\l  %cmp = icmp eq i32 %0, 1\l  br i1 %cmp, label %if.then, label %if.else\l}"];
-	Node0x107b400 -> Node0x109efd0;
-	Node0x107b400 -> Node0x10a5070;
-	Node0x109efd0 [shape=record,label="{if.then:                                          \l  call void @b1()\l  br label %if.end\l}"];
-	Node0x109efd0 -> Node0x10a54c0;
-	Node0x10a54c0 [shape=record,label="{if.end:                                           \l  call void @c()\l  call void @d()\l  store i32 10, i32* %z, align 4\l  br label %while.cond\l}"];
-	Node0x10a54c0 -> Node0x10a5910;
-	Node0x10a5910 [shape=record,label="{while.cond:                                       \l  %1 = load i32, i32* %z, align 4\l  %cmp1 = icmp sgt i32 %1, 0\l  br i1 %cmp1, label %while.body, label %while.end\l}"];
-	Node0x10a5910 -> Node0x10a6570;
-	Node0x10a5910 -> Node0x10a3bd0;
-	Node0x10a6570 [shape=record,label="{while.body:                                       \l  call void @f()\l  %2 = load i32, i32* %z, align 4\l  %dec = add nsw i32 %2, -1\l  store i32 %dec, i32* %z, align 4\l  br label %while.cond\l}"];
-	Node0x10a6570 -> Node0x10a5910[constraint=false];
-	Node0x10a3bd0 [shape=record,label="{while.end:                                        \l  call void @switchDeterministic()\l  call void @switchNonDeterministic()\l  %3 = load i32, i32* %retval, align 4\l  ret i32 %3\l}"];
-	Node0x10a5070 [shape=record,label="{if.else:                                          \l  call void @b2()\l  br label %if.end\l}"];
-	Node0x10a5070 -> Node0x10a54c0;
+	Node0x55a3a1503cd0 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %a = alloca i32, align 4\l  %z = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  store i32 1, i32* %a, align 4\l  %0 = load i32, i32* %a, align 4\l  %cmp = icmp eq i32 %0, 1\l  br i1 %cmp, label %if.then, label %if.else\l}"];
+	Node0x55a3a1503cd0 -> Node0x55a3a1503e10;
+	Node0x55a3a1503cd0 -> Node0x55a3a1503b10;
+	Node0x55a3a1503e10 [shape=record,label="{if.then:                                          \l  call void @b1()\l  br label %if.end\l}"];
+	Node0x55a3a1503e10 -> Node0x55a3a1503060;
+	Node0x55a3a1503060 [shape=record,label="{if.end:                                           \l  call void @c()\l  call void @d()\l  store i32 10, i32* %z, align 4\l  br label %while.cond\l}"];
+	Node0x55a3a1503060 -> Node0x55a3a15023c0;
+	Node0x55a3a15023c0 [shape=record,label="{while.cond:                                       \l  %1 = load i32, i32* %z, align 4\l  %cmp1 = icmp sgt i32 %1, 0\l  br i1 %cmp1, label %while.body, label %while.end\l}"];
+	Node0x55a3a15023c0 -> Node0x55a3a1501f30;
+	Node0x55a3a15023c0 -> Node0x55a3a1504160;
+	Node0x55a3a1501f30 [shape=record,label="{while.body:                                       \l  call void @f()\l  %2 = load i32, i32* %z, align 4\l  %dec = add nsw i32 %2, -1\l  store i32 %dec, i32* %z, align 4\l  br label %while.cond\l}"];
+	Node0x55a3a1501f30 -> Node0x55a3a15023c0[constraint=false];
+	Node0x55a3a1504160 [shape=record,label="{while.end:                                        \l  call void @switchDeterministic()\l  call void @switchNonDeterministic()\l  %3 = load i32, i32* %retval, align 4\l  ret i32 %3\l}"];
+	Node0x55a3a1503b10 [shape=record,label="{if.else:                                          \l  call void @b2()\l  br label %if.end\l}"];
+	Node0x55a3a1503b10 -> Node0x55a3a1503060;
 	colorscheme = "paired12"
-        subgraph cluster_0x10ac150 {
+        subgraph cluster_0x55a3a1509c00 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0x10cf3e0 {
+          subgraph cluster_0x55a3a14e9e20 {
             label = "";
             style = filled;
             color = 3
-            Node0x107b400;
-            Node0x109efd0;
-            Node0x10a5070;
+            Node0x55a3a1503cd0;
+            Node0x55a3a1503e10;
+            Node0x55a3a1503b10;
           }
-          subgraph cluster_0x107aaa0 {
+          subgraph cluster_0x55a3a1509a70 {
             label = "";
             style = filled;
             color = 3
-            Node0x10a5910;
-            Node0x10a6570;
+            Node0x55a3a15023c0;
+            Node0x55a3a1501f30;
           }
-          Node0x10a54c0;
-          Node0x10a3bd0;
+          Node0x55a3a1503060;
+          Node0x55a3a1504160;
         }
 }

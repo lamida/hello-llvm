@@ -1,5 +1,5 @@
 digraph "CFG for 'mult' function" {
 	label="CFG for 'mult' function";
 
-	Node0x55866a3dcc90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x55866a3dcc90\":\l  %a.addr = alloca i32, align 4\l  %b.addr = alloca i32, align 4\l  store i32 %a, i32* %a.addr, align 4\l  store i32 %b, i32* %b.addr, align 4\l  %0 = load i32, i32* %a.addr, align 4\l  %1 = load i32, i32* %b.addr, align 4\l  %mul = mul nsw i32 %0, %1\l  ret i32 %mul\l}"];
+	Node0x555c37f14c90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x555c37f14c90\":\l  %a.addr = alloca i32, align 4\l  %b.addr = alloca i32, align 4\l  store i32 %a, i32* %a.addr, align 4\l  store i32 %b, i32* %b.addr, align 4\l  %0 = load i32, i32* %a.addr, align 4\l  %1 = load i32, i32* %b.addr, align 4\l  %mul = mul nsw i32 %0, %1\l  ret i32 %mul\l}"];
 }

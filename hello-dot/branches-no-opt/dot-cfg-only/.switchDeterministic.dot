@@ -1,21 +1,21 @@
 digraph "CFG for 'switchDeterministic' function" {
 	label="CFG for 'switchDeterministic' function";
 
-	Node0x1adc780 [shape=record,label="{entry|{<s0>def|<s1>1|<s2>2|<s3>3|<s4>4}}"];
-	Node0x1adc780:s0 -> Node0x1adc970;
-	Node0x1adc780:s1 -> Node0x1adca50;
-	Node0x1adc780:s2 -> Node0x1adcb50;
-	Node0x1adc780:s3 -> Node0x1adcc50;
-	Node0x1adc780:s4 -> Node0x1adcd20;
-	Node0x1adca50 [shape=record,label="{sw.bb}"];
-	Node0x1adca50 -> Node0x1add000;
-	Node0x1adcb50 [shape=record,label="{sw.bb1}"];
-	Node0x1adcb50 -> Node0x1add000;
-	Node0x1adcc50 [shape=record,label="{sw.bb2}"];
-	Node0x1adcc50 -> Node0x1add000;
-	Node0x1adcd20 [shape=record,label="{sw.bb3}"];
-	Node0x1adcd20 -> Node0x1add000;
-	Node0x1adc970 [shape=record,label="{sw.default}"];
-	Node0x1adc970 -> Node0x1add000;
-	Node0x1add000 [shape=record,label="{sw.epilog}"];
+	Node0x555a2d563280 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{entry|{<s0>def|<s1>1|<s2>2|<s3>3|<s4>4}}"];
+	Node0x555a2d563280:s0 -> Node0x555a2d563560;
+	Node0x555a2d563280:s1 -> Node0x555a2d5635e0;
+	Node0x555a2d563280:s2 -> Node0x555a2d563680;
+	Node0x555a2d563280:s3 -> Node0x555a2d563720;
+	Node0x555a2d563280:s4 -> Node0x555a2d5637f0;
+	Node0x555a2d5635e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb}"];
+	Node0x555a2d5635e0 -> Node0x555a2d563b30;
+	Node0x555a2d563680 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb1}"];
+	Node0x555a2d563680 -> Node0x555a2d563b30;
+	Node0x555a2d563720 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb2}"];
+	Node0x555a2d563720 -> Node0x555a2d563b30;
+	Node0x555a2d5637f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb3}"];
+	Node0x555a2d5637f0 -> Node0x555a2d563b30;
+	Node0x555a2d563560 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.default}"];
+	Node0x555a2d563560 -> Node0x555a2d563b30;
+	Node0x555a2d563b30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{sw.epilog}"];
 }

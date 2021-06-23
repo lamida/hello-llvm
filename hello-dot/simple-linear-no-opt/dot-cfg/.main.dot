@@ -1,5 +1,5 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x1dc8500 [shape=record,label="{entry:\l  call void @linear()\l  ret i32 0\l}"];
+	Node0x5597a70efb10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{entry:\l  call void @linear()\l  ret i32 0\l}"];
 }

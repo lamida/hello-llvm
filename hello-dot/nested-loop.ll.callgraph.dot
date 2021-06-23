@@ -1,7 +1,0 @@
-digraph "Call graph: ../../nested-loop.ll" {
-	label="Call graph: ../../nested-loop.ll";
-
-	Node0x5578308c7700 [shape=record,label="{main}"];
-	Node0x5578308c7700 -> Node0x5578308f37c0;
-	Node0x5578308f37c0 [shape=record,label="{printf}"];
-}

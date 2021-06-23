@@ -1,12 +1,12 @@
 digraph "Region Graph for 'main' function" {
 	label="Region Graph for 'main' function";
 
-	Node0x138da30 [shape=record,label="{entry:\l  %call = call i32 @factorial(i32 6)\l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([19 x i8],\l... [19 x i8]* @.str, i64 0, i64 0), i32 %call)\l  ret i32 0\l}"];
+	Node0x55c9521da9c0 [shape=record,label="{entry:\l  %call = call i32 @factorial(i32 6)\l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([19 x i8],\l... [19 x i8]* @.str, i64 0, i64 0), i32 %call)\l  ret i32 0\l}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x138bab0 {
+        subgraph cluster_0x55c9521d6810 {
           label = "";
           style = filled;
           color = 1
-          Node0x138da30;
+          Node0x55c9521da9c0;
         }
 }

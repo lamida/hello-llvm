@@ -1,13 +1,13 @@
 digraph "Post dominator tree for 'fib' function" {
 	label="Post dominator tree for 'fib' function";
 
-	Node0x16ba600 [shape=record,label="{Post dominance root node}"];
-	Node0x16ba600 -> Node0x16baa50;
-	Node0x16baa50 [shape=record,label="{return:                                           \l  %4 = load i64, i64* %retval, align 8\l  ret i64 %4\l}"];
-	Node0x16baa50 -> Node0x16baa90;
-	Node0x16baa50 -> Node0x16baad0;
-	Node0x16baa50 -> Node0x16bab10;
-	Node0x16baa90 [shape=record,label="{if.then:                                          \l  %1 = load i64, i64* %n.addr, align 8\l  store i64 %1, i64* %retval, align 8\l  br label %return\l}"];
-	Node0x16baad0 [shape=record,label="{entry:\l  %retval = alloca i64, align 8\l  %n.addr = alloca i64, align 8\l  store i64 %n, i64* %n.addr, align 8\l  %0 = load i64, i64* %n.addr, align 8\l  %cmp = icmp slt i64 %0, 2\l  br i1 %cmp, label %if.then, label %if.end\l}"];
-	Node0x16bab10 [shape=record,label="{if.end:                                           \l  %2 = load i64, i64* %n.addr, align 8\l  %sub = sub nsw i64 %2, 1\l  %call = call i64 @fib(i64 %sub)\l  %3 = load i64, i64* %n.addr, align 8\l  %sub1 = sub nsw i64 %3, 2\l  %call2 = call i64 @fib(i64 %sub1)\l  %add = add nsw i64 %call, %call2\l  store i64 %add, i64* %retval, align 8\l  br label %return\l}"];
+	Node0x558ad5b9aac0 [shape=record,label="{Post dominance root node}"];
+	Node0x558ad5b9aac0 -> Node0x558ad5b9af30;
+	Node0x558ad5b9af30 [shape=record,label="{return:                                           \l  %4 = load i64, i64* %retval, align 8\l  ret i64 %4\l}"];
+	Node0x558ad5b9af30 -> Node0x558ad5b9af90;
+	Node0x558ad5b9af30 -> Node0x558ad5b9aff0;
+	Node0x558ad5b9af30 -> Node0x558ad5b9b050;
+	Node0x558ad5b9af90 [shape=record,label="{if.then:                                          \l  %1 = load i64, i64* %n.addr, align 8\l  store i64 %1, i64* %retval, align 8\l  br label %return\l}"];
+	Node0x558ad5b9aff0 [shape=record,label="{entry:\l  %retval = alloca i64, align 8\l  %n.addr = alloca i64, align 8\l  store i64 %n, i64* %n.addr, align 8\l  %0 = load i64, i64* %n.addr, align 8\l  %cmp = icmp slt i64 %0, 2\l  br i1 %cmp, label %if.then, label %if.end\l}"];
+	Node0x558ad5b9b050 [shape=record,label="{if.end:                                           \l  %2 = load i64, i64* %n.addr, align 8\l  %sub = sub nsw i64 %2, 1\l  %call = call i64 @fib(i64 %sub)\l  %3 = load i64, i64* %n.addr, align 8\l  %sub1 = sub nsw i64 %3, 2\l  %call2 = call i64 @fib(i64 %sub1)\l  %add = add nsw i64 %call, %call2\l  store i64 %add, i64* %retval, align 8\l  br label %return\l}"];
 }

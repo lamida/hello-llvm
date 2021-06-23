@@ -1,5 +1,5 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x10830a0 [shape=record,label="{entry:\l  %call = call i32 @factorial(i32 6)\l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([19 x i8],\l... [19 x i8]* @.str, i64 0, i64 0), i32 %call)\l  ret i32 0\l}"];
+	Node0x5606cf53d7d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{entry:\l  %call = call i32 @factorial(i32 6)\l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([19 x i8],\l... [19 x i8]* @.str, i64 0, i64 0), i32 %call)\l  ret i32 0\l}"];
 }

@@ -1,9 +1,0 @@
-digraph "Call graph: ../../factorial.ll" {
-	label="Call graph: ../../factorial.ll";
-
-	Node0x5620d3ad3de0 [shape=record,label="{factorial}"];
-	Node0x5620d3ad3e90 [shape=record,label="{main}"];
-	Node0x5620d3ad3e90 -> Node0x5620d3ad3de0;
-	Node0x5620d3ad3e90 -> Node0x5620d3ad4380;
-	Node0x5620d3ad4380 [shape=record,label="{printf}"];
-}

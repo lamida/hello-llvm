@@ -1,12 +1,12 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x56280d28c490 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x56280d28c490 - Thread Start\\\l df: 0\\\l idf: 0\\\l bf: 0\\\l po: 3\":\l  %0 = alloca i32, align 4\l  %1 = alloca i32, align 4\l  %2 = bitcast i32* %0 to i8*\l  call void @llvm.lifetime.start.p0i8(i64 4, i8* %2)\l  %3 = bitcast i32* %1 to i8*\l  call void @llvm.lifetime.start.p0i8(i64 4, i8* %3)\l  store i32 6, i32* %0, align 4\l  store i32 1, i32* %1, align 4\l  br label %\"0x56280d2c5890 - Virtual Checkpoint\\\l df: 1\\\l bf: 1\\\l po: 2\l... \\\l succ: 0\"\l}"];
-	Node0x56280d28c490 -> Node0x56280d2c5610;
-	Node0x56280d2c5610 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x56280d2c5890 - Virtual Checkpoint\\\l df: 1\\\l bf: 1\\\l po: 2 \\\l succ: 0\": \l  %4 = load i32, i32* %0, align 4\l  %5 = icmp sgt i32 %4, 0\l  br i1 %5, label %\"0x56280d2c5890\\\l df: 2\\\l bf: 2\\\l po: 0\", label\l... %\"0x56280d2c7140 - Thread End\\\l df: 3\\\l bf: 3\\\l po: 1\"\l|{<s0>T|<s1>F}}"];
-	Node0x56280d2c5610:s0 -> Node0x56280d2c5890;
-	Node0x56280d2c5610:s1 -> Node0x56280d2c7140;
-	Node0x56280d2c5890 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x56280d2c5890\\\l df: 2\\\l bf: 2\\\l po: 0\":      \l  %6 = load i32, i32* %0, align 4\l  %7 = load i32, i32* %1, align 4\l  %8 = mul nsw i32 %7, %6\l  store i32 %8, i32* %1, align 4\l  %9 = load i32, i32* %0, align 4\l  %10 = sub nsw i32 %9, 1\l  store i32 %10, i32* %0, align 4\l  br label %\"0x56280d2c5890 - Virtual Checkpoint\\\l df: 1\\\l bf: 1\\\l po: 2\l... \\\l succ: 0\"\l}"];
-	Node0x56280d2c5890 -> Node0x56280d2c5610;
-	Node0x56280d2c7140 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x56280d2c7140 - Thread End\\\l df: 3\\\l bf: 3\\\l po: 1\": \l  %11 = load i32, i32* %1, align 4\l  %12 = bitcast i32* %0 to i8*\l  call void @llvm.lifetime.end.p0i8(i64 4, i8* %12)\l  %13 = bitcast i32* %1 to i8*\l  call void @llvm.lifetime.end.p0i8(i64 4, i8* %13)\l  %14 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([19 x i8], [19\l... x i8]* @.str, i64 0, i64 0), i32 %11)\l  ret i32 0\l}"];
+	Node0x55ac9daf9490 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%0 ThreadStart:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = bitcast i32* %1 to i8*\l  call void @llvm.lifetime.start.p0i8(i64 4, i8* %3)\l  %4 = bitcast i32* %2 to i8*\l  call void @llvm.lifetime.start.p0i8(i64 4, i8* %4)\l  store i32 6, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  br label %5\l}"];
+	Node0x55ac9daf9490 -> Node0x55ac9db32610;
+	Node0x55ac9db32610 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5 Virtual:\l5:                                                \l  %6 = load i32, i32* %1, align 4\l  %7 = icmp sgt i32 %6, 0\l  br i1 %7, label %8, label %factorial.exit\l|{<s0>T|<s1>F}}"];
+	Node0x55ac9db32610:s0 -> Node0x55ac9db32890;
+	Node0x55ac9db32610:s1 -> Node0x55ac9db34140;
+	Node0x55ac9db32890 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%8 Unknown:\l8:                                                \l  %9 = load i32, i32* %1, align 4\l  %10 = load i32, i32* %2, align 4\l  %11 = mul nsw i32 %10, %9\l  store i32 %11, i32* %2, align 4\l  %12 = load i32, i32* %1, align 4\l  %13 = sub nsw i32 %12, 1\l  store i32 %13, i32* %1, align 4\l  br label %5\l}"];
+	Node0x55ac9db32890 -> Node0x55ac9db32610;
+	Node0x55ac9db34140 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{factorial.exit:                                   \l  %14 = load i32, i32* %2, align 4\l  %15 = bitcast i32* %1 to i8*\l  call void @llvm.lifetime.end.p0i8(i64 4, i8* %15)\l  %16 = bitcast i32* %2 to i8*\l  call void @llvm.lifetime.end.p0i8(i64 4, i8* %16)\l  %17 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([19 x i8], [19\l... x i8]* @.str, i64 0, i64 0), i32 %14)\l  ret i32 0\l}"];
 }

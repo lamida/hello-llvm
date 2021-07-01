@@ -1,11 +1,11 @@
 digraph "Dominator tree for 'b1' function" {
 	label="Dominator tree for 'b1' function";
 
-	Node0x55abf964bc60 [shape=record,label="{entry:\l  %x = alloca i32, align 4\l  store i32 10, i32* %x, align 4\l  %0 = load i32, i32* %x, align 4\l  %cmp = icmp eq i32 %0, 10\l  br i1 %cmp, label %if.then, label %if.else\l}"];
-	Node0x55abf964bc60 -> Node0x55abf964c0d0;
-	Node0x55abf964bc60 -> Node0x55abf964c130;
-	Node0x55abf964bc60 -> Node0x55abf964c190;
-	Node0x55abf964c0d0 [shape=record,label="{if.then:                                          \l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([30 x i8],\l... [30 x i8]* @.str, i64 0, i64 0))\l  br label %if.end\l}"];
-	Node0x55abf964c130 [shape=record,label="{if.end:                                           \l  ret void\l}"];
-	Node0x55abf964c190 [shape=record,label="{if.else:                                          \l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([31 x i8],\l... [31 x i8]* @.str.1, i64 0, i64 0))\l  br label %if.end\l}"];
+	Node0x555c25a29c60 [shape=record,label="{entry:\l  %x = alloca i32, align 4\l  store i32 10, i32* %x, align 4\l  %0 = load i32, i32* %x, align 4\l  %cmp = icmp eq i32 %0, 10\l  br i1 %cmp, label %if.then, label %if.else\l}"];
+	Node0x555c25a29c60 -> Node0x555c25a2a0d0;
+	Node0x555c25a29c60 -> Node0x555c25a2a130;
+	Node0x555c25a29c60 -> Node0x555c25a2a190;
+	Node0x555c25a2a0d0 [shape=record,label="{if.then:                                          \l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([30 x i8],\l... [30 x i8]* @.str, i64 0, i64 0))\l  br label %if.end\l}"];
+	Node0x555c25a2a130 [shape=record,label="{if.end:                                           \l  ret void\l}"];
+	Node0x555c25a2a190 [shape=record,label="{if.else:                                          \l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([31 x i8],\l... [31 x i8]* @.str.1, i64 0, i64 0))\l  br label %if.end\l}"];
 }

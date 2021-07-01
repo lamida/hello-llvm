@@ -1,11 +1,11 @@
 digraph "Dominator tree for 'main' function" {
 	label="Dominator tree for 'main' function";
 
-	Node0x55573b6c7140 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %x = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  store i32 1, i32* %x, align 4\l  %0 = load i32, i32* %x, align 4\l  %cmp = icmp eq i32 %0, 1\l  br i1 %cmp, label %if.then, label %if.else\l}"];
-	Node0x55573b6c7140 -> Node0x55573b6c76b0;
-	Node0x55573b6c7140 -> Node0x55573b6c3890;
-	Node0x55573b6c7140 -> Node0x55573b6c38f0;
-	Node0x55573b6c76b0 [shape=record,label="{if.then:                                          \l  %call = call i32 @add(i32 2, i32 4)\l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8],\l... [4 x i8]* @.str, i64 0, i64 0), i32 %call)\l  br label %if.end\l}"];
-	Node0x55573b6c3890 [shape=record,label="{if.end:                                           \l  %1 = load i32, i32* %retval, align 4\l  ret i32 %1\l}"];
-	Node0x55573b6c38f0 [shape=record,label="{if.else:                                          \l  %call2 = call i32 @sub(i32 2, i32 4)\l  %call3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8],\l... [4 x i8]* @.str, i64 0, i64 0), i32 %call2)\l  br label %if.end\l}"];
+	Node0x557a11734140 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %x = alloca i32, align 4\l  store i32 0, i32* %retval, align 4\l  store i32 1, i32* %x, align 4\l  %0 = load i32, i32* %x, align 4\l  %cmp = icmp eq i32 %0, 1\l  br i1 %cmp, label %if.then, label %if.else\l}"];
+	Node0x557a11734140 -> Node0x557a117346b0;
+	Node0x557a11734140 -> Node0x557a11730890;
+	Node0x557a11734140 -> Node0x557a117308f0;
+	Node0x557a117346b0 [shape=record,label="{if.then:                                          \l  %call = call i32 @add(i32 2, i32 4)\l  %call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8],\l... [4 x i8]* @.str, i64 0, i64 0), i32 %call)\l  br label %if.end\l}"];
+	Node0x557a11730890 [shape=record,label="{if.end:                                           \l  %1 = load i32, i32* %retval, align 4\l  ret i32 %1\l}"];
+	Node0x557a117308f0 [shape=record,label="{if.else:                                          \l  %call2 = call i32 @sub(i32 2, i32 4)\l  %call3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8],\l... [4 x i8]* @.str, i64 0, i64 0), i32 %call2)\l  br label %if.end\l}"];
 }

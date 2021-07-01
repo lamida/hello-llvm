@@ -1,12 +1,12 @@
 digraph "CFG for 'factorial' function" {
 	label="CFG for 'factorial' function";
 
-	Node0x55e3d39115a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%1}"];
-	Node0x55e3d39115a0 -> Node0x55e3d3911d80;
-	Node0x55e3d3911d80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4|{<s0>T|<s1>F}}"];
-	Node0x55e3d3911d80:s0 -> Node0x55e3d3911f00;
-	Node0x55e3d3911d80:s1 -> Node0x55e3d3911f50;
-	Node0x55e3d3911f00 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%7}"];
-	Node0x55e3d3911f00 -> Node0x55e3d3911d80;
-	Node0x55e3d3911f50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%13}"];
+	Node0x55e8a4bbe5a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%1 }"];
+	Node0x55e8a4bbe5a0 -> Node0x55e8a4bbed80;
+	Node0x55e8a4bbed80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4 |{<s0>T|<s1>F}}"];
+	Node0x55e8a4bbed80:s0 -> Node0x55e8a4bbef00;
+	Node0x55e8a4bbed80:s1 -> Node0x55e8a4bbef50;
+	Node0x55e8a4bbef00 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%7 }"];
+	Node0x55e8a4bbef00 -> Node0x55e8a4bbed80;
+	Node0x55e8a4bbef50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%13 }"];
 }

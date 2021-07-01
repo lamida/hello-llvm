@@ -1,17 +1,17 @@
 digraph "Dominator tree for 'switchDeterministic' function" {
 	label="Dominator tree for 'switchDeterministic' function";
 
-	Node0x564cb4855fa0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  store i32 4, i32* %1, align 4\l  %2 = load i32, i32* %1, align 4\l  switch i32 %2, label %7 [\l    i32 1, label %3\l    i32 2, label %4\l    i32 3, label %5\l    i32 4, label %6\l  ]\l}"];
-	Node0x564cb4855fa0 -> Node0x564cb485abb0;
-	Node0x564cb4855fa0 -> Node0x564cb4855f40;
-	Node0x564cb4855fa0 -> Node0x564cb485be00;
-	Node0x564cb4855fa0 -> Node0x564cb485a730;
-	Node0x564cb4855fa0 -> Node0x564cb4859590;
-	Node0x564cb4855fa0 -> Node0x564cb48595f0;
-	Node0x564cb485abb0 [shape=record,label="{%7:\l7:                                                \l  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.11, i64 0, i64 0))\l  br label %9\l}"];
-	Node0x564cb4855f40 [shape=record,label="{%9:\l9:                                                \l  ret void\l}"];
-	Node0x564cb485be00 [shape=record,label="{%3:\l3:                                                \l  call void @g1()\l  br label %9\l}"];
-	Node0x564cb485a730 [shape=record,label="{%4:\l4:                                                \l  call void @g2()\l  br label %9\l}"];
-	Node0x564cb4859590 [shape=record,label="{%5:\l5:                                                \l  call void @g3()\l  br label %9\l}"];
-	Node0x564cb48595f0 [shape=record,label="{%6:\l6:                                                \l  call void @g4()\l  br label %9\l}"];
+	Node0x55c8787cebb0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  store i32 4, i32* %1, align 4\l  %2 = load i32, i32* %1, align 4\l  switch i32 %2, label %7 [\l    i32 1, label %3\l    i32 2, label %4\l    i32 3, label %5\l    i32 4, label %6\l  ]\l}"];
+	Node0x55c8787cebb0 -> Node0x55c8787c9fa0;
+	Node0x55c8787cebb0 -> Node0x55c8787ca000;
+	Node0x55c8787cebb0 -> Node0x55c8787cfe00;
+	Node0x55c8787cebb0 -> Node0x55c8787ce730;
+	Node0x55c8787cebb0 -> Node0x55c8787cd590;
+	Node0x55c8787cebb0 -> Node0x55c8787cd5f0;
+	Node0x55c8787c9fa0 [shape=record,label="{%7:\l7:                                                \l  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.11, i64 0, i64 0))\l  br label %9\l}"];
+	Node0x55c8787ca000 [shape=record,label="{%9:\l9:                                                \l  ret void\l}"];
+	Node0x55c8787cfe00 [shape=record,label="{%3:\l3:                                                \l  call void @g1()\l  br label %9\l}"];
+	Node0x55c8787ce730 [shape=record,label="{%4:\l4:                                                \l  call void @g2()\l  br label %9\l}"];
+	Node0x55c8787cd590 [shape=record,label="{%5:\l5:                                                \l  call void @g3()\l  br label %9\l}"];
+	Node0x55c8787cd5f0 [shape=record,label="{%6:\l6:                                                \l  call void @g4()\l  br label %9\l}"];
 }

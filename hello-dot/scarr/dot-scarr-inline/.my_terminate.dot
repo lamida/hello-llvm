@@ -1,5 +1,5 @@
 digraph "CFG for 'my_terminate' function" {
 	label="CFG for 'my_terminate' function";
 
-	Node0x555e7650f280 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x555e7650f280 - Exit Point\\\l df: 0\\\l idf: 0\\\l bf: 0\\\l po: 0\":\l  %0 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11\l... x i8]* @.str.5, i64 0, i64 0))\l  ret void\l}"];
+	Node0x5556e7d3b280 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0 ExitPoint:\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11\l... x i8]* @.str.5, i64 0, i64 0))\l  ret void\l}"];
 }

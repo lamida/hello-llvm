@@ -1,13 +1,13 @@
 digraph "Dominator tree for 'main' function" {
 	label="Dominator tree for 'main' function";
 
-	Node0x55aca00be9f0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  call void @sA()\l  store i32 0, i32* %2, align 4\l  br label %3\l}"];
-	Node0x55aca00be9f0 -> Node0x55aca00c1070;
-	Node0x55aca00c1070 [shape=record,label="{%3:\l3:                                                \l  %4 = load i32, i32* %2, align 4\l  %5 = icmp slt i32 %4, 10\l  br i1 %5, label %6, label %12\l}"];
-	Node0x55aca00c1070 -> Node0x55aca00c10d0;
-	Node0x55aca00c1070 -> Node0x55aca00c1190;
-	Node0x55aca00c10d0 [shape=record,label="{%6:\l6:                                                \l  %7 = load i32, i32* %2, align 4\l  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([7 x i8], [7 x\l... i8]* @.str.2, i64 0, i64 0), i32 %7)\l  br label %9\l}"];
-	Node0x55aca00c10d0 -> Node0x55aca00c1130;
-	Node0x55aca00c1130 [shape=record,label="{%9:\l9:                                                \l  %10 = load i32, i32* %2, align 4\l  %11 = add nsw i32 %10, 1\l  store i32 %11, i32* %2, align 4\l  br label %3\l}"];
-	Node0x55aca00c1190 [shape=record,label="{%12:\l12:                                               \l  %13 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str.3, i64 0, i64 0))\l  call void @my_terminate()\l  %14 = load i32, i32* %1, align 4\l  ret i32 %14\l}"];
+	Node0x5564dbb929f0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  call void @sA()\l  store i32 0, i32* %2, align 4\l  br label %3\l}"];
+	Node0x5564dbb929f0 -> Node0x5564dbb95070;
+	Node0x5564dbb95070 [shape=record,label="{%3:\l3:                                                \l  %4 = load i32, i32* %2, align 4\l  %5 = icmp slt i32 %4, 10\l  br i1 %5, label %6, label %12\l}"];
+	Node0x5564dbb95070 -> Node0x5564dbb950d0;
+	Node0x5564dbb95070 -> Node0x5564dbb95190;
+	Node0x5564dbb950d0 [shape=record,label="{%6:\l6:                                                \l  %7 = load i32, i32* %2, align 4\l  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([7 x i8], [7 x\l... i8]* @.str.2, i64 0, i64 0), i32 %7)\l  br label %9\l}"];
+	Node0x5564dbb950d0 -> Node0x5564dbb95130;
+	Node0x5564dbb95130 [shape=record,label="{%9:\l9:                                                \l  %10 = load i32, i32* %2, align 4\l  %11 = add nsw i32 %10, 1\l  store i32 %11, i32* %2, align 4\l  br label %3\l}"];
+	Node0x5564dbb95190 [shape=record,label="{%12:\l12:                                               \l  %13 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str.3, i64 0, i64 0))\l  call void @my_terminate()\l  %14 = load i32, i32* %1, align 4\l  ret i32 %14\l}"];
 }

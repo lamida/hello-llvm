@@ -1,12 +1,12 @@
 digraph "Region Graph for 'get_input' function" {
 	label="Region Graph for 'get_input' function";
 
-	Node0x560efa38b790 [shape=record,label="{entry:\l  %rnd = alloca i32, align 4\l  %call = call i32 (...) @rand()\l  %rem = srem i32 %call, 2\l  store i32 %rem, i32* %rnd, align 4\l  %0 = load i32, i32* %rnd, align 4\l  %cmp = icmp eq i32 %0, 1\l  %1 = zext i1 %cmp to i64\l  %cond = select i1 %cmp, i8* getelementptr inbounds ([5 x i8], [5 x i8]*\l... @.str, i64 0, i64 0), i8* getelementptr inbounds ([6 x i8], [6 x i8]*\l... @.str.1, i64 0, i64 0)\l  ret i8* %cond\l}"];
+	Node0x556cd6587790 [shape=record,label="{entry:\l  %rnd = alloca i32, align 4\l  %call = call i32 (...) @rand()\l  %rem = srem i32 %call, 2\l  store i32 %rem, i32* %rnd, align 4\l  %0 = load i32, i32* %rnd, align 4\l  %cmp = icmp eq i32 %0, 1\l  %1 = zext i1 %cmp to i64\l  %cond = select i1 %cmp, i8* getelementptr inbounds ([5 x i8], [5 x i8]*\l... @.str, i64 0, i64 0), i8* getelementptr inbounds ([6 x i8], [6 x i8]*\l... @.str.1, i64 0, i64 0)\l  ret i8* %cond\l}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x560efa3938a0 {
+        subgraph cluster_0x556cd658f8a0 {
           label = "";
           style = filled;
           color = 1
-          Node0x560efa38b790;
+          Node0x556cd6587790;
         }
 }

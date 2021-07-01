@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'my_terminate' function" {
 	label="Dominator tree for 'my_terminate' function";
 
-	Node0x560abc9a5920 [shape=record,label="{entry:\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8],\l... [11 x i8]* @.str.5, i64 0, i64 0))\l  ret void\l}"];
+	Node0x5586d1986920 [shape=record,label="{entry:\l  %call = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8],\l... [11 x i8]* @.str.5, i64 0, i64 0))\l  ret void\l}"];
 }

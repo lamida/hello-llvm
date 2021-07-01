@@ -1,21 +1,21 @@
 digraph "CFG for 'switchNonDeterministic' function" {
 	label="CFG for 'switchNonDeterministic' function";
 
-	Node0x55b37e3046f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{entry:\l  %t = alloca i64, align 8\l  %r = alloca i32, align 4\l  %call = call i64 @time(i64* %t) #3\l  %conv = trunc i64 %call to i32\l  call void @srand(i32 %conv) #3\l  %call1 = call i32 @rand() #3\l  %rem = srem i32 %call1, 4\l  %add = add nsw i32 1, %rem\l  store i32 %add, i32* %r, align 4\l  %0 = load i32, i32* %r, align 4\l  switch i32 %0, label %sw.default [\l    i32 1, label %sw.bb\l    i32 2, label %sw.bb2\l    i32 3, label %sw.bb3\l    i32 4, label %sw.bb4\l  ]\l|{<s0>def|<s1>1|<s2>2|<s3>3|<s4>4}}"];
-	Node0x55b37e3046f0:s0 -> Node0x55b37e305210;
-	Node0x55b37e3046f0:s1 -> Node0x55b37e305290;
-	Node0x55b37e3046f0:s2 -> Node0x55b37e305300;
-	Node0x55b37e3046f0:s3 -> Node0x55b37e3053d0;
-	Node0x55b37e3046f0:s4 -> Node0x55b37e3054a0;
-	Node0x55b37e305290 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb:                                            \l  call void @g1()\l  br label %sw.epilog\l}"];
-	Node0x55b37e305290 -> Node0x55b37e305980;
-	Node0x55b37e305300 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb2:                                           \l  call void @g2()\l  br label %sw.epilog\l}"];
-	Node0x55b37e305300 -> Node0x55b37e305980;
-	Node0x55b37e3053d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb3:                                           \l  call void @g3()\l  br label %sw.epilog\l}"];
-	Node0x55b37e3053d0 -> Node0x55b37e305980;
-	Node0x55b37e3054a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb4:                                           \l  call void @g4()\l  br label %sw.epilog\l}"];
-	Node0x55b37e3054a0 -> Node0x55b37e305980;
-	Node0x55b37e305210 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.default:                                       \l  %call5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8],\l... [13 x i8]* @.str.11, i64 0, i64 0))\l  br label %sw.epilog\l}"];
-	Node0x55b37e305210 -> Node0x55b37e305980;
-	Node0x55b37e305980 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{sw.epilog:                                        \l  ret void\l}"];
+	Node0x563a5e22b6f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{entry:\l  %t = alloca i64, align 8\l  %r = alloca i32, align 4\l  %call = call i64 @time(i64* %t) #3\l  %conv = trunc i64 %call to i32\l  call void @srand(i32 %conv) #3\l  %call1 = call i32 @rand() #3\l  %rem = srem i32 %call1, 4\l  %add = add nsw i32 1, %rem\l  store i32 %add, i32* %r, align 4\l  %0 = load i32, i32* %r, align 4\l  switch i32 %0, label %sw.default [\l    i32 1, label %sw.bb\l    i32 2, label %sw.bb2\l    i32 3, label %sw.bb3\l    i32 4, label %sw.bb4\l  ]\l|{<s0>def|<s1>1|<s2>2|<s3>3|<s4>4}}"];
+	Node0x563a5e22b6f0:s0 -> Node0x563a5e22c210;
+	Node0x563a5e22b6f0:s1 -> Node0x563a5e22c290;
+	Node0x563a5e22b6f0:s2 -> Node0x563a5e22c300;
+	Node0x563a5e22b6f0:s3 -> Node0x563a5e22c3d0;
+	Node0x563a5e22b6f0:s4 -> Node0x563a5e22c4a0;
+	Node0x563a5e22c290 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb:                                            \l  call void @g1()\l  br label %sw.epilog\l}"];
+	Node0x563a5e22c290 -> Node0x563a5e22c980;
+	Node0x563a5e22c300 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb2:                                           \l  call void @g2()\l  br label %sw.epilog\l}"];
+	Node0x563a5e22c300 -> Node0x563a5e22c980;
+	Node0x563a5e22c3d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb3:                                           \l  call void @g3()\l  br label %sw.epilog\l}"];
+	Node0x563a5e22c3d0 -> Node0x563a5e22c980;
+	Node0x563a5e22c4a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.bb4:                                           \l  call void @g4()\l  br label %sw.epilog\l}"];
+	Node0x563a5e22c4a0 -> Node0x563a5e22c980;
+	Node0x563a5e22c210 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{sw.default:                                       \l  %call5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8],\l... [13 x i8]* @.str.11, i64 0, i64 0))\l  br label %sw.epilog\l}"];
+	Node0x563a5e22c210 -> Node0x563a5e22c980;
+	Node0x563a5e22c980 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{sw.epilog:                                        \l  ret void\l}"];
 }

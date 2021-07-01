@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'get_input' function" {
 	label="Dominator tree for 'get_input' function";
 
-	Node0x56135f4e9a00 [shape=record,label="{%0}"];
+	Node0x559c5cf86a00 [shape=record,label="{%0 }"];
 }

@@ -1,19 +1,19 @@
 digraph "Post dominator tree for 'main' function" {
 	label="Post dominator tree for 'main' function";
 
-	Node0x564211575c70 [shape=record,label="{Post dominance root node}"];
-	Node0x564211575c70 -> Node0x5642115748a0;
-	Node0x5642115748a0 [shape=record,label="{%15:\l15:                                               \l  call void @switchDeterministic()\l  call void @switchNonDeterministic()\l  %16 = load i32, i32* %1, align 4\l  ret i32 %16\l}"];
-	Node0x5642115748a0 -> Node0x564211575bb0;
-	Node0x564211575bb0 [shape=record,label="{%9:\l9:                                                \l  %10 = load i32, i32* %3, align 4\l  %11 = icmp sgt i32 %10, 0\l  br i1 %11, label %12, label %15\l}"];
-	Node0x564211575bb0 -> Node0x5642115756f0;
-	Node0x564211575bb0 -> Node0x5642115745f0;
-	Node0x5642115756f0 [shape=record,label="{%8:\l8:                                                \l  call void @c()\l  call void @d()\l  store i32 10, i32* %3, align 4\l  br label %9\l}"];
-	Node0x5642115756f0 -> Node0x564211570fd0;
-	Node0x5642115756f0 -> Node0x564211571030;
-	Node0x5642115756f0 -> Node0x564211574590;
-	Node0x564211570fd0 [shape=record,label="{%6:\l6:                                                \l  call void @b1()\l  br label %8\l}"];
-	Node0x564211571030 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %4 = load i32, i32* %2, align 4\l  %5 = icmp eq i32 %4, 1\l  br i1 %5, label %6, label %7\l}"];
-	Node0x564211574590 [shape=record,label="{%7:\l7:                                                \l  call void @b2()\l  br label %8\l}"];
-	Node0x5642115745f0 [shape=record,label="{%12:\l12:                                               \l  call void @f()\l  %13 = load i32, i32* %3, align 4\l  %14 = add nsw i32 %13, -1\l  store i32 %14, i32* %3, align 4\l  br label %9\l}"];
+	Node0x55c04edf6c70 [shape=record,label="{Post dominance root node}"];
+	Node0x55c04edf6c70 -> Node0x55c04edf5a80;
+	Node0x55c04edf5a80 [shape=record,label="{%15:\l15:                                               \l  call void @switchDeterministic()\l  call void @switchNonDeterministic()\l  %16 = load i32, i32* %1, align 4\l  ret i32 %16\l}"];
+	Node0x55c04edf5a80 -> Node0x55c04edf59c0;
+	Node0x55c04edf59c0 [shape=record,label="{%9:\l9:                                                \l  %10 = load i32, i32* %3, align 4\l  %11 = icmp sgt i32 %10, 0\l  br i1 %11, label %12, label %15\l}"];
+	Node0x55c04edf59c0 -> Node0x55c04edf6bb0;
+	Node0x55c04edf59c0 -> Node0x55c04edf1fd0;
+	Node0x55c04edf6bb0 [shape=record,label="{%8:\l8:                                                \l  call void @c()\l  call void @d()\l  store i32 10, i32* %3, align 4\l  br label %9\l}"];
+	Node0x55c04edf6bb0 -> Node0x55c04edf66f0;
+	Node0x55c04edf6bb0 -> Node0x55c04edf55f0;
+	Node0x55c04edf6bb0 -> Node0x55c04edf5650;
+	Node0x55c04edf66f0 [shape=record,label="{%6:\l6:                                                \l  call void @b1()\l  br label %8\l}"];
+	Node0x55c04edf55f0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  store i32 1, i32* %2, align 4\l  %4 = load i32, i32* %2, align 4\l  %5 = icmp eq i32 %4, 1\l  br i1 %5, label %6, label %7\l}"];
+	Node0x55c04edf5650 [shape=record,label="{%7:\l7:                                                \l  call void @b2()\l  br label %8\l}"];
+	Node0x55c04edf1fd0 [shape=record,label="{%12:\l12:                                               \l  call void @f()\l  %13 = load i32, i32* %3, align 4\l  %14 = add nsw i32 %13, -1\l  store i32 %14, i32* %3, align 4\l  br label %9\l}"];
 }

@@ -1,27 +1,27 @@
 digraph "Region Graph for 'main' function" {
 	label="Region Graph for 'main' function";
 
-	Node0x55aaf7d03350 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i8*, align 8\l  %3 = alloca i8*, align 8\l  store i32 0, i32* %1, align 4\l  %4 = call i8* @get_input()\l  store i8* %4, i8** %2, align 8\l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.6, i64 0, i64\l... 0), i8** %3, align 8\l  %5 = load i8*, i8** %2, align 8\l  %6 = call i32 @strcmp(i8* %5, i8* getelementptr inbounds ([5 x i8], [5 x\l... i8]* @.str, i64 0, i64 0))\l  %7 = icmp eq i32 %6, 0\l  br i1 %7, label %8, label %10\l}"];
-	Node0x55aaf7d03350 -> Node0x55aaf7d0a750;
-	Node0x55aaf7d03350 -> Node0x55aaf7d025b0;
-	Node0x55aaf7d0a750 [shape=record,label="{%8:\l8:                                                \l  %9 = call i8* @get_privileged_info()\l  store i8* %9, i8** %3, align 8\l  br label %12\l}"];
-	Node0x55aaf7d0a750 -> Node0x55aaf7cffc60;
-	Node0x55aaf7cffc60 [shape=record,label="{%12:\l12:                                               \l  %13 = load i8*, i8** %3, align 8\l  call void @print_output(i8* %13)\l  call void @my_terminate()\l  %14 = load i32, i32* %1, align 4\l  ret i32 %14\l}"];
-	Node0x55aaf7d025b0 [shape=record,label="{%10:\l10:                                               \l  %11 = call i8* @get_unprivileged_info()\l  store i8* %11, i8** %3, align 8\l  br label %12\l}"];
-	Node0x55aaf7d025b0 -> Node0x55aaf7cffc60;
+	Node0x55a0d18ef350 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i8*, align 8\l  %3 = alloca i8*, align 8\l  store i32 0, i32* %1, align 4\l  %4 = call i8* @get_input()\l  store i8* %4, i8** %2, align 8\l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.6, i64 0, i64\l... 0), i8** %3, align 8\l  %5 = load i8*, i8** %2, align 8\l  %6 = call i32 @strcmp(i8* %5, i8* getelementptr inbounds ([5 x i8], [5 x\l... i8]* @.str, i64 0, i64 0))\l  %7 = icmp eq i32 %6, 0\l  br i1 %7, label %8, label %10\l}"];
+	Node0x55a0d18ef350 -> Node0x55a0d18f6750;
+	Node0x55a0d18ef350 -> Node0x55a0d18ee5b0;
+	Node0x55a0d18f6750 [shape=record,label="{%8:\l8:                                                \l  %9 = call i8* @get_privileged_info()\l  store i8* %9, i8** %3, align 8\l  br label %12\l}"];
+	Node0x55a0d18f6750 -> Node0x55a0d18ebc60;
+	Node0x55a0d18ebc60 [shape=record,label="{%12:\l12:                                               \l  %13 = load i8*, i8** %3, align 8\l  call void @print_output(i8* %13)\l  call void @my_terminate()\l  %14 = load i32, i32* %1, align 4\l  ret i32 %14\l}"];
+	Node0x55a0d18ee5b0 [shape=record,label="{%10:\l10:                                               \l  %11 = call i8* @get_unprivileged_info()\l  store i8* %11, i8** %3, align 8\l  br label %12\l}"];
+	Node0x55a0d18ee5b0 -> Node0x55a0d18ebc60;
 	colorscheme = "paired12"
-        subgraph cluster_0x55aaf7d06ea0 {
+        subgraph cluster_0x55a0d18f2ea0 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0x55aaf7d06d10 {
+          subgraph cluster_0x55a0d18f2d10 {
             label = "";
             style = filled;
             color = 3
-            Node0x55aaf7d03350;
-            Node0x55aaf7d0a750;
-            Node0x55aaf7d025b0;
+            Node0x55a0d18ef350;
+            Node0x55a0d18f6750;
+            Node0x55a0d18ee5b0;
           }
-          Node0x55aaf7cffc60;
+          Node0x55a0d18ebc60;
         }
 }

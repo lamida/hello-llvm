@@ -1,5 +1,5 @@
 digraph "Dominator tree for 'main' function" {
 	label="Dominator tree for 'main' function";
 
-	Node0x55857212f270 [shape=record,label="{%0:\l  call void @linear()\l  ret i32 0\l}"];
+	Node0x55ec625d3270 [shape=record,label="{%0:\l  call void @linear()\l  ret i32 0\l}"];
 }

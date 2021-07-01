@@ -1,11 +1,11 @@
 digraph "Dominator tree for 'main' function" {
 	label="Dominator tree for 'main' function";
 
-	Node0x55b759c95aa0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i8*, align 8\l  %3 = alloca i8*, align 8\l  store i32 0, i32* %1, align 4\l  %4 = call i8* (...) @get_input()\l  store i8* %4, i8** %2, align 8\l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str, i64 0, i64 0),\l... i8** %3, align 8\l  %5 = load i8*, i8** %2, align 8\l  %6 = call i32 @strcmp(i8* %5, i8* getelementptr inbounds ([5 x i8], [5 x\l... i8]* @.str.1, i64 0, i64 0))\l  %7 = icmp eq i32 %6, 0\l  br i1 %7, label %8, label %10\l}"];
-	Node0x55b759c95aa0 -> Node0x55b759c95f10;
-	Node0x55b759c95aa0 -> Node0x55b759c95f70;
-	Node0x55b759c95aa0 -> Node0x55b759c95fd0;
-	Node0x55b759c95f10 [shape=record,label="{%8:\l8:                                                \l  %9 = call i8* (...) @get_privileged_info()\l  store i8* %9, i8** %3, align 8\l  br label %12\l}"];
-	Node0x55b759c95f70 [shape=record,label="{%12:\l12:                                               \l  %13 = load i8*, i8** %3, align 8\l  call void @print_output(i8* %13)\l  call void (...) @my_terminate()\l  %14 = load i32, i32* %1, align 4\l  ret i32 %14\l}"];
-	Node0x55b759c95fd0 [shape=record,label="{%10:\l10:                                               \l  %11 = call i8* (...) @get_unprivileged_info()\l  store i8* %11, i8** %3, align 8\l  br label %12\l}"];
+	Node0x560259a72aa0 [shape=record,label="{%0:\l  %1 = alloca i32, align 4\l  %2 = alloca i8*, align 8\l  %3 = alloca i8*, align 8\l  store i32 0, i32* %1, align 4\l  %4 = call i8* (...) @get_input()\l  store i8* %4, i8** %2, align 8\l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str, i64 0, i64 0),\l... i8** %3, align 8\l  %5 = load i8*, i8** %2, align 8\l  %6 = call i32 @strcmp(i8* %5, i8* getelementptr inbounds ([5 x i8], [5 x\l... i8]* @.str.1, i64 0, i64 0))\l  %7 = icmp eq i32 %6, 0\l  br i1 %7, label %8, label %10\l}"];
+	Node0x560259a72aa0 -> Node0x560259a72f10;
+	Node0x560259a72aa0 -> Node0x560259a72f70;
+	Node0x560259a72aa0 -> Node0x560259a72fd0;
+	Node0x560259a72f10 [shape=record,label="{%8:\l8:                                                \l  %9 = call i8* (...) @get_privileged_info()\l  store i8* %9, i8** %3, align 8\l  br label %12\l}"];
+	Node0x560259a72f70 [shape=record,label="{%12:\l12:                                               \l  %13 = load i8*, i8** %3, align 8\l  call void @print_output(i8* %13)\l  call void (...) @my_terminate()\l  %14 = load i32, i32* %1, align 4\l  ret i32 %14\l}"];
+	Node0x560259a72fd0 [shape=record,label="{%10:\l10:                                               \l  %11 = call i8* (...) @get_unprivileged_info()\l  store i8* %11, i8** %3, align 8\l  br label %12\l}"];
 }

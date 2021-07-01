@@ -1,17 +1,17 @@
 digraph "Dominator tree for 'switchNonDeterministic' function" {
 	label="Dominator tree for 'switchNonDeterministic' function";
 
-	Node0x55abf964c190 [shape=record,label="{entry:\l  %t = alloca i64, align 8\l  %r = alloca i32, align 4\l  %call = call i64 @time(i64* %t) #3\l  %conv = trunc i64 %call to i32\l  call void @srand(i32 %conv) #3\l  %call1 = call i32 @rand() #3\l  %rem = srem i32 %call1, 4\l  %add = add nsw i32 1, %rem\l  store i32 %add, i32* %r, align 4\l  %0 = load i32, i32* %r, align 4\l  switch i32 %0, label %sw.default [\l    i32 1, label %sw.bb\l    i32 2, label %sw.bb2\l    i32 3, label %sw.bb3\l    i32 4, label %sw.bb4\l  ]\l}"];
-	Node0x55abf964c190 -> Node0x55abf964b5c0;
-	Node0x55abf964c190 -> Node0x55abf964b620;
-	Node0x55abf964c190 -> Node0x55abf964b680;
-	Node0x55abf964c190 -> Node0x55abf964b6e0;
-	Node0x55abf964c190 -> Node0x55abf964b740;
-	Node0x55abf964c190 -> Node0x55abf964b7a0;
-	Node0x55abf964b5c0 [shape=record,label="{sw.default:                                       \l  %call5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8],\l... [13 x i8]* @.str.11, i64 0, i64 0))\l  br label %sw.epilog\l}"];
-	Node0x55abf964b620 [shape=record,label="{sw.epilog:                                        \l  ret void\l}"];
-	Node0x55abf964b680 [shape=record,label="{sw.bb:                                            \l  call void @g1()\l  br label %sw.epilog\l}"];
-	Node0x55abf964b6e0 [shape=record,label="{sw.bb2:                                           \l  call void @g2()\l  br label %sw.epilog\l}"];
-	Node0x55abf964b740 [shape=record,label="{sw.bb3:                                           \l  call void @g3()\l  br label %sw.epilog\l}"];
-	Node0x55abf964b7a0 [shape=record,label="{sw.bb4:                                           \l  call void @g4()\l  br label %sw.epilog\l}"];
+	Node0x555c25a29c60 [shape=record,label="{entry:\l  %t = alloca i64, align 8\l  %r = alloca i32, align 4\l  %call = call i64 @time(i64* %t) #3\l  %conv = trunc i64 %call to i32\l  call void @srand(i32 %conv) #3\l  %call1 = call i32 @rand() #3\l  %rem = srem i32 %call1, 4\l  %add = add nsw i32 1, %rem\l  store i32 %add, i32* %r, align 4\l  %0 = load i32, i32* %r, align 4\l  switch i32 %0, label %sw.default [\l    i32 1, label %sw.bb\l    i32 2, label %sw.bb2\l    i32 3, label %sw.bb3\l    i32 4, label %sw.bb4\l  ]\l}"];
+	Node0x555c25a29c60 -> Node0x555c25a295c0;
+	Node0x555c25a29c60 -> Node0x555c25a29620;
+	Node0x555c25a29c60 -> Node0x555c25a29680;
+	Node0x555c25a29c60 -> Node0x555c25a296e0;
+	Node0x555c25a29c60 -> Node0x555c25a29740;
+	Node0x555c25a29c60 -> Node0x555c25a297a0;
+	Node0x555c25a295c0 [shape=record,label="{sw.default:                                       \l  %call5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8],\l... [13 x i8]* @.str.11, i64 0, i64 0))\l  br label %sw.epilog\l}"];
+	Node0x555c25a29620 [shape=record,label="{sw.epilog:                                        \l  ret void\l}"];
+	Node0x555c25a29680 [shape=record,label="{sw.bb:                                            \l  call void @g1()\l  br label %sw.epilog\l}"];
+	Node0x555c25a296e0 [shape=record,label="{sw.bb2:                                           \l  call void @g2()\l  br label %sw.epilog\l}"];
+	Node0x555c25a29740 [shape=record,label="{sw.bb3:                                           \l  call void @g3()\l  br label %sw.epilog\l}"];
+	Node0x555c25a297a0 [shape=record,label="{sw.bb4:                                           \l  call void @g4()\l  br label %sw.epilog\l}"];
 }

@@ -1,14 +1,14 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x5612ccae5900 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x5612ccae5900 - Thread Start\\\l df: 0\\\l idf: 0\\\l bf: 0\\\l po: 4\":\l  %0 = alloca i32, align 4\l  %1 = alloca i32, align 4\l  store i32 0, i32* %0, align 4\l  %2 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str, i64 0, i64 0))\l  store i32 0, i32* %1, align 4\l  br label %\"0x5612ccae5d70 - Virtual Checkpoint\\\l df: 1\\\l bf: 1\\\l po: 3\l... \\\l succ: 0\"\l}"];
-	Node0x5612ccae5900 -> Node0x5612ccae5c40;
-	Node0x5612ccae5c40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x5612ccae5d70 - Virtual Checkpoint\\\l df: 1\\\l bf: 1\\\l po: 3 \\\l succ: 0\": \l  %3 = load i32, i32* %1, align 4\l  %4 = icmp slt i32 %3, 10\l  br i1 %4, label %\"0x5612ccae5e50 - Exit Point\\\l df: 2\\\l bf: 2\\\l po: 1\",\l... label %\"0x5612ccae5ea0 - Thread End\\\l df: 4\\\l bf: 3\\\l po: 2\"\l|{<s0>T|<s1>F}}"];
-	Node0x5612ccae5c40:s0 -> Node0x5612ccae5e50;
-	Node0x5612ccae5c40:s1 -> Node0x5612ccae5ea0;
-	Node0x5612ccae5e50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x5612ccae5e50 - Exit Point\\\l df: 2\\\l bf: 2\\\l po: 1\": \l  %5 = load i32, i32* %1, align 4\l  %6 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([7 x i8], [7 x\l... i8]* @.str.2, i64 0, i64 0), i32 %5)\l  br label %\"0x5612ccae5d70\\\l df: 3\\\l bf: 4\\\l po: 0\"\l}"];
-	Node0x5612ccae5e50 -> Node0x5612ccae5d70;
-	Node0x5612ccae5d70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x5612ccae5d70\\\l df: 3\\\l bf: 4\\\l po: 0\":      \l  %7 = load i32, i32* %1, align 4\l  %8 = add nsw i32 %7, 1\l  store i32 %8, i32* %1, align 4\l  br label %\"0x5612ccae5d70 - Virtual Checkpoint\\\l df: 1\\\l bf: 1\\\l po: 3\l... \\\l succ: 0\"\l}"];
-	Node0x5612ccae5d70 -> Node0x5612ccae5c40;
-	Node0x5612ccae5ea0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x5612ccae5ea0 - Thread End\\\l df: 4\\\l bf: 3\\\l po: 2\": \l  %9 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str.3, i64 0, i64 0))\l  %10 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11\l... x i8]* @.str.1, i64 0, i64 0))\l  %11 = load i32, i32* %0, align 4\l  ret i32 %11\l}"];
+	Node0x563d29a50900 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%0 ThreadStart:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  %3 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str, i64 0, i64 0))\l  store i32 0, i32* %2, align 4\l  br label %4\l}"];
+	Node0x563d29a50900 -> Node0x563d29a50c40;
+	Node0x563d29a50c40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4 Virtual:\l4:                                                \l  %5 = load i32, i32* %2, align 4\l  %6 = icmp slt i32 %5, 10\l  br i1 %6, label %7, label %13\l|{<s0>T|<s1>F}}"];
+	Node0x563d29a50c40:s0 -> Node0x563d29a50e50;
+	Node0x563d29a50c40:s1 -> Node0x563d29a50ea0;
+	Node0x563d29a50e50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%7 ExitPoint:\l7:                                                \l  %8 = load i32, i32* %2, align 4\l  %9 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([7 x i8], [7 x\l... i8]* @.str.2, i64 0, i64 0), i32 %8)\l  br label %10\l}"];
+	Node0x563d29a50e50 -> Node0x563d29a50d70;
+	Node0x563d29a50d70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%10:\l10:                                               \l  %11 = load i32, i32* %2, align 4\l  %12 = add nsw i32 %11, 1\l  store i32 %12, i32* %2, align 4\l  br label %4\l}"];
+	Node0x563d29a50d70 -> Node0x563d29a50c40;
+	Node0x563d29a50ea0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%13 ThreadEnd:\l13:                                               \l  %14 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str.3, i64 0, i64 0))\l  %15 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([11 x i8], [11\l... x i8]* @.str.1, i64 0, i64 0))\l  %16 = load i32, i32* %1, align 4\l  ret i32 %16\l}"];
 }

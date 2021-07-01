@@ -1,5 +1,5 @@
 digraph "CFG for 'g1' function" {
 	label="CFG for 'g1' function";
 
-	Node0x56065e9dae10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x56065e9dae10 - Exit Point\\\l df: 0\\\l idf: 0\\\l bf: 0\\\l po: 0\":\l  %0 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14\l... x i8]* @.str.7, i64 0, i64 0))\l  ret void\l}"];
+	Node0x5597697bde40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0 ExitPoint:\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14\l... x i8]* @.str.7, i64 0, i64 0))\l  ret void\l}"];
 }

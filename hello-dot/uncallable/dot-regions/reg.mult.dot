@@ -1,12 +1,12 @@
 digraph "Region Graph for 'mult' function" {
 	label="Region Graph for 'mult' function";
 
-	Node0x564e61a35630 [shape=record,label="{%2:\l  %3 = alloca i32, align 4\l  %4 = alloca i32, align 4\l  store i32 %0, i32* %3, align 4\l  store i32 %1, i32* %4, align 4\l  %5 = load i32, i32* %3, align 4\l  %6 = load i32, i32* %4, align 4\l  %7 = mul nsw i32 %5, %6\l  ret i32 %7\l}"];
+	Node0x5590551e9630 [shape=record,label="{%2:\l  %3 = alloca i32, align 4\l  %4 = alloca i32, align 4\l  store i32 %0, i32* %3, align 4\l  store i32 %1, i32* %4, align 4\l  %5 = load i32, i32* %3, align 4\l  %6 = load i32, i32* %4, align 4\l  %7 = mul nsw i32 %5, %6\l  ret i32 %7\l}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x564e61a31540 {
+        subgraph cluster_0x5590551e5540 {
           label = "";
           style = filled;
           color = 1
-          Node0x564e61a35630;
+          Node0x5590551e9630;
         }
 }

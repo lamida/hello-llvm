@@ -1,27 +1,27 @@
 digraph "Region Graph for 'factorial' function" {
 	label="Region Graph for 'factorial' function";
 
-	Node0x561c8ced4c60 [shape=record,label="{entry:\l  %n.addr = alloca i32, align 4\l  %acc = alloca i32, align 4\l  store i32 %n, i32* %n.addr, align 4\l  store i32 1, i32* %acc, align 4\l  br label %while.cond\l}"];
-	Node0x561c8ced4c60 -> Node0x561c8ced5010;
-	Node0x561c8ced5010 [shape=record,label="{while.cond:                                       \l  %0 = load i32, i32* %n.addr, align 4\l  %cmp = icmp sgt i32 %0, 0\l  br i1 %cmp, label %while.body, label %while.end\l}"];
-	Node0x561c8ced5010 -> Node0x561c8ced5450;
-	Node0x561c8ced5010 -> Node0x561c8ced5620;
-	Node0x561c8ced5450 [shape=record,label="{while.body:                                       \l  %1 = load i32, i32* %n.addr, align 4\l  %2 = load i32, i32* %acc, align 4\l  %mul = mul nsw i32 %2, %1\l  store i32 %mul, i32* %acc, align 4\l  %3 = load i32, i32* %n.addr, align 4\l  %sub = sub nsw i32 %3, 1\l  store i32 %sub, i32* %n.addr, align 4\l  br label %while.cond\l}"];
-	Node0x561c8ced5450 -> Node0x561c8ced5010[constraint=false];
-	Node0x561c8ced5620 [shape=record,label="{while.end:                                        \l  %4 = load i32, i32* %acc, align 4\l  ret i32 %4\l}"];
+	Node0x55b6dc6cdc60 [shape=record,label="{entry:\l  %n.addr = alloca i32, align 4\l  %acc = alloca i32, align 4\l  store i32 %n, i32* %n.addr, align 4\l  store i32 1, i32* %acc, align 4\l  br label %while.cond\l}"];
+	Node0x55b6dc6cdc60 -> Node0x55b6dc6ce010;
+	Node0x55b6dc6ce010 [shape=record,label="{while.cond:                                       \l  %0 = load i32, i32* %n.addr, align 4\l  %cmp = icmp sgt i32 %0, 0\l  br i1 %cmp, label %while.body, label %while.end\l}"];
+	Node0x55b6dc6ce010 -> Node0x55b6dc6ce450;
+	Node0x55b6dc6ce010 -> Node0x55b6dc6ce620;
+	Node0x55b6dc6ce450 [shape=record,label="{while.body:                                       \l  %1 = load i32, i32* %n.addr, align 4\l  %2 = load i32, i32* %acc, align 4\l  %mul = mul nsw i32 %2, %1\l  store i32 %mul, i32* %acc, align 4\l  %3 = load i32, i32* %n.addr, align 4\l  %sub = sub nsw i32 %3, 1\l  store i32 %sub, i32* %n.addr, align 4\l  br label %while.cond\l}"];
+	Node0x55b6dc6ce450 -> Node0x55b6dc6ce010[constraint=false];
+	Node0x55b6dc6ce620 [shape=record,label="{while.end:                                        \l  %4 = load i32, i32* %acc, align 4\l  ret i32 %4\l}"];
 	colorscheme = "paired12"
-        subgraph cluster_0x561c8ceda810 {
+        subgraph cluster_0x55b6dc6d3810 {
           label = "";
           style = filled;
           color = 1
-          subgraph cluster_0x561c8ceda650 {
+          subgraph cluster_0x55b6dc6d3650 {
             label = "";
             style = filled;
             color = 3
-            Node0x561c8ced5010;
-            Node0x561c8ced5450;
+            Node0x55b6dc6ce010;
+            Node0x55b6dc6ce450;
           }
-          Node0x561c8ced4c60;
-          Node0x561c8ced5620;
+          Node0x55b6dc6cdc60;
+          Node0x55b6dc6ce620;
         }
 }

@@ -1,12 +1,12 @@
 digraph "CFG for 'factorial' function" {
 	label="CFG for 'factorial' function";
 
-	Node0x559418d47700 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x559418d47700\\\l df: 0\\\l idf: 0\\\l bf: 0\\\l po: 3\":\l  %n.addr = alloca i32, align 4\l  %acc = alloca i32, align 4\l  store i32 %n, i32* %n.addr, align 4\l  store i32 1, i32* %acc, align 4\l  br label %\"0x559418d480c0 - Virtual Checkpoint\\\l df: 1\\\l bf: 1\\\l po: 2\l... \\\l succ: 0\"\l}"];
-	Node0x559418d47700 -> Node0x559418d47ef0;
-	Node0x559418d47ef0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x559418d480c0 - Virtual Checkpoint\\\l df: 1\\\l bf: 1\\\l po: 2 \\\l succ: 0\": \l  %0 = load i32, i32* %n.addr, align 4\l  %cmp = icmp sgt i32 %0, 0\l  br i1 %cmp, label %\"0x559418d480c0\\\l df: 2\\\l bf: 2\\\l po: 0\", label\l... %\"0x559418d48140\\\l df: 3\\\l bf: 3\\\l po: 1\"\l|{<s0>T|<s1>F}}"];
-	Node0x559418d47ef0:s0 -> Node0x559418d480c0;
-	Node0x559418d47ef0:s1 -> Node0x559418d48140;
-	Node0x559418d480c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{\"0x559418d480c0\\\l df: 2\\\l bf: 2\\\l po: 0\":      \l  %1 = load i32, i32* %n.addr, align 4\l  %2 = load i32, i32* %acc, align 4\l  %mul = mul nsw i32 %2, %1\l  store i32 %mul, i32* %acc, align 4\l  %3 = load i32, i32* %n.addr, align 4\l  %sub = sub nsw i32 %3, 1\l  store i32 %sub, i32* %n.addr, align 4\l  br label %\"0x559418d480c0 - Virtual Checkpoint\\\l df: 1\\\l bf: 1\\\l po: 2\l... \\\l succ: 0\"\l}"];
-	Node0x559418d480c0 -> Node0x559418d47ef0;
-	Node0x559418d48140 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{\"0x559418d48140\\\l df: 3\\\l bf: 3\\\l po: 1\":      \l  %4 = load i32, i32* %acc, align 4\l  ret i32 %4\l}"];
+	Node0x55ce41f89730 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{entry:\l  %n.addr = alloca i32, align 4\l  %acc = alloca i32, align 4\l  store i32 %n, i32* %n.addr, align 4\l  store i32 1, i32* %acc, align 4\l  br label %while.cond\l}"];
+	Node0x55ce41f89730 -> Node0x55ce41f89f20;
+	Node0x55ce41f89f20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{while.cond:                                       \l  %0 = load i32, i32* %n.addr, align 4\l  %cmp = icmp sgt i32 %0, 0\l  br i1 %cmp, label %while.body, label %while.end\l|{<s0>T|<s1>F}}"];
+	Node0x55ce41f89f20:s0 -> Node0x55ce41f8a0f0;
+	Node0x55ce41f89f20:s1 -> Node0x55ce41f8a170;
+	Node0x55ce41f8a0f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{while.body:                                       \l  %1 = load i32, i32* %n.addr, align 4\l  %2 = load i32, i32* %acc, align 4\l  %mul = mul nsw i32 %2, %1\l  store i32 %mul, i32* %acc, align 4\l  %3 = load i32, i32* %n.addr, align 4\l  %sub = sub nsw i32 %3, 1\l  store i32 %sub, i32* %n.addr, align 4\l  br label %while.cond\l}"];
+	Node0x55ce41f8a0f0 -> Node0x55ce41f89f20;
+	Node0x55ce41f8a170 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{while.end:                                        \l  %4 = load i32, i32* %acc, align 4\l  ret i32 %4\l}"];
 }

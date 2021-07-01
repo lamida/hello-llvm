@@ -1,12 +1,12 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x557b03372cf0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x557b03372cf0 - Thread Start\\\l df: 0\\\l idf: 0\\\l bf: 0\\\l po: 3\":\l  %retval = alloca i32, align 4\l  %access = alloca i8*, align 8\l  %result = alloca i8*, align 8\l  store i32 0, i32* %retval, align 4\l  %call = call i8* @get_input()\l  store i8* %call, i8** %access, align 8\l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.6, i64 0, i64\l... 0), i8** %result, align 8\l  %0 = load i8*, i8** %access, align 8\l  %call1 = call i32 @strcmp(i8* %0, i8* getelementptr inbounds ([5 x i8], [5 x\l... i8]* @.str, i64 0, i64 0))\l  %cmp = icmp eq i32 %call1, 0\l  br i1 %cmp, label %\"0x557b03373680\\\l df: 1\\\l bf: 1\\\l po: 1 \\\l succ: 0\",\l... label %\"0x557b03373750\\\l df: 3\\\l bf: 2\\\l po: 2 \\\l succ: 1\"\l|{<s0>T|<s1>F}}"];
-	Node0x557b03372cf0:s0 -> Node0x557b03373680;
-	Node0x557b03372cf0:s1 -> Node0x557b03373750;
-	Node0x557b03373680 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{\"0x557b03373680\\\l df: 1\\\l bf: 1\\\l po: 1 \\\l succ: 0\": \l  %call2 = call i8* @get_privileged_info()\l  store i8* %call2, i8** %result, align 8\l  br label %\"0x557b03373ab0 - Thread End\\\l df: 2\\\l bf: 3\\\l po: 0\"\l}"];
-	Node0x557b03373680 -> Node0x557b03373ab0;
-	Node0x557b03373750 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{\"0x557b03373750\\\l df: 3\\\l bf: 2\\\l po: 2 \\\l succ: 1\": \l  %call3 = call i8* @get_unprivileged_info()\l  store i8* %call3, i8** %result, align 8\l  br label %\"0x557b03373ab0 - Thread End\\\l df: 2\\\l bf: 3\\\l po: 0\"\l}"];
-	Node0x557b03373750 -> Node0x557b03373ab0;
-	Node0x557b03373ab0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{\"0x557b03373ab0 - Thread End\\\l df: 2\\\l bf: 3\\\l po: 0\": \l  %1 = load i8*, i8** %result, align 8\l  call void @print_output(i8* %1)\l  call void @my_terminate()\l  %2 = load i32, i32* %retval, align 4\l  ret i32 %2\l}"];
+	Node0x560d0db2ed20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{entry:\l  %retval = alloca i32, align 4\l  %access = alloca i8*, align 8\l  %result = alloca i8*, align 8\l  store i32 0, i32* %retval, align 4\l  %call = call i8* @get_input()\l  store i8* %call, i8** %access, align 8\l  store i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.6, i64 0, i64\l... 0), i8** %result, align 8\l  %0 = load i8*, i8** %access, align 8\l  %call1 = call i32 @strcmp(i8* %0, i8* getelementptr inbounds ([5 x i8], [5 x\l... i8]* @.str, i64 0, i64 0))\l  %cmp = icmp eq i32 %call1, 0\l  br i1 %cmp, label %if.then, label %if.else\l|{<s0>T|<s1>F}}"];
+	Node0x560d0db2ed20:s0 -> Node0x560d0db2f6b0;
+	Node0x560d0db2ed20:s1 -> Node0x560d0db2f780;
+	Node0x560d0db2f6b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{if.then:                                          \l  %call2 = call i8* @get_privileged_info()\l  store i8* %call2, i8** %result, align 8\l  br label %if.end\l}"];
+	Node0x560d0db2f6b0 -> Node0x560d0db2fae0;
+	Node0x560d0db2f780 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{if.else:                                          \l  %call3 = call i8* @get_unprivileged_info()\l  store i8* %call3, i8** %result, align 8\l  br label %if.end\l}"];
+	Node0x560d0db2f780 -> Node0x560d0db2fae0;
+	Node0x560d0db2fae0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{if.end:                                           \l  %1 = load i8*, i8** %result, align 8\l  call void @print_output(i8* %1)\l  call void @my_terminate()\l  %2 = load i32, i32* %retval, align 4\l  ret i32 %2\l}"];
 }

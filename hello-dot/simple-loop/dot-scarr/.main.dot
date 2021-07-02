@@ -1,14 +1,14 @@
 digraph "CFG for 'main' function" {
 	label="CFG for 'main' function";
 
-	Node0x56386f62c900 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%0 ThreadStart:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  call void @sA()\l  store i32 0, i32* %2, align 4\l  br label %3\l}"];
-	Node0x56386f62c900 -> Node0x56386f62cc40;
-	Node0x56386f62cc40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3 Virtual:\l3:                                                \l  %4 = load i32, i32* %2, align 4\l  %5 = icmp slt i32 %4, 10\l  br i1 %5, label %6, label %12\l|{<s0>T|<s1>F}}"];
-	Node0x56386f62cc40:s0 -> Node0x56386f62ce50;
-	Node0x56386f62cc40:s1 -> Node0x56386f62cea0;
-	Node0x56386f62ce50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%6 ExitPoint:\l6:                                                \l  %7 = load i32, i32* %2, align 4\l  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([7 x i8], [7 x\l... i8]* @.str.2, i64 0, i64 0), i32 %7)\l  br label %9\l}"];
-	Node0x56386f62ce50 -> Node0x56386f62cd70;
-	Node0x56386f62cd70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%9:\l9:                                                \l  %10 = load i32, i32* %2, align 4\l  %11 = add nsw i32 %10, 1\l  store i32 %11, i32* %2, align 4\l  br label %3\l}"];
-	Node0x56386f62cd70 -> Node0x56386f62cc40;
-	Node0x56386f62cea0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%12 ThreadEnd:\l12:                                               \l  %13 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str.3, i64 0, i64 0))\l  call void @my_terminate()\l  %14 = load i32, i32* %1, align 4\l  ret i32 %14\l}"];
+	Node0x55dbbca8c900 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%0 ThreadStart:\l  %1 = alloca i32, align 4\l  %2 = alloca i32, align 4\l  store i32 0, i32* %1, align 4\l  call void @sA()\l  store i32 0, i32* %2, align 4\l  br label %3\l}"];
+	Node0x55dbbca8c900 -> Node0x55dbbca8cc40;
+	Node0x55dbbca8cc40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3 Virtual:\l3:                                                \l  %4 = load i32, i32* %2, align 4\l  %5 = icmp slt i32 %4, 10\l  br i1 %5, label %6, label %12\l|{<s0>T|<s1>F}}"];
+	Node0x55dbbca8cc40:s0 -> Node0x55dbbca8ce50;
+	Node0x55dbbca8cc40:s1 -> Node0x55dbbca8cea0;
+	Node0x55dbbca8ce50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%6 ExitPoint:\l6:                                                \l  %7 = load i32, i32* %2, align 4\l  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([7 x i8], [7 x\l... i8]* @.str.2, i64 0, i64 0), i32 %7)\l  br label %9\l}"];
+	Node0x55dbbca8ce50 -> Node0x55dbbca8cd70;
+	Node0x55dbbca8cd70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%9:\l9:                                                \l  %10 = load i32, i32* %2, align 4\l  %11 = add nsw i32 %10, 1\l  store i32 %11, i32* %2, align 4\l  br label %3\l}"];
+	Node0x55dbbca8cd70 -> Node0x55dbbca8cc40;
+	Node0x55dbbca8cea0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%12 ThreadEnd:\l12:                                               \l  %13 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x\l... i8]* @.str.3, i64 0, i64 0))\l  call void @my_terminate()\l  %14 = load i32, i32* %1, align 4\l  ret i32 %14\l}"];
 }

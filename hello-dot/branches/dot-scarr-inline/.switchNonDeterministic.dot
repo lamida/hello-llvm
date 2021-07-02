@@ -1,21 +1,21 @@
 digraph "CFG for 'switchNonDeterministic' function" {
 	label="CFG for 'switchNonDeterministic' function";
 
-	Node0x55a29d8c8e90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0 ExitPoint:\l  %1 = alloca i64, align 8\l  %2 = alloca i32, align 4\l  %3 = call i64 @time(i64* %1)\l  %4 = trunc i64 %3 to i32\l  call void @srand(i32 %4)\l  %5 = call i32 @rand()\l  %6 = srem i32 %5, 4\l  %7 = add nsw i32 1, %6\l  store i32 %7, i32* %2, align 4\l  %8 = load i32, i32* %2, align 4\l  switch i32 %8, label %17 [\l    i32 1, label %9\l    i32 2, label %11\l    i32 3, label %13\l    i32 4, label %15\l  ]\l|{<s0>def|<s1>1|<s2>2|<s3>3|<s4>4}}"];
-	Node0x55a29d8c8e90:s0 -> Node0x55a29d8c9220;
-	Node0x55a29d8c8e90:s1 -> Node0x55a29d8c9970;
-	Node0x55a29d8c8e90:s2 -> Node0x55a29d8c99c0;
-	Node0x55a29d8c8e90:s3 -> Node0x55a29d8c9a10;
-	Node0x55a29d8c8e90:s4 -> Node0x55a29d8c9a60;
-	Node0x55a29d8c9970 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{%9 ExitPoint:\l9:                                                \l  %10 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14\l... x i8]* @.str.7, i64 0, i64 0))\l  br label %19\l}"];
-	Node0x55a29d8c9970 -> Node0x55a29d8c9d20;
-	Node0x55a29d8c99c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{%11 ExitPoint:\l11:                                               \l  %12 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14\l... x i8]* @.str.8, i64 0, i64 0))\l  br label %19\l}"];
-	Node0x55a29d8c99c0 -> Node0x55a29d8c9d20;
-	Node0x55a29d8c9a10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{%13 ExitPoint:\l13:                                               \l  %14 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14\l... x i8]* @.str.9, i64 0, i64 0))\l  br label %19\l}"];
-	Node0x55a29d8c9a10 -> Node0x55a29d8c9d20;
-	Node0x55a29d8c9a60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{%15 ExitPoint:\l15:                                               \l  %16 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14\l... x i8]* @.str.10, i64 0, i64 0))\l  br label %19\l}"];
-	Node0x55a29d8c9a60 -> Node0x55a29d8c9d20;
-	Node0x55a29d8c9220 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{%17 ExitPoint:\l17:                                               \l  %18 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.11, i64 0, i64 0))\l  br label %19\l}"];
-	Node0x55a29d8c9220 -> Node0x55a29d8c9d20;
-	Node0x55a29d8c9d20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%19:\l19:                                               \l  ret void\l}"];
+	Node0x5638be057e90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0 ExitPoint:\l  %1 = alloca i64, align 8\l  %2 = alloca i32, align 4\l  %3 = call i64 @time(i64* %1)\l  %4 = trunc i64 %3 to i32\l  call void @srand(i32 %4)\l  %5 = call i32 @rand()\l  %6 = srem i32 %5, 4\l  %7 = add nsw i32 1, %6\l  store i32 %7, i32* %2, align 4\l  %8 = load i32, i32* %2, align 4\l  switch i32 %8, label %17 [\l    i32 1, label %9\l    i32 2, label %11\l    i32 3, label %13\l    i32 4, label %15\l  ]\l|{<s0>def|<s1>1|<s2>2|<s3>3|<s4>4}}"];
+	Node0x5638be057e90:s0 -> Node0x5638be058220;
+	Node0x5638be057e90:s1 -> Node0x5638be058970;
+	Node0x5638be057e90:s2 -> Node0x5638be0589c0;
+	Node0x5638be057e90:s3 -> Node0x5638be058a10;
+	Node0x5638be057e90:s4 -> Node0x5638be058a60;
+	Node0x5638be058970 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{%9 ExitPoint:\l9:                                                \l  %10 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14\l... x i8]* @.str.7, i64 0, i64 0))\l  br label %19\l}"];
+	Node0x5638be058970 -> Node0x5638be058d20;
+	Node0x5638be0589c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{%11 ExitPoint:\l11:                                               \l  %12 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14\l... x i8]* @.str.8, i64 0, i64 0))\l  br label %19\l}"];
+	Node0x5638be0589c0 -> Node0x5638be058d20;
+	Node0x5638be058a10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{%13 ExitPoint:\l13:                                               \l  %14 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14\l... x i8]* @.str.9, i64 0, i64 0))\l  br label %19\l}"];
+	Node0x5638be058a10 -> Node0x5638be058d20;
+	Node0x5638be058a60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{%15 ExitPoint:\l15:                                               \l  %16 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14\l... x i8]* @.str.10, i64 0, i64 0))\l  br label %19\l}"];
+	Node0x5638be058a60 -> Node0x5638be058d20;
+	Node0x5638be058220 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{%17 ExitPoint:\l17:                                               \l  %18 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13\l... x i8]* @.str.11, i64 0, i64 0))\l  br label %19\l}"];
+	Node0x5638be058220 -> Node0x5638be058d20;
+	Node0x5638be058d20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%19:\l19:                                               \l  ret void\l}"];
 }

@@ -1,5 +1,5 @@
 digraph "CFG for 'a' function" {
 	label="CFG for 'a' function";
 
-	Node0x564a167d7470 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%1 ExitPoint:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load i32, i32* %2, align 4\l  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str, i64 0, i64 0), i32 %3)\l  ret void\l}"];
+	Node0x55fe66e77470 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%1 ExitPoint:\l  %2 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  %3 = load i32, i32* %2, align 4\l  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x\l... i8]* @.str, i64 0, i64 0), i32 %3)\l  ret void\l}"];
 }

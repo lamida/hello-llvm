@@ -1,13 +1,13 @@
 digraph "Post dominator tree for 'factorial' function" {
 	label="Post dominator tree for 'factorial' function";
 
-	Node0x55e59b619ac0 [shape=record,label="{Post dominance root node}"];
-	Node0x55e59b619ac0 -> Node0x55e59b619f30;
-	Node0x55e59b619f30 [shape=record,label="{%13:\l13:                                               \l  %14 = load i32, i32* %3, align 4\l  ret i32 %14\l}"];
-	Node0x55e59b619f30 -> Node0x55e59b619f90;
-	Node0x55e59b619f90 [shape=record,label="{%4:\l4:                                                \l  %5 = load i32, i32* %2, align 4\l  %6 = icmp sgt i32 %5, 0\l  br i1 %6, label %7, label %13\l}"];
-	Node0x55e59b619f90 -> Node0x55e59b619ff0;
-	Node0x55e59b619f90 -> Node0x55e59b61a050;
-	Node0x55e59b619ff0 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  store i32 1, i32* %3, align 4\l  br label %4\l}"];
-	Node0x55e59b61a050 [shape=record,label="{%7:\l7:                                                \l  %8 = load i32, i32* %2, align 4\l  %9 = load i32, i32* %3, align 4\l  %10 = mul nsw i32 %9, %8\l  store i32 %10, i32* %3, align 4\l  %11 = load i32, i32* %2, align 4\l  %12 = sub nsw i32 %11, 1\l  store i32 %12, i32* %2, align 4\l  br label %4\l}"];
+	Node0x558e2aa37ac0 [shape=record,label="{Post dominance root node}"];
+	Node0x558e2aa37ac0 -> Node0x558e2aa37f30;
+	Node0x558e2aa37f30 [shape=record,label="{%13:\l13:                                               \l  %14 = load i32, i32* %3, align 4\l  ret i32 %14\l}"];
+	Node0x558e2aa37f30 -> Node0x558e2aa37f90;
+	Node0x558e2aa37f90 [shape=record,label="{%4:\l4:                                                \l  %5 = load i32, i32* %2, align 4\l  %6 = icmp sgt i32 %5, 0\l  br i1 %6, label %7, label %13\l}"];
+	Node0x558e2aa37f90 -> Node0x558e2aa37ff0;
+	Node0x558e2aa37f90 -> Node0x558e2aa38050;
+	Node0x558e2aa37ff0 [shape=record,label="{%1:\l  %2 = alloca i32, align 4\l  %3 = alloca i32, align 4\l  store i32 %0, i32* %2, align 4\l  store i32 1, i32* %3, align 4\l  br label %4\l}"];
+	Node0x558e2aa38050 [shape=record,label="{%7:\l7:                                                \l  %8 = load i32, i32* %2, align 4\l  %9 = load i32, i32* %3, align 4\l  %10 = mul nsw i32 %9, %8\l  store i32 %10, i32* %3, align 4\l  %11 = load i32, i32* %2, align 4\l  %12 = sub nsw i32 %11, 1\l  store i32 %12, i32* %2, align 4\l  br label %4\l}"];
 }

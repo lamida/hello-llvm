@@ -1,0 +1,5 @@
+digraph "Dominator tree for 'f' function" {
+	label="Dominator tree for 'f' function";
+
+	Node0x55b1371fddc0 [shape=record,label="{%0 }"];
+}

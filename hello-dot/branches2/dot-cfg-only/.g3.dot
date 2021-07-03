@@ -1,0 +1,5 @@
+digraph "CFG for 'g3' function" {
+	label="CFG for 'g3' function";
+
+	Node0x55e47a4ae5b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0 }"];
+}

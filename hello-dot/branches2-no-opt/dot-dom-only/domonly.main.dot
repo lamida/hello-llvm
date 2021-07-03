@@ -1,0 +1,47 @@
+digraph "Dominator tree for 'main' function" {
+	label="Dominator tree for 'main' function";
+
+	Node0x5626daed88c0 [shape=record,label="{entry}"];
+	Node0x5626daed88c0 -> Node0x5626daed8920;
+	Node0x5626daed88c0 -> Node0x5626daed8ee0;
+	Node0x5626daed88c0 -> Node0x5626daed9540;
+	Node0x5626daed8920 [shape=record,label="{if.then}"];
+	Node0x5626daed8920 -> Node0x5626daed8980;
+	Node0x5626daed8920 -> Node0x5626daed8df0;
+	Node0x5626daed8920 -> Node0x5626daed94e0;
+	Node0x5626daed8980 [shape=record,label="{if.then2}"];
+	Node0x5626daed8df0 [shape=record,label="{if.end}"];
+	Node0x5626daed94e0 [shape=record,label="{if.else}"];
+	Node0x5626daed8ee0 [shape=record,label="{if.end4}"];
+	Node0x5626daed8ee0 -> Node0x5626daed8f40;
+	Node0x5626daed8f40 [shape=record,label="{while.cond}"];
+	Node0x5626daed8f40 -> Node0x5626daed8fa0;
+	Node0x5626daed8f40 -> Node0x5626daed9000;
+	Node0x5626daed8fa0 [shape=record,label="{while.body}"];
+	Node0x5626daed9000 [shape=record,label="{while.end}"];
+	Node0x5626daed9000 -> Node0x5626daed9060;
+	Node0x5626daed9000 -> Node0x5626daed90c0;
+	Node0x5626daed9000 -> Node0x5626daed9360;
+	Node0x5626daed9000 -> Node0x5626daed93c0;
+	Node0x5626daed9000 -> Node0x5626daed9420;
+	Node0x5626daed9000 -> Node0x5626daed9480;
+	Node0x5626daed9060 [shape=record,label="{sw.default}"];
+	Node0x5626daed90c0 [shape=record,label="{sw.epilog}"];
+	Node0x5626daed90c0 -> Node0x5626daed9120;
+	Node0x5626daed90c0 -> Node0x5626daed9180;
+	Node0x5626daed90c0 -> Node0x5626daed91e0;
+	Node0x5626daed90c0 -> Node0x5626daed9240;
+	Node0x5626daed90c0 -> Node0x5626daed92a0;
+	Node0x5626daed90c0 -> Node0x5626daed9300;
+	Node0x5626daed9120 [shape=record,label="{sw.default15}"];
+	Node0x5626daed9180 [shape=record,label="{sw.epilog17}"];
+	Node0x5626daed91e0 [shape=record,label="{sw.bb11}"];
+	Node0x5626daed9240 [shape=record,label="{sw.bb12}"];
+	Node0x5626daed92a0 [shape=record,label="{sw.bb13}"];
+	Node0x5626daed9300 [shape=record,label="{sw.bb14}"];
+	Node0x5626daed9360 [shape=record,label="{sw.bb}"];
+	Node0x5626daed93c0 [shape=record,label="{sw.bb6}"];
+	Node0x5626daed9420 [shape=record,label="{sw.bb7}"];
+	Node0x5626daed9480 [shape=record,label="{sw.bb8}"];
+	Node0x5626daed9540 [shape=record,label="{if.else3}"];
+}

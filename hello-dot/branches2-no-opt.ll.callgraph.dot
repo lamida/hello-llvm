@@ -1,0 +1,43 @@
+digraph "Call graph: ../../branches2-no-opt.ll" {
+	label="Call graph: ../../branches2-no-opt.ll";
+
+	Node0x55941285a4b0 [shape=record,label="{b1}"];
+	Node0x55941285a4b0 -> Node0x55941285a530;
+	Node0x55941285a530 [shape=record,label="{printf}"];
+	Node0x55941285a6a0 [shape=record,label="{b2}"];
+	Node0x55941285a6a0 -> Node0x55941285a530;
+	Node0x55941288e4f0 [shape=record,label="{c}"];
+	Node0x55941288e4f0 -> Node0x55941285a530;
+	Node0x55941288e5a0 [shape=record,label="{e}"];
+	Node0x55941288e5a0 -> Node0x55941285a530;
+	Node0x55941288e7a0 [shape=record,label="{d}"];
+	Node0x55941288e7a0 -> Node0x55941285a530;
+	Node0x55941288e7a0 -> Node0x55941288e5a0;
+	Node0x55941288e850 [shape=record,label="{f}"];
+	Node0x55941288e850 -> Node0x55941285a530;
+	Node0x55941288e8d0 [shape=record,label="{g1}"];
+	Node0x55941288e8d0 -> Node0x55941285a530;
+	Node0x55941288e980 [shape=record,label="{g2}"];
+	Node0x55941288e980 -> Node0x55941285a530;
+	Node0x55941288ecc0 [shape=record,label="{g3}"];
+	Node0x55941288ecc0 -> Node0x55941285a530;
+	Node0x55941288ed70 [shape=record,label="{g4}"];
+	Node0x55941288ed70 -> Node0x55941285a530;
+	Node0x55941288ee20 [shape=record,label="{main}"];
+	Node0x55941288ee20 -> Node0x55941285a4b0;
+	Node0x55941288ee20 -> Node0x55941288e4f0;
+	Node0x55941288ee20 -> Node0x55941288e7a0;
+	Node0x55941288ee20 -> Node0x55941285a6a0;
+	Node0x55941288ee20 -> Node0x55941288e850;
+	Node0x55941288ee20 -> Node0x55941288e8d0;
+	Node0x55941288ee20 -> Node0x55941288e980;
+	Node0x55941288ee20 -> Node0x55941288ecc0;
+	Node0x55941288ee20 -> Node0x55941288ed70;
+	Node0x55941288ee20 -> Node0x55941285a530;
+	Node0x55941288ee20 -> Node0x55941288f1c0;
+	Node0x55941288ee20 -> Node0x55941288f240;
+	Node0x55941288ee20 -> Node0x55941288f2c0;
+	Node0x55941288f1c0 [shape=record,label="{time}"];
+	Node0x55941288f240 [shape=record,label="{srand}"];
+	Node0x55941288f2c0 [shape=record,label="{rand}"];
+}

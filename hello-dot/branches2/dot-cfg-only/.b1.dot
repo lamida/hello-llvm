@@ -1,0 +1,12 @@
+digraph "CFG for 'b1' function" {
+	label="CFG for 'b1' function";
+
+	Node0x55e47a4abbb0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0 |{<s0>T|<s1>F}}"];
+	Node0x55e47a4abbb0:s0 -> Node0x55e47a4ac3e0;
+	Node0x55e47a4abbb0:s1 -> Node0x55e47a4ac430;
+	Node0x55e47a4ac3e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%4 }"];
+	Node0x55e47a4ac3e0 -> Node0x55e47a4ac950;
+	Node0x55e47a4ac430 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%6 }"];
+	Node0x55e47a4ac430 -> Node0x55e47a4ac950;
+	Node0x55e47a4ac950 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%8 }"];
+}

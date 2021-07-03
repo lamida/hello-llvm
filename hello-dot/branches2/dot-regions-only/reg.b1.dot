@@ -1,0 +1,27 @@
+digraph "Region Graph for 'b1' function" {
+	label="Region Graph for 'b1' function";
+
+	Node0x55f800fab180 [shape=record,label="{%0 }"];
+	Node0x55f800fab180 -> Node0x55f800f9bd60;
+	Node0x55f800fab180 -> Node0x55f800f9eb90;
+	Node0x55f800f9bd60 [shape=record,label="{%4 }"];
+	Node0x55f800f9bd60 -> Node0x55f800f9bf30;
+	Node0x55f800f9bf30 [shape=record,label="{%8 }"];
+	Node0x55f800f9eb90 [shape=record,label="{%6 }"];
+	Node0x55f800f9eb90 -> Node0x55f800f9bf30;
+	colorscheme = "paired12"
+        subgraph cluster_0x55f800fa7a80 {
+          label = "";
+          style = filled;
+          color = 1
+          subgraph cluster_0x55f800fa7940 {
+            label = "";
+            style = filled;
+            color = 3
+            Node0x55f800fab180;
+            Node0x55f800f9bd60;
+            Node0x55f800f9eb90;
+          }
+          Node0x55f800f9bf30;
+        }
+}
